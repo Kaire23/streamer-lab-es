@@ -37,6 +37,21 @@ const Index: React.FC = () => {
         </p>
       </section>
 
+      <nav aria-label="Streamers destacados" className="mb-6 overflow-x-auto">
+        <ul className="flex gap-2 whitespace-nowrap">
+          {posts.map((post) => (
+            <li key={post.slug}>
+              <Link
+                to={`/post/${post.slug}`}
+                className="inline-block rounded-full border border-border/60 px-3 py-1 text-sm hover:bg-accent/40 transition-colors"
+              >
+                {post.title.replace(/^Setup de streaming de\s*/i, "").replace(/\s*\(.*\):?.*$/, "")}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
       <div className="grid gap-6 md:grid-cols-2">
         {posts.map((post) => (
           <article

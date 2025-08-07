@@ -88,19 +88,29 @@ const PostPage: React.FC = () => {
               <h3 className="font-semibold mb-3">{cat.name}</h3>
               <ul className="space-y-3">
                 {cat.items.map((item) => (
-                  <li key={item.name} className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-                    <div>
-                      <p className="font-medium">{item.name}</p>
-                      {item.note ? (
-                        <p className="text-sm text-muted-foreground">{item.note}</p>
-                      ) : null}
-                    </div>
-                    <Button asChild variant="hero">
-                      <a href={item.link} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Ver ${item.name} en Amazon`}>
-                        Ver en Amazon
-                      </a>
-                    </Button>
-                  </li>
+                    <li key={item.name} className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                      <div className="flex items-start gap-3">
+                        {item.image ? (
+                          <img
+                            src={item.image}
+                            alt={`Imagen de ${item.name} para comprar en Amazon`}
+                            loading="lazy"
+                            className="w-20 h-20 object-cover rounded-md border border-border/60"
+                          />
+                        ) : null}
+                        <div>
+                          <p className="font-medium">{item.name}</p>
+                          {item.note ? (
+                            <p className="text-sm text-muted-foreground">{item.note}</p>
+                          ) : null}
+                        </div>
+                      </div>
+                      <Button asChild variant="hero">
+                        <a href={item.link} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Comprar ${item.name} en Amazon`}>
+                          Comprar
+                        </a>
+                      </Button>
+                    </li>
                 ))}
               </ul>
             </section>

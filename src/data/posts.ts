@@ -5,7 +5,7 @@ import grefgImg from "@/assets/thegrefg-hero.jpg";
 import coscuImg from "@/assets/coscu-hero.jpg";
 import { amazonSearchUrl } from "@/lib/affiliate";
 
-export type SetupItem = { name: string; link: string; note?: string };
+export type SetupItem = { name: string; link: string; note?: string; image?: string };
 export type SetupCategory = { name: string; items: SetupItem[] };
 export type Post = {
   slug: string;
