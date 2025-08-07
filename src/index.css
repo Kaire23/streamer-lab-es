@@ -102,4 +102,32 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Futuristic theme extensions */
+  :root {
+    --brand: 262 83% 58%; /* Violet */
+    --brand-2: 198 94% 49%; /* Cyan */
+    --brand-foreground: 0 0% 100%;
+    --elevate: 0 10px 40px -10px hsl(var(--brand) / 0.45);
+  }
+  .dark {
+    --brand: 262 90% 64%;
+    --brand-2: 198 100% 56%;
+    --brand-foreground: 0 0% 100%;
+    --elevate: 0 10px 50px -10px hsl(var(--brand) / 0.55);
+  }
+}
+
+/* Motion tokens */
+:root {
+  --transition-smooth: all 300ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }

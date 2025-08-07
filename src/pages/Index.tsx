@@ -1,12 +1,84 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from "react";
+import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
+import { posts } from "@/data/posts";
+import { Button } from "@/components/ui/button";
+import AdSlot from "@/components/ads/AdSlot";
 
-const Index = () => {
+const Index: React.FC = () => {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Setups de Streamers",
+    url: typeof window !== "undefined" ? window.location.origin : "",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "{url}/?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div>
+      <SEO
+        title="Setups de Streamers: Guías Futuristas en Español"
+        description="Cada semana analizamos el setup de un streamer famoso: historia, curiosidades y enlaces a todo su equipo."
+        canonicalPath="/"
+        jsonLd={jsonLd}
+        keywords={["setup de streaming", "streamers famosos", "equipo streaming", "guías en español"]}
+      />
+
+      <section className="mb-8 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+          Setups de Streamers
+        </h1>
+        <p className="mt-3 text-lg text-muted-foreground">
+          Guías futuristas en español para replicar el equipo de tus creadores favoritos.
+        </p>
+      </section>
+
+      <div className="grid gap-6 md:grid-cols-2">
+        {posts.map((post) => (
+          <article
+            key={post.slug}
+            className="group overflow-hidden rounded-xl border border-border/60 shadow-sm transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-[var(--elevate)]"
+          >
+            <Link to={`/post/${post.slug}`} className="block">
+              <div className="aspect-video overflow-hidden">
+                <img
+                  src={post.coverImage}
+                  alt={`Setup de streaming de ${post.title}`}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                />
+              </div>
+            </Link>
+            <div className="p-4">
+              <h2 className="text-xl font-semibold tracking-tight">
+                <Link to={`/post/${post.slug}`}>{post.title}</Link>
+              </h2>
+              <p className="mt-2 text-muted-foreground">{post.excerpt}</p>
+              <div className="mt-4 flex items-center justify-between">
+                <Button asChild variant="hero">
+                  <Link to={`/post/${post.slug}`}>Ver setup</Link>
+                </Button>
+                <time className="text-xs text-muted-foreground">
+                  {new Date(post.date).toLocaleDateString("es-ES")}
+                </time>
+              </div>
+            </div>
+          </article>
+        ))}
       </div>
+
+      <div className="mt-8">
+        <AdSlot id="home-bottom" format="horizontal" />
+      </div>
+
+      <section id="newsletter" className="mt-12 rounded-xl border border-border/60 p-6 shadow-sm text-center">
+        <h2 className="text-2xl font-semibold">¿Quieres recibir nuevas guías?</h2>
+        <p className="text-muted-foreground mt-1">Muy pronto añadiremos newsletter. ¡Estate atento!</p>
+      </section>
     </div>
   );
 };
