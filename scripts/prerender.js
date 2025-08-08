@@ -78,12 +78,12 @@ posts.forEach(post => {
     // Update canonical
     .replace(
       /<link rel="canonical" href=".*?"/,
-      `<link rel="canonical" href="https://yostreamer.com/setup/${post.slug}"`
+      `<link rel="canonical" href="https://yostreamer.com/setup/${post.slug}/"`
     )
     // Update Open Graph URL
     .replace(
       /<meta property="og:url" content=".*?"/,
-      `<meta property="og:url" content="https://yostreamer.com/setup/${post.slug}"`
+      `<meta property="og:url" content="https://yostreamer.com/setup/${post.slug}/"`
     )
     // Update Open Graph title
     .replace(
@@ -98,7 +98,7 @@ posts.forEach(post => {
     // Update Twitter URL
     .replace(
       /<meta property="twitter:url" content=".*?"/,
-      `<meta property="twitter:url" content="https://yostreamer.com/setup/${post.slug}"`
+      `<meta property="twitter:url" content="https://yostreamer.com/setup/${post.slug}/"`
     )
     // Update Twitter title
     .replace(
@@ -119,10 +119,10 @@ posts.forEach(post => {
       "@type": "Article",
       "headline": "${post.title}",
       "description": "${post.excerpt}",
-      "url": "https://yostreamer.com/setup/${post.slug}",
+      "url": "https://yostreamer.com/setup/${post.slug}/",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://yostreamer.com/setup/${post.slug}"
+        "@id": "https://yostreamer.com/setup/${post.slug}/"
       },
       "publisher": {
         "@type": "Organization",
