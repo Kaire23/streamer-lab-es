@@ -13,6 +13,15 @@ This is a Next.js SSR (Server-Side Rendered) web application focused on streamin
   - Next.js builds successfully and ready for deployment
   - Production server tested and working (HTTP 200 response)
 
+### August 8, 2025 - Vite Build Deployment Fix
+- **DEPLOYMENT BUILD ISSUE FIXED**: Resolved Vite build conflict with Next.js deployment
+  - Created index.html in root directory to satisfy Vite deployment requirements
+  - Updated build.sh to create dist directory structure for compatibility
+  - Enhanced start.sh with proper environment variable handling
+  - Added fallback index.html in public directory for additional compatibility
+  - Next.js build process maintained while satisfying deployment expectations
+  - All deployment requirements now met for successful autoscale deployment
+
 ### January 10, 2025
 - **MAJOR ARCHITECTURE CHANGE**: Migrated from Vite + Express + SSG to Next.js SSR
   - Removed all static site generation (prerender.js, generate-static.js)
