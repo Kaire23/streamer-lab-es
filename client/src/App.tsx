@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Router, Route, useLocation } from "wouter";
 import { HelmetProvider } from "react-helmet-async";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import { useEffect } from "react";
 import Layout from "@/components/layout/Layout";
 import Index from "./pages/Index";
@@ -26,21 +27,23 @@ const RouteChangeTracker = () => {
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <HelmetProvider>
-        <Toaster />
-        <Sonner />
-        <Router>
-          <RouteChangeTracker />
-          <Layout>
-            <Route path="/" component={Index} />
-            <Route path="/post/:slug" component={PostPage} />
-            <Route path="/setup/:slug" component={PostPage} />
-            <Route path="/:rest*" component={NotFound} />
-          </Layout>
-        </Router>
-      </HelmetProvider>
-    </TooltipProvider>
+    <ThemeProvider defaultTheme="light" storageKey="setups-streamers-theme">
+      <TooltipProvider>
+        <HelmetProvider>
+          <Toaster />
+          <Sonner />
+          <Router>
+            <RouteChangeTracker />
+            <Layout>
+              <Route path="/" component={Index} />
+              <Route path="/post/:slug" component={PostPage} />
+              <Route path="/setup/:slug" component={PostPage} />
+              <Route path="/:rest*" component={NotFound} />
+            </Layout>
+          </Router>
+        </HelmetProvider>
+      </TooltipProvider>
+    </ThemeProvider>
   </QueryClientProvider>
 );
 
