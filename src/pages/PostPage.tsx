@@ -21,17 +21,30 @@ const PostPage: React.FC = () => {
     );
   }
 
+  const origin = typeof window !== "undefined" ? window.location.origin : "";
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: post.title,
-    image: post.coverImage,
-    datePublished: post.date,
-    author: {
-      "@type": "Person",
-      name: post.author,
-    },
-    keywords: post.keywords.join(", "),
+    "@graph": [
+      {
+        "@type": "Article",
+        headline: post.title,
+        image: origin + post.coverImage,
+        datePublished: post.date,
+        author: {
+          "@type": "Person",
+          name: post.author,
+        },
+        keywords: post.keywords.join(", "),
+        mainEntityOfPage: origin + `/setup/${post.slug}`,
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Inicio", item: origin + "/" },
+          { "@type": "ListItem", position: 2, name: post.title, item: origin + `/setup/${post.slug}` },
+        ],
+      },
+    ],
   };
 
   return (
@@ -40,7 +53,7 @@ const PostPage: React.FC = () => {
         title={post.title}
         description={post.excerpt}
         image={post.coverImage}
-        canonicalPath={`/post/${post.slug}`}
+        canonicalPath={`/setup/${post.slug}`}
         type="article"
         jsonLd={jsonLd}
         keywords={post.keywords}
@@ -63,8 +76,10 @@ const PostPage: React.FC = () => {
           <img
             src={post.coverImage}
             alt={`Setup de streaming de ${post.title}`}
-            loading="lazy"
+            loading="eager"
+            decoding="async"
             className="w-full h-auto object-cover"
+            {...({ fetchpriority: "high" } as any)}
           />
         </div>
 

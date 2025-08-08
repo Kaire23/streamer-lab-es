@@ -8,14 +8,29 @@ import AdSlot from "@/components/ads/AdSlot";
 const Index: React.FC = () => {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "Setups de Streamers",
-    url: typeof window !== "undefined" ? window.location.origin : "",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: "{url}/?q={search_term_string}",
-      "query-input": "required name=search_term_string",
-    },
+    "@graph": [
+      {
+        "@type": "WebSite",
+        name: "Setups de Streamers",
+        url: typeof window !== "undefined" ? window.location.origin : "",
+        potentialAction: {
+          "@type": "SearchAction",
+          target: "{url}/?q={search_term_string}",
+          "query-input": "required name=search_term_string",
+        },
+      },
+      {
+        "@type": "ItemList",
+        itemListElement: posts.map((p, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          url:
+            (typeof window !== "undefined" ? window.location.origin : "") +
+            `/setup/${p.slug}`,
+          name: p.title,
+        })),
+      },
+    ],
   };
 
   return (
@@ -42,7 +57,7 @@ const Index: React.FC = () => {
           {posts.map((post) => (
             <li key={post.slug}>
               <Link
-                to={`/post/${post.slug}`}
+                to={`/setup/${post.slug}`}
                 className="inline-block rounded-full border border-border/60 px-3 py-1 text-sm hover:bg-accent/40 transition-colors"
               >
                 {post.title.replace(/^Setup de streaming de\s*/i, "").replace(/\s*\(.*\):?.*$/, "")}
@@ -58,24 +73,26 @@ const Index: React.FC = () => {
             key={post.slug}
             className="group overflow-hidden rounded-xl border border-border/60 shadow-sm transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-[var(--elevate)]"
           >
-            <Link to={`/post/${post.slug}`} className="block">
+            <Link to={`/setup/${post.slug}`} className="block">
               <div className="aspect-video overflow-hidden">
                 <img
                   src={post.coverImage}
                   alt={`Setup de streaming de ${post.title}`}
                   loading="lazy"
+                  decoding="async"
+                  sizes="(min-width: 768px) 50vw, 100vw"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                 />
               </div>
             </Link>
             <div className="p-4">
               <h2 className="text-xl font-semibold tracking-tight">
-                <Link to={`/post/${post.slug}`}>{post.title}</Link>
+                <Link to={`/setup/${post.slug}`}>{post.title}</Link>
               </h2>
               <p className="mt-2 text-muted-foreground">{post.excerpt}</p>
               <div className="mt-4 flex items-center justify-between">
                 <Button asChild variant="hero">
-                  <Link to={`/post/${post.slug}`}>Ver setup</Link>
+                  <Link to={`/setup/${post.slug}`}>Ver setup</Link>
                 </Button>
                 <time className="text-xs text-muted-foreground">
                   {new Date(post.date).toLocaleDateString("es-ES")}
