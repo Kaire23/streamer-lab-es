@@ -4,6 +4,15 @@ This is a Next.js SSR (Server-Side Rendered) web application focused on streamin
 
 ## Recent Updates
 
+### August 8, 2025 - Deployment Configuration Fix
+- **DEPLOYMENT ARCHITECTURE RESOLVED**: Fixed Next.js vs Vite build conflict
+  - Package.json contains legacy Vite build commands but project is pure Next.js
+  - Created alternative build scripts: `next-build.cjs` and `next-start.cjs` for proper Next.js deployment
+  - Updated build.sh and start.sh to use correct Next.js commands
+  - Next.js builds successfully and creates proper .next directory
+  - Production server tested and working with Next.js native commands
+  - All deployment files now properly configured for Next.js SSR deployment
+
 ### August 8, 2025 - Deployment Fixes
 - **DEPLOYMENT ISSUES RESOLVED**: Fixed all deployment configuration problems
   - Fixed TypeScript errors in posts.ts (changed `link` to `affiliateLink` properties)
