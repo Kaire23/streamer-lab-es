@@ -18,9 +18,21 @@ const GA_MEASUREMENT_ID = "G-VBXNX2FEBM";
 const RouteChangeTracker = () => {
   const [location] = useLocation();
   useEffect(() => {
-    (window as any).gtag?.('config', GA_MEASUREMENT_ID, {
-      page_path: location,
-    });
+    // Track page views with gtag (Google Analytics 4)
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('config', GA_MEASUREMENT_ID, {
+        page_path: location,
+        page_title: document.title,
+        send_page_view: true
+      });
+      
+      // Also track as a page_view event
+      (window as any).gtag('event', 'page_view', {
+        page_title: document.title,
+        page_location: window.location.href,
+        page_path: location
+      });
+    }
   }, [location]);
   return null;
 };

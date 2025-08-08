@@ -64,6 +64,7 @@ const SEO: React.FC<SEOProps> = ({
       
       {/* Performance and security */}
       <meta httpEquiv="x-dns-prefetch-control" content="on" />
+      <link rel="dns-prefetch" href="//www.googletagmanager.com" />
       <link rel="dns-prefetch" href="//www.google-analytics.com" />
       <link rel="dns-prefetch" href="//fonts.googleapis.com" />
       <link rel="preconnect" href="//www.amazon.es" />
