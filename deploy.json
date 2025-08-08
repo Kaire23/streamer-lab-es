@@ -1,35 +1,29 @@
 {
-  "name": "YoStreamer Next.js App",
+  "name": "yostreamer-nextjs-app",
   "description": "Next.js SSR application for streaming equipment guides",
-  "framework": "nextjs",
-  "buildCommand": "./build.sh",
-  "startCommand": "./start.sh",
-  "alternativeCommands": {
-    "build": [
-      "./build.sh",
-      "npx next build",
-      "node next-build.cjs"
-    ],
-    "start": [
-      "./start.sh",
-      "npx next start --port $PORT",
-      "node next-start.cjs",
-      "node next-deploy.js"
-    ]
+  "type": "nodejs",
+  "build": {
+    "command": "node next-build.cjs",
+    "env": {
+      "NODE_ENV": "production"
+    }
   },
-  "expectedOutput": {
-    "buildDirectory": ".next",
-    "staticFiles": "public",
-    "serverFiles": ".next/server"
+  "start": {
+    "command": "node next-start.cjs",
+    "env": {
+      "NODE_ENV": "production",
+      "PORT": "${PORT:-5000}"
+    }
   },
-  "environment": {
-    "NODE_ENV": "production",
-    "PORT": "5000"
+  "requirements": {
+    "node": ">=18.0.0",
+    "directories": [".next"],
+    "files": ["next.config.js", "package.json"]
   },
   "notes": [
-    "This is a Next.js application, NOT a Vite application",
-    "The package.json scripts contain legacy Vite commands - do not use them",
-    "Use the shell scripts or alternative Node.js scripts for proper deployment",
-    "The .next directory contains the production build, not dist directory"
+    "This is a Next.js SSR application",
+    "Build creates .next directory with optimized production assets",
+    "Start command uses Next.js native production server",
+    "No custom server wrapper - uses Next.js directly"
   ]
 }

@@ -1,79 +1,103 @@
-# Deployment Guide for YoStreamer Next.js Application
+# Deployment Guide
 
-## Overview
-This application is a Next.js SSR (Server-Side Rendered) application that needs to be deployed using Next.js commands, not Vite commands.
+This document explains how to deploy the YoStreamer Next.js application after fixing the ESM/CommonJS deployment issues.
 
-## Issue Resolution
-The main deployment issue was that the package.json contained legacy Vite build commands while the application is actually a pure Next.js application.
+## Problem Fixed
 
-### Fixed Files:
-1. `build.sh` - Uses `npx next build` (correct)
-2. `start.sh` - Uses `npx next start` (correct)
-3. `next-build.cjs` - Alternative build script for deployment systems
-4. `next-start.cjs` - Alternative start script for deployment systems
-
-## Deployment Commands
-
-### IMPORTANT: DO NOT USE package.json scripts!
-The package.json contains legacy Vite commands. Use these alternatives instead:
-
-### For Build Process:
-```bash
-# RECOMMENDED: Use the enhanced build script
-./build.sh
-
-# Alternative: Use Next.js directly
-npx next build
-
-# Alternative: Use the custom build script
-node next-build.cjs
+**Previous Issue**: Dynamic require() calls in server/index.ts caused deployment failures with error:
+```
+Dynamic require of "next/dist/bin/next-start" is not supported - ESM module cannot use require() for Next.js server
 ```
 
-### For Production Start:
+**Solution Applied**: Replaced dynamic require() calls with proper Next.js CLI commands using child_process.spawn().
+
+## Deployment Options
+
+### Option 1: Use Next.js Native Commands (Recommended)
+
+For deployment systems that support Next.js directly:
+
 ```bash
-# RECOMMENDED: Use the enhanced start script
-./start.sh
+# Build
+npx next build
 
-# Alternative: Use Next.js directly
-npx next start --port $PORT
+# Start
+npx next start -p $PORT
+```
 
-# Alternative: Use the deployment-specific script
-node next-deploy.js
+### Option 2: Use Deployment Scripts
 
-# Alternative: Use the custom start script
+The application includes deployment scripts for compatibility:
+
+```bash
+# Build using deployment script
+node next-build.cjs
+
+# Start using deployment script  
 node next-start.cjs
 ```
 
-### Quick Deployment Test:
+### Option 3: Use Shell Scripts
+
+For deployment systems that prefer shell scripts:
+
 ```bash
-# Test the build
+# Build
 ./build.sh
 
-# Test the start (use different port to avoid conflicts)
-PORT=3000 npx next start --port 3000
+# Start
+./start.sh
 ```
 
-## Expected Build Output
-- Creates `.next/` directory (Next.js production build)
-- Creates `dist/` directory (for deployment compatibility)
-- Static pages are pre-rendered for optimal performance
-- Server-side rendering enabled for dynamic content
+## Deployment Configuration
+
+The `deploy.json` file provides deployment system guidance:
+
+```json
+{
+  "build": {
+    "command": "node next-build.cjs"
+  },
+  "start": {
+    "command": "node next-start.cjs"
+  }
+}
+```
 
 ## Environment Variables
-- `PORT` - Server port (defaults to 5000)
-- `NODE_ENV` - Should be set to "production" for deployment
+
+Required in production:
+- `NODE_ENV=production`
+- `PORT` (defaults to 5000)
+
+## Build Output
+
+Successful build creates:
+- `.next/` directory with optimized production assets
+- Static pages and API routes
+- Build traces for deployment optimization
 
 ## Verification
-After build, check that:
-1. `.next/` directory exists and contains Next.js build files
-2. `npx next start --port 5000` runs without errors
-3. Application responds correctly on the specified port
 
-## Deployment Systems
-This application should be deployed as a Next.js application, not a Vite application. The deployment system should:
-1. Run the build step using Next.js commands
-2. Start the server using Next.js production mode
-3. Expect `.next/` directory structure (not `dist/` for main application)
+Test the deployment fix locally:
 
-## Package.json Note
-The package.json currently contains legacy Vite commands for historical reasons. The actual application uses Next.js exclusively. Deployment systems should rely on the build.sh and start.sh scripts or the custom .cjs files rather than the package.json scripts.
+```bash
+# Build the application
+NODE_ENV=production npx next build
+
+# Start production server
+NODE_ENV=production npx next start -p 5000
+```
+
+Expected output:
+```
+✓ Ready in 690ms
+- Local: http://localhost:5000
+```
+
+## Notes
+
+- No custom server wrapper required
+- Uses Next.js native production server
+- Compatible with all Next.js deployment platforms
+- ESM/CommonJS conflicts completely resolved

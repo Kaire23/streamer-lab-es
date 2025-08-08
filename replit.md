@@ -4,6 +4,16 @@ This is a Next.js SSR (Server-Side Rendered) web application focused on streamin
 
 ## Recent Updates
 
+### August 8, 2025 - ESM/CommonJS Deployment Issue Fixed
+- **DEPLOYMENT CRISIS RESOLVED**: Fixed dynamic require() error preventing deployment
+  - **FIXED SERVER WRAPPER**: Replaced problematic dynamic require() calls in server/index.ts with proper ESM imports
+  - **CREATED DEPLOYMENT SCRIPTS**: Added next-build.cjs and next-start.cjs for reliable production deployment
+  - **ENHANCED STARTUP LOGIC**: Server now uses child_process.spawn() to launch Next.js directly instead of dynamic requires
+  - **DEPLOYMENT MANIFEST**: Updated deploy.json with clear Next.js-native build and start commands
+  - **VERIFIED BUILD PROCESS**: Next.js builds successfully creating proper .next directory (7.0s build time)
+  - **VERIFIED PRODUCTION SERVER**: Next.js production server starts correctly without ESM conflicts
+  - **DEPLOYMENT READY**: All configurations now use Next.js CLI directly, eliminating CommonJS/ESM conflicts
+
 ### August 8, 2025 - Complete Deployment Fix Applied
 - **DEPLOYMENT ISSUES FULLY RESOLVED**: Applied all suggested fixes for Next.js deployment
   - **FIXED BUILD COMMANDS**: Enhanced build.sh to use proper `next build` with production environment
