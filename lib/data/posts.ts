@@ -68,30 +68,30 @@ export const posts: Post[] = [
       {
         name: "Cámara",
         items: [
-          { name: "Sony Alpha (A7 III/A7S III)", link: amazonSearchUrl("Sony A7 III"), note: "Calidad full-frame" },
-          { name: "Objetivo 24-70mm", link: amazonSearchUrl("objetivo 24-70mm full frame"), note: "Versatilidad en plano" },
-          { name: "Capturadora HDMI", link: amazonSearchUrl("capturadora HDMI 4K"), note: "Entrada limpia a OBS" },
+          { name: "Sony Alpha (A7 III/A7S III)", affiliateLink: amazonSearchUrl("Sony A7 III"), note: "Calidad full-frame" },
+          { name: "Objetivo 24-70mm", affiliateLink: amazonSearchUrl("objetivo 24-70mm full frame"), note: "Versatilidad en plano" },
+          { name: "Capturadora HDMI", affiliateLink: amazonSearchUrl("capturadora HDMI 4K"), note: "Entrada limpia a OBS" },
         ],
       },
       {
         name: "Iluminación",
         items: [
-          { name: "Elgato Key Light", link: amazonSearchUrl("Elgato Key Light"), note: "Iluminación uniforme" },
-          { name: "Luz de relleno RGB", link: amazonSearchUrl("luz RGB streaming"), note: "Ambiente y profundidad" },
+          { name: "Elgato Key Light", affiliateLink: amazonSearchUrl("Elgato Key Light"), note: "Iluminación uniforme" },
+          { name: "Luz de relleno RGB", affiliateLink: amazonSearchUrl("luz RGB streaming"), note: "Ambiente y profundidad" },
         ],
       },
       {
         name: "Periféricos",
         items: [
-          { name: "Stream Deck", link: amazonSearchUrl("Elgato Stream Deck"), note: "Accesos directos en directo" },
-          { name: "Auriculares cerrados", link: amazonSearchUrl("auriculares cerrados estudio"), note: "Monitoreo sin fugas" },
+          { name: "Stream Deck", affiliateLink: amazonSearchUrl("Elgato Stream Deck"), note: "Accesos directos en directo" },
+          { name: "Auriculares cerrados", affiliateLink: amazonSearchUrl("auriculares cerrados estudio"), note: "Monitoreo sin fugas" },
         ],
       },
       {
         name: "PC",
         items: [
-          { name: "RTX Serie 40", link: amazonSearchUrl("RTX 4070 4080 4090"), note: "Rendimiento en juegos y codificación" },
-          { name: "CPU alto rendimiento", link: amazonSearchUrl("Intel i7 i9 Ryzen 7 9"), note: "Multitarea fluida" },
+          { name: "RTX Serie 40", affiliateLink: amazonSearchUrl("RTX 4070 4080 4090"), note: "Rendimiento en juegos y codificación" },
+          { name: "CPU alto rendimiento", affiliateLink: amazonSearchUrl("Intel i7 i9 Ryzen 7 9"), note: "Multitarea fluida" },
         ],
       },
     ],
@@ -123,29 +123,29 @@ export const posts: Post[] = [
       {
         name: "Audio",
         items: [
-          { name: "Shure SM7B o MV7", link: amazonSearchUrl("Shure SM7B MV7"), note: "Voces con cuerpo y rechazo de ruido" },
-          { name: "Interfaz con preamplificación", link: amazonSearchUrl("GoXLR Mini Focusrite"), note: "Preamp limpio y control" },
+          { name: "Shure SM7B o MV7", affiliateLink: amazonSearchUrl("Shure SM7B MV7"), note: "Voces con cuerpo y rechazo de ruido" },
+          { name: "Interfaz con preamplificación", affiliateLink: amazonSearchUrl("GoXLR Mini Focusrite"), note: "Preamp limpio y control" },
         ],
       },
       {
         name: "Cámara",
         items: [
-          { name: "Sony/Canon con salida limpia", link: amazonSearchUrl("cámara mirrorless salida limpia"), note: "Imagen clara y nítida" },
-          { name: "Capturadora 4K", link: amazonSearchUrl("capturadora 4K"), note: "Señal estable" },
+          { name: "Sony/Canon con salida limpia", affiliateLink: amazonSearchUrl("cámara mirrorless salida limpia"), note: "Imagen clara y nítida" },
+          { name: "Capturadora 4K", affiliateLink: amazonSearchUrl("capturadora 4K"), note: "Señal estable" },
         ],
       },
       {
         name: "Iluminación",
         items: [
-          { name: "Panel key light", link: amazonSearchUrl("panel luz led key light"), note: "Tonos piel naturales" },
-          { name: "Luces RGB decorativas", link: amazonSearchUrl("paneles RGB pared"), note: "Fondo con personalidad" },
+          { name: "Panel key light", affiliateLink: amazonSearchUrl("panel luz led key light"), note: "Tonos piel naturales" },
+          { name: "Luces RGB decorativas", affiliateLink: amazonSearchUrl("paneles RGB pared"), note: "Fondo con personalidad" },
         ],
       },
       {
         name: "Extras",
         items: [
-          { name: "Stream Deck XL", link: amazonSearchUrl("Stream Deck XL"), note: "Máximo control" },
-          { name: "Brazo articulado premium", link: amazonSearchUrl("brazo micrófono premium"), note: "Posicionamiento preciso" },
+          { name: "Stream Deck XL", affiliateLink: amazonSearchUrl("Stream Deck XL"), note: "Máximo control" },
+          { name: "Brazo articulado premium", affiliateLink: amazonSearchUrl("brazo micrófono premium"), note: "Posicionamiento preciso" },
         ],
       },
     ],
@@ -177,22 +177,22 @@ export const posts: Post[] = [
       {
         name: "Audio",
         items: [
-          { name: "Shure SM7B", link: amazonSearchUrl("Shure SM7B"), note: "Estándar en streaming" },
-          { name: "Interfaz USB confiable", link: amazonSearchUrl("Focusrite Solo 3rd Gen"), note: "Setup simple y estable" },
+          { name: "Shure SM7B", affiliateLink: amazonSearchUrl("Shure SM7B"), note: "Estándar en streaming" },
+          { name: "Interfaz USB confiable", affiliateLink: amazonSearchUrl("Focusrite Solo 3rd Gen"), note: "Setup simple y estable" },
         ],
       },
       {
         name: "Cámara",
         items: [
-          { name: "Sony A6400/A7C", link: amazonSearchUrl("Sony A6400 A7C"), note: "Autofoco rápido" },
-          { name: "Objetivo 16-50mm/24-70mm", link: amazonSearchUrl("objetivo 16-50 24-70"), note: "Planos versátiles" },
+          { name: "Sony A6400/A7C", affiliateLink: amazonSearchUrl("Sony A6400 A7C"), note: "Autofoco rápido" },
+          { name: "Objetivo 16-50mm/24-70mm", affiliateLink: amazonSearchUrl("objetivo 16-50 24-70"), note: "Planos versátiles" },
         ],
       },
       {
         name: "Iluminación",
         items: [
-          { name: "Elgato Key Light Air", link: amazonSearchUrl("Elgato Key Light Air"), note: "Compacto y eficaz" },
-          { name: "Luz trasera cálida", link: amazonSearchUrl("luz ambiente cálida"), note: "Profundidad de campo" },
+          { name: "Elgato Key Light Air", affiliateLink: amazonSearchUrl("Elgato Key Light Air"), note: "Compacto y eficaz" },
+          { name: "Luz trasera cálida", affiliateLink: amazonSearchUrl("luz ambiente cálida"), note: "Profundidad de campo" },
         ],
       },
     ],
@@ -224,29 +224,29 @@ export const posts: Post[] = [
       {
         name: "Audio",
         items: [
-          { name: "Shure SM7B/MV7", link: amazonSearchUrl("Shure SM7B MV7"), note: "Audio con pegada" },
-          { name: "Mezclador streaming", link: amazonSearchUrl("GoXLR"), note: "Efectos y routing" },
+          { name: "Shure SM7B/MV7", affiliateLink: amazonSearchUrl("Shure SM7B MV7"), note: "Audio con pegada" },
+          { name: "Mezclador streaming", affiliateLink: amazonSearchUrl("GoXLR"), note: "Efectos y routing" },
         ],
       },
       {
         name: "Cámara",
         items: [
-          { name: "Mirrorless 4K", link: amazonSearchUrl("mirrorless 4K streaming"), note: "Nitidez y rango dinámico" },
-          { name: "Capturadora 4K30", link: amazonSearchUrl("capturadora 4K 30fps"), note: "Compatibilidad OBS" },
+          { name: "Mirrorless 4K", affiliateLink: amazonSearchUrl("mirrorless 4K streaming"), note: "Nitidez y rango dinámico" },
+          { name: "Capturadora 4K30", affiliateLink: amazonSearchUrl("capturadora 4K 30fps"), note: "Compatibilidad OBS" },
         ],
       },
       {
         name: "Iluminación",
         items: [
-          { name: "Key light potente", link: amazonSearchUrl("key light led potente"), note: "Evitar sombras" },
-          { name: "Paneles RGB pared", link: amazonSearchUrl("paneles RGB nanoleaf"), note: "Fondo llamativo" },
+          { name: "Key light potente", affiliateLink: amazonSearchUrl("key light led potente"), note: "Evitar sombras" },
+          { name: "Paneles RGB pared", affiliateLink: amazonSearchUrl("paneles RGB nanoleaf"), note: "Fondo llamativo" },
         ],
       },
       {
         name: "PC",
         items: [
-          { name: "RTX 4080/4090", link: amazonSearchUrl("RTX 4080 4090"), note: "Sobrado para gaming 4K" },
-          { name: "CPU tope de gama", link: amazonSearchUrl("Intel i9 Ryzen 9"), note: "Codificación + juego" },
+          { name: "RTX 4080/4090", affiliateLink: amazonSearchUrl("RTX 4080 4090"), note: "Sobrado para gaming 4K" },
+          { name: "CPU tope de gama", affiliateLink: amazonSearchUrl("Intel i9 Ryzen 9"), note: "Codificación + juego" },
         ],
       },
     ],
@@ -278,28 +278,28 @@ export const posts: Post[] = [
       {
         name: "Audio",
         items: [
-          { name: "Shure SM7B / Rode PodMic", link: amazonSearchUrl("Shure SM7B Rode PodMic"), note: "Dinamismo y nitidez" },
-          { name: "Interfaz USB con buen preamp", link: amazonSearchUrl("interfaz audio USB preamp"), note: "Ganancia suficiente" },
+          { name: "Shure SM7B / Rode PodMic", affiliateLink: amazonSearchUrl("Shure SM7B Rode PodMic"), note: "Dinamismo y nitidez" },
+          { name: "Interfaz USB con buen preamp", affiliateLink: amazonSearchUrl("interfaz audio USB preamp"), note: "Ganancia suficiente" },
         ],
       },
       {
         name: "Cámara",
         items: [
-          { name: "Mirrorless APS-C/Full-frame", link: amazonSearchUrl("cámara mirrorless streaming"), note: "Buen rendimiento con poca luz" },
-          { name: "Objetivo luminoso (f/1.8)", link: amazonSearchUrl("objetivo 35mm 50mm 1.8"), note: "Desenfoque agradable" },
+          { name: "Mirrorless APS-C/Full-frame", affiliateLink: amazonSearchUrl("cámara mirrorless streaming"), note: "Buen rendimiento con poca luz" },
+          { name: "Objetivo luminoso (f/1.8)", affiliateLink: amazonSearchUrl("objetivo 35mm 50mm 1.8"), note: "Desenfoque agradable" },
         ],
       },
       {
         name: "Iluminación",
         items: [
-          { name: "Key light + relleno RGB", link: amazonSearchUrl("key light relleno rgb"), note: "Volumen y separación" },
+          { name: "Key light + relleno RGB", affiliateLink: amazonSearchUrl("key light relleno rgb"), note: "Volumen y separación" },
         ],
       },
       {
         name: "Periféricos",
         items: [
-          { name: "Teclado mecánico", link: amazonSearchUrl("teclado mecánico"), note: "Respuesta rápida" },
-          { name: "Ratón gaming", link: amazonSearchUrl("ratón gaming"), note: "Precisión" },
+          { name: "Teclado mecánico", affiliateLink: amazonSearchUrl("teclado mecánico"), note: "Respuesta rápida" },
+          { name: "Ratón gaming", affiliateLink: amazonSearchUrl("ratón gaming"), note: "Precisión" },
         ],
       },
     ],

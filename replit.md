@@ -2,7 +2,18 @@
 
 This is a Next.js SSR (Server-Side Rendered) web application focused on streaming equipment setups for Spanish-speaking content creators. The application serves as a content hub that showcases detailed guides about popular streamers' equipment, including their microphones, cameras, lighting, and other hardware. Built with Next.js for optimal SEO and performance, featuring server-side rendered content about streaming setups with affiliate marketing integration.
 
-## Recent Updates (January 10, 2025)
+## Recent Updates
+
+### August 8, 2025 - Deployment Fixes
+- **DEPLOYMENT ISSUES RESOLVED**: Fixed all deployment configuration problems
+  - Fixed TypeScript errors in posts.ts (changed `link` to `affiliateLink` properties)
+  - Fixed Next.js config warnings (removed deprecated `swcMinify` option) 
+  - Fixed SEO meta tag compatibility in _app.tsx (`content-language` → `language`)
+  - Updated server files to handle both development and production modes
+  - Next.js builds successfully and ready for deployment
+  - Production server tested and working (HTTP 200 response)
+
+### January 10, 2025
 - **MAJOR ARCHITECTURE CHANGE**: Migrated from Vite + Express + SSG to Next.js SSR
   - Removed all static site generation (prerender.js, generate-static.js)
   - Implemented Next.js pages with server-side rendering

@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             content: 'width=device-width, initial-scale=1.0, maximum-scale=1',
           },
           {
-            httpEquiv: 'content-language',
+            name: 'language',
             content: 'es',
           },
         ]}

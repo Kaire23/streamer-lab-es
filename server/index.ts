@@ -1,8 +1,16 @@
 #!/usr/bin/env node
 import { exec } from 'child_process';
 
-// Launch Next.js dev server
-const child = exec('npx next dev --port 5000', (error, stdout, stderr) => {
+const isDevelopment = process.env.NODE_ENV !== 'production';
+
+// Launch Next.js server (dev or production)
+const command = isDevelopment 
+  ? 'npx next dev --port 5000' 
+  : 'npx next start --port 5000';
+
+console.log(`Starting Next.js SSR server in ${isDevelopment ? 'development' : 'production'} mode on port 5000...`);
+
+const child = exec(command, (error, stdout, stderr) => {
   if (error) {
     console.error(`Error: ${error}`);
     return;
@@ -27,4 +35,6 @@ process.on('SIGTERM', () => {
   process.exit();
 });
 
-console.log('Starting Next.js SSR server on port 5000...');
+process.on('exit', () => {
+  child.kill();
+});
