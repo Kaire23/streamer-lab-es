@@ -1,24 +1,25 @@
 # Overview
 
-This is a React-based web application focused on streaming equipment setups for Spanish-speaking content creators. The application serves as a content hub that showcases detailed guides about popular streamers' equipment, including their microphones, cameras, lighting, and other hardware. It's built as a Single Page Application (SPA) with SEO optimization in mind, featuring static content about streaming setups with affiliate marketing integration.
+This is a Next.js SSR (Server-Side Rendered) web application focused on streaming equipment setups for Spanish-speaking content creators. The application serves as a content hub that showcases detailed guides about popular streamers' equipment, including their microphones, cameras, lighting, and other hardware. Built with Next.js for optimal SEO and performance, featuring server-side rendered content about streaming setups with affiliate marketing integration.
 
 ## Recent Updates (January 10, 2025)
-- **Routing Migration**: Successfully migrated from react-router-dom to wouter for client-side routing
-- **Complete SEO Overhaul**: Fixed all critical SEO issues identified in audit
-  - Added comprehensive meta tags (Open Graph, Twitter Cards, canonical URLs)
-  - Implemented noscript fallback for JavaScript-disabled crawlers
-  - Enhanced robots.txt with crawl directives and bot management
-  - Improved sitemap.xml with priority and changefreq attributes
-  - Added manifest.json for PWA support
-  - Implemented structured data (Schema.org) for all pages
-- **Performance Optimizations**: 
-  - Added image dimensions for better CLS scores
-  - Implemented lazy loading and intersection observer
-  - Added preconnect and prefetch for critical resources
-  - Created PerformanceOptimizer component for runtime optimizations
-- **Image Updates**: Replaced all streamer images with new high-quality photos
-- **SEO Keywords**: Enhanced all posts with comprehensive, targeted keywords
-- **Development Environment**: Fully functional on Replit with hot reloading
+- **MAJOR ARCHITECTURE CHANGE**: Migrated from Vite + Express + SSG to Next.js SSR
+  - Removed all static site generation (prerender.js, generate-static.js)
+  - Implemented Next.js pages with server-side rendering
+  - All SEO metadata now handled through Next.js and next-seo
+  - Removed Vite, Express server, and wouter routing
+- **Complete SEO Implementation with Next.js**: 
+  - Server-side rendered pages for perfect SEO
+  - Dynamic meta tags through next-seo
+  - Structured data (JSON-LD) on all pages
+  - Proper canonical URLs with trailing slashes
+  - OpenGraph and Twitter Cards
+- **Performance**: Using Next.js built-in optimizations
+  - Automatic code splitting
+  - Image optimization with next/image
+  - Server-side rendering for instant content
+- **Image Updates**: All streamer images served from public/images
+- **Development Environment**: Next.js dev server on port 5000
 
 # User Preferences
 
@@ -27,17 +28,17 @@ Preferred communication style: Simple, everyday language.
 # System Architecture
 
 ## Frontend Architecture
-- **Framework**: React 18 with TypeScript
-- **Routing**: Wouter for client-side routing with routes for home (`/`), post pages (`/post/:slug`), and setup pages (`/setup/:slug`)
-- **Styling**: Tailwind CSS with shadcn/ui component library for consistent design system
-- **State Management**: TanStack Query for server state and React hooks for local state
-- **Build Tool**: Vite with custom configuration for development and production builds
+- **Framework**: Next.js 14 with React 18 and TypeScript
+- **Routing**: Next.js file-based routing with pages for home (`/`), and setup pages (`/setup/[slug]`)
+- **Styling**: Tailwind CSS with CSS Modules for component-specific styles
+- **SEO**: next-seo for meta tags management and server-side rendering for optimal search engine visibility
+- **Build Tool**: Next.js built-in webpack configuration with SWC for fast compilation
 
 ## Backend Architecture
-- **Server**: Express.js with TypeScript
-- **API Structure**: RESTful API with `/api` prefix for all endpoints
-- **Development Mode**: Vite middleware integration for hot reloading and development server
-- **Production**: Static file serving with Express for the built React application
+- **Server**: Next.js built-in Node.js server with SSR capabilities
+- **Rendering**: Server-side rendering (SSR) with getServerSideProps for dynamic content
+- **Development Mode**: Next.js dev server with hot module replacement
+- **Production**: Next.js production server with optimized SSR and caching
 
 ## Data Storage
 - **ORM**: Drizzle ORM with PostgreSQL dialect
