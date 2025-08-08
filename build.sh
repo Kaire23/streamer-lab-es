@@ -1,35 +1,37 @@
 #!/bin/bash
-# Build script for Next.js deployment
-echo "Building Next.js application..."
+
+# Enhanced Next.js production build script
+# Implements all suggested deployment fixes
+
+echo "🚀 Starting Next.js production build..."
 
 # Set production environment
 export NODE_ENV=production
+export PORT=5000
 
-# Clean any previous builds
-if [ -d ".next" ]; then
-    echo "Cleaning previous build..."
-    rm -rf .next
-fi
+# Clean previous builds
+echo "🧹 Cleaning previous builds..."
+rm -rf .next/
+rm -rf out/
 
-# Build the actual Next.js application
-echo "Running Next.js build..."
+# Update browserslist data to avoid warnings
+echo "📋 Updating browser data..."
+npx update-browserslist-db@latest
+
+# Run Next.js native build command 
+echo "🔨 Building Next.js application..."
 npx next build
 
-# Verify the build was successful
-if [ -d ".next" ]; then
-    echo "✅ Next.js build successful - .next directory created"
-    echo "Build output structure:"
-    ls -la .next
-    
-    # Create a minimal dist directory structure to satisfy deployment requirements
-    # This maintains compatibility with deployment systems that expect a dist folder
-    mkdir -p dist
-    echo '<!DOCTYPE html><html><head><title>YoStreamer - Built with Next.js</title><meta name="description" content="Next.js application - use npx next start to run"></head><body><div id="root"></div><script>window.location.href="/"</script></body></html>' > dist/index.html
-    
+# Verify build success
+if [ -f ".next/BUILD_ID" ]; then
+    BUILD_ID=$(cat .next/BUILD_ID)
     echo "✅ Build completed successfully!"
-    echo "✅ Next.js application ready for deployment"
-    echo "To start: npx next start --port \$PORT"
+    echo "📦 Build ID: $BUILD_ID"
+    echo "📁 Production files created in .next directory"
+    ls -la .next/ | head -5
 else
-    echo "❌ ERROR: Next.js build failed - .next directory not found"
+    echo "❌ Build failed - .next/BUILD_ID not found"
     exit 1
 fi
+
+echo "🎉 Next.js production build ready for deployment!"
