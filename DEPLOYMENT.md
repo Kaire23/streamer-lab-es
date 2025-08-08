@@ -2,14 +2,20 @@
 
 This document explains how to deploy the YoStreamer Next.js application after fixing the ESM/CommonJS deployment issues.
 
-## Problem Fixed
+## Problems Fixed
 
-**Previous Issue**: Dynamic require() calls in server/index.ts caused deployment failures with error:
+**Previous Issues**: 
+1. Dynamic require() calls in server/index.ts caused deployment failures with error:
 ```
 Dynamic require of "next/dist/bin/next-start" is not supported - ESM module cannot use require() for Next.js server
 ```
+2. Legacy Vite dependencies and conflicting build scripts in package.json
 
-**Solution Applied**: Replaced dynamic require() calls with proper Next.js CLI commands using child_process.spawn().
+**Solutions Applied**: 
+1. Replaced dynamic require() calls with proper Next.js CLI commands using child_process.spawn()
+2. Removed all legacy Vite dependencies and Express server components
+3. Cleaned up package.json by removing conflicting build tools (vite, esbuild, express, wouter, etc.)
+4. Updated project to be pure Next.js SSR application without legacy dependencies
 
 ## Deployment Options
 

@@ -4,7 +4,7 @@ This is a Next.js SSR (Server-Side Rendered) web application focused on streamin
 
 ## Recent Updates
 
-### August 8, 2025 - ESM/CommonJS Deployment Issue Fixed
+### August 8, 2025 - ESM/CommonJS Deployment Issue Fixed + Legacy Cleanup
 - **DEPLOYMENT CRISIS RESOLVED**: Fixed dynamic require() error preventing deployment
   - **FIXED SERVER WRAPPER**: Replaced problematic dynamic require() calls in server/index.ts with proper ESM imports
   - **CREATED DEPLOYMENT SCRIPTS**: Added next-build.cjs and next-start.cjs for reliable production deployment
@@ -13,6 +13,13 @@ This is a Next.js SSR (Server-Side Rendered) web application focused on streamin
   - **VERIFIED BUILD PROCESS**: Next.js builds successfully creating proper .next directory (7.0s build time)
   - **VERIFIED PRODUCTION SERVER**: Next.js production server starts correctly without ESM conflicts
   - **DEPLOYMENT READY**: All configurations now use Next.js CLI directly, eliminating CommonJS/ESM conflicts
+- **LEGACY VITE CLEANUP COMPLETED**: Removed all remaining Vite dependencies and configurations
+  - **REMOVED VITE PACKAGES**: Uninstalled vite, @vitejs/plugin-react, vite-plugin-prerender
+  - **REMOVED REPLIT VITE PLUGINS**: Uninstalled @replit/vite-plugin-cartographer, @replit/vite-plugin-runtime-error-modal
+  - **REMOVED EXPRESS LEGACY**: Uninstalled express, express-session, wouter, react-router-dom dependencies
+  - **REMOVED AUTH LEGACY**: Uninstalled passport, passport-local, connect-pg-simple, memorystore
+  - **REMOVED BUILD TOOLS**: Uninstalled esbuild, ws, react-helmet-async (replaced by next-seo)
+  - **PURE NEXT.JS STACK**: Project now contains only Next.js-compatible dependencies
 
 ### August 8, 2025 - Complete Deployment Fix Applied
 - **DEPLOYMENT ISSUES FULLY RESOLVED**: Applied all suggested fixes for Next.js deployment
@@ -120,8 +127,9 @@ Preferred communication style: Simple, everyday language.
 - **SEO Optimization**: Server-side rendering considerations with proper meta tags and structured data
 
 ## Performance Considerations
-- **Code Splitting**: Vite's automatic code splitting for optimized bundle sizes
-- **Asset Optimization**: Image optimization and lazy loading strategies
+- **Code Splitting**: Next.js automatic code splitting for optimized bundle sizes
+- **Asset Optimization**: Next.js Image component with automatic optimization and lazy loading
+- **SSR Performance**: Server-side rendering for instant content delivery
 - **Analytics Integration**: Google Analytics 4 with route change tracking
 
 # External Dependencies
@@ -138,17 +146,17 @@ Preferred communication style: Simple, everyday language.
 - **Drizzle Kit**: Database migration and schema management tools
 
 ## Development and Build Tools
-- **Vite**: Modern build tool with hot module replacement and optimized builds
+- **Next.js**: Modern React framework with built-in SSR, routing, and optimized builds
 - **TypeScript**: Static type checking and enhanced developer experience
-- **ESBuild**: Fast JavaScript bundler for production builds
+- **SWC**: Fast Rust-based JavaScript/TypeScript compiler used by Next.js
 
 ## Analytics and SEO
 - **Google Analytics**: Web analytics for tracking user behavior and site performance
-- **React Helmet Async**: Document head management for SEO meta tags
+- **Next SEO**: Document head management for SEO meta tags (replaced React Helmet Async)
 - **Structured Data**: JSON-LD implementation for rich search results
 
 ## Content and Routing
-- **Wouter**: Lightweight client-side routing library
+- **Next.js Router**: Built-in file-based routing system (replaced Wouter)
 - **TanStack Query**: Server state management and caching
 - **Date-fns**: Date manipulation and formatting utilities
 
