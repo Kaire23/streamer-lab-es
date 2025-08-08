@@ -3,6 +3,11 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // SEO redirects: redirect legacy /post/ URLs to canonical /setup/ URLs
+  app.get('/post/:slug', (req, res) => {
+    res.redirect(301, `/setup/${req.params.slug}`);
+  });
+
   // put application routes here
   // prefix all routes with /api
 

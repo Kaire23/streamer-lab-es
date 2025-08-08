@@ -4,7 +4,7 @@
 
 This is a full-stack web application for a Spanish streaming equipment guide website called "Setups de Streamers". The application provides detailed guides about popular streamers' equipment setups, including hardware specifications, affiliate product links, and technical recommendations. It's built as a content-focused site with SEO optimization for the Spanish-speaking streaming community.
 
-**Migration Status**: Successfully migrated from Lovable to Replit on January 8, 2025. All functionality working, SEO improvements implemented, and streamer images updated with optimized alt tags and structured data.
+**Migration Status**: Successfully migrated from Lovable to Replit on January 8, 2025. All functionality working, SEO improvements implemented, streamer images updated with optimized alt tags and structured data, and canonical URL issues resolved with proper 301 redirects.
 
 ## User Preferences
 
@@ -27,6 +27,7 @@ Preferred communication style: Simple, everyday language.
 - **Database ORM**: Drizzle ORM configured for PostgreSQL
 - **Session Storage**: connect-pg-simple for PostgreSQL session storage
 - **Storage Interface**: Abstract storage layer with in-memory implementation for development
+- **SEO Redirects**: 301 redirects from legacy `/post/` URLs to canonical `/setup/` URLs
 
 ### Data Storage Solutions
 - **Primary Database**: PostgreSQL via Neon serverless

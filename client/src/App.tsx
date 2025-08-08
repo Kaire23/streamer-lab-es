@@ -48,7 +48,6 @@ const App = () => (
             <RouteChangeTracker />
             <Layout>
               <Route path="/" component={Index} />
-              <Route path="/post/:slug" component={PostPage} />
               <Route path="/setup/:slug" component={PostPage} />
               <Route path="/:rest*" component={NotFound} />
             </Layout>
