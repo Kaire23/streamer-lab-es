@@ -2,6 +2,12 @@
 
 This is a React-based web application focused on streaming equipment setups for Spanish-speaking content creators. The application serves as a content hub that showcases detailed guides about popular streamers' equipment, including their microphones, cameras, lighting, and other hardware. It's built as a Single Page Application (SPA) with SEO optimization in mind, featuring static content about streaming setups with affiliate marketing integration.
 
+## Recent Migration Updates (January 2025)
+- **Routing Migration**: Successfully migrated from react-router-dom to wouter for client-side routing
+- **SEO Enhancement**: Implemented absolute URLs for canonical links, Open Graph tags, and JSON-LD structured data using VITE_SITE_URL environment variable
+- **Development Environment**: Fully functional on Replit with hot reloading and development server
+- **Static Generation Preparation**: Added infrastructure for future SSG implementation with route discovery script
+
 # User Preferences
 
 Preferred communication style: Simple, everyday language.

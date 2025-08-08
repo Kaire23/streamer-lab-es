@@ -20,27 +20,27 @@ const PostPage: React.FC = () => {
     );
   }
 
-  const origin = typeof window !== "undefined" ? window.location.origin : "";
+  const siteUrl = import.meta.env.VITE_SITE_URL || (typeof window !== "undefined" ? window.location.origin : "");
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Article",
         headline: post.title,
-        image: origin + post.coverImage,
+        image: new URL(post.coverImage, siteUrl).toString(),
         datePublished: post.date,
         author: {
           "@type": "Person",
           name: post.author,
         },
         keywords: post.keywords.join(", "),
-        mainEntityOfPage: origin + `/setup/${post.slug}`,
+        mainEntityOfPage: new URL(`/setup/${post.slug}`, siteUrl).toString(),
       },
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Inicio", item: origin + "/" },
-          { "@type": "ListItem", position: 2, name: post.title, item: origin + `/setup/${post.slug}` },
+          { "@type": "ListItem", position: 1, name: "Inicio", item: new URL("/", siteUrl).toString() },
+          { "@type": "ListItem", position: 2, name: post.title, item: new URL(`/setup/${post.slug}`, siteUrl).toString() },
         ],
       },
     ],

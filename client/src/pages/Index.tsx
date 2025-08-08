@@ -5,16 +5,17 @@ import { Button } from "@/components/ui/button";
 import AdSlot from "@/components/ads/AdSlot";
 
 const Index: React.FC = () => {
+  const siteUrl = import.meta.env.VITE_SITE_URL || (typeof window !== "undefined" ? window.location.origin : "");
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "WebSite",
         name: "Setups de Streamers",
-        url: typeof window !== "undefined" ? window.location.origin : "",
+        url: siteUrl,
         potentialAction: {
           "@type": "SearchAction",
-          target: "{url}/?q={search_term_string}",
+          target: `${siteUrl}/?q={search_term_string}`,
           "query-input": "required name=search_term_string",
         },
       },
@@ -23,9 +24,7 @@ const Index: React.FC = () => {
         itemListElement: posts.map((p, index) => ({
           "@type": "ListItem",
           position: index + 1,
-          url:
-            (typeof window !== "undefined" ? window.location.origin : "") +
-            `/setup/${p.slug}`,
+          url: new URL(`/setup/${p.slug}`, siteUrl).toString(),
           name: p.title,
         })),
       },

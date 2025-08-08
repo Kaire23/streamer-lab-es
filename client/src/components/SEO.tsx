@@ -20,8 +20,8 @@ const SEO: React.FC<SEOProps> = ({
   jsonLd,
   keywords,
 }) => {
-  const origin = typeof window !== "undefined" ? window.location.origin : "";
-  const canonical = origin + canonicalPath;
+  const siteUrl = import.meta.env.VITE_SITE_URL || (typeof window !== "undefined" ? window.location.origin : "");
+  const canonical = new URL(canonicalPath, siteUrl).toString();
 
   return (
     <Helmet prioritizeSeoTags>
@@ -33,11 +33,11 @@ const SEO: React.FC<SEOProps> = ({
       <meta property="og:type" content={type} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      {image ? <meta property="og:image" content={origin + image} /> : null}
+      {image ? <meta property="og:image" content={new URL(image, siteUrl).toString()} /> : null}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      {image ? <meta name="twitter:image" content={origin + image} /> : null}
+      {image ? <meta name="twitter:image" content={new URL(image, siteUrl).toString()} /> : null}
       {jsonLd ? (
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       ) : null}
