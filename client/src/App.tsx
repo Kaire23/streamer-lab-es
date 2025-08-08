@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { Router, Route, useLocation } from "wouter";
 import { HelmetProvider } from "react-helmet-async";
 import { useEffect } from "react";
 import Layout from "@/components/layout/Layout";
@@ -15,10 +15,10 @@ const queryClient = new QueryClient();
 const GA_MEASUREMENT_ID = "G-VBXNX2FEBM";
 
 const RouteChangeTracker = () => {
-  const location = useLocation();
+  const [location] = useLocation();
   useEffect(() => {
     (window as any).gtag?.('config', GA_MEASUREMENT_ID, {
-      page_path: location.pathname + location.search + location.hash,
+      page_path: location,
     });
   }, [location]);
   return null;
@@ -30,18 +30,15 @@ const App = () => (
       <HelmetProvider>
         <Toaster />
         <Sonner />
-          <BrowserRouter>
-            <RouteChangeTracker />
-            <Layout>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/post/:slug" element={<PostPage />} />
-              <Route path="/setup/:slug" element={<PostPage />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+        <Router>
+          <RouteChangeTracker />
+          <Layout>
+            <Route path="/" component={Index} />
+            <Route path="/post/:slug" component={PostPage} />
+            <Route path="/setup/:slug" component={PostPage} />
+            <Route path="/:rest*" component={NotFound} />
           </Layout>
-        </BrowserRouter>
+        </Router>
       </HelmetProvider>
     </TooltipProvider>
   </QueryClientProvider>
