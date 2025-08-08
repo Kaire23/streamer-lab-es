@@ -1,0 +1,35 @@
+{
+  "name": "YoStreamer Next.js App",
+  "description": "Next.js SSR application for streaming equipment guides",
+  "framework": "nextjs",
+  "buildCommand": "./build.sh",
+  "startCommand": "./start.sh",
+  "alternativeCommands": {
+    "build": [
+      "./build.sh",
+      "npx next build",
+      "node next-build.cjs"
+    ],
+    "start": [
+      "./start.sh",
+      "npx next start --port $PORT",
+      "node next-start.cjs",
+      "node next-deploy.js"
+    ]
+  },
+  "expectedOutput": {
+    "buildDirectory": ".next",
+    "staticFiles": "public",
+    "serverFiles": ".next/server"
+  },
+  "environment": {
+    "NODE_ENV": "production",
+    "PORT": "5000"
+  },
+  "notes": [
+    "This is a Next.js application, NOT a Vite application",
+    "The package.json scripts contain legacy Vite commands - do not use them",
+    "Use the shell scripts or alternative Node.js scripts for proper deployment",
+    "The .next directory contains the production build, not dist directory"
+  ]
+}

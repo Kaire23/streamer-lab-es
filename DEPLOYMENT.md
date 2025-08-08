@@ -14,28 +14,43 @@ The main deployment issue was that the package.json contained legacy Vite build 
 
 ## Deployment Commands
 
+### IMPORTANT: DO NOT USE package.json scripts!
+The package.json contains legacy Vite commands. Use these alternatives instead:
+
 ### For Build Process:
 ```bash
-# Option 1: Use the build script
+# RECOMMENDED: Use the enhanced build script
 ./build.sh
 
-# Option 2: Use Next.js directly
+# Alternative: Use Next.js directly
 npx next build
 
-# Option 3: Use the custom build script
+# Alternative: Use the custom build script
 node next-build.cjs
 ```
 
 ### For Production Start:
 ```bash
-# Option 1: Use the start script
+# RECOMMENDED: Use the enhanced start script
 ./start.sh
 
-# Option 2: Use Next.js directly
+# Alternative: Use Next.js directly
 npx next start --port $PORT
 
-# Option 3: Use the custom start script
+# Alternative: Use the deployment-specific script
+node next-deploy.js
+
+# Alternative: Use the custom start script
 node next-start.cjs
+```
+
+### Quick Deployment Test:
+```bash
+# Test the build
+./build.sh
+
+# Test the start (use different port to avoid conflicts)
+PORT=3000 npx next start --port 3000
 ```
 
 ## Expected Build Output

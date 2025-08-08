@@ -78,15 +78,15 @@
   "dataRoutes": [
     {
       "page": "/",
-      "dataRouteRegex": "^/_next/data/MrAygj1_UfNVQOzY9sSy_/index\\.json$"
+      "dataRouteRegex": "^/_next/data/xLQZ1bIJi4BFOEM1\\-gqC6/index\\.json$"
     },
     {
       "page": "/setup/[slug]",
       "routeKeys": {
         "nxtPslug": "nxtPslug"
       },
-      "dataRouteRegex": "^/_next/data/MrAygj1_UfNVQOzY9sSy_/setup/([^/]+?)\\.json$",
-      "namedDataRouteRegex": "^/_next/data/MrAygj1_UfNVQOzY9sSy_/setup/(?<nxtPslug>[^/]+?)\\.json$"
+      "dataRouteRegex": "^/_next/data/xLQZ1bIJi4BFOEM1\\-gqC6/setup/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/xLQZ1bIJi4BFOEM1\\-gqC6/setup/(?<nxtPslug>[^/]+?)\\.json$"
     }
   ],
   "rsc": {
