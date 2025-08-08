@@ -30,14 +30,34 @@ const SEO: React.FC<SEOProps> = ({
       <meta name="description" content={description} />
       {keywords?.length ? <meta name="keywords" content={keywords.join(", ")} /> : null}
       <link rel="canonical" href={canonical} />
+      
+      {/* Open Graph Meta Tags */}
       <meta property="og:type" content={type} />
+      <meta property="og:url" content={canonical} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
+      <meta property="og:site_name" content="Setups de Streamers" />
+      <meta property="og:locale" content="es_ES" />
       {image ? <meta property="og:image" content={new URL(image, siteUrl).toString()} /> : null}
+      {image ? <meta property="og:image:alt" content={title} /> : null}
+      
+      {/* Twitter Card Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@yostreamer" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       {image ? <meta name="twitter:image" content={new URL(image, siteUrl).toString()} /> : null}
+      
+      {/* Additional SEO Meta Tags */}
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+      <meta name="author" content="Equipo Setups de Streamers" />
+      <meta name="publisher" content="Setups de Streamers" />
+      <meta name="coverage" content="Worldwide" />
+      <meta name="distribution" content="Global" />
+      <meta name="rating" content="General" />
+      <meta name="revisit-after" content="7 days" />
+      
+      {/* Structured Data */}
       {jsonLd ? (
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       ) : null}

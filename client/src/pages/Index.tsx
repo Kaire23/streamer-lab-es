@@ -78,6 +78,8 @@ const Index: React.FC = () => {
                   alt={`Setup de streaming de ${post.title}`}
                   loading="lazy"
                   decoding="async"
+                  width="800"
+                  height="450"
                   sizes="(min-width: 768px) 50vw, 100vw"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                 />

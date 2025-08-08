@@ -77,6 +77,8 @@ const PostPage: React.FC = () => {
             alt={`Setup de streaming de ${post.title}`}
             loading="eager"
             decoding="async"
+            width="1200"
+            height="675"
             className="w-full h-auto object-cover"
             {...({ fetchpriority: "high" } as any)}
           />

@@ -9,6 +9,7 @@ import Layout from "@/components/layout/Layout";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PostPage from "./pages/PostPage";
+import PerformanceOptimizer from "@/components/PerformanceOptimizer";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
       <HelmetProvider>
         <Toaster />
         <Sonner />
+        <PerformanceOptimizer />
         <Router>
           <RouteChangeTracker />
           <Layout>
