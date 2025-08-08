@@ -2,14 +2,21 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['yostreamer.com'],
+    domains: ['yostreamer.com', 'www.yostreamer.com'],
     unoptimized: true,
   },
-  async rewrites() {
+  async redirects() {
     return [
       {
-        source: '/setup/:slug',
-        destination: '/setup/[slug]',
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.yostreamer.com',
+          },
+        ],
+        destination: 'https://yostreamer.com/:path*',
+        permanent: true,
       },
     ];
   },

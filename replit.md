@@ -22,6 +22,19 @@ This is a Next.js SSR (Server-Side Rendered) web application focused on streamin
   - Next.js build process maintained while satisfying deployment expectations
   - All deployment requirements now met for successful autoscale deployment
 
+### August 8, 2025 - SEO Technical Audit Fixes
+- **SEO ISSUES RESOLVED**: Fixed missing titles and DNS resolution issues
+  - Added default title and description to DefaultSeo in _app.tsx
+  - Removed problematic rewrite rule in next.config.js that was breaking dynamic routing
+  - Verified all setup pages now have proper title tags:
+    - /setup/coscu - "Setup de streaming de Coscu (2025): Energía y presencia"
+    - /setup/elxocas - "Setup de streaming de ElXocas (2025): Potencia y estilo"
+    - /setup/ibai-llanos - "Setup de streaming de Ibai Llanos (2025): Guía completa"
+    - /setup/illojuan - "Setup de streaming de illoJuan (2025): Calidez y calidad"
+    - /setup/thegrefg - "Setup de streaming de TheGrefg (2025): Estética y rendimiento"
+  - Added redirect configuration for www subdomain to handle DNS issues
+  - All pages now properly render with SEO-optimized titles and meta tags
+
 ### January 10, 2025
 - **MAJOR ARCHITECTURE CHANGE**: Migrated from Vite + Express + SSG to Next.js SSR
   - Removed all static site generation (prerender.js, generate-static.js)

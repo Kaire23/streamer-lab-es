@@ -25,11 +25,15 @@ function MyApp({ Component, pageProps }: AppProps) {
       />
       
       <DefaultSeo
+        title="Setups de Streamers - Equipos y Configuraciones"
+        description="Descubre los setups completos de tus streamers favoritos. Guías detalladas de micrófonos, cámaras, iluminación y más."
         openGraph={{
           type: 'website',
           locale: 'es_ES',
           url: 'https://yostreamer.com/',
           siteName: 'Setups de Streamers',
+          title: 'Setups de Streamers - Equipos y Configuraciones',
+          description: 'Descubre los setups completos de tus streamers favoritos. Guías detalladas de micrófonos, cámaras, iluminación y más.',
         }}
         twitter={{
           handle: '@yostreamer',
