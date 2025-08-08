@@ -4,7 +4,7 @@
 
 This is a full-stack web application for a Spanish streaming equipment guide website called "Setups de Streamers". The application provides detailed guides about popular streamers' equipment setups, including hardware specifications, affiliate product links, and technical recommendations. It's built as a content-focused site with SEO optimization for the Spanish-speaking streaming community.
 
-**Migration Status**: Successfully migrated from Lovable to Replit on January 8, 2025. All functionality working and SEO improvements implemented.
+**Migration Status**: Successfully migrated from Lovable to Replit on January 8, 2025. All functionality working, SEO improvements implemented, and streamer images updated with optimized alt tags and structured data.
 
 ## User Preferences
 
@@ -36,14 +36,16 @@ Preferred communication style: Simple, everyday language.
 
 ### Content Management
 - **Static Data**: Hardcoded post data in TypeScript with streamer information
-- **Image Assets**: Local asset management with Vite path resolution
+- **Image Assets**: High-quality streamer setup images with optimized WebP/AVIF formats and comprehensive alt text
 - **Affiliate Links**: Amazon España affiliate integration with configurable tag
+- **SEO Images**: Optimized cover images for Ibai, ElXokas, IlloJuan, Coscu, and TheGrefg with detailed descriptions
 
 ### SEO and Performance
-- **Meta Management**: Dynamic SEO tags with Open Graph and Twitter Card support
-- **Structured Data**: JSON-LD schema markup for articles and website information
+- **Meta Management**: Comprehensive SEO tags with enhanced Open Graph, Twitter Cards, and meta descriptions
+- **Structured Data**: JSON-LD schema markup for articles, website info, and image optimization
 - **Analytics**: Google Analytics 4 integration with route change tracking
-- **Performance**: Server-side rendering setup in development with Vite
+- **Performance**: Server-side rendering setup with optimized image loading and Core Web Vitals
+- **Image SEO**: Enhanced alt text with streaming equipment keywords and detailed sitemap image metadata
 
 ### Design System
 - **Component Library**: Comprehensive shadcn/ui component set

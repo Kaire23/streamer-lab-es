@@ -74,9 +74,11 @@ const PostPage: React.FC = () => {
         <div className="mt-4 overflow-hidden rounded-xl border border-border/60 shadow-sm">
           <img
             src={post.coverImage}
-            alt={`Setup de streaming de ${post.title}`}
+            alt={`Setup de streaming profesional de ${post.title.replace(/^Setup de streaming de\s*/i, "")} - Vista completa del escritorio con equipo gaming, micrófono profesional, iluminación LED y configuración optimizada para streaming en Twitch`}
             loading="eager"
             decoding="async"
+            width="1200"
+            height="675"
             className="w-full h-auto object-cover"
             {...({ fetchpriority: "high" } as any)}
           />
@@ -107,8 +109,10 @@ const PostPage: React.FC = () => {
                         {item.image ? (
                           <img
                             src={item.image}
-                            alt={`Imagen de ${item.name} para comprar en Amazon`}
+                            alt={`${item.name} - Equipo de streaming profesional disponible en Amazon España con envío rápido`}
                             loading="lazy"
+                            width="80"
+                            height="80"
                             className="w-20 h-20 object-cover rounded-md border border-border/60"
                           />
                         ) : null}

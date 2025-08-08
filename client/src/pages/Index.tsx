@@ -76,10 +76,12 @@ const Index: React.FC = () => {
               <div className="aspect-video overflow-hidden">
                 <img
                   src={post.coverImage}
-                  alt={`Setup de streaming de ${post.title}`}
+                  alt={`Setup de streaming completo de ${post.title.replace(/^Setup de streaming de\s*/i, "")} - Equipo profesional, micrófono, cámara e iluminación`}
                   loading="lazy"
                   decoding="async"
                   sizes="(min-width: 768px) 50vw, 100vw"
+                  width="640"
+                  height="360"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                 />
               </div>
