@@ -1,8 +1,8 @@
-import ibaiImg from "@/assets/ibai-llanos-hero.jpg";
-import elxocasImg from "@/assets/elxocas-hero.jpg";
-import illojImg from "@/assets/illojuan-hero.jpg";
-import grefgImg from "@/assets/thegrefg-hero.jpg";
-import coscuImg from "@/assets/coscu-hero.jpg";
+import ibaiImg from "@assets/ibai.png_1754677747540.webp";
+import elxocasImg from "@assets/elxocas.jpg_1754677747540.webp";
+import illojImg from "@assets/illojuan.jpg_1754677747540.webp";
+import grefgImg from "@assets/thegrefg_1754677747540.avif";
+import coscuImg from "@assets/coscu_1754677747540.jpg";
 import { amazonSearchUrl } from "@/lib/affiliate";
 
 export type SetupItem = { name: string; link: string; note?: string; image?: string };
@@ -32,11 +32,14 @@ export const posts: Post[] = [
     author: "Equipo Setups de Streamers",
     coverImage: ibaiImg,
     keywords: [
-      "setup de streaming",
-      "Ibai Llanos",
-      "equipo streamer",
-      "micrófono Shure SM7B",
-      "cámara Sony",
+      "setup de streaming Ibai Llanos",
+      "equipo streaming Ibai",
+      "micrófono Shure SM7B Ibai",
+      "cámara Sony A7 III streaming",
+      "setup streamer español",
+      "equipo profesional streaming",
+      "configuración Ibai Llanos 2025",
+      "mejor setup streaming España",
     ],
     bio: "Ibai Llanos es uno de los creadores de contenido más influyentes de habla hispana. Con eventos masivos y directos diarios, su setup está optimizado para fiabilidad y calidad audiovisual.",
     funFacts: [
@@ -91,7 +94,16 @@ export const posts: Post[] = [
     date: today,
     author: "Equipo Setups de Streamers",
     coverImage: elxocasImg,
-    keywords: ["ElXocas", "setup streamer", "audio profesional", "stream deck"],
+    keywords: [
+      "setup streaming ElXocas",
+      "equipo ElXocas 2025",
+      "setup streamer ElXocas",
+      "micrófono ElXocas Shure SM7B",
+      "configuración streaming ElXocas",
+      "equipo profesional ElXocas",
+      "Stream Deck XL ElXocas",
+      "setup gamer ElXocas",
+    ],
     bio: "ElXocas destaca por su energía y presencia ante cámara. Su equipo está pensado para capturar cada momento con contundencia.",
     funFacts: [
       "Es conocido por su cercanía con la comunidad y un estilo directo.",
@@ -136,7 +148,16 @@ export const posts: Post[] = [
     date: today,
     author: "Equipo Setups de Streamers",
     coverImage: illojImg,
-    keywords: ["illoJuan", "setup de streaming", "Elgato", "Sony"],
+    keywords: [
+      "setup streaming illoJuan",
+      "equipo illoJuan 2025",
+      "configuración illoJuan",
+      "micrófono illoJuan Shure SM7B",
+      "cámara Sony illoJuan",
+      "Elgato Key Light illoJuan",
+      "setup streamer illoJuan",
+      "equipo profesional illoJuan",
+    ],
     bio: "illoJuan ha crecido con una comunidad fiel gracias a su estilo cercano. Su setup busca naturalidad y confort sin sacrificar calidad.",
     funFacts: [
       "Suele jugar con iluminación cálida y fondos con carácter.",
@@ -174,7 +195,16 @@ export const posts: Post[] = [
     date: today,
     author: "Equipo Setups de Streamers",
     coverImage: grefgImg,
-    keywords: ["TheGrefg", "setup gamer", "RTX", "cámara 4K"],
+    keywords: [
+      "setup streaming TheGrefg",
+      "equipo TheGrefg 2025",
+      "configuración TheGrefg",
+      "setup gamer TheGrefg",
+      "RTX 4090 TheGrefg",
+      "cámara 4K TheGrefg",
+      "iluminación RGB TheGrefg",
+      "setup profesional TheGrefg",
+    ],
     bio: "TheGrefg destaca por su energía y estilo visual. Su setup refleja una estética marcada y potencia suficiente para cualquier directo.",
     funFacts: [
       "Apuesta por fondos llamativos con paneles RGB.",
@@ -219,7 +249,16 @@ export const posts: Post[] = [
     date: today,
     author: "Equipo Setups de Streamers",
     coverImage: coscuImg,
-    keywords: ["Coscu", "setup streaming", "micrófono", "iluminación RGB"],
+    keywords: [
+      "setup streaming Coscu",
+      "equipo Coscu 2025",
+      "configuración Coscu",
+      "micrófono Coscu Shure SM7B",
+      "setup streamer Coscu",
+      "iluminación RGB Coscu",
+      "equipo profesional Coscu",
+      "setup argentino Coscu",
+    ],
     bio: "Coscu es referente en la escena hispanohablante. Su setup transmite energía y cercanía con la audiencia.",
     funFacts: [
       "Suele incorporar elementos decorativos musicales en su fondo.",
