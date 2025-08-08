@@ -16,6 +16,7 @@
   "start": {
     "command": "NODE_ENV=production npx next start -p 5000",
     "alternatives": [
+      "NODE_ENV=production npx next start -p $PORT",
       "./start.sh",
       "node next-start.cjs"
     ],
