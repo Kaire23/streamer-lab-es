@@ -4,28 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     
-    <!-- Critical CSS (inlined for performance) -->
+    <!-- Critical CSS (inlined for above-the-fold performance) -->
     <style>
-      /* Critical above-the-fold styles */
-      *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}
-      *{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }
-      ::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }
-      :root{--background:0 0% 100%;--foreground:222.2 84% 4.9%;--card:0 0% 100%;--card-foreground:222.2 84% 4.9%;--popover:0 0% 100%;--popover-foreground:222.2 84% 4.9%;--primary:222.2 47.4% 11.2%;--primary-foreground:210 40% 98%;--secondary:210 40% 96.1%;--secondary-foreground:222.2 47.4% 11.2%;--muted:210 40% 96.1%;--muted-foreground:215.4 16.3% 46.9%;--accent:210 40% 96.1%;--accent-foreground:222.2 47.4% 11.2%;--destructive:0 84.2% 60.2%;--destructive-foreground:210 40% 98%;--border:214.3 31.8% 91.4%;--input:214.3 31.8% 91.4%;--ring:222.2 84% 4.9%;--radius:0.5rem;--brand:262 83% 58%;--brand-2:198 94% 49%;--brand-foreground:0 0% 100%;--elevate:0 10px 40px -10px hsl(var(--brand) / 0.45);--transition-smooth:all 300ms cubic-bezier(0.22, 1, 0.36, 1)}
-      .dark{--background:222.2 84% 4.9%;--foreground:210 40% 98%;--card:222.2 84% 4.9%;--card-foreground:210 40% 98%;--popover:222.2 84% 4.9%;--popover-foreground:210 40% 98%;--primary:210 40% 98%;--primary-foreground:222.2 47.4% 11.2%;--secondary:217.2 32.6% 17.5%;--secondary-foreground:210 40% 98%;--muted:217.2 32.6% 17.5%;--muted-foreground:215 20.2% 65.1%;--accent:217.2 32.6% 17.5%;--accent-foreground:210 40% 98%;--destructive:0 62.8% 30.6%;--destructive-foreground:210 40% 98%;--border:217.2 32.6% 17.5%;--input:217.2 32.6% 17.5%;--ring:212.7 26.8% 83.9%;--brand:262 90% 64%;--brand-2:198 100% 56%;--brand-foreground:0 0% 100%;--elevate:0 10px 50px -10px hsl(var(--brand) / 0.55)}
-      *{border-color:hsl(var(--border))}
-      body{background-color:hsl(var(--background));color:hsl(var(--foreground));font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";line-height:1.5}
-      h1,h2,h3,h4,h5,h6{font-weight:600}
-      .text-4xl{font-size:2.25rem;line-height:2.5rem}
-      .text-5xl{font-size:3rem;line-height:1}
-      .text-lg{font-size:1.125rem;line-height:1.75rem}
-      .font-bold{font-weight:700}
-      .tracking-tight{letter-spacing:-0.025em}
-      .text-center{text-align:center}
-      .text-muted-foreground{color:hsl(var(--muted-foreground))}
-      .mb-8{margin-bottom:2rem}
-      .mt-3{margin-top:0.75rem}
-      .container{width:100%;max-width:1200px;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
-      @media(min-width:768px){.md\:text-5xl{font-size:3rem;line-height:1}.container{padding-left:2rem;padding-right:2rem}}
+      /* Essential reset and base styles */
+      *,::before,::after{box-sizing:border-box;margin:0;padding:0}
+      
+      /* CSS variables for theme system */
+      :root{--background:0 0% 100%;--foreground:222.2 84% 4.9%;--muted-foreground:215.4 16.3% 46.9%;--border:214.3 31.8% 91.4%;--brand:262 83% 58%;--brand-2:198 94% 49%}
+      .dark{--background:222.2 84% 4.9%;--foreground:210 40% 98%;--muted-foreground:215 20.2% 65.1%;--border:217.2 32.6% 17.5%;--brand:262 90% 64%;--brand-2:198 100% 56%}
+      
+      /* Critical layout and typography */
+      body{background-color:hsl(var(--background));color:hsl(var(--foreground));font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.5;margin:0}
+      h1{font-weight:700;font-size:2.25rem;line-height:2.5rem;letter-spacing:-0.025em;margin-bottom:0.75rem}
+      p{margin-bottom:1rem}
+      
+      /* Hero section and critical layout */
+      .hero-section{text-align:center;margin-bottom:2rem;padding:1rem}
+      .hero-title{font-size:2.25rem;font-weight:700;letter-spacing:-0.025em;margin-bottom:0.75rem}
+      .hero-subtitle{font-size:1.125rem;line-height:1.75rem;color:hsl(var(--muted-foreground));margin-top:0.75rem}
+      .container{width:100%;max-width:1200px;margin:0 auto;padding:0 1rem}
+      
+      /* Critical grid and card styles */
+      .posts-grid{display:grid;gap:1.5rem;grid-template-columns:1fr}
+      .post-card{border:1px solid hsl(var(--border) / 0.6);border-radius:0.75rem;overflow:hidden;box-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1)}
+      .post-image{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+      .post-content{padding:1rem}
+      .post-title{font-size:1.25rem;font-weight:600;margin-bottom:0.5rem}
+      
+      /* Responsive design */
+      @media(min-width:768px){
+        .hero-title{font-size:3rem;line-height:1}
+        .container{padding:0 2rem}
+        .posts-grid{grid-template-columns:repeat(2,1fr)}
+      }
+      
+      /* Prevent layout shift */
+      #root{min-height:100vh}
+      img{max-width:100%;height:auto}
+      
+      /* Loading state to prevent FOUC */
+      .loading{opacity:0}
+      .loaded{opacity:1;transition:opacity 0.3s ease-in-out}
     </style>
     
     <!-- Resource hints for performance optimization -->
@@ -81,13 +100,20 @@
     
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root" class="loading"></div>
+    <script>
+      // Remove loading class once DOM is ready
+      document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('root').classList.remove('loading');
+        document.getElementById('root').classList.add('loaded');
+      });
+    </script>
     
     <!-- Main application JavaScript - deferred for performance -->
     <script type="module" defer src="/src/main.tsx"></script>
     
-    <!-- Non-critical CSS loaded at end for performance -->
-    <link rel="stylesheet" href="/src/index.css" media="print" onload="this.media='all'; this.onload=null;">
+    <!-- Load non-critical CSS asynchronously to avoid render blocking -->
+    <link rel="preload" href="/src/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/src/index.css"></noscript>
     
     <!-- Analytics loaded after main content -->

@@ -42,11 +42,11 @@ const Index: React.FC = () => {
         keywords={["setup de streaming", "streamers famosos", "equipo streaming", "guías en español"]}
       />
 
-      <section className="mb-8 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+      <section className="mb-8 text-center hero-section">
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight hero-title">
           Setups de Streamers
         </h1>
-        <p className="mt-3 text-lg text-muted-foreground">
+        <p className="mt-3 text-lg text-muted-foreground hero-subtitle">
           Guías futuristas en español para replicar el equipo de tus creadores favoritos.
         </p>
       </section>
@@ -66,11 +66,11 @@ const Index: React.FC = () => {
         </ul>
       </nav>
 
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-6 md:grid-cols-2 posts-grid">
         {posts.map((post, index) => (
           <article
             key={post.slug}
-            className="group overflow-hidden rounded-xl border border-border/60 shadow-sm transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-[var(--elevate)]"
+            className="group overflow-hidden rounded-xl border border-border/60 shadow-sm transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-[var(--elevate)] post-card"
           >
             <Link to={`/setup/${post.slug}`} className="block">
               <div className="aspect-video overflow-hidden">
