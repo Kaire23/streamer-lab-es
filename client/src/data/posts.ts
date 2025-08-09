@@ -27,7 +27,7 @@ export const posts: Post[] = [
     slug: "ibai-llanos",
     title: "Setup de streaming de Ibai Llanos (2025): Guía completa",
     excerpt:
-      "Descubre el equipo de streaming de Ibai: micrófono, cámara, iluminación, PC y periféricos para un directo de máxima calidad.",
+      "Descubre el setup completo de Ibai Llanos: micrófono Shure SM7B, cámara Sony, PC gaming de alta gama e iluminación profesional para streaming de máxima calidad.",
     date: today,
     author: "Equipo Setups de Streamers",
     coverImage: ibaiImg,
@@ -132,7 +132,7 @@ export const posts: Post[] = [
     slug: "illojuan",
     title: "Setup de streaming de illoJuan (2025): Calidez y calidad",
     excerpt:
-      "El espacio de illoJuan combina un ambiente acogedor con equipo profesional: audio claro, buena luz y cámara confiable.",
+      "Explora el setup acogedor de illoJuan: micrófono Shure SM7B, cámara Sony A6400, iluminación Elgato Key Light y un ambiente cálido perfecto para streaming diario.",
     date: today,
     author: "Equipo Setups de Streamers",
     coverImage: illojImg,
@@ -170,7 +170,7 @@ export const posts: Post[] = [
     slug: "thegrefg",
     title: "Setup de streaming de TheGrefg (2025): Estética y rendimiento",
     excerpt:
-      "Configuración atrevida con iluminación roja, cámaras rápidas y un PC listo para juegos exigentes y directos largos.",
+      "Descubre el setup futurista de TheGrefg: PC gaming de última generación, cámara 4K, paneles RGB Nanoleaf y una configuración que marca tendencia en el streaming.",
     date: today,
     author: "Equipo Setups de Streamers",
     coverImage: grefgImg,
