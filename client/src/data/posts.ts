@@ -84,7 +84,7 @@ export const posts: Post[] = [
     ],
   },
   {
-    slug: "elxocas",
+    slug: "elxokas",
     title: "Setup de streaming de ElXokas (2025): Potencia y estilo",
     excerpt:
       "Analizamos el setup de ElXokas: audio potente, cámaras nítidas y una iluminación dramática ideal para directos intensos.",

@@ -4,7 +4,7 @@
 
 This is a full-stack web application for a Spanish streaming equipment guide website called "Setups de Streamers". The application provides detailed guides about popular streamers' equipment setups, including hardware specifications, affiliate product links, and technical recommendations. It's built as a content-focused site with SEO optimization for the Spanish-speaking streaming community.
 
-**Migration Status**: Successfully migrated from Lovable to Replit on January 8, 2025. All functionality working, comprehensive SEO optimization implemented with server-side rendering, streamer images updated with optimized alt tags and structured data, and canonical URL issues resolved with proper 301 redirects.
+**Migration Status**: Successfully migrated from Lovable to Replit on January 8, 2025. All functionality working, comprehensive SEO optimization implemented with server-side rendering, streamer images updated with optimized alt tags and structured data, canonical URL issues resolved with proper 301 redirects, and sitemap.xml updated with correct canonical URLs.
 
 ## User Preferences
 

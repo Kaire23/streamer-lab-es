@@ -20,11 +20,11 @@ const postSEOData: Record<string, SEOData> = {
     ogImage: 'https://yostreamer.com/assets/ibai-llanos-hero.jpg',
     type: 'article'
   },
-  'elxocas': {
+  'elxokas': {
     title: 'Setup de streaming de ElXokas (2025): Potencia y estilo | Setups de Streamers',
     description: 'Analizamos el setup de ElXokas: audio potente, cámaras nítidas y una iluminación dramática ideal para directos intensos.',
     keywords: 'ElXokas, setup streamer, audio profesional, stream deck',
-    canonical: 'https://yostreamer.com/setup/elxocas',
+    canonical: 'https://yostreamer.com/setup/elxokas',
     ogImage: 'https://yostreamer.com/assets/elxocas-hero.jpg',
     type: 'article'
   },
@@ -99,10 +99,10 @@ export function injectSEOToHTML(html: string, seoData: SEOData): string {
     `<meta name="keywords" content="${seoData.keywords}">`
   );
   
-  // Replace canonical URL
+  // Replace canonical URL - be more specific with the regex
   html = html.replace(
-    /<link rel="canonical" href=".*?">/,
-    `<link rel="canonical" href="${seoData.canonical}">`
+    /<link rel="canonical" href="https:\/\/yostreamer\.com\/" \/>/,
+    `<link rel="canonical" href="${seoData.canonical}" />`
   );
   
   // Replace Open Graph title

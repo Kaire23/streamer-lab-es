@@ -11,9 +11,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
     res.redirect(301, `/setup/${req.params.slug}`);
   });
 
+  // Redirect old elxocas URL to new elxokas URL
+  app.get('/setup/elxocas', (req, res) => {
+    res.redirect(301, '/setup/elxokas');
+  });
+
   // SEO-optimized HTML for individual setup pages
   app.get('/setup/:slug', async (req, res, next) => {
-    const validSlugs = ['ibai-llanos', 'elxocas', 'illojuan', 'thegrefg', 'coscu'];
+    const validSlugs = ['ibai-llanos', 'elxokas', 'illojuan', 'thegrefg', 'coscu'];
     const slug = req.params.slug;
     
     // Only handle valid streamer slugs
