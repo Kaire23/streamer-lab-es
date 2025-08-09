@@ -79,6 +79,8 @@ const PostPage: React.FC = () => {
             priority={true}
             width="1200"
             height="675"
+            sizes="100vw"
+            responsive={false}
             className="w-full h-auto object-cover"
           />
         </div>

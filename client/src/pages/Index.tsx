@@ -82,6 +82,7 @@ const Index: React.FC = () => {
                   width={378}
                   height={213}
                   sizes="(max-width: 768px) 100vw, 378px"
+                  responsive={true}
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                 />
               </div>

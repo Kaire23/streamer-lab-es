@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Image optimization for reduced download times */
+/* Simplified image optimization for desktop performance */
 @layer base {
   img {
     content-visibility: auto;
@@ -11,17 +11,6 @@
   
   picture {
     display: block;
-  }
-  
-  /* Lazy loading placeholder */
-  img[loading="lazy"] {
-    background: linear-gradient(180deg, hsl(var(--muted)) 0%, hsl(var(--muted-foreground) / 0.1) 100%);
-  }
-  
-  /* Optimize image rendering */
-  img.object-cover {
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
   }
 }
 

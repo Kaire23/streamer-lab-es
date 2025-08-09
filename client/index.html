@@ -38,9 +38,9 @@
         .posts-grid{grid-template-columns:repeat(2,1fr)}
       }
       
-      /* Prevent layout shift */
+      /* Prevent layout shift and optimize for desktop */
       #root{min-height:100vh}
-      img{max-width:100%;height:auto}
+      img{max-width:100%;height:auto;image-rendering:auto}
       
       /* Loading state to prevent FOUC */
       .loading{opacity:0}
@@ -54,12 +54,11 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <link rel="preconnect" href="https://www.amazon.es">
     <link rel="dns-prefetch" href="https://m.media-amazon.com">
-    <link rel="prefetch" href="/setup/ibai-llanos">
-    <link rel="prefetch" href="/setup/elxokas">
+    <!-- Reduced prefetching for desktop performance -->
     
-    <!-- Preload critical hero images for LCP optimization -->
-    <link rel="preload" as="image" href="/src/assets/ibai-llanos-hero.jpg" fetchpriority="high">
-    <link rel="preload" href="/src/main.tsx" as="script" crossorigin="anonymous">
+    <!-- Optimized preloading for desktop performance -->
+    <link rel="preload" as="image" href="/src/assets/ibai-llanos-hero.jpg" fetchpriority="high" media="(min-width: 768px)">
+    <link rel="preload" href="/src/main.tsx" as="script" crossorigin="anonymous" fetchpriority="high">
     
     <!-- Default SEO meta tags (enhanced by React Helmet) -->
     <title>Setups de Streamers: Guías Futuristas en Español</title>
