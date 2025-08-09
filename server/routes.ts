@@ -82,6 +82,45 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Test email endpoint
+  app.post("/api/test-email", async (req, res) => {
+    try {
+      const sgMail = (await import("@sendgrid/mail")).default;
+      
+      if (!process.env.SENDGRID_API_KEY) {
+        return res.status(500).json({ error: "SendGrid API key not configured" });
+      }
+      
+      sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+      
+      const { to, from } = req.body;
+      
+      if (!to || !from) {
+        return res.status(400).json({ error: "Both 'to' and 'from' email addresses are required" });
+      }
+      
+      const msg = {
+        to: to,
+        from: from,
+        subject: 'Test Email from Setups de Streamers',
+        text: 'This is a test email from your streaming equipment guide website!',
+        html: '<strong>This is a test email from your streaming equipment guide website!</strong><br><br>SendGrid integration is working perfectly! 🎮',
+      };
+      
+      await sgMail.send(msg);
+      
+      console.log(`Test email sent to ${to} from ${from}`);
+      res.json({ success: true, message: "Email sent successfully!" });
+      
+    } catch (error) {
+      console.error("Test email error:", error);
+      res.status(500).json({ 
+        error: "Failed to send email", 
+        details: error.message || error
+      });
+    }
+  });
+
   const httpServer = createServer(app);
 
   return httpServer;
