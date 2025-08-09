@@ -42,11 +42,11 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
       src={src}
       alt={alt}
       loading={priority ? "eager" : "lazy"}
+      {...({ fetchpriority: priority ? "high" : "auto" } as React.ImgHTMLAttributes<HTMLImageElement>)}
       decoding="async"
       width={width}
       height={height}
       className={className}
-      {...({ fetchpriority: priority ? "high" : "auto" } as React.ImgHTMLAttributes<HTMLImageElement>)}
       {...props}
     />
   );
