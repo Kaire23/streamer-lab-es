@@ -18,6 +18,8 @@ export type Post = {
   bio: string;
   funFacts: string[];
   setup: SetupCategory[];
+  content?: string;
+  category?: string;
 };
 
 const today = new Date().toISOString().slice(0, 10);
@@ -39,6 +41,47 @@ export const posts: Post[] = [
       "cámara Sony",
     ],
     bio: "Ibai Llanos es uno de los creadores de contenido más influyentes de habla hispana. Con eventos masivos y directos diarios, su setup está optimizado para fiabilidad y calidad audiovisual.",
+    content: `
+## El Setup de Streaming Más Influyente de España
+
+El **setup de Ibai Llanos** representa el estándar dorado del streaming en español. Como uno de los streamers más exitosos del mundo, Ibai ha perfeccionado su configuración a lo largo de años de experiencia, creando un espacio que combina profesionalidad y comodidad para sesiones de streaming que pueden durar más de 8 horas.
+
+### Audio Profesional: La Base del Éxito
+
+El corazón del setup de Ibai es su **micrófono Shure SM7B**, considerado el mejor micrófono para streaming profesional. Este micrófono dinámico, utilizado también por Joe Rogan y otros podcasters famosos, proporciona una calidad de audio excepcional con excelente rechazo de ruido ambiente. Para complementar el SM7B, Ibai utiliza una interfaz de audio profesional que garantiza la ganancia necesaria para este micrófono de baja sensibilidad.
+
+Comparado con otros streamers como **ElXokas** o **TheGrefg**, Ibai prioriza la consistencia del audio por encima de todo. Mientras que el setup de ElXokas se enfoca más en la estética gaming, el de Ibai busca la máxima fiabilidad para eventos en vivo que pueden tener cientos de miles de espectadores simultáneos.
+
+### Configuración de Cámara y Video
+
+La configuración visual de Ibai utiliza cámaras **Sony Alpha series**, típicamente la A7 III o A7S III, conocidas por su excelente rendimiento en condiciones de poca luz y su estabilidad durante largas sesiones. Esta elección contrasta con el setup de **IlloJuan**, que prefiere configuraciones más compactas, pero coincide con la filosofía de **TheGrefg** de utilizar equipamiento de gama alta.
+
+El setup incluye múltiples ángulos de cámara, algo que también vemos en configuraciones avanzadas como la de **Coscu**, permitiendo cambios dinámicos durante los streams para mantener el engagement de la audiencia.
+
+### Iluminación: Creando el Ambiente Perfecto
+
+La iluminación del setup de Ibai es fundamental para mantener una imagen profesional durante todas las horas del día. Utiliza paneles LED ajustables que proporcionan luz uniforme y evitan las sombras duras que pueden aparecer con iluminación inadecuada. Esta configuración es similar a la que encontramos en el setup de streaming de ElXokas, aunque Ibai tiende a usar tonos más neutros.
+
+### PC Gaming y Hardware de Alto Rendimiento
+
+El PC de Ibai está diseñado para manejar streaming y gaming simultáneamente sin comprometer el rendimiento. Con componentes de última generación incluyendo tarjetas gráficas RTX de la serie 40 y procesadores de gama alta, puede ejecutar juegos exigentes mientras mantiene la calidad de stream en 1080p60 o incluso 4K.
+
+### Comparación con Otros Setups de Streamers
+
+A diferencia del **setup de streaming barato** que muchos principiantes buscan, la configuración de Ibai representa una inversión significativa en calidad profesional. Sin embargo, cada componente de su setup puede adquirirse por separado, permitiendo a otros streamers construir gradualmente una configuración similar.
+
+El enfoque de Ibai contrasta con streamers como **AuronPlay**, que prefieren configuraciones más minimalistas, o **El Rubius**, que incorpora más elementos gaming en su setup.
+
+### Periféricos y Accesorios Especializados
+
+El setup incluye **Stream Deck** para control de escenas, auriculares de monitoreo profesional, y múltiples monitores para gestión de chat, OBS, y el juego principal. Estos accesorios para streamers son esenciales para la gestión eficiente de streams complejos.
+
+### Lecciones para Streamers Aspirantes
+
+El setup de Ibai demuestra que la inversión en calidad audio-visual se traduce directamente en mejor experiencia para los espectadores. Para quienes buscan **cómo empezar en Twitch**, estudiar configuraciones como la de Ibai proporciona una hoja de ruta clara hacia el streaming profesional.
+
+La filosofía del setup de Ibai se resume en tres principios: fiabilidad, calidad y escalabilidad. Cada componente está seleccionado no solo por su rendimiento individual, sino por cómo contribuye al conjunto, creando una experiencia de streaming que ha establecido nuevos estándares en la industria del contenido en español.
+    `,
     funFacts: [
       "Ha presentado eventos con decenas de miles de espectadores simultáneos.",
       "Suele priorizar la comodidad y la calidad de audio en su setup.",
@@ -93,6 +136,90 @@ export const posts: Post[] = [
     coverImage: elxocasImg,
     keywords: ["ElXokas", "setup streamer", "audio profesional", "stream deck"],
     bio: "ElXokas destaca por su energía y presencia ante cámara. Su equipo está pensado para capturar cada momento con contundencia.",
+    content: `
+## El Setup Auténtico de ElXokas: Gaming Sin Artificios
+
+El **setup de streaming de ElXokas** representa la esencia del gaming auténtico. Conocido por su personalidad directa y streams intensivos, ElXokas ha desarrollado una configuración que prioriza la funcionalidad y comodidad por encima de la estética pura, creando un ambiente perfecto para sesiones maratónicas de gaming.
+
+### Audio Profesional con Personalidad
+
+ElXokas utiliza el **micrófono Shure SM7B**, el mismo que encontramos en el **setup de Ibai Llanos**, pero con un procesamiento que mantiene la naturalidad de su voz característica. Su configuración de audio evita el over-processing, permitiendo que su personalidad directa se transmita sin filtros.
+
+La elección del SM7B no es casualidad - este micrófono dinámico proporciona excelente rechazo de ruido ambiente, crucial para sus sesiones de gaming intenso donde el feedback del teclado y mouse mecánicos podría interferir con streamers que usan micrófonos de condensador más sensibles.
+
+### PC Gaming de Alto Rendimiento
+
+Su PC está configurado para manejar los títulos más exigentes mientras mantiene streaming estable. Con componentes similares al **setup de TheGrefg**, puede ejecutar juegos AAA en configuraciones altas sin comprometer la calidad del stream:
+
+- **GPU RTX serie 40**: Para gaming 1440p/4K y encoding NVENC
+- **CPU Ryzen 9 o Intel i9**: Multitarea intensiva sin cuellos de botella
+- **32GB RAM DDR4/DDR5**: Múltiples aplicaciones simultáneas
+- **NVMe SSD**: Tiempos de carga ultrarrápidos en juegos modernos
+
+### Periféricos Gaming Competitivos
+
+A diferencia de setups más orientados al contenido variado como el de **IlloJuan**, ElXokas prioriza periféricos gaming de alta gama:
+
+**Teclado Mecánico Gaming**: Switches optimizados para FPS competitivos
+**Mouse Gaming Profesional**: Sensor de precisión para shooters
+**Auriculares Gaming**: Audio posicional crucial para juegos competitivos
+**Monitor Gaming 144Hz+**: Ventaja competitiva en títulos rápidos
+
+### Configuración de Streaming Optimizada
+
+Su setup de **configuración OBS** está optimizada para gaming:
+- Encoding NVENC para preservar CPU para gaming
+- Bitrate estable de 6000 kbps para Twitch
+- Configuración 1080p 60fps para fluidez máxima
+- Filtros de audio mínimos para mantener naturalidad
+
+### Iluminación Funcional
+
+Mientras que el **setup de streaming de TheGrefg** enfatiza elementos RGB llamativos, ElXokas mantiene iluminación funcional que evita distracciones durante gaming competitivo. Su **iluminación LED** proporciona luz consistente sin reflejos en monitores.
+
+### Ergonomía para Maratones Gaming
+
+Una característica distintiva es su enfoque en comodidad durante sesiones extendidas:
+- **Silla gaming premium**: Soporte lumbar para horas de uso
+- **Escritorio gaming**: Altura optimizada para ergonomía
+- **Reposabrazos ajustables**: Reducir fatiga en sesiones largas
+
+### Comparación con Otros Streamers Españoles
+
+El setup de ElXokas contrasta con configuraciones más elaboradas:
+- **Vs Ibai Llanos**: Menos elementos de producción, más enfoque gaming
+- **Vs TheGrefg**: Estética más funcional, menos RGB decorativo  
+- **Vs Coscu**: Prioridad en rendimiento gaming sobre variedad de contenido
+
+### Filosofía: Rendimiento Sobre Estética
+
+ElXokas demuestra que un **setup de streaming efectivo** no requiere elementos excesivos. Su configuración enseña principios valiosos para streamers aspirantes:
+
+1. **Funcionalidad primero**: Cada componente debe mejorar la experiencia
+2. **Comodidad para consistencia**: Setup cómodo = streams más largos
+3. **Autenticidad sobre producción**: La personalidad supera los efectos
+4. **Gaming-first approach**: Si eres gamer, prioriza el rendimiento
+
+Esta filosofía es especialmente relevante para quienes buscan **cómo empezar en Twitch** con enfoque gaming, demostrando que la autenticidad y rendimiento superan a la complejidad estética.
+
+### Lecciones para Setup de Streaming Barato
+
+El enfoque de ElXokas enseña cómo crear un **setup de streaming barato** pero efectivo:
+- Invertir en audio de calidad (micrófono profesional)
+- Priorizar PC gaming capaz sobre periféricos estéticos
+- Iluminación básica pero consistente
+- OBS configurado para máximo rendimiento
+
+### Consejos de Configuración Técnica
+
+Para replicar elementos del setup de ElXokas:
+- **Micrófono**: Shure SM7B + interfaz con buen preamp
+- **PC**: Balance entre gaming y streaming (70/30)
+- **Periféricos**: Gaming-grade para ventaja competitiva
+- **Software**: OBS optimizado para mínima latencia
+
+Su setup demuestra que la efectividad en streaming viene de entender tu audiencia y optimizar para tu tipo de contenido, no de seguir tendencias estéticas que pueden no alinearse con tu brand personal.
+    `,
     funFacts: [
       "Es conocido por su cercanía con la comunidad y un estilo directo.",
       "Apuesta por configuraciones robustas y micrófonos dinámicos.",
@@ -138,6 +265,181 @@ export const posts: Post[] = [
     coverImage: illojImg,
     keywords: ["illoJuan", "setup de streaming", "Elgato", "Sony"],
     bio: "illoJuan ha crecido con una comunidad fiel gracias a su estilo cercano. Su setup busca naturalidad y confort sin sacrificar calidad.",
+    content: `
+## El Setup Acogedor de IlloJuan: Naturalidad y Calidad
+
+El **setup de streaming de IlloJuan** destaca por crear un ambiente acogedor que transmite cercanía y naturalidad. Con un enfoque que prioriza la comodidad tanto del streamer como de la audiencia, IlloJuan ha desarrollado una configuración que refleja perfectamente su personalidad genuina y estilo de contenido variado.
+
+### Filosofía del Setup: Calidez Sobre Espectáculo
+
+A diferencia de configuraciones más llamativas como el **setup de TheGrefg**, IlloJuan opta por una estética cálida que invita a quedarse. Su configuración demuestra que un ambiente acogedor puede ser tan atractivo como los setups más elaborados, creando una conexión especial con su audiencia.
+
+### Audio Natural y Cercano
+
+IlloJuan utiliza el **micrófono Shure SM7B**, el mismo estándar profesional que encontramos en el **setup de Ibai Llanos**, pero con un procesamiento que mantiene la naturalidad de su voz. Su configuración de audio está optimizada para conversaciones largas y contenido variado:
+
+- **Procesamiento mínimo**: Mantiene la autenticidad de su voz
+- **EQ sutil**: Realza claridad sin artificialidad
+- **Compresión ligera**: Consistencia sin over-processing
+- **Filtros de ruido**: Eliminación de interferencias sin afectar naturalidad
+
+Esta elección técnica permite que las largas sesiones de Just Chatting mantengan una calidad consistente sin fatiga auditiva para la audiencia.
+
+### Cámara Sony: Calidad Cinematográfica
+
+Su configuración de video utiliza cámaras Sony (A6400 o A7C) que proporcionan una calidad de imagen superior con características específicas para streaming:
+
+**Sony A6400/A7C Benefits**:
+- **Autofoco híbrido**: Seguimiento facial preciso
+- **Color science**: Tonos de piel naturales y agradables
+- **Low light performance**: Calidad en condiciones de poca luz
+- **Overheating resistance**: Streams largos sin interrupciones
+
+El **objetivo 16-50mm** o **24-70mm** permite versatilidad en encuadres, desde planos medios para gaming hasta primeros planos para reacciones intensas.
+
+### Iluminación Cálida: La Clave del Ambiente
+
+La iluminación es quizás el elemento más distintivo del setup de IlloJuan. Mientras que el **setup de ElXokas** prioriza funcionalidad gaming, IlloJuan crea un ambiente visual que invita a la relajación:
+
+**Setup de Iluminación**:
+- **Elgato Key Light Air**: Luz principal suave y ajustable
+- **Luz trasera cálida**: Crea profundidad y separación del fondo
+- **Temperatura de color**: 3200K-4000K para calidez
+- **Dimming inteligente**: Ajuste según contenido y hora del día
+
+Esta configuración elimina sombras duras mientras mantiene un ambiente visualmente confortable para sesiones de múltiples horas.
+
+### Configuración de Gaming Balanceada
+
+Aunque no es primarily un streamer gaming como **ElXokas**, IlloJuan mantiene un setup capaz para contenido variado:
+
+**PC Gaming Specs**:
+- **CPU**: Ryzen 7 o Intel i7 para multitarea fluida
+- **GPU**: RTX 3070/4070 para gaming 1440p + streaming
+- **RAM**: 32GB para múltiples aplicaciones simultáneas
+- **Storage**: NVMe SSD para load times rápidos
+
+**Periféricos**:
+- **Teclado mecánico**: Switches silenciosos para streams
+- **Mouse gaming**: Sensor preciso pero sin RGB excesivo
+- **Monitor principal**: 1440p 144Hz para gaming fluido
+- **Monitor secundario**: 1080p para chat y OBS management
+
+### Ambiente y Decoración
+
+El fondo del setup de IlloJuan refleja su personalidad relajada:
+- **Colores neutros**: Evita distracciones visuales
+- **Elementos personales**: Decoración que cuenta historias
+- **Iluminación ambiental**: LEDs cálidos que complementan la key light
+- **Organización clean**: Cable management invisible
+
+Este enfoque contrasta con setups más tech-forward, creando un espacio que se siente como una conversación en casa de un amigo.
+
+### Configuración OBS Optimizada para Variedad
+
+Su **configuración de OBS** está preparada para diferentes tipos de contenido:
+
+**Escenas Preparadas**:
+- **Just Chatting**: Plano medio cómodo para conversación
+- **Gaming**: Layout que no interfiere con la gameplay
+- **Reacciones**: Primer plano para expresiones intensas
+- **Colaboraciones**: Setup multi-cámara cuando necesario
+
+**Configuración Técnica**:
+- **Encoding**: NVENC para preservar CPU
+- **Bitrate**: 6000 kbps para calidad óptima en Twitch
+- **Resolution**: 1080p 60fps para fluidez
+- **Audio**: 48kHz para calidad broadcast
+
+### Ergonomía para Streams Largos
+
+IlloJuan frecuentemente hace streams extensos, por lo que la comodidad es crucial:
+
+**Silla Gaming Premium**:
+- **Soporte lumbar**: Para sesiones de 6+ horas
+- **Reposabrazos ajustables**: Múltiples posiciones
+- **Material transpirable**: Comodidad en todas las estaciones
+- **Base estable**: Sin distracciones por inestabilidad
+
+**Escritorio Setup**:
+- **Altura ergonómica**: Evita fatiga en cuello y espalda
+- **Espacio amplio**: Para gesticular naturalmente
+- **Cable management**: Orden visual y funcional
+
+### Comparación con Otros Streamers
+
+El setup de IlloJuan se diferencia claramente:
+
+**Vs Ibai Llanos**: Menos producción, más intimidad
+**Vs TheGrefg**: Estética cálida vs tech futurista  
+**Vs ElXokas**: Ambiente acogedor vs gaming hardcore
+**Vs Coscu**: Minimalismo vs energía visual
+
+### Software y Herramientas Adicionales
+
+**Streaming Software**:
+- **OBS Studio**: Configuración profesional pero accessible
+- **StreamLabs**: Widgets básicos sin exceso
+- **Discord**: Comunicación con community y colaboradores
+
+**Audio Processing**:
+- **Noise suppression**: Krisp o RTX Voice para limpieza
+- **VST plugins**: Ecualizador y compresión sutil
+- **Monitoring**: Auriculares de referencia para control de calidad
+
+### Presupuesto Estimado del Setup
+
+**Estimación Total**: ~€3,000-4,000
+
+**Breakdown**:
+- **Audio**: Shure SM7B + interfaz (~€500)
+- **Video**: Sony A6400 + objetivo (~€800)
+- **Iluminación**: Elgato Key Light + ambiente (~€200)
+- **PC Gaming**: Build intermedio-alto (~€1,500)
+- **Periféricos**: Calidad gaming (~€300)
+- **Accesorios**: Silla, escritorio, decoración (~€700)
+
+### Lecciones para Streamers Aspirantes
+
+El setup de IlloJuan enseña principios valiosos:
+
+1. **Personalidad sobre tecnología**: El ambiente refleja quien eres
+2. **Comodidad = consistencia**: Setup cómodo permite streams más largos  
+3. **Calidad sin ostentación**: Buen equipamiento sin alardes
+4. **Versatilidad contenido**: Preparado para diferentes formatos
+5. **Connection over perfection**: La conexión humana supera la perfección técnica
+
+### Consejos para Replicar el Ambiente
+
+**Para lograr la calidez de IlloJuan**:
+- **Temperatura de color**: 3200K-3800K en todas las luces
+- **Múltiples fuentes**: Evita una sola luz dura
+- **Elementos personales**: Decoración que refleje tu personalidad
+- **Colores neutros**: Base neutra con acentos cálidos
+- **Organización**: Clean pero lived-in, no sterile
+
+### Evolución del Setup
+
+El setup de IlloJuan ha evolucionado gradualmente:
+- **Inicio**: Setup básico con webcam
+- **Crecimiento**: Upgrade progresivo de componentes
+- **Madurez**: Configuración actual balanceada
+- **Futuro**: Mejoras incrementales vs cambios dramáticos
+
+### Conclusión: El Arte de la Naturalidad
+
+El **setup de streaming de IlloJuan** demuestra que la efectividad no viene de la complejidad sino de la autenticidad. Su configuración prueba que un ambiente acogedor y natural puede ser tan atractivo como setups más espectaculares.
+
+**Key Takeaways**:
+- La personalidad del streamer debe reflejarse en el setup
+- Comodidad y ergonomía son inversiones en consistencia
+- Calidad técnica puede coexistir con simplicidad visual
+- El ambiente cálido crea conexión emocional con la audiencia
+
+Para streamers que buscan crear contenido basado en conexión humana más que espectáculo tecnológico, el enfoque de IlloJuan ofrece un blueprint excelente. Su setup demuestra que **cómo empezar en Twitch** puede ser exitoso priorizando autenticidad y comodidad sobre complexity.
+
+*¿Interesado en crear tu propio ambiente acogedor? Consulta nuestras guías sobre **setup de streaming barato** y **mejores micrófonos para streaming** para empezar tu journey.*
+    `,
     funFacts: [
       "Suele jugar con iluminación cálida y fondos con carácter.",
       "Equilibrio entre minimalismo y funcionalidad.",
