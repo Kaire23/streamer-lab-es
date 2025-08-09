@@ -73,8 +73,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   app.get("/api/generated-posts", async (req, res) => {
     try {
-      // Get published posts from database
-      const posts = await storage.getPublishedPosts();
+      // Get all posts from database (published and scheduled)
+      const posts = await storage.getAllGeneratedPosts();
       res.json(posts);
     } catch (error) {
       console.error("Get posts error:", error);
@@ -116,7 +116,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       console.error("Test email error:", error);
       res.status(500).json({ 
         error: "Failed to send email", 
-        details: error.message || error
+        details: error instanceof Error ? error.message : String(error)
       });
     }
   });

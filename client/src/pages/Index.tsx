@@ -8,10 +8,37 @@ import OptimizedImage from "@/components/OptimizedImage";
 import SubscriptionForm from "@/components/SubscriptionForm";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
+
+interface GeneratedPost {
+  id: number;
+  title: string;
+  content: string;
+  excerpt: string;
+  slug: string;
+  category: string;
+  keywords: string;
+  reading_time: number;
+  published_at: string;
+  is_published: boolean;
+  created_at: string;
+}
 
 const Index: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 10;
+
+  // Fetch generated posts from the database
+  const { data: generatedPosts = [], isLoading } = useQuery({
+    queryKey: ["/api/generated-posts"],
+    queryFn: async (): Promise<GeneratedPost[]> => {
+      const response = await fetch("/api/generated-posts");
+      if (!response.ok) {
+        throw new Error("Failed to fetch generated posts");
+      }
+      return response.json();
+    },
+  });
   
   // Get actual cover images for streamers
   const streamerImages: { [key: string]: string } = {
@@ -30,7 +57,7 @@ const Index: React.FC = () => {
     'Configuración y Software': 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=400&fit=crop'
   };
 
-  // Combine all posts: streamer setups + SEO articles
+  // Combine all posts: original streamer setups + SEO articles + generated posts
   const allPosts = [
     ...posts.map(post => ({ 
       ...post, 
@@ -53,8 +80,37 @@ const Index: React.FC = () => {
       type: 'article' as const,
       category: article.category,
       readingTime: article.readingTime
+    })),
+    ...generatedPosts.map(genPost => ({
+      slug: genPost.slug,
+      title: genPost.title,
+      excerpt: genPost.excerpt,
+      date: genPost.published_at,
+      author: "Equipo Setups de Streamers",
+      coverImage: getStreamerCoverImage(genPost.title),
+      keywords: genPost.keywords.split(', '),
+      bio: genPost.excerpt,
+      content: genPost.content,
+      funFacts: [],
+      setup: [],
+      type: 'generated' as const,
+      category: genPost.category,
+      readingTime: genPost.reading_time
     }))
   ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+  // Helper function to get cover image for generated posts
+  function getStreamerCoverImage(title: string): string {
+    const titleLower = title.toLowerCase();
+    if (titleLower.includes('ibai')) return '/assets/ibai-llanos-hero.jpg';
+    if (titleLower.includes('thegrefg')) return '/assets/thegrefg-hero.jpg';
+    if (titleLower.includes('elxokas') || titleLower.includes('xokas')) return '/assets/elxocas-hero.jpg';
+    if (titleLower.includes('illojuan') || titleLower.includes('juan')) return '/assets/illojuan-hero.jpg';
+    if (titleLower.includes('coscu')) return '/assets/coscu-hero.jpg';
+    if (titleLower.includes('auronplay') || titleLower.includes('auron')) return 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop';
+    if (titleLower.includes('elrubius') || titleLower.includes('rubius')) return 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop';
+    return 'https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=600&h=400&fit=crop';
+  }
 
   // Calculate pagination
   const totalPages = Math.ceil(allPosts.length / postsPerPage);
@@ -82,7 +138,9 @@ const Index: React.FC = () => {
           position: index + 1,
           url:
             (typeof window !== "undefined" ? window.location.origin : "") +
-            (p.type === 'streamer' ? `/setup/${p.slug}` : `/article/${p.slug}`),
+            (p.type === 'streamer' ? `/setup/${p.slug}` :
+             p.type === 'generated' ? `/setup/${p.slug}` :
+             `/article/${p.slug}`),
           name: p.title,
         })),
       },
@@ -136,18 +194,33 @@ const Index: React.FC = () => {
         <SubscriptionForm />
       </section>
 
-      {/* Total posts counter */}
-      <div className="mb-4 text-center text-sm text-muted-foreground">
-        Mostrando {startIndex + 1}-{Math.min(endIndex, allPosts.length)} de {allPosts.length} artículos
-      </div>
+      {/* Loading state */}
+      {isLoading && (
+        <div className="flex items-center justify-center py-12">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-brand"></div>
+          <span className="ml-2 text-muted-foreground">Cargando posts...</span>
+        </div>
+      )}
 
-      <div className="grid gap-6 md:grid-cols-2 posts-grid">
-        {currentPosts.map((post, index) => (
+      {/* Total posts counter */}
+      {!isLoading && (
+        <div className="mb-4 text-center text-sm text-muted-foreground">
+          Mostrando {startIndex + 1}-{Math.min(endIndex, allPosts.length)} de {allPosts.length} artículos
+        </div>
+      )}
+
+      {!isLoading && (
+        <div className="grid gap-6 md:grid-cols-2 posts-grid">
+          {currentPosts.map((post, index) => (
           <article
             key={post.slug}
             className="group overflow-hidden rounded-xl border border-border/60 shadow-sm transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-[var(--elevate)] post-card"
           >
-            <Link to={post.type === 'streamer' ? `/setup/${post.slug}` : `/article/${post.slug}`} className="block">
+            <Link to={
+              post.type === 'streamer' ? `/setup/${post.slug}` :
+              post.type === 'generated' ? `/setup/${post.slug}` :
+              `/article/${post.slug}`
+            } className="block">
               <div className="aspect-video overflow-hidden bg-muted">
                 <OptimizedImage
                   src={post.coverImage}
@@ -173,13 +246,21 @@ const Index: React.FC = () => {
                 )}
               </div>
               <h2 className="text-xl font-semibold tracking-tight">
-                <Link to={post.type === 'streamer' ? `/setup/${post.slug}` : `/article/${post.slug}`}>{post.title}</Link>
+                <Link to={
+                  post.type === 'streamer' ? `/setup/${post.slug}` :
+                  post.type === 'generated' ? `/setup/${post.slug}` :
+                  `/article/${post.slug}`
+                }>{post.title}</Link>
               </h2>
               <p className="mt-2 text-muted-foreground">{post.excerpt}</p>
               <div className="mt-4 flex items-center justify-between">
                 <Button asChild variant="hero">
-                  <Link to={post.type === 'streamer' ? `/setup/${post.slug}` : `/article/${post.slug}`}>
-                    {post.type === 'streamer' ? 'Ver setup' : 'Leer guía'}
+                  <Link to={
+                    post.type === 'streamer' ? `/setup/${post.slug}` :
+                    post.type === 'generated' ? `/setup/${post.slug}` :
+                    `/article/${post.slug}`
+                  }>
+                    {(post.type === 'streamer' || post.type === 'generated') ? 'Ver setup' : 'Leer guía'}
                   </Link>
                 </Button>
                 <time className="text-xs text-muted-foreground">
@@ -189,10 +270,11 @@ const Index: React.FC = () => {
             </div>
           </article>
         ))}
-      </div>
+        </div>
+      )}
 
       {/* Pagination controls */}
-      {totalPages > 1 && (
+      {!isLoading && totalPages > 1 && (
         <div className="mt-8 flex items-center justify-center gap-2">
           <Button
             variant="outline"
