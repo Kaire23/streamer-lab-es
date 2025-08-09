@@ -1,47 +1,14 @@
+import React from "react";
 import { Link } from "wouter";
-import SEO from "@/components/SEO";
+// SEO handled server-side for better crawling
 import { posts } from "@/data/posts";
 import { Button } from "@/components/ui/button";
 import AdSlot from "@/components/ads/AdSlot";
 
 const Index: React.FC = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        name: "Setups de Streamers",
-        url: typeof window !== "undefined" ? window.location.origin : "",
-        potentialAction: {
-          "@type": "SearchAction",
-          target: "{url}/?q={search_term_string}",
-          "query-input": "required name=search_term_string",
-        },
-      },
-      {
-        "@type": "ItemList",
-        itemListElement: posts.map((p, index) => ({
-          "@type": "ListItem",
-          position: index + 1,
-          url:
-            (typeof window !== "undefined" ? window.location.origin : "") +
-            `/setup/${p.slug}`,
-          name: p.title,
-        })),
-      },
-    ],
-  };
-
   return (
     <div>
-      <SEO
-        title="Setups de Streamers: Guías Futuristas en Español"
-        description="Cada semana analizamos el setup de un streamer famoso: historia, curiosidades y enlaces a todo su equipo."
-        canonicalPath="/"
-        jsonLd={jsonLd}
-        keywords={["setup de streaming", "streamers famosos", "equipo streaming", "guías en español"]}
-      />
-
+      {/* SEO handled server-side for better crawling */}
       <section className="mb-8 text-center">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
           Setups de Streamers

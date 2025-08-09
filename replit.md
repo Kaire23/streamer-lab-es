@@ -4,7 +4,7 @@
 
 This is a full-stack web application for a Spanish streaming equipment guide website called "Setups de Streamers". The application provides detailed guides about popular streamers' equipment setups, including hardware specifications, affiliate product links, and technical recommendations. It's built as a content-focused site with SEO optimization for the Spanish-speaking streaming community.
 
-**Migration Status**: Successfully migrated from Lovable to Replit on January 8, 2025. All functionality working, comprehensive SEO optimization implemented with server-side rendering, streamer images updated with optimized alt tags and structured data, canonical URL issues resolved with proper 301 redirects, and sitemap.xml updated with correct canonical URLs.
+**Migration Status**: Successfully migrated from Lovable to Replit on January 8, 2025. All functionality working, comprehensive SEO optimization implemented with server-side rendering, streamer images updated with optimized alt tags and structured data, canonical URL issues resolved with proper 301 redirects, sitemap.xml updated with correct canonical URLs, duplicate meta tag issue resolved with server-side-only SEO injection, and Schema Markup JSON-LD added for enhanced search engine visibility.
 
 ## User Preferences
 
@@ -28,7 +28,7 @@ Preferred communication style: Simple, everyday language.
 - **Session Storage**: connect-pg-simple for PostgreSQL session storage
 - **Storage Interface**: Abstract storage layer with in-memory implementation for development
 - **SEO Redirects**: 301 redirects from legacy `/post/` URLs to canonical `/setup/` URLs
-- **Server-Side SEO**: Custom route handlers for dynamic meta tag injection per page
+- **Server-Side SEO**: Custom route handlers for dynamic meta tag injection per page with React Helmet removed to prevent client-side override
 
 ### Data Storage Solutions
 - **Primary Database**: PostgreSQL via Neon serverless
@@ -44,7 +44,7 @@ Preferred communication style: Simple, everyday language.
 
 ### SEO and Performance
 - **Meta Management**: Comprehensive SEO tags with enhanced Open Graph, Twitter Cards, and meta descriptions
-- **Structured Data**: JSON-LD schema markup for articles, website info, and image optimization
+- **Structured Data**: JSON-LD schema markup for articles, website info, image optimization, and optimized Schema Markup for enhanced search visibility
 - **Analytics**: Google Analytics 4 integration with comprehensive tracking (direct HTML implementation + React route tracking)
 - **Performance**: Server-side rendering setup with optimized image loading and Core Web Vitals
 - **Image SEO**: Enhanced alt text with streaming equipment keywords and detailed sitemap image metadata
