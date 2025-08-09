@@ -3,6 +3,7 @@ import SEO from "@/components/SEO";
 import { posts } from "@/data/posts";
 import { Button } from "@/components/ui/button";
 import AdSlot from "@/components/ads/AdSlot";
+import OptimizedImage from "@/components/OptimizedImage";
 
 const Index: React.FC = () => {
   const jsonLd = {
@@ -73,17 +74,15 @@ const Index: React.FC = () => {
             className="group overflow-hidden rounded-xl border border-border/60 shadow-sm transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-[var(--elevate)] post-card"
           >
             <Link to={`/setup/${post.slug}`} className="block">
-              <div className="aspect-video overflow-hidden">
-                <img
+              <div className="aspect-video overflow-hidden bg-muted">
+                <OptimizedImage
                   src={post.coverImage}
                   alt={`Setup de streaming completo de ${post.title.replace(/^Setup de streaming de\s*/i, "")} - Equipo profesional, micrófono, cámara e iluminación`}
-                  loading={index < 2 ? "eager" : "lazy"}
-                  decoding="async"
-                  sizes="(min-width: 768px) 50vw, 100vw"
-                  width="640"
-                  height="360"
+                  priority={index === 0}
+                  width={378}
+                  height={213}
+                  sizes="(max-width: 768px) 100vw, 378px"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                  {...(index === 0 ? { fetchpriority: "high" } as React.ImgHTMLAttributes<HTMLImageElement> : {})}
                 />
               </div>
             </Link>
