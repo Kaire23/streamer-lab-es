@@ -52,7 +52,6 @@ const Index: React.FC = () => {
       setup: [],
       type: 'article' as const,
       category: article.category,
-      priority: article.priority,
       readingTime: article.readingTime
     }))
   ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());

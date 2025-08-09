@@ -10,8 +10,7 @@ import NotFound from "./pages/NotFound";
 // Lazy load pages for code splitting and better performance
 const Index = lazy(() => import("./pages/Index"));
 const PostPage = lazy(() => import("./pages/PostPage"));
-const Articles = lazy(() => import("./pages/articles"));
-const ArticleDetail = lazy(() => import("./pages/article-detail"));
+
 const Article = lazy(() => import("./pages/Article"));
 const Unsubscribed = lazy(() => import("./pages/Unsubscribed"));
 
@@ -56,7 +55,7 @@ const App = () => (
               }>
                 <Route path="/" component={Index} />
                 <Route path="/setup/:slug" component={PostPage} />
-                <Route path="/articles" component={Articles} />
+
                 <Route path="/article/:slug" component={Article} />
                 <Route path="/unsubscribed" component={Unsubscribed} />
                 <Route path="/:rest*" component={NotFound} />

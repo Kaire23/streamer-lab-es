@@ -1,5 +1,5 @@
+import type { InsertGeneratedPost } from "@shared/schema";
 import { storage } from "./storage-new";
-import { nanoid } from "nanoid";
 import sgMail from "@sendgrid/mail";
 
 // Initialize SendGrid if API key is available
@@ -11,14 +11,13 @@ interface PostTemplate {
   title: string;
   category: string;
   keywords: string[];
-  priority: "high" | "medium" | "low";
   readingTime: number;
   contentTemplate: string;
 }
 
 // Spanish streamers data for setup content generation
 const spanishStreamers = [
-  { name: "Ibai", followers: "19.7M", specialty: "variety, events" },
+  { name: "Ibai Llanos", followers: "19.7M", specialty: "variety, events" },
   { name: "AuronPlay", followers: "16.8M", specialty: "gaming, reactions" },
   { name: "ElRubius", followers: "15.8M", specialty: "gaming, variety" },
   { name: "TheGrefg", followers: "12.2M", specialty: "competitive gaming" },
@@ -35,861 +34,440 @@ const spanishStreamers = [
   { name: "Perxitaa", followers: "2.5M", specialty: "gaming, comedy" }
 ];
 
-// High-priority SEO-optimized post templates focusing on Spanish streamers
+// SEO-optimized post templates focusing on Spanish streamers (500+ words each)
 const postTemplates: PostTemplate[] = [
-  // Streamer Setup Analysis (High Priority)
   {
-    title: "Setup de [STREAMER]: Análisis Completo de Equipamiento 2025",
+    title: "Setup de Streaming de [STREAMER]: Análisis Completo del Equipamiento Profesional 2025",
     category: "Configuración y Setup Técnico",
     keywords: ["setup [STREAMER]", "equipamiento [STREAMER]", "configuración streaming", "setup streaming profesional"],
-    priority: "high",
-    readingTime: 9,
-    contentTemplate: `## Setup de [STREAMER]: Equipamiento y Configuración Profesional
+    readingTime: 12,
+    contentTemplate: `## Setup de Streaming de [STREAMER]: Análisis Completo del Equipamiento Profesional 2025
 
-El **setup de [STREAMER]** representa uno de los ejemplos más exitosos de configuración streaming en España. Con [FOLLOWERS] seguidores, [STREAMER] ha perfeccionado su equipamiento para ofrecer la máxima calidad en streams de [SPECIALTY].
+El **setup de streaming de [STREAMER]** representa la evolución perfecta del equipamiento streaming en España. Con **[FOLLOWERS] seguidores** y especialización en **[SPECIALTY]**, [STREAMER] ha desarrollado una configuración que maximiza tanto la calidad técnica como la experiencia del espectador.
 
-### Hardware Principal del Setup de [STREAMER]
+### ¿Por Qué el Setup de [STREAMER] Es Único?
 
-#### Micrófono y Audio Profesional
-El setup de **[STREAMER]** prioriza la calidad de audio, utilizando equipamiento similar al **setup de Ibai** pero adaptado a su estilo único:
-- **Micrófono principal**: **[Shure SM7B](https://www.amazon.es/s?k=Shure+SM7B&tag=yostreamer-21)** o **[Electro-Voice RE20](https://www.amazon.es/s?k=Electro-Voice+RE20&tag=yostreamer-21)**
-- **Interfaz de audio**: **[GoXLR](https://www.amazon.es/s?k=GoXLR&tag=yostreamer-21)** para control total
-- **Auriculares monitoring**: **[Beyerdynamic DT 770 Pro](https://www.amazon.es/s?k=Beyerdynamic+DT+770+Pro&tag=yostreamer-21)**
+En el competitivo mundo del streaming español, donde figuras como **[Ibai Llanos](https://yostreamer.com/setup/ibai-llanos-setup)**, **[TheGrefg](https://yostreamer.com/setup/thegrefg-setup)** y **[ElXokas](https://yostreamer.com/setup/elxokas-setup)** han establecido los estándares, [STREAMER] se diferencia por su enfoque específico en **[SPECIALTY]**. Su setup no solo busca calidad técnica, sino crear una experiencia inmersiva que conecte auténticamente con su audiencia.
 
-#### PC Gaming y Streaming
-Como otros grandes streamers españoles como **TheGrefg** y **ElXokas**, [STREAMER] utiliza hardware de gama alta:
-- **CPU**: **[AMD Ryzen 9 7950X](https://www.amazon.es/s?k=AMD+Ryzen+9+7950X&tag=yostreamer-21)** para multitasking extremo
-- **GPU**: **[RTX 4090](https://www.amazon.es/s?k=RTX+4090&tag=yostreamer-21)** para gaming 4K + streaming
-- **RAM**: **[64GB DDR5](https://www.amazon.es/s?k=64GB+DDR5+gaming&tag=yostreamer-21)** para navegadores + OBS + gaming
+El **equipamiento de [STREAMER]** refleja años de experiencia y refinamiento. Cada componente ha sido seleccionado estratégicamente para optimizar la transmisión de contenido de **[SPECIALTY]**, donde cada detalle técnico puede determinar el éxito o fracaso de un stream.
 
-### Configuración de Cámara y Video
+### Hardware de Audio: El Corazón del Setup de [STREAMER]
 
-#### Setup Visual Profesional
-Siguiendo la tendencia de streamers como **IlloJuan** y **AuronPlay**, [STREAMER] enfoca en calidad visual:
-- **Cámara principal**: **[Sony Alpha A7S III](https://www.amazon.es/s?k=Sony+Alpha+A7S+III&tag=yostreamer-21)** para calidad cinematográfica
-- **Capturadora**: **[Elgato Cam Link 4K](https://www.amazon.es/s?k=Elgato+Cam+Link+4K&tag=yostreamer-21)** 
-- **Iluminación**: **[Elgato Key Light Air](https://www.amazon.es/s?k=Elgato+Key+Light+Air&tag=yostreamer-21)** setup dual
+#### Micrófono Profesional y Sistema de Audio
+El **setup de [STREAMER]** prioriza la calidad de audio como elemento fundamental. Siguiendo la tendencia establecida por el **[setup de Ibai](https://yostreamer.com/setup/ibai-llanos-setup)** y otros grandes streamers españoles:
 
-### Comparación con Otros Setups de Streamers Españoles
+**Micrófono Principal**: **[Shure SM7B](https://www.amazon.es/s?k=Shure+SM7B&tag=yostreamer-21)** - El estándar indiscutible
+- **Calidad vocal excepcional**: Captura natural y cálida de la voz
+- **Rechazo de ruido superior**: Ideal para entornos no tratados acústicamente  
+- **Durabilidad profesional**: Resistente al uso intensivo del streaming diario
+- **Versatilidad total**: Perfecto para gaming, just chatting y colaboraciones
 
-#### vs Setup de Ibai
-Mientras que el **setup de Ibai** prioriza la confiabilidad para eventos masivos, el setup de [STREAMER] enfoca en [especialidad específica]:
-- **Similitudes**: Mismo nivel de calidad audio (SM7B + GoXLR)
-- **Diferencias**: [STREAMER] utiliza más elementos gaming-focused
-- **Resultado**: Adaptado perfecto para contenido de [SPECIALTY]
+**Interfaz de Audio**: **[GoXLR](https://www.amazon.es/s?k=GoXLR&tag=yostreamer-21)** - Control Total de Audio
+- **Mezcla en tiempo real**: Control individual de game, chat, música y micrófono
+- **Efectos de voz integrados**: Modificadores en vivo para contenido dinámico
+- **Routing avanzado**: Separación de audio para OBS y audiencia
+- **Integración perfecta**: Compatible con Twitch, Discord y plataformas principales
+
+**Auriculares de Monitoreo**: **[Beyerdynamic DT 770 Pro](https://www.amazon.es/s?k=Beyerdynamic+DT+770+Pro&tag=yostreamer-21)**
+- **Referencia neutral**: Monitoreo preciso sin coloración
+- **Comodidad extrema**: Sesiones de streaming de 8+ horas
+- **Aislamiento acústico**: Focus total durante streams intensos
+
+### PC Gaming y Streaming: Potencia Sin Compromisos
+
+#### Hardware de Alto Rendimiento
+Como referentes del streaming español **[TheGrefg](https://yostreamer.com/setup/thegrefg-setup)**, **[ElXokas](https://yostreamer.com/setup/elxokas-setup)** e **[IlloJuan](https://yostreamer.com/setup/illojuan-setup)**, [STREAMER] utiliza componentes que garantizan rendimiento máximo:
+
+**Procesador**: **[AMD Ryzen 9 7950X](https://www.amazon.es/s?k=AMD+Ryzen+9+7950X&tag=yostreamer-21)** - Multitasking Extremo
+- **16 núcleos / 32 threads**: Gaming + encoding + navegadores simultáneos
+- **Frecuencias boost hasta 5.7GHz**: Performance gaming sin compromisos
+- **Eficiencia energética**: Menos calor, mayor estabilidad en streams largos
+- **Compatibilidad futura**: Soporte para próximas generaciones DDR5
+
+**Tarjeta Gráfica**: **[RTX 4090](https://www.amazon.es/s?k=RTX+4090&tag=yostreamer-21)** - Gaming 4K + Streaming Simultáneo  
+- **Gaming 4K 120fps**: Calidad visual máxima para audiencia
+- **NVENC encoding**: Streaming de alta calidad sin impacto en performance
+- **Ray Tracing avanzado**: Gráficos cinematográficos en tiempo real
+- **24GB VRAM**: Future-proof para próximos títulos AAA
+
+### Comparativa: Setup de [STREAMER] vs Otros Grandes Streamers
+
+#### vs Setup de Ibai Llanos
+El **[setup de streaming de Ibai](https://yostreamer.com/setup/ibai-llanos-setup)** se enfoca en confiabilidad para eventos masivos y colaboraciones:
+- **Similitudes**: Misma base de audio (SM7B + GoXLR) y calidad sin compromisos
+- **Diferencias**: [STREAMER] optimiza específicamente para **[SPECIALTY]** con elementos gaming-focused
+- **Ventaja única**: Configuración más ágil para contenido variado y espontáneo
+
+#### vs Setup de TheGrefg  
+El **[equipamiento de TheGrefg](https://yostreamer.com/setup/thegrefg-setup)** prioriza gaming competitivo y eventos grandes:
+- **Puntos comunes**: Hardware de gama alta (RTX 4090, procesadores top)
+- **Especialización**: [STREAMER] adapta mejor para **[SPECIALTY]** con configuraciones específicas
+- **Innovación**: Implementación de tecnologías emergentes más rápida
 
 #### vs Setup de ElXokas
-Comparado con el **setup de ElXokas**, [STREAMER] implementa:
-- **Audio processing más avanzado**: Efectos de voz en tiempo real
-- **Iluminación RGB**: Ambiente más dinámico para [SPECIALTY]
-- **Multi-camera setup**: Diferentes ángulos para variedad visual
+El **[setup de ElXokas](https://yostreamer.com/setup/elxokas-setup)** balancea gaming casual con just chatting:
+- **Audio similar**: Ambos priorizan calidad vocal excepcional
+- **Diferenciación**: [STREAMER] incorpora más elementos de **[SPECIALTY]**
+- **Flexibilidad**: Mayor adaptabilidad para diferentes tipos de contenido
 
-### Configuración OBS Studio Profesional
+### Configuración OBS Studio: Optimización Profesional
 
-#### Settings Optimizados
-El setup de [STREAMER] utiliza configuración OBS similar a streamers profesionales:
+#### Settings de Encoding Avanzados
+Configuración OBS optimizada basada en mejores prácticas de streamers profesionales:
+
 \`\`\`
-Encoding:
-- Encoder: NVENC H.264 (GPU)
-- Rate Control: CBR
-- Bitrate: 6000 kbps
-- Keyframe: 2s
-
-Video:
-- Base Resolution: 1920x1080
-- Output Resolution: 1920x1080  
+Configuración Video:
+- Base Canvas: 1920x1080
+- Output Resolution: 1920x1080
+- Downscale Filter: Lanczos (Sharpened scaling, 36 samples)
 - FPS: 60 (gaming) / 30 (just chatting)
+
+Configuración Encoding:
+- Encoder: NVIDIA NVENC H.264 (new)
+- Rate Control: CBR  
+- Bitrate: 6000 kbps (Partner) / 3500 kbps (Affiliate)
+- Keyframe Interval: 2 seconds
+- Preset: Quality
+- Profile: high
+- Look-ahead: Enabled
+- Psycho Visual Tuning: Enabled
+- GPU: 0 (RTX 4090)
+- Max B-frames: 2
 \`\`\`
 
-#### Scenes y Transiciones
-- **Gaming Scene**: Game capture + webcam overlay + chat
-- **Just Chatting**: Webcam principal + background elements
-- **Starting/Ending**: Branded graphics + música
-- **BRB Scene**: Animated background + countdown
+### Presupuesto y ROI del Setup Profesional
 
-### Peripherals y Accesorios
+#### Inversión Total del Setup
+- **Audio profesional**: €800-1,200 (SM7B + GoXLR + auriculares)
+- **PC Gaming/Streaming**: €4,500-6,000 (CPU + GPU + RAM + almacenamiento)
+- **Sistema de video**: €2,500-3,500 (cámara + capturadora + iluminación)
+- **Peripherals gaming**: €600-800 (teclado + mouse + mousepad)
+- **Control de stream**: €400-600 (Stream Deck + accesorios)
+- **Setup completo**: **€8,800-12,100**
 
-#### Gaming Peripherals
-Para gaming competitivo similar a **TheGrefg**:
-- **Teclado**: **[Corsair K100 RGB](https://www.amazon.es/s?k=Corsair+K100+RGB&tag=yostreamer-21)** con switches speed
-- **Mouse**: **[Logitech G Pro X Superlight](https://www.amazon.es/s?k=Logitech+G+Pro+X+Superlight&tag=yostreamer-21)**
-- **Mousepad**: **[SteelSeries QcK+](https://www.amazon.es/s?k=SteelSeries+QcK+XXL&tag=yostreamer-21)**
+#### ROI y Justificación Profesional
+Para streamers de **[SPECIALTY]** con **[FOLLOWERS]** seguidores:
+- **Retención de audiencia**: +35% con calidad técnica superior
+- **Crecimiento orgánico**: Clips de alta calidad = mayor viralidad
+- **Monetización premium**: Sponsors pagan más por calidad guaranteed
+- **Longevidad del equipo**: Inversión amortizada en 2-3 años
 
-#### Streaming Controls
-- **Stream Deck XL**: **[Elgato Stream Deck XL](https://www.amazon.es/s?k=Elgato+Stream+Deck+XL&tag=yostreamer-21)** para control total
-- **Macros personalizados**: Scene switching, audio control, alerts
-- **Integración Discord**: Control de canales y estados
+### Evolución Futura del Setup
 
-### Presupuesto Total del Setup
+#### Tecnologías Emergentes
+- **AV1 encoding**: Preparado para futura adopción en plataformas
+- **AI-powered highlights**: Integración con sistemas de clip automation
+- **VR/AR integration**: Ready para contenido mixto reality
+- **8K streaming**: Hardware preparado para próxima generación
 
-#### Inversión Profesional
-El setup completo de [STREAMER] representa una inversión de:
-- **Hardware core**: ~8000€ (PC + periféricos principales)
-- **Audio profesional**: ~1500€ (micrófono + interfaz + tratamiento)
-- **Video/Iluminación**: ~2000€ (cámara + capturadora + luces)
-- **Accesorios**: ~1000€ (Stream Deck + cables + mounting)
-- **Total**: ~12500€
+El **setup de [STREAMER]** representa la evolución natural del streaming profesional en España, combinando la experiencia de streamers como **[Ibai Llanos](https://yostreamer.com/setup/ibai-llanos-setup)**, **[TheGrefg](https://yostreamer.com/setup/thegrefg-setup)** y **[ElXokas](https://yostreamer.com/setup/elxokas-setup)** con innovaciones específicas para **[SPECIALTY]**. Esta configuración no solo garantiza calidad técnica superior, sino que crea las condiciones perfectas para el crecimiento sostenido y la conexión auténtica con la audiencia.
 
-### Alternativas por Presupuesto
-
-#### Versión Intermedia (~3000€)
-Para replicar el estilo con presupuesto menor:
-- **PC**: **[PC Build RTX 4060 Ti](https://www.amazon.es/s?k=PC+gaming+RTX+4060+Ti&tag=yostreamer-21)** (~1500€)
-- **Audio**: **[Audio-Technica AT2020USB+](https://www.amazon.es/s?k=Audio-Technica+AT2020USB&tag=yostreamer-21)** (~150€)
-- **Webcam**: **[Logitech StreamCam](https://www.amazon.es/s?k=Logitech+StreamCam&tag=yostreamer-21)** (~150€)
-
-#### Versión Budget (~800€)
-Setup inicial inspirado en [STREAMER]:
-- **PC básico**: **[PC gaming entrada](https://www.amazon.es/s?k=PC+gaming+entrada+streaming&tag=yostreamer-21)** (~600€)
-- **Micrófono**: **[Blue Yeti](https://www.amazon.es/s?k=Blue+Yeti&tag=yostreamer-21)** (~100€)
-- **Iluminación**: **[Ring light](https://www.amazon.es/s?k=ring+light+streaming&tag=yostreamer-21)** (~50€)
-
-### Evolución y Upgrades
-
-#### Cronología del Setup
-1. **Fase inicial**: Setup básico similar a streamers pequeños
-2. **Crecimiento**: Upgrade audio profesional (como **ElRubius**)
-3. **Profesionalización**: Setup actual con elementos únicos
-4. **Futuro**: Expansión studio con green screen profesional
-
-### Consejos para Replicar el Setup
-
-#### Empezar Gradual
-1. **Prioridad audio**: Micrófono decente primero
-2. **Estabilidad**: PC que maneje streaming + gaming
-3. **Iluminación básica**: Ring light o panel LED  
-4. **Upgrade progresivo**: Añadir elementos según crecimiento
-
-#### Adaptación Personal
-- **Analiza tu contenido**: Gaming vs Just Chatting vs Variety
-- **Presupuesto realista**: No copies todo de una vez
-- **Personalización**: Añade elementos únicos como [STREAMER]
-
-*El setup de [STREAMER] demuestra que la calidad profesional viene de la consistencia y optimización gradual, no de comprar todo el equipamiento caro de una vez.*`
+*¿Quieres saber más sobre configuraciones específicas? Consulta nuestras guías detalladas sobre el **[setup de Ibai](https://yostreamer.com/setup/ibai-llanos-setup)**, el **[equipamiento de TheGrefg](https://yostreamer.com/setup/thegrefg-setup)** o el **[setup de ElXokas](https://yostreamer.com/setup/elxokas-setup)** para comparaciones detalladas.*`
   },
-  
-  // OBS Configuration (High Priority)
   {
-    title: "Mejor Configuración OBS 2025: Guía Completa para Streaming",
-    category: "Configuración y Setup Técnico",
-    keywords: ["configuración OBS", "OBS Studio configuración", "mejor configuración OBS 2025", "OBS streaming Twitch"],
-    priority: "high",
-    readingTime: 10,
-    contentTemplate: `## La Mejor Configuración OBS para Streaming 2025
-
-**OBS Studio** es el software de streaming más utilizado por streamers profesionales como **Ibai**, **TheGrefg** y **ElXokas**. Esta guía cubre la configuración óptima para streaming en 2025.
-
-### Configuración Video Óptima
-
-#### Settings Recomendados 2025
-\\\`\\\`\\\`
-Base (Canvas) Resolution: 1920x1080
-Output (Scaled) Resolution: 1920x1080
-Downscale Filter: Lanczos (Sharpened scaling, 36 samples)
-Common FPS Values: 60 (si tu PC aguanta) o 30 (más estable)
-\\\`\\\`\\\`
-
-#### Por Tipo de Hardware
-**PC High-End (RTX 4070+)**:
-- **Resolution**: 1080p 60fps
-- **Encoder**: NVENC H.264 (new)
-- **Bitrate**: 6000 kbps
-
-**PC Mid-Range (RTX 3060-4060)**:
-- **Resolution**: 1080p 60fps
-- **Encoder**: NVENC H.264
-- **Bitrate**: 4500 kbps
-
-**PC Budget (GTX 1660-RTX 3050)**:
-- **Resolution**: 720p 60fps o 1080p 30fps
-- **Encoder**: x264 Fast
-- **Bitrate**: 3500 kbps
-
-### Configuración Audio Profesional
-
-#### Settings de Audio como los Pros
-Los streamers exitosos priorizan audio sobre video:
-\\\`\\\`\\\`
-Sample Rate: 48kHz
-Channels: Stereo
-Desktop Audio Device: Default
-Mic/Auxiliary Device: Tu micrófono principal
-\\\`\\\`\\\`
-
-#### Filtros Audio Esenciales
-1. **Noise Suppression**: RNNoise (-60dB)
-2. **Gain**: Ajustar a -12dB peak
-3. **Compressor**: Ratio 3:1, Threshold -18dB
-4. **Limiter**: -3dB ceiling
-
-### Encoder Settings Avanzados
-
-#### NVENC (GPU) - Recomendado 2025
-Utilizado por **TheGrefg** y streamers profesionales:
-\\\`\\\`\\\`
-Rate Control: CBR
-Bitrate: 6000 kbps (Twitch max)
-Keyframe Interval: 2 seconds
-Preset: Quality (P5) o Max Quality (P7)
-Profile: high
-Look-ahead: Enabled
-Psycho Visual Tuning: Enabled
-GPU: 0
-Max B-frames: 2
-\\\`\\\`\\\`
-
-#### x264 (CPU) - Para PCs Potentes
-Configuración similar al setup de **ElXokas**:
-\\\`\\\`\\\`
-Rate Control: CBR
-Bitrate: 6000 kbps
-CPU Usage Preset: Medium (o Fast si lag)
-Profile: high
-Tune: zerolatency
-\\\`\\\`\\\`
-
-### Scenes Profesionales Setup
-
-#### Scene Collection como Ibai
-**Estructura recomendada**:
-1. **Starting Soon**: Pre-stream screen
-2. **Main Gaming**: Game + webcam overlay
-3. **Just Chatting**: Webcam focus + background
-4. **BRB**: Break screen con timer
-5. **Ending**: Thanks + social media
-
-#### Sources Optimization
-- **Game Capture**: Mejor performance que Display
-- **Window Capture**: Para aplicaciones específicas
-- **Browser Source**: Para overlays y alerts
-- **Image Source**: Para logos y graphics estáticos
-
-### Streaming a Twitch/YouTube
-
-#### Platform-Specific Settings
-**Twitch**:
-- Server: Auto (mejor latencia)
-- Bitrate: Max 8000 kbps (6000 recomendado)
-- Keyframe: 2 segundos exactos
-
-**YouTube**:
-- Server: Primary YouTube ingest
-- Bitrate: Hasta 20000 kbps posible
-- Latency: Low-latency activado
-
-### Filtros de Video Profesionales
-
-#### Webcam Enhancement
-Como el setup visual de **AuronPlay**:
-1. **Color Correction**: Ajustar contrast/brightness
-2. **Sharpen**: Sutilmente para más definición
-3. **Chroma Key**: Si usas green screen
-4. **Crop/Pad**: Para aspect ratio perfecto
-
-### Optimización Performance
-
-#### Reduce Lag y Dropped Frames
-**Process Priority**: Above Normal para OBS
-**GPU Scheduling**: Hardware-accelerated GPU scheduling ON
-**Game Mode**: Windows Game Mode OFF mientras streameas
-**Background Apps**: Cerrar Discord overlay, browsers innecesarios
-
-#### Monitoring Performance
-Stats to Watch:
-- **Rendering Lag**: <5%
-- **Encoding Lag**: 0%
-- **Dropped Frames**: <0.1%
-- **CPU Usage**: <80%
-
-### Plugins Esenciales 2025
-
-#### Must-Have Plugins
-- **StreamElements**: Overlays y alerts
-- **Advanced Scene Switcher**: Automatización
-- **Source Record**: Grabar sources separados
-- **Move Transition**: Smooth scene changes
-
-### Configuración Dual PC
-
-#### Setup como TheGrefg
-**Gaming PC**: Solo juega
-**Streaming PC**: Solo OBS + overlays
-**Conexión**: Capture card (Elgato 4K60 Pro)
-**Audio**: Mix via GoXLR o similar
-
-### Troubleshooting Común
-
-#### High CPU/GPU Usage
-1. **Lower preset**: Medium → Fast
-2. **Reduce resolution**: 1080p → 720p
-3. **Frame rate**: 60fps → 30fps
-4. **Close unnecessary**: Browser tabs, Discord
-
-#### Black Screen Issues
-1. **Run as Administrator**: OBS
-2. **Graphics drivers**: Update
-3. **Game capture mode**: Auto → Specific
-4. **Compatibility**: Disable fullscreen optimizations
-
-### Backup y Recovery
-
-#### Settings Backup
-- **Export Profile**: Settings → Profile → Export
-- **Scene Collection**: Export scenes regularmente
-- **Cloud backup**: Google Drive para settings
-- **Multiple profiles**: Gaming, Just Chatting, IRL
-
-### Configuración Mobile/IRL
-
-#### Para Streams Fuera del PC
-- **OBS Camera**: Phone como webcam
-- **Streamlabs Mobile**: All-in-one solution
-- **Hardware encoder**: Para reduce CPU load
-- **Hotspot**: 4G/5G backup internet
-
-### Conclusión: Setup Profesional
-
-La **mejor configuración OBS** combina:
-1. **Hardware adecuado**: CPU/GPU balanced
-2. **Settings optimizados**: Según tu setup específico  
-3. **Audio prioritario**: Nunca comprometer calidad sonido
-4. **Monitoring constante**: Stats y performance
-5. **Backup regular**: Settings y scenes
-
-**Quick Start Checklist**:
-✓ NVENC encoder (si tienes GPU compatible)
-✓ 6000 kbps bitrate
-✓ Audio filters: Noise suppression + compressor
-✓ Scene structure clara
-✓ Performance monitoring activo
-
-*Esta configuración replicará la calidad profesional que ves en streams de Ibai, TheGrefg y otros streamers exitosos.*`
-  },
-
-  // Streamlabs vs OBS
-  {
-    title: "Streamlabs OBS vs OBS Studio 2025: ¿Cuál Elegir?",
-    category: "Configuración y Setup Técnico", 
-    keywords: ["Streamlabs OBS", "OBS Studio", "Streamlabs vs OBS", "mejor software streaming"],
-    priority: "high",
-    readingTime: 8,
-    contentTemplate: `## Streamlabs OBS vs OBS Studio: Comparación Definitiva 2025
-
-La elección entre **Streamlabs OBS** y **OBS Studio** define tu experiencia de streaming. Analizamos ambas opciones para ayudarte a decidir.
-
-### OBS Studio: La Elección de los Profesionales
-
-#### Por qué los Pros Eligen OBS
-Streamers como **Ibai**, **TheGrefg** y **ElXokas** utilizan **OBS Studio** por:
-- **Performance superior**: Menor uso de recursos
-- **Estabilidad**: Menos crashes durante streams largos
-- **Flexibilidad total**: Control granular de todo
-- **Plugins infinitos**: Extensibilidad máxima
-- **Gratis 100%**: Sin limitaciones premium
-
-#### Ventajas OBS Studio
-**Performance**:
-- **20-30% menos CPU**: Comparado con Streamlabs
-- **Menor RAM usage**: Más memory para juegos
-- **Estabilidad superior**: Especialmente en streams largos
-
-**Personalización**:
-- **Control total**: Cada setting configurable
-- **Plugin ecosystem**: Cientos de plugins gratuitos
-- **Custom scripts**: Automatización avanzada
-
-### Streamlabs OBS: All-in-One Solution
-
-#### Para Quién es Ideal
-**Beginners** que buscan simplicity:
-- **Setup rápido**: Wizard de configuración
-- **Widgets integrados**: Alerts, chat, donations
-- **Templates**: Overlays pre-diseñados
-- **Cloud backup**: Settings sync automático
-
-#### Ventajas Streamlabs
-**Convenience**:
-- **One-click setup**: Para principiantes
-- **Integrated alerts**: No need external tools
-- **Prime benefits**: Con Amazon Prime
-- **Support**: Chat support disponible
-
-### Comparación Performance 2025
-
-#### Benchmarks Reales
-**Sistema Test**: Ryzen 7 5800X + RTX 3070
-**Streaming 1080p60**:
-
-**OBS Studio**:
-- CPU Usage: 15-20%
-- RAM Usage: 800MB
-- Dropped Frames: 0.02%
-
-**Streamlabs OBS**:
-- CPU Usage: 25-30%
-- RAM Usage: 1.2GB  
-- Dropped Frames: 0.08%
-
-### Features Comparison
-
-#### Streaming Core
-| Feature | OBS Studio | Streamlabs |
-|---------|------------|------------|
-| Multi-platform | ✅ | ✅ |
-| Custom bitrate | ✅ | ✅ |
-| Scene collections | ✅ | ✅ |
-| Advanced filters | ✅ | Limited |
-| Plugin support | ✅ | Limited |
-
-#### Integrated Tools
-| Feature | OBS Studio | Streamlabs |
-|---------|------------|------------|
-| Alerts | Plugin needed | ✅ Built-in |
-| Chat overlay | Plugin needed | ✅ Built-in |
-| Donations | External | ✅ Built-in |
-| Analytics | External | ✅ Built-in |
-
-### Setup Específico por Uso
-
-#### Para Gaming Competitivo
-**OBS Studio** preferred:
-- **Lower latency**: Menos input lag
-- **Better performance**: Más FPS en juegos
-- **Stability**: Crítico para competitive
-
-**Configuración**:
-- **Process priority**: High para OBS
-- **Dedicated cores**: CPU affinity
-- **Minimal overlays**: Performance focus
-
-#### Para Content Creation
-**Streamlabs** puede funcionar:
-- **Easy overlays**: Quick setup
-- **Integrated tools**: All-in-one
-- **Templates**: Professional look instantly
-
-### Migration Guide
-
-#### De Streamlabs a OBS
-**Why Switch**:
-- **Performance issues**: Lag durante streams
-- **More control needed**: Advanced configuration
-- **Plugin requirements**: Specific functionality
-
-**Migration Steps**:
-1. **Export scenes**: Streamlabs settings
-2. **Install OBS**: Latest version
-3. **Recreate scenes**: Manually o import parcial
-4. **Add plugins**: StreamElements, alerts
-5. **Test setup**: Completamente antes de go live
-
-#### Setup Equivalente
-**Streamlabs Features → OBS Alternatives**:
-- **Alerts**: StreamElements/StreamLabs (web)
-- **Chat overlay**: OBS Browser source
-- **Donations**: Ko-fi, Streamlabs (web)
-- **Analytics**: Twitch Dashboard + third-party
-
-### Hardware Requirements
-
-#### Minimum Specs OBS Studio
-- **CPU**: Quad-core 2.5GHz+
-- **RAM**: 8GB
-- **GPU**: GTX 1050 / RX 560+
-- **Storage**: 500MB
-
-#### Minimum Specs Streamlabs
-- **CPU**: Quad-core 3.0GHz+
-- **RAM**: 16GB recommended
-- **GPU**: GTX 1060 / RX 580+
-- **Storage**: 2GB
-
-### Plugin Ecosystem
-
-#### Essential OBS Plugins
-**Performance**:
-- **Advanced Scene Switcher**: Automatización
-- **OBS NDI**: Network streaming
-- **GPU-assisted encoding**: Performance boost
-
-**Content**:
-- **Browser Source**: Web overlays
-- **VLC Video Source**: Media playback
-- **Image Slideshow**: Rotating content
-
-### Cost Analysis
-
-#### OBS Studio
-- **Software**: Free
-- **Alerts service**: $0-10/month
-- **Additional tools**: Varies
-- **Total**: $0-50/month
-
-#### Streamlabs
-- **Software**: Free (limited) / $19/month (Prime)
-- **Built-in tools**: Included
-- **Advanced features**: $49/month (Pro)
-- **Total**: $0-49/month
-
-### Real Streamer Opinions
-
-#### Pro Streamers (OBS)
-**"Performance es crítico para mi contenido competitivo"** - Competitive gaming streamer
-**"Necesito control total de mi setup"** - Variety streamer
-**"Plugins específicos para mi workflow"** - Content creator
-
-#### Growing Streamers (Streamlabs)
-**"Empecé con Streamlabs, simple setup"** - 1K follower streamer
-**"All-in-one me ahorra tiempo"** - Part-time streamer
-**"Migré a OBS cuando crecí"** - Mid-tier streamer
-
-### Decision Framework
-
-#### Choose OBS Studio If:
-- **Performance crítico**: Gaming competitivo
-- **Advanced user**: Technical comfort
-- **Custom workflow**: Specific requirements
-- **Budget conscious**: Free preference
-- **Plugin dependent**: Specific functionality
-
-#### Choose Streamlabs If:
-- **Complete beginner**: First time streaming
-- **Quick setup**: Go live today
-- **All-in-one**: Prefer integrated
-- **Support needed**: Chat/email support
-- **Premium features**: Worth the cost
-
-### Transition Timeline
-
-#### Streamlabs → OBS (Recommended)
-**Month 1**: Learn OBS basics
-**Month 2**: Setup equivalent workflow  
-**Month 3**: Add advanced plugins
-**Month 4**: Full migration
-
-### 2025 Recommendation
-
-**Start with**: Streamlabs (if complete beginner)
-**Transition to**: OBS Studio (when comfortable)
-**Stay with**: OBS for professional streaming
-
-**Why this approach**:
-- **Learning curve**: Gradual progression
-- **Performance**: Better long-term
-- **Cost**: Free upgrade path
-- **Future-proof**: Industry standard
-
-*La mayoría de streamers exitosos eventualmente migran a OBS Studio por performance y control. Empieza donde te sientas cómodo, pero planifica la transición.*`
-  },
-  
-  // Webcam content
-  {
-    title: "Mejor Webcam para Streaming 2025: Guía Completa de Compra",
+    title: "Mejor Equipamiento de Gaming para Streaming como [STREAMER] - Guía Completa 2025",
     category: "Hardware y Equipamiento",
-    keywords: ["mejor webcam streaming", "webcam Twitch", "cámara streaming 2025", "webcam gaming"],
-    priority: "high",
-    readingTime: 8,
-    contentTemplate: `## Las Mejores Webcams para Streaming en 2025
+    keywords: ["equipamiento gaming [STREAMER]", "PC gaming streaming", "hardware streaming profesional"],
+    readingTime: 10,
+    contentTemplate: `## Mejor Equipamiento de Gaming para Streaming como [STREAMER] - Guía Completa 2025
 
-Una **webcam para streaming** de calidad es esencial para crear contenido profesional. Los streamers más exitosos como **Ibai Llanos** y **TheGrefg** utilizan cámaras que van más allá de las webcams tradicionales, pero existen opciones excelentes para todos los presupuestos.
+El **equipamiento de gaming para streaming** de [STREAMER] representa la síntesis perfecta entre rendimiento competitivo y calidad de transmisión. Con **[FOLLOWERS] seguidores** especializados en **[SPECIALTY]**, su configuración hardware demuestra cómo optimizar cada componente para maximizar tanto el gameplay como la experiencia del espectador.
 
-### Top 5 Mejores Webcams para Streaming
+### Filosofía del Hardware: Gaming + Streaming Sin Compromisos
 
-#### 1. Logitech C920s Pro HD - El Estándar de la Industria
-La **[Logitech C920s Pro HD](https://www.amazon.es/s?k=Logitech+C920s+Pro+HD&tag=yostreamer-21)** sigue siendo la referencia en webcams para streaming:
-- **Resolución 1080p 30fps**: Calidad sharp para streaming
-- **Autofoco automático**: Siempre enfocado perfectamente  
-- **Micrófono dual integrado**: Audio backup decente
-- **Precio**: ~80€ - Excelente relación calidad-precio
+En el ecosistema del streaming español, donde **[Ibai Llanos](https://yostreamer.com/setup/ibai-llanos-setup)**, **[TheGrefg](https://yostreamer.com/setup/thegrefg-setup)** y **[ElXokas](https://yostreamer.com/setup/elxokas-setup)** han establecido benchmarks de calidad, [STREAMER] destaca por su enfoque en **[SPECIALTY]**. Su hardware no solo debe ejecutar juegos a máximo rendimiento, sino simultáneamente procesar encoding de video, gestionar múltiples aplicaciones y mantener interacción fluida con su audiencia.
 
-#### 2. Logitech StreamCam - Para Creadores de Contenido
-La **[Logitech StreamCam](https://www.amazon.es/s?k=Logitech+StreamCam&tag=yostreamer-21)** está diseñada específicamente para streaming:
-- **1080p 60fps**: Fluidez superior en movimientos
-- **Conexión USB-C**: Futuro-proof connectivity
-- **Vertical y horizontal**: Versatilidad para diferentes plataformas
-- **Software Logitech Capture**: Control avanzado de la imagen
+### Procesador: El Cerebro del Setup de [STREAMER]
 
-### Comparación por Tipo de Contenido
+#### AMD Ryzen 9 7950X - Multitasking Sin Límites
+El **[AMD Ryzen 9 7950X](https://www.amazon.es/s?k=AMD+Ryzen+9+7950X&tag=yostreamer-21)** elegido por [STREAMER] representa la cúspide del rendimiento multihilo:
 
-#### Gaming Streamers
-Para contenido gaming como **ElXokas**:
-- **Prioridad en framerate**: 60fps para gaming fluido
-- **Autofoco rápido**: Para movimientos durante gaming
-- **Low light performance**: Gaming nocturno
-- **Campo de visión**: No demasiado amplio para focus en streamer
+**Especificaciones Clave:**
+- **16 cores / 32 threads**: Paralelización extrema para gaming + streaming + navegadores
+- **Clock base 4.5GHz / Boost 5.7GHz**: Single-core performance para gaming competitivo
+- **Cache L3 64MB**: Acceso ultra-rápido a datos frecuentes
+- **TDP 170W**: Eficiencia térmica para sesiones maratónicas
 
-**Recomendadas**: Logitech StreamCam, Razer Kiyo Pro
+**Ventajas para Streaming de [SPECIALTY]:**
+- **Threads dedicados**: Cores específicos para OBS encoding sin impactar gaming
+- **Rendimiento consistente**: Sin throttling durante streams de 8+ horas  
+- **Futuro-proof**: Compatible con DDR5 y PCIe 5.0 para próximas generaciones
 
-#### Just Chatting y Contenido Variado  
-Para streams como **IlloJuan**:
-- **Calidad de imagen**: Colores naturales y skin tones
-- **Estabilidad**: Imagen consistente en sesiones largas
-- **Audio integrado**: Backup microphone useful
-- **Ease of use**: Plug and play simplicity
+### Tarjeta Gráfica: Potencia Visual y Encoding
 
-**Recomendadas**: Logitech C920s Pro, Elgato Facecam
+#### RTX 4090 - La Bestia del Gaming 4K
+La **[RTX 4090](https://www.amazon.es/s?k=RTX+4090&tag=yostreamer-21)** en el setup de [STREAMER] no es solo para gaming, es una estación de trabajo completa:
 
-### Configuración y Optimización
+**Gaming Performance:**
+- **4K 120fps estables**: Títulos AAA a máxima calidad visual
+- **Ray Tracing realista**: Gráficos cinematográficos que impresionan a la audiencia
+- **DLSS 3 Frame Generation**: Performance adicional sin pérdida de calidad
 
-#### Software Configuration
-- **OBS Settings**: 1080p, bitrate óptimo para webcam
-- **Iluminación**: Key light evita grain en low light
-- **Posicionamiento**: Eye level para ángulo natural
-- **Background**: Clean o virtual background según content
+**Streaming Capabilities:**
+- **Dual AV1 encoders**: Streaming futuro-proof con máxima eficiencia
+- **NVENC H.264/H.265**: Encoding hardware sin impacto en gaming performance  
+- **24GB VRAM**: Buffer masivo para texturas 4K + assets de streaming
 
-#### Upgrade Path hacia Cámaras DSLR
+**Comparación con Otros Streamers:**
+Similar al **[equipamiento de TheGrefg](https://yostreamer.com/setup/thegrefg-setup)** pero optimizado para **[SPECIALTY]**, la RTX 4090 permite a [STREAMER] mantener calidad visual máxima mientras transmite a 1080p60 sin compromisos.
 
-#### 1. Logitech C920s Pro HD - El Estándar de la Industria
-La **[Logitech C920s Pro HD](https://www.amazon.es/s?k=Logitech+C920s+Pro+HD&tag=yostreamer-21)** sigue siendo la referencia en webcams para streaming:
-- **Resolución 1080p 30fps**: Calidad sharp para streaming
-- **Autofoco automático**: Siempre enfocado perfectamente  
-- **Micrófono dual integrado**: Audio backup decente
-- **Precio**: ~80€ - Excelente relación calidad-precio
+### Memoria RAM: Multitasking Extremo
 
-#### 2. Logitech StreamCam - Para Creadores de Contenido
-La **[Logitech StreamCam](https://www.amazon.es/s?k=Logitech+StreamCam&tag=yostreamer-21)** está diseñada específicamente para streaming:
-- **1080p 60fps**: Fluidez superior en movimientos
-- **Conexión USB-C**: Futuro-proof connectivity
-- **Vertical y horizontal**: Versatilidad para diferentes plataformas
-- **Software Logitech Capture**: Control avanzado de la imagen
+#### 64GB DDR5-5600 - Sin Limitaciones  
+La configuración de **[64GB DDR5](https://www.amazon.es/s?k=64GB+DDR5+5600&tag=yostreamer-21)** de [STREAMER] es esencial para su workflow:
 
-### Comparación por Tipo de Contenido
+**Distribución Típica de RAM durante Stream:**
+- **Gaming**: 16GB (juego + assets)
+- **OBS + Plugins**: 8GB (encoding + overlays + alerts)
+- **Navegadores**: 16GB (50+ pestañas Twitch/YouTube/Discord)
+- **Sistema + Background**: 8GB (Windows + drivers + antivirus)
+- **Buffer disponible**: 16GB (headroom para estabilidad)
 
-#### Gaming Streamers
-Para contenido gaming como **ElXokas**:
-- **Prioridad en framerate**: 60fps para gaming fluido
-- **Autofoco rápido**: Para movimientos durante gaming
-- **Low light performance**: Gaming nocturno
-- **Campo de visión**: No demasiado amplio para focus en streamer
+### Almacenamiento: Velocidad y Capacidad
 
-**Recomendadas**: Logitech StreamCam, Razer Kiyo Pro
+#### Configuración Dual NVMe para Performance Óptimo
+[STREAMER] utiliza estrategia de almacenamiento dual para maximizar rendimiento:
 
-#### Just Chatting y Contenido Variado  
-Para streams como **IlloJuan**:
-- **Calidad de imagen**: Colores naturales y skin tones
-- **Estabilidad**: Imagen consistente en sesiones largas
-- **Audio integrado**: Backup microphone useful
-- **Ease of use**: Plug and play simplicity
+**Drive Principal**: **[Samsung 980 PRO 2TB](https://www.amazon.es/s?k=Samsung+980+PRO+2TB&tag=yostreamer-21)**
+- **SO + Aplicaciones críticas**: Windows, OBS, juegos principales
+- **Velocidades PCIe 4.0**: 7000MB/s lectura para cargas instantáneas
+- **Durabilidad TBW**: Escrituras intensivas de grabación sin degradación
 
-**Recomendadas**: Logitech C920s Pro, Elgato Facecam
+**Drive Secundario**: **[Samsung 970 EVO Plus 4TB](https://www.amazon.es/s?k=Samsung+970+EVO+Plus+4TB&tag=yostreamer-21)**
+- **Biblioteca de juegos**: Steam, Epic, Battle.net completos
+- **Grabaciones + VODs**: Storage masivo para contenido archivado
+- **Velocidades sostenidas**: Performance consistente para streaming library
 
-### Configuración y Optimización
+### Motherboard: La Base del Ecosistema
 
-#### Software Configuration
-- **OBS Settings**: 1080p, bitrate óptimo para webcam
-- **Iluminación**: Key light evita grain en low light
-- **Posicionamiento**: Eye level para ángulo natural
-- **Background**: Clean o virtual background según content
+#### ASUS ROG Strix X670E-E - Conectividad y Expansión
+La **[ASUS ROG Strix X670E-E](https://www.amazon.es/s?k=ASUS+ROG+Strix+X670E-E&tag=yostreamer-21)** proporciona foundation sólida:
 
-#### Upgrade Path hacia Cámaras DSLR
-Muchos streamers eventualmente migran a cámaras mirrorless:
-- **Sony A6400**: Popular choice entre streamers
-- **Canon M50**: Excellent autofocus para streaming
-- **Capturadora necesaria**: **[Elgato Cam Link 4K](https://www.amazon.es/s?k=Elgato+Cam+Link+4K&tag=yostreamer-21)**
+**Características para Streaming:**
+- **WiFi 6E integrado**: Conexión wireless ultra-estable para dispositivos móviles
+- **2.5Gb Ethernet**: Bandwidth garantizado para streaming + upload simultáneo
+- **USB 4.0 frontal**: Conexión directa para cámaras y dispositivos de captura
+- **Audio SupremeFX**: DAC integrado de calidad para monitoreo
 
-### Presupuestos y Recomendaciones
+### Refrigeración: Temperaturas Bajo Control
 
-#### Setup Básico (~100€)
-- **Webcam**: Logitech C920s Pro (~80€)
-- **Iluminación básica**: **[Ring light USB](https://www.amazon.es/s?k=ring+light+USB&tag=yostreamer-21)** (~20€)
+#### Configuración Híbrida para Performance Sostenida
+[STREAMER] combina refrigeración líquida y air cooling para óptimo balance:
 
-#### Setup Intermedio (~200€)  
-- **Webcam**: Logitech StreamCam (~150€)
-- **Iluminación**: **[Panel LED adjustable](https://www.amazon.es/s?k=panel+LED+streaming&tag=yostreamer-21)** (~50€)
+**CPU Cooler**: **[NZXT Kraken X73](https://www.amazon.es/s?k=NZXT+Kraken+X73&tag=yostreamer-21)**
+- **Radiador 360mm**: Disipación masiva para Ryzen 9 7950X
+- **RGB customizable**: Integración estética con setup de streaming
+- **Control software**: Curvas de temperatura automáticas según workload
 
-#### Setup Avanzado (~500€+)
-- **Cámara mirrorless**: Sony A6400 (~600€)
-- **Capturadora**: Elgato Cam Link 4K (~130€)  
-- **Iluminación profesional**: **[Elgato Key Light](https://www.amazon.es/s?k=Elgato+Key+Light&tag=yostreamer-21)** (~200€)
+**Case Cooling**: **[Fractal Design Define 7 XL](https://www.amazon.es/s?k=Fractal+Design+Define+7+XL&tag=yostreamer-21)**
+- **Airflow optimizado**: Intake frontal + exhaust superior/posterior
+- **Aislamiento acústico**: Reducción de ruido para audio streaming limpio
+- **Espacio modular**: Fácil mantenimiento y upgrades futuros
 
-### Errores Comunes al Elegir Webcam
+### Fuente de Alimentación: Potencia Confiable
 
-1. **Ignorar la iluminación**: La mejor webcam falla con mala luz
-2. **Solo mirar resolución**: Framerate y low light importan más
-3. **No considerar el upgrade path**: Mejor invertir gradualmente
-4. **Olvidar el audio**: Webcam mic como backup, no primary
-5. **Positioning incorrecto**: Eye level crucial para connection
+#### Seasonic Prime TX-1000 - Eficiencia y Estabilidad
+La **[Seasonic Prime TX-1000](https://www.amazon.es/s?k=Seasonic+Prime+TX+1000&tag=yostreamer-21)** garantiza alimentación limpia:
 
-### Conclusión
+**Especificaciones Críticas:**
+- **1000W 80+ Titanium**: Eficiencia 94%+ para menor calor y consumo
+- **Fully modular**: Cable management limpio para airflow óptimo
+- **Garantía 12 años**: Confiabilidad para uso profesional intensivo
+- **Ripple < 1%**: Voltajes estables para components sensibles
 
-La **mejor webcam para streaming** equilibra calidad, precio y facilidad de uso. Para la mayoría, la **[Logitech C920s Pro](https://www.amazon.es/s?k=Logitech+C920s+Pro+HD&tag=yostreamer-21)** ofrece excellent value, mientras que la **[StreamCam](https://www.amazon.es/s?k=Logitech+StreamCam&tag=yostreamer-21)** es ideal para 60fps content.
+### Periféricos Gaming: Precisión Competitiva
 
-*¿Listo para mejorar tu video quality? Consulta nuestras guías sobre **iluminación para streaming** y **configuración OBS** para completar tu setup.*`
+#### Configuración Optimizada para [SPECIALTY]
+Los periféricos de [STREAMER] balancean performance competitivo con funcionalidad streaming:
+
+**Teclado**: **[Corsair K100 RGB](https://www.amazon.es/s?k=Corsair+K100+RGB&tag=yostreamer-21)**
+- **Switches Cherry MX Speed**: Actuación ultra-rápida para competitive gaming
+- **Rueda iCUE**: Control multimedia durante streams sin interrumpir gameplay
+- **Macros programables**: Hotkeys para OBS, Discord, Twitch integrados
+
+**Mouse**: **[Logitech G Pro X Superlight](https://www.amazon.es/s?k=Logitech+G+Pro+X+Superlight&tag=yostreamer-21)**
+- **63g ultra-ligero**: Precisión extrema para sesiones maratónicas
+- **Sensor HERO 25K**: Tracking perfecto sin aceleración indeseada
+- **Wireless LIGHTSPEED**: Latencia equivalente a conexión cableada
+
+### Comparación con Setups de Otros Streamers Españoles
+
+#### Benchmark vs Top Streamers
+- **vs [Ibai Llanos](https://yostreamer.com/setup/ibai-llanos-setup)**: Más gaming-focused, menos broadcast equipment
+- **vs [TheGrefg](https://yostreamer.com/setup/thegrefg-setup)**: Similar performance gaming, diferente approach en **[SPECIALTY]**
+- **vs [ElXokas](https://yostreamer.com/setup/elxokas-setup)**: Más powerful para multitasking, menos minimalista
+
+### ROI y Justificación de Inversión
+
+#### Análisis Costo-Beneficio Setup Completo
+**Inversión Total Hardware**: €6,800-8,500
+
+**Retorno Mensual Esperado** (basado en **[FOLLOWERS]** y **[SPECIALTY]**):
+- **Donaciones directas**: +25% por calidad visual superior
+- **Sponsorships premium**: Brands pagan más por quality guaranteed  
+- **Contenido viral**: Clips HD generan más engagement orgánico
+- **Longevidad**: Setup dura 3-4 años sin upgrades mayores
+
+### Optimizaciones Específicas para [SPECIALTY]
+
+#### Configuraciones Avanzadas para Maximum Performance
+[STREAMER] implementa tweaks específicos para **[SPECIALTY]**:
+
+**Windows Optimizations:**
+- **Game Mode activado**: Prioridad de recursos para gaming
+- **HAGS desactivado**: Maximum compatibility con streaming software
+- **Power Plan Ultimate Performance**: Zero throttling durante streams
+
+**BIOS Tuning:**
+- **PBO habilitado**: Boost automático Ryzen dentro de thermal limits
+- **RAM XMP activado**: Velocidades DDR5 rated sin stability issues
+- **PCIe Gen 4 forzado**: Maximum bandwidth para NVMe drives
+
+### Evolución y Upgrade Path
+
+#### Cronología de Mejoras Planificadas
+1. **Q2 2025**: Upgrade a DDR5-6000 para additional performance headroom
+2. **Q4 2025**: Segunda RTX 4090 para AI workloads y content creation
+3. **2026**: Migración a AM5+ platform con próxima gen Ryzen
+4. **Futuro**: Adopción 8K streaming cuando platforms lo soporten
+
+El **equipamiento de gaming para streaming** de [STREAMER] demuestra que no hay que elegir entre performance competitivo y calidad de transmisión. Su configuración permite ejecutar juegos AAA a 4K mientras simultáneamente streama a 1080p60 sin compromisos, estableciendo un nuevo benchmark para streamers de **[SPECIALTY]** en España.
+
+*¿Interesado en replicar este setup? Consulta nuestras guías detalladas sobre **[configuración de Ibai](https://yostreamer.com/setup/ibai-llanos-setup)**, **[equipamiento de TheGrefg](https://yostreamer.com/setup/thegrefg-setup)** y **[setup de ElXokas](https://yostreamer.com/setup/elxokas-setup)** para encontrar la configuración perfecta para tu presupuesto y estilo de streaming.*`
   }
 ];
 
-// Generate content for posts with dynamic streamer replacement
-function generatePostContent(template: PostTemplate): string {
-  const currentYear = new Date().getFullYear();
-  const today = new Date().toISOString().slice(0, 10);
+// Generate a random post based on template and streamer
+function generatePost(template: PostTemplate, streamer: typeof spanishStreamers[0]): InsertGeneratedPost {
+  const slug = \`\${streamer.name.toLowerCase().replace(/\s+/g, '-')}-setup-\${Date.now()}\`;
   
-  // For streamer-specific templates, select a random streamer
-  let content = template.contentTemplate;
+  let content = template.contentTemplate
+    .replace(/\[STREAMER\]/g, streamer.name)
+    .replace(/\[FOLLOWERS\]/g, streamer.followers)
+    .replace(/\[SPECIALTY\]/g, streamer.specialty);
   
-  if (template.title.includes('[STREAMER]')) {
-    const randomStreamer = spanishStreamers[Math.floor(Math.random() * spanishStreamers.length)];
-    
-    // Replace all template variables
-    content = content
-      .replace(/\[STREAMER\]/g, randomStreamer.name)
-      .replace(/\[FOLLOWERS\]/g, randomStreamer.followers)
-      .replace(/\[SPECIALTY\]/g, randomStreamer.specialty);
-    
-    // Update title and keywords with actual streamer name
-    template.title = template.title.replace('[STREAMER]', randomStreamer.name);
-    template.keywords = template.keywords.map(keyword => 
-      keyword.replace('[STREAMER]', randomStreamer.name.toLowerCase())
-    );
-  }
+  let title = template.title.replace(/\[STREAMER\]/g, streamer.name);
   
-  // Replace other template variables
-  content = content.replace(/2025/g, currentYear.toString());
-  content = content.replace(/\[CURRENT_DATE\]/g, today);
+  const excerpt = \`Análisis completo del setup de streaming de \${streamer.name}. Equipamiento profesional, configuración OBS, presupuesto y consejos para replicar su configuración de \${streamer.specialty}.\`;
   
-  return content;
+  // Generate keywords with streamer name
+  const keywords = template.keywords.map(keyword => 
+    keyword.replace(/\[STREAMER\]/g, streamer.name.toLowerCase())
+  );
+  
+  const publishDate = new Date();
+  publishDate.setHours(publishDate.getHours() + Math.floor(Math.random() * 24)); // Random within next 24h
+  
+  return {
+    title,
+    content,
+    excerpt,
+    slug,
+    category: template.category,
+    keywords: keywords.join(', '),
+    readingTime: template.readingTime,
+    publishedAt: publishDate,
+    isPublished: true // Publish immediately for demonstration
+  };
 }
 
-// Initialize post scheduling system
-export async function initializePostSchedule() {
-  console.log("Post scheduling system initialized");
-  // Basic initialization - can be expanded later for database setup, migrations etc.
-}
-
-// Schedule new post creation
-export async function createScheduledPost() {
+// Create posts for next 30 days
+export async function createScheduledPosts() {
   try {
-    // Prioritize streamer setup content 70% of the time
-    let templateIndex: number;
-    if (Math.random() < 0.7) {
-      // Select streamer setup or OBS configuration templates (high priority)
-      const highPriorityTemplates = postTemplates.filter(t => 
-        t.category === "Configuración y Setup Técnico" || 
-        t.title.includes('[STREAMER]') || 
-        t.keywords.includes("configuración OBS")
-      );
-      templateIndex = Math.floor(Math.random() * highPriorityTemplates.length);
-      // Get index in original array
-      templateIndex = postTemplates.findIndex(t => t === highPriorityTemplates[templateIndex]);
-    } else {
-      // Regular template selection
-      templateIndex = Math.floor(Math.random() * postTemplates.length);
+    console.log("Creating scheduled posts...");
+    
+    for (let i = 0; i < 5; i++) { // Create 5 posts
+      const randomTemplate = postTemplates[Math.floor(Math.random() * postTemplates.length)];
+      const randomStreamer = spanishStreamers[Math.floor(Math.random() * spanishStreamers.length)];
+      
+      const post = generatePost(randomTemplate, randomStreamer);
+      const createdPost = await storage.createGeneratedPost(post);
+      
+      console.log(\`Created post: \${createdPost.title} (ID: \${createdPost.id})\`);
     }
     
-    const template = postTemplates[templateIndex];
-    
-    // Calculate next publish date (3 days from now at 8am Spanish time)
-    const publishDate = new Date();
-    publishDate.setDate(publishDate.getDate() + 3);
-    publishDate.setHours(8, 0, 0, 0); // 8am Spanish time
-    
-    // Generate unique slug
-    const baseSlug = template.title
-      .toLowerCase()
-      .replace(/[^a-z0-9\s-]/g, '')
-      .replace(/\s+/g, '-')
-      .replace(/-+/g, '-')
-      .replace(/^-|-$/g, '');
-    
-    const slug = `${baseSlug}-${Date.now()}`;
-    
-    // Generate content
-    const content = generatePostContent(template);
-    
-    // Create post in database
-    const post = await storage.createGeneratedPost({
-      slug,
-      title: template.title,
-      excerpt: content.substring(0, 200) + "...",
-      content,
-      coverImage: "/api/placeholder/600/400",
-      keywords: template.keywords,
-      category: template.category,
-      author: "Equipo Setups de Streamers",
-      publishedAt: publishDate,
-      isPublished: false,
-      readingTime: template.readingTime,
-      priority: template.priority
-    });
-    
-    console.log(`Scheduled new post: ${template.title} for ${publishDate.toISOString()}`);
-    return post;
+    console.log("Scheduled posts created successfully");
   } catch (error) {
-    console.error("Error creating scheduled post:", error);
-    throw error;
+    console.error("Error creating scheduled posts:", error);
   }
 }
 
-// Check for posts to publish and send emails
-export async function processPostPublishing() {
+// Check and publish posts that are ready
+export async function publishScheduledPosts() {
   try {
     const postsToPublish = await storage.getPostsToPublish();
     
     for (const post of postsToPublish) {
-      // Publish the post
       await storage.publishPost(post.id);
+      console.log(\`Published post: \${post.title}\`);
       
-      // Get all active subscribers
-      const subscribers = await storage.getAllActiveSubscribers();
-      
-      // Queue email notifications
-      for (const subscriber of subscribers) {
-        await storage.addToEmailQueue({
-          subscriberId: subscriber.id,
-          postId: post.id,
-          sentAt: null
-        });
+      // Send email notifications if available
+      if (process.env.SENDGRID_API_KEY) {
+        await sendEmailNotifications(post);
       }
-      
-      console.log(`Published post: ${post.title} and queued ${subscribers.length} email notifications`);
     }
-    
-    // Process email queue
-    await sendPendingEmails();
-    
   } catch (error) {
-    console.error("Error processing post publishing:", error);
+    console.error("Error publishing posts:", error);
   }
 }
 
-// Send pending email notifications
-export async function sendPendingEmails() {
-  if (!process.env.SENDGRID_API_KEY) {
-    console.log("SendGrid not configured, skipping email sending");
-    return;
-  }
-
+// Send email notifications to subscribers
+async function sendEmailNotifications(post: any) {
   try {
-    const pendingEmails = await storage.getPendingEmails();
+    const subscribers = await storage.getAllActiveSubscribers();
     
-    for (const emailEntry of pendingEmails) {
-      // This would need proper joins - simplified for now
-      const subscriber = await storage.getSubscriber(emailEntry.subscriberId.toString());
-      const post = await storage.getGeneratedPost(emailEntry.postId.toString());
+    for (const subscriber of subscribers) {
+      // Add to email queue
+      const emailEntry = await storage.addToEmailQueue({
+        subscriberId: subscriber.id,
+        postId: post.id,
+        emailType: 'new_post',
+        scheduledFor: new Date()
+      });
       
-      if (!subscriber || !post) continue;
-      
+      // Send email immediately
       const emailContent = {
         to: subscriber.email,
-        from: "noreply@yostreamer.com",
-        subject: `Nuevo artículo: ${post.title}`,
-        html: `
+        from: 'noreply@yostreamer.com',
+        subject: \`Nuevo artículo: \${post.title}\`,
+        html: \`
           <h2>Nuevo artículo en Setups de Streamers</h2>
-          <h3>${post.title}</h3>
-          <p>${post.excerpt}</p>
-          <p><a href="https://yostreamer.com/setup/${post.slug}">Leer artículo completo</a></p>
-          <p><small><a href="https://yostreamer.com/unsubscribe?token=${subscriber.unsubscribeToken}">Cancelar suscripción</a></small></p>
-        `
+          <h3>\${post.title}</h3>
+          <p>\${post.excerpt}</p>
+          <p><a href="https://yostreamer.com/setup/\${post.slug}">Leer artículo completo</a></p>
+          <p><small><a href="https://yostreamer.com/unsubscribe?token=\${subscriber.unsubscribeToken}">Cancelar suscripción</a></small></p>
+        \`
       };
       
       try {
         await sgMail.send(emailContent);
         await storage.markEmailAsSent(emailEntry.id);
-        console.log(`Email sent to ${subscriber.email} for post ${post.title}`);
+        console.log(\`Email sent to \${subscriber.email} for post \${post.title}\`);
       } catch (error) {
-        console.error(`Failed to send email to ${subscriber.email}:`, error);
+        console.error(\`Failed to send email to \${subscriber.email}:\`, error);
       }
     }
   } catch (error) {
     console.error("Error sending emails:", error);
+  }
+}
+
+// Initialize the post scheduling system
+export async function initializePostSchedule() {
+  console.log("Initializing post schedule system...");
+  
+  try {
+    // Create initial batch of posts
+    await createScheduledPosts();
+    
+    // Publish any ready posts
+    await publishScheduledPosts();
+    
+    // Set up interval for checking and publishing posts (every hour)
+    setInterval(publishScheduledPosts, 60 * 60 * 1000);
+    
+    console.log("Post scheduling system initialized successfully");
+  } catch (error) {
+    console.error("Error initializing post schedule:", error);
   }
 }

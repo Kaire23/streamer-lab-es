@@ -4,26 +4,15 @@ import { Clock, Calendar, User, Tag } from "lucide-react";
 import { seoArticles } from "@/data/seo-articles";
 import { Helmet } from "react-helmet-async";
 
-const priorities = {
-  high: "Alta Prioridad",
-  medium: "Media Prioridad", 
-  low: "Baja Prioridad"
-};
 
-const priorityColors = {
-  high: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
-  medium: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300",
-  low: "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300"
-};
 
 export default function Articles() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
-  const [selectedPriority, setSelectedPriority] = useState<string>("all");
+
 
   const categories = Array.from(new Set(seoArticles.map(article => article.category)));
   const filteredArticles = seoArticles.filter(article => {
-    return (selectedCategory === "all" || article.category === selectedCategory) &&
-           (selectedPriority === "all" || article.priority === selectedPriority);
+    return (selectedCategory === "all" || article.category === selectedCategory);
   });
 
   return (
