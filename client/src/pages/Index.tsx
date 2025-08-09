@@ -1,11 +1,35 @@
 import { Link } from "wouter";
 import SEO from "@/components/SEO";
 import { posts } from "@/data/posts";
+import { seoArticles } from "@/data/seo-articles";
 import { Button } from "@/components/ui/button";
 import AdSlot from "@/components/ads/AdSlot";
 import OptimizedImage from "@/components/OptimizedImage";
+import SubscriptionForm from "@/components/SubscriptionForm";
 
 const Index: React.FC = () => {
+  // Combine all posts: streamer setups + SEO articles
+  const allPosts = [
+    ...posts.map(post => ({ ...post, type: 'streamer' as const, category: 'Setup de Streamers' })),
+    ...seoArticles.map(article => ({
+      slug: article.slug,
+      title: article.title,
+      excerpt: article.excerpt,
+      date: article.date,
+      author: article.author,
+      coverImage: "/api/placeholder/600/400",
+      keywords: article.keywords,
+      bio: article.excerpt,
+      content: article.content,
+      funFacts: [],
+      setup: [],
+      type: 'article' as const,
+      category: article.category,
+      priority: article.priority,
+      readingTime: article.readingTime
+    }))
+  ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -21,12 +45,12 @@ const Index: React.FC = () => {
       },
       {
         "@type": "ItemList",
-        itemListElement: posts.map((p, index) => ({
+        itemListElement: allPosts.map((p, index) => ({
           "@type": "ListItem",
           position: index + 1,
           url:
             (typeof window !== "undefined" ? window.location.origin : "") +
-            `/setup/${p.slug}`,
+            (p.type === 'streamer' ? `/setup/${p.slug}` : `/article/${p.slug}`),
           name: p.title,
         })),
       },
@@ -67,13 +91,26 @@ const Index: React.FC = () => {
         </ul>
       </nav>
 
+      {/* Newsletter Subscription */}
+      <section id="newsletter" className="mb-12 p-8 bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-xl border border-purple-200 dark:border-purple-800">
+        <div className="text-center mb-6">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+            ¡No te pierdas ninguna guía!
+          </h2>
+          <p className="text-gray-600 dark:text-gray-300">
+            Publicamos nuevos artículos cada 3 días con análisis de setups, guías de equipamiento y recomendaciones de productos con los mejores precios.
+          </p>
+        </div>
+        <SubscriptionForm />
+      </section>
+
       <div className="grid gap-6 md:grid-cols-2 posts-grid">
-        {posts.map((post, index) => (
+        {allPosts.map((post, index) => (
           <article
             key={post.slug}
             className="group overflow-hidden rounded-xl border border-border/60 shadow-sm transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-[var(--elevate)] post-card"
           >
-            <Link to={`/setup/${post.slug}`} className="block">
+            <Link to={post.type === 'streamer' ? `/setup/${post.slug}` : `/article/${post.slug}`} className="block">
               <div className="aspect-video overflow-hidden bg-muted">
                 <OptimizedImage
                   src={post.coverImage}
@@ -88,13 +125,25 @@ const Index: React.FC = () => {
               </div>
             </Link>
             <div className="p-4">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="px-2 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded text-xs font-medium">
+                  {post.category}
+                </span>
+                {post.type === 'article' && (
+                  <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-xs">
+                    {post.readingTime} min
+                  </span>
+                )}
+              </div>
               <h2 className="text-xl font-semibold tracking-tight">
-                <Link to={`/setup/${post.slug}`}>{post.title}</Link>
+                <Link to={post.type === 'streamer' ? `/setup/${post.slug}` : `/article/${post.slug}`}>{post.title}</Link>
               </h2>
               <p className="mt-2 text-muted-foreground">{post.excerpt}</p>
               <div className="mt-4 flex items-center justify-between">
                 <Button asChild variant="hero">
-                  <Link to={`/setup/${post.slug}`}>Ver setup</Link>
+                  <Link to={post.type === 'streamer' ? `/setup/${post.slug}` : `/article/${post.slug}`}>
+                    {post.type === 'streamer' ? 'Ver setup' : 'Leer guía'}
+                  </Link>
                 </Button>
                 <time className="text-xs text-muted-foreground">
                   {new Date(post.date).toLocaleDateString("es-ES")}

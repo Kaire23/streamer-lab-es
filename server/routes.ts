@@ -54,11 +54,33 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  // put application routes here
-  // prefix all routes with /api
+  // API routes for subscription system
+  app.post("/api/subscribe", async (req, res) => {
+    try {
+      const { email } = req.body;
+      
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        return res.status(400).json({ error: "Email inválido" });
+      }
 
-  // use storage to perform CRUD operations on the storage interface
-  // e.g. storage.insertUser(user) or storage.getUserByUsername(username)
+      // For now, just return success - we'll implement full subscription later
+      res.json({ success: true, message: "Suscripción exitosa" });
+    } catch (error) {
+      console.error("Subscribe error:", error);
+      res.status(500).json({ error: "Error al procesar suscripción" });
+    }
+  });
+
+  app.get("/api/generated-posts", async (req, res) => {
+    try {
+      // Return the SEO articles as posts for now
+      const seoArticles = await import("../client/src/data/seo-articles");
+      res.json(seoArticles.seoArticles || []);
+    } catch (error) {
+      console.error("Get posts error:", error);
+      res.status(500).json({ error: "Error al obtener posts" });
+    }
+  });
 
   const httpServer = createServer(app);
 
