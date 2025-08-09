@@ -749,6 +749,12 @@ function generatePostContent(template: PostTemplate): string {
   return content;
 }
 
+// Initialize post scheduling system
+export async function initializePostSchedule() {
+  console.log("Post scheduling system initialized");
+  // Basic initialization - can be expanded later for database setup, migrations etc.
+}
+
 // Schedule new post creation
 export async function createScheduledPost() {
   try {
