@@ -28,6 +28,41 @@ const Index: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 10;
 
+  // Helper function to get cover image for generated posts
+  const getGeneratedPostCoverImage = (title: string, category: string): string => {
+    const titleLower = title.toLowerCase();
+    
+    // First check if it's a streamer-specific setup
+    if (titleLower.includes('ibai')) return streamerImages['ibai-llanos'] || '/assets/ibai-llanos-hero.jpg';
+    if (titleLower.includes('thegrefg')) return streamerImages['thegrefg'] || '/assets/thegrefg-hero.jpg';
+    if (titleLower.includes('elxokas') || titleLower.includes('xokas')) return streamerImages['elxocas'] || '/assets/elxocas-hero.jpg';
+    if (titleLower.includes('illojuan') || titleLower.includes('juan')) return streamerImages['illojuan'] || '/assets/illojuan-hero.jpg';
+    if (titleLower.includes('coscu')) return streamerImages['coscu'] || '/assets/coscu-hero.jpg';
+    if (titleLower.includes('auronplay') || titleLower.includes('auron')) return 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop&auto=format&q=80';
+    if (titleLower.includes('elrubius') || titleLower.includes('rubius')) return 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop&auto=format&q=80';
+    if (titleLower.includes('byviruzz') || titleLower.includes('virus')) return 'https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=600&h=400&fit=crop&auto=format&q=80';
+    if (titleLower.includes('reborn') || titleLower.includes('perx')) return 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&h=400&fit=crop&auto=format&q=80';
+    if (titleLower.includes('knekro')) return 'https://images.unsplash.com/photo-1548438294-1ad5d5f4f063?w=600&h=400&fit=crop&auto=format&q=80';
+    if (titleLower.includes('spreen')) return 'https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=600&h=400&fit=crop&auto=format&q=80';
+    
+    // Then check based on category and content type
+    if (category === 'Hardware y Equipamiento' || titleLower.includes('webcam') || titleLower.includes('micrófono') || titleLower.includes('auriculares')) {
+      return 'https://images.unsplash.com/photo-1598986646512-9330bcc4c0dc?w=600&h=400&fit=crop&auto=format&q=80';
+    }
+    if (category === 'Configuración y Setup Técnico' || titleLower.includes('setup') || titleLower.includes('streaming')) {
+      return 'https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=600&h=400&fit=crop&auto=format&q=80';
+    }
+    if (category === 'Guías y Tutoriales' || titleLower.includes('guía') || titleLower.includes('tutorial')) {
+      return 'https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=600&h=400&fit=crop&auto=format&q=80';
+    }
+    if (category === 'Streaming Profesional' || titleLower.includes('profesional') || titleLower.includes('obs')) {
+      return 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop&auto=format&q=80';
+    }
+    
+    // Default streaming setup image
+    return 'https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=600&h=400&fit=crop&auto=format&q=80';
+  };
+
   // Fetch generated posts from the database
   const { data: generatedPosts = [], isLoading } = useQuery({
     queryKey: ["/api/generated-posts"],
@@ -87,7 +122,7 @@ const Index: React.FC = () => {
       excerpt: genPost.excerpt,
       date: genPost.published_at,
       author: "Equipo Setups de Streamers",
-      coverImage: getStreamerCoverImage(genPost.title),
+      coverImage: getGeneratedPostCoverImage(genPost.title, genPost.category),
       keywords: typeof genPost.keywords === 'string' ? genPost.keywords.split(', ') : [],
       bio: genPost.excerpt,
       content: genPost.content,
@@ -99,18 +134,7 @@ const Index: React.FC = () => {
     }))
   ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-  // Helper function to get cover image for generated posts
-  function getStreamerCoverImage(title: string): string {
-    const titleLower = title.toLowerCase();
-    if (titleLower.includes('ibai')) return '/assets/ibai-llanos-hero.jpg';
-    if (titleLower.includes('thegrefg')) return '/assets/thegrefg-hero.jpg';
-    if (titleLower.includes('elxokas') || titleLower.includes('xokas')) return '/assets/elxocas-hero.jpg';
-    if (titleLower.includes('illojuan') || titleLower.includes('juan')) return '/assets/illojuan-hero.jpg';
-    if (titleLower.includes('coscu')) return '/assets/coscu-hero.jpg';
-    if (titleLower.includes('auronplay') || titleLower.includes('auron')) return 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop';
-    if (titleLower.includes('elrubius') || titleLower.includes('rubius')) return 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop';
-    return 'https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=600&h=400&fit=crop';
-  }
+
 
   // Calculate pagination
   const totalPages = Math.ceil(allPosts.length / postsPerPage);
