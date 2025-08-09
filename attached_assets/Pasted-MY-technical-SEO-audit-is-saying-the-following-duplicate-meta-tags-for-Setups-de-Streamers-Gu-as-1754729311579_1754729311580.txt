@@ -1,0 +1,47 @@
+MY technical SEO audit is saying the following:
+duplicate meta tags for:
+
+Setups de Streamers: Guías Futuristas en Español
+https://yostreamer.com/
+https://yostreamer.com/setup/elxokas
+https://yostreamer.com/setup/coscu
+https://yostreamer.com/setup/thegrefg
+https://yostreamer.com/setup/illojuan
+https://yostreamer.com/setup/ibai-llanos
+Setup de streaming de Coscu (2025): Energía y presencia | Setups de Streamers
+https://yostreamer.com/setup/coscu
+https://yostreamer.com/setup/elxokas
+https://yostreamer.com/
+https://yostreamer.com/setup/thegrefg
+https://yostreamer.com/setup/illojuan
+https://yostreamer.com/setup/ibai-llanos
+Setup de streaming de ElXokas (2025): Potencia y estilo | Setups de Streamers
+https://yostreamer.com/setup/elxokas
+https://yostreamer.com/setup/coscu
+https://yostreamer.com/
+https://yostreamer.com/setup/thegrefg
+https://yostreamer.com/setup/illojuan
+https://yostreamer.com/setup/ibai-llanos
+Setup de streaming de Ibai Llanos (2025): Guía completa | Setups de Streamers
+https://yostreamer.com/setup/ibai-llanos
+https://yostreamer.com/setup/elxokas
+https://yostreamer.com/setup/coscu
+https://yostreamer.com/
+https://yostreamer.com/setup/thegrefg
+https://yostreamer.com/setup/illojuan
+Setup de streaming de illoJuan (2025): Calidez y calidad | Setups de Streamers
+https://yostreamer.com/setup/illojuan
+https://yostreamer.com/setup/elxokas
+https://yostreamer.com/setup/coscu
+https://yostreamer.com/
+https://yostreamer.com/setup/thegrefg
+https://yostreamer.com/setup/ibai-llanos
+Setup de streaming de TheGrefg (2025): Estética y rendimiento | Setups de Streamers
+https://yostreamer.com/setup/thegrefg
+https://yostreamer.com/setup/elxokas
+https://yostreamer.com/setup/coscu
+https://yostreamer.com/
+https://yostreamer.com/setup/illojuan
+https://yostreamer.com/setup/ibai-llanos
+Also, I want to add this optised SEO Schema Markup:
+<script type="application/ld+json"> { "@context": "https://schema.org", "@type": "WebSite", "name": "Setups de Streamers", "url": "https://yostreamer.com", "description": "Guías de setups de streamers famosos", "inLanguage": "es" } </script>
