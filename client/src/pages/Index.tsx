@@ -136,7 +136,7 @@ const Index: React.FC = () => {
       date: genPost.published_at,
       author: "Equipo Setups de Streamers",
       coverImage: getGeneratedPostCoverImage(genPost.title, genPost.category),
-      keywords: typeof genPost.keywords === 'string' ? genPost.keywords.split(', ') : [],
+      keywords: Array.isArray(genPost.keywords) ? genPost.keywords : (typeof genPost.keywords === 'string' ? genPost.keywords.split(', ') : []),
       bio: genPost.excerpt,
       content: genPost.content,
       funFacts: [],
