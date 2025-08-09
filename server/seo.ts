@@ -21,9 +21,9 @@ const postSEOData: Record<string, SEOData> = {
     type: 'article'
   },
   'elxocas': {
-    title: 'Setup de streaming de ElXocas (2025): Potencia y estilo | Setups de Streamers',
-    description: 'Analizamos el setup de ElXocas: audio potente, cámaras nítidas y una iluminación dramática ideal para directos intensos.',
-    keywords: 'ElXocas, setup streamer, audio profesional, stream deck',
+    title: 'Setup de streaming de ElXokas (2025): Potencia y estilo | Setups de Streamers',
+    description: 'Analizamos el setup de ElXokas: audio potente, cámaras nítidas y una iluminación dramática ideal para directos intensos.',
+    keywords: 'ElXokas, setup streamer, audio profesional, stream deck',
     canonical: 'https://yostreamer.com/setup/elxocas',
     ogImage: 'https://yostreamer.com/assets/elxocas-hero.jpg',
     type: 'article'

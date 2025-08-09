@@ -85,14 +85,14 @@ export const posts: Post[] = [
   },
   {
     slug: "elxocas",
-    title: "Setup de streaming de ElXocas (2025): Potencia y estilo",
+    title: "Setup de streaming de ElXokas (2025): Potencia y estilo",
     excerpt:
-      "Analizamos el setup de ElXocas: audio potente, cámaras nítidas y una iluminación dramática ideal para directos intensos.",
+      "Analizamos el setup de ElXokas: audio potente, cámaras nítidas y una iluminación dramática ideal para directos intensos.",
     date: today,
     author: "Equipo Setups de Streamers",
     coverImage: elxocasImg,
-    keywords: ["ElXocas", "setup streamer", "audio profesional", "stream deck"],
-    bio: "ElXocas destaca por su energía y presencia ante cámara. Su equipo está pensado para capturar cada momento con contundencia.",
+    keywords: ["ElXokas", "setup streamer", "audio profesional", "stream deck"],
+    bio: "ElXokas destaca por su energía y presencia ante cámara. Su equipo está pensado para capturar cada momento con contundencia.",
     funFacts: [
       "Es conocido por su cercanía con la comunidad y un estilo directo.",
       "Apuesta por configuraciones robustas y micrófonos dinámicos.",
