@@ -34,34 +34,36 @@ const Index: React.FC = () => {
     'elxocas': '/assets/elxocas-hero.jpg', 
     'illojuan': '/assets/illojuan-hero.jpg',
     'thegrefg': '/assets/thegrefg-hero.jpg',
-    'coscu': '/assets/coscu-hero.jpg'
+    'coscu': '/assets/coscu-hero.jpg',
+    'auronplay': '@assets/auron_1754774603843.jpeg',
+    'elrubius': '@assets/rubius_1754774603843.jpg'
   };
 
   // Helper function to get cover image for generated posts
   const getGeneratedPostCoverImage = (title: string, category: string): string => {
     const titleLower = title.toLowerCase();
     
-    // First check if it's a streamer-specific setup with fallback URLs
+    // First check if it's a streamer-specific setup with their actual images
     if (titleLower.includes('ibai')) {
-      return streamerImages['ibai-llanos'] || 'https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=600&h=400&fit=crop&auto=format&q=80';
+      return streamerImages['ibai-llanos'] || '/assets/ibai-llanos-hero.jpg';
     }
     if (titleLower.includes('thegrefg')) {
-      return streamerImages['thegrefg'] || 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop&auto=format&q=80';
+      return streamerImages['thegrefg'] || '/assets/thegrefg-hero.jpg';
     }
     if (titleLower.includes('elxokas') || titleLower.includes('xokas')) {
-      return streamerImages['elxocas'] || 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop&auto=format&q=80';
+      return streamerImages['elxocas'] || '/assets/elxocas-hero.jpg';
     }
     if (titleLower.includes('illojuan') || titleLower.includes('juan')) {
-      return streamerImages['illojuan'] || 'https://images.unsplash.com/photo-1548438294-1ad5d5f4f063?w=600&h=400&fit=crop&auto=format&q=80';
+      return streamerImages['illojuan'] || '/assets/illojuan-hero.jpg';
     }
     if (titleLower.includes('coscu')) {
-      return streamerImages['coscu'] || 'https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=600&h=400&fit=crop&auto=format&q=80';
+      return streamerImages['coscu'] || '/assets/coscu-hero.jpg';
     }
     if (titleLower.includes('auronplay') || titleLower.includes('auron')) {
-      return 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop&auto=format&q=80';
+      return streamerImages['auronplay'] || '@assets/auron_1754774603843.jpeg';
     }
     if (titleLower.includes('elrubius') || titleLower.includes('rubius')) {
-      return 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop&auto=format&q=80';
+      return streamerImages['elrubius'] || '@assets/rubius_1754774603843.jpg';
     }
     
     // Then check based on category and content type

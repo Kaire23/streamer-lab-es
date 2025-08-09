@@ -96,8 +96,8 @@ const getCoverImageForGeneratedPost = (title: string, category: string): string 
   if (titleLower.includes('elxokas') || titleLower.includes('xokas')) return '/assets/elxocas-hero.jpg';
   if (titleLower.includes('illojuan') || titleLower.includes('juan')) return '/assets/illojuan-hero.jpg';
   if (titleLower.includes('coscu')) return '/assets/coscu-hero.jpg';
-  if (titleLower.includes('auronplay') || titleLower.includes('auron')) return 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&h=450&fit=crop&auto=format&q=80';
-  if (titleLower.includes('elrubius') || titleLower.includes('rubius')) return 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=450&fit=crop&auto=format&q=80';
+  if (titleLower.includes('auronplay') || titleLower.includes('auron')) return '@assets/auron_1754774603843.jpeg';
+  if (titleLower.includes('elrubius') || titleLower.includes('rubius')) return '@assets/rubius_1754774603843.jpg';
   
   // Category-based images
   if (category === 'Hardware y Equipamiento' || titleLower.includes('webcam') || titleLower.includes('micrófono')) {
