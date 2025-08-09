@@ -296,12 +296,12 @@ function generatePost(template: PostTemplate, streamer: typeof spanishStreamers[
     keyword.replace(/\[STREAMER\]/g, streamer.name.toLowerCase())
   );
   
-  // Schedule for 22:30 CET today
+  // Schedule for 23:00 CET today
   const publishDate = new Date();
   const now = new Date();
-  publishDate.setHours(22, 30, 0, 0); // 22:30 CET
+  publishDate.setHours(23, 0, 0, 0); // 23:00 CET
   
-  // If it's already past 22:30 today, schedule for tomorrow
+  // If it's already past 23:00 today, schedule for tomorrow
   if (publishDate <= now) {
     publishDate.setDate(publishDate.getDate() + 1);
   }
@@ -319,10 +319,10 @@ function generatePost(template: PostTemplate, streamer: typeof spanishStreamers[
   };
 }
 
-// Create scheduled posts for 22:30 CET today
+// Create scheduled posts for 23:00 CET today, then every 3 days at 8am
 export async function createScheduledPosts() {
   try {
-    console.log("Creating scheduled posts for 22:30 CET...");
+    console.log("Creating scheduled posts for 23:00 CET...");
     
     // Create 3 posts with different streamers
     const selectedStreamers = [
@@ -336,10 +336,10 @@ export async function createScheduledPosts() {
       const post = generatePost(template, streamer);
       const createdPost = await storage.createGeneratedPost(post);
       
-      console.log(`Created scheduled post: ${createdPost.title} (ID: ${createdPost.id}) - Scheduled for 22:30 CET`);
+      console.log(`Created scheduled post: ${createdPost.title} (ID: ${createdPost.id}) - Scheduled for 23:00 CET`);
     }
     
-    console.log("Scheduled posts created successfully for 22:30 CET");
+    console.log("Scheduled posts created successfully for 23:00 CET");
   } catch (error) {
     console.error("Error creating scheduled posts:", error);
   }
@@ -405,13 +405,81 @@ async function sendEmailNotifications(post: any) {
   }
 }
 
+// Create recurring posts every 3 days at 8am CET
+export async function createRecurringPosts() {
+  try {
+    console.log("Creating recurring posts for every 3 days at 8am CET...");
+    
+    const today = new Date();
+    const streamers = [
+      spanishStreamers.find(s => s.name === "AuronPlay") || spanishStreamers[1],
+      spanishStreamers.find(s => s.name === "ElRubius") || spanishStreamers[2],
+      spanishStreamers.find(s => s.name === "IlloJuan") || spanishStreamers[9]
+    ];
+    
+    // Create posts for next 30 days, every 3 days at 8am
+    for (let dayOffset = 3; dayOffset <= 30; dayOffset += 3) {
+      const publishDate = new Date(today);
+      publishDate.setDate(today.getDate() + dayOffset);
+      publishDate.setHours(8, 0, 0, 0); // 8am CET
+      
+      // Cycle through streamers
+      const streamerIndex = Math.floor((dayOffset - 3) / 3) % streamers.length;
+      const streamer = streamers[streamerIndex];
+      
+      const template = postTemplates[0];
+      const post = generatePostWithDate(template, streamer, publishDate);
+      const createdPost = await storage.createGeneratedPost(post);
+      
+      console.log(`Created recurring post: ${createdPost.title} (ID: ${createdPost.id}) - Scheduled for ${publishDate.toLocaleDateString()} at 8am CET`);
+    }
+    
+    console.log("Recurring posts created successfully");
+  } catch (error) {
+    console.error("Error creating recurring posts:", error);
+  }
+}
+
+// Generate a post with specific date
+function generatePostWithDate(template: PostTemplate, streamer: typeof spanishStreamers[0], publishDate: Date): InsertGeneratedPost {
+  const slug = `${streamer.name.toLowerCase().replace(/\s+/g, '-')}-setup-${publishDate.getTime()}`;
+  
+  let content = template.contentTemplate
+    .replace(/\[STREAMER\]/g, streamer.name)
+    .replace(/\[FOLLOWERS\]/g, streamer.followers)
+    .replace(/\[SPECIALTY\]/g, streamer.specialty);
+  
+  let title = template.title.replace(/\[STREAMER\]/g, streamer.name);
+  
+  const excerpt = `Análisis completo del setup de streaming de ${streamer.name}. Equipamiento profesional, configuración OBS, presupuesto y consejos para replicar su configuración de ${streamer.specialty}.`;
+  
+  const keywords = template.keywords.map(keyword => 
+    keyword.replace(/\[STREAMER\]/g, streamer.name.toLowerCase())
+  );
+  
+  return {
+    title,
+    content,
+    excerpt,
+    slug,
+    category: template.category,
+    keywords: keywords.join(', '),
+    readingTime: template.readingTime,
+    publishedAt: publishDate,
+    isPublished: false
+  };
+}
+
 // Initialize the post scheduling system
 export async function initializePostSchedule() {
   console.log("Initializing post schedule system...");
   
   try {
-    // Create initial batch of posts scheduled for 22:30 CET
+    // Create initial batch of posts scheduled for 23:00 CET today
     await createScheduledPosts();
+    
+    // Create recurring posts every 3 days at 8am CET
+    await createRecurringPosts();
     
     // Publish any ready posts
     await publishScheduledPosts();
