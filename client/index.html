@@ -38,16 +38,13 @@
         .posts-grid{grid-template-columns:repeat(2,1fr)}
       }
       
-      /* Prevent layout shift and ensure mobile compatibility */
-      #root{min-height:100vh;opacity:1}
+      /* Prevent layout shift */
+      #root{min-height:100vh}
       img{max-width:100%;height:auto}
       
-      /* Critical mobile-first responsive styles */
-      @media (max-width: 767px) {
-        .hero-title{font-size:1.875rem}
-        .posts-grid{gap:1rem}
-        .container{padding:0 0.75rem}
-      }
+      /* Loading state to prevent FOUC */
+      .loading{opacity:0}
+      .loaded{opacity:1;transition:opacity 0.3s ease-in-out}
     </style>
     
     <!-- Enhanced resource hints for performance optimization -->
@@ -106,10 +103,17 @@
     
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root" class="loading"></div>
+    <script>
+      // Remove loading class once DOM is ready
+      document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('root').classList.remove('loading');
+        document.getElementById('root').classList.add('loaded');
+      });
+    </script>
     
-    <!-- Main application JavaScript - module scripts are deferred by default -->
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Main application JavaScript - deferred for performance -->
+    <script type="module" defer src="/src/main.tsx"></script>
     
     <!-- Load non-critical CSS asynchronously to avoid render blocking -->
     <link rel="preload" href="/src/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
