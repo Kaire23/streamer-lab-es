@@ -170,5 +170,15 @@ export function injectSEOToHTML(html: string, seoData: SEOData): string {
     `<meta name="twitter:image" content="${seoData.ogImage}">`
   );
   
+  // Add server-side H1 heading for SEO crawlers
+  const h1Content = seoData.title.includes('Setup de streaming') 
+    ? seoData.title 
+    : 'Setups de Streamers: Guías Profesionales en Español';
+  
+  html = html.replace(
+    '<div id="root"></div>',
+    `<!-- Server-side H1 for SEO crawlers -->\n    <h1 style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;">${h1Content}</h1>\n    <div id="root"></div>`
+  );
+  
   return html;
 }
