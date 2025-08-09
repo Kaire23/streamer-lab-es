@@ -88,7 +88,7 @@ Comparado con el **setup de ElXokas**, [STREAMER] implementa:
 
 #### Settings Optimizados
 El setup de [STREAMER] utiliza configuración OBS similar a streamers profesionales:
-```
+\`\`\`
 Encoding:
 - Encoder: NVENC H.264 (GPU)
 - Rate Control: CBR
@@ -99,7 +99,7 @@ Video:
 - Base Resolution: 1920x1080
 - Output Resolution: 1920x1080  
 - FPS: 60 (gaming) / 30 (just chatting)
-```
+\`\`\`
 
 #### Scenes y Transiciones
 - **Gaming Scene**: Game capture + webcam overlay + chat
@@ -182,12 +182,12 @@ Setup inicial inspirado en [STREAMER]:
 ### Configuración Video Óptima
 
 #### Settings Recomendados 2025
-\`\`\`
+\\\`\\\`\\\`
 Base (Canvas) Resolution: 1920x1080
 Output (Scaled) Resolution: 1920x1080
 Downscale Filter: Lanczos (Sharpened scaling, 36 samples)
 Common FPS Values: 60 (si tu PC aguanta) o 30 (más estable)
-\`\`\`
+\\\`\\\`\\\`
 
 #### Por Tipo de Hardware
 **PC High-End (RTX 4070+)**:
@@ -209,12 +209,12 @@ Common FPS Values: 60 (si tu PC aguanta) o 30 (más estable)
 
 #### Settings de Audio como los Pros
 Los streamers exitosos priorizan audio sobre video:
-\`\`\`
+\\\`\\\`\\\`
 Sample Rate: 48kHz
 Channels: Stereo
 Desktop Audio Device: Default
 Mic/Auxiliary Device: Tu micrófono principal
-\`\`\`
+\\\`\\\`\\\`
 
 #### Filtros Audio Esenciales
 1. **Noise Suppression**: RNNoise (-60dB)
@@ -226,7 +226,7 @@ Mic/Auxiliary Device: Tu micrófono principal
 
 #### NVENC (GPU) - Recomendado 2025
 Utilizado por **TheGrefg** y streamers profesionales:
-\`\`\`
+\\\`\\\`\\\`
 Rate Control: CBR
 Bitrate: 6000 kbps (Twitch max)
 Keyframe Interval: 2 seconds
@@ -236,17 +236,17 @@ Look-ahead: Enabled
 Psycho Visual Tuning: Enabled
 GPU: 0
 Max B-frames: 2
-\`\`\`
+\\\`\\\`\\\`
 
 #### x264 (CPU) - Para PCs Potentes
 Configuración similar al setup de **ElXokas**:
-\`\`\`
+\\\`\\\`\\\`
 Rate Control: CBR
 Bitrate: 6000 kbps
 CPU Usage Preset: Medium (o Fast si lag)
 Profile: high
 Tune: zerolatency
-\`\`\`
+\\\`\\\`\\\`
 
 ### Scenes Profesionales Setup
 
@@ -857,8 +857,8 @@ export async function sendPendingEmails() {
     
     for (const emailEntry of pendingEmails) {
       // This would need proper joins - simplified for now
-      const subscriber = await storage.getSubscriber(emailEntry.subscriberId);
-      const post = await storage.getGeneratedPost(emailEntry.postId);
+      const subscriber = await storage.getSubscriber(emailEntry.subscriberId.toString());
+      const post = await storage.getGeneratedPost(emailEntry.postId.toString());
       
       if (!subscriber || !post) continue;
       
@@ -877,7 +877,7 @@ export async function sendPendingEmails() {
       
       try {
         await sgMail.send(emailContent);
-        await storage.markEmailSent(emailEntry.id);
+        await storage.markEmailAsSent(emailEntry.id);
         console.log(`Email sent to ${subscriber.email} for post ${post.title}`);
       } catch (error) {
         console.error(`Failed to send email to ${subscriber.email}:`, error);
