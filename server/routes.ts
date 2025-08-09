@@ -16,36 +16,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
     res.redirect(301, '/setup/elxokas');
   });
 
-  // SEO-optimized HTML for homepage
-  app.get('/', async (req, res, next) => {
-    try {
-      const seoData = getSEOData('/');
-      
-      // Read the base HTML template
-      const templatePath = path.resolve(import.meta.dirname, '..', 'client', 'index.html');
-      let html = await fs.promises.readFile(templatePath, 'utf-8');
-      
-      // Inject SEO data for homepage
-      html = injectSEOToHTML(html, seoData);
-      
-      // Replace script paths to make them work properly
-      html = html.replace('src="/src/main.tsx"', `src="/src/main.tsx?t=${Date.now()}"`);
-      
-      // Add cache headers for SEO crawlers
-      res.set({
-        'Content-Type': 'text/html; charset=utf-8',
-        'Cache-Control': 'public, max-age=3600',
-        'X-Custom-SEO': 'true'
-      });
-      
-      console.log(`[SEO] Serving custom HTML for homepage with title: ${seoData.title}`);
-      res.send(html);
-    } catch (error) {
-      console.error('[SEO] Error serving custom HTML for homepage:', error);
-      next();
-    }
-  });
-
   // SEO-optimized HTML for individual setup pages
   app.get('/setup/:slug', async (req, res, next) => {
     const validSlugs = ['ibai-llanos', 'elxokas', 'illojuan', 'thegrefg', 'coscu'];

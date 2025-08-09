@@ -158,22 +158,6 @@ export function injectSEOToHTML(html: string, seoData: SEOData): string {
     /<meta name="twitter:image" content=".*?">/,
     `<meta name="twitter:image" content="${seoData.ogImage}">`
   );
-
-  // Add Schema Markup JSON-LD
-  const schemaMarkup = `
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Setups de Streamers",
-      "url": "https://yostreamer.com",
-      "description": "Guías de setups de streamers famosos",
-      "inLanguage": "es"
-    }
-    </script>`;
-  
-  // Insert schema markup before closing head tag
-  html = html.replace('</head>', `${schemaMarkup}\n  </head>`);
   
   return html;
 }

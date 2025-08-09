@@ -1,5 +1,5 @@
-import React from "react";
 import { useParams, Link } from "wouter";
+import SEO from "@/components/SEO";
 import { posts } from "@/data/posts";
 import { Button } from "@/components/ui/button";
 import AdSlot from "@/components/ads/AdSlot";
@@ -20,9 +20,44 @@ const PostPage: React.FC = () => {
     );
   }
 
+  const origin = typeof window !== "undefined" ? window.location.origin : "";
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        headline: post.title,
+        image: origin + post.coverImage,
+        datePublished: post.date,
+        author: {
+          "@type": "Person",
+          name: post.author,
+        },
+        keywords: post.keywords.join(", "),
+        mainEntityOfPage: origin + `/setup/${post.slug}`,
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Inicio", item: origin + "/" },
+          { "@type": "ListItem", position: 2, name: post.title, item: origin + `/setup/${post.slug}` },
+        ],
+      },
+    ],
+  };
+
   return (
     <article className="grid gap-8 md:grid-cols-[1fr_320px]">
-      {/* SEO handled server-side for better crawling */}
+      <SEO
+        title={post.title}
+        description={post.excerpt}
+        image={post.coverImage}
+        canonicalPath={`/setup/${post.slug}`}
+        type="article"
+        jsonLd={jsonLd}
+        keywords={post.keywords}
+      />
+
       <div>
         <header className="space-y-3">
           <nav aria-label="Breadcrumb" className="text-sm text-muted-foreground">
