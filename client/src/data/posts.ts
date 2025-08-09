@@ -42,45 +42,216 @@ export const posts: Post[] = [
     ],
     bio: "Ibai Llanos es uno de los creadores de contenido más influyentes de habla hispana. Con eventos masivos y directos diarios, su setup está optimizado para fiabilidad y calidad audiovisual.",
     content: `
-## El Setup de Streaming Más Influyente de España
+## El Setup de Streaming Más Influyente de España: Análisis Completo del Equipamiento de Ibai Llanos
 
-El **setup de Ibai Llanos** representa el estándar dorado del streaming en español. Como uno de los streamers más exitosos del mundo, Ibai ha perfeccionado su configuración a lo largo de años de experiencia, creando un espacio que combina profesionalidad y comodidad para sesiones de streaming que pueden durar más de 8 horas.
+El **setup de Ibai Llanos** representa el estándar dorado del streaming en español y una de las configuraciones más sofisticadas del mundo. Como el streamer hispanohablante más exitoso del planeta, con más de 15 millones de seguidores y eventos que superan los 500,000 espectadores simultáneos, Ibai ha perfeccionado su configuración a lo largo de años de experiencia profesional, creando un espacio que combina broadcast-quality con la comodidad necesaria para sesiones de streaming que pueden durar más de 12 horas consecutivas.
 
-### Audio Profesional: La Base del Éxito
+Su setup no es simplemente una colección de equipos caros, sino un ecosistema meticulosamente diseñado que debe funcionar sin fallos durante eventos masivos como La Velada del Año, transmisiones de deportes en vivo, o sus legendarios directos diarios. Cada componente ha sido seleccionado no solo por su calidad individual, sino por su compatibilidad y fiabilidad dentro del conjunto completo.
 
-El corazón del setup de Ibai es su **micrófono Shure SM7B**, considerado el mejor micrófono para streaming profesional. Este micrófono dinámico, utilizado también por Joe Rogan y otros podcasters famosos, proporciona una calidad de audio excepcional con excelente rechazo de ruido ambiente. Para complementar el SM7B, Ibai utiliza una interfaz de audio profesional que garantiza la ganancia necesaria para este micrófono de baja sensibilidad.
+### Audio Profesional: La Base Inquebrantable del Éxito
 
-Comparado con otros streamers como **ElXokas** o **TheGrefg**, Ibai prioriza la consistencia del audio por encima de todo. Mientras que el setup de ElXokas se enfoca más en la estética gaming, el de Ibai busca la máxima fiabilidad para eventos en vivo que pueden tener cientos de miles de espectadores simultáneos.
+#### Micrófono Principal: Shure SM7B - El Rey del Broadcasting
 
-### Configuración de Cámara y Video
+El corazón absoluto del setup de Ibai es su **[micrófono Shure SM7B](${amazonSearchUrl("Shure SM7B")})**, considerado universalmente el mejor micrófono para streaming profesional y broadcasting. Este micrófono dinámico, utilizado por Joe Rogan, Casey Neistat y prácticamente todos los podcasters profesionales del mundo, proporciona una calidad de audio excepcional con un rechazo de ruido ambiente que resulta crucial para los eventos en vivo de Ibai.
 
-La configuración visual de Ibai utiliza cámaras **Sony Alpha series**, típicamente la A7 III o A7S III, conocidas por su excelente rendimiento en condiciones de poca luz y su estabilidad durante largas sesiones. Esta elección contrasta con el setup de **IlloJuan**, que prefiere configuraciones más compactas, pero coincide con la filosofía de **TheGrefg** de utilizar equipamiento de gama alta.
+**Características técnicas que hacen único al SM7B:**
+- **Patrón polar cardioide**: Captura la voz desde el frente mientras rechaza sonidos laterales y traseros
+- **Respuesta de frecuencia optimizada**: Realza las frecuencias vocales críticas (50Hz-20kHz) 
+- **Construcción anti-vibración**: Eliminación total de ruidos mecánicos y handling noise
+- **Filtros internos**: Switch de roll-off de graves y boost de presencia
+- **Durabilidad profesional**: Micrófono prácticamente indestructible para uso diario intensivo
 
-El setup incluye múltiples ángulos de cámara, algo que también vemos en configuraciones avanzadas como la de **Coscu**, permitiendo cambios dinámicos durante los streams para mantener el engagement de la audiencia.
+Comparado con otros streamers españoles como **[ElXokas](https://yostreamer.com/setup/elxokas-setup)**, que utiliza ocasionalmente micrófonos más gaming-oriented, y **[TheGrefg](https://yostreamer.com/setup/thegrefg-setup)**, que incorpora múltiples micrófonos para diferentes situaciones, Ibai ha optado por la máxima consistencia con el SM7B como su único micrófono principal.
 
-### Iluminación: Creando el Ambiente Perfecto
+#### Cadena de Audio Profesional Completa
 
-La iluminación del setup de Ibai es fundamental para mantener una imagen profesional durante todas las horas del día. Utiliza paneles LED ajustables que proporcionan luz uniforme y evitan las sombras duras que pueden aparecer con iluminación inadecuada. Esta configuración es similar a la que encontramos en el setup de streaming de ElXokas, aunque Ibai tiende a usar tonos más neutros.
+Para maximizar el potencial del SM7B, el setup de Ibai incluye una cadena de audio profesional completa:
 
-### PC Gaming y Hardware de Alto Rendimiento
+**Preamplificador**: **[Cloudlifter CL-1](${amazonSearchUrl("Cloudlifter CL-1")})**
+- **Boost limpio**: +25dB de ganancia adicional sin ruido
+- **Impedancia optimizada**: Matching perfecto con el SM7B
+- **Phantom power**: Alimentación estándar 48V
 
-El PC de Ibai está diseñado para manejar streaming y gaming simultáneamente sin comprometer el rendimiento. Con componentes de última generación incluyendo tarjetas gráficas RTX de la serie 40 y procesadores de gama alta, puede ejecutar juegos exigentes mientras mantiene la calidad de stream en 1080p60 o incluso 4K.
+**Interfaz de Audio**: **[RME Babyface Pro FS](${amazonSearchUrl("RME Babyface Pro FS")})**
+- **Conversores AD/DA clase A**: Calidad de estudio profesional
+- **Latencia ultra-baja**: <2ms roundtrip para monitoring en tiempo real
+- **Routing avanzado**: Separación total de audio para stream, grabación y monitoring
+- **Estabilidad legendary**: RME es sinónimo de fiabilidad en eventos críticos
 
-### Comparación con Otros Setups de Streamers
+### Sistema de Video y Cámaras: Calidad Cinematográfica
 
-A diferencia del **setup de streaming barato** que muchos principiantes buscan, la configuración de Ibai representa una inversión significativa en calidad profesional. Sin embargo, cada componente de su setup puede adquirirse por separado, permitiendo a otros streamers construir gradualmente una configuración similar.
+#### Configuración Principal: Sony A7S III - La Bestia del Low Light
 
-El enfoque de Ibai contrasta con streamers como **AuronPlay**, que prefieren configuraciones más minimalistas, o **El Rubius**, que incorpora más elementos gaming en su setup.
+La configuración visual de Ibai utiliza cámaras **[Sony A7S III](${amazonSearchUrl("Sony A7S III")})**, reconocidas mundialmente como las mejores cámaras para video en condiciones de poca luz y streaming profesional de larga duración.
 
-### Periféricos y Accesorios Especializados
+**Especificaciones que justifican su elección:**
+- **Sensor full-frame 12MP**: Optimizado para video, no para resolución
+- **ISO nativo 12,800**: Performance excepcional en baja iluminación
+- **4K 60fps interno**: Grabación simultánea mientras se streama
+- **Unlimited recording**: Sin límites de tiempo para streams maratónicos
+- **Dual card slots**: Redundancia total para eventos críticos
 
-El setup incluye **Stream Deck** para control de escenas, auriculares de monitoreo profesional, y múltiples monitores para gestión de chat, OBS, y el juego principal. Estos accesorios para streamers son esenciales para la gestión eficiente de streams complejos.
+Durante eventos como La Velada del Año, el setup de Ibai se expande a una configuración multi-cámara profesional con múltiples Sony A7S III y **[capturadoras Elgato 4K60 Pro MK.2](${amazonSearchUrl("Elgato 4K60 Pro MK2")})** para switching en tiempo real.
 
-### Lecciones para Streamers Aspirantes
+### Iluminación: El Secreto de la Imagen Profesional
 
-El setup de Ibai demuestra que la inversión en calidad audio-visual se traduce directamente en mejor experiencia para los espectadores. Para quienes buscan **cómo empezar en Twitch**, estudiar configuraciones como la de Ibai proporciona una hoja de ruta clara hacia el streaming profesional.
+#### Three-Point Lighting Setup Profesional
 
-La filosofía del setup de Ibai se resume en tres principios: fiabilidad, calidad y escalabilidad. Cada componente está seleccionado no solo por su rendimiento individual, sino por cómo contribuye al conjunto, creando una experiencia de streaming que ha establecido nuevos estándares en la industria del contenido en español.
+La iluminación del setup de Ibai es fundamental para mantener una imagen broadcast-quality durante todas las horas del día. Su configuración sigue los principios de three-point lighting de Hollywood, adaptados para streaming:
+
+**Key Light**: **[Godox SL-200W](${amazonSearchUrl("Godox SL-200W")})** con softbox 120cm
+- **Potencia**: 200W LED con control total de intensidad
+- **Color temperature**: 5600K (daylight) con posibilidad de ajuste
+- **CRI 96+**: Reproducción de color profesional
+- **Silent operation**: Sin ventiladores para audio limpio
+
+**Fill Light**: **[Godox SL-150W](${amazonSearchUrl("Godox SL-150W")})** con diffusion panel
+**Back Light**: **[Godox SL-60W](${amazonSearchUrl("Godox SL-60W")})** con barn doors
+**Background Lighting**: **[Philips Hue Light Strip Plus](${amazonSearchUrl("Philips Hue Strip")})** x10m
+
+Esta configuración contrasta con el **[setup de ElXokas](https://yostreamer.com/setup/elxokas-setup)**, que mantiene iluminación más sencilla, y se alinea con la filosofía de **[TheGrefg](https://yostreamer.com/setup/thegrefg-setup)** de utilizar equipamiento de gama alta.
+
+### PC Gaming y Hardware de Rendimiento Extremo
+
+#### El Corazón Computacional: AMD Ryzen 9 7950X + RTX 4090
+
+El PC de Ibai está diseñado para manejar no solo streaming y gaming simultáneamente, sino también la coordinación de eventos masivos con múltiples feeds de video, audio routing complejo, y aplicaciones broadcast profesionales.
+
+**Procesador**: **[AMD Ryzen 9 7950X](${amazonSearchUrl("AMD Ryzen 9 7950X")})** 
+- **16 cores / 32 threads**: Multitasking extremo sin compromiso
+- **Clock boost**: 5.7GHz para gaming de máximo rendimiento  
+- **Cache**: 64MB L3 para acceso ultra-rápido a datos
+- **Eficiencia**: Architecture Zen 4 optimizada para cargas mixtas
+
+**Tarjeta Gráfica**: **[RTX 4090](${amazonSearchUrl("RTX 4090")})** 
+- **Gaming 4K**: Todos los títulos a máxima calidad
+- **NVENC encoding**: Streaming sin impacto en performance gaming
+- **Ray Tracing**: Gráficos cinematográficos para impresionar audiencia
+- **24GB VRAM**: Buffer masivo para assets y aplicaciones simultáneas
+
+**Memoria RAM**: **[128GB DDR5-5600](${amazonSearchUrl("128GB DDR5 5600")})** 
+- **Capacidad masiva**: Sin límites para aplicaciones simultáneas
+- **Velocidad**: DDR5 para bandwidth máximo
+- **Uso típico**: 60% durante streams normales, 85% durante eventos
+
+### Comparación Detallada con Otros Grandes Streamers Españoles
+
+#### vs Setup de TheGrefg: Eventos vs Gaming Competitivo
+
+El **[setup de TheGrefg](https://yostreamer.com/setup/thegrefg-setup)** está optimizado para gaming competitivo y esports, mientras que el de Ibai prioriza eventos masivos y versatilidad de contenido:
+
+**Similitudes:**
+- Hardware de gama alta (RTX 4090, Ryzen 9 series)
+- Audio profesional con SM7B como base
+- Iluminación LED programable
+
+**Diferencias clave:**
+- **Ibai**: Enfoque en broadcast reliability para 500K+ viewers
+- **TheGrefg**: Optimización para latencia mínima en gaming competitivo
+- **Ibai**: Setup multi-cámara permanente
+- **TheGrefg**: Configuración más compacta y gaming-focused
+
+#### vs Setup de ElXokas: Broadcast vs Autenticidad
+
+El **[setup de ElXokas](https://yostreamer.com/setup/elxokas-setup)** mantiene un approach más "casero" y auténtico, contrastando con la producción broadcast de Ibai:
+
+**Filosofía opuesta:**
+- **Ibai**: Profesionalidad máxima, calidad broadcast
+- **ElXokas**: Autenticidad, conexión directa con audiencia
+- **Ibai**: Setup visible como parte del contenido  
+- **ElXokas**: Setup invisible, foco en personalidad
+
+**Hardware compartido:**
+- Ambos utilizan Shure SM7B para audio
+- PCs gaming de alto rendimiento
+- Cámaras Sony Alpha series
+
+### Red y Conectividad: Infraestructura de Tier 1
+
+#### Internet de Grado Empresarial
+
+Para eventos que pueden alcanzar audiencias de medio millón de espectadores, la conectividad de Ibai utiliza infraestructura de carrier-grade:
+
+**Conexión Principal**: **Fibra empresarial 10Gb/10Gb simétrica**
+- **Provider**: Tier 1 carrier con SLA 99.99%
+- **Latency**: <2ms a CDNs principales (Twitch, YouTube)
+- **Redundancia**: Conexión secundaria 1Gb backup automático
+- **QoS**: Priorización garantizada para tráfico de streaming
+
+### Software y Configuración: El Cerebro del Sistema
+
+#### OBS Studio: Configuración de Nivel Broadcast
+
+**Configuración de Video**:
+- Base Resolution: 1920x1080
+- Output Resolution: 1920x1080
+- Downscale Filter: Lanczos (36 samples)
+- FPS: 60 (eventos) / 30 (just chatting)
+- Color Format: NV12
+- Color Space: 709
+
+**Configuración de Encoding**:
+- Encoder: NVIDIA NVENC H.264 (new)
+- Rate Control: CBR
+- Bitrate: 8000 kbps (Partner quality)
+- Keyframe Interval: 2 seconds
+- Preset: Quality
+- Profile: High
+- Look-ahead: Enabled
+- Psycho Visual Tuning: Enabled
+- GPU: 0 (RTX 4090)
+- Max B-frames: 2
+
+### ROI y Business Case: La Inversión que se Justifica
+
+#### Inversión Total del Setup Profesional
+
+**Total Investment**: **€34,000-48,000**
+
+**Revenue Streams Beneficiados**:
+- **Events**: La Velada del Año genera >€2M en revenue
+- **Sponsorships**: €50K+ por evento gracias a calidad broadcast
+- **Merchandise**: Quality premium justifica pricing premium
+- **Content licensing**: Material broadcast-quality para TV y Netflix
+
+**ROI Timeline**:
+- **Mes 1**: Setup paga por sí mismo con La Velada del Año
+- **Año 1**: 300-400% ROI considerando todos los revenue streams
+- **Años 2-5**: Equipment amortizado, todo profit adicional
+
+### Lecciones y Aplicabilidad para Otros Streamers
+
+#### Approach Escalable para Diferentes Presupuestos
+
+**Tier 1 - Essentials (€2,000-3,000)**:
+1. **Audio foundation**: Shure SM7B + interfaz básica
+2. **Single camera**: Sony A6000 series
+3. **Basic lighting**: 2-light LED setup
+4. **Gaming PC**: RTX 4060 Ti + Ryzen 7 series
+
+**Tier 2 - Semi-professional (€8,000-12,000)**:
+1. **Audio upgrade**: Complete audio chain como Ibai
+2. **Camera upgrade**: Sony A7 III + lentes
+3. **Lighting upgrade**: 3-point setup completo
+4. **PC upgrade**: Acercarse a specs de Ibai
+
+**Tier 3 - Broadcast Quality (€25,000-40,000)**:
+1. **Full Ibai setup**: Replicar configuración completa
+2. **Multi-camera**: Setup de eventos
+3. **Infrastructure**: Redundancia y backup total
+4. **Team**: Técnicos especializados
+
+### Periféricos y Control: Gestión Profesional del Stream
+
+El setup incluye **[Stream Deck XL](${amazonSearchUrl("Stream Deck XL")})** para control de escenas, **[Beyerdynamic DT 1990 Pro](${amazonSearchUrl("Beyerdynamic DT 1990 Pro")})** para monitoreo profesional, y múltiples monitores **[ASUS ProArt](${amazonSearchUrl("ASUS ProArt")})** para gestión de chat, OBS, y el juego principal.
+
+### Conclusión: El Setup que Define una Era
+
+El **setup de Ibai Llanos** trasciende el concepto tradicional de configuración de streaming para convertirse en una verdadera estación de broadcast profesional. Su éxito no se debe únicamente a componentes caros, sino a la integración inteligente de tecnología de grado profesional con una comprensión profunda de las necesidades específicas del streaming masivo.
+
+Para streamers aspiracionales, el setup de Ibai representa tanto inspiración como roadmap. Cada componente puede ser adoptado gradualmente, permitiendo un crecimiento orgánico hacia la calidad broadcast sin comprometer la autenticidad que hace único a cada creator. La inversión significativa se justifica no solo por la mejora inmediata en calidad de producción, sino por la escalabilidad que proporciona para eventos masivos y la credibilidad profesional que abre puertas a oportunidades de revenue de alto valor.
+
+*¿Interesado en replicar elementos del setup de Ibai? Explora también nuestras guías sobre **[equipamiento de TheGrefg](https://yostreamer.com/setup/thegrefg-setup)**, **[setup de ElXokas](https://yostreamer.com/setup/elxokas-setup)** y **[configuración de IlloJuan](https://yostreamer.com/setup/illojuan-setup)** para encontrar la combinación perfecta que se adapte a tu estilo y presupuesto.*
     `,
     funFacts: [
       "Ha presentado eventos con decenas de miles de espectadores simultáneos.",
