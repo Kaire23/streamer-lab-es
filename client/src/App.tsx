@@ -5,11 +5,13 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Router, Route, useLocation } from "wouter";
 import { HelmetProvider } from "react-helmet-async";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { useEffect } from "react";
+import { useEffect, Suspense, lazy } from "react";
 import Layout from "@/components/layout/Layout";
-import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import PostPage from "./pages/PostPage";
+
+// Lazy load pages for code splitting and better performance
+const Index = lazy(() => import("./pages/Index"));
+const PostPage = lazy(() => import("./pages/PostPage"));
 
 const queryClient = new QueryClient();
 
@@ -47,9 +49,15 @@ const App = () => (
           <Router>
             <RouteChangeTracker />
             <Layout>
-              <Route path="/" component={Index} />
-              <Route path="/setup/:slug" component={PostPage} />
-              <Route path="/:rest*" component={NotFound} />
+              <Suspense fallback={
+                <div className="flex items-center justify-center min-h-[50vh]">
+                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-brand"></div>
+                </div>
+              }>
+                <Route path="/" component={Index} />
+                <Route path="/setup/:slug" component={PostPage} />
+                <Route path="/:rest*" component={NotFound} />
+              </Suspense>
             </Layout>
           </Router>
         </HelmetProvider>

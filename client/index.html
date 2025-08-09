@@ -14,7 +14,7 @@
       .dark{--background:222.2 84% 4.9%;--foreground:210 40% 98%;--muted-foreground:215 20.2% 65.1%;--border:217.2 32.6% 17.5%;--brand:262 90% 64%;--brand-2:198 100% 56%}
       
       /* Critical layout and typography */
-      body{background-color:hsl(var(--background));color:hsl(var(--foreground));font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.5;margin:0}
+      body{background-color:hsl(var(--background));color:hsl(var(--foreground));font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.5;margin:0;font-display:swap}
       h1{font-weight:700;font-size:2.25rem;line-height:2.5rem;letter-spacing:-0.025em;margin-bottom:0.75rem}
       p{margin-bottom:1rem}
       
@@ -47,12 +47,15 @@
       .loaded{opacity:1;transition:opacity 0.3s ease-in-out}
     </style>
     
-    <!-- Resource hints for performance optimization -->
+    <!-- Enhanced resource hints for performance optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <link rel="preconnect" href="https://www.amazon.es">
+    <link rel="dns-prefetch" href="https://m.media-amazon.com">
+    <link rel="prefetch" href="/setup/ibai-llanos">
+    <link rel="prefetch" href="/setup/elxokas">
     
     <!-- Preload critical hero images for LCP optimization -->
     <link rel="preload" as="image" href="/src/assets/ibai-llanos-hero.jpg" fetchpriority="high">

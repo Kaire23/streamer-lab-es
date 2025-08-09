@@ -3,6 +3,7 @@ import SEO from "@/components/SEO";
 import { posts } from "@/data/posts";
 import { Button } from "@/components/ui/button";
 import AdSlot from "@/components/ads/AdSlot";
+import OptimizedImage from "@/components/OptimizedImage";
 
 const PostPage: React.FC = () => {
   const { slug } = useParams();
@@ -72,15 +73,13 @@ const PostPage: React.FC = () => {
         </header>
 
         <div className="mt-4 overflow-hidden rounded-xl border border-border/60 shadow-sm">
-          <img
+          <OptimizedImage
             src={post.coverImage}
             alt={`Setup de streaming profesional de ${post.title.replace(/^Setup de streaming de\s*/i, "")} - Vista completa del escritorio con equipo gaming, micrófono profesional, iluminación LED y configuración optimizada para streaming en Twitch`}
-            loading="eager"
-            decoding="async"
+            priority={true}
             width="1200"
             height="675"
             className="w-full h-auto object-cover"
-            {...({ fetchpriority: "high" } as React.ImgHTMLAttributes<HTMLImageElement>)}
           />
         </div>
 
