@@ -1,6 +1,6 @@
 
 
-const SiteFooter: React.FC = () => {
+const SiteFooter = () => {
   return (
     <footer className="border-t border-border/60">
       <div className="container mx-auto px-4 py-8 grid gap-6 md:grid-cols-3">

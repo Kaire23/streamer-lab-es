@@ -1,9 +1,12 @@
-import { PropsWithChildren } from "react";
 import SiteHeader from "./SiteHeader";
 import SiteFooter from "./SiteFooter";
 import AdSlot from "@/components/ads/AdSlot";
 
-const Layout: React.FC<PropsWithChildren> = ({ children }) => {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Ambient gradient background */}
