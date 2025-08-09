@@ -9,6 +9,8 @@ import SubscriptionForm from "@/components/SubscriptionForm";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useQuery } from "@tanstack/react-query";
+import auronImage from "@assets/auron_1754774603843.jpeg";
+import rubiusImage from "@assets/rubius_1754774603843.jpg";
 
 interface GeneratedPost {
   id: number;
@@ -35,8 +37,8 @@ const Index: React.FC = () => {
     'illojuan': '/assets/illojuan-hero.jpg',
     'thegrefg': '/assets/thegrefg-hero.jpg',
     'coscu': '/assets/coscu-hero.jpg',
-    'auronplay': '@assets/auron_1754774603843.jpeg',
-    'elrubius': '@assets/rubius_1754774603843.jpg'
+    'auronplay': auronImage,
+    'elrubius': rubiusImage
   };
 
   // Helper function to get cover image for generated posts
@@ -60,10 +62,10 @@ const Index: React.FC = () => {
       return streamerImages['coscu'] || '/assets/coscu-hero.jpg';
     }
     if (titleLower.includes('auronplay') || titleLower.includes('auron')) {
-      return streamerImages['auronplay'] || '@assets/auron_1754774603843.jpeg';
+      return streamerImages['auronplay'] || auronImage;
     }
     if (titleLower.includes('elrubius') || titleLower.includes('rubius')) {
-      return streamerImages['elrubius'] || '@assets/rubius_1754774603843.jpg';
+      return streamerImages['elrubius'] || rubiusImage;
     }
     
     // Then check based on category and content type

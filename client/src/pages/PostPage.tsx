@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import AdSlot from "@/components/ads/AdSlot";
 import OptimizedImage from "@/components/OptimizedImage";
 import { useQuery } from "@tanstack/react-query";
+import auronImage from "@assets/auron_1754774603843.jpeg";
+import rubiusImage from "@assets/rubius_1754774603843.jpg";
 
 // Simple markdown to HTML converter for basic formatting
 const convertMarkdownToHTML = (markdown: string): string => {
@@ -96,8 +98,8 @@ const getCoverImageForGeneratedPost = (title: string, category: string): string 
   if (titleLower.includes('elxokas') || titleLower.includes('xokas')) return '/assets/elxocas-hero.jpg';
   if (titleLower.includes('illojuan') || titleLower.includes('juan')) return '/assets/illojuan-hero.jpg';
   if (titleLower.includes('coscu')) return '/assets/coscu-hero.jpg';
-  if (titleLower.includes('auronplay') || titleLower.includes('auron')) return '@assets/auron_1754774603843.jpeg';
-  if (titleLower.includes('elrubius') || titleLower.includes('rubius')) return '@assets/rubius_1754774603843.jpg';
+  if (titleLower.includes('auronplay') || titleLower.includes('auron')) return auronImage;
+  if (titleLower.includes('elrubius') || titleLower.includes('rubius')) return rubiusImage;
   
   // Category-based images
   if (category === 'Hardware y Equipamiento' || titleLower.includes('webcam') || titleLower.includes('micrófono')) {
