@@ -23,7 +23,6 @@ Preferred communication style: Simple, everyday language.
 
 ### Backend Architecture
 - **Runtime**: Node.js with Express.js server
-- **Development**: Vite middleware integration for hot module replacement
 - **Database ORM**: Drizzle ORM configured for PostgreSQL
 - **Session Storage**: connect-pg-simple for PostgreSQL session storage
 - **Storage Interface**: Abstract storage layer with in-memory implementation for development
@@ -67,7 +66,6 @@ Preferred communication style: Simple, everyday language.
 - **Lucide React**: Icon library
 
 ### Development Tools
-- **Vite**: Build tool and development server
 - **TypeScript**: Type safety and development experience
 - **ESBuild**: Fast JavaScript bundler for production builds
 
