@@ -28,47 +28,27 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
     return match ? match[1] : '';
   }, [src]);
 
-  // Generate srcset for responsive images - simplified for desktop performance
+  // Simple approach - just use the original image
   const srcSet = useMemo(() => {
-    if (!responsive || !imageName) return undefined;
-    
-    // Reduced sizes for better desktop performance
-    const sizes = [378, 756];
-    return sizes.map(size => {
-      const ext = src.includes('.webp') ? 'webp' : 'jpg';
-      return `${src.replace(/\.(jpg|jpeg|png|webp|avif)$/, `-${size}w.${ext}`)} ${size}w`;
-    }).join(', ');
-  }, [src, imageName, responsive]);
+    // Don't generate complex srcsets, just use the original image
+    return undefined;
+  }, []);
 
   // Default sizes attribute optimized for desktop performance
   const defaultSizes = sizes || '(max-width: 768px) 100vw, 378px';
 
   return (
-    <picture>
-      {/* Simplified modern format sources for desktop performance */}
-      {responsive && imageName && (
-        <source
-          type="image/webp"
-          srcSet={srcSet?.replace(/\.jpg/g, '.webp')}
-          sizes={defaultSizes}
-        />
-      )}
-      
-      {/* Fallback img tag */}
-      <img
-        src={src}
-        alt={alt}
-        loading={priority ? "eager" : "lazy"}
-        decoding="async"
-        srcSet={responsive ? srcSet : undefined}
-        sizes={responsive ? defaultSizes : undefined}
-        width={width || (responsive ? undefined : 378)}
-        height={height || (responsive ? undefined : 213)}
-        className={className}
-        {...({ fetchpriority: priority ? "high" : "auto" } as React.ImgHTMLAttributes<HTMLImageElement>)}
-        {...props}
-      />
-    </picture>
+    <img
+      src={src}
+      alt={alt}
+      loading={priority ? "eager" : "lazy"}
+      decoding="async"
+      width={width}
+      height={height}
+      className={className}
+      {...({ fetchpriority: priority ? "high" : "auto" } as React.ImgHTMLAttributes<HTMLImageElement>)}
+      {...props}
+    />
   );
 };
 
