@@ -67,7 +67,7 @@ const Index: React.FC = () => {
       </nav>
 
       <div className="grid gap-6 md:grid-cols-2">
-        {posts.map((post) => (
+        {posts.map((post, index) => (
           <article
             key={post.slug}
             className="group overflow-hidden rounded-xl border border-border/60 shadow-sm transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-[var(--elevate)]"
@@ -77,12 +77,13 @@ const Index: React.FC = () => {
                 <img
                   src={post.coverImage}
                   alt={`Setup de streaming completo de ${post.title.replace(/^Setup de streaming de\s*/i, "")} - Equipo profesional, micrófono, cámara e iluminación`}
-                  loading="lazy"
+                  loading={index < 2 ? "eager" : "lazy"}
                   decoding="async"
                   sizes="(min-width: 768px) 50vw, 100vw"
                   width="640"
                   height="360"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  {...(index === 0 ? { fetchpriority: "high" } as React.ImgHTMLAttributes<HTMLImageElement> : {})}
                 />
               </div>
             </Link>

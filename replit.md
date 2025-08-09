@@ -6,7 +6,7 @@ This is a full-stack web application for a Spanish streaming equipment guide web
 
 **Migration Status**: Successfully migrated from Lovable to Replit on January 8, 2025. All functionality working, comprehensive SEO optimization implemented with server-side rendering, streamer images updated with optimized alt tags and structured data, canonical URL issues resolved with proper 301 redirects, and sitemap.xml updated with correct canonical URLs.
 
-**Performance Optimizations**: Implemented critical CSS inlining, deferred JavaScript loading, non-critical CSS loaded at page footer, and comprehensive resource hints (preconnect, dns-prefetch, preload) for improved Core Web Vitals and SEO performance (January 9, 2025).
+**Performance Optimizations**: Implemented critical CSS inlining, deferred JavaScript loading, non-critical CSS loaded at page footer, comprehensive resource hints (preconnect, dns-prefetch, preload), and LCP optimizations with hero image preloading and fetchpriority attributes for improved Core Web Vitals and SEO performance (January 9, 2025).
 
 ## User Preferences
 

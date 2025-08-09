@@ -81,6 +81,17 @@ export function getSEOData(path: string): SEOData {
 }
 
 export function injectSEOToHTML(html: string, seoData: SEOData): string {
+  // Add preload hint for the hero image if it's not the homepage
+  if (seoData.ogImage && seoData.ogImage !== 'https://yostreamer.com/og-default.jpg') {
+    // Extract the actual image path from the og image URL
+    const imagePath = seoData.ogImage.replace('https://yostreamer.com', '');
+    // Add preload hint right after the critical CSS
+    html = html.replace(
+      '<!-- Preload critical hero images for LCP optimization -->',
+      `<!-- Preload critical hero images for LCP optimization -->\n    <link rel="preload" as="image" href="${imagePath}" fetchpriority="high">`
+    );
+  }
+  
   // Replace title
   html = html.replace(
     /<title>.*?<\/title>/,

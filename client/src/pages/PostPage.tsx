@@ -80,7 +80,7 @@ const PostPage: React.FC = () => {
             width="1200"
             height="675"
             className="w-full h-auto object-cover"
-            {...({ fetchpriority: "high" } as any)}
+            {...({ fetchpriority: "high" } as React.ImgHTMLAttributes<HTMLImageElement>)}
           />
         </div>
 
