@@ -12,6 +12,7 @@ export interface IStorage {
   
   // Generated posts methods
   getPublishedPosts(): Promise<GeneratedPost[]>;
+  getAllGeneratedPosts(): Promise<GeneratedPost[]>;
   getGeneratedPost(slug: string): Promise<GeneratedPost | undefined>;
   createGeneratedPost(insertPost: InsertGeneratedPost): Promise<GeneratedPost>;
   getPostsToPublish(): Promise<GeneratedPost[]>;
@@ -65,16 +66,18 @@ export class DatabaseStorage implements IStorage {
       .orderBy(desc(generatedPosts.publishedAt));
   }
 
+  async getAllGeneratedPosts(): Promise<GeneratedPost[]> {
+    return await db
+      .select()
+      .from(generatedPosts)
+      .orderBy(desc(generatedPosts.createdAt));
+  }
+
   async getGeneratedPost(slug: string): Promise<GeneratedPost | undefined> {
     const [post] = await db
       .select()
       .from(generatedPosts)
-      .where(
-        and(
-          eq(generatedPosts.slug, slug),
-          eq(generatedPosts.isPublished, true)
-        )
-      );
+      .where(eq(generatedPosts.slug, slug));
     return post || undefined;
   }
 

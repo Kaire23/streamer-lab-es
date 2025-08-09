@@ -1,0 +1,84 @@
+2025-08-09 22:55:31.76
+93ca5500
+User
+at file:///home/runner/workspace/dist/index.js:803:35
+2025-08-09 22:55:31.76
+93ca5500
+User
+at Layer.handle [as handle_request] (/home/runner/workspace/node_modules/express/lib/router/layer.js:95:5)
+2025-08-09 22:55:31.76
+93ca5500
+User
+at next (/home/runner/workspace/node_modules/express/lib/router/route.js:149:13)
+2025-08-09 22:55:31.76
+93ca5500
+User
+at Route.dispatch (/home/runner/workspace/node_modules/express/lib/router/route.js:119:3)
+2025-08-09 22:55:31.76
+93ca5500
+User
+at Layer.handle [as handle_request] (/home/runner/workspace/node_modules/express/lib/router/layer.js:95:5)
+2025-08-09 22:55:31.76
+93ca5500
+User
+at /home/runner/workspace/node_modules/express/lib/router/index.js:284:15
+2025-08-09 22:55:31.76
+93ca5500
+User
+at Function.process_params (/home/runner/workspace/node_modules/express/lib/router/index.js:346:12)
+2025-08-09 22:55:31.76
+93ca5500
+User
+at next (/home/runner/workspace/node_modules/express/lib/router/index.js:280:10)
+2025-08-09 22:55:31.76
+93ca5500
+User
+at file:///home/runner/workspace/dist/index.js:971:3
+2025-08-09 22:55:31.76
+93ca5500
+User
+at Layer.handle [as handle_request] (/home/runner/workspace/node_modules/express/lib/router/layer.js:95:5)
+2025-08-09 22:55:33.90
+93ca5500
+User
+Get posts error: TypeError: storage.getAllGeneratedPosts is not a function
+2025-08-09 22:55:33.90
+93ca5500
+User
+at file:///home/runner/workspace/dist/index.js:803:35
+2025-08-09 22:55:33.90
+93ca5500
+User
+at Layer.handle [as handle_request] (/home/runner/workspace/node_modules/express/lib/router/layer.js:95:5)
+2025-08-09 22:55:33.90
+93ca5500
+User
+at next (/home/runner/workspace/node_modules/express/lib/router/route.js:149:13)
+2025-08-09 22:55:33.90
+93ca5500
+User
+at Route.dispatch (/home/runner/workspace/node_modules/express/lib/router/route.js:119:3)
+2025-08-09 22:55:33.90
+93ca5500
+User
+at Layer.handle [as handle_request] (/home/runner/workspace/node_modules/express/lib/router/layer.js:95:5)
+2025-08-09 22:55:33.90
+93ca5500
+User
+at /home/runner/workspace/node_modules/express/lib/router/index.js:284:15
+2025-08-09 22:55:33.90
+93ca5500
+User
+at Function.process_params (/home/runner/workspace/node_modules/express/lib/router/index.js:346:12)
+2025-08-09 22:55:33.90
+93ca5500
+User
+at next (/home/runner/workspace/node_modules/express/lib/router/index.js:280:10)
+2025-08-09 22:55:33.90
+93ca5500
+User
+at file:///home/runner/workspace/dist/index.js:971:3
+2025-08-09 22:55:33.90
+93ca5500
+User
+at Layer.handle [as handle_request] (/home/runner/workspace/node_modules/express/lib/router/layer.js:95:5)

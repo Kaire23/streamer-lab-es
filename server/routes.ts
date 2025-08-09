@@ -21,38 +21,53 @@ export async function registerRoutes(app: Express): Promise<Server> {
     const validSlugs = ['ibai-llanos', 'elxokas', 'illojuan', 'thegrefg', 'coscu'];
     const slug = req.params.slug;
     
-    // Only handle valid streamer slugs
-    if (!validSlugs.includes(slug)) {
-      return next();
+    // Check if it's a valid original streamer slug
+    if (validSlugs.includes(slug)) {
+      // Handle original streamer posts with SEO optimization
+      try {
+        const seoData = getSEOData(`/setup/${slug}`);
+        
+        // Read the base HTML template
+        const templatePath = path.resolve(import.meta.dirname, '..', 'client', 'index.html');
+        let html = await fs.promises.readFile(templatePath, 'utf-8');
+        
+        // Inject SEO data for this specific page
+        html = injectSEOToHTML(html, seoData);
+        
+        // Replace script paths to make them work properly
+        html = html.replace('src="/src/main.tsx"', `src="/src/main.tsx?t=${Date.now()}"`);
+        
+        // Add cache headers for SEO crawlers
+        res.set({
+          'Content-Type': 'text/html; charset=utf-8',
+          'Cache-Control': 'public, max-age=3600',
+          'X-Custom-SEO': 'true'
+        });
+        
+        console.log(`[SEO] Serving custom HTML for /setup/${slug} with title: ${seoData.title}`);
+        res.send(html);
+        return;
+      } catch (error) {
+        console.error('[SEO] Error serving custom HTML:', error);
+        return next();
+      }
     }
     
+    // Check if it's a generated post
     try {
-      const seoData = getSEOData(`/setup/${slug}`);
-      
-      // Read the base HTML template
-      const templatePath = path.resolve(import.meta.dirname, '..', 'client', 'index.html');
-      let html = await fs.promises.readFile(templatePath, 'utf-8');
-      
-      // Inject SEO data for this specific page
-      html = injectSEOToHTML(html, seoData);
-      
-      // Replace script paths to make them work properly
-      html = html.replace('src="/src/main.tsx"', `src="/src/main.tsx?t=${Date.now()}"`);
-      
-      // Add cache headers for SEO crawlers
-      res.set({
-        'Content-Type': 'text/html; charset=utf-8',
-        'Cache-Control': 'public, max-age=3600',
-        'X-Custom-SEO': 'true'
-      });
-      
-      console.log(`[SEO] Serving custom HTML for /setup/${slug} with title: ${seoData.title}`);
-      res.send(html);
+      const generatedPost = await storage.getGeneratedPost(slug);
+      if (generatedPost) {
+        // Let the React app handle this - just continue to next middleware
+        return next();
+      }
     } catch (error) {
-      console.error('[SEO] Error serving custom HTML:', error);
-      next();
+      console.error('[Generated Post] Error checking for generated post:', error);
     }
+    
+    // Not found - continue to next middleware
+    return next();
   });
+
 
   // API routes for subscription system
   app.post("/api/subscribe", async (req, res) => {
