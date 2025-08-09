@@ -6,18 +6,45 @@ import { Button } from "@/components/ui/button";
 import AdSlot from "@/components/ads/AdSlot";
 import OptimizedImage from "@/components/OptimizedImage";
 import SubscriptionForm from "@/components/SubscriptionForm";
+import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Index: React.FC = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 10;
+  
+  // Get actual cover images for streamers
+  const streamerImages: { [key: string]: string } = {
+    'ibai-llanos': '/assets/ibai-llanos-hero.jpg',
+    'elxocas': '/assets/elxocas-hero.jpg',
+    'illojuan': '/assets/illojuan-hero.jpg',
+    'thegrefg': '/assets/thegrefg-hero.jpg',
+    'coscu': '/assets/coscu-hero.jpg'
+  };
+
+  // Article placeholder images based on category
+  const categoryImages: { [key: string]: string } = {
+    'Hardware y Equipamiento': 'https://images.unsplash.com/photo-1598986646512-9330bcc4c0dc?w=600&h=400&fit=crop',
+    'Guías y Tutoriales': 'https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=600&h=400&fit=crop',
+    'Streaming Profesional': 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop',
+    'Configuración y Software': 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=400&fit=crop'
+  };
+
   // Combine all posts: streamer setups + SEO articles
   const allPosts = [
-    ...posts.map(post => ({ ...post, type: 'streamer' as const, category: 'Setup de Streamers' })),
+    ...posts.map(post => ({ 
+      ...post, 
+      type: 'streamer' as const, 
+      category: 'Setup de Streamers',
+      coverImage: post.coverImage || streamerImages[post.slug] || '/api/placeholder/600/400'
+    })),
     ...seoArticles.map(article => ({
       slug: article.slug,
       title: article.title,
       excerpt: article.excerpt,
       date: article.date,
       author: article.author,
-      coverImage: "/api/placeholder/600/400",
+      coverImage: categoryImages[article.category] || 'https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=600&h=400&fit=crop',
       keywords: article.keywords,
       bio: article.excerpt,
       content: article.content,
@@ -29,6 +56,12 @@ const Index: React.FC = () => {
       readingTime: article.readingTime
     }))
   ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+  // Calculate pagination
+  const totalPages = Math.ceil(allPosts.length / postsPerPage);
+  const startIndex = (currentPage - 1) * postsPerPage;
+  const endIndex = startIndex + postsPerPage;
+  const currentPosts = allPosts.slice(startIndex, endIndex);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -104,8 +137,13 @@ const Index: React.FC = () => {
         <SubscriptionForm />
       </section>
 
+      {/* Total posts counter */}
+      <div className="mb-4 text-center text-sm text-muted-foreground">
+        Mostrando {startIndex + 1}-{Math.min(endIndex, allPosts.length)} de {allPosts.length} artículos
+      </div>
+
       <div className="grid gap-6 md:grid-cols-2 posts-grid">
-        {allPosts.map((post, index) => (
+        {currentPosts.map((post, index) => (
           <article
             key={post.slug}
             className="group overflow-hidden rounded-xl border border-border/60 shadow-sm transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-[var(--elevate)] post-card"
@@ -154,14 +192,47 @@ const Index: React.FC = () => {
         ))}
       </div>
 
+      {/* Pagination controls */}
+      {totalPages > 1 && (
+        <div className="mt-8 flex items-center justify-center gap-2">
+          <Button
+            variant="outline"
+            onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+            disabled={currentPage === 1}
+            className="flex items-center gap-1"
+          >
+            <ChevronLeft className="w-4 h-4" />
+            Anterior
+          </Button>
+          
+          <div className="flex gap-1">
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+              <Button
+                key={page}
+                variant={currentPage === page ? "default" : "outline"}
+                onClick={() => setCurrentPage(page)}
+                className="w-10 h-10 p-0"
+              >
+                {page}
+              </Button>
+            ))}
+          </div>
+          
+          <Button
+            variant="outline"
+            onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+            disabled={currentPage === totalPages}
+            className="flex items-center gap-1"
+          >
+            Siguiente
+            <ChevronRight className="w-4 h-4" />
+          </Button>
+        </div>
+      )}
+
       <div className="mt-8">
         <AdSlot id="home-bottom" format="horizontal" />
       </div>
-
-      <section id="newsletter" className="mt-12 rounded-xl border border-border/60 p-6 shadow-sm text-center">
-        <h2 className="text-2xl font-semibold">¿Quieres recibir nuevas guías?</h2>
-        <p className="text-muted-foreground mt-1">Muy pronto añadiremos newsletter. ¡Estate atento!</p>
-      </section>
     </div>
   );
 };

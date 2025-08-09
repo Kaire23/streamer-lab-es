@@ -181,18 +181,17 @@ Para streaming necesitas balance entre gaming y encoding:
 - **Hotkeys**: Scene switching durante gaming
 
 #### Configuración OBS Económica
-```
-Video Settings:
+
+**Video Settings:**
 - Output Resolution: 1920x1080
 - Downscale Filter: Lanczos
 - FPS: 30 (más estable que 60 con hardware limitado)
 
-Encoder Settings:
+**Encoder Settings:**
 - Encoder: NVENC H.264 (si tienes RTX)
 - Rate Control: CBR
 - Bitrate: 3500 kbps (Twitch affiliate)
 - Keyframe: 2 seconds
-```
 
 ### Maximizando el Hardware Limitado
 
