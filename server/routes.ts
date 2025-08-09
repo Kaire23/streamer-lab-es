@@ -1,6 +1,6 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
-import { storage } from "./storage";
+import { storage } from "./storage-new";
 import { getSEOData, injectSEOToHTML } from "./seo";
 import fs from "fs";
 import path from "path";
@@ -73,9 +73,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   app.get("/api/generated-posts", async (req, res) => {
     try {
-      // Return the SEO articles as posts for now
-      const seoArticles = await import("../client/src/data/seo-articles");
-      res.json(seoArticles.seoArticles || []);
+      // Get published posts from database
+      const posts = await storage.getPublishedPosts();
+      res.json(posts);
     } catch (error) {
       console.error("Get posts error:", error);
       res.status(500).json({ error: "Error al obtener posts" });

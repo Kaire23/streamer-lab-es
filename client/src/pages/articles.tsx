@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Clock, Calendar, User, Tag } from "lucide-react";
 import { seoArticles } from "@/data/seo-articles";
