@@ -47,18 +47,30 @@
       .loaded{opacity:1;transition:opacity 0.3s ease-in-out}
     </style>
     
-    <!-- Enhanced resource hints for performance optimization -->
+    <!-- Optimized resource hints to reduce critical chain -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-    <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <link rel="preconnect" href="https://www.amazon.es">
-    <link rel="dns-prefetch" href="https://m.media-amazon.com">
-    <!-- Reduced prefetching for desktop performance -->
+    <!-- Defer non-critical DNS lookups -->
+    <script>
+      setTimeout(() => {
+        const links = [
+          ['dns-prefetch', 'https://www.googletagmanager.com'],
+          ['dns-prefetch', 'https://www.google-analytics.com'], 
+          ['dns-prefetch', 'https://m.media-amazon.com']
+        ];
+        links.forEach(([rel, href]) => {
+          const link = document.createElement('link');
+          link.rel = rel;
+          link.href = href;
+          document.head.appendChild(link);
+        });
+      }, 100);
+    </script>
     
-    <!-- Optimized preloading for desktop performance -->
-    <link rel="preload" as="image" href="/src/assets/ibai-llanos-hero.jpg" fetchpriority="high" media="(min-width: 768px)">
-    <link rel="preload" href="/src/main.tsx" as="script" crossorigin="anonymous" fetchpriority="high">
+    <!-- Critical resource preloading only -->
+    <link rel="preload" as="image" href="/src/assets/ibai-llanos-hero.jpg" fetchpriority="high">
+    <link rel="modulepreload" href="/src/main.tsx" fetchpriority="high">
     
     <!-- Default SEO meta tags (enhanced by React Helmet) -->
     <title>Setups de Streamers: Guías Futuristas en Español</title>
@@ -102,6 +114,22 @@
     
   </head>
   <body>
+    <!-- Defer non-critical JavaScript to reduce blocking -->
+    <script>
+      // Defer Google Analytics to not block initial render
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VBXNX2FEBM');
+      
+      // Load GA script after page load
+      window.addEventListener('load', () => {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-VBXNX2FEBM';
+        document.head.appendChild(script);
+      });
+    </script>
     <div id="root" class="loading"></div>
     <script>
       // Remove loading class once DOM is ready
@@ -111,26 +139,8 @@
       });
     </script>
     
-    <!-- Main application JavaScript - deferred for performance -->
-    <script type="module" defer src="/src/main.tsx"></script>
-    
-    <!-- Load non-critical CSS asynchronously to avoid render blocking -->
-    <link rel="preload" href="/src/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/src/index.css"></noscript>
-    
-    <!-- Analytics loaded after main content -->
-    <script>
-      // Load Google Analytics asynchronously
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-VBXNX2FEBM');
-      
-      // Load gtag script asynchronously
-      (function() {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
+    <!-- Main application JavaScript -->
+    <script type="module" src="/src/main.tsx"></script>
         ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-VBXNX2FEBM';
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(ga, s);
