@@ -2,6 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage-new";
 import { getSEOData, injectSEOToHTML } from "./seo";
+import { schedulePostPlan } from "./seo-content-generator";
 import fs from "fs";
 import path from "path";
 
@@ -68,6 +69,25 @@ export async function registerRoutes(app: Express): Promise<Server> {
     return next();
   });
 
+
+  // SEO post creation endpoint
+  app.post("/api/create-seo-posts", async (req, res) => {
+    try {
+      console.log("Creating SEO post plan...");
+      await schedulePostPlan();
+      res.json({ 
+        success: true, 
+        message: "SEO post plan created successfully",
+        postsCreated: 8
+      });
+    } catch (error) {
+      console.error("Error creating post plan:", error);
+      res.status(500).json({ 
+        error: "Failed to create post plan", 
+        details: error instanceof Error ? error.message : String(error)
+      });
+    }
+  });
 
   // API routes for subscription system
   app.post("/api/subscribe", async (req, res) => {
