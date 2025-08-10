@@ -37,7 +37,9 @@ app.use((req, res, next) => {
 });
 
 (async () => {
-  // Initialize post scheduling system
+  // DISABLED: Post scheduling system - disabled due to quality issues
+  // Automatic post creation has been disabled to prevent low-quality content generation
+  /*
   try {
     console.log("Initializing post schedule system...");
     const { initializePostSchedule, processPostPublishing, createScheduledPost } = await import("./post-scheduler");
@@ -67,6 +69,7 @@ app.use((req, res, next) => {
   } catch (error) {
     console.error("Error initializing post schedule:", error);
   }
+  */
 
   const server = await registerRoutes(app);
 
