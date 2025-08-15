@@ -6,6 +6,7 @@ import coscuImg from "@/assets/coscu-hero.jpg";
 import auronImg from "@assets/auronsetup_1754821866067.jpg";
 import elrubiusImg from "@assets/elrubius_1754821925283.webp";
 import cristininiImg from "@assets/cristinini_1755266350997.jpeg";
+import alexbyImg from "@assets/alexby_1755266765196.jpg";
 import { amazonSearchUrl } from "@/lib/affiliate";
 
 export type SetupItem = { name: string; link: string; note?: string; image?: string };
@@ -1646,6 +1647,520 @@ El **setup de Cristinini** no es solo aspiración, sino un blueprint práctico y
           { name: "Logitech G Pro Wireless", link: amazonSearchUrl("Logitech G Pro Wireless"), note: "Ratón gaming inalámbrico" },
           { name: "ASUS VG27AQL1A", link: amazonSearchUrl("ASUS VG27AQL1A"), note: "Monitor 27\" 1440p 170Hz" },
           { name: "Stream Deck MK.2", link: amazonSearchUrl("Stream Deck MK2"), note: "Control de stream visual" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "alexby",
+    title: "Setup de streaming de Alexby (2025): Guía completa",
+    excerpt:
+      "Descubre el setup versátil de Alexby: equipamiento optimizado para colaboraciones, iluminación RGB dinámica, PC gaming potente y configuración diseñada para contenido social y gaming competitivo.",
+    date: today,
+    author: "Equipo Setups de Streamers",
+    coverImage: alexbyImg,
+    keywords: [
+      "setup de streaming",
+      "Alexby",
+      "equipo streamer",
+      "micrófono colaboración",
+      "iluminación RGB",
+      "PC gaming social",
+      "streaming colaborativo",
+    ],
+    bio: "Alexby es reconocido por su contenido colaborativo y versatilidad en gaming. Su setup está optimizado para streams con invitados, gaming social y contenido variado con enfoque en la interacción y entretenimiento.",
+    content: `
+## El Setup Colaborativo de Alexby: Análisis Completo del Equipamiento Social Gaming 2025
+
+El **setup de streaming de Alexby** representa la evolución del contenido colaborativo en el streaming español. Reconocido por su capacidad para crear contenido dinámico con múltiples streamers e invitados, Alexby ha desarrollado una configuración que prioriza la versatilidad, la calidad técnica consistente y la flexibilidad necesaria para adaptar su espacio a diferentes formatos de contenido, desde gaming competitivo hasta podcasting improvisado y streams sociales interactivos.
+
+Su setup no es simplemente una demostración de equipamiento gaming, sino un estudio diseñado específicamente para facilitar la colaboración fluida entre múltiples creators. Cada componente ha sido seleccionado para maximizar tanto la calidad individual como la capacidad de integración con setups externos, creando un espacio que funciona perfectamente tanto para contenido en solitario como para productions complejas con múltiples participantes.
+
+### Audio Profesional: Claridad para Múltiples Voces
+
+#### Sistema de Audio Multi-Input Optimizado
+
+El sistema de audio de Alexby está específicamente diseñado para manejar múltiples fuentes de audio simultáneas, crucial para su contenido colaborativo:
+
+**Micrófono Principal**: **[Audio-Technica AT2035](https://www.amazon.es/s?k=Audio-Technica%20AT2035&tag=yostreamer-21)** - Versatilidad Colaborativa
+- **Condensador cardioide profesional**: Captura vocal con detalle excepcional y rechazo lateral efectivo
+- **SPL handling superior**: 148dB máximo, perfecto para momentos intensos durante gaming colaborativo
+- **Respuesta de frecuencia extendida**: 20Hz-20kHz para captura vocal completa y natural
+- **Durabilidad studio-grade**: Construcción que resiste uso intensivo con múltiples usuarios
+
+**Sistema de Audio Secundario**: **[Rode PodMic](https://www.amazon.es/s?k=Rode%20PodMic&tag=yostreamer-21)** - Invitados y Colaboraciones
+- **Micrófono dinámico broadcast**: Perfecto para invitados sin experiencia técnica
+- **Plug-and-play reliability**: Configuración instantánea sin ajustes complejos
+- **Rechazo de ruido superior**: Ideal para entornos con múltiples fuentes de sonido
+- **Broadcast-quality output**: Consistencia vocal independiente del usuario
+
+**Interfaz de Audio Multi-Input**: **[Focusrite Scarlett 4i4 3rd Gen](https://www.amazon.es/s?k=Focusrite%20Scarlett%204i4&tag=yostreamer-21)**
+- **4 inputs simultáneos**: Capacidad para micrófonos múltiples + instrumentos
+- **Direct monitoring**: Zero-latency monitoring para todos los participants
+- **MIDI I/O**: Flexibilidad para integración con controladores y sintetizadores
+- **Air mode**: Brightening sutil para voces que mejora claridad en streams
+
+**Mezclador de Audio**: **[Behringer XENYX Q802USB](https://www.amazon.es/s?k=Behringer%20Q802USB&tag=yostreamer-21)**
+- **8-input mixing**: Control individual de niveles para múltiples fuentes
+- **Built-in EQ**: Ajuste en tiempo real sin software adicional
+- **USB interface**: Grabación directa a PC mientras mixing en vivo
+- **Headphone monitoring**: Control independiente para host e invitados
+
+**Procesamiento de Audio**: **[TC Helicon VoiceLive Play](https://www.amazon.es/s?k=TC%20Helicon%20VoiceLive&tag=yostreamer-21)**
+- **Real-time vocal effects**: Reverb, delay, harmony para contenido musical
+- **Preset management**: Configuraciones guardadas para diferentes tipos de streams
+- **Looping capability**: Grabación en vivo para contenido creativo
+- **Easy operation**: Controles simples para uso durante streaming en vivo
+
+### Configuración Visual: Multi-Cámara para Contenido Dinámico
+
+#### Sistema de Cámaras Colaborativo
+
+La configuración visual de Alexby está optimizada para capturar múltiples ángulos y participantes simultáneamente:
+
+**Cámara Principal**: **[Sony A6600](https://www.amazon.es/s?k=Sony%20A6600&tag=yostreamer-21)** - Premium APS-C Performance
+- **Sensor APS-C de 24.2MP**: Calidad de imagen superior con excelente low-light performance
+- **5-axis in-body stabilization**: Imagen estable durante movimientos dinámicos
+- **Real-time Eye AF**: Seguimiento facial preciso para múltiples sujetos
+- **Extended recording**: Sin límite de grabación para streams de larga duración
+
+**Lente Principal**: **[Sony E PZ 16-50mm f/3.5-5.6 OSS](https://www.amazon.es/s?k=Sony%20E%20PZ%2016-50mm&tag=yostreamer-21)**
+- **Zoom range versátil**: 16-50mm para desde wide shots hasta close-ups
+- **Power zoom**: Ajuste remoto de focal durante streaming
+- **Optical stabilization**: Doble estabilización combinada con body
+- **Compact design**: Balance perfecto para setup multi-cámara
+
+**Cámara Secundaria**: **[Sony A6100](https://www.amazon.es/s?k=Sony%20A6100&tag=yostreamer-21)** - Ángulo de Invitados
+- **Matching image quality**: Consistencia visual entre cámaras
+- **Flip screen**: Verificación de encuadre para invitados
+- **Fast autofocus**: 425 puntos de detección de fase
+- **4K recording**: Calidad uniforme en todas las cámaras
+
+**Sistema de Captura Multi-Cámara**: **[Elgato HD60 S+](https://www.amazon.es/s?k=Elgato%20HD60%20S%20Plus&tag=yostreamer-21)** (x2)
+- **Dual capture setup**: Dos cámaras simultáneas en OBS
+- **4K pass-through**: Calidad máxima sin compromiso
+- **Zero delay**: Gaming sin latencia agregada
+- **USB 3.0**: Bandwidth suficiente para múltiples streams 1080p60
+
+**Cámara Overhead**: **[Logitech C920s Pro](https://www.amazon.es/s?k=Logitech%20C920s%20Pro&tag=yostreamer-21)**
+- **1080p reliable**: Calidad consistente para ángulos alternativos
+- **Auto-focus**: Mantenimiento automático de foco
+- **Wide angle**: Cobertura amplia para actividades de escritorio
+- **Plug-and-play**: Configuración instantánea sin complicaciones
+
+### Iluminación RGB: Ambiente Dinámico para Cada Momento
+
+#### Sistema de Iluminación Adaptable y Social
+
+La iluminación de Alexby está diseñada para crear ambientes que se adapten al mood del contenido y favorezcan tanto al host como a los invitados:
+
+**Iluminación Principal Multi-Punto**: **[Godox SL-60W](https://www.amazon.es/s?k=Godox%20SL-60W&tag=yostreamer-21)** (x2)
+- **LED COB 60W**: Potencia suficiente para iluminar múltiples sujetos uniformemente
+- **Bowens mount**: Compatibilidad con softboxes y modificadores profesionales
+- **Silent operation**: Sin ruido de ventilador durante grabación
+- **DMX control**: Integración con sistemas de iluminación profesional
+
+**Softboxes**: **[Godox SB-UE80](https://www.amazon.es/s?k=Godox%20SB-UE80&tag=yostreamer-21)** (x2)
+- **80cm octagonal**: Luz suave y favorecedora para retratos
+- **Easy setup**: Montaje rápido tipo paraguas
+- **Even distribution**: Eliminación de hot spots y sombras duras
+- **Professional look**: Catch lights atractivos en los ojos
+
+**RGB Accent Lighting**: **[Govee Immersion Pro](https://www.amazon.es/s?k=Govee%20Immersion%20Pro&tag=yostreamer-21)**
+- **Camera-reactive lighting**: Sincronización con contenido en pantalla
+- **16M+ colors**: Paleta infinita para cualquier mood deseado
+- **Music sync advanced**: Reacción sofisticada a beats y frecuencias
+- **Zone control**: Control independiente de múltiples áreas
+
+**Background RGB System**: **[Nanoleaf Canvas](https://www.amazon.es/s?k=Nanoleaf%20Canvas&tag=yostreamer-21)**
+- **Modular square design**: Configuración geométrica personalizable
+- **Touch reactive**: Interacción física durante streams
+- **Rhythm module**: Sincronización musical avanzada
+- **HomeKit integration**: Control por voz y automatización
+
+**Practical Lighting**: **[Philips Hue Play Bars](https://www.amazon.es/s?k=Philips%20Hue%20Play%20Bars&tag=yostreamer-21)** (x4)
+- **Accent lighting versatile**: Colocación flexible para highlighting
+- **Sync with entertainment**: Integración con Hue Entertainment zones
+- **Gradient capable**: Transiciones suaves entre colores
+- **Easy repositioning**: Mounting magnético para cambios rápidos
+
+**Strip Lighting**: **[LIFX Z TV Strip](https://www.amazon.es/s?k=LIFX%20Z%20Strip&tag=yostreamer-21)**
+- **Multi-zone addressing**: Control individual de segmentos
+- **WiFi direct**: Sin hub adicional requerido
+- **High brightness**: 1400 lumens por metro para visibility
+- **Music visualization**: Efectos complejos sincronizados con audio
+
+### PC Gaming: Potencia para Multitasking Extremo
+
+#### Especificaciones de Alto Rendimiento Multi-Stream
+
+El PC de Alexby está configurado para manejar gaming + streaming + grabación + múltiples aplicaciones de comunicación simultáneamente:
+
+**Procesador**: **[Intel Core i7-13700K](https://www.amazon.es/s?k=Intel%20i7-13700K&tag=yostreamer-21)** - Hybrid Architecture Balanced
+- **16 cores (8P+8E)**: Performance cores para gaming, efficiency cores para background tasks
+- **Boost hasta 5.4GHz**: Single-thread performance excepcional para gaming competitivo
+- **30MB Intel Smart Cache**: Acceso rápido a datos de múltiples aplicaciones
+- **DDR5 support**: Memoria de próxima generación para máximo bandwidth
+
+**Tarjeta Gráfica**: **[NVIDIA RTX 4070 Ti SUPER](https://www.amazon.es/s?k=NVIDIA%20RTX%204070%20Ti%20SUPER&tag=yostreamer-21)** - Sweet Spot Premium
+- **16GB GDDR6X**: VRAM abundante para gaming 1440p + streaming + grabación
+- **Ada Lovelace efficiency**: Performance por watt líder en la industria
+- **DLSS 3 Frame Generation**: Framerates imposibles con calidad intacta
+- **Dual AV1 encoders**: Streaming eficiente a múltiples plataformas
+
+**Memoria RAM**: **[G.Skill Trident Z5 RGB 32GB DDR5-6000](https://www.amazon.es/s?k=G.Skill%20DDR5%2032GB%206000&tag=yostreamer-21)**
+- **32GB capacity**: Headroom para gaming + OBS + Discord + múltiples browsers
+- **DDR5-6000**: Sweet spot para Intel 13th gen performance
+- **RGB lighting**: Sincronización con sistema de iluminación general
+- **Low latency timings**: CL30 para responsiveness máxima
+
+**Almacenamiento Principal**: **[Samsung 980 PRO 2TB](https://www.amazon.es/s?k=Samsung%20980%20PRO%202TB&tag=yostreamer-21)**
+- **NVMe PCIe 4.0**: 7,000 MB/s para carga instantánea
+- **2TB capacity**: Biblioteca completa de juegos + grabaciones locales
+- **Samsung Magician**: Software de optimización y health monitoring
+- **Consistent performance**: TLC NAND para escritura sostenida
+
+**Almacenamiento Secundario**: **[Crucial MX4 2TB SATA SSD](https://www.amazon.es/s?k=Crucial%20MX4%202TB&tag=yostreamer-21)**
+- **Mass storage**: Archivos grandes y backups de streams
+- **Reliable performance**: 560 MB/s sustained para archivo y retrieval
+- **5-year warranty**: Confianza a largo plazo para storage crítico
+- **Value positioning**: Maximum GB per euro para bulk storage
+
+**Motherboard**: **[MSI MAG Z790 TOMAHAWK WIFI](https://www.amazon.es/s?k=MSI%20Z790%20TOMAHAWK%20WIFI&tag=yostreamer-21)**
+- **LGA 1700 premium**: Soporte completo para i7-13700K con overclocking
+- **WiFi 6E**: Conectividad inalámbrica de próxima generación
+- **Multiple GPU support**: Preparado para configuraciones multi-GPU futuras
+- **USB 3.2 Gen2**: Puertos abundantes para dispositivos de captura
+
+**Refrigeración**: **[Noctua NH-D15](https://www.amazon.es/s?k=Noctua%20NH-D15&tag=yostreamer-21)**
+- **Dual tower design**: Disipación térmica suprema sin ruido
+- **Ultra-quiet operation**: <24dB durante cargas normales
+- **6-year warranty**: Garantía extendida que excede la vida útil del PC
+- **Easy installation**: Sistema de montaje SecuFirm2 simplificado
+
+### Periféricos Gaming: Flexibilidad para Múltiples Usuarios
+
+#### Configuración Adaptable para Host e Invitados
+
+**Teclado Principal**: **[Logitech G915 TKL](https://www.amazon.es/s?k=Logitech%20G915%20TKL&tag=yostreamer-21)**
+- **Low-profile GL switches**: Typing rápido y silencioso para streaming
+- **Wireless LIGHTSPEED**: Libertad de movimiento sin cables
+- **Per-key RGB**: Personalización completa con G HUB
+- **Aircraft-grade aluminum**: Durabilidad premium con estética profesional
+
+**Ratón Gaming**: **[Logitech G Pro X Superlight](https://www.amazon.es/s?k=Logitech%20G%20Pro%20X%20Superlight&tag=yostreamer-21)**
+- **63g ultralight**: Precisión sin fatiga durante gaming intenso
+- **HERO 25K sensor**: Tracking perfecto sin acceleration
+- **80-hour battery**: Autonomía para semanas de uso intensivo
+- **Pro-grade reliability**: Usado por esports professionals mundialmente
+
+**Teclado Secundario**: **[Corsair K63 Wireless](https://www.amazon.es/s?k=Corsair%20K63%20Wireless&tag=yostreamer-21)**
+- **Guest-friendly**: Configuración simple para invitados ocasionales
+- **Mechanical switches**: Cherry MX Red para gaming responsive
+- **Long battery life**: 15 horas para sesiones de colaboración extendidas
+- **Lapboard compatible**: Uso cómodo desde sofá o sillas
+
+**Monitor Principal**: **[LG 32GQ950-B](https://www.amazon.es/s?k=LG%2032GQ950&tag=yostreamer-21)**
+- **32" 4K 144Hz**: Resolución y refresh rate premium para gaming competitivo
+- **Nano IPS**: Colores precisos y ángulos de visión amplios
+- **NVIDIA G-SYNC**: Eliminación de tearing y stuttering
+- **USB-C 90W**: Carga y video por un solo cable para laptops
+
+**Monitores Secundarios**: **[ASUS ProArt PA248QV](https://www.amazon.es/s?k=ASUS%20ProArt%20PA248QV&tag=yostreamer-21)** (x2)
+- **24" 1080p IPS**: Perfectos para chat, OBS, Discord y aplicaciones
+- **Color accuracy**: 100% sRGB para trabajo de edición ocasional
+- **VESA mount**: Flexibilidad total para configuración triple monitor
+- **Eye care features**: Blue light filter para uso prolongado
+
+**Control de Stream Avanzado**: **[Elgato Stream Deck XL](https://www.amazon.es/s?k=Elgato%20Stream%20Deck%20XL&tag=yostreamer-21)**
+- **32 teclas LCD**: Control visual completo de múltiples escenas y aplicaciones
+- **Multi-profile support**: Configuraciones específicas para diferentes tipos de content
+- **Third-party plugins**: Integración con Discord, Spotify, OBS y más
+- **Macro capability**: Automatización de workflows complejos
+
+**Audio Monitoring**: **[Beyerdynamic DT 770 Pro](https://www.amazon.es/s?k=Beyerdynamic%20DT%20770%20Pro&tag=yostreamer-21)**
+- **Closed-back design**: Aislamiento perfecto sin bleeding al micrófono
+- **250 ohm impedance**: Balance ideal para interfaces de audio profesionales
+- **Studio reference**: Respuesta plana para monitoring preciso
+- **Legendary comfort**: Velour pads para sesiones de 8+ horas
+
+### Configuración de Red: Conectividad de Grado Streaming
+
+#### Internet y Networking para Múltiples Streams
+
+**Router Gaming Premium**: **[ASUS ROG Rapture GT-AX11000](https://www.amazon.es/s?k=ASUS%20ROG%20GT-AX11000&tag=yostreamer-21)**
+- **Tri-band WiFi 6**: 11000 Mbps throughput total con QoS inteligente
+- **Gaming Port**: Puerto WAN dedicado para gaming traffic prioritization
+- **AiMesh support**: Scalabilidad para cobertura en espacios grandes
+- **Adaptive QoS**: Bandwidth allocation automática según aplicaciones
+
+**Switch Networking**: **[Netgear GS108](https://www.amazon.es/s?k=Netgear%20GS108&tag=yostreamer-21)**
+- **8-port Gigabit**: Conectividad cableada para múltiples dispositivos
+- **Unmanaged simplicity**: Plug-and-play sin configuración compleja
+- **Silent operation**: Sin ventiladores para ambiente de streaming silencioso
+- **Lifetime warranty**: Garantía vitalicia para uso profesional
+
+**Internet Principal**: **Fibra 1000 Mbps simétrica** (empresarial)
+- **Upload garantizado**: 1000 Mbps upload para múltiples streams simultáneos
+- **Latencia enterprise**: <5ms a servidores principales europeos
+- **SLA comercial**: 99.9% uptime con soporte técnico prioritario
+- **Static IP**: IP fija para servicios remotos y gaming servers
+
+### Software y Configuración: OBS Studio Multi-Scene
+
+#### Setup Profesional para Contenido Colaborativo
+
+**Configuración Multi-Escena Avanzada:**
+- **Solo Gaming**: Cámara principal + game capture + minimal overlays
+- **Collaboration Dual**: Picture-in-picture optimizado para dos personas
+- **Podcast Mode**: Audio-focused con visualización de waveforms
+- **Multi-Guest**: Layout flexible para hasta 4 participantes simultáneos
+
+**Audio Routing Complejo:**
+- **Track 1**: Stream mix completo para audiencia
+- **Track 2**: Game audio isolated para editing
+- **Track 3**: Host microphone only para clean dialogue
+- **Track 4**: Guest audio separate para post-production control
+
+**NDI Integration para Colaboración:**
+- **NDI Tools**: Sharing de cámaras entre PCs remotos
+- **Virtual input**: Recepción de streams externos como fuentes locales
+- **Low latency**: <50ms delay para interacción natural
+- **Quality scaling**: Automatic bitrate adjustment según bandwidth
+
+**Plugin Ecosystem Avanzado:**
+- **Advanced Scene Switcher**: Automatización de cambios de escena
+- **Source Clone**: Duplicación de fuentes entre escenas
+- **Move Transition**: Animaciones suaves entre layouts
+- **StreamFX**: Efectos visuales avanzados para transitions
+
+### Aspectos Económicos: ROI del Setup Colaborativo
+
+#### Análisis de Inversión y Monetización Social
+
+**Inversión Total del Setup**: **€12,000-16,000**
+
+**Distribución por Categorías:**
+
+**PC Gaming (45%)**: **€5,400-7,200**
+- Intel i7-13700K: €450
+- RTX 4070 Ti SUPER: €900
+- 32GB DDR5-6000: €300
+- Samsung 980 PRO 2TB: €300
+- Crucial MX4 2TB: €200
+- MSI Z790 TOMAHAWK: €350
+- Noctua NH-D15: €100
+- PSU y case: €400
+
+**Audio Multi-Input (20%)**: **€2,400-3,200**
+- Audio-Technica AT2035: €200
+- Rode PodMic: €200
+- Focusrite 4i4: €300
+- Behringer Q802USB: €100
+- TC Helicon VoiceLive: €300
+- Beyerdynamic DT 770: €200
+- Cables y accesorios: €300
+
+**Video Multi-Cámara (20%)**: **€2,400-3,200**
+- Sony A6600: €1,400
+- Sony A6100: €700
+- Lentes: €400
+- Elgato HD60 S+ (x2): €400
+- Logitech C920s: €150
+- Tripods y mounting: €350
+
+**Iluminación Profesional (10%)**: **€1,200-1,600**
+- Godox SL-60W (x2): €400
+- Softboxes (x2): €200
+- Govee Immersion Pro: €200
+- Nanoleaf Canvas: €300
+- Philips Hue ecosystem: €500
+
+**Periféricos Premium (5%)**: **€600-800**
+- LG 32GQ950-B: €800
+- ASUS ProArt (x2): €400
+- Logitech G915 TKL: €200
+- Stream Deck XL: €250
+- Networking: €200
+
+#### Potential de Monetización Colaborativa
+
+**Ingresos Mensuales Estimados** (contenido colaborativo premium):
+- **Twitch Subscriptions**: €2,500-4,500/mes
+- **YouTube AdSense**: €1,800-3,200/mes
+- **Sponsorships colaborativos**: €3,000-8,000/mes
+- **Brand partnerships**: €2,000-5,000/mes
+- **Merchandise colaborativo**: €800-2,000/mes
+
+**ROI Timeline**: **Recuperación en 2-4 meses** con contenido colaborativo consistente
+
+### Estrategias de Contenido: El Método Alexby
+
+#### Análisis de Formatos Más Exitosos
+
+**Gaming Colaborativo (45% del tiempo)**:
+- **Multiplayer competitivo**: Setup optimizado para comunicación clara entre teammates
+- **Party games**: Configuración que facilita reacciones y entertainment
+- **Co-op adventures**: Audio balance perfecto entre game sound y conversation
+- **Tournament participation**: Professional setup para events y competitions
+
+**Podcast y Talk Shows (30% del tiempo)**:
+- **Guest interviews**: Audio crystal clear para conversaciones profundas
+- **Industry discussions**: Professional presentation para networking
+- **Community Q&A**: Setup que facilita interacción natural con audiencia
+- **Reaction content**: Multi-angle coverage para authentic responses
+
+**Social Content (25% del tiempo)**:
+- **IRL collaborations**: Portable elements para content fuera del estudio
+- **Creative challenges**: Flexible setup para formatos experimentales
+- **Community events**: Scalable configuration para special occasions
+- **Cross-platform content**: Optimizado para TikTok, Instagram y YouTube Shorts
+
+### Comparación con Otros Setups del Ecosistema
+
+#### vs Setup de ElRubius: Colaboración vs Individualidad
+
+**Filosofías Complementarias:**
+- **Alexby**: Optimización para múltiples usuarios y guest experience
+- **ElRubius**: Performance individual con aesthetic emphasis
+- **Alexby**: Professional podcasting capabilities integradas
+- **ElRubius**: Gaming-first con broadcast elements
+
+#### vs Setup de Ibai: Intimidad vs Eventos Masivos
+
+**Scales Diferentes:**
+- **Alexby**: Setup íntimo optimizado para 2-4 participantes
+- **Ibai**: Production scaling para events de 100,000+ viewers
+- **Alexby**: Conversational audio para dialogue natural
+- **Ibai**: Broadcast audio para presentations y monologues
+
+### Lecciones del Éxito: Aplicando el Modelo Colaborativo
+
+#### Principios Fundamentales del Setup Social
+
+**1. Flexibilidad Operativa Máxima**
+- Hardware que se adapta rápidamente a diferentes formatos
+- Configuración que welcoming para guests sin experiencia técnica
+- Systems redundancy para reliability durante collaborative sessions
+
+**2. Audio Como Prioridad Absoluta**
+- Multiple microphone inputs con quality consistente
+- Real-time monitoring para todos los participants
+- Professional mixing capabilities para balance perfecto
+
+**3. Visual Scaling Inteligente**
+- Camera positioning que favorece a todos los participants
+- Lighting que funciona para diferentes tipos de content
+- Background elements que complement pero nunca overwhelm
+
+### Evolución y Futuro del Setup Colaborativo
+
+#### Roadmap Tecnológico para Social Content
+
+**Próximas Integraciones Anticipadas:**
+- **Remote collaboration tools**: NDI y SRT para guests remotos
+- **AI-powered switching**: Automatic camera cuts basados en speaker detection
+- **Immersive audio**: Spatial audio para experiencias más engaging
+- **Interactive elements**: Real-time polls y Q&A integration
+
+**Mantenimiento del Ecosystem:**
+- **Regular calibration**: Audio levels y color matching entre cámaras
+- **Content analysis**: Metrics para optimizar layout y timing
+- **Guest onboarding**: Streamlined process para new collaborators
+- **Technical redundancy**: Backup systems para zero downtime
+
+### Conclusión: El Blueprint del Streaming Social
+
+El **setup de Alexby** trasciende la configuración individual para convertirse en un verdadero studio colaborativo que facilita la creación de contenido social auténtico y profesional. Su configuración representa la convergencia perfecta entre:
+
+**Excelencia Técnica Compartida**
+- Hardware que garantiza quality consistency independiente del número de participants
+- Professional tools que elevate el content sin crear barriers técnicas
+- Scalable configuration que crece con opportunities y ambitions
+
+**Hospitalidad Digital**
+- Setup que welcomes guests y hace que se sientan comfortable immediately
+- Technology que sirve a la conversation, nunca la interrumpe
+- Environment que encourage authentic interaction y spontaneous moments
+
+**Versatilidad de Formato**
+- Configuration que adapts seamlessly entre gaming, podcasting y social content
+- Professional capabilities para any content opportunity que arise
+- Future-proof investment que maintiene relevance a medida que evolve el medium
+
+### Aplicación Práctica: Roadmap hacia el Collaborative Success
+
+**Starter Collaborative Setup (€2,000-3,500)**: Foundation sólida
+- **[PC gaming dual-core capable](https://www.amazon.es/s?k=PC%20gaming%20RTX%204060&tag=yostreamer-21)**
+- **[USB microphones x2](https://www.amazon.es/s?k=Audio-Technica%20AT2020USB&tag=yostreamer-21)**
+- **[Webcam dual setup](https://www.amazon.es/s?k=Logitech%20C920&tag=yostreamer-21)**
+- **[Basic lighting kit](https://www.amazon.es/s?k=softbox%20lighting%20kit&tag=yostreamer-21)**
+
+**Intermediate Collaborative (€6,000-10,000)**: Professional quality
+- **[Gaming PC streaming-ready](https://www.amazon.es/s?k=RTX%204070%20PC&tag=yostreamer-21)**
+- **[Audio interface multi-input](https://www.amazon.es/s?k=Focusrite%20Scarlett%204i4&tag=yostreamer-21)**
+- **[DSLR camera setup](https://www.amazon.es/s?k=Sony%20A6100&tag=yostreamer-21)**
+- **[Professional lighting](https://www.amazon.es/s?k=Godox%20SL-60W&tag=yostreamer-21)**
+
+**Elite Collaborative (€12,000+)**: Nivel Alexby completo
+- Implementation gradual del equipamiento completo collaborativo
+- Optimization basada en guest feedback y content performance
+- Reinvestment strategic para maximize collaborative opportunities
+
+El **setup de Alexby** no es solo inspiración para content creators individuales, sino un blueprint revolucionario que demuestra cómo la technology puede facilitar human connection genuina en el digital space. Su configuration proves que cuando combines professional excellence con hospitality thoughtful y genuine curiosity sobre others, el resultado trasciende entertainment para convertirse en verdadero community building digital.
+
+*Para mantenerte actualizado con las últimas evoluciones en collaborative streaming y análisis técnicos de otros creators innovativos, explora nuestras guías de **[Cristinini](https://yostreamer.com/setup/cristinini)**, **[ElRubius](https://yostreamer.com/setup/elrubius)** y **[AuronPlay](https://yostreamer.com/setup/auronplay)**.*
+    `,
+    funFacts: [
+      "Setup optimizado específicamente para contenido colaborativo con múltiples streamers",
+      "Configuración multi-cámara que captura diferentes ángulos simultáneamente",
+      "Sistema de audio avanzado que maneja múltiples micrófonos y fuentes",
+      "Iluminación adaptable que favorece tanto al host como a los invitados",
+    ],
+    setup: [
+      {
+        name: "Audio Colaborativo",
+        items: [
+          { name: "Audio-Technica AT2035", link: amazonSearchUrl("Audio-Technica AT2035"), note: "Micrófono principal cardioide" },
+          { name: "Rode PodMic", link: amazonSearchUrl("Rode PodMic"), note: "Micrófono dinámico para invitados" },
+          { name: "Focusrite Scarlett 4i4", link: amazonSearchUrl("Focusrite Scarlett 4i4"), note: "Interface de 4 entradas" },
+          { name: "Behringer Q802USB", link: amazonSearchUrl("Behringer Q802USB"), note: "Mezclador 8 canales" },
+        ],
+      },
+      {
+        name: "Video Multi-Cámara",
+        items: [
+          { name: "Sony A6600", link: amazonSearchUrl("Sony A6600"), note: "Cámara principal APS-C premium" },
+          { name: "Sony A6100", link: amazonSearchUrl("Sony A6100"), note: "Cámara secundaria matching" },
+          { name: "Sony E PZ 16-50mm", link: amazonSearchUrl("Sony E PZ 16-50mm"), note: "Lente zoom versátil" },
+          { name: "Elgato HD60 S+ x2", link: amazonSearchUrl("Elgato HD60 S Plus"), note: "Capturadoras duales" },
+        ],
+      },
+      {
+        name: "Iluminación Profesional",
+        items: [
+          { name: "Godox SL-60W x2", link: amazonSearchUrl("Godox SL-60W"), note: "Luces LED COB potentes" },
+          { name: "Godox SB-UE80 x2", link: amazonSearchUrl("Godox SB-UE80"), note: "Softboxes octagonales" },
+          { name: "Govee Immersion Pro", link: amazonSearchUrl("Govee Immersion Pro"), note: "RGB reactivo avanzado" },
+          { name: "Nanoleaf Canvas", link: amazonSearchUrl("Nanoleaf Canvas"), note: "Paneles cuadrados modulares" },
+        ],
+      },
+      {
+        name: "PC Gaming Premium",
+        items: [
+          { name: "Intel i7-13700K", link: amazonSearchUrl("Intel i7-13700K"), note: "16 cores hybrid architecture" },
+          { name: "RTX 4070 Ti SUPER", link: amazonSearchUrl("NVIDIA RTX 4070 Ti SUPER"), note: "16GB VRAM para multitasking" },
+          { name: "32GB DDR5-6000 RGB", link: amazonSearchUrl("G.Skill DDR5 32GB 6000"), note: "RAM rápida con iluminación" },
+          { name: "Samsung 980 PRO 2TB", link: amazonSearchUrl("Samsung 980 PRO 2TB"), note: "Storage NVMe premium" },
+        ],
+      },
+      {
+        name: "Periféricos Avanzados",
+        items: [
+          { name: "Logitech G915 TKL", link: amazonSearchUrl("Logitech G915 TKL"), note: "Teclado wireless low-profile" },
+          { name: "Logitech G Pro X Superlight", link: amazonSearchUrl("Logitech G Pro X Superlight"), note: "Ratón ultraligero professional" },
+          { name: "LG 32GQ950-B", link: amazonSearchUrl("LG 32GQ950"), note: "Monitor 32\" 4K 144Hz" },
+          { name: "Stream Deck XL", link: amazonSearchUrl("Stream Deck XL"), note: "32 teclas para control total" },
         ],
       },
     ],
