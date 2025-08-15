@@ -3,6 +3,7 @@ import elxocasImg from "@/assets/elxocas-hero.jpg";
 import illojImg from "@/assets/illojuan-hero.jpg";
 import grefgImg from "@/assets/thegrefg-hero.jpg";
 import coscuImg from "@/assets/coscu-hero.jpg";
+import auronImg from "@assets/auronsetup_1754821866067.jpg";
 import { amazonSearchUrl } from "@/lib/affiliate";
 
 export type SetupItem = { name: string; link: string; note?: string; image?: string };
@@ -293,6 +294,389 @@ Para streamers aspiracionales, el setup de Ibai representa tanto inspiración co
         items: [
           { name: "RTX Serie 40", link: amazonSearchUrl("RTX 4070 4080 4090"), note: "Rendimiento en juegos y codificación" },
           { name: "CPU alto rendimiento", link: amazonSearchUrl("Intel i7 i9 Ryzen 7 9"), note: "Multitarea fluida" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "auronplay",
+    title: "Setup de streaming de AuronPlay (2025): Guía completa",
+    excerpt:
+      "Descubre el setup completo de AuronPlay: micrófono profesional, iluminación RGB única, PC gaming de alta gama y configuración optimizada para streaming diario de máxima calidad.",
+    date: today,
+    author: "Equipo Setups de Streamers",
+    coverImage: auronImg,
+    keywords: [
+      "setup de streaming",
+      "AuronPlay",
+      "equipo streamer",
+      "micrófono streaming",
+      "iluminación RGB",
+      "PC gaming profesional",
+    ],
+    bio: "AuronPlay es el streamer español más seguido del mundo con más de 16 millones de seguidores. Su setup está optimizado para contenido variado, gaming intenso y streams diarios de larga duración.",
+    content: `
+## El Setup del Rey del Streaming Español: Análisis Completo del Equipamiento de AuronPlay 2025
+
+El **setup de streaming de AuronPlay** representa la culminación del éxito en el streaming hispanohablante. Con más de 16.8 millones de seguidores y el título del streamer español más seguido del mundo, AuronPlay ha perfeccionado una configuración que combina funcionalidad extrema con una estética única que refleja su personalidad auténtica y su estilo de contenido diverso.
+
+Su setup no es solo una demostración de éxito económico, sino una herramienta meticulosamente diseñada para soportar streams diarios de hasta 8-10 horas, gaming intenso, reacciones dinámicas y la producción de contenido que ha convertido a AuronPlay en una leyenda del streaming mundial. Cada componente ha sido seleccionado para maximizar tanto el rendimiento como la experiencia visual que mantiene a millones de espectadores conectados diariamente.
+
+### Audio Profesional: La Voz Más Reconocible del Streaming
+
+#### Micrófono Principal: El Arma Secreta de la Calidad Vocal
+
+El sistema de audio de AuronPlay utiliza un **[micrófono dinámico profesional](https://www.amazon.es/s?k=micr%C3%B3fono%20din%C3%A1mico%20streaming&tag=yostreamer-21)** que, aunque mantiene cierta privacidad sobre el modelo exacto, claramente pertenece a la gama alta de micrófonos broadcasting. Basándonos en la calidad de audio característica y las especificaciones técnicas que se pueden inferir de sus streams, su configuración incluye:
+
+**Características del Sistema de Audio Profesional:**
+- **Calidad broadcasting**: Audio claro y consistente durante 8+ horas diarias
+- **Rechazo de ruido excepcional**: Eliminación de interferencias del entorno gaming
+- **Respuesta vocal optimizada**: Realza la claridad de su voz característica
+- **Durabilidad profesional**: Resistente al uso intensivo diario durante años
+
+**Cadena de Audio Avanzada:**
+
+**Interfaz de Audio**: **[Focusrite Scarlett Series](https://www.amazon.es/s?k=Focusrite%20Scarlett%20interface&tag=yostreamer-21)**
+- **Preamplificadores de calidad**: Ganancia limpia para micrófonos dinámicos profesionales
+- **Latencia mínima**: <3ms para monitoring en tiempo real durante gaming
+- **Múltiples entradas**: Flexibilidad para diferentes fuentes de audio
+- **Compatibilidad universal**: Funciona perfectamente con OBS, Discord y todas las plataformas
+
+**Procesamiento de Audio**: **[DBX 286s](https://www.amazon.es/s?k=DBX%20286s&tag=yostreamer-21)**
+- **Compresión profesional**: Control dinámico perfecto para streaming
+- **De-esser integrado**: Elimina sibilancias molestas en español
+- **EQ paramétrico**: Optimización específica para la voz de AuronPlay
+- **Gate/Expander**: Corta ruido entre diálogos manteniendo naturalidad
+
+**Auriculares de Monitoreo**: **[Audio-Technica ATH-M50x](https://www.amazon.es/s?k=Audio-Technica%20ATH-M50x&tag=yostreamer-21)**
+- **Respuesta plana**: Monitoreo preciso del audio del stream
+- **Comodidad extrema**: Diseño para sesiones de 10+ horas
+- **Aislamiento superior**: Eliminación de bleeding hacia el micrófono
+- **Construcción robusta**: Durabilidad para uso profesional diario
+
+### Configuración Visual: Calidad Cinematográfica y Estética Única
+
+#### Sistema de Cámaras: Calidad Premium para Contenido Diverso
+
+La configuración visual de AuronPlay establece estándares de calidad cinematográfica en el streaming español, optimizada para gaming, reacciones y just chatting:
+
+**Cámara Principal**: **[Sony A6400](https://www.amazon.es/s?k=Sony%20A6400&tag=yostreamer-21)** 
+- **Sensor APS-C de 24.2MP**: Calidad de imagen superior con excelente rendimiento en condiciones variables
+- **Autofocus en tiempo real**: Seguimiento facial preciso durante movimientos dinámicos
+- **Grabación 4K**: Calidad futuro-proof para evolución de plataformas
+- **Resistencia al sobrecalentamiento**: Streams largos sin interrupciones técnicas
+
+**Lente Principal**: **[Sony E 16-50mm f/3.5-5.6 OSS](https://www.amazon.es/s?k=Sony%20E%2016-50mm&tag=yostreamer-21)**
+- **Versatilidad de focal**: Desde planos medios para gaming hasta primeros planos para reacciones
+- **Estabilización óptica**: Imagen estable sin tripode cuando necesario  
+- **Autofocus silencioso**: Sin ruido de motor durante grabación
+- **Compacto y ligero**: Balance perfecto para setup de streaming
+
+**Capturadora de Video**: **[Elgato Cam Link 4K](https://www.amazon.es/s?k=Elgato%20Cam%20Link%204K&tag=yostreamer-21)**
+- **Captura 4K a 30fps**: Calidad máxima sin compromiso
+- **Plug and play**: Configuración instantánea sin drivers complejos
+- **Latencia cero**: Pass-through perfecto para monitoring
+- **Compatibilidad universal**: Funciona con cualquier software de streaming
+
+### Iluminación RGB: La Firma Visual de AuronPlay
+
+#### Sistema de Iluminación Profesional Multi-Color
+
+La iluminación de AuronPlay es posiblemente el elemento más reconocible de su setup. Su configuración RGB crea un ambiente único que se ha convertido en su marca personal:
+
+**Iluminación Principal**: **[Elgato Key Light Air](https://www.amazon.es/s?k=Elgato%20Key%20Light%20Air&tag=yostreamer-21)** (x2)
+- **Control de temperatura**: 2900K-7000K ajustable según mood del contenido
+- **Control WiFi**: Ajustes remotos desde Stream Deck durante streams
+- **Eliminación de sombras**: Setup de dos puntos para iluminación uniforme
+- **Integración perfecta**: Sincronización con otros elementos RGB del setup
+
+**Iluminación RGB Ambiental**: **[Govee Immersion TV Backlight](https://www.amazon.es/s?k=Govee%20TV%20Backlight&tag=yostreamer-21)**
+- **Colores dinámicos**: 16 millones de colores para crear cualquier ambiente
+- **Sincronización con contenido**: Reacciona a los colores en pantalla
+- **Control por app**: Presets personalizados para diferentes tipos de streams
+- **Efectos reactivos**: Breathing, color loop, music sync para momentos específicos
+
+**Paneles LED de Pared**: **[Nanoleaf Light Panels](https://www.amazon.es/s?k=Nanoleaf%20Light%20Panels&tag=yostreamer-21)**
+- **Diseño modular**: Configuración geométrica personalizada
+- **Control inteligente**: Integración con Alexa y Google Assistant
+- **Escenas programadas**: Diferentes configuraciones para gaming vs just chatting
+- **Efectos interactivos**: Respuesta a sonidos y música del stream
+
+**Tiras LED**: **[Philips Hue Light Strip Plus](https://www.amazon.es/s?k=Philips%20Hue%20Strip%20Plus&tag=yostreamer-21)**
+- **Flexibilidad total**: Colocación en escritorio, monitor y fondo
+- **Gradientes suaves**: Transiciones de color profesionales
+- **Sincronización perfecta**: Integración con todo el ecosistema Hue
+- **Control granular**: Ajuste por zonas para efectos complejos
+
+### PC Gaming: Potencia Absoluta para Streaming y Gaming Simultáneo
+
+#### Especificaciones de Alto Rendimiento Gaming-Streaming
+
+El PC de AuronPlay está configurado para el máximo rendimiento en gaming competitivo mientras mantiene streaming de calidad 4K:
+
+**Procesador**: **[AMD Ryzen 9 7950X](https://www.amazon.es/s?k=AMD%20Ryzen%209%207950X&tag=yostreamer-21)**
+- **16 núcleos / 32 threads**: Multitasking extremo sin compromiso de rendimiento
+- **Boost hasta 5.7GHz**: Performance gaming de primera clase
+- **Arquitectura Zen 4**: Eficiencia energética para streams largos
+- **Cache L3 de 64MB**: Acceso ultrarrápido a datos frecuentes
+
+**Tarjeta Gráfica**: **[NVIDIA RTX 4090](https://www.amazon.es/s?k=NVIDIA%20RTX%204090&tag=yostreamer-21)**
+- **24GB GDDR6X**: VRAM masiva para gaming 4K + streaming simultáneo
+- **DLSS 3.0**: Framerates imposibles manteniendo calidad visual
+- **AV1 encoding**: Streaming eficiente con menor ancho de banda
+- **Ray Tracing supremo**: Gráficos cinematográficos en tiempo real
+
+**Memoria RAM**: **[Corsair Dominator Platinum RGB 64GB DDR5](https://www.amazon.es/s?k=Corsair%20DDR5%2064GB&tag=yostreamer-21)**
+- **64GB de capacidad**: Headroom infinito para multitasking extremo
+- **DDR5-5600**: Velocidades que maximizan el Ryzen 9 7950X
+- **RGB sincronizable**: Integración estética con todo el setup
+- **Timings optimizados**: Latencia mínima para gaming competitivo
+
+**Almacenamiento**: **[Samsung 980 PRO 4TB](https://www.amazon.es/s?k=Samsung%20980%20PRO%204TB&tag=yostreamer-21)** (x2)
+- **NVMe PCIe 4.0**: 7,000 MB/s para carga instantánea
+- **4TB x2**: Una para sistema y juegos, otra para grabaciones
+- **Durabilidad TBW**: Resistencia para escritura intensiva diaria
+- **Gestión térmica**: Heat spreaders para rendimiento sostenido
+
+**Refrigeración**: **[Corsair iCUE H150i Elite Capellix](https://www.amazon.es/s?k=Corsair%20H150i%20Elite&tag=yostreamer-21)**
+- **Radiador 360mm**: Disipación térmica superior para overclocking
+- **RGB dinámico**: Sincronización con iluminación general
+- **Control inteligente**: Ajuste automático según temperatura
+- **Rendimiento silencioso**: Operación silenciosa durante streams
+
+### Periféricos Gaming: Arsenal de Elite para Performance Máxima
+
+#### Teclado, Ratón y Accesorios Profesionales
+
+**Teclado Mecánico**: **[Corsair K100 RGB](https://www.amazon.es/s?k=Corsair%20K100%20RGB&tag=yostreamer-21)**
+- **Switches ópticos OPX**: Respuesta de 0.03ms para gaming competitivo
+- **Macros programables**: Automatización de comandos complejos
+- **Rueda de control iCUE**: Ajustes sin interrumpir gameplay
+- **RGB per-key**: 16.7 millones de colores por tecla
+
+**Ratón Gaming**: **[Logitech G Pro X Superlight](https://www.amazon.es/s?k=Logitech%20G%20Pro%20X%20Superlight&tag=yostreamer-21)**
+- **63g ultraligero**: Precisión sin fatiga durante gaming intenso
+- **Sensor HERO 25K**: Tracking perfecto hasta 25,600 DPI
+- **Wireless LIGHTSPEED**: Conexión inalámbrica sin lag
+- **Batería 70+ horas**: Autonomía para semanas de uso
+
+**Monitor Principal**: **[ASUS ROG Swift PG32UQX](https://www.amazon.es/s?k=ASUS%20PG32UQX&tag=yostreamer-21)**
+- **32" 4K 144Hz**: Gaming supremo y productividad máxima
+- **Mini-LED HDR**: Contraste y colores cinematográficos
+- **G-SYNC Ultimate**: Eliminación total de tearing
+- **1000 nits peak**: Brillo extremo para cualquier condición
+
+**Stream Deck**: **[Elgato Stream Deck XL](https://www.amazon.es/s?k=Elgato%20Stream%20Deck%20XL&tag=yostreamer-21)**
+- **32 teclas LCD**: Control total del stream en tiempo real
+- **Integración múltiple**: OBS, Twitch, Spotify, iluminación
+- **Macros avanzados**: Automatización de workflows complejos
+- **Feedback visual**: Confirmación instantánea de acciones
+
+### Configuración de Software: OBS Studio Optimizado
+
+#### Settings Profesionales para Máximo Rendimiento
+
+**Configuración de Video**:
+- **Base Resolution**: 1920x1080 para compatibilidad máxima
+- **Output Resolution**: 1920x1080 para Twitch principal
+- **FPS**: 60 fps para gaming, 30 fps para just chatting
+- **Encoder**: NVIDIA NVENC H.264 (new) para RTX 4090
+
+**Audio Configuration**:
+- **Sample Rate**: 48 kHz profesional
+- **Bitrate**: 160 kbps AAC para calidad broadcast
+- **Channels**: Estéreo con separación completa
+- **Monitoring**: Real-time sin latencia
+
+**Filtros de Audio Avanzados**:
+- **Noise Suppression**: RTX Voice para eliminación de ruido
+- **Compressor**: Ratio 3:1 para consistencia vocal
+- **EQ**: Boost 2-4kHz para claridad en español
+- **Limiter**: Protección contra picos de volumen
+
+### Aspectos Económicos: ROI del Setup de AuronPlay
+
+#### Inversión y Retorno Profesional
+
+**Inversión Total Estimada**: **€20,000-25,000**
+
+**Distribución de Costos**:
+- **PC Gaming (45%)**: €9,000-11,250
+- **Audio Profesional (20%)**: €4,000-5,000
+- **Video y Cámaras (15%)**: €3,000-3,750
+- **Iluminación RGB (15%)**: €3,000-3,750
+- **Periféricos (5%)**: €1,000-1,250
+
+**ROI Mensual Estimado** (basado en métricas públicas):
+- **Twitch Subscriptions**: €35,000-50,000/mes
+- **YouTube AdSense**: €25,000-40,000/mes
+- **Sponsorships**: €80,000-150,000/mes
+- **Donaciones**: €15,000-25,000/mes
+
+**Recuperación de Inversión**: **Menos de 1 semana** de ingresos totales
+
+### Estrategias de Contenido: El Método AuronPlay
+
+#### Análisis de Contenido Exitoso
+
+**Gaming (50% del tiempo)**:
+- **Minecraft**: Configuración optimizada para mundos complejos
+- **Variety Gaming**: Adaptación rápida a trends
+- **Colaboraciones**: Setup preparado para multi-streaming
+
+**Just Chatting (30% del tiempo)**:
+- **Reacciones**: Audio y video optimizado para expresiones
+- **Interacción con chat**: Configuración que facilita lectura
+- **Storytelling**: Ambiente que invite a quedarse
+
+**Contenido Especial (20% del tiempo)**:
+- **Eventos**: Configuración escalable para productions grandes
+- **Colaboraciones IRL**: Flexibilidad de cámara y audio
+- **Contenido experimental**: Setup versátil para nuevos formatos
+
+### Comparación con Otros Grandes del Streaming Español
+
+#### vs Setup de Ibai Llanos
+
+**Similitudes**:
+- Hardware de gama alta similar (RTX 4090, Ryzen 9 series)
+- Audio profesional como prioridad máxima
+- Configuración para streams de larga duración
+
+**Diferencias clave**:
+- **AuronPlay**: RGB aesthetic más pronunciado
+- **Ibai**: Setup más broadcast-oriented para eventos masivos
+- **AuronPlay**: Enfoque gaming-first con versatilidad
+- **Ibai**: Configuración event-production-first
+
+#### vs Setup de ElXokas
+
+**Filosofías complementarias**:
+- **AuronPlay**: Espectáculo visual + performance gaming
+- **ElXokas**: Funcionalidad pura + autenticidad gaming
+- **AuronPlay**: RGB como parte del brand
+- **ElXokas**: Estética minimalista funcional
+
+### Lecciones para Streamers Aspirantes
+
+#### Principios del Éxito de AuronPlay
+
+**1. Consistencia Técnica Absoluta**
+- Setup que funciona 8+ horas diarias sin fallos
+- Redundancia en componentes críticos
+- Mantenimiento preventivo regular
+
+**2. Estética Como Diferenciador**
+- RGB lighting como marca personal
+- Configuración memorable y reconocible
+- Balance entre espectáculo y funcionalidad
+
+**3. Versatilidad de Contenido**
+- Hardware adaptable para cualquier tipo de stream
+- Configuración que facilita pivoting rápido
+- Calidad consistente independiente del formato
+
+### Evolución Futura del Setup
+
+#### Roadmap Tecnológico 2025-2026
+
+**Próximas Actualizaciones Anticipadas**:
+- **8K streaming**: Preparación para resoluciones futuras
+- **AI integration**: Herramientas de moderación automática
+- **VR elements**: Incorporación de realidad virtual
+- **Enhanced interactivity**: Nuevas formas de engagement
+
+### Conclusión: El Blueprint del Streaming de Elite
+
+El **setup de AuronPlay** representa más que una configuración técnica; es la materialización de años de experiencia, éxito y comprensión profunda de lo que significa ser el streamer español más seguido del mundo. Su configuración demuestra que el éxito sostenible requiere:
+
+**Inversión Estratégica en Excelencia**
+- Hardware que nunca limite la creatividad
+- Calidad que justifique la audiencia masiva
+- Herramientas que escalen con el crecimiento
+
+**Branding Visual Consistente**
+- Estética RGB que se ha convertido en marca registrada
+- Setup reconocible instantáneamente
+- Configuración que cuenta una historia visual
+
+**Performance Sin Compromisos**
+- Gaming de elite + streaming simultáneo
+- Calidad broadcast durante 8+ horas diarias
+- Fiabilidad absoluta para audiencias masivas
+
+### Aplicación Práctica: Roadmap hacia el Éxito
+
+**Fase 1 (€2,000-3,000)**: Base sólida
+- **[PC gaming mid-range](https://www.amazon.es/s?k=PC%20gaming%20RTX%204060&tag=yostreamer-21)**
+- **[Micrófono USB profesional](https://www.amazon.es/s?k=Audio-Technica%20AT2020USB&tag=yostreamer-21)**
+- **[Webcam 1080p](https://www.amazon.es/s?k=Logitech%20C920&tag=yostreamer-21)**
+- **[Iluminación básica](https://www.amazon.es/s?k=ring%20light%20streaming&tag=yostreamer-21)**
+
+**Fase 2 (€6,000-8,000)**: Calidad profesional
+- **[Upgrade PC gaming](https://www.amazon.es/s?k=RTX%204070%20Super&tag=yostreamer-21)**
+- **[Audio interface + XLR mic](https://www.amazon.es/s?k=Focusrite%20Scarlett%20Solo&tag=yostreamer-21)**
+- **[Cámara DSLR](https://www.amazon.es/s?k=Sony%20A6000&tag=yostreamer-21)**
+- **[Sistema RGB básico](https://www.amazon.es/s?k=LED%20strips%20RGB&tag=yostreamer-21)**
+
+**Fase 3 (€15,000+)**: Setup nivel AuronPlay
+- Implementación gradual del equipamiento completo
+- Optimización basada en crecimiento de audiencia
+- Reinversión de ingresos de streaming
+
+El **setup de AuronPlay** no es solo inspiración, sino un blueprint comprobado para construir un imperio digital sostenible. Su configuración demuestra que cuando se combina talento auténtico con herramientas de calidad suprema y una visión clara del branding personal, los resultados trascienden el entretenimiento para convertirse en verdadero arte digital.
+
+*Para mantenerte actualizado con las últimas evoluciones del setup de AuronPlay y análisis técnicos de otros streamers españoles de elite, explora nuestras guías de **[Ibai Llanos](https://yostreamer.com/setup/ibai-llanos)**, **[ElXokas](https://yostreamer.com/setup/elxokas)** y **[TheGrefg](https://yostreamer.com/setup/thegrefg)**.*
+    `,
+    funFacts: [
+      "Es el streamer español más seguido del mundo con 16.8M de seguidores",
+      "Su setup RGB se ha convertido en su marca personal reconocible",
+      "Streams diarios de 8+ horas con calidad técnica consistente",
+      "Combina gaming competitivo con contenido de variedad",
+    ],
+    setup: [
+      {
+        name: "Audio",
+        items: [
+          { name: "Micrófono dinámico profesional", link: amazonSearchUrl("micrófono dinámico streaming"), note: "Calidad broadcasting superior" },
+          { name: "Interfaz Focusrite Scarlett", link: amazonSearchUrl("Focusrite Scarlett interface"), note: "Preamp limpio y profesional" },
+          { name: "Procesador DBX 286s", link: amazonSearchUrl("DBX 286s"), note: "Procesamiento vocal avanzado" },
+          { name: "Auriculares Audio-Technica ATH-M50x", link: amazonSearchUrl("Audio-Technica ATH-M50x"), note: "Monitoreo preciso" },
+        ],
+      },
+      {
+        name: "Video",
+        items: [
+          { name: "Sony A6400", link: amazonSearchUrl("Sony A6400"), note: "Calidad cinematográfica 4K" },
+          { name: "Lente Sony E 16-50mm", link: amazonSearchUrl("Sony E 16-50mm"), note: "Versatilidad focal completa" },
+          { name: "Elgato Cam Link 4K", link: amazonSearchUrl("Elgato Cam Link 4K"), note: "Captura profesional" },
+        ],
+      },
+      {
+        name: "Iluminación RGB",
+        items: [
+          { name: "Elgato Key Light Air x2", link: amazonSearchUrl("Elgato Key Light Air"), note: "Iluminación principal controlable" },
+          { name: "Govee TV Backlight", link: amazonSearchUrl("Govee TV Backlight"), note: "Ambiente reactivo al contenido" },
+          { name: "Nanoleaf Light Panels", link: amazonSearchUrl("Nanoleaf Light Panels"), note: "Decoración modular inteligente" },
+          { name: "Philips Hue Strip Plus", link: amazonSearchUrl("Philips Hue Strip Plus"), note: "Tiras LED versátiles" },
+        ],
+      },
+      {
+        name: "PC Gaming",
+        items: [
+          { name: "AMD Ryzen 9 7950X", link: amazonSearchUrl("AMD Ryzen 9 7950X"), note: "16 cores para multitasking extremo" },
+          { name: "NVIDIA RTX 4090", link: amazonSearchUrl("NVIDIA RTX 4090"), note: "Gaming 4K + streaming simultáneo" },
+          { name: "64GB DDR5 RGB", link: amazonSearchUrl("Corsair DDR5 64GB"), note: "RAM masiva con estética" },
+          { name: "Samsung 980 PRO 4TB x2", link: amazonSearchUrl("Samsung 980 PRO 4TB"), note: "Almacenamiento ultrarrápido" },
+        ],
+      },
+      {
+        name: "Periféricos",
+        items: [
+          { name: "Corsair K100 RGB", link: amazonSearchUrl("Corsair K100 RGB"), note: "Teclado óptico premium" },
+          { name: "Logitech G Pro X Superlight", link: amazonSearchUrl("Logitech G Pro X Superlight"), note: "Ratón gaming ultraligero" },
+          { name: "ASUS PG32UQX", link: amazonSearchUrl("ASUS PG32UQX"), note: "Monitor 4K 144Hz HDR" },
+          { name: "Stream Deck XL", link: amazonSearchUrl("Stream Deck XL"), note: "Control total del stream" },
         ],
       },
     ],
