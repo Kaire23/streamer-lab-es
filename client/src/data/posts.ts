@@ -4,6 +4,7 @@ import illojImg from "@/assets/illojuan-hero.jpg";
 import grefgImg from "@/assets/thegrefg-hero.jpg";
 import coscuImg from "@/assets/coscu-hero.jpg";
 import auronImg from "@assets/auronsetup_1754821866067.jpg";
+import elrubiusImg from "@assets/elrubius_1754821925283.webp";
 import { amazonSearchUrl } from "@/lib/affiliate";
 
 export type SetupItem = { name: string; link: string; note?: string; image?: string };
@@ -677,6 +678,490 @@ El **setup de AuronPlay** no es solo inspiración, sino un blueprint comprobado 
           { name: "Logitech G Pro X Superlight", link: amazonSearchUrl("Logitech G Pro X Superlight"), note: "Ratón gaming ultraligero" },
           { name: "ASUS PG32UQX", link: amazonSearchUrl("ASUS PG32UQX"), note: "Monitor 4K 144Hz HDR" },
           { name: "Stream Deck XL", link: amazonSearchUrl("Stream Deck XL"), note: "Control total del stream" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "elrubius",
+    title: "Setup de streaming de ElRubius (2025): Guía completa",
+    excerpt:
+      "Descubre el setup icónico de ElRubius: equipamiento profesional, iluminación RGB azul-rosa característica, PC gaming de élite y configuración optimizada para variedad y gaming de máxima calidad.",
+    date: today,
+    author: "Equipo Setups de Streamers",
+    coverImage: elrubiusImg,
+    keywords: [
+      "setup de streaming",
+      "ElRubius",
+      "equipo streamer",
+      "micrófono profesional",
+      "iluminación RGB",
+      "PC gaming élite",
+      "streaming profesional",
+    ],
+    bio: "ElRubius es uno de los streamers más influyentes del mundo con más de 15.8 millones de seguidores. Su setup está optimizado para contenido de variedad, gaming competitivo y streams de larga duración con calidad cinematográfica.",
+    content: `
+## El Setup Legendario de ElRubius: Análisis Completo del Equipamiento de Elite 2025
+
+El **setup de streaming de ElRubius** representa la evolución perfeccionada del streaming profesional a nivel mundial. Con más de 15.8 millones de seguidores y una carrera que abarca más de una década, ElRubius ha desarrollado una configuración que combina tecnología de vanguardia con una estética visual única que refleja su personalidad versátil y su capacidad para crear contenido diverso que mantiene cautivada a una audiencia global.
+
+Su setup no es simplemente una demostración de éxito tecnológico, sino un ecosistema meticulosamente diseñado para soportar contenido de variedad extrema: desde gaming competitivo hasta reacciones dinámicas, colaboraciones internacionales y experimentos creativos que han establecido nuevos estándares en la industria del streaming hispanohablante. Cada componente ha sido seleccionado para maximizar tanto la calidad técnica como la flexibilidad creativa que define el contenido de ElRubius.
+
+### Audio Profesional: La Claridad Vocal Que Define una Era
+
+#### Sistema de Audio Broadcasting de Elite
+
+El sistema de audio de ElRubius utiliza equipamiento de grado broadcasting que garantiza claridad vocal perfecta durante sus sesiones de streaming que pueden extenderse por 10+ horas consecutivas:
+
+**Micrófono Principal**: **[Shure SM7B](https://www.amazon.es/s?k=Shure%20SM7B&tag=yostreamer-21)** - El Estándar Absoluto
+- **Calidad broadcasting legendaria**: El mismo micrófono utilizado por las radios más prestigiosas del mundo
+- **Rechazo de ruido superior**: Eliminación total de interferencias del entorno gaming más intenso
+- **Respuesta vocal optimizada**: Diseñado específicamente para capturar la voz humana con máxima fidelidad
+- **Durabilidad profesional**: Construcción que resiste uso intensivo diario durante décadas
+
+**Cadena de Audio Profesional Avanzada:**
+
+**Interfaz de Audio**: **[Focusrite Scarlett 2i2 3rd Gen](https://www.amazon.es/s?k=Focusrite%20Scarlett%202i2&tag=yostreamer-21)**
+- **Preamplificadores de calidad**: Ganancia limpia específica para micrófonos dinámicos profesionales
+- **Conversores AD/DA premium**: Calidad de estudio para streaming y grabación simultánea
+- **Latencia ultra-baja**: <2.5ms para monitoring en tiempo real durante gaming competitivo
+- **Compatibilidad universal**: Integración perfecta con OBS, Discord y todas las plataformas
+
+**Procesamiento de Audio**: **[dbx 286s](https://www.amazon.es/s?k=dbx%20286s&tag=yostreamer-21)** - Procesador Vocal Profesional
+- **Compresión dinámica avanzada**: Control automático de niveles durante momentos intensos
+- **De-esser integrado**: Eliminación de sibilancias específicamente calibrado para español
+- **EQ paramétrico**: Optimización de frecuencias para la voz característica de ElRubius
+- **Gate/Expander**: Corta ruido de fondo entre diálogos manteniendo naturalidad absoluta
+
+**Auriculares de Monitoreo**: **[Sony WH-1000XM5](https://www.amazon.es/s?k=Sony%20WH-1000XM5&tag=yostreamer-21)**
+- **Cancelación de ruido líder mundial**: Aislamiento perfecto durante streams maratónicos
+- **Respuesta de frecuencia profesional**: Monitoreo preciso del audio del stream
+- **Comodidad extrema**: Diseño ergonómico para sesiones de 12+ horas sin fatiga
+- **Conectividad dual**: Bluetooth + cable para máxima flexibilidad operativa
+
+### Configuración Visual: Calidad Cinematográfica con Personalidad Única
+
+#### Sistema de Cámaras y Captura de Video Profesional
+
+La configuración visual de ElRubius establece nuevos estándares de calidad cinematográfica en streaming, optimizada para capturar cada matiz de expresión durante contenido diverso:
+
+**Cámara Principal**: **[Sony A7 III](https://www.amazon.es/s?k=Sony%20A7%20III&tag=yostreamer-21)** - Calidad Full-Frame Premium
+- **Sensor full-frame de 24.2MP**: Calidad de imagen superior con excelente rendimiento en condiciones de luz variables
+- **Autofocus híbrido de 693 puntos**: Seguimiento facial preciso durante movimientos dinámicos de gaming y reacciones
+- **Grabación 4K interna**: Calidad futuro-proof para evolución de plataformas de streaming
+- **Resistencia al sobrecalentamiento**: Diseñado para grabación continua durante streams extensos
+
+**Lente Principal**: **[Sony FE 85mm f/1.8](https://www.amazon.es/s?k=Sony%20FE%2085mm%20f1.8&tag=yostreamer-21)**
+- **Focal length portrait perfecta**: 85mm ideal para encuadres de streaming profesional
+- **Apertura amplia f/1.8**: Bokeh cinematográfico que separa sujeto del fondo
+- **Autofocus silencioso**: Motor lineal que no interfiere con grabación de audio
+- **Construcción compacta**: Balance perfecto para setup de streaming estacionario
+
+**Capturadora de Video**: **[Elgato 4K60 S+](https://www.amazon.es/s?k=Elgato%204K60%20S%20Plus&tag=yostreamer-21)**
+- **Captura 4K HDR a 60fps**: Calidad máxima sin compromiso de color o detalle
+- **Pass-through sin latencia**: Gaming sin delay agregado por captura
+- **Grabación independiente**: Almacenamiento local mientras streaming simultáneo
+- **Multiple format support**: Compatibilidad con todas las resoluciones y framerates
+
+### Iluminación RGB: La Estética Signature de ElRubius
+
+#### Sistema de Iluminación Multi-Color Profesional
+
+La iluminación de ElRubius es mundialmente reconocible por su esquema de colores azul-rosa que se ha convertido en su marca visual personal:
+
+**Iluminación Principal**: **[Aputure AL-MX](https://www.amazon.es/s?k=Aputure%20AL-MX&tag=yostreamer-21)** (x2)
+- **LED RGBWW de alta potencia**: Más de 95 CRI para reproducción de color cinematográfica
+- **Control de temperatura**: 2800K-6500K con control RGB completo
+- **App control avanzada**: Programación de escenas y efectos desde smartphone
+- **Mounting versatility**: Sistema modular para posicionamiento preciso
+
+**Ambient Lighting**: **[Govee Immersion TV Light Strip](https://www.amazon.es/s?k=Govee%20Immersion%20TV&tag=yostreamer-21)**
+- **Sincronización con contenido**: Colores que reaccionan al contenido en pantalla
+- **16 millones de colores**: Paleta completa para cualquier mood o juego
+- **Music sync**: Reacción a audio para streams musicales o reacciones
+- **DIY mode**: Control manual total para crear escenas personalizadas
+
+**Background RGB**: **[Nanoleaf Shapes](https://www.amazon.es/s?k=Nanoleaf%20Shapes&tag=yostreamer-21)**
+- **Diseño hexagonal modular**: Configuración geométrica personalizada única
+- **Touch reactive**: Respuesta a toques para interacción durante streams
+- **Screen mirror**: Sincronización con colores dominantes del gaming
+- **Smart home integration**: Control por voz y automatización con Alexa/Google
+
+**Strip Lighting**: **[Philips Hue Play Gradient Lightstrip](https://www.amazon.es/s?k=Philips%20Hue%20Play%20Gradient&tag=yostreamer-21)**
+- **Gradientes de color**: Transiciones suaves entre múltiples colores simultáneos
+- **Entertainment sync**: Integración con Philips Hue Entertainment para gaming
+- **Zone control**: Control independiente de múltiples zonas de color
+- **Precision cutting**: Corte preciso en puntos marcados sin dañar LEDs
+
+### PC Gaming: Potencia Absoluta para Multitasking Extremo
+
+#### Especificaciones de Alto Rendimiento Gaming-Streaming
+
+El PC de ElRubius está configurado para el máximo rendimiento en multitasking extremo: gaming AAA + streaming 4K + grabación + aplicaciones múltiples:
+
+**Procesador**: **[Intel Core i9-13900K](https://www.amazon.es/s?k=Intel%20i9-13900K&tag=yostreamer-21)** - Hybrid Architecture Suprema
+- **24 cores (8P+16E)**: Performance cores para gaming, efficiency cores para streaming y aplicaciones
+- **Boost hasta 5.8GHz**: Single-thread performance líder mundial para gaming competitivo
+- **35MB Intel Smart Cache**: Acceso ultrarrápido a datos frecuentes de juegos y streaming
+- **Overclocking extremo**: Potencial para configuraciones custom según necesidades específicas
+
+**Tarjeta Gráfica**: **[NVIDIA RTX 4090](https://www.amazon.es/s?k=NVIDIA%20RTX%204090&tag=yostreamer-21)** - Rendering Absoluto
+- **24GB GDDR6X**: VRAM masiva para gaming 4K + assets de streaming + grabación simultánea
+- **ADA Lovelace architecture**: Eficiencia energética revolucionaria con performance suprema
+- **DLSS 3 Frame Generation**: Framerates imposibles con calidad visual intacta
+- **Dual AV1 encoders**: Streaming eficiente en múltiples plataformas simultáneas
+
+**Memoria RAM**: **[G.Skill Trident Z5 RGB 64GB DDR5-6000](https://www.amazon.es/s?k=G.Skill%20DDR5%2064GB&tag=yostreamer-21)**
+- **64GB capacity**: Headroom infinito para cualquier combinación de aplicaciones
+- **DDR5-6000**: Sweet spot para Intel 13th gen con timings optimizados
+- **RGB sincronización**: Integración perfecta con estética RGB del setup
+- **Dual-rank configuration**: Máximo bandwidth para aplicaciones memory-intensive
+
+**Almacenamiento Principal**: **[Samsung 980 PRO 4TB](https://www.amazon.es/s?k=Samsung%20980%20PRO%204TB&tag=yostreamer-21)**
+- **NVMe PCIe 4.0**: 7,000 MB/s read para carga instantánea de cualquier aplicación
+- **4TB capacity**: Espacio masivo para biblioteca completa de juegos + grabaciones
+- **V-NAND TLC**: Durabilidad enterprise para escritura intensiva diaria
+- **Dynamic Thermal Guard**: Gestión térmica avanzada para performance sostenido
+
+**Almacenamiento Secundario**: **[WD Black SN850X 2TB](https://www.amazon.es/s?k=WD%20Black%20SN850X%202TB&tag=yostreamer-21)**
+- **Gaming optimization**: Específicamente diseñado para rendimiento en juegos
+- **Game Mode 2.0**: Priorización inteligente de recursos para gaming
+- **WD Dashboard**: Monitoreo de health y optimización automática
+- **5 años warranty**: Confianza a largo plazo para uso profesional intensivo
+
+**Motherboard**: **[ASUS ROG Maximus Z790 HERO](https://www.amazon.es/s?k=ASUS%20ROG%20Z790%20HERO&tag=yostreamer-21)**
+- **LGA 1700 premium**: Soporte completo para i9-13900K con overclocking avanzado
+- **WiFi 6E integrado**: Conectividad inalámbrica de próxima generación
+- **Thunderbolt 4**: Conectividad premium para dispositivos profesionales
+- **SupremeFX audio**: Audio integrado de calidad para backup y monitoring
+
+**Refrigeración Líquida**: **[Arctic Liquid Freezer II 420](https://www.amazon.es/s?k=Arctic%20Liquid%20Freezer%20II%20420&tag=yostreamer-21)**
+- **Radiador 420mm**: Disipación térmica máxima para overclocking extremo
+- **PWM controlled**: Ajuste automático de velocidad según carga de trabajo
+- **VRM cooling**: Refrigeración adicional para componentes de placa madre
+- **7 años warranty**: Garantía extendida para uso profesional 24/7
+
+### Periféricos Gaming: Arsenal de Elite para Performance Suprema
+
+#### Teclado, Ratón y Accesorios de Competición
+
+**Teclado Mecánico**: **[SteelSeries Apex Pro TKL](https://www.amazon.es/s?k=SteelSeries%20Apex%20Pro%20TKL&tag=yostreamer-21)**
+- **OmniPoint 2.0 switches**: Ajuste individual de actuation point por tecla (0.4mm-3.6mm)
+- **Rapid trigger**: Response time más rápido que cualquier switch mecánico tradicional
+- **OLED display**: Información en tiempo real del sistema y notificaciones
+- **Magnetic switches**: Durabilidad prácticamente infinita sin degradación
+
+**Ratón Gaming**: **[Finalmouse Starlight-12 Medium](https://www.amazon.es/s?k=Finalmouse%20Starlight%2012&tag=yostreamer-21)**
+- **37g ultraligero**: El ratón gaming más ligero del mundo para precisión absoluta
+- **PixArt PAW3370**: Sensor top-tier con tracking perfecto hasta 19,000 DPI
+- **Honeycomb magnesium**: Construcción premium con distribución de peso óptima
+- **Limited edition**: Exclusividad que refleja el status premium de ElRubius
+
+**Mousepad Profesional**: **[Artisan Hayate Otsu Soft XL](https://www.amazon.es/s?k=Artisan%20Hayate%20Otsu&tag=yostreamer-21)**
+- **Surface balanceada**: Velocidad y control optimizados para gaming competitivo
+- **Japanese craftsmanship**: Calidad artesanal sin compromisos de precisión
+- **Consistent glide**: Superficie uniforme para tracking perfecto
+- **Durabilidad extrema**: Resistencia al desgaste para uso profesional intensivo
+
+**Monitor Principal**: **[Samsung Odyssey Neo G9](https://www.amazon.es/s?k=Samsung%20Odyssey%20Neo%20G9&tag=yostreamer-21)**
+- **49" 5120x1440 240Hz**: Ultra-wide extremo para immersion gaming total
+- **Mini-LED Quantum HDR2000**: Contraste y colores cinematográficos
+- **G-Sync Compatible**: Eliminación total de tearing y stuttering
+- **1000R curvature**: Curvatura que envuelve completamente el campo de visión
+
+**Monitores Secundarios**: **[LG 27GN950-B](https://www.amazon.es/s?k=LG%2027GN950&tag=yostreamer-21)** (x2)
+- **27" 4K 144Hz**: Resolución perfecta para chat, OBS y aplicaciones auxiliares
+- **Nano IPS**: Reproducción de color superior para trabajo profesional
+- **1ms response**: Sin ghosting para contenido dinámico
+- **VESA mount**: Flexibilidad total de posicionamiento en setup triple
+
+**Control de Stream**: **[Elgato Stream Deck +](https://www.amazon.es/s?k=Elgato%20Stream%20Deck%20Plus&tag=yostreamer-21)**
+- **8 teclas LCD + 4 knobs**: Control táctil y físico combinado para máxima versatilidad
+- **Touch strip**: Control granular de audio, efectos y transiciones
+- **Plugin ecosystem**: Integración con todas las herramientas de streaming y gaming
+- **Profiles unlimited**: Configuraciones específicas por juego y tipo de contenido
+
+### Configuración de Red: Conectividad de Grado Empresarial
+
+#### Internet y Networking de Elite
+
+**Router Gaming**: **[ASUS ROG Rapture GT-AXE16000](https://www.amazon.es/s?k=ASUS%20ROG%20GT-AXE16000&tag=yostreamer-21)**
+- **WiFi 6E tri-band**: 16 Gbps throughput teórico con banda de 6GHz exclusiva
+- **Gaming accelerator**: QoS automático que prioriza tráfico de gaming y streaming
+- **2.5G WAN/LAN**: Preparado para internet multi-gigabit futuro
+- **AiMesh support**: Escalabilidad para cobertura de instalaciones grandes
+
+**Internet Principal**: **Fibra simétrica 1 Gbps** (proveedor premium empresarial)
+- **Upload garantizado**: 1000 Mbps upload para streaming 4K sin limitaciones
+- **Latencia ultra-baja**: <3ms a servidores gaming principales europeos
+- **SLA empresarial**: Uptime garantizado del 99.95% con soporte prioritario
+- **Soporte 24/7**: Resolución inmediata de incidencias críticas
+
+**Internet Backup**: **5G móvil empresarial** (Movistar Business)
+- **Bonding capability**: Combinación automática con conexión principal
+- **Failover automático**: Switching transparente en menos de 5 segundos
+- **Unlimited data**: Sin restricciones de tráfico o throttling
+- **Low latency**: <15ms para backup de emergencia confiable
+
+### Software y Configuración Avanzada: OBS Studio Elite
+
+#### Setup Profesional para Maximum Performance
+
+**Configuración de Video Avanzada:**
+- **Base Canvas**: 3840x2160 (4K nativo para futuro-proofing)
+- **Output Resolution**: 1920x1080 (downscale optimizado para Twitch)
+- **FPS**: 60 para gaming, 30 para just chatting
+- **Downscale Filter**: Lanczos 36 samples (máxima calidad posible)
+
+**Multiple Output Configuration:**
+- **Twitch Principal**: 1080p60 @ 6000 kbps
+- **YouTube Simultáneo**: 1080p60 @ 8000 kbps
+- **Recording Local**: 4K60 @ 80000 kbps (archive quality)
+- **Clips Backup**: 1080p60 @ 15000 kbps (editing ready)
+
+**Audio Routing Profesional:**
+- **Track 1**: Stream mix completo (game + mic + music + alerts)
+- **Track 2**: Game audio aislado (para editing posterior)
+- **Track 3**: Microphone only (para podcasting y highlights)
+- **Track 4**: Discord/comunicación (para colaboraciones)
+
+**Scene Collection Organizada:**
+- **Gaming Scene**: Cámara principal + game capture + overlays mínimos
+- **Just Chatting**: Cámara optimizada + chat integration + background dinámico
+- **Reacciones**: Picture-in-picture optimizado para expresiones faciales
+- **Colaboraciones**: Multi-cam setup para contenido grupal
+- **BRB/Intermission**: Branded screen + música + countdown timer
+
+### Aspectos Económicos: ROI del Setup de ElRubius
+
+#### Análisis Completo de Inversión y Retorno
+
+**Inversión Total del Setup**: **€22,000-28,000**
+
+**Distribución Detallada por Categorías:**
+
+**PC Gaming Ultimate (50%)**: **€11,000-14,000**
+- Intel i9-13900K: €600
+- RTX 4090: €2,000
+- 64GB DDR5-6000: €800
+- Samsung 980 PRO 4TB: €600
+- WD Black SN850X 2TB: €300
+- ASUS ROG Z790 HERO: €800
+- Arctic Liquid Freezer II 420: €200
+- Corsair 1200W PSU: €400
+- Lian Li O11D XL case: €200
+- Custom cables y accesorios: €300
+
+**Audio Broadcasting (15%)**: **€3,300-4,200**
+- Shure SM7B: €400
+- Focusrite Scarlett 2i2: €200
+- dbx 286s: €300
+- Sony WH-1000XM5: €400
+- Boom arm + shock mount premium: €300
+- Cables profesionales XLR: €200
+- Acoustic treatment: €500
+
+**Video y Streaming (20%)**: **€4,400-5,600**
+- Sony A7 III: €2,500
+- Sony FE 85mm f/1.8: €500
+- Elgato 4K60 S+: €400
+- Trípodes y mounting: €300
+- Lighting equipment: €1,200
+
+**Periféricos Elite (10%)**: **€2,200-2,800**
+- Samsung Odyssey Neo G9: €1,800
+- LG 27GN950-B (x2): €1,200
+- SteelSeries Apex Pro TKL: €200
+- Finalmouse Starlight-12: €150
+- Artisan mousepad: €80
+- Stream Deck +: €200
+
+**Iluminación RGB (5%)**: **€1,100-1,400**
+- Aputure AL-MX (x2): €600
+- Govee Immersion: €150
+- Nanoleaf Shapes: €400
+- Philips Hue ecosystem: €350
+
+#### ROI y Monetización Profesional
+
+**Ingresos Mensuales Estimados** (basado en métricas públicas):
+- **Twitch Subscriptions**: €30,000-45,000/mes
+- **YouTube AdSense**: €25,000-40,000/mes
+- **Sponsorships**: €70,000-130,000/mes
+- **Donaciones y Bits**: €12,000-20,000/mes
+- **Merchandise**: €15,000-25,000/mes
+
+**ROI del Setup**: **Recuperación en menos de 3 semanas** de ingresos totales
+
+### Estrategias de Contenido: El Método ElRubius
+
+#### Análisis de Contenido Más Exitoso
+
+**Gaming de Variedad (60% del tiempo)**:
+- **Minecraft con mods extremos**: Setup optimizado para mundos masivos y colaboraciones
+- **Just Chatting gaming**: Multitasking entre gaming casual e interacción con audiencia
+- **Trending games**: Adaptación rápida a nuevos títulos virales
+- **Collaborations gaming**: Setup preparado para multi-streaming internacional
+
+**Contenido de Reacciones (25% del tiempo)**:
+- **Videos virales**: Audio y video optimizado para capturar reacciones auténticas
+- **Memes y trends**: Setup que facilita comentario en tiempo real
+- **Content from community**: Integración de contenido generado por seguidores
+
+**Experimentos y Variedad (15% del tiempo)**:
+- **IRL streams**: Configuración móvil cuando necesario
+- **Creative content**: Flexibilidad para formatos experimentales
+- **International collaborations**: Setup preparado para diferentes zonas horarias
+
+### Comparación con Otros Grandes del Streaming Mundial
+
+#### vs Setup de AuronPlay: Innovación vs Consistencia
+
+**Filosofías Complementarias:**
+- **ElRubius**: Experimentación constante con nuevos formatos y tecnología
+- **AuronPlay**: Consistencia diaria con setup optimizado para rutina
+- **ElRubius**: Aesthetic más tech-forward y futurista
+- **AuronPlay**: RGB más tradicional pero igualmente impactante
+
+**Hardware Similarities:**
+- Ambos utilizan RTX 4090 y CPUs de gama alta
+- Audio profesional como prioridad absoluta
+- Configuración RGB como marca personal
+
+#### vs Setup de Ibai Llanos: Variedad vs Eventos
+
+**Approaches Diferentes:**
+- **ElRubius**: Versatilidad para contenido experimental y gaming diverso
+- **Ibai**: Optimización para eventos masivos y broadcasting profesional
+- **ElRubius**: Setup más gaming-focused con capacidad de producción
+- **Ibai**: Setup más production-focused con capacidad gaming
+
+### Lecciones del Éxito: Aplicando el Modelo ElRubius
+
+#### Principios Fundamentales del Setup Legendario
+
+**1. Versatilidad Tecnológica Absoluta**
+- Hardware que nunca limite la creatividad o experimentación
+- Configuración que se adapte a cualquier tipo de contenido
+- Flexibilidad para evolucionar con trends y tecnología
+
+**2. Aesthetic Como Extensión de Personalidad**
+- Iluminación RGB como marca personal distintiva
+- Setup que cuenta la historia del creator
+- Configuración memorable que trascienda el streaming
+
+**3. Performance Sin Compromisos**
+- Calidad técnica que justifique audiencia global
+- Redundancia en sistemas críticos para reliability absoluta
+- Futuro-proofing para mantener relevancia tecnológica
+
+### Evolución Futura y Roadmap Tecnológico
+
+#### Anticipando el Futuro del Streaming 2025-2026
+
+**Próximas Actualizaciones Tecnológicas:**
+- **8K streaming**: Preparación para resoluciones ultra-high definition
+- **AI-powered moderation**: Herramientas de moderación automática avanzada
+- **VR/AR integration**: Incorporación de elementos de realidad mixta
+- **Blockchain integration**: NFTs y economía digital integrada
+
+**Mantenimiento del Setup Elite:**
+- **Updates mensuales**: Drivers, software, firmware latest versions
+- **Hardware refresh**: Componentes críticos cada 18-24 meses
+- **Performance monitoring**: Métricas constantes de rendimiento
+- **Backup systems**: Redundancia completa para componentes críticos
+
+### Conclusión: El Blueprint del Streaming de Élite Mundial
+
+El **setup de ElRubius** trasciende la configuración técnica para convertirse en una obra de arte digital que amplifica una de las personalidades más influyentes del streaming mundial. Su configuración representa la convergencia perfecta entre:
+
+**Excelencia Técnica Sin Límites**
+- Hardware que mantiene relevancia tecnológica a largo plazo
+- Calidad que justifica una audiencia global masiva
+- Performance que permite experimentación sin restricciones técnicas
+
+**Creatividad Ilimitada**
+- Setup que facilita cualquier tipo de contenido imaginable
+- Tecnología que sirve a la creatividad, nunca la limita
+- Flexibilidad que permite evolución constante del formato
+
+**Marca Personal Distintiva**
+- Aesthetic visual que se ha convertido en icónico mundialmente
+- Configuración que cuenta la historia de evolución del creator
+- Setup que trasciende el streaming para convertirse en inspiración cultural
+
+### Aplicación Práctica: Roadmap Hacia la Élite
+
+**Fase Inicial (€1,500-2,500)**: Fundación sólida
+- **[PC gaming básico pero capaz](https://www.amazon.es/s?k=PC%20gaming%20RTX%204060&tag=yostreamer-21)**
+- **[Micrófono USB de calidad](https://www.amazon.es/s?k=Audio-Technica%20AT2020USB&tag=yostreamer-21)**
+- **[Webcam 1080p confiable](https://www.amazon.es/s?k=Logitech%20C920&tag=yostreamer-21)**
+- **[Iluminación RGB básica](https://www.amazon.es/s?k=LED%20strips%20RGB&tag=yostreamer-21)**
+
+**Fase Intermedia (€5,000-8,000)**: Calidad profesional
+- **[Upgrade a PC gaming avanzado](https://www.amazon.es/s?k=RTX%204070%20Super&tag=yostreamer-21)**
+- **[Audio interface + micrófono XLR](https://www.amazon.es/s?k=Focusrite%20Scarlett%20Solo&tag=yostreamer-21)**
+- **[Cámara DSLR entry-level](https://www.amazon.es/s?k=Sony%20A6000&tag=yostreamer-21)**
+- **[Sistema de iluminación expandido](https://www.amazon.es/s?k=Elgato%20Key%20Light&tag=yostreamer-21)**
+
+**Fase Elite (€20,000+)**: Setup nivel ElRubius
+- Implementación gradual del equipamiento completo elite
+- Optimización basada en métricas específicas de crecimiento
+- Reinversión estratégica de ingresos de streaming en tecnología
+
+El **setup de ElRubius** no es solo una aspiración, sino un blueprint comprobado que demuestra cómo la combinación de talento auténtico, tecnología de vanguardia y visión creativa puede crear no solo entretenimiento, sino verdadero arte digital que inspira a millones de personas alrededor del mundo.
+
+*Para mantenerte actualizado con las últimas evoluciones del setup de ElRubius y análisis técnicos de otros streamers de élite mundial, explora nuestras guías completas de **[AuronPlay](https://yostreamer.com/setup/auronplay)**, **[Ibai Llanos](https://yostreamer.com/setup/ibai-llanos)** y **[TheGrefg](https://yostreamer.com/setup/thegrefg)**.*
+    `,
+    funFacts: [
+      "Uno de los streamers más influyentes del mundo con 15.8M de seguidores",
+      "Su estética RGB azul-rosa se ha convertido en icónica mundialmente",
+      "Pioneer en contenido de variedad combinado con gaming de élite",
+      "Setup optimizado para experimentación y formatos innovadores",
+    ],
+    setup: [
+      {
+        name: "Audio",
+        items: [
+          { name: "Shure SM7B", link: amazonSearchUrl("Shure SM7B"), note: "Micrófono broadcasting legendario" },
+          { name: "Focusrite Scarlett 2i2 3rd Gen", link: amazonSearchUrl("Focusrite Scarlett 2i2"), note: "Interface profesional premium" },
+          { name: "dbx 286s", link: amazonSearchUrl("dbx 286s"), note: "Procesador vocal avanzado" },
+          { name: "Sony WH-1000XM5", link: amazonSearchUrl("Sony WH-1000XM5"), note: "Auriculares noise-cancelling elite" },
+        ],
+      },
+      {
+        name: "Video",
+        items: [
+          { name: "Sony A7 III", link: amazonSearchUrl("Sony A7 III"), note: "Cámara full-frame profesional" },
+          { name: "Sony FE 85mm f/1.8", link: amazonSearchUrl("Sony FE 85mm f1.8"), note: "Lente portrait cinematográfica" },
+          { name: "Elgato 4K60 S+", link: amazonSearchUrl("Elgato 4K60 S Plus"), note: "Captura 4K HDR premium" },
+        ],
+      },
+      {
+        name: "Iluminación RGB",
+        items: [
+          { name: "Aputure AL-MX x2", link: amazonSearchUrl("Aputure AL-MX"), note: "LED RGBWW profesional" },
+          { name: "Govee Immersion TV Strip", link: amazonSearchUrl("Govee Immersion TV"), note: "Ambient lighting reactivo" },
+          { name: "Nanoleaf Shapes", link: amazonSearchUrl("Nanoleaf Shapes"), note: "Paneles modulares inteligentes" },
+          { name: "Philips Hue Play Gradient", link: amazonSearchUrl("Philips Hue Play Gradient"), note: "Tiras LED gradient premium" },
+        ],
+      },
+      {
+        name: "PC Gaming",
+        items: [
+          { name: "Intel i9-13900K", link: amazonSearchUrl("Intel i9-13900K"), note: "24 cores hybrid architecture" },
+          { name: "NVIDIA RTX 4090", link: amazonSearchUrl("NVIDIA RTX 4090"), note: "Gaming 4K + streaming simultáneo" },
+          { name: "64GB DDR5-6000 RGB", link: amazonSearchUrl("G.Skill DDR5 64GB"), note: "RAM ultra-rápida con RGB" },
+          { name: "Samsung 980 PRO 4TB", link: amazonSearchUrl("Samsung 980 PRO 4TB"), note: "Storage NVMe premium" },
+        ],
+      },
+      {
+        name: "Periféricos",
+        items: [
+          { name: "SteelSeries Apex Pro TKL", link: amazonSearchUrl("SteelSeries Apex Pro TKL"), note: "Teclado switches magnéticos" },
+          { name: "Finalmouse Starlight-12", link: amazonSearchUrl("Finalmouse Starlight 12"), note: "Ratón más ligero del mundo" },
+          { name: "Samsung Odyssey Neo G9", link: amazonSearchUrl("Samsung Odyssey Neo G9"), note: "Monitor 49\" ultra-wide" },
+          { name: "Stream Deck +", link: amazonSearchUrl("Stream Deck Plus"), note: "Control avanzado con knobs" },
         ],
       },
     ],
