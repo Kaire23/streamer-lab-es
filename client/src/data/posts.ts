@@ -52,7 +52,7 @@ Su setup no es simplemente una colección de equipos caros, sino un ecosistema m
 
 #### Micrófono Principal: Shure SM7B - El Rey del Broadcasting
 
-El corazón absoluto del setup de Ibai es su **[micrófono Shure SM7B](${amazonSearchUrl("Shure SM7B")})**, considerado universalmente el mejor micrófono para streaming profesional y broadcasting. Este micrófono dinámico, utilizado por Joe Rogan, Casey Neistat y prácticamente todos los podcasters profesionales del mundo, proporciona una calidad de audio excepcional con un rechazo de ruido ambiente que resulta crucial para los eventos en vivo de Ibai.
+El corazón absoluto del setup de Ibai es su **[micrófono Shure SM7B](https://www.amazon.es/s?k=Shure%20SM7B&tag=yostreamer-21)**, considerado universalmente el mejor micrófono para streaming profesional y broadcasting. Este micrófono dinámico, utilizado por Joe Rogan, Casey Neistat y prácticamente todos los podcasters profesionales del mundo, proporciona una calidad de audio excepcional con un rechazo de ruido ambiente que resulta crucial para los eventos en vivo de Ibai.
 
 **Características técnicas que hacen único al SM7B:**
 - **Patrón polar cardioide**: Captura la voz desde el frente mientras rechaza sonidos laterales y traseros
@@ -67,12 +67,12 @@ Comparado con otros streamers españoles como **[ElXokas](https://yostreamer.com
 
 Para maximizar el potencial del SM7B, el setup de Ibai incluye una cadena de audio profesional completa:
 
-**Preamplificador**: **[Cloudlifter CL-1](${amazonSearchUrl("Cloudlifter CL-1")})**
+**Preamplificador**: **[Cloudlifter CL-1](https://www.amazon.es/s?k=Cloudlifter%20CL-1&tag=yostreamer-21)**
 - **Boost limpio**: +25dB de ganancia adicional sin ruido
 - **Impedancia optimizada**: Matching perfecto con el SM7B
 - **Phantom power**: Alimentación estándar 48V
 
-**Interfaz de Audio**: **[RME Babyface Pro FS](${amazonSearchUrl("RME Babyface Pro FS")})**
+**Interfaz de Audio**: **[RME Babyface Pro FS](https://www.amazon.es/s?k=RME%20Babyface%20Pro%20FS&tag=yostreamer-21)**
 - **Conversores AD/DA clase A**: Calidad de estudio profesional
 - **Latencia ultra-baja**: <2ms roundtrip para monitoring en tiempo real
 - **Routing avanzado**: Separación total de audio para stream, grabación y monitoring
@@ -82,7 +82,7 @@ Para maximizar el potencial del SM7B, el setup de Ibai incluye una cadena de aud
 
 #### Configuración Principal: Sony A7S III - La Bestia del Low Light
 
-La configuración visual de Ibai utiliza cámaras **[Sony A7S III](${amazonSearchUrl("Sony A7S III")})**, reconocidas mundialmente como las mejores cámaras para video en condiciones de poca luz y streaming profesional de larga duración.
+La configuración visual de Ibai utiliza cámaras **[Sony A7S III](https://www.amazon.es/s?k=Sony%20A7S%20III&tag=yostreamer-21)**, reconocidas mundialmente como las mejores cámaras para video en condiciones de poca luz y streaming profesional de larga duración.
 
 **Especificaciones que justifican su elección:**
 - **Sensor full-frame 12MP**: Optimizado para video, no para resolución
@@ -91,7 +91,7 @@ La configuración visual de Ibai utiliza cámaras **[Sony A7S III](${amazonSearc
 - **Unlimited recording**: Sin límites de tiempo para streams maratónicos
 - **Dual card slots**: Redundancia total para eventos críticos
 
-Durante eventos como La Velada del Año, el setup de Ibai se expande a una configuración multi-cámara profesional con múltiples Sony A7S III y **[capturadoras Elgato 4K60 Pro MK.2](${amazonSearchUrl("Elgato 4K60 Pro MK2")})** para switching en tiempo real.
+Durante eventos como La Velada del Año, el setup de Ibai se expande a una configuración multi-cámara profesional con múltiples Sony A7S III y **[capturadoras Elgato 4K60 Pro MK.2](https://www.amazon.es/s?k=Elgato%204K60%20Pro%20MK2&tag=yostreamer-21)** para switching en tiempo real.
 
 ### Iluminación: El Secreto de la Imagen Profesional
 
