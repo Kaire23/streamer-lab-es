@@ -224,7 +224,7 @@ const PostPage: React.FC = () => {
 
           <div 
             className="prose prose-lg max-w-none mt-8 prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-a:text-primary hover:prose-a:text-primary/80 prose-blockquote:border-l-primary/20 prose-blockquote:bg-primary/5 prose-blockquote:pl-6 prose-blockquote:py-3 prose-code:bg-secondary prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-li:text-muted-foreground"
-            dangerouslySetInnerHTML={{ __html: post.content || '' }} 
+            dangerouslySetInnerHTML={{ __html: convertMarkdownToHTML(post.content || '') }} 
           />
         </div>
 
