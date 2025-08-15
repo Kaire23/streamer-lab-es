@@ -5,6 +5,7 @@ import grefgImg from "@/assets/thegrefg-hero.jpg";
 import coscuImg from "@/assets/coscu-hero.jpg";
 import auronImg from "@assets/auronsetup_1754821866067.jpg";
 import elrubiusImg from "@assets/elrubius_1754821925283.webp";
+import cristininiImg from "@assets/cristinini_1755266350997.jpeg";
 import { amazonSearchUrl } from "@/lib/affiliate";
 
 export type SetupItem = { name: string; link: string; note?: string; image?: string };
@@ -1162,6 +1163,489 @@ El **setup de ElRubius** no es solo una aspiración, sino un blueprint comprobad
           { name: "Finalmouse Starlight-12", link: amazonSearchUrl("Finalmouse Starlight 12"), note: "Ratón más ligero del mundo" },
           { name: "Samsung Odyssey Neo G9", link: amazonSearchUrl("Samsung Odyssey Neo G9"), note: "Monitor 49\" ultra-wide" },
           { name: "Stream Deck +", link: amazonSearchUrl("Stream Deck Plus"), note: "Control avanzado con knobs" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "cristinini",
+    title: "Setup de streaming de Cristinini (2025): Guía completa",
+    excerpt:
+      "Descubre el setup profesional de Cristinini: equipamiento de alto rendimiento, iluminación estética perfecta, PC gaming optimizado y configuración diseñada para contenido de calidad y streams de larga duración.",
+    date: today,
+    author: "Equipo Setups de Streamers",
+    coverImage: cristininiImg,
+    keywords: [
+      "setup de streaming",
+      "Cristinini",
+      "equipo streamer",
+      "micrófono profesional",
+      "iluminación streamer",
+      "PC gaming",
+      "streaming femenino",
+    ],
+    bio: "Cristinini es una de las streamers más influyentes de España con una comunidad leal y comprometida. Su setup está optimizado para contenido variado, gaming competitivo y streams interactivos de alta calidad.",
+    content: `
+## El Setup Profesional de Cristinini: Análisis Completo del Equipamiento de Elite Femenino 2025
+
+El **setup de streaming de Cristinini** representa la excelencia en el streaming femenino español, combinando funcionalidad profesional con una estética cuidadosamente diseñada que refleja su personalidad auténtica y su enfoque hacia la creación de contenido de alta calidad. Con una comunidad sólida y comprometida, Cristinini ha desarrollado una configuración que prioriza tanto la calidad técnica como la comodidad necesaria para streams extensos que pueden durar entre 6-8 horas consecutivas.
+
+Su setup no es simplemente una demostración de equipamiento premium, sino un ecosistema meticulosamente planificado para soportar contenido diverso: desde gaming competitivo hasta just chatting interactivo, reacciones dinámicas y colaboraciones con otros creators. Cada componente ha sido seleccionado para maximizar tanto el rendimiento técnico como la experiencia visual que mantiene a su audiencia completamente enganchada durante cada transmisión.
+
+### Audio Profesional: Claridad Vocal Excepcional
+
+#### Sistema de Audio Broadcasting Optimizado
+
+El sistema de audio de Cristinini utiliza equipamiento profesional que garantiza claridad vocal perfecta y eliminación total de ruido ambiente, crucial para mantener la calidad durante streams interactivos:
+
+**Micrófono Principal**: **[Audio-Technica AT2020USB+](https://www.amazon.es/s?k=Audio-Technica%20AT2020USB&tag=yostreamer-21)** - Calidad Estudio Accesible
+- **Condensador de calidad estudio**: Captura vocal con detalle excepcional y respuesta de frecuencia optimizada
+- **Plug-and-play USB**: Configuración instantánea sin interfaces complejas, perfecta para simplicidad operativa
+- **Patrón polar cardioide**: Rechazo efectivo de ruido lateral y trasero, ideal para entornos domésticos
+- **Durabilidad profesional**: Construcción robusta para uso diario intensivo durante años
+
+**Alternativa Premium**: **[Shure SM7B](https://www.amazon.es/s?k=Shure%20SM7B&tag=yostreamer-21)** - El Estándar Absoluto
+- **Micrófono dinámico legendario**: Usado por **[Ibai Llanos](https://yostreamer.com/setup/ibai-llanos)** y prácticamente todos los streamers de elite
+- **Rechazo de ruido superior**: Eliminación total de interferencias de teclado, mouse y ambiente
+- **Versatilidad total**: Perfecto para gaming intenso y just chatting relajado
+- **Investment a largo plazo**: Valor que se mantiene y mejora con el crecimiento del canal
+
+**Cadena de Audio Profesional:**
+
+**Interfaz de Audio**: **[Focusrite Scarlett Solo 3rd Gen](https://www.amazon.es/s?k=Focusrite%20Scarlett%20Solo&tag=yostreamer-21)**
+- **Preamplificador de calidad**: Ganancia limpia específica para micrófonos condensador y dinámicos
+- **Conversores profesionales**: Calidad de estudio para streaming y grabación simultánea
+- **Latencia ultra-baja**: <4ms para monitoring en tiempo real durante gaming
+- **Simplicidad operativa**: Una entrada, una salida, configuración perfecta para streamers
+
+**Procesamiento de Audio**: **[Behringer Composer Pro-XL MDX2600](https://www.amazon.es/s?k=Behringer%20MDX2600&tag=yostreamer-21)**
+- **Compresor/limitador dual**: Control automático de niveles durante momentos intensos y susurros
+- **Interactive knee compression**: Compresión suave que mantiene naturalidad vocal
+- **Servo-balanced outputs**: Conexión profesional libre de ruido e interferencias
+- **Precio accesible**: Calidad profesional sin inversión masiva inicial
+
+**Auriculares de Monitoreo**: **[Sony WH-1000XM4](https://www.amazon.es/s?k=Sony%20WH-1000XM4&tag=yostreamer-21)**
+- **Cancelación de ruido líder**: Aislamiento perfecto durante streams largos y gaming intenso
+- **Respuesta de frecuencia balanceada**: Monitoreo preciso del audio del stream
+- **Comodidad extrema**: Diseño ergonómico para sesiones de 8+ horas sin fatiga
+- **Conectividad versátil**: Bluetooth + cable para máxima flexibilidad
+
+### Configuración Visual: Calidad Cinematográfica Profesional
+
+#### Sistema de Cámaras y Captura de Video
+
+La configuración visual de Cristinini establece estándares altos de calidad cinematográfica, optimizada para capturar expresiones auténticas y crear conexión emocional con la audiencia:
+
+**Cámara Principal**: **[Sony A6100](https://www.amazon.es/s?k=Sony%20A6100&tag=yostreamer-21)** - Calidad APS-C Profesional
+- **Sensor APS-C de 24.2MP**: Calidad de imagen superior con excelente rendimiento en condiciones de luz variables
+- **Autofocus en tiempo real**: Seguimiento facial preciso durante movimientos dinámicos y reacciones
+- **Grabación 4K**: Calidad futuro-proof para evolución de plataformas de streaming
+- **Flip screen**: Pantalla abatible para autoframing y verificación de encuadre en tiempo real
+
+**Lente Principal**: **[Sony E 35mm f/1.8 OSS](https://www.amazon.es/s?k=Sony%20E%2035mm%20f1.8&tag=yostreamer-21)**
+- **Focal length versátil**: 35mm perfecto para encuadres de streaming con profundidad natural
+- **Apertura amplia f/1.8**: Bokeh sutil que separa sujeto del fondo sin ser excesivo
+- **Estabilización óptica**: Imagen estable sin trípode durante ajustes menores
+- **Construcción compacta**: Balance perfecto entre calidad y practicidad para setup fijo
+
+**Capturadora de Video**: **[Elgato Cam Link 4K](https://www.amazon.es/s?k=Elgato%20Cam%20Link%204K&tag=yostreamer-21)**
+- **Captura 4K a 30fps**: Calidad máxima para streaming profesional sin compromiso
+- **Plug and play**: Configuración instantánea sin drivers complejos o configuración técnica
+- **Pass-through limpio**: Gaming sin delay agregado por captura
+- **Compatibilidad universal**: Funciona con OBS, Streamlabs y cualquier software
+
+**Cámara Alternativa**: **[Logitech C920s HD Pro](https://www.amazon.es/s?k=Logitech%20C920s&tag=yostreamer-21)**
+- **1080p full HD**: Calidad sólida para streamers que empiezan con presupuesto limitado
+- **Autofocus automático**: Mantenimiento de foco sin intervención manual
+- **Privacy shutter**: Seguridad adicional cuando la cámara no está en uso
+- **Upgrade path**: Base sólida para evolucionar hacia DSLR posteriormente
+
+### Iluminación: Estética y Funcionalidad Perfecta
+
+#### Sistema de Iluminación Profesional Balanceado
+
+La iluminación de Cristinini combina funcionalidad profesional con una estética cuidada que complementa su contenido sin ser abrumadora:
+
+**Iluminación Principal**: **[Elgato Key Light Air](https://www.amazon.es/s?k=Elgato%20Key%20Light%20Air&tag=yostreamer-21)** (x2)
+- **LED adjustable 2900K-7000K**: Control completo de temperatura de color según mood del stream
+- **Control WiFi integrado**: Ajustes remotos desde Stream Deck o smartphone durante transmisión
+- **Eliminación de sombras**: Setup de dos puntos para iluminación facial uniforme y favorecedora
+- **Mounting versatile**: Brazos ajustables para posicionamiento preciso según setup
+
+**Iluminación de Relleno**: **[Neewer 18" LED Ring Light](https://www.amazon.es/s?k=Neewer%2018%20LED%20Ring%20Light&tag=yostreamer-21)**
+- **Luz suave y uniforme**: Eliminación de sombras duras bajo los ojos y mejillas
+- **Dimmer ajustable**: Control de intensidad desde 1% hasta 100% para diferentes momentos del día
+- **Color temperature control**: 3200K-5600K para coincidir con iluminación ambiente
+- **Phone holder integrado**: Versatilidad para contenido móvil o streams IRL
+
+**Ambient Lighting**: **[Govee RGB Strip Lights](https://www.amazon.es/s?k=Govee%20RGB%20Strip%20Lights&tag=yostreamer-21)**
+- **16 millones de colores**: Paleta completa para crear cualquier ambiente deseado
+- **Music sync**: Reacción a audio del stream para efectos dinámicos durante música
+- **App control**: Control granular desde smartphone con presets personalizados
+- **Easy installation**: Adhesivo 3M para colocación rápida sin herramientas
+
+**Background Accent**: **[Nanoleaf Hexagon Light Panels](https://www.amazon.es/s?k=Nanoleaf%20Hexagon&tag=yostreamer-21)**
+- **Diseño modular hexagonal**: Configuración geométrica personalizada y estéticamente atractiva
+- **Touch responsive**: Cambio de colores con toques para interacción durante streams
+- **HomeKit compatible**: Integración con ecosistema smart home para automatización
+- **Screen mirroring**: Sincronización con colores dominantes del contenido en pantalla
+
+### PC Gaming: Rendimiento Optimizado para Multitasking
+
+#### Especificaciones de Alto Rendimiento Gaming-Streaming
+
+El PC de Cristinini está configurado para rendimiento sólido en multitasking: gaming competitivo + streaming HD + aplicaciones múltiples sin comprometer performance:
+
+**Procesador**: **[AMD Ryzen 7 7700X](https://www.amazon.es/s?k=AMD%20Ryzen%207%207700X&tag=yostreamer-21)** - Sweet Spot Performance
+- **8 núcleos / 16 threads**: Multitasking eficiente para gaming + streaming + aplicaciones
+- **Boost hasta 5.4GHz**: Single-thread performance excepcional para gaming competitivo
+- **Arquitectura Zen 4**: Eficiencia energética moderna con performance de última generación
+- **Cache L3 de 32MB**: Acceso rápido a datos frecuentes de juegos y aplicaciones
+
+**Tarjeta Gráfica**: **[NVIDIA RTX 4070 SUPER](https://www.amazon.es/s?k=NVIDIA%20RTX%204070%20SUPER&tag=yostreamer-21)** - Gaming 1440p Supremo
+- **12GB GDDR6X**: VRAM suficiente para gaming 1440p + streaming HD simultáneo
+- **Ada Lovelace architecture**: Eficiencia energética revolucionaria con ray tracing avanzado
+- **DLSS 3**: Performance boost significativo manteniendo calidad visual intacta
+- **AV1 encoding**: Streaming eficiente con menor uso de bandwidth
+
+**Memoria RAM**: **[Corsair Vengeance RGB 32GB DDR5-5600](https://www.amazon.es/s?k=Corsair%20DDR5%2032GB&tag=yostreamer-21)**
+- **32GB capacity**: Headroom adecuado para multitasking sin limitaciones
+- **DDR5-5600**: Sweet spot para Ryzen 7000 series con timings optimizados
+- **RGB integration**: Sincronización con iluminación general del setup
+- **Dual-channel kit**: Máximo bandwidth para aplicaciones exigentes
+
+**Almacenamiento Principal**: **[Samsung 980 PRO 2TB](https://www.amazon.es/s?k=Samsung%20980%20PRO%202TB&tag=yostreamer-21)**
+- **NVMe PCIe 4.0**: 7,000 MB/s read para carga instantánea de juegos y aplicaciones
+- **2TB capacity**: Espacio abundante para biblioteca de juegos + grabaciones locales
+- **V-NAND TLC**: Durabilidad enterprise para escritura diaria intensiva
+- **Samsung Magician**: Software de optimización y monitoreo incluido
+
+**Almacenamiento Secundario**: **[WD Blue SN570 1TB](https://www.amazon.es/s?k=WD%20Blue%20SN570%201TB&tag=yostreamer-21)**
+- **NVMe value tier**: Velocidades sólidas para archivos y aplicaciones secundarias
+- **1TB adicional**: Almacenamiento extra para backups y contenido archivado
+- **5 años warranty**: Confianza a largo plazo para uso diario
+- **Low power consumption**: Eficiencia energética para setup compacto
+
+**Motherboard**: **[MSI MAG B650 TOMAHAWK WIFI](https://www.amazon.es/s?k=MSI%20B650%20TOMAHAWK%20WIFI&tag=yostreamer-21)**
+- **AM5 socket**: Soporte completo para Ryzen 7000 con potencial de upgrade futuro
+- **WiFi 6E integrado**: Conectividad inalámbrica de próxima generación
+- **USB 3.2 Gen2**: Múltiples puertos para periféricos y dispositivos de captura
+- **Audio Realtek**: Audio integrado de calidad para backup y monitoring
+
+**Refrigeración**: **[Arctic Liquid Freezer II 280](https://www.amazon.es/s?k=Arctic%20Liquid%20Freezer%20II%20280&tag=yostreamer-21)**
+- **Radiador 280mm**: Disipación térmica eficiente para cargas de trabajo sostenidas
+- **PWM fans**: Ajuste automático de velocidad según temperatura y ruido mínimo
+- **6 años warranty**: Garantía extendida para uso diario profesional
+- **Easy installation**: Mounting system simplificado para instalación sin complicaciones
+
+### Periféricos Gaming: Equilibrio Entre Performance y Estética
+
+#### Teclado, Ratón y Accesorios Profesionales
+
+**Teclado Mecánico**: **[Corsair K70 RGB MK.2](https://www.amazon.es/s?k=Corsair%20K70%20RGB%20MK2&tag=yostreamer-21)**
+- **Cherry MX switches**: Durabilidad comprobada con tactile feedback perfecto para gaming y typing
+- **Per-key RGB**: 16.7 millones de colores por tecla para personalización completa
+- **Aluminum frame**: Construcción premium que resiste uso intensivo diario
+- **Dedicated media keys**: Control de volumen y reproducción sin interrumpir gameplay
+
+**Ratón Gaming**: **[Logitech G Pro Wireless](https://www.amazon.es/s?k=Logitech%20G%20Pro%20Wireless&tag=yostreamer-21)**
+- **80g lightweight**: Balance perfecto entre peso y estabilidad para precision gaming
+- **HERO sensor**: Tracking perfecto hasta 25,600 DPI sin acceleration o smoothing
+- **Wireless LIGHTSPEED**: Conexión inalámbrica más rápida que muchos ratones con cable
+- **60+ hour battery**: Autonomía extendida para semanas de uso intensivo
+
+**Mousepad**: **[SteelSeries QcK Heavy](https://www.amazon.es/s?k=SteelSeries%20QcK%20Heavy&tag=yostreamer-21)**
+- **Cloth surface**: Balance ideal entre velocidad y control para gaming competitivo
+- **Heavy base**: 6mm thickness para consistencia y comodidad durante sesiones largas
+- **Optimized tracking**: Surface diseñada específicamente para sensores ópticos modernos
+- **Machine washable**: Mantenimiento fácil para higiene a largo plazo
+
+**Monitor Principal**: **[ASUS TUF Gaming VG27AQL1A](https://www.amazon.es/s?k=ASUS%20VG27AQL1A&tag=yostreamer-21)**
+- **27" 1440p 170Hz**: Sweet spot para gaming competitivo y calidad visual
+- **IPS panel**: Colores precisos y ángulos de visión amplios para streaming
+- **G-SYNC Compatible**: Eliminación de tearing y stuttering para experiencia fluida
+- **HDR400**: Mejora de contraste para gaming y contenido multimedia
+
+**Monitor Secundario**: **[ASUS VA24EHE](https://www.amazon.es/s?k=ASUS%20VA24EHE&tag=yostreamer-21)**
+- **24" 1080p IPS**: Perfecto para chat, OBS, Discord y aplicaciones auxiliares
+- **75Hz refresh**: Suficiente para contenido no-gaming con smoothness adecuado
+- **Eye Care**: Blue light filter para reduced eye strain durante streams largos
+- **VESA mount**: Flexibilidad para configuración dual monitor optimizada
+
+**Control de Stream**: **[Elgato Stream Deck MK.2](https://www.amazon.es/s?k=Elgato%20Stream%20Deck%20MK2&tag=yostreamer-21)**
+- **15 teclas LCD**: Control visual de escenas, efectos, audio y aplicaciones
+- **Plugin ecosystem**: Integración con OBS, Twitch, Spotify, Discord y más
+- **Custom icons**: Personalización completa para workflow específico de cada streamer
+- **Multi-action support**: Macros complejos con una sola tecla para eficiencia máxima
+
+### Configuración de Red y Conectividad
+
+#### Internet y Networking Profesional
+
+**Router Gaming**: **[ASUS RT-AX86U](https://www.amazon.es/s?k=ASUS%20RT-AX86U&tag=yostreamer-21)**
+- **WiFi 6 dual-band**: Hasta 5700 Mbps throughput con latencia reducida
+- **Gaming accelerator**: QoS automático que prioriza tráfico de gaming y streaming
+- **Adaptive QoS**: Bandwidth allocation inteligente según aplicaciones activas
+- **AiProtection**: Seguridad enterprise para protección de red doméstica
+
+**Internet**: **Fibra 600 Mbps simétrica** (conexión residencial premium)
+- **Upload garantizado**: 600 Mbps upload para streaming HD sin limitaciones
+- **Latencia baja**: <10ms a servidores principales españoles y europeos
+- **Estabilidad 24/7**: Uptime consistente para streams programados sin interrupciones
+- **Sin data caps**: Bandwidth ilimitado para streaming intensivo
+
+### Software y Configuración: OBS Studio Optimizado
+
+#### Setup Profesional para Máximo Performance
+
+**Configuración de Video Optimizada:**
+- **Base Canvas**: 1920x1080 (nativo para hardware actual y compatibilidad)
+- **Output Resolution**: 1920x1080 (máxima calidad para Twitch y YouTube)
+- **FPS**: 60 para gaming competitivo, 30 para just chatting
+- **Encoder**: NVIDIA NVENC (new) para RTX 4070 SUPER
+
+**Audio Configuration Profesional:**
+- **Sample Rate**: 48 kHz estándar profesional
+- **Bitrate**: 160 kbps AAC para calidad broadcast
+- **Channels**: Estéreo con separación completa para máxima compatibilidad
+- **Monitoring**: Direct monitoring para feedback en tiempo real
+
+**Scene Organization Eficiente:**
+- **Gaming Scene**: Cámara optimizada + game capture + overlays mínimos
+- **Just Chatting**: Cámara principal + chat overlay + background sutil
+- **BRB Screen**: Branded intermission con música y countdown timer
+- **Collaboration**: Picture-in-picture para contenido con invitados
+
+**Stream Settings Optimizadas:**
+- **Bitrate**: 6000 kbps para Twitch (máximo permitido)
+- **Keyframe Interval**: 2 segundos para compatibilidad óptima
+- **Preset**: Quality para balance entre calidad y performance
+- **Profile**: High para máxima calidad de compresión
+
+### Aspectos Económicos: ROI del Setup de Cristinini
+
+#### Análisis de Inversión y Monetización
+
+**Inversión Total del Setup**: **€8,000-12,000**
+
+**Distribución por Categorías:**
+
+**PC Gaming (60%)**: **€4,800-7,200**
+- AMD Ryzen 7 7700X: €400
+- RTX 4070 SUPER: €650
+- 32GB DDR5-5600: €200
+- Samsung 980 PRO 2TB: €300
+- MSI B650 TOMAHAWK: €200
+- Arctic Liquid Freezer II 280: €150
+- Corsair 750W PSU: €150
+- Case y accesorios: €200
+
+**Audio Profesional (15%)**: **€1,200-1,800**
+- Audio-Technica AT2020USB+: €200
+- Focusrite Scarlett Solo: €120
+- Behringer MDX2600: €150
+- Sony WH-1000XM4: €300
+- Boom arm y accesorios: €180
+
+**Video y Streaming (15%)**: **€1,200-1,800**
+- Sony A6100: €700
+- Sony E 35mm f/1.8: €350
+- Elgato Cam Link 4K: €150
+- Trípode y mounting: €150
+
+**Periféricos (7%)**: **€560-840**
+- ASUS VG27AQL1A: €400
+- ASUS VA24EHE: €150
+- Corsair K70 RGB: €150
+- Logitech G Pro Wireless: €100
+- Stream Deck MK.2: €150
+
+**Iluminación (3%)**: **€240-360**
+- Key Light Air (x2): €500
+- Neewer Ring Light: €80
+- RGB strips: €50
+- Accesorios: €70
+
+#### Potencial de Monetización
+
+**Ingresos Mensuales Estimados** (para canal en crecimiento):
+- **Twitch Subscriptions**: €800-2,500/mes
+- **YouTube AdSense**: €400-1,200/mes
+- **Donaciones**: €600-1,800/mes
+- **Sponsorships**: €1,000-3,000/mes
+- **Merchandise**: €200-800/mes
+
+**ROI Timeline**: **Recuperación en 3-6 meses** con crecimiento constante
+
+### Estrategias de Contenido: El Método Cristinini
+
+#### Análisis de Contenido Más Efectivo
+
+**Gaming Competitivo (40% del tiempo)**:
+- **Valorant ranked**: Setup optimizado para FPS competitivo con máxima performance
+- **League of Legends**: Configuration que permite multitasking con chat interaction
+- **Trending games**: Adaptación rápida a nuevos títulos populares
+- **Gaming collaborations**: Setup preparado para dual-streaming y torneos
+
+**Just Chatting Interactivo (35% del tiempo)**:
+- **Community interaction**: Audio y video optimizado para conversación natural
+- **Q&A sessions**: Setup que facilita lectura de chat y respuesta fluida
+- **React content**: Configuración para reacciones auténticas y expresivas
+- **Life updates**: Ambiente comfortable para contenido personal
+
+**Contenido de Variedad (25% del tiempo)**:
+- **Art streams**: Flexibilidad para mostrar proceso creativo
+- **Music sessions**: Audio setup optimizado para karaoke y listening parties
+- **Cooking streams**: Iluminación adaptable para diferentes actividades
+- **IRL content**: Configuración móvil cuando sea necesario
+
+### Comparación con Otros Streamers del Ecosistema
+
+#### vs Setup de ElRubius: Accesibilidad vs Elite
+
+**Filosofías Diferentes:**
+- **Cristinini**: Eficiencia presupuestaria sin sacrificar calidad profesional
+- **ElRubius**: Elite hardware para máximo performance sin restricciones
+- **Cristinini**: Focus en comunidad y engagement sobre production value
+- **ElRubius**: Espectáculo visual como parte integral del contenido
+
+#### vs Setup de AuronPlay: Consistencia vs Innovación
+
+**Approaches Complementarios:**
+- **Cristinini**: Estabilidad técnica para streams rutinarios y confiables
+- **AuronPlay**: Experimentación constante con nuevos formatos y tecnología
+- **Cristinini**: Aesthetic sutil que complementa sin overwhelming
+- **AuronPlay**: RGB agresivo como elemento central del branding
+
+### Lecciones del Éxito: Aplicando el Modelo Cristinini
+
+#### Principios Fundamentales del Setup Eficiente
+
+**1. Eficiencia Presupuestaria Inteligente**
+- Hardware que maximiza valor por euro invertido
+- Componentes que crecen con el canal sin obsolescencia rápida
+- Investment strategy que permite upgrades incrementales
+
+**2. Estética Balanceada y Profesional**
+- Iluminación que favorece sin ser artificial
+- Setup que se ve profesional sin ser intimidante
+- Configuración que invita a quedarse y participar
+
+**3. Simplicidad Operativa**
+- Tecnología que funciona confiablemente sin complicaciones
+- Workflow streamlined para concentrarse en contenido
+- Redundancia básica para evitar interrupciones técnicas
+
+### Evolución y Upgrade Path
+
+#### Roadmap de Crecimiento del Setup
+
+**Fase 1 - Setup Actual**: **Funcionalidad profesional completa**
+- Calidad técnica suficiente para cualquier oportunidad de crecimiento
+- Aesthetic atractivo que refleja personalidad auténtica
+- Confiabilidad total para streams programados sin stress técnico
+
+**Fase 2 - Expansión (6-12 meses)**: **€2,000-3,000 adicionales**
+- **Upgrade de audio**: Shure SM7B + Audio interface premium
+- **Monitor upgrade**: Monitor principal 32" 4K para productividad expandida
+- **Lighting expansion**: Sistema RGB más sofisticado para variedad visual
+
+**Fase 3 - Elite (12-24 meses)**: **€5,000-8,000 adicionales**
+- **PC upgrade**: RTX 4080/4090 para gaming 4K y streaming simultáneo
+- **Camera upgrade**: Sony A7 III para calidad cinematográfica absoluta
+- **Studio expansion**: Dedicated streaming room con tratamiento acústico
+
+### Conclusión: El Blueprint del Streaming Accesible y Profesional
+
+El **setup de Cristinini** representa la democratización del streaming profesional, demostrando que la excelencia técnica y la calidad de contenido no requieren inversiones masivas. Su configuración establece el estándar perfecto para streamers que buscan:
+
+**Profesionalismo Sin Barreras Económicas**
+- Calidad técnica que compete con setups de presupuesto 10x mayor
+- Configuración que permite monetización desde day one
+- Hardware que crece con el canal sin obsolescencia prematura
+
+**Autenticidad y Conexión Real**
+- Setup que complementa personalidad sin overwhelming technical complexity
+- Configuración que invita a participación y community building
+- Tecnología que sirve al contenido, nunca lo domina
+
+**Sostenibilidad a Largo Plazo**
+- Investment strategy que permite crecimiento orgánico
+- Componentes con upgrade path claro y value retention
+- Setup que mantiene relevancia técnica durante años
+
+### Aplicación Práctica: Roadmap Hacia el Éxito
+
+**Starter Setup (€1,000-1,500)**: Base sólida
+- **[PC gaming entry-level](https://www.amazon.es/s?k=PC%20gaming%20GTX%201660&tag=yostreamer-21)**
+- **[USB microphone](https://www.amazon.es/s?k=Blue%20Yeti%20USB&tag=yostreamer-21)**
+- **[1080p webcam](https://www.amazon.es/s?k=Logitech%20C920&tag=yostreamer-21)**
+- **[Basic lighting](https://www.amazon.es/s?k=ring%20light%20streaming&tag=yostreamer-21)**
+
+**Intermediate Setup (€3,000-5,000)**: Calidad profesional
+- **[Gaming PC capable](https://www.amazon.es/s?k=RTX%204060%20Ti&tag=yostreamer-21)**
+- **[Audio interface setup](https://www.amazon.es/s?k=Focusrite%20Scarlett%20Solo&tag=yostreamer-21)**
+- **[DSLR camera](https://www.amazon.es/s?k=Sony%20A6000&tag=yostreamer-21)**
+- **[Professional lighting](https://www.amazon.es/s?k=Elgato%20Key%20Light&tag=yostreamer-21)**
+
+**Advanced Setup (€8,000+)**: Nivel Cristinini completo
+- Implementación gradual del equipamiento completo optimizado
+- Configuración basada en métricas específicas de audiencia
+- Reinversión estratégica de ingresos para maximum ROI
+
+El **setup de Cristinini** no es solo aspiración, sino un blueprint práctico y alcanzable que demuestra cómo la combinación de planning estratégico, selección inteligente de componentes y focus en value over price puede crear una configuración que compite con setups de presupuesto masivo mientras mantiene accesibilidad para creators emergentes.
+
+*Para mantenerte actualizado con las últimas evoluciones y análisis de setups profesionales, explora nuestras guías de **[AuronPlay](https://yostreamer.com/setup/auronplay)**, **[ElRubius](https://yostreamer.com/setup/elrubius)** e **[Ibai Llanos](https://yostreamer.com/setup/ibai-llanos)**.*
+    `,
+    funFacts: [
+      "Setup optimizado para eficiencia presupuestaria sin sacrificar calidad",
+      "Iluminación balanceada que favorece sin ser artificial",
+      "Configuración diseñada para streams interactivos de larga duración",
+      "Hardware seleccionado para máximo valor por euro invertido",
+    ],
+    setup: [
+      {
+        name: "Audio",
+        items: [
+          { name: "Audio-Technica AT2020USB+", link: amazonSearchUrl("Audio-Technica AT2020USB"), note: "Micrófono condensador USB profesional" },
+          { name: "Focusrite Scarlett Solo 3rd Gen", link: amazonSearchUrl("Focusrite Scarlett Solo"), note: "Interface audio entry-level pro" },
+          { name: "Behringer MDX2600", link: amazonSearchUrl("Behringer MDX2600"), note: "Compresor/limitador accesible" },
+          { name: "Sony WH-1000XM4", link: amazonSearchUrl("Sony WH-1000XM4"), note: "Auriculares noise-cancelling" },
+        ],
+      },
+      {
+        name: "Video",
+        items: [
+          { name: "Sony A6100", link: amazonSearchUrl("Sony A6100"), note: "Cámara APS-C con flip screen" },
+          { name: "Sony E 35mm f/1.8 OSS", link: amazonSearchUrl("Sony E 35mm f1.8"), note: "Lente versátil con estabilización" },
+          { name: "Elgato Cam Link 4K", link: amazonSearchUrl("Elgato Cam Link 4K"), note: "Capturadora 4K plug-and-play" },
+        ],
+      },
+      {
+        name: "Iluminación",
+        items: [
+          { name: "Elgato Key Light Air x2", link: amazonSearchUrl("Elgato Key Light Air"), note: "Iluminación principal controlable" },
+          { name: "Neewer 18\" LED Ring Light", link: amazonSearchUrl("Neewer 18 LED Ring Light"), note: "Luz de relleno suave" },
+          { name: "Govee RGB Strip Lights", link: amazonSearchUrl("Govee RGB Strip Lights"), note: "Iluminación ambiental colorida" },
+          { name: "Nanoleaf Hexagon Panels", link: amazonSearchUrl("Nanoleaf Hexagon"), note: "Paneles decorativos interactivos" },
+        ],
+      },
+      {
+        name: "PC Gaming",
+        items: [
+          { name: "AMD Ryzen 7 7700X", link: amazonSearchUrl("AMD Ryzen 7 7700X"), note: "8 cores para gaming+streaming" },
+          { name: "NVIDIA RTX 4070 SUPER", link: amazonSearchUrl("NVIDIA RTX 4070 SUPER"), note: "Gaming 1440p + streaming HD" },
+          { name: "32GB DDR5-5600 RGB", link: amazonSearchUrl("Corsair DDR5 32GB"), note: "RAM rápida con iluminación" },
+          { name: "Samsung 980 PRO 2TB", link: amazonSearchUrl("Samsung 980 PRO 2TB"), note: "Storage NVMe ultrarrápido" },
+        ],
+      },
+      {
+        name: "Periféricos",
+        items: [
+          { name: "Corsair K70 RGB MK.2", link: amazonSearchUrl("Corsair K70 RGB MK2"), note: "Teclado mecánico premium" },
+          { name: "Logitech G Pro Wireless", link: amazonSearchUrl("Logitech G Pro Wireless"), note: "Ratón gaming inalámbrico" },
+          { name: "ASUS VG27AQL1A", link: amazonSearchUrl("ASUS VG27AQL1A"), note: "Monitor 27\" 1440p 170Hz" },
+          { name: "Stream Deck MK.2", link: amazonSearchUrl("Stream Deck MK2"), note: "Control de stream visual" },
         ],
       },
     ],
