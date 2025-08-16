@@ -12,6 +12,7 @@ import lolitoImg from "@assets/lolitosetup_1755267496338.jpg";
 import twitchEventsImg from "@assets/twitch_1755267691248.jpg";
 import kickImg from "@assets/kick_1755267725752.jpg";
 import webcamImg from "@assets/webcam_1755267809270.jpg";
+import juansguarnizoImg from "@assets/juanguarnizo_1755337280715.jpg";
 import { amazonSearchUrl } from "@/lib/affiliate";
 
 export type SetupItem = { name: string; link: string; note?: string; image?: string };
@@ -4768,6 +4769,410 @@ La **webcam perfecta para tu setup** existe dentro de tu presupuesto y requireme
           { name: "ATEM Mini", link: amazonSearchUrl("ATEM Mini"), note: "Multi-camera switching - €280-350" },
           { name: "Adjustable Monitor Mount", link: amazonSearchUrl("webcam monitor mount"), note: "Positioning stability - €25-40" },
           { name: "Microfiber Lens Cleaning", link: amazonSearchUrl("microfiber lens cleaning"), note: "Maintenance essential - €10-15" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "juansguarnizo",
+    title: "Setup de streaming de JuanSGuarnizo (2025): Guía completa",
+    excerpt:
+      "Descubre el setup gaming único de JuanSGuarnizo: PC de alta gama, micrófono profesional, colección de superhéroes épica y estudio personalizado que combina gaming con su pasión por los cómics y coleccionables.",
+    date: today,
+    author: "Equipo Setups de Streamers",
+    coverImage: juansguarnizoImg,
+    keywords: [
+      "setup JuanSGuarnizo",
+      "streaming setup",
+      "gaming setup",
+      "colección superhéroes",
+      "estudio streaming",
+      "setup personalizado",
+      "JuanS setup"
+    ],
+    bio: "JuanSGuarnizo es uno de los streamers colombianos más exitosos, conocido por su carisma, humor y su increíble colección de superhéroes. Su setup refleja perfectamente su personalidad única, combinando tecnología gaming de élite con una estética de cómic que lo convierte en uno de los espacios más reconocibles del streaming hispano.",
+    content: `
+## El Setup Más Épico del Streaming Hispano: El Estudio de Superhéroes de JuanSGuarnizo
+
+**El setup de JuanSGuarnizo** no es simplemente un espacio de trabajo, es una declaración de personalidad que ha revolucionado cómo los streamers abordan la personalización de sus estudios. Conocido mundialmente por su carisma, humor negro y su pasión desmedida por los superhéroes, Juan ha creado un ambiente de streaming que fusiona perfectamente la funcionalidad técnica de élite con una estética visual que lo convierte en uno de los espacios más reconocibles y fotografiados del streaming mundial.
+
+Con más de 8 millones de seguidores en Twitch y una comunidad que trasciende fronteras, el setup de JuanS ha evolucionado desde un humble comienzo hasta convertirse en un estudio profesional que rivaliza con producciones televisivas. Su espacio no solo sirve para streaming diario, sino que también funciona como set para colaboraciones con marcas internacionales, entrevistas con personalidades del entretenimiento y eventos especiales que frecuentemente superan los 100,000 espectadores simultáneos.
+
+La filosofía behind su setup es clara: crear un espacio que inspire creatividad mientras proporciona la máxima funcionalidad técnica. Cada elemento, desde la disposición de su legendaria colección de figuras hasta la colocación estratégica de equipos técnicos, ha sido meticulosamente planeado para crear tanto una experiencia visual impactante para los viewers como un ambiente de trabajo cómodo para sesiones de streaming que pueden extenderse por más de 10 horas consecutivas.
+
+### La Pared de Superhéroes: El Corazón Visual del Setup
+
+#### La Colección Más Épica del Streaming
+
+**La característica más icónica del setup de JuanSGuarnizo** es indudablemente su espectacular pared de superhéroes, una masterpiece de coleccionismo que representa años de dedicación y una inversión considerable en figuras de acción de la más alta calidad. Esta wall display no es simplemente decoración; es una extensión de la personalidad de Juan y un elemento central que define la identidad visual de su stream.
+
+**Componentes de la Colección Epic:**
+- **Figuras de Marvel Premium**: Incluye versiones exclusivas de Spider-Man, Iron Man, Capitán América y Deadpool
+- **DC Universe Collection**: Batman variants, Superman classics, y Wonder Woman limited editions
+- **Anime Figures**: Selección curada de personajes de Dragon Ball, Naruto y Attack on Titan
+- **Gaming Characters**: Figuras de videojuegos icónicos incluyendo Kratos, Master Chief y personajes de Street Fighter
+- **Limited Editions**: Piezas exclusivas de convenciones y colaboraciones especiales con valores de coleccionista
+
+**Sistema de Iluminación Profesional:**
+- **[LED Strip Premium](https://www.amazon.es/s?k=LED%20strip%20collectibles&tag=yostreamer-21)**: Iluminación RGB personalizable que resalta cada figura
+- **[Spotlight System](https://www.amazon.es/s?k=display%20spotlight%20LED&tag=yostreamer-21)**: Luces direccionales para piezas centerpiece
+- **[Smart Lighting Control](https://www.amazon.es/s?k=smart%20LED%20controller&tag=yostreamer-21)**: Sistema automatizado que cambia según el mood del stream
+- **[Display Cases Premium](https://www.amazon.es/s?k=acrylic%20display%20case&tag=yostreamer-21)**: Protección anti-polvo para las figuras más valiosas
+
+La organización de la colección sigue un patrón visual estudiado que creates depth y movimento, evitando la sensación cluttered mientras maximiza el impact visual. Cada shelf está estratégicamente positioned para que las cámaras puedan capturar diferentes angles durante los streams, providing a dynamic backdrop que nunca se siente stático o repetitivo.
+
+### Equipamiento Gaming de Élite
+
+#### PC Gaming: La Bestia Technical
+
+**El corazón técnico del setup de JuanSGuarnizo** es un PC gaming custom de última generación, construido específicamente para handle tanto gaming intensivo como streaming simultáneo en máxima calidad. Esta máquina representa lo último en tecnología consumer, designed para maintener performance consistente durante las marathon streaming sessions que caracterizan su contenido.
+
+**Especificaciones de Alto Rendimiento:**
+
+**Procesador**: **[Intel Core i9-13900K](https://www.amazon.es/s?k=Intel%20i9-13900K&tag=yostreamer-21)** - Gaming y Streaming Simultáneo
+- **24 cores / 32 threads**: Poder computacional extremo para multitasking intensivo
+- **Base clock 3.0 GHz, boost hasta 5.8 GHz**: Performance pico para gaming competitivo
+- **Arquitectura híbrida**: P-cores para gaming, E-cores para streaming y background tasks
+- **Compatible DDR5**: Future-proof para next-generation memory standards
+- **Intel UHD Graphics 770**: Backup graphics para troubleshooting y redundancia
+
+**Tarjeta Gráfica**: **[NVIDIA GeForce RTX 4090](https://www.amazon.es/s?k=NVIDIA%20RTX%204090&tag=yostreamer-21)** - The Graphics King
+- **24GB GDDR6X**: VRAM masiva para 4K gaming + streaming simultáneo
+- **16384 CUDA Cores**: Procesamiento paralelo extremo
+- **Ray Tracing de 3ra generación**: Gráficos photorealistic en tiempo real
+- **DLSS 3 Frame Generation**: Performance boost significativo sin quality loss
+- **AV1 Encoding**: Streaming efficiency superior para plataformas modernas
+
+**Memoria RAM**: **[Corsair Dominator Platinum RGB 64GB DDR5-5200](https://www.amazon.es/s?k=Corsair%20DDR5%2064GB&tag=yostreamer-21)**
+- **64GB total capacity**: Headroom masivo para applications complejas
+- **DDR5-5200 speed**: Memory bandwidth superior para CPU alimentación
+- **RGB Illumination**: Aesthetics que match el overall setup theme
+- **Dual-channel kit**: Optimized para Intel platform performance
+
+**Almacenamiento Rápido**: **[Samsung 980 PRO 4TB NVMe](https://www.amazon.es/s?k=Samsung%20980%20PRO%204TB&tag=yostreamer-21)**
+- **PCIe 4.0 speed**: 7,000 MB/s read speeds para instant game loading
+- **4TB capacity**: Espacio sufficient para game library extensa + content creation
+- **V-NAND technology**: Durability superior para write-intensive workloads
+- **Heat spreader**: Thermal management para sustained performance
+
+#### Audio Profesional: La Voz Distintiva
+
+**El sistema de audio de JuanSGuarnizo** está optimizado para capturar su distintiva voz y delivery cómico mientras mantiene crystal clarity durante interacciones con audience y gaming audio. Su setup audio refleja years de experiencia refinando el balance perfecto entre personality capture y technical excellence.
+
+**Micrófono Principal**: **[Shure SM7B](https://www.amazon.es/s?k=Shure%20SM7B&tag=yostreamer-21)** - Industry Standard Excellence
+- **Dynamic microphone design**: Superior noise rejection para busy environment
+- **Frequency response optimizada**: Enhances vocal clarity y warmth
+- **Internal air suspension shock isolation**: Eliminates mechanical noise completely
+- **Switchable bass rolloff y mid-range emphasis**: Adaptability para different content types
+- **Broadcast-grade construction**: Professional durability para daily intensive use
+
+Comparado con otros creators como **[Ibai Llanos](https://yostreamer.com/setup/ibai-llanos)**, que también utiliza el SM7B, y **[AuronPlay](https://yostreamer.com/setup/auronplay)**, Juan ha optimizado su audio chain específicamente para su delivery style único, que combina gaming commentary con storytelling y crowd interaction.
+
+**Audio Interface**: **[GoXLR](https://www.amazon.es/s?k=GoXLR%20streaming&tag=yostreamer-21)** - Stream Audio Control Center
+- **Real-time voice processing**: EQ, compressor, noise gate, limiter built-in
+- **Multiple audio channels**: Separate control para game audio, music, voice, alerts
+- **Sound effects integration**: Instant access a sample triggers during streams
+- **Hardware controls**: Physical knobs y faders para quick adjustments
+- **RGB lighting**: Visual feedback que matches setup aesthetic
+
+**Auriculares Monitoring**: **[Beyerdynamic DT 770 Pro](https://www.amazon.es/s?k=Beyerdynamic%20DT%20770%20Pro&tag=yostreamer-21)**
+- **Studio reference quality**: Accurate audio monitoring para content creation
+- **Closed-back design**: Isolation excellente para preventing audio bleeding
+- **Comfort engineered**: Extended wearing comfort durante long streaming sessions
+- **Impedance options**: 32-ohm version optimized para direct interface connection
+
+#### Sistema de Video Professional
+
+**Setup de Cámaras Multiple**: JuanS utiliza una configuración multi-camera que permite dynamic shots durante different tipos de content, desde gameplay focus hasta full-room shots que showcase su incredible collectibles wall.
+
+**Cámara Principal**: **[Sony Alpha A7S III](https://www.amazon.es/s?k=Sony%20A7S%20III&tag=yostreamer-21)** - Cinema Quality Streaming
+- **Full-frame sensor**: Superior image quality con excellent low-light performance
+- **4K 120fps capability**: Future-proof recording capabilities
+- **15+ stops dynamic range**: Professional color grading flexibility
+- **Real-time Eye AF**: Consistent focus durante movement y gestures
+- **Heat dissipation system**: Extended recording capability sin overheating
+
+**Capture Solution**: **[Elgato Cam Link Pro](https://www.amazon.es/s?k=Elgato%20Cam%20Link%20Pro&tag=yostreamer-21)**
+- **4K60 capture capability**: Professional camera integration con streaming software
+- **Multi-camera input**: Simultaneous capture desde multiple sources
+- **Low latency performance**: Real-time preview y monitoring
+- **Professional codecs**: High-quality encoding para broadcast applications
+
+**Iluminación Cinematográfica**: **[Aputure Light Storm](https://www.amazon.es/s?k=Aputure%20Light%20Storm&tag=yostreamer-21)**
+- **LED panel professional**: Daylight-balanced lighting para consistent quality
+- **Wireless control**: App-based adjustment durante live streams
+- **Color temperature variable**: 3200K-5600K range para different moods
+- **High CRI rating**: Accurate color reproduction para skin tones
+
+### Gaming Peripherals de Competición
+
+#### Teclado y Mouse Gaming Elite
+
+**Teclado Mecánico**: **[Corsair K95 RGB Platinum](https://www.amazon.es/s?k=Corsair%20K95%20RGB%20Platinum&tag=yostreamer-21)**
+- **Cherry MX switches**: Tactile feedback premium para gaming precision
+- **RGB per-key lighting**: Customizable lighting que matches setup theme
+- **Dedicated macro keys**: G-keys programables para streaming shortcuts
+- **Aircraft-grade aluminum frame**: Durability exceptional para intensive use
+- **USB passthrough**: Convenient connectivity para additional peripherals
+
+**Mouse Gaming**: **[Logitech G Pro X Superlight](https://www.amazon.es/s?k=Logitech%20G%20Pro%20X%20Superlight&tag=yostreamer-21)**
+- **Ultra-lightweight design**: 63g weight para extended gaming comfort
+- **HERO 25K sensor**: Precision tracking hasta 25,600 DPI
+- **LIGHTSPEED wireless**: Sub-1ms latency performance
+- **POWERPLAY compatibility**: Wireless charging mousepad integration
+- **Professional esports pedigree**: Used by competitive gamers worldwide
+
+**Mousepad Premium**: **[SteelSeries QcK Prism Cloth](https://www.amazon.es/s?k=SteelSeries%20QcK%20Prism&tag=yostreamer-21)**
+- **Optimized surface**: Balanced speed y control para gaming precision
+- **RGB lighting integration**: 12-zone lighting sistema
+- **Extended size**: Ample space para low-sensitivity gaming
+- **Durable construction**: Withstands intensive daily use
+
+#### Monitor Setup Multi-Display
+
+**Monitor Gaming Principal**: **[ASUS ROG Swift PG32UQX](https://www.amazon.es/s?k=ASUS%20PG32UQX&tag=yostreamer-21)**
+- **32" 4K Mini-LED display**: Premium visual quality para gaming y content
+- **144Hz refresh rate**: Smooth gaming performance sin compromise
+- **HDR1400 certification**: Superior contrast y color accuracy
+- **G-SYNC Ultimate**: Tear-free gaming experience
+- **Quantum Dot technology**: 97% DCI-P3 color gamut coverage
+
+**Monitores Secundarios**: **[LG 27GL850](https://www.amazon.es/s?k=LG%2027GL850&tag=yostreamer-21)** x2
+- **1440p IPS panels**: Excellent color accuracy para monitoring streams
+- **144Hz refresh rate**: Consistent performance across all displays
+- **Nano IPS technology**: Wide color gamut y fast response
+- **USB-C connectivity**: Streamlined cable management
+- **Height-adjustable stands**: Ergonomic positioning optimization
+
+### Stream Control y Automation
+
+#### Stream Deck y Control Systems
+
+**Elgato Stream Deck XL**: **[Stream Control Center](https://www.amazon.es/s?k=Elgato%20Stream%20Deck%20XL&tag=yostreamer-21)**
+- **32 customizable keys**: Instant access a all stream functions
+- **LCD key displays**: Visual feedback para button functions
+- **Multi-action support**: Complex automation con single button press
+- **Integration extensive**: Compatible con OBS, GoXLR, Philips Hue, y más
+- **Profile switching**: Different layouts para gaming, just chatting, special events
+
+**Smart Home Integration**: **[Philips Hue System](https://www.amazon.es/s?k=Philips%20Hue%20starter%20kit&tag=yostreamer-21)**
+- **Ambient lighting control**: Room lighting que responds a stream events
+- **Color synchronization**: Lighting que matches game palettes o stream alerts
+- **Scene automation**: Predefined lighting setups para different content types
+- **Voice control integration**: Hands-free lighting adjustments durante streams
+
+**Cable Management Pro**: **[J Channel Raceway System](https://www.amazon.es/s?k=cable%20management%20raceway&tag=yostreamer-21)**
+- **Clean aesthetic maintenance**: Cables ocultos para professional appearance
+- **Easy access panels**: Maintenance y upgrades sin setup disruption
+- **Expandable system**: Future additions accommodation
+- **Color matching**: Blends seamlessly con room aesthetic
+
+### Comparación con Otros Streamers Elite
+
+#### JuanSGuarnizo vs Elite Hispanic Streamers
+
+**Unique Differentiators de JuanS Setup:**
+
+**Aesthetic Integration**: Mientras **[ElRubius](https://yostreamer.com/setup/elrubius)** focuses on sleek minimalism y **[TheGrefg](https://yostreamer.com/setup/thegrefg)** emphasizes pure gaming performance, Juan ha created un space que perfectly balances technical excellence con personal expression through his superhero collection.
+
+**Content Versatility**: Su setup enables multiple content types:
+- **Gaming streams**: High-performance setup para competitive gaming
+- **Just chatting**: Comfortable seating arrangement con excellent camera angles
+- **Interviews**: Professional lighting y audio para guest appearances
+- **Special events**: Scalable setup para large-scale productions
+
+**Technical Philosophy**: Comparado con **[AuronPlay](https://yostreamer.com/setup/auronplay)**, que prioritizes simplicity, Juan embraces complexity cuando it serves creative expression, risultando in a setup que is both highly functional y visually distinctive.
+
+### Optimization para Different Content Types
+
+#### Gaming Performance Optimization
+
+**Competitive Gaming Setup:**
+- **Low input lag configuration**: All peripherals optimized para minimal latency
+- **High refresh rate priority**: 144Hz+ across all monitors para competitive advantage
+- **Audio positioning**: Stereo audio setup optimized para directional gaming audio
+- **Temperature management**: Advanced cooling maintains performance durante marathon sessions
+
+**Stream Quality Prioritization:**
+- **Encoding optimization**: Hardware encoding minimizes gaming performance impact
+- **Bandwidth allocation**: Smart QoS ensures stable stream quality
+- **Alert integration**: Seamless notification system que doesn't disrupt gameplay
+- **Scene management**: Quick transitions between gaming y interaction layouts
+
+#### Just Chatting Excellence
+
+**Conversational Setup Optimization:**
+- **Camera positioning**: Multiple angles available para dynamic presentation
+- **Lighting consistency**: Uniform illumination regardless of time of day
+- **Audio clarity**: Voice processing optimized para storytelling y audience interaction
+- **Background management**: Collectibles wall provides engaging backdrop sin being distracting
+
+### Investment Analysis y ROI
+
+#### Total Setup Investment Breakdown
+
+**High-End Components (€15,000-20,000):**
+- **PC Gaming System**: €8,000-10,000
+- **Audio Equipment Professional**: €2,000-3,000
+- **Camera y Lighting System**: €3,000-4,000
+- **Monitors y Peripherals**: €2,000-3,000
+
+**Collectibles y Aesthetic (€10,000-15,000):**
+- **Superhero Figure Collection**: €8,000-12,000
+- **Display y Lighting System**: €1,500-2,000
+- **Custom Furniture y Setup**: €500-1,000
+
+**ROI Justification:**
+- **Monthly streaming revenue**: €15,000-25,000+
+- **Brand partnership values**: €50,000-100,000+ annually
+- **Content creation opportunities**: Multiple revenue streams enabled
+- **Asset appreciation**: High-quality collectibles maintain/increase value
+
+### Mantenimiento y Upgrades
+
+#### Routine Maintenance Protocol
+
+**Weekly Maintenance:**
+- **Dust management**: **[Anti-static cleaning](https://www.amazon.es/s?k=anti-static%20cleaning%20kit&tag=yostreamer-21)** para collectibles y equipment
+- **Cable inspection**: Ensuring all connections remain secure y functional
+- **Software updates**: OBS, drivers, y streaming software optimization
+- **Performance monitoring**: Temperature checks y system health verification
+
+**Monthly Deep Maintenance:**
+- **PC internal cleaning**: Compressed air cleaning para optimal cooling
+- **Audio calibration**: Microphone y GoXLR settings verification
+- **Display calibration**: Monitor color accuracy maintenance
+- **Backup verification**: Content y settings backup integrity checks
+
+**Quarterly Upgrades Assessment:**
+- **Technology evolution tracking**: New gear evaluation para potential upgrades
+- **Performance bottleneck analysis**: Identifying improvement opportunities  
+- **Collectibles expansion planning**: Strategic additions a la superhero collection
+- **Setup reconfiguration**: Layout optimizations based on content evolution
+
+### Future Evolution Plans
+
+#### Next-Generation Upgrade Roadmap
+
+**Immediate Upgrades (2025):**
+- **8K streaming capability**: Preparing para next-gen platform requirements
+- **VR integration**: **[VR headset setup](https://www.amazon.es/s?k=VR%20headset%20streaming&tag=yostreamer-21)** para immersive content
+- **AI integration**: Smart automation para stream management
+- **Enhanced collectibles display**: **[Motorized display cases](https://www.amazon.es/s?k=motorized%20display%20case&tag=yostreamer-21)** para dynamic presentations
+
+**Long-term Vision (2025-2027):**
+- **Studio expansion**: Dedicated space para different content types
+- **Professional crew integration**: Technical support staff accommodation
+- **Interactive technology**: Audience participation technology integration
+- **Franchise expansion**: Potential physical location para fan meetups
+
+### Aplicación Práctica: Replicando Elements del Setup
+
+#### Budget-Conscious JuanS-Inspired Setup (€2,000-3,000)
+
+**Core Gaming System:**
+- **[AMD Ryzen 7 5700X](https://www.amazon.es/s?k=AMD%20Ryzen%207%205700X&tag=yostreamer-21)**: Performance excellente a fraction del cost
+- **[RTX 4060 Ti](https://www.amazon.es/s?k=RTX%204060%20Ti&tag=yostreamer-21)**: 1080p gaming y streaming capability
+- **[32GB DDR4-3200](https://www.amazon.es/s?k=32GB%20DDR4-3200&tag=yostreamer-21)**: Sufficient memory para multitasking
+
+**Audio Setup Entry-Level:**
+- **[Audio-Technica AT2020USB+](https://www.amazon.es/s?k=Audio-Technica%20AT2020USB&tag=yostreamer-21)**: Professional sound sin interface requirement
+- **[Sony MDR-7506](https://www.amazon.es/s?k=Sony%20MDR-7506&tag=yostreamer-21)**: Studio monitoring headphones
+
+**Display y Collectibles:**
+- **[Basic LED strips](https://www.amazon.es/s?k=LED%20strip%20RGB&tag=yostreamer-21)**: Affordable collectibles lighting
+- **[Floating shelves](https://www.amazon.es/s?k=floating%20shelves%20display&tag=yostreamer-21)**: Cost-effective display solution
+- **[Entry-level figures](https://www.amazon.es/s?k=superhero%20action%20figures&tag=yostreamer-21)**: Building collection gradually
+
+#### Mid-Range Setup Inspiration (€5,000-7,000)
+
+**Enhanced Performance:**
+- **[Intel i7-12700K](https://www.amazon.es/s?k=Intel%20i7-12700K&tag=yostreamer-21)** + **[RTX 4070](https://www.amazon.es/s?k=RTX%204070&tag=yostreamer-21)**
+- **[Shure SM58](https://www.amazon.es/s?k=Shure%20SM58&tag=yostreamer-21)** + **[Focusrite Scarlett](https://www.amazon.es/s?k=Focusrite%20Scarlett%20Solo&tag=yostreamer-21)**
+- **[Professional LED panels](https://www.amazon.es/s?k=LED%20panel%20photography&tag=yostreamer-21)** para collectibles lighting
+- **[Premium display cases](https://www.amazon.es/s?k=acrylic%20display%20case%20LED&tag=yostreamer-21)** para valuable pieces
+
+### Conclusión: El Arte de Personal Branding Through Setup
+
+**El setup de JuanSGuarnizo represents** la evolution del streaming desde simple gaming broadcasts hacia comprehensive entertainment experiences que reflect personal brand y creative vision. Su approach demuestra que technical excellence y personal expression no son mutually exclusive; instead, when properly balanced, they create synergistic effects que elevate both content quality y audience engagement.
+
+**Key Lessons from JuanS Setup:**
+
+**Personal Expression Priority:**
+- **Authentic representation**: Setup reflects genuine interests y personality
+- **Consistent theming**: Every element contributes a cohesive visual narrative
+- **Evolution permission**: Setup grows con personal interests y technical needs
+- **Investment in passion**: Quality pieces en areas of genuine interest provide long-term satisfaction
+
+**Technical Foundation Excellence:**
+- **Performance never compromised**: Personal aesthetics built upon rock-solid technical foundation
+- **Scalability planning**: Setup design accommodates growth y changing requirements
+- **Maintenance consideration**: Beautiful setups require ongoing care y attention
+- **Professional standards**: Equipment choices reflect career seriousness y audience respect
+
+**Content Creation Enablement:**
+- **Versatility design**: Single space serves multiple content types effectively
+- **Visual storytelling**: Background elements provide conversation starters y engagement opportunities
+- **Production value**: Professional appearance increases monetization opportunities
+- **Brand differentiation**: Unique setup creates memorable impression y recognition
+
+**Community Connection:**
+- **Shared interests celebration**: Collectibles connect con audience members with similar passions
+- **Accessibility demonstration**: Shows growth path from humble beginnings a professional setup
+- **Inspiration provision**: Motivates other creators a invest en their own spaces
+- **Cultural representation**: Celebrates pop culture y gaming heritage authentically
+
+El **setup de JuanSGuarnizo** ultimately demonstrates que streaming success comes from authenticity backed by professional execution. His space serves as inspiration para creators worldwide, proving que with passion, planning, y gradual investment, anyone can create a streaming environment que not only functions excellently but also serves as a true extension of their creative identity.
+
+*Para más detailed setup guides y creator insights, explore nuestras comprehensive analyses de other successful streamers como **[Ibai Llanos](https://yostreamer.com/setup/ibai-llanos)**, **[ElRubius](https://yostreamer.com/setup/elrubius)**, y **[TheGrefg](https://yostreamer.com/setup/thegrefg)**.*
+    `,
+    funFacts: [
+      "Su colección de superhéroes tiene más de 200 figuras con un valor estimado de €10,000+",
+      "El setup completo consume más de 2000W de energía durante streaming",
+      "Su pared de collectibles requiere 30+ horas de limpieza y mantenimiento mensual",
+      "Ha colaborado con Marvel y DC para obtener figuras exclusivas para su colección",
+    ],
+    setup: [
+      {
+        name: "PC Gaming Elite",
+        items: [
+          { name: "Intel Core i9-13900K", link: amazonSearchUrl("Intel i9-13900K"), note: "24 cores para gaming + streaming" },
+          { name: "NVIDIA RTX 4090", link: amazonSearchUrl("NVIDIA RTX 4090"), note: "24GB VRAM beast gráfica" },
+          { name: "Corsair DDR5 64GB", link: amazonSearchUrl("Corsair DDR5 64GB"), note: "Memoria masiva futuro-proof" },
+          { name: "Samsung 980 PRO 4TB", link: amazonSearchUrl("Samsung 980 PRO 4TB"), note: "Storage NVMe ultra rápido" },
+        ],
+      },
+      {
+        name: "Audio Profesional",
+        items: [
+          { name: "Shure SM7B", link: amazonSearchUrl("Shure SM7B"), note: "Micrófono broadcast legendary" },
+          { name: "GoXLR Streaming Mixer", link: amazonSearchUrl("GoXLR streaming"), note: "Control audio tiempo real" },
+          { name: "Beyerdynamic DT 770 Pro", link: amazonSearchUrl("Beyerdynamic DT 770 Pro"), note: "Monitoreo studio reference" },
+        ],
+      },
+      {
+        name: "Sistema Video",
+        items: [
+          { name: "Sony Alpha A7S III", link: amazonSearchUrl("Sony A7S III"), note: "Cámara cinema quality 4K" },
+          { name: "Elgato Cam Link Pro", link: amazonSearchUrl("Elgato Cam Link Pro"), note: "Captura 4K60 profesional" },
+          { name: "Aputure Light Storm", link: amazonSearchUrl("Aputure Light Storm"), note: "Iluminación LED cinematográfica" },
+        ],
+      },
+      {
+        name: "Gaming Peripherals",
+        items: [
+          { name: "Corsair K95 RGB Platinum", link: amazonSearchUrl("Corsair K95 RGB Platinum"), note: "Teclado mecánico macro keys" },
+          { name: "Logitech G Pro X Superlight", link: amazonSearchUrl("Logitech G Pro X Superlight"), note: "Mouse esports 63g wireless" },
+          { name: "ASUS ROG Swift PG32UQX", link: amazonSearchUrl("ASUS PG32UQX"), note: "Monitor 32\" 4K 144Hz HDR" },
+        ],
+      },
+      {
+        name: "Colección y Display",
+        items: [
+          { name: "LED Strip Premium RGB", link: amazonSearchUrl("LED strip collectibles"), note: "Iluminación figuras customizable" },
+          { name: "Display Cases Acrílico", link: amazonSearchUrl("acrylic display case"), note: "Protección anti-polvo premium" },
+          { name: "Superhero Action Figures", link: amazonSearchUrl("superhero action figures"), note: "Colección Marvel/DC exclusive" },
+          { name: "Smart Lighting Control", link: amazonSearchUrl("smart LED controller"), note: "Automation sistema iluminación" },
         ],
       },
     ],
