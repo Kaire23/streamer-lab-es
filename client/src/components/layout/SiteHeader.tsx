@@ -12,6 +12,7 @@ const SiteHeader = () => {
         </Link>
         <nav aria-label="Main" className="flex items-center gap-4">
           <Link to="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Inicio</Link>
+          <Link to="/seo-dashboard" className="text-sm text-muted-foreground hover:text-foreground transition-colors">SEO</Link>
           <Button asChild variant="hero" size="sm">
             <a href="#newsletter" aria-label="Suscríbete a novedades">Suscríbete</a>
           </Button>

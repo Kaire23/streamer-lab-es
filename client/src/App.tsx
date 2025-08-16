@@ -13,6 +13,7 @@ const PostPage = lazy(() => import("./pages/PostPage"));
 
 const Article = lazy(() => import("./pages/Article"));
 const Unsubscribed = lazy(() => import("./pages/Unsubscribed"));
+const SEODashboard = lazy(() => import("./pages/SEODashboard"));
 
 const queryClient = new QueryClient();
 
@@ -58,6 +59,7 @@ const App = () => (
 
                 <Route path="/article/:slug" component={Article} />
                 <Route path="/unsubscribed" component={Unsubscribed} />
+                <Route path="/seo-dashboard" component={SEODashboard} />
                 <Route path="/:rest*" component={NotFound} />
               </Suspense>
             </Layout>
