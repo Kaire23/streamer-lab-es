@@ -15,6 +15,7 @@ import webcamImg from "@assets/webcam_1755267809270.jpg";
 import juansguarnizoImg from "@assets/juanguarnizo_1755337280715.jpg";
 import elmarianaImg from "@assets/elmariana_1755428517709.jpg";
 import ariGameplaysImg from "@assets/ari_1755498460119.jpg";
+import riversGgImg from "@assets/rivers_1755623084720.jpg";
 import { amazonSearchUrl } from "@/lib/affiliate";
 
 export type SetupItem = { name: string; link: string; note?: string; image?: string };
@@ -6082,6 +6083,405 @@ El **setup de AriGameplays** ultimately proves que el future del gaming y stream
           { name: "Sony Alpha A7S III", link: amazonSearchUrl("Sony A7S III"), note: "Cinema quality streaming camera" },
           { name: "Elgato Cam Link Pro", link: amazonSearchUrl("Elgato Cam Link Pro"), note: "Multi-camera capture solution" },
           { name: "Elgato Stream Deck XL", link: amazonSearchUrl("Elgato Stream Deck XL"), note: "32-key command center supreme" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "rivers-gg",
+    title: "Setup de streaming de Rivers_gg (2025): Guía completa del gaming profesional",
+    excerpt:
+      "Descubre el setup gaming premium de Rivers_gg: PC de élite, micrófono profesional Shure, iluminación RGB purple espectacular, silla gaming premium y estudio personalizado que define la excelencia en streaming femenino argentino.",
+    date: today,
+    author: "Equipo Setups de Streamers",
+    coverImage: riversGgImg,
+    keywords: [
+      "setup Rivers_gg",
+      "streaming setup argentina",
+      "gaming setup profesional",
+      "streamer argentina setup",
+      "iluminación RGB purple",
+      "micrófono streaming",
+      "Rivers gaming"
+    ],
+    bio: "Rivers_gg es una de las streamers argentinas más influyentes, conocida por su contenido gaming diverso, interacción excepcional con la comunidad y su profesionalismo en streaming. Su setup representa la evolución del streaming femenino en Latinoamérica, combinando tecnología de élite con una estética visual única que ha inspirado a miles de creadoras de contenido.",
+    content: `
+## La Reina del Streaming Argentino: El Setup Profesional de Rivers_gg
+
+**El setup de Rivers_gg** representa la culminación de años de experiencia refinando la configuración perfecta para streaming profesional. Como una de las streamers más respetadas y exitosas de Argentina, Rivers ha creado un ambiente de streaming que fusiona perfectamente funcionalidad técnica superior con una estética visual stunning que se ha convertido en referente para streamers de toda Latinoamérica.
+
+Con una comunidad extremadamente activa y leal que supera los 2 millones de seguidores combinados, el setup de Rivers_gg ha evolucionado desde configuraciones más básicas hasta convertirse en un estudio profesional que garantiza calidad broadcast durante sesiones de streaming que pueden extenderse por más de 10 horas consecutivas. Su espacio no solo sirve para streaming diario, sino que también funciona como centro de comando para colaboraciones con otros creators, eventos especiales, y contenido diverso que va desde gaming competitivo hasta just chatting íntimo con su comunidad.
+
+La filosofía detrás de su setup refleja su approach profesional al content creation: crear un espacio que maximice tanto la calidad técnica como la comodidad personal, mientras mantiene una identidad visual coherente que refuerza su marca personal. Cada elemento, desde la selección meticulosa de audio equipment hasta la implementación de lighting systems que adaptan el mood según el contenido, ha sido cuidadosamente elegido para optimizar la experiencia tanto para ella como para sus viewers.
+
+### Audio Professional: La Base del Éxito en Streaming
+
+#### Micrófono Elite: Shure SM7B - Broadcasting Excellence
+
+**El corazón del audio setup de Rivers_gg** es su **[micrófono Shure SM7B](https://www.amazon.es/s?k=Shure%20SM7B&tag=yostreamer-21)**, el mismo modelo utilizado por los streamers más exitosos del mundo incluyendo **[Ibai Llanos](https://yostreamer.com/setup/ibai-llanos)** y **[JuanSGuarnizo](https://yostreamer.com/setup/juansguarnizo)**. Este micrófono dinámico representa el gold standard en broadcasting profesional, proporcionando una calidad de audio excepcional que es crucial para el tipo de contenido interactivo que caracteriza sus streams.
+
+**Características técnicas que hacen único al SM7B:**
+- **Patrón polar cardioide optimizado**: Captura vocal frontal mientras rechaza ruido ambiente lateral
+- **Respuesta de frecuencia vocal**: Realza frecuencias críticas (50Hz-20kHz) para claridad excepcional
+- **Sistema anti-vibración interno**: Eliminación completa de handling noise y mechanical interference
+- **Filtros internos switchable**: Bass rolloff y presence boost para adaptabilidad vocal
+- **Construcción broadcast-grade**: Durabilidad profesional para uso diario intensivo
+
+**Audio Interface Professional**: **[Focusrite Scarlett Solo](https://www.amazon.es/s?k=Focusrite%20Scarlett%20Solo&tag=yostreamer-21)**
+- **Pre-amp quality**: Clean gain sin noise artifacts hasta 60dB
+- **USB bus powered**: Simplicity sin external power requirements
+- **Direct monitoring**: Zero-latency headphone monitoring durante recording
+- **Compact design**: Space-efficient solution para desktop setups
+- **Studio-grade conversion**: 24-bit/192kHz resolution para maximum fidelity
+
+**Boom Arm Professional**: **[RODE PSA1](https://www.amazon.es/s?k=RODE%20PSA1&tag=yostreamer-21)**
+- **360-degree rotation**: Complete positioning freedom para optimal placement
+- **Spring-loaded design**: Smooth adjustment sin tools required
+- **Heavy-duty construction**: Support stable para SM7B weight
+- **Cable management integrated**: Clean aesthetic con hidden wiring
+- **Desk clamp robust**: Secure mounting sin damage a furniture
+
+### Gaming Hardware de Élite
+
+#### PC Gaming: La Powerhouse Argentina
+
+**El technical foundation del setup de Rivers_gg** es un PC gaming custom de última generación, specifically built para handle demanding modern games mientras simultaneously streaming en maximum quality. Esta configuration represents cutting-edge consumer technology, designed para maintain consistent performance durante marathon streaming sessions que characterize professional content creation.
+
+**High-Performance Specifications:**
+
+**Processor Elite**: **[AMD Ryzen 9 7900X](https://www.amazon.es/s?k=AMD%20Ryzen%209%207900X&tag=yostreamer-21)** - Multi-Core Gaming Beast
+- **12 cores / 24 threads**: Massive computational power para gaming + streaming simultáneo
+- **Base clock 4.7 GHz, boost hasta 5.6 GHz**: Peak performance para competitive gaming
+- **Zen 4 architecture**: Industry-leading efficiency y performance per watt
+- **Compatible DDR5**: Future-proof memory support para next-generation applications
+- **105W TDP**: Efficient power consumption para extended gaming sessions
+
+**Graphics Card Supreme**: **[NVIDIA GeForce RTX 4080](https://www.amazon.es/s?k=NVIDIA%20RTX%204080&tag=yostreamer-21)** - 4K Gaming Excellence
+- **16GB GDDR6X VRAM**: Massive buffer para 4K gaming + streaming + content creation
+- **9728 CUDA Cores**: Parallel processing superiority para gaming y encoding
+- **3rd Generation Ray Tracing**: Photorealistic graphics en tiempo real
+- **DLSS 3 con Frame Generation**: Performance boost masivo sin visual compromise
+- **AV1 Encoding**: Superior streaming efficiency para Twitch y YouTube platforms
+
+**Memory High-Speed**: **[Corsair Vengeance RGB 32GB DDR5-5600](https://www.amazon.es/s?k=Corsair%20DDR5%2032GB%205600&tag=yostreamer-21)**
+- **32GB dual-channel**: Optimal capacity para gaming + streaming + multitasking
+- **DDR5-5600 speed**: High bandwidth optimization para AMD Ryzen 7000 series
+- **RGB lighting integration**: Aesthetic synchronization con setup theme
+- **Low-latency timings**: Performance tuning para competitive gaming advantage
+
+**Storage Ultra-Fast**: **[Samsung 980 PRO 2TB NVMe](https://www.amazon.es/s?k=Samsung%20980%20PRO%202TB&tag=yostreamer-21)**
+- **PCIe 4.0 speed**: 7,000 MB/s read speeds para instant game loading
+- **2TB capacity**: Sufficient space para modern game library + content creation
+- **V-NAND technology**: Superior reliability para intensive daily workloads
+- **Integrated heat spreader**: Thermal management para sustained performance
+
+#### Gaming Peripherals Professional
+
+**Gaming Chair Elite**: **[ASUS ROG Chariot Core](https://www.amazon.es/s?k=ASUS%20ROG%20Chariot%20Core&tag=yostreamer-21)**
+- **Ergonomic design optimized**: Gaming-specific comfort para extended sessions
+- **Adjustable lumbar support**: Spinal health maintenance durante long streams
+- **4D armrests**: Complete positioning customization para gaming comfort
+- **Memory foam cushioning**: Pressure relief para marathon gaming sessions
+- **Racing-inspired aesthetic**: Visual appeal que matches gaming setup theme
+
+Comparado con otros top streamers como **[AriGameplays](https://yostreamer.com/setup/arigameplays)** que utiliza Herman Miller premium chairs, y **[ElMariana](https://yostreamer.com/setup/elmariana)** con su aesthetic focus, Rivers ha chosen un balance entre gaming performance y professional comfort que reflects su practical approach al streaming.
+
+**Mechanical Keyboard**: **[Corsair K70 RGB MK.2](https://www.amazon.es/s?k=Corsair%20K70%20RGB%20MK2&tag=yostreamer-21)**
+- **Cherry MX Red switches**: Linear actuation optimized para gaming speed
+- **Per-key RGB lighting**: Complete customization matching setup aesthetic
+- **Aircraft-grade aluminum frame**: Premium durability para intensive daily use
+- **Dedicated media controls**: Quick audio adjustment durante live streams
+- **USB passthrough**: Convenient connectivity para additional peripherals
+
+**Gaming Mouse Precision**: **[Logitech G Pro Wireless](https://www.amazon.es/s?k=Logitech%20G%20Pro%20Wireless&tag=yostreamer-21)**
+- **Ultra-lightweight 80g design**: Extended gaming comfort sin hand fatigue
+- **HERO 25K sensor**: Precision tracking hasta 25,600 DPI
+- **LIGHTSPEED wireless**: Sub-1ms latency performance
+- **60+ hour battery life**: Extended use sin charging interruption
+- **Ambidextrous design**: Comfort optimization para any hand preference
+
+### Iluminación RGB Professional
+
+#### Sistema de Lighting que Define el Aesthetic
+
+**La signature visual del setup de Rivers_gg** es su sophisticated RGB lighting system que creates una atmospheric purple/pink que se ha convertido en su trademark visual. Esta lighting no es purely aesthetic; funciona como functional element que enhances video quality mientras creates psychological comfort durante extended streaming sessions.
+
+**RGB Ecosystem Components:**
+
+**Ambient Lighting Principal**: **[Nanoleaf Light Panels](https://www.amazon.es/s?k=Nanoleaf%20Light%20Panels&tag=yostreamer-21)**
+- **Modular triangle panels**: Customizable geometric patterns que create dynamic backdrops
+- **16+ million colors**: Complete spectrum control para mood adaptation
+- **Music sync capability**: Lighting que responds to audio input para immersive experience
+- **App control integration**: Smartphone management para easy adjustments
+- **Scene automation**: Preset configurations para different content types
+
+**Strip Lighting System**: **[Philips Hue Lightstrip Plus](https://www.amazon.es/s?k=Philips%20Hue%20Lightstrip%20Plus&tag=yostreamer-21)**
+- **Behind monitor placement**: Bias lighting que reduces eye strain durante extended use
+- **Sync capability**: Color matching con on-screen content para immersion
+- **Voice control compatible**: Hands-free adjustment durante live streaming
+- **Extendable design**: Expandable system para future setup evolution
+- **Smart home integration**: Automated control based on streaming schedule
+
+**Key Light Professional**: **[Elgato Key Light](https://www.amazon.es/s?k=Elgato%20Key%20Light&tag=yostreamer-21)**
+- **2800-7000K color temperature**: Adaptable lighting para different times of day
+- **WiFi control**: Remote adjustment sin interrupting stream flow
+- **Professional LED panel**: Even illumination sin harsh shadows
+- **Adjustable brightness**: Fine-tuning para optimal facial lighting
+- **Stream Deck integration**: One-touch lighting control durante broadcasts
+
+### Display Configuration Professional
+
+#### Monitor Setup Multi-Display
+
+**Monitor Gaming Principal**: **[ASUS TUF Gaming VG27AQ](https://www.amazon.es/s?k=ASUS%20TUF%20VG27AQ&tag=yostreamer-21)** - 1440p Gaming Excellence
+- **27" IPS display**: Premium visual quality con excellent color accuracy
+- **165Hz refresh rate**: Smooth gaming performance para competitive advantage
+- **1ms response time**: Zero motion blur durante fast-paced gaming
+- **G-SYNC Compatible**: Tear-free gaming experience con NVIDIA graphics
+- **HDR10 support**: Enhanced contrast y color depth para immersive gaming
+
+**Secondary Monitor**: **[ASUS VA24EHE](https://www.amazon.es/s?k=ASUS%20VA24EHE&tag=yostreamer-21)**
+- **24" IPS panel**: Perfect para chat monitoring, OBS control, y Discord management
+- **75Hz refresh rate**: Smooth performance para secondary tasks
+- **Ultra-slim bezels**: Clean aesthetic para multi-monitor configuration
+- **Eye Care technology**: Blue light filter para extended use comfort
+- **VESA mount compatible**: Flexible positioning options
+
+**Monitor Arm Dual**: **[VIVO Dual Monitor Desk Mount](https://www.amazon.es/s?k=VIVO%20dual%20monitor%20desk%20mount&tag=yostreamer-21)**
+- **Full articulation**: Complete positioning freedom para optimal viewing angles
+- **Gas spring design**: Effortless adjustment con smooth movement
+- **Cable management**: Integrated routing para clean aesthetic maintenance
+- **Sturdy construction**: Stable support para dual 27" displays
+- **Desk clamp secure**: Easy installation sin permanent modification
+
+### Streaming Technology y Content Management
+
+#### Broadcasting Equipment Professional
+
+**Webcam Professional**: **[Logitech C920s HD Pro](https://www.amazon.es/s?k=Logitech%20C920s%20HD%20Pro&tag=yostreamer-21)**
+- **1080p 30fps recording**: High-definition video quality para professional streaming
+- **Auto-focus system**: Consistent sharpness durante movement y gestures
+- **Auto light correction**: Balanced exposure durante variable lighting conditions
+- **Privacy shutter**: Security feature para off-stream privacy
+- **USB plug-and-play**: Simple setup sin additional drivers required
+
+**Stream Control**: **[Elgato Stream Deck Mini](https://www.amazon.es/s?k=Elgato%20Stream%20Deck%20Mini&tag=yostreamer-21)**
+- **6 customizable LCD keys**: Essential stream functions at fingertips
+- **OBS integration**: Direct scene switching y source control
+- **Multi-action support**: Complex commands con single button press
+- **Profile switching**: Different configurations para gaming vs chatting
+- **Third-party plugins**: Expanded functionality con community integrations
+
+**Capture Solution**: **[OBS Studio](https://www.amazon.es/s?k=OBS%20Studio%20streaming&tag=yostreamer-21)** con **[StreamFX Plugin](https://www.amazon.es/s?k=StreamFX%20OBS%20plugin&tag=yostreamer-21)**
+- **Advanced scene composition**: Professional layouts para different content types
+- **Real-time effects**: GPU-accelerated filters y transitions
+- **Multi-platform streaming**: Simultaneous broadcast a multiple platforms
+- **Custom overlay integration**: Brand-consistent graphics y alerts
+- **Audio routing advanced**: Complex mixing para professional sound
+
+### Content Creation Workflow
+
+#### Optimization para Different Content Types
+
+**Gaming Streams Configuration:**
+- **Performance priority**: High refresh rate gaming con stable stream output
+- **Audio balance**: Game sound mixing que maintains chat interaction clarity
+- **Scene transitions**: Quick switching entre gameplay y interaction cameras
+- **Alert integration**: Viewer notifications que don't disrupt gaming flow
+
+**Just Chatting Optimization:**
+- **Lighting enhancement**: Key light positioning para flattering facial illumination
+- **Audio clarity**: Voice processing optimized para conversation y storytelling
+- **Camera framing**: Close-up positioning para intimate community interaction
+- **Background aesthetics**: RGB lighting creating engaging visual atmosphere
+
+**Collaborative Content:**
+- **Multi-guest setup**: Audio routing para Discord calls y guest appearances
+- **Screen sharing**: Flexible layouts accommodating external content
+- **Interactive elements**: Poll integration y community engagement tools
+- **Recording capability**: High-quality archival para content repurposing
+
+### Comparación con Top Female Streamers
+
+#### Rivers_gg vs International Streaming Icons
+
+**Professional Approach Philosophy:**
+
+**Technical Excellence Priority**: Mientras muchas streamers focus primarily en aesthetic appeal, Rivers balances visual presentation con technical performance, similar al approach de streamers como **[Pokimane](https://www.twitch.tv/pokimane)** y **[Valkyrae](https://www.youtube.com/c/Valkyrae1)**.
+
+**Community Interaction Focus**: Su setup enables seamless viewer interaction durante gaming, prioritizing community engagement over pure performance metrics, differentiating her approach from purely competitive-focused streamers.
+
+**Content Versatility**: La configuration supports smooth transitions entre gaming content, educational streams, collaborative projects, y casual chatting, providing more flexibility than specialized setups.
+
+**Regional Representation**: Como prominent Latina streamer, her setup choices influence y inspire content creators across Latin America, establishing regional standards para professional streaming.
+
+### Investment Analysis y Budget Breakdown
+
+#### Setup Investment Comprehensive
+
+**Core Gaming Hardware (€4,500-6,000):**
+- **PC Gaming Complete**: €3,000-4,000
+- **Monitor Configuration**: €600-800
+- **Gaming Peripherals**: €500-700
+- **Gaming Chair**: €400-500
+
+**Audio Equipment Professional (€800-1,200):**
+- **Shure SM7B Microphone**: €400-450
+- **Audio Interface**: €150-200
+- **Boom Arm y Accessories**: €100-150
+- **Acoustic Treatment**: €150-400
+
+**Lighting y Streaming (€1,000-1,500):**
+- **RGB Lighting System**: €400-600
+- **Key Light Professional**: €200-300
+- **Webcam y Stream Deck**: €200-300
+- **Cable Management**: €100-200
+
+**Total Investment Range: €6,300-8,700**
+
+**ROI Analysis:**
+- **Monthly streaming revenue**: €3,000-8,000+
+- **Brand partnerships**: €10,000-25,000+ annually
+- **Content diversification**: Multiple revenue streams enabled
+- **Professional development**: Skills y network building value
+
+### Future Evolution Planning
+
+#### Technology Roadmap y Upgrades
+
+**Immediate Upgrade Opportunities (2025):**
+- **RTX 5070/5080 integration**: Next-generation ray tracing capabilities
+- **AMD Ryzen 8000 series**: Enhanced efficiency y performance
+- **DDR5-6400 memory**: Increased bandwidth para content creation
+- **4K streaming preparation**: Hardware capability para platform evolution
+
+**Long-Term Vision (2025-2026):**
+- **Studio expansion**: Dedicated recording space para diverse content
+- **Professional camera upgrade**: DSLR integration para cinema-quality streams
+- **Advanced lighting system**: Motorized y automated lighting control
+- **Collaborative technology**: Multi-location streaming capabilities
+
+### Building Rivers_gg-Inspired Setup
+
+#### Budget-Friendly Professional Setup (€2,500-3,500)
+
+**Essential Foundation:**
+- **[AMD Ryzen 5 7600X](https://www.amazon.es/s?k=AMD%20Ryzen%205%207600X&tag=yostreamer-21)**: Strong gaming y streaming performance
+- **[RTX 4060 Ti](https://www.amazon.es/s?k=RTX%204060%20Ti&tag=yostreamer-21)**: Excellent 1440p gaming con streaming capability
+- **[Audio-Technica AT2020USB+](https://www.amazon.es/s?k=Audio-Technica%20AT2020USB&tag=yostreamer-21)**: Professional audio quality
+- **[Basic RGB lighting kit](https://www.amazon.es/s?k=RGB%20LED%20strip%20kit&tag=yostreamer-21)**: Aesthetic enhancement
+
+#### Mid-Range Professional Build (€4,000-5,500)
+
+**Enhanced Performance y Quality:**
+- **[AMD Ryzen 7 7700X](https://www.amazon.es/s?k=AMD%20Ryzen%207%207700X&tag=yostreamer-21)** + **[RTX 4070](https://www.amazon.es/s?k=RTX%204070&tag=yostreamer-21)**
+- **[Shure SM58](https://www.amazon.es/s?k=Shure%20SM58&tag=yostreamer-21)** + **[Focusrite Scarlett Solo](https://www.amazon.es/s?k=Focusrite%20Scarlett%20Solo&tag=yostreamer-21)**
+- **[1440p gaming monitor](https://www.amazon.es/s?k=1440p%20gaming%20monitor%20144Hz&tag=yostreamer-21)**: Professional display quality
+- **[Nanoleaf starter kit](https://www.amazon.es/s?k=Nanoleaf%20starter%20kit&tag=yostreamer-21)**: Advanced RGB lighting
+
+### Maintenance y Care Protocol
+
+#### Professional Setup Maintenance
+
+**Daily Operations:**
+- **Audio equipment check**: Microphone levels y connection verification
+- **Lighting calibration**: RGB consistency across all devices
+- **Performance monitoring**: System temperature y utilization tracking
+- **Stream quality verification**: Video y audio output testing
+
+**Weekly Maintenance:**
+- **Hardware cleaning**: **[Anti-static cleaning supplies](https://www.amazon.es/s?k=anti-static%20cleaning%20kit&tag=yostreamer-21)** para dust management
+- **Software updates**: OBS, drivers, y plugin updates
+- **Cable organization**: Maintaining clean aesthetic y proper connections
+- **Content backup**: Stream archives y project file management
+
+**Monthly Optimization:**
+- **System performance review**: Bottleneck identification y resolution
+- **Equipment calibration**: Audio levels y monitor color accuracy
+- **Setup evolution**: Workflow improvements based on streaming experience
+- **Technology assessment**: Upgrade planning y cost analysis
+
+### Conclusión: Excellence en Streaming Argentino
+
+**El setup de Rivers_gg represents** un perfect example de how professional dedication y smart technology choices can create una streaming environment que balances technical excellence con personal comfort y aesthetic appeal. Su approach demonstrates que success en streaming comes from consistent quality, authentic community engagement, y continuous improvement rather than simply expensive equipment.
+
+**Key Lessons from Rivers_gg Setup Philosophy:**
+
+**Professional Standards:**
+- **Quality over quantity**: Each component chosen para specific function y reliability
+- **Community focus**: Technology serves audience engagement rather than personal ego
+- **Practical aesthetics**: Visual appeal que enhances rather than distracts from content
+- **Growth-oriented**: Setup designed para evolution y improvement over time
+
+**Technical Excellence:**
+- **Reliable foundation**: Hardware choices que ensure consistent performance
+- **Audio priority**: Recognition que voice quality is paramount en streaming
+- **Lighting sophistication**: Understanding visual presentation impact on audience
+- **Content adaptability**: Single setup serving multiple content types effectively
+
+**Cultural Impact:**
+- **Regional inspiration**: Setting standards para Latin American streaming community
+- **Accessibility demonstration**: Professional results achievable con reasonable investment
+- **Female empowerment**: Breaking barriers y inspiring next generation creators
+- **Community building**: Technology facilitating genuine human connections
+
+El **setup de Rivers_gg** ultimately proves que streaming success comes from dedication, consistency, y genuine connection con audience, supported by thoughtfully chosen technology que enables rather than overshadows creative content. Her purple paradise serves as inspiration para aspiring streamers throughout Latin America y beyond.
+
+*Para más comprehensive setup guides y creator insights, explora nuestros detailed analyses de other successful streamers como **[AriGameplays](https://yostreamer.com/setup/arigameplays)**, **[ElMariana](https://yostreamer.com/setup/elmariana)**, y **[Ibai Llanos](https://yostreamer.com/setup/ibai-llanos)**.*
+    `,
+    funFacts: [
+      "Su micrófono Shure SM7B es el mismo modelo utilizado por Joe Rogan y los podcasters más exitosos del mundo",
+      "El sistema RGB puede sincronizarse con la música y cambiar automáticamente según el tipo de contenido",
+      "Su silla gaming soporta sesiones de streaming de más de 12 horas sin fatiga gracias a su diseño ergonómico",
+      "Ha influenciado a más de 500 streamers argentinas a mejorar la calidad de sus setups con equipamiento profesional",
+    ],
+    setup: [
+      {
+        name: "PC Gaming Professional",
+        items: [
+          { name: "AMD Ryzen 9 7900X", link: amazonSearchUrl("AMD Ryzen 9 7900X"), note: "12 cores gaming y streaming" },
+          { name: "NVIDIA RTX 4080", link: amazonSearchUrl("NVIDIA RTX 4080"), note: "16GB VRAM 4K gaming power" },
+          { name: "Corsair DDR5 32GB 5600MHz", link: amazonSearchUrl("Corsair DDR5 32GB 5600"), note: "High-speed memory gaming" },
+          { name: "Samsung 980 PRO 2TB", link: amazonSearchUrl("Samsung 980 PRO 2TB"), note: "NVMe ultra-fast storage" },
+        ],
+      },
+      {
+        name: "Audio Professional",
+        items: [
+          { name: "Shure SM7B", link: amazonSearchUrl("Shure SM7B"), note: "Broadcasting legend microphone" },
+          { name: "Focusrite Scarlett Solo", link: amazonSearchUrl("Focusrite Scarlett Solo"), note: "Professional audio interface" },
+          { name: "RODE PSA1", link: amazonSearchUrl("RODE PSA1"), note: "Professional boom arm" },
+        ],
+      },
+      {
+        name: "Display y Gaming",
+        items: [
+          { name: "ASUS TUF Gaming VG27AQ", link: amazonSearchUrl("ASUS TUF VG27AQ"), note: "27\" 1440p 165Hz gaming" },
+          { name: "ASUS VA24EHE", link: amazonSearchUrl("ASUS VA24EHE"), note: "24\" secondary monitor" },
+          { name: "VIVO Dual Monitor Mount", link: amazonSearchUrl("VIVO dual monitor desk mount"), note: "Professional monitor arms" },
+        ],
+      },
+      {
+        name: "Gaming Peripherals",
+        items: [
+          { name: "ASUS ROG Chariot Core", link: amazonSearchUrl("ASUS ROG Chariot Core"), note: "Premium gaming chair" },
+          { name: "Corsair K70 RGB MK.2", link: amazonSearchUrl("Corsair K70 RGB MK2"), note: "Mechanical RGB keyboard" },
+          { name: "Logitech G Pro Wireless", link: amazonSearchUrl("Logitech G Pro Wireless"), note: "80g wireless precision mouse" },
+        ],
+      },
+      {
+        name: "Iluminación RGB",
+        items: [
+          { name: "Nanoleaf Light Panels", link: amazonSearchUrl("Nanoleaf Light Panels"), note: "Modular RGB triangle panels" },
+          { name: "Philips Hue Lightstrip Plus", link: amazonSearchUrl("Philips Hue Lightstrip Plus"), note: "Smart LED strip system" },
+          { name: "Elgato Key Light", link: amazonSearchUrl("Elgato Key Light"), note: "Professional streaming light" },
+        ],
+      },
+      {
+        name: "Streaming Equipment",
+        items: [
+          { name: "Logitech C920s HD Pro", link: amazonSearchUrl("Logitech C920s HD Pro"), note: "1080p professional webcam" },
+          { name: "Elgato Stream Deck Mini", link: amazonSearchUrl("Elgato Stream Deck Mini"), note: "6-key stream control" },
         ],
       },
     ],
