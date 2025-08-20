@@ -20,6 +20,7 @@ Allow: /setup/juansguarnizo
 Allow: /setup/elmariana
 Allow: /setup/arigameplays
 Allow: /setup/rivers-gg
+Allow: /setup/quackitytoo
 
 # Guide pages - streaming tutorials and resources
 Allow: /setup/twitch-eventos-2025

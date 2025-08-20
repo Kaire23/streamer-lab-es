@@ -101,6 +101,12 @@
     <priority>0.8</priority>
   </url>
   
+  <url>
+    <loc>https://yostreamer.com/setup/quackitytoo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   <!-- Additional streamers -->
   <url>
     <loc>https://yostreamer.com/setup/cristinini</loc>
