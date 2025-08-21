@@ -21,6 +21,7 @@ Allow: /setup/elmariana
 Allow: /setup/arigameplays
 Allow: /setup/rivers-gg
 Allow: /setup/quackitytoo
+Allow: /setup/slakun10
 
 # Guide pages - streaming tutorials and resources
 Allow: /setup/twitch-eventos-2025
