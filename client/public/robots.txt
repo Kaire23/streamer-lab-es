@@ -22,6 +22,7 @@ Allow: /setup/arigameplays
 Allow: /setup/rivers-gg
 Allow: /setup/quackitytoo
 Allow: /setup/slakun10
+Allow: /setup/staryuuki
 
 # Guide pages - streaming tutorials and resources
 Allow: /setup/twitch-eventos-2025
