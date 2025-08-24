@@ -51,6 +51,14 @@ const postSEOData: Record<string, SEOData> = {
     canonical: 'https://yostreamer.com/setup/coscu',
     ogImage: 'https://yostreamer.com/assets/coscu-hero.jpg',
     type: 'article'
+  },
+  'configurar-obs-studio-2025-guia-completa': {
+    title: 'Cómo configurar OBS Studio 2025: Guía Completa en 10 minutos | Setups de Streamers',
+    description: 'Aprende a configurar OBS Studio desde cero en 2025. Guía paso a paso con configuraciones óptimas para streaming, grabación, escenas, filtros y troubleshooting. Incluye PDF descargable.',
+    keywords: 'OBS Studio 2025, configurar OBS, streaming software, OBS configuración, streaming setup, OBS guía, broadcast software',
+    canonical: 'https://yostreamer.com/setup/configurar-obs-studio-2025-guia-completa',
+    ogImage: 'https://yostreamer.com/assets/obs_1756060400861.png',
+    type: 'article'
   }
 };
 

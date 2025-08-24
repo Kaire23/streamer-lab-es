@@ -20,6 +20,7 @@ import quackityTooImg from "@assets/quackity_1755705899500.jpeg";
 import slakun10Img from "@assets/kun_1755766697603.png";
 import staryuukiImg from "@assets/Staryuuki_1755881448349.jpg";
 import jeltyImg from "@assets/jelty_1756032692554.jpg";
+import obsImg from "@assets/obs_1756060400861.png";
 import { amazonSearchUrl } from "@/lib/affiliate";
 
 export type SetupItem = { name: string; link: string; note?: string; image?: string };
@@ -9351,6 +9352,144 @@ Su purple RGB theme no es solo decoration; es una strategic choice que builds re
         items: [
           { name: "PC Gaming Alto Rendimiento", link: amazonSearchUrl("PC gaming streaming"), note: "Potencia para gaming y streaming" },
           { name: "Componentes RGB", link: amazonSearchUrl("componentes PC RGB"), note: "Cohesión estética" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "configurar-obs-studio-2025-guia-completa",
+    title: "Cómo configurar OBS Studio 2025: Guía Completa en 10 minutos",
+    excerpt:
+      "Aprende a configurar OBS Studio desde cero en 2025. Guía paso a paso con configuraciones óptimas para streaming, grabación, escenas, filtros y troubleshooting. Incluye PDF descargable.",
+    date: today,
+    author: "Equipo Setups de Streamers",
+    coverImage: obsImg,
+    keywords: [
+      "OBS Studio 2025",
+      "configurar OBS",
+      "streaming software",
+      "OBS configuración",
+      "streaming setup",
+      "OBS guía",
+      "broadcast software"
+    ],
+    bio: "OBS Studio es el software de streaming y grabación gratuito más popular del mundo. Esta guía completa te enseña cómo configurarlo perfectamente para obtener la máxima calidad en tus streams y grabaciones.",
+    content: `## Cómo Configurar OBS Studio 2025: La Guía Definitiva para Streaming Profesional
+
+OBS Studio se ha consolidado como el software de streaming y grabación más importante del ecosistema digital, utilizado por millones de content creators desde principiantes hasta streamers profesionales como Ibai Llanos, ElXokas y los más grandes influencers del mundo.
+
+### Descarga GRATIS: PDF Checklist Completo
+
+Descarga nuestro checklist paso a paso para imprimir con todas las configuraciones, atajos de teclado y troubleshooting incluidos.
+
+### Instalación y Primeros Pasos
+
+El primer paso para dominar OBS Studio es una instalación correcta que evite problemas futuros. En 2025, OBS Studio 30.0 incluye mejoras significativas en estabilidad y rendimiento.
+
+#### Proceso de instalación recomendado:
+
+1. Descarga oficial desde obsproject.com
+2. Instalación como administrador
+3. Carpeta personalizada para evitar conflictos
+4. Plugins esenciales: Browser Source y Virtual Camera
+
+#### Auto-Configuration Wizard
+
+OBS Studio 2025 incluye un Auto-Configuration Wizard mejorado que analiza tu hardware y conexión para sugerir configuraciones óptimas.
+
+### Configuraciones de Video: Calidad Visual Profesional
+
+La configuración de video es fundamental para determinar la calidad visual de tus streams. En 2025, las plataformas soportan resoluciones y bitrates más altos.
+
+#### Resoluciones recomendadas:
+- Gaming competitivo: 1920x1080 (1080p 60fps)
+- Just chatting: 1280x720 (720p 30fps)
+- IRL/Outdoor: 1600x900 (900p 30fps)
+
+### Configuraciones de Audio: Sonido Broadcast-Quality
+
+El audio de calidad profesional comienza con la configuración correcta de devices y sample rates.
+
+#### Filtros de Audio Esenciales:
+
+1. Noise Suppression: Elimina ruido de fondo
+2. Noise Gate: Controla cuando se activa el micrófono
+3. Compressor: Nivela el volumen de voz
+4. Limiter: Previene clipping y protege oídos
+
+### Configuración de Encoding
+
+La elección entre hardware y software encoding determina la calidad final y el performance del sistema.
+
+#### Software vs Hardware Encoding:
+
+- Software (x264): Máxima calidad pero alto uso de CPU
+- Hardware NVIDIA (NVENC): Minimal CPU usage, ideal para gaming
+- Hardware AMD (AMF): Excelente integración con GPUs AMD
+
+### Creación de Escenas
+
+Una estructura de escenas bien organizada es la diferencia entre streams amateur y profesionales.
+
+#### Escenas esenciales:
+
+1. "Starting Soon" - Logo y countdown
+2. "Just Chatting" - Cámara principal
+3. "Gaming Full Screen" - Juego completo
+4. "Gaming + Camera" - Balance entre juego y reacción
+5. "BRB/Away" - Pausa temporal
+6. "Ending/Thanks" - Despedida
+
+### Troubleshooting: Problemas Comunes
+
+#### Tipos de Dropped Frames:
+
+- Skipped Frames: Problema de GPU
+- Lagged Frames: Sobrecarga de CPU
+- Dropped Frames: Problemas de conexión
+
+### Conclusión
+
+Dominar OBS Studio en 2025 requiere understanding profundo de cómo cada setting interactúa con tu hardware y conexión. Esta guía te proporciona las herramientas necesarias para streaming profesional.
+
+Con esta configuración correcta, tu streams rivalizarán con cualquier broadcaster profesional en términos de calidad técnica.`,
+    funFacts: [
+      "OBS Studio 30.0 incluye mejoras de hasta 40% en rendimiento vs versiones anteriores",
+      "Los filtros de audio correctos pueden mejorar la calidad vocal más que un micrófono 10 veces más caro",
+      "El 90% de streamers usan configuraciones subóptimas que reducen su calidad sin darse cuenta",
+      "Una configuración correcta de encoding puede reducir el uso de CPU hasta en un 60%"
+    ],
+    setup: [
+      {
+        name: "Software Esencial",
+        items: [
+          { name: "OBS Studio 30.0 (Gratis)", link: "https://obsproject.com/", note: "Software principal de streaming" },
+          { name: "OBS-StreamFX Plugin", link: amazonSearchUrl("OBS StreamFX plugin"), note: "Filtros y efectos avanzados" },
+          { name: "Advanced Scene Switcher", link: amazonSearchUrl("OBS Advanced Scene Switcher"), note: "Automatización profesional" },
+        ],
+      },
+      {
+        name: "Hardware Recomendado",
+        items: [
+          { name: "GPU RTX 4060+ / RX 7600+", link: amazonSearchUrl("GPU RTX 4060 RX 7600"), note: "Hardware encoding NVENC/AMF" },
+          { name: "CPU 8 cores+ (Ryzen 7/Intel i7)", link: amazonSearchUrl("CPU Ryzen 7 Intel i7"), note: "Software encoding x264" },
+          { name: "32GB RAM DDR4/DDR5", link: amazonSearchUrl("32GB RAM gaming"), note: "Buffer para streaming y gaming" },
+        ],
+      },
+      {
+        name: "Accesorios de Streaming",
+        items: [
+          { name: "Elgato Stream Deck", link: amazonSearchUrl("Elgato Stream Deck"), note: "Control profesional de escenas" },
+          { name: "Capture Card 4K60", link: amazonSearchUrl("Elgato 4K60 Pro capture card"), note: "Setup dual PC" },
+          { name: "Audio Interface USB", link: amazonSearchUrl("audio interface USB streaming"), note: "Calidad de audio profesional" },
+        ],
+      },
+      {
+        name: "Recursos Adicionales",
+        items: [
+          { name: "PDF Checklist Completo", link: "/public-objects/obs-studio-2025-checklist.pdf", note: "Descarga gratis" },
+          { name: "Streamlabs Widgets", link: amazonSearchUrl("Streamlabs widgets"), note: "Overlays y alerts" },
+          { name: "Copyright-Free Music", link: amazonSearchUrl("royalty free music streaming"), note: "Música sin copyright" },
         ],
       },
     ],
