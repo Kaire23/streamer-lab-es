@@ -9491,7 +9491,7 @@ Con esta configuración correcta, tu streams rivalizarán con cualquier broadcas
         items: [
           { name: "PDF Checklist Completo", link: "/obs-studio-2025-checklist.pdf", note: "Descarga gratis" },
           { name: "Streamlabs Widgets", link: amazonSearchUrl("Streamlabs widgets"), note: "Overlays y alerts" },
-          { name: "Copyright-Free Music", link: amazonSearchUrl("royalty free music streaming"), note: "Música sin copyright" },
+          { name: "Copyright-Free Music", link: "https://share.epidemicsound.com/yh24ac", note: "Música sin copyright" },
         ],
       },
     ],
