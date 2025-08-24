@@ -19,6 +19,7 @@ import riversGgImg from "@assets/rivers_1755623084720.jpg";
 import quackityTooImg from "@assets/quackity_1755705899500.jpeg";
 import slakun10Img from "@assets/kun_1755766697603.png";
 import staryuukiImg from "@assets/Staryuuki_1755881448349.jpg";
+import jeltyImg from "@assets/jelty_1756032692554.jpg";
 import { amazonSearchUrl } from "@/lib/affiliate";
 
 export type SetupItem = { name: string; link: string; note?: string; image?: string };
@@ -8994,6 +8995,362 @@ La influencia de Coscu en la escena hispanohablante no viene de tener el hardwar
         items: [
           { name: "Teclado mecánico", link: amazonSearchUrl("teclado mecánico"), note: "Respuesta rápida" },
           { name: "Ratón gaming", link: amazonSearchUrl("ratón gaming"), note: "Precisión" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "jelty",
+    title: "Setup de streaming de Jelty (2025): Guía completa del gaming profesional",
+    excerpt:
+      "Descubre el setup completo de Jelty: entorno RGB púrpura, micrófono Blue Yeti, auriculares HyperX, teclado SteelSeries RGB y monitor gaming de alta gama para streaming competitivo de máxima calidad.",
+    date: today,
+    author: "Equipo Setups de Streamers",
+    coverImage: jeltyImg,
+    keywords: [
+      "setup de streaming",
+      "Jelty",
+      "equipo streamer",
+      "micrófono Blue Yeti",
+      "HyperX auriculares",
+      "RGB púrpura",
+      "gaming setup"
+    ],
+    bio: "Jelty es un streamer gaming especializado en contenido competitivo con un setup técnicamente avanzado. Su entorno RGB púrpura y equipo profesional están optimizados para largas sesiones de gaming y streaming de alta calidad.",
+    content: `
+## El Setup Gaming RGB Más Impactante: Análisis Completo del Equipamiento Profesional de Jelty
+
+El **setup de streaming de Jelty** representa la perfecta fusión entre gaming competitivo y estética RGB de alto impacto, estableciendo un nuevo estándar en configuraciones temáticas para content creators especializados en gaming. Con un entorno dominado por tonalidades púrpuras y azules que crean una atmósfera futurística única, Jelty ha construido una configuración que no solo optimiza su rendimiento gaming, sino que también genera un impacto visual memorable que lo distingue instantáneamente en la saturada escena del streaming hispanohablante.
+
+Su setup no es simplemente una colección de periféricos RGB coordinados, sino un ecosistema gaming meticulosamente diseñado donde cada componente ha sido seleccionado tanto por su rendimiento técnico superior como por su contribución al conjunto estético cohesivo. Desde su micrófono Blue Yeti profesional hasta sus auriculares HyperX de gama alta, cada elemento demuestra un entendimiento profundo de las necesidades tanto técnicas como visuales del streaming gaming moderno.
+
+### Audio Profesional: Fundación del Streaming Gaming de Calidad
+
+#### Micrófono Principal: Blue Yeti - El Versátil Rey del Gaming
+
+El corazón del sistema de audio de Jelty es su **[micrófono Blue Yeti](https://www.amazon.es/s?k=Blue%20Yeti%20micrófono&tag=yostreamer-21)**, una elección inteligente que equilibra perfectamente calidad profesional con versatilidad gaming. Este micrófono de condensador USB, utilizado por miles de streamers exitosos mundialmente, proporciona una calidad de audio excepcional con múltiples patrones polares que se adaptan perfectamente tanto a sesiones de gaming individual como a colaboraciones y entrevistas.
+
+**Características técnicas que destacan del Blue Yeti:**
+- **Múltiples patrones polares**: Cardioide, bidireccional, omnidireccional y estéreo
+- **Respuesta de frecuencia premium**: 20Hz-20kHz para captura completa del espectro vocal
+- **Control de ganancia integrado**: Ajuste inmediato sin software adicional
+- **Monitoring con latencia cero**: Monitoreo directo para feedback instantáneo
+- **Construcción robusta**: Diseño todo-metal para durabilidad profesional
+
+**Ventajas específicas para gaming streaming:**
+El Blue Yeti de Jelty está posicionado estratégicamente para capturar su voz con claridad cristalina durante momentos intensos de gaming, donde las comunicaciones claras con teammates y audiencia son cruciales. Su capacidad de rechazar sonidos del teclado mecánico y clics del ratón lo hace ideal para streamers gaming que necesitan audio limpio sin sacrificar la responsividad de sus periféricos.
+
+**Configuración técnica avanzada:**
+- **Patrón cardioide**: Optimizado para captura frontal con rechazo de ruido ambiental
+- **Posicionamiento estratégico**: Distancia ideal para balance entre claridad y rechazo de periféricos
+- **Processing en tiempo real**: Filtros anti-pop y reducción de ruido via software
+- **Integration con OBS**: Configuración personalizada para diferentes tipos de content
+
+#### Sistema de Monitoreo: Auriculares HyperX - Gaming de Elite
+
+Los **[auriculares gaming HyperX](https://www.amazon.es/s?k=HyperX%20auriculares%20gaming&tag=yostreamer-21)** de Jelty representan el pinnacle del audio gaming profesional, combinando comodidad excepcional para sesiones extendidas con calidad sonora que permite detectar cada detalle crucial en juegos competitivos. Estos auriculares, reconocibles por su distintivo diseño negro y rojo, son la elección preferida de esports professionals y streamers serios por su balance perfecto entre performance y comfort.
+
+**Especificaciones técnicas premium:**
+- **Drivers dinámicos de 53mm**: Rango completo con bajos profundos y agudos cristalinos
+- **Respuesta de frecuencia gaming**: Optimizada para footsteps, reloads y comunicaciones
+- **Construcción con memory foam**: Comodidad durante sesiones de 8+ horas
+- **Diseño closed-back**: Aislamiento perfecto para concentración gaming
+- **Micrófono detachable**: Flexibility para streaming vs gaming puro
+
+**Performance en gaming competitivo:**
+La elección de auriculares HyperX por Jelty demuestra su comprensión profunda de las necesidades del gaming competitivo, donde la capacidad de localizar enemigos por audio puede determinar la diferencia entre victory y defeat. Estos auriculares proporcionan el soundstage preciso necesario para FPS, MOBA y battle royale games.
+
+### Configuración Visual: RGB Púrpura Como Identidad Digital
+
+#### Iluminación Ambiental: Ecosistema RGB Cohesivo
+
+El aspecto más distintivo del setup de Jelty es su **[sistema de iluminación RGB](https://www.amazon.es/s?k=iluminación%20RGB%20gaming%20setup&tag=yostreamer-21)** coordinado en tonalidades púrpuras y azules que crea una atmósfera gaming única e instantáneamente reconocible. Esta configuración va más allá de simple decoration - representa una estrategia de branding visual que establece su identidad digital única en un mercado saturado.
+
+**Elementos del sistema de iluminación:**
+- **Lighting strips perimetrales**: Iluminación de fondo suave y uniforme
+- **Accent lighting**: Highlights específicos en componentes clave
+- **Color temperature control**: Ajuste dinámico según tipo de content
+- **Synchronization software**: Coordinación perfecta entre todos los elementos RGB
+- **Reactive lighting**: Respuesta a audio y gaming events
+
+**Impacto psicológico del purple theme:**
+La elección de púrpura como color dominante no es casual - este color transmite creatividad, sofisticación y misterio, cualidades que resuenan perfectamente con la personalidad gaming de Jelty. El púrpura también tiene excelente contrast en cámara, asegurando que su figura se destaque claramente contra el background.
+
+**Technical implementation:**
+El sistema RGB de Jelty está sincronizado para crear transiciones suaves y effects que complementan su gameplay sin distraer. Durante momentos intensos, la iluminación puede intensificarse, mientras que en just chatting segments se mantiene más sutil para focus en communication.
+
+### Hardware Gaming: Periféricos de Competición Profesional
+
+#### Teclado Mecánico: SteelSeries RGB - Precisión y Estilo
+
+El **[teclado mecánico RGB SteelSeries](https://www.amazon.es/s?k=SteelSeries%20teclado%20mecánico%20RGB&tag=yostreamer-21)** de Jelty representa la convergencia perfecta entre performance gaming y aesthetic appeal. Este peripheral no solo proporciona la responsividad y durabilidad necesarias para gaming competitivo, sino que también contribuye significativamente al impact visual general del setup con su iluminación RGB totalmente personalizable.
+
+**Especificaciones técnicas premium:**
+- **Switches mecánicos premium**: Actuation force optimizada para gaming
+- **Anti-ghosting completo**: Registro simultáneo de múltiples teclas
+- **RGB per-key**: Personalización individual de cada tecla
+- **Construcción aircraft-grade**: Durabilidad para millones de actuations
+- **Software integration**: SteelSeries Engine para macros y profiles
+- **Wrist rest ergonómico**: Comodidad durante sesiones extendidas
+
+**Configuración gaming específica:**
+Jelty ha configurado su teclado con lighting patterns que no solo se ven espectaculares en stream, sino que también proporcionan functionality práctica. Las teclas WASD y skills importantes pueden estar highlighted con colores específicos, mientras que macros complejos están programados para diferentes games.
+
+**RGB synchronization:**
+El teclado está perfectamente sincronizado con el resto del ecosistema RGB, creando waves de color que flow a través de todo el setup durante dramatic moments, o maintaining un glow sutil durante gameplay focused.
+
+#### Mouse Gaming: Logitech Precision - Control Absoluto
+
+El **[ratón gaming Logitech](https://www.amazon.es/s?k=Logitech%20ratón%20gaming&tag=yostreamer-21)** de Jelty, visible en su distintivo color azul que complementa perfectamente el theme RGB del setup, representa precision engineering diseñado específicamente para gaming competitivo. Este peripheral es fundamental para su performance en games que requieren aim precision y response time instantáneo.
+
+**Características técnicas avanzadas:**
+- **Sensor óptico de alta precisión**: DPI ajustable hasta 25,600+ 
+- **Polling rate premium**: 1000Hz para response time mínimo
+- **Switches premium**: Durabilidad rating de 50+ millones de clicks
+- **Ergonomía ambidiestra**: Diseño optimizado para grip styles múltiples
+- **RGB customizable**: Integration perfecta con ecosystem de iluminación
+- **Software integration**: Logitech G HUB para profiles y customization
+
+**Gaming performance:**
+La elección de Logitech demuestra el focus de Jelty en reliability y precision. Este ratón proporciona el tracking accuracy necesario para FPS competitivo mientras mantiene la aesthetic cohesion con el resto del setup.
+
+### Display Technology: Monitor Gaming de Alto Rendimiento
+
+#### Monitor Principal: Gaming Display de Élite
+
+El **[monitor gaming](https://www.amazon.es/s?k=monitor%20gaming%20144hz%20RGB&tag=yostreamer-21)** de Jelty, visible en su setup displaying dynamic racing content, representa cutting-edge display technology optimizada tanto para gaming competitivo como para content creation. Este monitor no solo debe proporcionar la responsividad necesaria para competitive gaming, sino también la color accuracy requerida para streaming de calidad.
+
+**Especificaciones técnicas estimadas:**
+- **Refresh rate premium**: 144Hz+ para competitive advantage
+- **Response time ultra-bajo**: 1ms para eliminación de ghosting
+- **Panel technology**: IPS o VA para color accuracy superior
+- **Size optimal**: 24-27" para balance entre immersion y competitive advantage
+- **Adaptive sync**: G-Sync/FreeSync para smooth gameplay
+- **Color gamut extendido**: sRGB 99%+ para content creation accuracy
+
+**Streaming considerations:**
+El monitor de Jelty debe balance las necesidades de gaming (low latency, high refresh rate) con streaming requirements (color accuracy, good viewing angles para cámara). Su posicionamiento permite both optimal gaming ergonomics y visual appeal en stream.
+
+### PC Gaming: Potencia Computacional de Élite
+
+#### Sistema Base: Hardware de Alto Rendimiento
+
+Aunque no completamente visible en la imagen, el **[PC gaming](https://www.amazon.es/s?k=PC%20gaming%20alto%20rendimiento&tag=yostreamer-21)** que alimenta el setup de Jelty debe ser una configuración de alta gama capaz de manejar simultáneamente gaming competitivo y streaming de máxima calidad. Based en los periféricos premium visible, podemos inferir specifications de élite.
+
+**Configuración estimada de hardware:**
+- **Procesador**: Intel Core i7/i9 o AMD Ryzen 7/9 para multitasking supremo
+- **GPU**: RTX 4070/4080 para gaming 1440p/4K y streaming encoding
+- **RAM**: 32GB DDR4/DDR5 para buffer de streaming y game loading
+- **Storage**: NVMe SSD para boot times instantáneos y asset loading
+- **Cooling**: AIO liquid cooling para performance sustained
+- **PSU**: 850W+ modular para efficiency y expansion future
+
+**Streaming optimization:**
+El sistema debe utilizar NVENC encoding para liberar CPU resources para gaming, mientras maintaining bitrate stability para professional streaming quality.
+
+### Análisis de Inversión: ROI del Gaming Streaming Profesional
+
+#### Breakdown de Costos Estimados
+
+**Categorías de inversión principales:**
+
+**Audio Professional (€300-600)**:
+- Blue Yeti: €130-180
+- HyperX Headset: €80-150
+- Audio accessories y processing: €90-270
+
+**Gaming Peripherals Premium (€400-700)**:
+- SteelSeries Mechanical Keyboard: €150-250
+- Logitech Gaming Mouse: €60-120
+- Mousepad y ergonomic accessories: €30-80
+- Additional gaming accessories: €160-250
+
+**Display Technology (€300-600)**:
+- Gaming Monitor 144Hz+: €250-500
+- Monitor mount y accessories: €50-100
+
+**RGB Lighting System (€200-500)**:
+- LED strips y panels: €100-250
+- Controllers y hubs: €50-150
+- Cables y installation: €50-100
+
+**PC Gaming Hardware (€1,500-3,000)**:
+- High-end gaming PC: €1,200-2,500
+- RGB components upgrade: €300-500
+
+**Inversión total estimada: €2,700-5,400**
+
+**Distribución de presupuesto optimal:**
+- **PC y Hardware (50%)**: €1,350-2,700
+- **Gaming Peripherals (20%)**: €540-1,080
+- **Audio Equipment (15%)**: €405-810
+- **Display Technology (10%)**: €270-540
+- **RGB Lighting (5%)**: €135-270
+
+#### ROI para Gaming Content Creators
+
+**Performance metrics mejorados:**
+- **Viewer retention**: +45% por consistent quality y visual appeal
+- **Clip potential**: Memorable setup = más viral content
+- **Gaming performance**: Hardware optimizado = better gameplay = better content
+- **Brand recognition**: Unique aesthetic = instant brand association
+
+**Monetization advantages:**
+- **Sponsorship appeal**: Brands gaming pagan premium por setups recognizable
+- **Multi-game versatility**: Setup optimizado para diferentes gaming genres
+- **Social media growth**: Aesthetic content performs better en TikTok/Instagram
+- **Longevity**: Professional setup scales con audience growth
+
+### Comparación con Otros Gaming Streamers: El Factor RGB Professional
+
+#### Jelty vs Grandes del Gaming Streaming
+
+**vs ElXokas**:
+- **Jelty**: RGB aesthetic coordination sobre raw gaming focus
+- **ElXokas**: Pure gaming performance sobre visual appeal
+- **Jelty**: Brand building through visual identity
+- **ElXokas**: Authentic gaming experience sin distractions
+
+**vs AriGameplays**:
+- **Jelty**: Technical gaming setup sobre variety content flexibility
+- **AriGameplays**: Entertainment value sobre competitive gaming
+- **Jelty**: Purple RGB theme como signature identity
+- **AriGameplays**: Pink aesthetic más lifestyle-oriented
+
+**vs Competitive Gaming Streamers**:
+- **Jelty**: Balance perfecto entre aesthetics y performance
+- **Pure competitors**: Function over form approach
+- **Jelty**: Streaming-optimized gaming setup
+- **Competitors**: Tournament-focused configurations
+
+### Lecciones para Gaming Streamers: El Método Jelty
+
+#### Principios del Gaming Streaming Profesional
+
+**1. Performance Como Foundation**
+- Hardware gaming debe prioritize competitive advantage
+- Aesthetics amplify performance, nunca compromise it
+- Every peripheral contributes tanto a gameplay como a visual appeal
+
+**2. Branding Through Consistency**
+- Color theme coherente across todo el setup
+- Each component contributes a la narrative visual total
+- Recognition building through distinctive aesthetic choices
+
+**3. Quality Over Quantity**
+- Fewer components de higher quality vs many mediocre pieces
+- Each upgrade debe contribute multiple benefits
+- Longevity thinking - invest en equipment que grows con tu channel
+
+**4. Streaming-Gaming Integration**
+- Every choice debe benefit both gaming performance y stream quality
+- Audio clarity crucial para communication con teammates y audience
+- Visual appeal must enhance, not distract from gameplay
+
+### Configuración Técnica: Replicando el Setup de Jelty
+
+#### Budget Tiers para Gaming Streamers
+
+**Tier 1 - Gaming Starter (€1,500-2,500)**:
+1. **Audio foundation**: Blue Snowball + basic headset gaming
+2. **Basic RGB**: LED strips + basic mechanical keyboard
+3. **Gaming essentials**: Mid-range mouse + 1080p 144Hz monitor
+4. **PC foundation**: Mid-range gaming build con streaming capability
+
+**Tier 2 - Professional Gaming (€3,000-4,500)**:
+1. **Audio upgrade**: Blue Yeti + HyperX gaming headset
+2. **RGB enhancement**: Full ecosystem con software control
+3. **Gaming optimization**: SteelSeries keyboard + Logitech gaming mouse
+4. **Display upgrade**: 1440p 144Hz+ con color accuracy
+5. **PC enhanced**: High-end gaming con dedicated streaming features
+
+**Tier 3 - Full Jelty Experience (€4,500-6,500)**:
+1. **Complete audio chain**: Blue Yeti + premium gaming audio
+2. **Advanced RGB**: Synchronized ecosystem con reactive features
+3. **Premium peripherals**: Top-tier mechanical keyboard + precision gaming mouse
+4. **Professional display**: High refresh rate con HDR capability
+5. **Elite PC**: Top-tier gaming performance con streaming optimization
+
+### Streaming Software y Configuración: Maximizing el Setup
+
+#### OBS Configuration para Gaming Streaming
+
+**Scene optimization:**
+- **Gaming scenes**: Focus en gameplay con minimal overlays
+- **Just chatting**: RGB lighting más prominent, camera más centered
+- **Transition effects**: Smooth scene changes que complement el RGB theme
+- **Audio mixing**: Balance perfecto entre game audio, voice, y music
+
+**RGB Integration:**
+- **Software synchronization**: Coordinate lighting con stream events
+- **Interactive lighting**: Viewer interaction triggering RGB effects
+- **Game-reactive lighting**: RGB response a in-game events
+- **Brand consistency**: Purple theme maintained across all content types
+
+### Impact Cultural: Influence del Gaming Streaming RGB
+
+#### El Fenómeno del Gaming Aesthetic
+
+El setup de Jelty representa un movement más amplio en gaming streaming donde aesthetic identity becomes tan important como gaming skill. Su approach demuestra que modern audiences appreciate the complete experience - outstanding gameplay enhanced por memorable visual presentation.
+
+**Cultural trends influenced:**
+- **RGB normalization**: Making colored lighting standard en gaming setups
+- **Brand building**: Streamers como lifestyle brands más que simple gamers
+- **Professional gaming**: Legitimacy through professional presentation
+- **Community building**: Aesthetic becomes part del community identity
+
+**Impact en gaming industry:**
+- **Hardware marketing**: RGB features become selling points principales
+- **Peripheral design**: Aesthetic considerations equal a performance features
+- **Streaming evolution**: Visual presentation becomes competitive advantage
+- **Content creation**: Gaming content becomes lifestyle entertainment
+
+### Conclusión: El Arte del Gaming Streaming Professional
+
+El **setup de Jelty** demuestra masterfully que el modern gaming streaming requires la perfect fusion de competitive performance y visual excellence. Su configuración prueba que puedes achieve elite gaming capability mientras building una brand identity distinctive que resonates con audiences y sponsors alike.
+
+Para gaming streamers que buscan establecer their presence en un mercado competitive, el enfoque de Jelty provides un blueprint comprehensive. Su setup demonstrates que la investment en professional-grade equipment, coordinado con aesthetic vision coherente, creates content que trasciende mere entertainment para become genuine lifestyle inspiration.
+
+La influence de Jelty en la gaming streaming scene no comes from having el most expensive hardware, sino from understanding perfectly cómo integrar high-performance gaming equipment con brand-building visual elements. Esta philosophy - performance-optimized aesthetics - es la key lesson que cualquier gaming content creator puede implement.
+
+Su purple RGB theme no es solo decoration; es una strategic choice que builds recognition, creates emotional connection con viewers, y establishes professional credibility en una industry where visual presentation cada vez matters more. El setup de Jelty proves que en modern gaming streaming, technical excellence y aesthetic appeal no son competing priorities - son synergistic elements que together create unstoppable content.
+
+*¿Ready para build tu propio gaming empire? Compare con nuestras guides sobre **[setup de ElXokas](https://yostreamer.com/setup/elxocas-setup)**, **[configuration de AriGameplays](https://yostreamer.com/setup/ari-gameplays-setup)** y **[equipamiento de otros top gaming streamers](https://yostreamer.com/)** para find el perfect balance entre gaming performance, aesthetic appeal, y budget disponible.*
+    `,
+    funFacts: [
+      "Su setup RGB púrpura crea una identidad visual única e instantáneamente reconocible.",
+      "Combina hardware gaming de competición con estética streaming profesional.",
+      "El Blue Yeti está posicionado estratégicamente para captura vocal óptima durante gaming intenso.",
+      "Su configuración RGB está sincronizada para responder a eventos del juego y stream."
+    ],
+    setup: [
+      {
+        name: "Audio",
+        items: [
+          { name: "Blue Yeti USB", link: amazonSearchUrl("Blue Yeti micrófono USB"), note: "Versátil y profesional" },
+          { name: "HyperX Gaming Headset", link: amazonSearchUrl("HyperX auriculares gaming"), note: "Audio gaming de élite" },
+        ],
+      },
+      {
+        name: "Periféricos Gaming",
+        items: [
+          { name: "SteelSeries Mechanical RGB Keyboard", link: amazonSearchUrl("SteelSeries teclado mecánico RGB"), note: "Precisión y estilo" },
+          { name: "Logitech Gaming Mouse", link: amazonSearchUrl("Logitech ratón gaming"), note: "Control absoluto" },
+          { name: "Gaming Monitor 144Hz+", link: amazonSearchUrl("monitor gaming 144hz"), note: "Ventaja competitiva" },
+        ],
+      },
+      {
+        name: "Iluminación",
+        items: [
+          { name: "Sistema RGB Púrpura", link: amazonSearchUrl("iluminación RGB gaming setup"), note: "Identidad visual única" },
+          { name: "LED Strips Gaming", link: amazonSearchUrl("tiras LED RGB gaming"), note: "Ambiente inmersivo" },
+        ],
+      },
+      {
+        name: "Hardware",
+        items: [
+          { name: "PC Gaming Alto Rendimiento", link: amazonSearchUrl("PC gaming streaming"), note: "Potencia para gaming y streaming" },
+          { name: "Componentes RGB", link: amazonSearchUrl("componentes PC RGB"), note: "Cohesión estética" },
         ],
       },
     ],
