@@ -276,8 +276,8 @@ BT
 0 -18 Td
 ([  ] Backup: Grabar localmente por seguridad) Tj
 
-% Footer
-50 50 Td
+% Footer - Fixed positioning to avoid overlap
+0 -60 Td
 /F3 10 Tf
 0.5 0.5 0.5 rg
 (2025 YoStreamer.com - Configuracion OBS Studio Profesional) Tj
