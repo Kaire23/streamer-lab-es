@@ -9,8 +9,8 @@ endobj
 2 0 obj
 <<
 /Type /Pages
-/Kids [3 0 R]
-/Count 1
+/Kids [3 0 R 4 0 R]
+/Count 2
 >>
 endobj
 
@@ -20,15 +20,41 @@ endobj
 /Parent 2 0 R
 /Resources <<
 /Font <<
-/F1 4 0 R
+/F1 5 0 R
+/F2 6 0 R
+/F3 7 0 R
 >>
 >>
 /MediaBox [0 0 612 792]
-/Contents 5 0 R
+/Contents 8 0 R
 >>
 endobj
 
 4 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+/F3 7 0 R
+>>
+>>
+/MediaBox [0 0 612 792]
+/Contents 9 0 R
+>>
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+>>
+endobj
+
+6 0 obj
 <<
 /Type /Font
 /Subtype /Type1
@@ -36,121 +62,247 @@ endobj
 >>
 endobj
 
-5 0 obj
+7 0 obj
 <<
-/Length 2000
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Oblique
+>>
+endobj
+
+8 0 obj
+<<
+/Length 3500
 >>
 stream
 BT
-/F1 16 Tf
+% Header with branding
+/F1 24 Tf
+0.2 0.1 0.8 rg
 50 750 Td
-(OBS Studio 2025 - Checklist de Configuración Completo) Tj
+(OBS STUDIO 2025) Tj
+0 0 0 rg
+0 -30 Td
+/F1 18 Tf
+(CHECKLIST DE CONFIGURACIÓN PROFESIONAL) Tj
+
+% Website branding
 0 -40 Td
-/F1 12 Tf
-(www.yostreamer.com) Tj
-0 -60 Td
-/F1 14 Tf
-(INSTALACIÓN INICIAL) Tj
-0 -30 Td
-/F1 10 Tf
-(□ Descargar desde obsproject.com oficial) Tj
-0 -15 Td
+/F3 12 Tf
+0.5 0.5 0.5 rg
+(www.yostreamer.com - Guías de Streaming en Español) Tj
+0 0 0 rg
+
+% Separator line
+50 660 m 550 660 l S
+
+% Section 1: Installation
+0 -80 Td
+/F1 16 Tf
+0.8 0.2 0.2 rg
+(□ INSTALACIÓN INICIAL) Tj
+0 0 0 rg
+
+0 -25 Td
+/F2 11 Tf
+(□ Descargar desde obsproject.com \(versión oficial\)) Tj
+0 -18 Td
 (□ Ejecutar instalación como administrador) Tj
-0 -15 Td
-(□ Instalar en carpeta personalizada C:/OBS-Studio) Tj
-0 -15 Td
-(□ Activar Browser Source y Virtual Camera) Tj
-0 -15 Td
-(□ Añadir excepción en antivirus) Tj
-0 -30 Td
+0 -18 Td
+(□ Instalar en carpeta personalizada: C:/OBS-Studio) Tj
+0 -18 Td
+(□ Activar plugins: Browser Source y Virtual Camera) Tj
+0 -18 Td
+(□ Añadir excepción en antivirus y firewall) Tj
+0 -18 Td
+(□ Ejecutar Auto-Configuration Wizard inicial) Tj
+
+% Section 2: Video Settings
+0 -35 Td
+/F1 16 Tf
+0.8 0.2 0.2 rg
+(□ CONFIGURACIÓN DE VIDEO) Tj
+0 0 0 rg
+
+0 -25 Td
+/F2 11 Tf
+(□ Resolución base: 1920x1080 \(nativa monitor\)) Tj
+0 -18 Td
+(□ Resolución output: Gaming = 1080p, Chat = 720p) Tj
+0 -18 Td
+(□ FPS: Gaming competitivo = 60fps, Chat = 30fps) Tj
+0 -18 Td
+(□ Filtro de escala: Bicúbico \(GPU potente\) / Bilinear) Tj
+0 -18 Td
+(□ Formato de color: NV12 para streaming) Tj
+0 -18 Td
+(□ Color Space: 709 \(estándar\)) Tj
+
+% Section 3: Audio Settings  
+0 -35 Td
+/F1 16 Tf
+0.8 0.2 0.2 rg
+(□ CONFIGURACIÓN DE AUDIO) Tj
+0 0 0 rg
+
+0 -25 Td
+/F2 11 Tf
+(□ Sample Rate: 48 kHz \(estándar broadcast\)) Tj
+0 -18 Td
+(□ Canales: Estéreo para streaming) Tj
+0 -18 Td
+(□ Dispositivos: Configurar mic y audio desktop) Tj
+
+% Audio Filters subsection
+0 -25 Td
 /F1 14 Tf
-(CONFIGURACIÓN DE VIDEO) Tj
-0 -30 Td
-/F1 10 Tf
-(□ Resolución base: 1920x1080 (nativa del monitor)) Tj
-0 -15 Td
-(□ Gaming competitivo: 1080p 60fps) Tj
-0 -15 Td
-(□ Just chatting: 720p 30fps) Tj
-0 -15 Td
-(□ Filtro de escala: Bicubic (GPU potente) / Bilinear (general)) Tj
-0 -30 Td
-/F1 14 Tf
-(CONFIGURACIÓN DE AUDIO) Tj
-0 -30 Td
-/F1 10 Tf
-(□ Sample Rate: 48 kHz) Tj
-0 -15 Td
-(□ Canales: Stereo) Tj
-0 -15 Td
+0.3 0.3 0.8 rg
+(FILTROS DE AUDIO ESENCIALES:) Tj
+0 0 0 rg
+
+0 -20 Td
+/F2 11 Tf
 (□ Noise Suppression: -30dB a -40dB) Tj
-0 -15 Td
+0 -18 Td
 (□ Noise Gate: Close -45dB, Open -40dB) Tj
-0 -15 Td
+0 -18 Td
 (□ Compressor: Ratio 3:1, Threshold -15dB) Tj
-0 -15 Td
-(□ Limiter: Threshold -6dB) Tj
-0 -30 Td
-/F1 14 Tf
-(ENCODING Y STREAMING) Tj
-0 -30 Td
-/F1 10 Tf
-(□ Hardware encoding (NVENC/AMF) para gaming) Tj
-0 -15 Td
-(□ Software encoding (x264) para máxima calidad) Tj
-0 -15 Td
+0 -18 Td
+(□ Limiter: Threshold -6dB, Release 60ms) Tj
+0 -18 Td
+(□ EQ: Realce frecuencias vocales \(2-5kHz\)) Tj
+
+ET
+endstream
+endobj
+
+9 0 obj
+<<
+/Length 3200
+>>
+stream
+BT
+% Page 2 header
+/F1 16 Tf
+0.2 0.1 0.8 rg
+50 750 Td
+(OBS STUDIO 2025 - CHECKLIST \(Página 2/2\)) Tj
+0 0 0 rg
+
+% Section 4: Encoding
+0 -40 Td
+/F1 16 Tf
+0.8 0.2 0.2 rg
+(□ ENCODING Y STREAMING) Tj
+0 0 0 rg
+
+0 -25 Td
+/F2 11 Tf
+(□ Encoder: Hardware \(NVENC/AMF\) para gaming) Tj
+0 -18 Td
+(□ Encoder: Software \(x264\) para máxima calidad) Tj
+0 -18 Td
+(□ Rate Control: CBR para streaming estable) Tj
+0 -18 Td
 (□ Bitrate Twitch: 1080p60 = 6000-8000 kbps) Tj
-0 -15 Td
+0 -18 Td
 (□ Bitrate YouTube: 1080p60 = 9000-15000 kbps) Tj
-0 -15 Td
-(□ Audio bitrate: 160 kbps) Tj
-0 -30 Td
-/F1 14 Tf
-(ESCENAS ESENCIALES) Tj
-0 -30 Td
-/F1 10 Tf
-(□ Starting Soon - Logo + countdown) Tj
-0 -15 Td
-(□ Just Chatting - Cámara principal) Tj
-0 -15 Td
-(□ Gaming Full Screen - Juego 100%) Tj
-0 -15 Td
-(□ Gaming + Camera - Balance 70/25) Tj
-0 -15 Td
-(□ BRB/Away - Mensaje de pausa) Tj
-0 -15 Td
-(□ Ending/Thanks - Despedida) Tj
-0 -30 Td
-/F1 14 Tf
-(HOTKEYS RECOMENDADOS) Tj
-0 -30 Td
-/F1 10 Tf
-(□ F1-F6: Cambio de escenas) Tj
-0 -15 Td
+0 -18 Td
+(□ Audio bitrate: 160 kbps \(calidad/tamaño\)) Tj
+0 -18 Td
+(□ Keyframe Interval: 2 segundos \(automático\)) Tj
+
+% Section 5: Scenes
+0 -35 Td
+/F1 16 Tf
+0.8 0.2 0.2 rg
+(□ ESCENAS PROFESIONALES) Tj
+0 0 0 rg
+
+0 -25 Td
+/F2 11 Tf
+(□ "Starting Soon" - Logo + countdown timer) Tj
+0 -18 Td
+(□ "Just Chatting" - Cámara principal \(70%\)) Tj
+0 -18 Td
+(□ "Gaming Full Screen" - Juego completo) Tj
+0 -18 Td
+(□ "Gaming + Camera" - Balance 75/25) Tj
+0 -18 Td
+(□ "BRB/Away" - Mensaje pausa + música) Tj
+0 -18 Td
+(□ "Ending/Thanks" - Despedida personalizada) Tj
+
+% Section 6: Hotkeys
+0 -35 Td
+/F1 16 Tf
+0.8 0.2 0.2 rg
+(□ HOTKEYS RECOMENDADOS) Tj
+0 0 0 rg
+
+0 -25 Td
+/F2 11 Tf
+(□ F1-F6: Cambio rápido entre escenas) Tj
+0 -18 Td
 (□ F9: Start/Stop Streaming) Tj
-0 -15 Td
+0 -18 Td
 (□ F10: Start/Stop Recording) Tj
-0 -15 Td
+0 -18 Td
 (□ F11: Mute/Unmute Micrófono) Tj
+0 -18 Td
+(□ Ctrl+1-6: Toggle sources específicas) Tj
+0 -18 Td
+(□ Alt+1-3: Cambio audio scenes) Tj
+
+% Section 7: Troubleshooting
+0 -35 Td
+/F1 16 Tf
+0.8 0.2 0.2 rg
+(□ TROUBLESHOOTING FINAL) Tj
+0 0 0 rg
+
+0 -25 Td
+/F2 11 Tf
+(□ Verificar Stats: 0% dropped frames) Tj
+0 -18 Td
+(□ CPU Usage: Menos de 80% durante stream) Tj
+0 -18 Td
+(□ GPU Usage: Balance entre gaming y encoding) Tj
+0 -18 Td
+(□ Stream Delay: 2-6 segundos es normal) Tj
+0 -18 Td
+(□ Backup: Grabar localmente por seguridad) Tj
+
+% Footer
+50 50 Td
+/F3 10 Tf
+0.5 0.5 0.5 rg
+(© 2025 YoStreamer.com - Configuración OBS Studio Profesional) Tj
+0 0 0 rg
 0 -15 Td
-(□ Ctrl+1-6: Toggle sources) Tj
+(Sigue nuestras guías actualizadas en www.yostreamer.com) Tj
+
 ET
 endstream
 endobj
 
 xref
-0 6
+0 10
 0000000000 65535 f 
 0000000009 00000 n 
 0000000058 00000 n 
-0000000115 00000 n 
-0000000249 00000 n 
-0000000338 00000 n 
+0000000121 00000 n 
+0000000262 00000 n 
+0000000403 00000 n 
+0000000474 00000 n 
+0000000540 00000 n 
+0000000613 00000 n 
+0000004168 00000 n 
 trailer
 <<
-/Size 6
+/Size 10
 /Root 1 0 R
 >>
 startxref
-2391
+7423
 %%EOF
