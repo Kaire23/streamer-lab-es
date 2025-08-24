@@ -229,6 +229,40 @@ const PostPage: React.FC = () => {
         </div>
 
         <aside className="space-y-6">
+          {/* Equipment Setup Section */}
+          {post.setup && post.setup.length > 0 && (
+            <div className="border border-border/60 rounded-lg p-6 bg-card">
+              <h3 className="text-lg font-semibold mb-4 text-foreground">Equipamiento Recomendado</h3>
+              <div className="space-y-6">
+                {post.setup.map((category, categoryIndex) => (
+                  <div key={categoryIndex}>
+                    <h4 className="text-md font-medium mb-3 text-muted-foreground">{category.name}</h4>
+                    <div className="space-y-2">
+                      {category.items.map((item, itemIndex) => (
+                        <div key={itemIndex} className="flex flex-col space-y-1">
+                          <a 
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+                            data-testid={`link-equipment-${item.name.replace(/\s+/g, '-').toLowerCase()}`}
+                          >
+                            {item.name}
+                          </a>
+                          {item.note && (
+                            <span className="text-xs text-muted-foreground">
+                              {item.note}
+                            </span>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           <AdSlot 
             id="content-sidebar"
             format="rectangle"

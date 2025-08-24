@@ -9378,9 +9378,11 @@ Su purple RGB theme no es solo decoration; es una strategic choice que builds re
 
 OBS Studio se ha consolidado como el software de streaming y grabación más importante del ecosistema digital, utilizado por millones de content creators desde principiantes hasta streamers profesionales como Ibai Llanos, ElXokas y los más grandes influencers del mundo.
 
-### Descarga GRATIS: PDF Checklist Completo
+### 📥 Descarga GRATIS: PDF Checklist Completo
 
-Descarga nuestro checklist paso a paso para imprimir con todas las configuraciones, atajos de teclado y troubleshooting incluidos.
+**[⬇️ DESCARGAR CHECKLIST PDF - GRATIS](\/obs-studio-2025-checklist.pdf)** 
+
+Descarga nuestro checklist paso a paso para imprimir con todas las configuraciones, atajos de teclado y troubleshooting incluidos. ¡Perfecto para tenerlo a mano mientras configuras OBS!
 
 ### Instalación y Primeros Pasos
 
@@ -9487,7 +9489,7 @@ Con esta configuración correcta, tu streams rivalizarán con cualquier broadcas
       {
         name: "Recursos Adicionales",
         items: [
-          { name: "PDF Checklist Completo", link: "/public-objects/obs-studio-2025-checklist.pdf", note: "Descarga gratis" },
+          { name: "PDF Checklist Completo", link: "/obs-studio-2025-checklist.pdf", note: "Descarga gratis" },
           { name: "Streamlabs Widgets", link: amazonSearchUrl("Streamlabs widgets"), note: "Overlays y alerts" },
           { name: "Copyright-Free Music", link: amazonSearchUrl("royalty free music streaming"), note: "Música sin copyright" },
         ],
