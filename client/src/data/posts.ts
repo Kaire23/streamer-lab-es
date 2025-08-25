@@ -22,6 +22,8 @@ import staryuukiImg from "@assets/Staryuuki_1755881448349.jpg";
 import jeltyImg from "@assets/jelty_1756032692554.jpg";
 import obsImg from "@assets/obs_1756060400861.png";
 import obsBlackImg from "@assets/obsblack_1756103395864.jpg";
+import obsGif1 from "@assets/obsgif1.gif_1756103350223.webp";
+import obsGif2 from "@assets/obsgif2_1756103350222.gif";
 import { amazonSearchUrl } from "@/lib/affiliate";
 
 export type SetupItem = { name: string; link: string; note?: string; image?: string };
@@ -128,6 +130,8 @@ Los drivers obsoletos o corruptos son la segunda causa más común.
 3. Si falla, probar OpenGL
 4. Adapter: Seleccionar GPU dedicada manualmente
 
+![Configuración OBS Display Capture](${obsGif1})
+
 ## SOLUCIÓN 4: Resetear Sources y Escenas
 
 Cuando las fuentes se corrompen, causan pantalla negra persistente.
@@ -177,6 +181,8 @@ Los sistemas anti-cheat modernos pueden bloquear completamente la captura de OBS
 2. Advanced graphics settings
 3. Choose OBS Studio
 4. Options → High performance
+
+![OBS captura funcionando correctamente](${obsGif2})
 
 ## SOLUCIÓN 7: Reset Factory Completo
 
