@@ -59,6 +59,14 @@ const postSEOData: Record<string, SEOData> = {
     canonical: 'https://yostreamer.com/setup/configurar-obs-studio-2025-guia-completa',
     ogImage: 'https://yostreamer.com/assets/obs_1756060400861.png',
     type: 'article'
+  },
+  'obs-pantalla-negra-soluciones': {
+    title: 'OBS pantalla negra: 7 soluciones INMEDIATAS que funcionan | Setups de Streamers',
+    description: '¿Tu OBS muestra pantalla negra? Aquí tienes 7 soluciones inmediatas y efectivas para arreglar el problema de pantalla negra en OBS Studio. Guía completa paso a paso.',
+    keywords: 'OBS pantalla negra, arreglar OBS, soluciones OBS, OBS no funciona, pantalla negra streaming, problemas OBS Studio',
+    canonical: 'https://yostreamer.com/setup/obs-pantalla-negra-soluciones',
+    ogImage: 'https://yostreamer.com/assets/obsblack_1756103395864.jpg',
+    type: 'article'
   }
 };
 
