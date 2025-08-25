@@ -67,6 +67,46 @@ const postSEOData: Record<string, SEOData> = {
     canonical: 'https://yostreamer.com/setup/obs-pantalla-negra-soluciones',
     ogImage: 'https://yostreamer.com/assets/obsblack_1756103395864.jpg',
     type: 'article'
+  },
+  'mejor-webcam-para-streaming-2025-guia-completa': {
+    title: 'Mejor Webcam para Streaming 2025: Guía Completa de Compra | Setups de Streamers',
+    description: 'Descubre las mejores webcams para streaming en 2025: comparativas detalladas, análisis de calidad 4K, presupuestos desde €50 hasta €500, y recomendaciones específicas para cada tipo de content creator.',
+    keywords: 'mejor webcam streaming 2025, cámara web streaming, webcam 4K, Logitech C920, streaming camera, cámara Twitch',
+    canonical: 'https://yostreamer.com/setup/mejor-webcam-para-streaming-2025-guia-completa',
+    ogImage: 'https://yostreamer.com/assets/webcam_1755267809270.jpg',
+    type: 'article'
+  },
+  'mejor-microfono-streaming-2025': {
+    title: 'Mejor Micrófono para Streaming 2025: Guía Completa de Compra | Setups de Streamers',
+    description: 'Descubre los mejores micrófonos para streaming en 2025. Desde el legendario Shure SM7B hasta opciones económicas que usan Ibai, ElXokas y TheGrefg.',
+    keywords: 'mejor micrófono para streaming 2025, micrófono streaming, Shure SM7B, micrófono Twitch, audio streaming profesional',
+    canonical: 'https://yostreamer.com/setup/mejor-microfono-streaming-2025',
+    ogImage: 'https://yostreamer.com/og-default.jpg',
+    type: 'article'
+  },
+  'mejores-eventos-de-twitch-2025-guia-completa': {
+    title: 'Mejores eventos de Twitch 2025: Guía completa | Setups de Streamers',
+    description: 'Descubre los mejores eventos de Twitch en 2025: TwitchCon, LaVelada del Año, Ibai Llanos events, y todos los eventos que no te puedes perder este año.',
+    keywords: 'eventos Twitch 2025, TwitchCon, LaVelada del Año, eventos streaming, Ibai eventos, Twitch Spain',
+    canonical: 'https://yostreamer.com/setup/mejores-eventos-de-twitch-2025-guia-completa',
+    ogImage: 'https://yostreamer.com/assets/twitch_1755267691248.jpg',
+    type: 'article'
+  },
+  'guia-completa-de-iniciacion-al-streaming-en-kick-2025': {
+    title: 'Guía completa de iniciación al streaming en Kick 2025 | Setups de Streamers',
+    description: 'Aprende a hacer streaming en Kick desde cero en 2025. Guía paso a paso con consejos, configuración de OBS, monetización y cómo crecer en la plataforma.',
+    keywords: 'streaming Kick 2025, cómo hacer stream en Kick, Kick vs Twitch, monetización Kick, OBS Kick setup',
+    canonical: 'https://yostreamer.com/setup/guia-completa-de-iniciacion-al-streaming-en-kick-2025',
+    ogImage: 'https://yostreamer.com/assets/kick_1755267725752.jpg',
+    type: 'article'
+  },
+  'setup-de-streaming-de-lolitofdez-2025-guia-completa': {
+    title: 'Setup de streaming de LolitoFdez 2025: Guía completa | Setups de Streamers',
+    description: 'Descubre el setup completo de LolitoFdez: micrófono profesional, cámara de alta calidad, PC gaming optimizado e iluminación perfecta para sus directos de FIFA y variedad.',
+    keywords: 'LolitoFdez setup, setup Lolito, micrófono Lolito, PC gaming Lolito, streaming FIFA',
+    canonical: 'https://yostreamer.com/setup/setup-de-streaming-de-lolitofdez-2025-guia-completa',
+    ogImage: 'https://yostreamer.com/assets/lolitosetup_1755267496338.jpg',
+    type: 'article'
   }
 };
 

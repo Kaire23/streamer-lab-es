@@ -17,6 +17,32 @@ export async function registerRoutes(app: Express): Promise<Server> {
     res.redirect(301, '/setup/elxokas');
   });
 
+  // Redirect old malformed URLs to correct ones
+  app.get('/setup/mejor-webcam-para-streaming-2025-gua-completa-de-compra-1754761396286', (req, res) => {
+    res.redirect(301, '/setup/mejor-webcam-para-streaming-2025-guia-completa');
+  });
+
+  app.get('/article/mejor-microfono-streaming-2025', (req, res) => {
+    res.redirect(301, '/setup/mejor-microfono-streaming-2025');
+  });
+
+  // Redirect old sitemap URLs to correct slugs
+  app.get('/setup/twitch-eventos-2025', (req, res) => {
+    res.redirect(301, '/setup/mejores-eventos-de-twitch-2025-guia-completa');
+  });
+
+  app.get('/setup/kick-streaming-2025', (req, res) => {
+    res.redirect(301, '/setup/guia-completa-de-iniciacion-al-streaming-en-kick-2025');
+  });
+
+  app.get('/setup/lolito', (req, res) => {
+    res.redirect(301, '/setup/setup-de-streaming-de-lolitofdez-2025-guia-completa');
+  });
+
+  app.get('/setup/mejores-webcams-streaming-2025', (req, res) => {
+    res.redirect(301, '/setup/mejor-webcam-para-streaming-2025-guia-completa');
+  });
+
   // SEO-optimized HTML for individual setup pages
   app.get('/setup/:slug', async (req, res, next) => {
     const validSlugs = ['ibai-llanos', 'elxokas', 'illojuan', 'thegrefg', 'coscu'];
