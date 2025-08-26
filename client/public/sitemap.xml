@@ -197,6 +197,17 @@
     </image:image>
   </url>
   
+  <url>
+    <loc>https://yostreamer.com/setup/streaming-con-2mb-internet-guia-completa</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://yostreamer.com/assets/guia_1756190738646.jpg</image:loc>
+      <image:title>Streaming con 2MB de internet: La guía imposible que SÍ funciona</image:title>
+      <image:caption>Configuración completa para streaming con conexiones lentas</image:caption>
+    </image:image>
+  </url>
+  
   <!-- Utility pages -->
   <url>
     <loc>https://yostreamer.com/unsubscribed</loc>

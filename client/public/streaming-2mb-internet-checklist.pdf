@@ -1,0 +1,176 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+  /Font <<
+    /F1 5 0 R
+    /F2 6 0 R
+  >>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 3200
+>>
+stream
+BT
+/F1 24 Tf
+50 720 Td
+(Streaming con 2MB de Internet: Checklist Completo) Tj
+0 -40 Td
+/F2 14 Tf
+(yostreamer.com - La guia imposible que SI funciona) Tj
+
+0 -60 Td
+/F1 16 Tf
+(CONFIGURACION CRITICA DE OBS STUDIO) Tj
+
+0 -30 Td
+/F2 12 Tf
+(□ Video Bitrate: 800-1200 kbps MAXIMO) Tj
+0 -20 Td
+(□ Audio Bitrate: 96 kbps) Tj
+0 -20 Td
+(□ Resolucion Base: 1280x720) Tj
+0 -20 Td
+(□ Output Resolution: 854x480) Tj
+0 -20 Td
+(□ FPS: 24 fps FIJO) Tj
+0 -20 Td
+(□ Encoder: x264 \(NO usar NVENC\)) Tj
+0 -20 Td
+(□ CPU Preset: ultrafast) Tj
+0 -20 Td
+(□ Profile: baseline) Tj
+
+0 -40 Td
+/F1 16 Tf
+(OPTIMIZACION DE RED) Tj
+
+0 -30 Td
+/F2 12 Tf
+(□ Test de velocidad real: speedtest.net) Tj
+0 -20 Td
+(□ Upload minimo: 2.5 Mbps real) Tj
+0 -20 Td
+(□ Cerrar TODAS las aplicaciones innecesarias) Tj
+0 -20 Td
+(□ Pausar actualizaciones automaticas) Tj
+0 -20 Td
+(□ Desactivar sincronizacion en la nube) Tj
+0 -20 Td
+(□ QoS: Priorizar OBS en router) Tj
+0 -20 Td
+(□ Cable Ethernet \(NUNCA WiFi\)) Tj
+
+0 -40 Td
+/F1 16 Tf
+(CONFIGURACION DE JUEGO) Tj
+
+0 -30 Td
+/F2 12 Tf
+(□ Limitar FPS del juego a 30) Tj
+0 -20 Td
+(□ Calidad grafica: Baja/Media) Tj
+0 -20 Td
+(□ Desactivar overlays \(Steam, Discord\)) Tj
+0 -20 Td
+(□ Game Mode activado en Windows) Tj
+0 -20 Td
+(□ Cerrar navegadores completamente) Tj
+
+0 -40 Td
+/F1 16 Tf
+(MONITORIZACION EN TIEMPO REAL) Tj
+
+0 -30 Td
+/F2 12 Tf
+(□ OBS Stats Dock activado) Tj
+0 -20 Td
+(□ Dropped frames < 0.1%) Tj
+0 -20 Td
+(□ Render lag < 10ms) Tj
+0 -20 Td
+(□ Encoding lag < 5ms) Tj
+0 -20 Td
+(□ CPU usage < 80%) Tj
+
+0 -40 Td
+/F1 16 Tf
+(CONTINGENCIAS DE EMERGENCIA) Tj
+
+0 -30 Td
+/F2 12 Tf
+(□ Backup: Reducir bitrate a 600 kbps) Tj
+0 -20 Td
+(□ Cambiar a 360p si es necesario) Tj
+0 -20 Td
+(□ Tener 4G/5G como backup) Tj
+0 -20 Td
+(□ Stream offline en caso extremo) Tj
+
+0 -60 Td
+/F1 14 Tf
+(Creado por Setups de Streamers - yostreamer.com) Tj
+0 -20 Td
+/F2 10 Tf
+(Mas guias y tutoriales en https://yostreamer.com) Tj
+
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+>>
+endobj
+
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000274 00000 n 
+0000003528 00000 n 
+0000003607 00000 n 
+trailer
+<<
+/Size 7
+/Root 1 0 R
+>>
+startxref
+3681
+%%EOF

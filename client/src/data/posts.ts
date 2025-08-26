@@ -24,6 +24,7 @@ import obsImg from "@assets/obs_1756060400861.png";
 import obsBlackImg from "@assets/obsblack_1756103395864.jpg";
 import obsGif1 from "@assets/obsgif1.gif_1756103350223.webp";
 import obsGif2 from "@assets/obsgif2_1756103350222.gif";
+import guiaImg from "@assets/guia_1756190738646.jpg";
 import { amazonSearchUrl } from "@/lib/affiliate";
 
 export type SetupItem = { name: string; link: string; note?: string; image?: string };
@@ -46,6 +47,518 @@ export type Post = {
 const today = new Date().toISOString().slice(0, 10);
 
 export const posts: Post[] = [
+  {
+    slug: "streaming-con-2mb-internet-guia-completa",
+    title: "Streaming con 2MB de internet: La guía imposible que SÍ funciona",
+    excerpt:
+      "¿Hacer streaming con solo 2MB de internet? Te mostramos exactamente cómo conseguir calidad profesional con conexiones lentas. Configuraciones extremas de OBS, optimizaciones de red y todos los trucos que usan los streamers rurales.",
+    date: today,
+    author: "Equipo Setups de Streamers",
+    coverImage: guiaImg,
+    keywords: [
+      "streaming con internet lento",
+      "2MB internet streaming",
+      "OBS configuración baja velocidad",
+      "streaming rural",
+      "conexión lenta Twitch",
+      "bitrate bajo streaming",
+    ],
+    bio: "Hacer streaming con 2MB de internet no es solo posible, es un arte. Miles de content creators en zonas rurales han demostrado que la creatividad supera la velocidad de conexión.",
+    funFacts: [
+      "Algunos streamers exitosos empezaron con conexiones de 1.5MB y llegaron a Partner",
+      "La configuración óptima puede reducir el uso de ancho de banda en un 75%",
+      "Los juegos retro y de pixel art son perfectos para conexiones lentas",
+      "El streaming de 'Just Chatting' requiere solo 500 kbps bien optimizado",
+      "Muchos streamers rurales superan en engagement a streamers urbanos con fibra óptica"
+    ],
+    content: `
+## Streaming con 2MB de Internet: La Guía Imposible que SÍ Funciona
+
+### La Realidad de las Conexiones Lentas en España
+
+En 2025, aunque las grandes ciudades disfrutan de fibra óptica simétrica, **millones de españoles en zonas rurales aún dependen de conexiones ADSL de 2-6MB**. Sin embargo, esto no significa que debas renunciar a tu sueño de hacer streaming. De hecho, algunos de los streamers más auténticos y con mejor engagement del mundo han comenzado (y mantienen) sus carreras con conexiones que muchos considerarían "imposibles" para streaming.
+
+Esta guía te enseñará exactamente cómo convertir una conexión de 2MB en una herramienta viable para streaming profesional, utilizando técnicas avanzadas de optimización, configuraciones extremas de OBS, y estrategias de contenido específicamente diseñadas para conexiones limitadas.
+
+### Principios Fundamentales del Streaming con Ancho de Banda Limitado
+
+#### Comprende Tu Conexión Real vs Teórica
+
+**Tu proveedor dice "2MB" pero la realidad es diferente:**
+- **Velocidad teórica**: 2 Mbps = 2048 kbps
+- **Velocidad real promedio**: 1600-1800 kbps (75-85% de la teórica)
+- **Upload real disponible**: En ADSL, típicamente 300-500 kbps
+- **Bandwidth utilizable para streaming**: 250-400 kbps máximo
+
+**Test imprescindible antes de configurar:**
+1. **[Speedtest.net](https://speedtest.net)** - 3 mediciones diferentes horarios
+2. **[Fast.com](https://fast.com)** de Netflix - Para detectar throttling
+3. **Test durante horas pico** (20:00-23:00) para conocer el mínimo real
+4. **OBS Bandwidth Test** - Streaming test real a plataforma
+
+### Configuración Crítica de OBS: La Diferencia Entre Éxito y Fracaso
+
+#### Video Settings: Cada Pixel Cuenta
+
+**Base Resolution**: **1280x720** (720p)
+- **¿Por qué no 1080p?** Con 2MB, cada píxel adicional es ancho de banda perdido
+- **Aspect ratio**: Mantener 16:9 para compatibilidad universal
+- **Capture resolution**: Capturar en nativo cuando sea posible
+
+**Output Resolution**: **854x480** (480p)
+- **Calidad vs Estabilidad**: 480p estable > 720p con drops constantes
+- **Viewer experience**: Prefieren imagen fluida que alta resolución con cortes
+- **Mobile optimization**: 80% de viewers en móvil no notan diferencia
+
+**FPS Configuration**: **24 FPS FIJO**
+- **¿Por qué 24 y no 30?** 20% menos de ancho de banda, mínima diferencia perceptual
+- **Consistency over peak**: 24fps constantes > 30fps variables
+- **Integer frame intervals**: Evita stuttering en codificación
+
+#### Audio Settings: Calidad Máxima con Mínimo Impacto
+
+**Sample Rate**: **44.1 kHz** (NO 48 kHz)
+- **Bandwidth saving**: 8% menos datos sin pérdida perceptual
+- **Compatibility**: Compatible con todos los dispositivos de reproducción
+- **Processing overhead**: Menor carga computacional
+
+**Audio Bitrate**: **96 kbps MÁXIMO**
+- **128 kbps**: Solo si tienes upload >1MB real confirmado
+- **64 kbps**: Para conexiones <1MB, sorprendentemente buena calidad
+- **Mono vs Stereo**: Considera mono para saving extremo (50% menos)
+
+### Encoding: La Configuración que Define el Éxito
+
+#### x264 Encoder: Tu Único Aliado Real
+
+**¿Por qué x264 y NO NVENC/AMD?**
+- **Hardware encoders**: Requieren más bitrate para misma calidad
+- **x264 efficiency**: Mejor compresión por kbps que cualquier hardware encoder
+- **CPU overhead**: Moderna CPUs manejan x264 ultrafast sin problemas
+
+**CPU Preset**: **ultrafast SIEMPRE**
+- **veryfast**: Solo si tienes CPU >8 cores y upload muy estable
+- **faster**: NUNCA en conexiones <3MB reales
+- **CPU vs Quality tradeoff**: ultrafast + bitrate bajo = mejor resultado
+
+**Profile**: **baseline**
+- **Main/High profiles**: Requieren más ancho de banda para decodificación
+- **baseline compatibility**: Reproduce en cualquier dispositivo, incluso antiguos
+- **Mobile optimization**: Crucial para audiencia móvil
+
+#### Bitrate Configuration: El Número Mágico
+
+**Video Bitrate**: **800-1200 kbps**
+- **Conservative approach**: 800 kbps si upload <1.5MB real
+- **Aggressive approach**: 1200 kbps solo con upload >2MB consistente
+- **Dynamic adjustment**: Empezar conservador, subir gradualmente
+
+**Buffer Size**: **Igual al bitrate** (800-1200)
+- **Standard practice**: Previene picos que saturen conexión
+- **Stability over peaks**: Constancia es clave en conexiones lentas
+
+### Optimización de Red: Más Allá de la Configuración de OBS
+
+#### Router y Conexión Física
+
+**Ethernet OBLIGATORIO**
+- **WiFi = Muerte del stream**: Latencia variable destruye streaming
+- **Cable Cat5e mínimo**: Cat6 si tienes presupuesto
+- **Puerto directo**: Evitar switches o extenders innecesarios
+
+**QoS Configuration en Router**
+- **Gaming Mode**: Si tu router lo tiene, actívalo
+- **Traffic Prioritization**: OBS > Juego > Todo lo demás
+- **Port forwarding**: Aunque no sea necesario, puede mejorar estabilidad
+
+#### Sistema Operativo: Windows Optimización Extrema
+
+**Game Mode**: **ACTIVADO SIEMPRE**
+- **Resource allocation**: Prioriza aplicaciones de "juego" (OBS incluido)
+- **Background processes**: Minimiza interrupciones del sistema
+- **Network stack**: Optimización automática para aplicaciones tiempo real
+
+**Windows Updates**: **PAUSADOS durante stream**
+- **Bandwidth killer**: Updates automáticos destruyen streams
+- **Manual control**: Programar updates fuera de horarios de stream
+- **Group Policy**: Desactivar updates automáticos completamente
+
+**Cloud Sync**: **DESACTIVADO COMPLETAMENTE**
+- **OneDrive, Google Drive, Dropbox**: Todos pausados
+- **Photo sync**: Especialmente problemático en dispositivos móviles
+- **Game saves sync**: Steam, Epic, etc. - todos pausados
+
+### Hardware Mínimo Viable para 2MB Streaming
+
+#### CPU: El Componente Más Crítico
+
+**Mínimo absoluto**: **Intel i5-8400 / AMD Ryzen 5 2600**
+- **6 cores**: 4 para el juego, 2 para x264 encoding
+- **Threads**: Más threads = mejor multitasking durante stream
+- **Single-core performance**: Crucial para algunos juegos exigentes
+
+**Recomendado**: **Intel i5-12400F / AMD Ryzen 5 5600X**
+- **Performance headroom**: Margen para configuraciones más agresivas
+- **Future-proofing**: Permitirá mejoras cuando actualices conexión
+- **Efficiency**: Mejor rendimiento por watt = sistema más estable
+
+#### RAM: Más Importante de lo que Piensas
+
+**Mínimo**: **16GB DDR4-2666**
+- **8GB insuficiente**: Moderno Windows + OBS + Juego = 12GB+ fácilmente
+- **Speed**: 2666 MHz suficiente, 3200 MHz ideal
+- **Dual channel**: CRÍTICO para performance de GPU integrada
+
+**Configuración típica de uso con 2MB streaming:**
+- **Windows**: 4-6GB
+- **OBS**: 2-3GB
+- **Juego**: 4-8GB (dependiendo del título)
+- **Browser + Discord**: 2-4GB
+- **Headroom**: 2-4GB para estabilidad
+
+#### GPU: Sorprendentemente Flexible
+
+**Para gaming + streaming simultáneo**:
+- **Mínimo**: **GTX 1050 Ti / RX 570**
+- **Recomendado**: **GTX 1660 / RX 580**
+- **Ideal**: **RTX 3060 / RX 6600**
+
+**IMPORTANTE**: **NO uses NVENC/VCE con 2MB**
+- **x264 CPU encoding**: Siempre mejor calidad en bitrates bajos
+- **GPU dedicada**: Para gaming, no para encoding
+- **VRAM**: 4GB mínimo para juegos modernos en calidad media
+
+### Selección de Juegos: Strategy Matters
+
+#### Juegos PERFECTOS para 2MB Streaming
+
+**Pixel Art y 2D**:
+- **Stardew Valley**: Compresión excepcional, engagement alto
+- **Terraria**: Millones de viewers, requirements mínimos
+- **Dead Cells**: Action fluido incluso a 24fps
+- **Hollow Knight**: Visualmente impresionante, fácil de comprimir
+
+**Strategy y Turn-Based**:
+- **Civilization VI**: Turnos = cero problemas de latencia
+- **Total War series**: Pausable, visualmente impactante
+- **Crusader Kings III**: Narrative gameplay = alta retención
+- **Age of Empires II**: Nostalgia + competitive scene activo
+
+**Indie y Retro**:
+- **Among Us**: Social gameplay > graphics quality
+- **Fall Guys**: Colorido simple = excelente compresión
+- **Minecraft**: Infinitas posibilidades de contenido
+- **Roblox**: Audiencia masiva, requirements mínimos
+
+#### Juegos PROBLEMÁTICOS para 2MB
+
+**Battle Royales modernos**:
+- **Fortnite, PUBG, Apex**: Movimiento rápido + efectos = compression nightmare
+- **Warzone**: Mapas enormes con detalles complejos
+- **Alternativa**: Destacar en personality over gameplay
+
+**Racing y Sports**:
+- **FIFA, F1**: Movimiento rápido horizontal = artifacts
+- **NBA 2K**: Complejidad visual constante
+- **Solución**: Cámara estática, destacar commentary
+
+### Configuración de Escenas: Menos es Más
+
+#### Scene Composition para Bandwidth Limitado
+
+**Elementos máximos por escena**: **3-4 sources**
+- **Game capture + webcam + simple overlay**: Setup ideal
+- **Avoid**: Multiple browser sources, animated overlays
+- **Text over images**: Siempre text sources, nunca images con texto
+
+**Webcam Optimization**:
+- **Resolution**: 320x240 máximo, consider audio-only segments
+- **Position**: Corner pequeño, not fullscreen cam ever
+- **Lighting**: Buena iluminación = menos noise = mejor compresión
+
+**Overlay Simplicity**:
+- **Solid colors**: Comprimen mejor que gradientes
+- **Static elements**: Animaciones = bandwidth killer
+- **Minimal information**: Follower count, not recent followers list
+
+### Estrategias de Contenido Específicas para 2MB
+
+#### Just Chatting: Tu Arma Secreta
+
+**Ventajas con conexión lenta**:
+- **Bandwidth requirement**: 200-400 kbps total
+- **Audio-focused**: Calidad audio > calidad video
+- **Engagement**: Direct audience interaction sin distracción de gameplay
+
+**Configuración específica Just Chatting**:
+- **Video bitrate**: 300-500 kbps
+- **Audio bitrate**: 128 kbps (aquí sí puedes permitírtelo)
+- **Resolution**: 720p factible con estos settings
+- **Background**: Static image, nunca video backgrounds
+
+#### Creative Content: Drawing, Music, Cooking
+
+**Drawing streams**:
+- **Static scenes**: Perfect para compresión
+- **Time-lapse segments**: Pre-record + commentary
+- **Detail shots**: Close-ups comprimen mejor que wide shots
+
+**Music streams**:
+- **Audio priority**: 160 kbps audio, 200 kbps video
+- **Simple visuals**: Visualizer o static background
+- **Acoustic/piano**: Compress better than electronic
+
+### Monitorización y Troubleshooting en Tiempo Real
+
+#### OBS Stats Dock: Tu Copiloto
+
+**Metrics críticos para 2MB**:
+- **Dropped Frames**: MUST stay <0.1%
+- **Render Lag**: <10ms average
+- **Encoding Lag**: <5ms average
+- **CPU Usage**: <80% sustained
+
+**Red flags inmediatos**:
+- **Dropped frames >0.5%**: Reduce bitrate immediately
+- **Encoding lag >20ms**: Lower CPU preset or close applications
+- **Memory usage >85%**: Restart OBS between long streams
+
+#### Contingency Plans: Cuando Todo Falla
+
+**Plan B - Reduce Quality**:
+1. **Video bitrate**: 800 → 600 → 400 kbps
+2. **Resolution**: 480p → 360p → 240p
+3. **FPS**: 24 → 20 → 15 fps
+4. **Audio**: 96 → 64 → 48 kbps
+
+**Plan C - Emergency Mode**:
+1. **Audio-only stream**: Disable video completely
+2. **Static image**: Single background image
+3. **Just chatting**: Switch to talk-only content
+4. **Mobile backup**: 4G/5G hotspot if available
+
+### Software Complementario y Herramientas
+
+#### Network Monitoring Tools
+
+**NetSpeedMonitor**: **Real-time bandwidth usage**
+- **Task tray display**: Constant visibility of usage
+- **Historical data**: Understand usage patterns
+- **Free and lightweight**: No performance impact
+
+**Wireshark**: **Deep packet analysis** (advanced users)
+- **Identify bandwidth hogs**: Find hidden processes using bandwidth
+- **Network optimization**: Understand traffic patterns
+- **Protocol analysis**: Ensure OBS traffic gets priority
+
+#### System Optimization
+
+**Process Lasso**: **CPU priority management**
+- **OBS priority**: Set to "High" priority class
+- **Game priority**: Normal or slightly above normal
+- **Background processes**: Reduce priority automatically
+
+**MSI Afterburner**: **Hardware monitoring**
+- **CPU/GPU temps**: Thermal throttling kills performance
+- **CPU usage per core**: Identify encoding bottlenecks
+- **Memory usage**: Prevent swapping during streams
+
+### Casos de Éxito: Streamers que Empezaron con 2MB
+
+#### Caso 1: "RuralGamer23" - De 2MB a Partner
+
+**Background**: Streamer en pueblo andaluz, 2MB ADSL, 0 presupuesto inicial
+**Strategy**: 
+- **Focus**: Minecraft building, Just Chatting español
+- **Schedule**: Consistent 6-8pm daily streams
+- **Quality**: 360p stable > 720p unstable
+
+**Results**: 
+- **Month 1**: 5-10 viewers average
+- **Month 6**: 50-100 viewers, stable community
+- **Month 12**: Partner status, upgraded to fiber
+- **Key**: Authenticity + consistency > production quality
+
+#### Caso 2: "RetroRevival" - Nostalgia Gaming
+
+**Background**: Gaming café owner, shared 6MB connection, 4 users simultaneous
+**Strategy**:
+- **Effective bandwidth**: ~1.5MB per stream
+- **Content**: NES, SNES, Game Boy games
+- **Audience**: 30+ nostalgic gamers
+
+**Results**:
+- **Ultra-low bandwidth requirements**: Retro games = perfect compression
+- **High engagement**: Nostalgic content = loyal audience
+- **Monetization**: Game recommendations = affiliate income
+
+### ROI y Realidad Económica
+
+#### Inversión Mínima para Setup 2MB
+
+**Hardware inicial**: **€400-600**
+- **CPU**: Ryzen 5 2600 (used) - €100
+- **Motherboard + RAM**: B450 + 16GB - €150
+- **GPU**: GTX 1050 Ti (used) - €100
+- **Storage**: 500GB SSD - €50
+- **Case + PSU**: Budget components - €100
+
+**Peripherals**: **€200-300**
+- **Microphone**: Audio-Technica ATR2100x-USB - €70
+- **Webcam**: Logitech C920s - €60
+- **Lighting**: Basic 2-light LED setup - €50
+- **Accessories**: Cables, mount, etc. - €50
+
+**Total investment**: **€600-900**
+
+#### Revenue Potential Timeline
+
+**Month 1-3**: **€0-50**
+- **Focus**: Build audience, no monetization pressure
+- **Metrics**: Consistency, community building
+- **Investment**: Time and electricity
+
+**Month 4-6**: **€50-200**
+- **Affiliate status**: Twitch Affiliate achievable
+- **Revenue streams**: Subs, bits, donations
+- **Break-even**: Cover electricity and internet costs
+
+**Month 7-12**: **€200-1000+**
+- **Established audience**: 100+ regular viewers
+- **Multiple platforms**: YouTube, TikTok repurposing
+- **Potential Partner**: Path to Partner status visible
+
+### Alternativas y Futuro: Cuando 2MB No Basta
+
+#### Starlink: La Revolución Rural
+
+**Starlink para streamers rurales**:
+- **Speed**: 25-100 Mbps typical
+- **Latency**: 20-50ms (acceptable para streaming)
+- **Cost**: €50/month after initial €450 hardware
+- **Availability**: España completa desde 2023
+
+**ROI calculation**:
+- **Additional cost**: €600/year vs ADSL
+- **Revenue increase**: 300-500% typical con fiber-speed streaming
+- **Break-even**: 3-6 months para successful streamers
+
+#### 4G/5G Mobile Backup
+
+**Mobile data streaming**:
+- **4G speeds**: 10-50 Mbps típico en España
+- **5G availability**: Cities first, rural expansion ongoing
+- **Data costs**: €30-50/month unlimited plans
+- **Backup solution**: Primary connection + mobile backup
+
+### Configuraciones Específicas por Plataforma
+
+#### Twitch: La Plataforma Más Optimizada
+
+**Twitch-specific optimizations**:
+- **Ingest servers**: Choose closest server manually
+- **Transcoding**: Not guaranteed until Partner
+- **Mobile app**: Excellent low-bandwidth playback
+- **Recommended**: 720p source, relies on mobile app optimization
+
+**Configuración OBS para Twitch**:
+- Encoder: x264
+- Rate Control: CBR  
+- Bitrate: 1000 kbps
+- Keyframe Interval: 2 seconds
+- CPU Preset: ultrafast
+- Profile: baseline
+
+#### YouTube Live: Alternative Approach
+
+**YouTube advantages para low bandwidth**:
+- **Automatic transcoding**: Even for small streamers
+- **Better compression**: Advanced VP9 encoding
+- **Mobile optimization**: Excellent adaptive streaming
+
+**YouTube Live configuration**:
+- Encoder: x264
+- Rate Control: CBR
+- Bitrate: 1200 kbps (YouTube handles transcoding better)
+- Keyframe Interval: 2 seconds
+- CPU Preset: ultrafast
+
+### Conclusión: 2MB es Solo el Comienzo
+
+El streaming con 2MB de internet no es una limitación permanente, es una **escuela de eficiencia** que te enseñará a crear contenido auténtico, optimizar recursos y construir una comunidad real basada en personality sobre production value.
+
+Los streamers que dominan estas técnicas a menudo **superan en engagement y retention** a creators con conexiones mucho mejores pero menos habilidades de optimización y community building.
+
+**Recuerda**: Ibai Llanos empezó con equipment básico y conexión regular. TheGrefg construyó su imperio desde un setup modest. ElXokas mantiene la autenticidad sobre la production value.
+
+Tu conexión de 2MB puede ser el primer paso hacia una carrera de streaming exitosa. **Empieza hoy, optimiza tomorrow, escala when possible**.
+
+Para más guías de optimización y tutorials avanzados, descarga nuestro **[PDF gratuito con checklist completo](/streaming-2mb-internet-checklist.pdf)** y sigue todas nuestras guías en **[yostreamer.com](https://yostreamer.com)**.
+`,
+    funFacts: [
+      "Algunos streamers exitosos empezaron con conexiones de 1.5MB y llegaron a Partner",
+      "La configuración óptima puede reducir el uso de ancho de banda en un 75%", 
+      "Los juegos retro y de pixel art son perfectos para conexiones lentas",
+      "El streaming de 'Just Chatting' requiere solo 500 kbps bien optimizado",
+      "Muchos streamers rurales superan en engagement a streamers urbanos con fibra óptica"
+    ],
+    setup: [
+      {
+        name: "Hardware Mínimo para 2MB",
+        items: [
+          { name: "AMD Ryzen 5 2600", link: amazonSearchUrl("AMD Ryzen 5 2600"), note: "CPU ideal para x264 encoding" },
+          { name: "16GB DDR4 RAM", link: amazonSearchUrl("16GB DDR4 3200"), note: "Mínimo absoluto para multitasking" },
+          { name: "GTX 1050 Ti", link: amazonSearchUrl("GTX 1050 Ti"), note: "GPU suficiente para gaming medio" },
+          { name: "SSD 500GB", link: amazonSearchUrl("SSD 500GB"), note: "Velocidad esencial para sistema" },
+        ],
+      },
+      {
+        name: "Audio Optimizado",
+        items: [
+          { name: "Audio-Technica ATR2100x-USB", link: amazonSearchUrl("Audio-Technica ATR2100x-USB"), note: "Micrófono versátil USB/XLR" },
+          { name: "Auriculares Sony MDR-7506", link: amazonSearchUrl("Sony MDR-7506"), note: "Monitoring profesional" },
+          { name: "Cloudlifter CL-1", link: amazonSearchUrl("Cloudlifter CL-1"), note: "Para micrófonos dinámicos" },
+          { name: "Brazo articulado", link: amazonSearchUrl("brazo micrófono"), note: "Posicionamiento óptimo" },
+        ],
+      },
+      {
+        name: "Video Básico",
+        items: [
+          { name: "Logitech C920s", link: amazonSearchUrl("Logitech C920s"), note: "Webcam estándar industry" },
+          { name: "Green Screen plegable", link: amazonSearchUrl("green screen"), note: "Backgrounds clean" },
+          { name: "Softbox LED 50W", link: amazonSearchUrl("softbox LED 50W"), note: "Iluminación frontal" },
+          { name: "Luz de relleno LED", link: amazonSearchUrl("LED ring light"), note: "Eliminación de sombras" },
+        ],
+      },
+      {
+        name: "Conectividad Crítica",
+        items: [
+          { name: "Cable Ethernet Cat6", link: amazonSearchUrl("cable ethernet cat6"), note: "Conexión estable garantizada" },
+          { name: "Router Gaming", link: amazonSearchUrl("router gaming ASUS"), note: "QoS y priorización tráfico" },
+          { name: "Switch Gigabit", link: amazonSearchUrl("switch gigabit"), note: "Múltiples conexiones cableadas" },
+          { name: "UPS 650VA", link: amazonSearchUrl("UPS 650VA"), note: "Protección cortes electricidad" },
+        ],
+      },
+      {
+        name: "Software Esencial",
+        items: [
+          { name: "OBS Studio", link: "https://obsproject.com/", note: "Software streaming gratuito" },
+          { name: "Streamlabs", link: amazonSearchUrl("Streamlabs Prime"), note: "Overlays y alerts" },
+          { name: "Restream.io", link: amazonSearchUrl("Restream multistreaming"), note: "Streaming múltiples plataformas" },
+          { name: "PDF Checklist", link: "/streaming-2mb-internet-checklist.pdf", note: "Descarga gratis" },
+        ],
+      },
+      {
+        name: "Monitorización",
+        items: [
+          { name: "NetSpeedMonitor", link: amazonSearchUrl("network monitoring software"), note: "Bandwidth real-time" },
+          { name: "MSI Afterburner", link: amazonSearchUrl("MSI Afterburner"), note: "Hardware monitoring" },
+          { name: "Process Lasso", link: amazonSearchUrl("Process Lasso"), note: "CPU priority management" },
+          { name: "Speedtest CLI", link: amazonSearchUrl("speedtest command line"), note: "Tests automatizados" },
+        ],
+      },
+    ],
+  },
   {
     slug: "obs-pantalla-negra-soluciones",
     title: "OBS pantalla negra: 7 soluciones INMEDIATAS que funcionan",

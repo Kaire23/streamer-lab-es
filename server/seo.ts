@@ -107,6 +107,14 @@ const postSEOData: Record<string, SEOData> = {
     canonical: 'https://yostreamer.com/setup/setup-de-streaming-de-lolitofdez-2025-guia-completa',
     ogImage: 'https://yostreamer.com/assets/lolitosetup_1755267496338.jpg',
     type: 'article'
+  },
+  'streaming-con-2mb-internet-guia-completa': {
+    title: 'Streaming con 2MB de internet: La guía imposible que SÍ funciona | Setups de Streamers',
+    description: '¿Hacer streaming con solo 2MB de internet? Te mostramos exactamente cómo conseguir calidad profesional con conexiones lentas. Configuraciones extremas de OBS, optimizaciones de red y todos los trucos que usan los streamers rurales.',
+    keywords: 'streaming con internet lento, 2MB internet streaming, OBS configuración baja velocidad, streaming rural, conexión lenta Twitch, bitrate bajo streaming',
+    canonical: 'https://yostreamer.com/setup/streaming-con-2mb-internet-guia-completa',
+    ogImage: 'https://yostreamer.com/assets/guia_1756190738646.jpg',
+    type: 'article'
   }
 };
 
