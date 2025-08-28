@@ -50,6 +50,19 @@ export async function registerRoutes(app: Express): Promise<Server> {
     res.redirect(301, '/setup/mejor-webcam-para-streaming-2025-guia-completa');
   });
 
+  // Additional canonical URL redirects for problematic Google indexing issues
+  app.get('/setup/ari-gameplays-setup', (req, res) => {
+    res.redirect(301, '/setup/arigameplays');
+  });
+
+  app.get('/setup/elxocas-setup', (req, res) => {
+    res.redirect(301, '/setup/elxokas');
+  });
+
+  app.get('/setup/luzu', (req, res) => {
+    res.redirect(301, '/setup/setup-de-streaming-de-luzu-2025-guia-completa');
+  });
+
   // SEO-optimized HTML for individual setup pages
   app.get('/setup/:slug', async (req, res, next) => {
     const validSlugs = ['ibai-llanos', 'elxokas', 'illojuan', 'thegrefg', 'coscu'];
