@@ -1,0 +1,212 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+  /Font <<
+    /F1 5 0 R
+    /F2 6 0 R
+  >>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 4200
+>>
+stream
+BT
+/F1 24 Tf
+50 720 Td
+(Mi PC no puede con OBS: 10 Trucos CPU) Tj
+0 -40 Td
+/F2 14 Tf
+(yostreamer.com - Baja tu CPU de OBS al INSTANTE) Tj
+
+0 -60 Td
+/F1 18 Tf
+(TRUCO #1: CAMBIA EL PRESET DEL ENCODER) Tj
+0 -25 Td
+/F2 12 Tf
+(□ Ve a Settings > Output > Streaming) Tj
+0 -15 Td
+(□ Encoder: x264) Tj
+0 -15 Td
+(□ CPU Usage Preset: ULTRAFAST) Tj
+0 -15 Td
+(□ Esto REDUCE el CPU en un 40-60%) Tj
+
+0 -35 Td
+/F1 18 Tf
+(TRUCO #2: RESOLUCION DE OUTPUT MENOR) Tj
+0 -25 Td
+/F2 12 Tf
+(□ Settings > Video) Tj
+0 -15 Td
+(□ Base Resolution: 1920x1080) Tj
+0 -15 Td
+(□ Output Resolution: 1280x720) Tj
+0 -15 Td
+(□ Downscale Filter: Bilinear) Tj
+
+0 -35 Td
+/F1 18 Tf
+(TRUCO #3: BAJA LOS FPS A 30) Tj
+0 -25 Td
+/F2 12 Tf
+(□ Settings > Video) Tj
+0 -15 Td
+(□ Common FPS Values: 30) Tj
+0 -15 Td
+(□ Esto REDUCE el CPU en un 30%) Tj
+
+0 -35 Td
+/F1 18 Tf
+(TRUCO #4: DESACTIVA PREVIEW) Tj
+0 -25 Td
+/F2 12 Tf
+(□ Clic derecho en Preview) Tj
+0 -15 Td
+(□ "Disable Preview") Tj
+0 -15 Td
+(□ REDUCE CPU en 10-15%) Tj
+
+0 -35 Td
+/F1 18 Tf
+(TRUCO #5: PRIORIDAD DE PROCESO) Tj
+0 -25 Td
+/F2 12 Tf
+(□ Abrir Task Manager) Tj
+0 -15 Td
+(□ Buscar obs64.exe) Tj
+0 -15 Td
+(□ Set Priority > Above Normal) Tj
+
+0 -35 Td
+/F1 18 Tf
+(TRUCO #6: FILTROS MINIMOS) Tj
+0 -25 Td
+/F2 12 Tf
+(□ Eliminar filtros innecesarios) Tj
+0 -15 Td
+(□ Solo: Noise Suppression y Gain) Tj
+0 -15 Td
+(□ CADA filtro = +5% CPU) Tj
+
+0 -35 Td
+/F1 18 Tf
+(TRUCO #7: SOURCES OPTIMIZADAS) Tj
+0 -25 Td
+/F2 12 Tf
+(□ Eliminar Browser Sources pesadas) Tj
+0 -15 Td
+(□ Usar Image Sources en lugar de Videos) Tj
+0 -15 Td
+(□ Maximo 8 sources por scene) Tj
+
+0 -35 Td
+/F1 18 Tf
+(TRUCO #8: HARDWARE ENCODING \(Si tienes GPU\)) Tj
+0 -25 Td
+/F2 12 Tf
+(□ Settings > Output > Streaming) Tj
+0 -15 Td
+(□ Encoder: NVENC H.264 \(Nvidia\)) Tj
+0 -15 Td
+(□ O AMD Hardware \(AMD\)) Tj
+0 -15 Td
+(□ LIBERA 70% del CPU) Tj
+
+0 -35 Td
+/F1 18 Tf
+(TRUCO #9: GAME MODE ACTIVADO) Tj
+0 -25 Td
+/F2 12 Tf
+(□ Windows + I > Gaming) Tj
+0 -15 Td
+(□ Game Mode: ON) Tj
+0 -15 Td
+(□ Optimiza recursos automaticamente) Tj
+
+0 -35 Td
+/F1 18 Tf
+(TRUCO #10: SCENES SIMPLES) Tj
+0 -25 Td
+/F2 12 Tf
+(□ Una scene = Una funcion) Tj
+0 -15 Td
+(□ Evitar scenes complejas con +10 sources) Tj
+0 -15 Td
+(□ Transiciones simples \(Fade, Cut\)) Tj
+
+0 -50 Td
+/F1 16 Tf
+(RESULTADO: CPU de 90% a 30-40%) Tj
+0 -25 Td
+/F2 14 Tf
+(Aplicando estos 10 trucos tu OBS funcionara) Tj
+0 -15 Td
+(suave incluso en PCs de gama baja) Tj
+
+0 -40 Td
+/F2 10 Tf
+(Guia creada por Setups de Streamers - yostreamer.com) Tj
+0 -15 Td
+(Mas trucos y guias en https://yostreamer.com) Tj
+
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+>>
+endobj
+
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000274 00000 n 
+0000004528 00000 n 
+0000004607 00000 n 
+trailer
+<<
+/Size 7
+/Root 1 0 R
+>>
+startxref
+4681
+%%EOF

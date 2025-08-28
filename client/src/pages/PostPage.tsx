@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import AdSlot from "@/components/ads/AdSlot";
 import OptimizedImage from "@/components/OptimizedImage";
 import { useQuery } from "@tanstack/react-query";
+import { useEffect } from "react";
 // Streamer images using direct paths
 
 // Simple markdown to HTML converter for basic formatting

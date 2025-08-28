@@ -68,6 +68,14 @@ const postSEOData: Record<string, SEOData> = {
     ogImage: 'https://yostreamer.com/assets/obsblack_1756103395864.jpg',
     type: 'article'
   },
+  'mi-pc-no-puede-con-obs-10-trucos-bajar-cpu-instante': {
+    title: 'Mi PC no puede con OBS: 10 trucos para bajar CPU al instante | Setups de Streamers',
+    description: '¿Tu OBS consume 80-90% de CPU y no puedes hacer stream? Aquí tienes 10 trucos INMEDIATOS para bajar el CPU de OBS al 30-40%. Funciona en cualquier PC, incluye PDF con todos los trucos.',
+    keywords: 'OBS CPU alto, reducir CPU OBS, optimizar OBS, CPU usage OBS, OBS lento, streaming CPU, bajar CPU OBS',
+    canonical: 'https://yostreamer.com/setup/mi-pc-no-puede-con-obs-10-trucos-bajar-cpu-instante',
+    ogImage: 'https://yostreamer.com/assets/obsfresh_1756366109460.jpg',
+    type: 'article'
+  },
   'mejor-webcam-para-streaming-2025-guia-completa': {
     title: 'Mejor Webcam para Streaming 2025: Guía Completa de Compra | Setups de Streamers',
     description: 'Descubre las mejores webcams para streaming en 2025: comparativas detalladas, análisis de calidad 4K, presupuestos desde €50 hasta €500, y recomendaciones específicas para cada tipo de content creator.',

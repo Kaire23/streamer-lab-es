@@ -3,8 +3,15 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage-new";
 import { getSEOData, injectSEOToHTML } from "./seo";
 import { schedulePostPlan } from "./seo-content-generator";
+import { MailService } from '@sendgrid/mail';
 import fs from "fs";
 import path from "path";
+
+// Initialize SendGrid
+const mailService = new MailService();
+if (process.env.SENDGRID_API_KEY) {
+  mailService.setApiKey(process.env.SENDGRID_API_KEY);
+}
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // SEO redirects: redirect legacy /post/ URLs to canonical /setup/ URLs
@@ -180,6 +187,104 @@ export async function registerRoutes(app: Express): Promise<Server> {
         details: error instanceof Error ? error.message : String(error)
       });
     }
+  });
+
+  // Email subscription endpoint for PDF delivery
+  app.post('/api/subscribe-pdf', async (req, res) => {
+    try {
+      const { email, pdfType } = req.body;
+      
+      if (!email) {
+        return res.status(400).json({ error: 'Email is required' });
+      }
+      
+      // Validate email format
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        return res.status(400).json({ error: 'Invalid email format' });
+      }
+      
+      let pdfPath, subject, emailContent;
+      
+      if (pdfType === 'obs-cpu') {
+        pdfPath = path.join(import.meta.dirname, '..', 'client', 'public', 'obs-cpu-10-trucos.pdf');
+        subject = '🎁 Tu PDF: 10 Trucos para Bajar CPU de OBS al Instante';
+        emailContent = `
+          <h2 style="color: #667eea;">¡Aquí tienes tu PDF con los 10 trucos!</h2>
+          <p>Hola,</p>
+          <p>Como prometimos, aquí tienes tu PDF <strong>GRATUITO</strong> con todos los trucos para bajar el CPU de OBS del 90% al 30-40%.</p>
+          <p>📎 <strong>Archivo adjunto:</strong> obs-cpu-10-trucos.pdf</p>
+          <h3>Los 3 trucos más efectivos:</h3>
+          <ol>
+            <li><strong>Encoder preset a ultrafast</strong> → -60% CPU</li>
+            <li><strong>Hardware encoding</strong> (si tienes GPU) → -70% CPU</li>
+            <li><strong>Output resolution a 720p</strong> → -40% CPU</li>
+          </ol>
+          <p>Si tienes dudas, responde este email. ¡Estamos aquí para ayudarte!</p>
+          <p>Un saludo,<br><strong>Equipo Setups de Streamers</strong></p>
+          <hr>
+          <p style="font-size: 12px; color: #666;">Para más guías como esta, visita <a href="https://yostreamer.com">yostreamer.com</a></p>
+        `;
+      } else {
+        pdfPath = path.join(import.meta.dirname, '..', 'client', 'public', 'streaming-2mb-internet-checklist.pdf');
+        subject = '🎁 Tu PDF: Guía Completa Streaming con 2MB Internet';
+        emailContent = `
+          <h2 style="color: #667eea;">¡Tu PDF está aquí!</h2>
+          <p>Hola,</p>
+          <p>Como prometimos, aquí tienes tu <strong>checklist completo</strong> para hacer streaming profesional con solo 2MB de internet.</p>
+          <p>📎 <strong>Archivo adjunto:</strong> streaming-2mb-internet-checklist.pdf</p>
+          <p>Este PDF incluye todas las configuraciones, trucos y optimizaciones que necesitas para convertir tu conexión lenta en una herramienta de streaming viable.</p>
+          <p>Un saludo,<br><strong>Equipo Setups de Streamers</strong></p>
+          <hr>
+          <p style="font-size: 12px; color: #666;">Para más guías como esta, visita <a href="https://yostreamer.com">yostreamer.com</a></p>
+        `;
+      }
+      
+      // Check if PDF exists
+      if (!fs.existsSync(pdfPath)) {
+        return res.status(404).json({ error: 'PDF not found' });
+      }
+      
+      // Read PDF file
+      const pdfBuffer = await fs.promises.readFile(pdfPath);
+      
+      // Prepare email
+      const emailData = {
+        to: email,
+        from: {
+          email: 'hola@yostreamer.com',
+          name: 'Setups de Streamers'
+        },
+        subject: subject,
+        html: emailContent,
+        attachments: [
+          {
+            content: pdfBuffer.toString('base64'),
+            filename: path.basename(pdfPath),
+            type: 'application/pdf',
+            disposition: 'attachment'
+          }
+        ]
+      };
+      
+      // Send email
+      await mailService.send(emailData);
+      
+      console.log(`[EMAIL] PDF sent successfully to: ${email}`);
+      res.json({ success: true, message: 'PDF enviado a tu email correctamente' });
+      
+    } catch (error) {
+      console.error('[EMAIL] Error sending PDF:', error);
+      res.status(500).json({ error: 'Error al enviar el PDF. Inténtalo de nuevo.' });
+    }
+  });
+
+  // Serve static PDF files directly
+  app.get('/obs-cpu-10-trucos.pdf', (req, res) => {
+    const filePath = path.join(import.meta.dirname, '..', 'client', 'public', 'obs-cpu-10-trucos.pdf');
+    res.setHeader('Content-Type', 'application/pdf');
+    res.setHeader('Content-Disposition', 'attachment; filename="obs-cpu-10-trucos.pdf"');
+    res.sendFile(filePath);
   });
 
   const httpServer = createServer(app);
