@@ -6,6 +6,7 @@ import AdSlot from "@/components/ads/AdSlot";
 import OptimizedImage from "@/components/OptimizedImage";
 import { useQuery } from "@tanstack/react-query";
 import { useEffect } from "react";
+import { generatePostSchema } from "@/lib/schema";
 // Streamer images using direct paths
 
 // Simple markdown to HTML converter for basic formatting
@@ -161,31 +162,8 @@ const PostPage: React.FC = () => {
   if (originalPost) {
     const post = originalPost;
 
-    const origin = typeof window !== "undefined" ? window.location.origin : "";
-    const jsonLd = {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Article",
-          headline: post.title,
-          image: origin + post.coverImage,
-          datePublished: post.date,
-          author: {
-            "@type": "Person",
-            name: post.author,
-          },
-          keywords: post.keywords.join(", "),
-          mainEntityOfPage: origin + `/setup/${post.slug}`,
-        },
-        {
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Inicio", item: origin + "/" },
-            { "@type": "ListItem", position: 2, name: post.title, item: origin + `/setup/${post.slug}` },
-          ],
-        },
-      ],
-    };
+    // Generate comprehensive JSON-LD schema markup
+    const jsonLd = generatePostSchema(post, slug!);
 
     return (
       <article className="grid gap-8 md:grid-cols-[1fr_320px]">
@@ -275,32 +253,22 @@ const PostPage: React.FC = () => {
 
   // If we have a generated post, render it
   if (generatedPost) {
-    const origin = typeof window !== "undefined" ? window.location.origin : "";
     const keywords = typeof generatedPost.keywords === 'string' ? generatedPost.keywords.split(', ') : [];
     
-    const jsonLd = {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Article",
-          headline: generatedPost.title,
-          datePublished: generatedPost.published_at,
-          author: {
-            "@type": "Person",
-            name: "Equipo Setups de Streamers",
-          },
-          keywords: keywords.join(", "),
-          mainEntityOfPage: origin + `/setup/${generatedPost.slug}`,
-        },
-        {
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Inicio", item: origin + "/" },
-            { "@type": "ListItem", position: 2, name: generatedPost.title, item: origin + `/setup/${generatedPost.slug}` },
-          ],
-        },
-      ],
+    // Create post object for schema generation
+    const postForSchema = {
+      ...generatedPost,
+      keywords,
+      date: generatedPost.published_at,
+      author: "Equipo Setups de Streamers",
+      bio: generatedPost.excerpt,
+      funFacts: [],
+      setup: [],
+      coverImage: getCoverImageForGeneratedPost(generatedPost.title, generatedPost.category)
     };
+    
+    // Generate comprehensive JSON-LD schema markup
+    const jsonLd = generatePostSchema(postForSchema, slug!);
 
     return (
       <article className="grid gap-8 md:grid-cols-[1fr_320px]">
