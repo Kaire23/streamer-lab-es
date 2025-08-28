@@ -14,6 +14,59 @@ if (process.env.SENDGRID_API_KEY) {
 }
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // SSR for homepage - CRITICAL for Google indexing
+  app.get('/', async (req, res, next) => {
+    try {
+      const templatePath = path.resolve(import.meta.dirname, '..', 'client', 'index.html');
+      let html = await fs.promises.readFile(templatePath, 'utf-8');
+      
+      // Add homepage content structure for crawlers
+      const homepageContent = `
+        <div id="ssr-homepage-content" style="display: none;">
+          <main>
+            <h1>Setups de Streamers: Guías Profesionales en Español</h1>
+            <section>
+              <h2>Setups de Streamers Famosos</h2>
+              <ul>
+                <li><a href="/setup/ibai-llanos">Setup de Ibai Llanos</a> - Micrófono Shure SM7B y equipo profesional</li>
+                <li><a href="/setup/elxokas">Setup de ElXokas</a> - Gaming de élite y audio profesional</li>
+                <li><a href="/setup/illojuan">Setup de IlloJuan</a> - Ambiente acogedor y calidad</li>
+                <li><a href="/setup/thegrefg">Setup de TheGrefg</a> - Tecnología de vanguardia</li>
+                <li><a href="/setup/coscu">Setup de Coscu</a> - Energía y presencia</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Guías Técnicas de Streaming</h2>
+              <ul>
+                <li><a href="/setup/mi-pc-no-puede-con-obs-10-trucos-bajar-cpu-instante">Mi PC no puede con OBS: 10 trucos para bajar CPU al instante</a></li>
+                <li><a href="/setup/como-configurar-obs-studio-2025-guia-completa-paso-a-paso">Cómo Configurar OBS Studio 2025: Guía Completa</a></li>
+                <li><a href="/setup/obs-pantalla-negra-soluciones">OBS pantalla negra: 7 soluciones inmediatas</a></li>
+                <li><a href="/setup/mejor-webcam-para-streaming-2025-guia-completa">Mejor Webcam para Streaming 2025</a></li>
+              </ul>
+            </section>
+          </main>
+        </div>
+      `;
+      
+      // Inject content before closing body tag
+      html = html.replace('</body>', `${homepageContent}</body>`);
+      
+      // Add cache headers for SEO crawlers
+      res.set({
+        'Content-Type': 'text/html; charset=utf-8',
+        'Cache-Control': 'public, max-age=1800',
+        'X-Custom-SEO': 'homepage'
+      });
+      
+      console.log('[SEO] Serving homepage with SSR content');
+      res.send(html);
+      return;
+    } catch (error) {
+      console.error('[SEO] Error serving homepage SSR:', error);
+      return next();
+    }
+  });
+
   // SEO redirects: redirect legacy /post/ URLs to canonical /setup/ URLs
   app.get('/post/:slug', (req, res) => {
     res.redirect(301, `/setup/${req.params.slug}`);
@@ -50,23 +103,36 @@ export async function registerRoutes(app: Express): Promise<Server> {
     res.redirect(301, '/setup/mejor-webcam-para-streaming-2025-guia-completa');
   });
 
-  // SEO-optimized HTML for individual setup pages
+  // SEO-optimized HTML for ALL setup pages
   app.get('/setup/:slug', async (req, res, next) => {
-    const validSlugs = ['ibai-llanos', 'elxokas', 'illojuan', 'thegrefg', 'coscu'];
     const slug = req.params.slug;
     
-    // Check if it's a valid original streamer slug
-    if (validSlugs.includes(slug)) {
-      // Handle original streamer posts with SEO optimization
-      try {
-        const seoData = getSEOData(`/setup/${slug}`);
-        
+    try {
+      // Try to get SEO data for this slug (covers all defined posts)
+      const seoData = getSEOData(`/setup/${slug}`);
+      
+      if (seoData) {
         // Read the base HTML template
         const templatePath = path.resolve(import.meta.dirname, '..', 'client', 'index.html');
         let html = await fs.promises.readFile(templatePath, 'utf-8');
         
         // Inject SEO data for this specific page
         html = injectSEOToHTML(html, seoData);
+        
+        // Add basic content structure for crawlers (critical for SEO)
+        const contentInjection = `
+          <div id="ssr-content" style="display: none;">
+            <h1>${seoData.title.replace(' | Setups de Streamers', '')}</h1>
+            <p>${seoData.description}</p>
+            <article>
+              <h2>Guía completa de streaming y equipamiento</h2>
+              <p>Esta página contiene información detallada sobre setups de streaming, equipamiento recomendado y guías técnicas para streamers en español.</p>
+            </article>
+          </div>
+        `;
+        
+        // Inject content before closing body tag
+        html = html.replace('</body>', `${contentInjection}</body>`);
         
         // Replace script paths to make them work properly
         html = html.replace('src="/src/main.tsx"', `src="/src/main.tsx?t=${Date.now()}"`);
@@ -81,10 +147,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
         console.log(`[SEO] Serving custom HTML for /setup/${slug} with title: ${seoData.title}`);
         res.send(html);
         return;
-      } catch (error) {
-        console.error('[SEO] Error serving custom HTML:', error);
-        return next();
       }
+    } catch (error) {
+      console.error('[SEO] Error serving custom HTML:', error);
     }
     
     // Check if it's a generated post
