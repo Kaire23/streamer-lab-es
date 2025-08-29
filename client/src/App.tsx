@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { useEffect, Suspense, lazy } from "react";
 import Layout from "@/components/layout/Layout";
 import NotFound from "./pages/NotFound";
+import { initializePdfForms } from "@/lib/pdfSubscription";
 
 // Lazy load pages for code splitting and better performance
 const Index = lazy(() => import("./pages/Index"));
@@ -36,6 +37,11 @@ const RouteChangeTracker = () => {
         page_path: location
       });
     }
+    
+    // Initialize PDF forms after route change (content has been updated)
+    setTimeout(() => {
+      initializePdfForms();
+    }, 100);
   }, [location]);
   return null;
 };

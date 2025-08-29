@@ -144,8 +144,42 @@ export async function registerRoutes(app: Express): Promise<Server> {
         return res.status(400).json({ error: "Email inválido" });
       }
 
-      // For now, just return success - we'll implement full subscription later
-      res.json({ success: true, message: "Suscripción exitosa" });
+      // Send welcome email with SendGrid
+      const emailData = {
+        to: email,
+        from: {
+          email: 'hola@yostreamer.com',
+          name: 'Setups de Streamers'
+        },
+        subject: '🎮 ¡Bienvenido a Setups de Streamers!',
+        html: `
+          <h2 style="color: #667eea;">¡Gracias por suscribirte! 🎮</h2>
+          <p>Hola,</p>
+          <p>¡Te has suscrito exitosamente a <strong>Setups de Streamers</strong>!</p>
+          <p>Ahora recibirás:</p>
+          <ul>
+            <li>📧 <strong>Nuevas guías y tutoriales</strong> cada semana</li>
+            <li>💡 <strong>Trucos exclusivos</strong> para optimizar tu setup</li>
+            <li>🛒 <strong>Ofertas especiales</strong> en equipamiento de streaming</li>
+            <li>🎁 <strong>PDFs gratuitos</strong> con configuraciones paso a paso</li>
+          </ul>
+          <p><strong>Para empezar</strong>, te recomendamos visitar:</p>
+          <ul>
+            <li><a href="https://yostreamer.com/setup/setup-streaming-por-menos-de-100-euros-actualizado-septiembre-2025">Setup completo por menos de 100€</a></li>
+            <li><a href="https://yostreamer.com/setup/mi-pc-no-puede-con-obs-10-trucos-bajar-cpu-instante-actualizado-septiembre-2025">10 trucos para optimizar OBS</a></li>
+            <li><a href="https://yostreamer.com/setup/obs-vs-streamlabs-2025-ganador-definitivo-tras-100-horas-pruebas-actualizado-septiembre-2025">OBS vs Streamlabs: comparativa completa</a></li>
+          </ul>
+          <p>¡Nos vemos en el próximo email!</p>
+          <p>Un saludo,<br><strong>Equipo Setups de Streamers</strong></p>
+          <hr>
+          <p style="font-size: 12px; color: #666;">Para darte de baja, responde a este email con "UNSUBSCRIBE"</p>
+        `
+      };
+      
+      await mailService.send(emailData);
+      console.log(`[EMAIL] Welcome email sent to: ${email}`);
+      
+      res.json({ success: true, message: "Suscripción exitosa - revisa tu email" });
     } catch (error) {
       console.error("Subscribe error:", error);
       res.status(500).json({ error: "Error al procesar suscripción" });
@@ -234,6 +268,27 @@ export async function registerRoutes(app: Express): Promise<Server> {
             <li><strong>Output resolution a 720p</strong> → -40% CPU</li>
           </ol>
           <p>Si tienes dudas, responde este email. ¡Estamos aquí para ayudarte!</p>
+          <p>Un saludo,<br><strong>Equipo Setups de Streamers</strong></p>
+          <hr>
+          <p style="font-size: 12px; color: #666;">Para más guías como esta, visita <a href="https://yostreamer.com">yostreamer.com</a></p>
+        `;
+      } else if (pdfType === 'setup') {
+        pdfPath = path.join(import.meta.dirname, '..', 'client', 'public', 'setup-streaming-100-euros.pdf');
+        subject = '🎁 Tu PDF: Setup Streaming Completo por 100€';
+        emailContent = `
+          <h2 style="color: #667eea;">¡Tu setup de 100€ está aquí!</h2>
+          <p>Hola,</p>
+          <p>Como prometimos, aquí tienes tu <strong>setup completo</strong> con todos los enlaces, precios actualizados y configuraciones paso a paso.</p>
+          <p>📎 <strong>Archivo adjunto:</strong> setup-streaming-100-euros.pdf</p>
+          <h3>Lo que incluye tu PDF:</h3>
+          <ul>
+            <li>✅ <strong>Lista de compras completa</strong> con enlaces directos a Amazon</li>
+            <li>✅ <strong>Configuraciones de OBS</strong> paso a paso</li>
+            <li>✅ <strong>Posicionamiento de equipo</strong> para máxima calidad</li>
+            <li>✅ <strong>Troubleshooting</strong> de problemas comunes</li>
+            <li>✅ <strong>Path de upgrade</strong> cuando tu canal crezca</li>
+          </ul>
+          <p>¡Con este setup ya puedes empezar a generar tus primeros ingresos streaming!</p>
           <p>Un saludo,<br><strong>Equipo Setups de Streamers</strong></p>
           <hr>
           <p style="font-size: 12px; color: #666;">Para más guías como esta, visita <a href="https://yostreamer.com">yostreamer.com</a></p>
