@@ -4,6 +4,7 @@ import { storage } from "./storage-new";
 import { getSEOData, injectSEOToHTML } from "./seo";
 import { schedulePostPlan } from "./seo-content-generator";
 import { MailService } from '@sendgrid/mail';
+import { lagPredictor, type StreamConfig } from "./ai/lagPredictor";
 import fs from "fs";
 import path from "path";
 
@@ -344,6 +345,75 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error('[EMAIL] Error sending PDF:', error);
       res.status(500).json({ error: 'Error al enviar el PDF. Inténtalo de nuevo.' });
+    }
+  });
+
+  // AI Lag Prediction API endpoints
+  app.post('/api/analyze-lag-risk', async (req, res) => {
+    try {
+      const streamConfig: StreamConfig = req.body;
+      
+      // Validate required fields
+      if (!streamConfig.resolution || !streamConfig.fps || !streamConfig.bitrate) {
+        return res.status(400).json({ 
+          error: 'Configuración incompleta. Resolución, FPS y bitrate son requeridos.' 
+        });
+      }
+
+      const prediction = await lagPredictor.analyzeLagRisk(streamConfig);
+      res.json(prediction);
+      
+    } catch (error) {
+      console.error('Error analyzing lag risk:', error);
+      res.status(500).json({ 
+        error: 'Error al analizar el riesgo de lag. Inténtalo de nuevo.' 
+      });
+    }
+  });
+
+  app.post('/api/get-personalized-tips', async (req, res) => {
+    try {
+      const { streamConfig, userGoals } = req.body;
+      
+      if (!streamConfig) {
+        return res.status(400).json({ 
+          error: 'Configuración de stream requerida.' 
+        });
+      }
+
+      const tips = await lagPredictor.generatePersonalizedTips(
+        streamConfig, 
+        userGoals || 'Mejorar calidad de stream sin lag'
+      );
+      
+      res.json({ tips });
+      
+    } catch (error) {
+      console.error('Error generating personalized tips:', error);
+      res.status(500).json({ 
+        error: 'Error al generar consejos personalizados.' 
+      });
+    }
+  });
+
+  app.post('/api/predict-optimal-settings', async (req, res) => {
+    try {
+      const streamConfig: StreamConfig = req.body;
+      
+      if (!streamConfig.cpuModel || !streamConfig.uploadSpeedMbps) {
+        return res.status(400).json({ 
+          error: 'Información de CPU y velocidad de internet requerida.' 
+        });
+      }
+
+      const optimalSettings = await lagPredictor.predictOptimalSettings(streamConfig);
+      res.json({ optimalSettings });
+      
+    } catch (error) {
+      console.error('Error predicting optimal settings:', error);
+      res.status(500).json({ 
+        error: 'Error al predecir configuraciones óptimas.' 
+      });
     }
   });
 
