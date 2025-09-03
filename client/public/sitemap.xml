@@ -139,7 +139,7 @@
   </url>
   
   <url>
-    <loc>https://yostreamer.com/setup/setup-de-streaming-de-luzu-2025-guia-completa</loc>
+    <loc>https://yostreamer.com/setup/luzu</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -216,17 +216,6 @@
       <image:loc>https://yostreamer.com/assets/obsfresh_1756366109460.jpg</image:loc>
       <image:title>Mi PC no puede con OBS: 10 trucos para bajar CPU al instante</image:title>
       <image:caption>Trucos efectivos para optimizar OBS y reducir el uso de CPU en streaming</image:caption>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://yostreamer.com/setup/setup-streaming-por-menos-de-100-euros-septiembre-2025</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://yostreamer.com/assets/100eur_1756455229539.jpg</image:loc>
-      <image:title>Setup streaming por menos de 100€ (Probado y funcionando) - [Septiembre 2025]</image:title>
-      <image:caption>Setup completo de streaming profesional por menos de 100 euros con micrófono, webcam, iluminación y periféricos</image:caption>
     </image:image>
   </url>
   

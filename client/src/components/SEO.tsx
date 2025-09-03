@@ -28,29 +28,8 @@ const SEO: React.FC<SEOProps> = ({
     <Helmet prioritizeSeoTags>
       <html lang="es" />
       <title>{title}</title>
-      <meta name="description" content={description} />
-      <link rel="canonical" href={canonical} />
+
       
-      {/* Open Graph */}
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content={fullImageUrl} />
-      <meta property="og:url" content={canonical} />
-      <meta property="og:type" content={type === "article" ? "article" : "website"} />
-      <meta property="og:site_name" content="Setups de Streamers" />
-      
-      {/* Twitter Card */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={fullImageUrl} />
-      
-      {/* Keywords */}
-      {keywords && keywords.length > 0 && (
-        <meta name="keywords" content={keywords.join(", ")} />
-      )}
-      
-      {/* JSON-LD */}
       {jsonLd ? (
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       ) : null}
