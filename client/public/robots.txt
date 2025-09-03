@@ -4,18 +4,18 @@ Allow: /
 # Sitemap
 Sitemap: https://yostreamer.com/sitemap.xml
 
-# Setup pages - streaming equipment guides
-Allow: /setup/ibai-llanos
-Allow: /setup/elxokas
+# Setup pages - top streamers with updated slugs
+Allow: /setup/ibai-llanos-setup-actualizado-septiembre-2025
+Allow: /setup/elxokas-setup-actualizado-septiembre-2025
 Allow: /setup/illojuan
 Allow: /setup/thegrefg
 Allow: /setup/coscu
-Allow: /setup/auronplay
-Allow: /setup/elrubius
+Allow: /setup/auronplay-setup-actualizado-septiembre-2025
+Allow: /setup/elrubius-setup-actualizado-septiembre-2025
 Allow: /setup/cristinini
 Allow: /setup/alexby
-Allow: /setup/luzu
-Allow: /setup/lolito
+Allow: /setup/setup-de-streaming-de-luzu-2025-guia-completa
+Allow: /setup/setup-de-streaming-de-lolitofdez-2025-guia-completa
 Allow: /setup/juansguarnizo
 Allow: /setup/elmariana
 Allow: /setup/arigameplays
@@ -25,18 +25,27 @@ Allow: /setup/slakun10
 Allow: /setup/staryuuki
 Allow: /setup/jelty
 
-# Guide pages - streaming tutorials and resources
-Allow: /setup/twitch-eventos-2025
-Allow: /setup/kick-streaming-2025
-Allow: /setup/mejores-webcams-streaming-2025
+# Guide pages - streaming tutorials with updated slugs
+Allow: /setup/mejores-eventos-twitch-2025-actualizado-septiembre
+Allow: /setup/guia-streaming-kick-2025-actualizado-septiembre
+Allow: /setup/mejor-webcam-streaming-2025-actualizado-septiembre
+Allow: /setup/configurar-obs-studio-2025-guia-completa-actualizado-septiembre
+Allow: /setup/setup-streaming-menos-100-euros-actualizado-septiembre-2025
+Allow: /setup/obs-vs-streamlabs-2025-ganador-definitivo-100-horas-pruebas
+Allow: /setup/por-que-tu-stream-va-tirones-como-arreglarlo-ya
+Allow: /setup/audio-desincronizado-obs-solucion-3-clicks
+Allow: /setup/capturadora-o-sin-capturadora-la-verdad-que-nadie-te-cuenta
+Allow: /setup/mi-pc-no-puede-con-obs-10-trucos-bajar-cpu-instante
+Allow: /setup/obs-pantalla-negra-soluciones-actualizado-septiembre-2025
 
 # Main pages
 Allow: /
 Allow: /unsubscribed
 
-# Assets
+# Assets and media
 Allow: /assets/
 Allow: /optimized/
+Allow: /*.pdf
 
 # Crawl delay for respectful indexing
 Crawl-delay: 1

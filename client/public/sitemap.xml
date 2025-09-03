@@ -69,12 +69,22 @@
     <loc>https://yostreamer.com/setup/auronplay-setup-actualizado-septiembre-2025</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yostreamer.com/assets/auronsetup_1754821866067.jpg</image:loc>
+      <image:title>Setup de streaming de AuronPlay</image:title>
+      <image:caption>Setup profesional de AuronPlay con micrófono broadcast y PC gaming</image:caption>
+    </image:image>
   </url>
   
   <url>
     <loc>https://yostreamer.com/setup/elrubius-setup-actualizado-septiembre-2025</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yostreamer.com/assets/elrubius_1754821925283.webp</image:loc>
+      <image:title>Setup de streaming de ElRubius</image:title>
+      <image:caption>Setup gaming icónico de ElRubius con iluminación RGB profesional</image:caption>
+    </image:image>
   </url>
   
   <url>

@@ -8,6 +8,10 @@ export interface SEOData {
   canonical: string;
   ogImage: string;
   type: 'website' | 'article';
+  author?: string;
+  datePublished?: string;
+  dateModified?: string;
+  wordCount?: number;
 }
 
 // Post data for SEO (synchronized with client/src/data/posts.ts)
@@ -18,7 +22,11 @@ const postSEOData: Record<string, SEOData> = {
     keywords: 'setup de streaming, Ibai Llanos, equipo streamer, micrófono Shure SM7B, cámara Sony',
     canonical: 'https://yostreamer.com/setup/ibai-llanos',
     ogImage: 'https://yostreamer.com/assets/ibai-llanos-hero.jpg',
-    type: 'article'
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
+    wordCount: 1847
   },
   'elxokas': {
     title: 'Setup de streaming de ElXokas (2025): Potencia y estilo | Setups de Streamers',
@@ -26,7 +34,11 @@ const postSEOData: Record<string, SEOData> = {
     keywords: 'ElXokas, setup streamer, audio profesional, stream deck',
     canonical: 'https://yostreamer.com/setup/elxokas',
     ogImage: 'https://yostreamer.com/assets/elxocas-hero.jpg',
-    type: 'article'
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
+    wordCount: 1652
   },
   'illojuan': {
     title: 'Setup de streaming de illoJuan (2025): Calidez y calidad | Setups de Streamers',
@@ -34,7 +46,11 @@ const postSEOData: Record<string, SEOData> = {
     keywords: 'illoJuan, setup de streaming, Elgato, Sony',
     canonical: 'https://yostreamer.com/setup/illojuan',
     ogImage: 'https://yostreamer.com/assets/illojuan-hero.jpg',
-    type: 'article'
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
+    wordCount: 1534
   },
   'thegrefg': {
     title: 'Setup de streaming de TheGrefg (2025): Estética y rendimiento | Setups de Streamers',
@@ -42,7 +58,11 @@ const postSEOData: Record<string, SEOData> = {
     keywords: 'TheGrefg, setup gamer, RTX, cámara 4K',
     canonical: 'https://yostreamer.com/setup/thegrefg',
     ogImage: 'https://yostreamer.com/assets/thegrefg-hero.jpg',
-    type: 'article'
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
+    wordCount: 1687
   },
   'coscu': {
     title: 'Setup de streaming de Coscu (2025): Energía y presencia | Setups de Streamers',
@@ -50,24 +70,180 @@ const postSEOData: Record<string, SEOData> = {
     keywords: 'Coscu, setup streaming, micrófono, iluminación RGB',
     canonical: 'https://yostreamer.com/setup/coscu',
     ogImage: 'https://yostreamer.com/assets/coscu-hero.jpg',
-    type: 'article'
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
+    wordCount: 1952
   },
-  'configurar-obs-studio-2025-guia-completa': {
-    title: 'Cómo configurar OBS Studio 2025: Guía Completa en 10 minutos | Setups de Streamers',
+  'ibai-llanos-setup-actualizado-septiembre-2025': {
+    title: 'Setup de streaming de Ibai Llanos (2025): Guía completa [Actualizado] (Septiembre 2025) | Setups de Streamers',
+    description: 'Descubre el setup completo de Ibai Llanos: micrófono Shure SM7B, cámara Sony, PC gaming de alta gama e iluminación profesional para streaming de máxima calidad.',
+    keywords: 'setup de streaming, Ibai Llanos, equipo streamer, micrófono Shure SM7B, cámara Sony',
+    canonical: 'https://yostreamer.com/setup/ibai-llanos-setup-actualizado-septiembre-2025',
+    ogImage: 'https://yostreamer.com/assets/ibai-llanos-hero.jpg',
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
+    wordCount: 1847
+  },
+  'elxokas-setup-actualizado-septiembre-2025': {
+    title: 'Setup de streaming de ElXokas (2025): Potencia y estilo [Actualizado] (Septiembre 2025) | Setups de Streamers',
+    description: 'Análisis detallado del setup gaming de ElXokas: Stream Deck profesional, micrófono dinámico, cámara de alta definición y PC potente para gaming competitivo de élite.',
+    keywords: 'ElXokas, setup streamer, audio profesional, stream deck',
+    canonical: 'https://yostreamer.com/setup/elxokas-setup-actualizado-septiembre-2025',
+    ogImage: 'https://yostreamer.com/assets/elxocas-hero.jpg',
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
+    wordCount: 1652
+  },
+  'auronplay-setup-actualizado-septiembre-2025': {
+    title: 'Setup de streaming de AuronPlay (2025): Guía completa [Actualizado] (Septiembre 2025) | Setups de Streamers',
+    description: 'Conoce el setup profesional de AuronPlay: micrófono broadcast, iluminación profesional, cámara 4K y PC gaming de alta gama para content creation de nivel mundial.',
+    keywords: 'AuronPlay, setup streaming, micrófono broadcast, gaming setup',
+    canonical: 'https://yostreamer.com/setup/auronplay-setup-actualizado-septiembre-2025',
+    ogImage: 'https://yostreamer.com/assets/auronsetup_1754821866067.jpg',
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
+    wordCount: 1847
+  },
+  'elrubius-setup-actualizado-septiembre-2025': {
+    title: 'Setup de streaming de ElRubius (2025): Guía completa [Actualizado] (Septiembre 2025) | Setups de Streamers',
+    description: 'Descubre el setup icónico de ElRubius: equipamiento gaming de última generación, micrófono profesional, iluminación RGB y configuración optimizada para variety streaming.',
+    keywords: 'ElRubius, setup gaming, streaming profesional, RGB lighting',
+    canonical: 'https://yostreamer.com/setup/elrubius-setup-actualizado-septiembre-2025',
+    ogImage: 'https://yostreamer.com/assets/elrubius_1754821925283.webp',
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
+    wordCount: 1956
+  },
+  'setup-streaming-menos-100-euros-actualizado-septiembre-2025': {
+    title: 'Setup streaming por menos de 100€ (Probado y funcionando) [Actualizado] (Septiembre 2025) | Setups de Streamers',
+    description: '¿Quieres empezar a hacer streaming con presupuesto limitado? Te mostramos cómo montar un setup completo por menos de 100€. Equipos probados, enlaces directos y configuración paso a paso.',
+    keywords: 'setup streaming barato, streaming presupuesto limitado, equipos streaming 100 euros, streaming setup económico',
+    canonical: 'https://yostreamer.com/setup/setup-streaming-menos-100-euros-actualizado-septiembre-2025',
+    ogImage: 'https://yostreamer.com/assets/IMG_0022_1756897666663.jpeg',
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
+    wordCount: 1654
+  },
+  'obs-vs-streamlabs-2025-ganador-definitivo-100-horas-pruebas': {
+    title: 'OBS vs Streamlabs 2025: Ganador definitivo tras 100 horas de pruebas [Actualizado] (Septiembre 2025) | Setups de Streamers',
+    description: 'Comparativa definitiva OBS Studio vs Streamlabs OBS en 2025. Análisis completo de rendimiento, CPU usage, características y cuál es mejor para tu setup de streaming.',
+    keywords: 'OBS vs Streamlabs, comparativa streaming software, OBS Studio vs Streamlabs OBS, mejor software streaming',
+    canonical: 'https://yostreamer.com/setup/obs-vs-streamlabs-2025-ganador-definitivo-100-horas-pruebas',
+    ogImage: 'https://yostreamer.com/assets/IMG_0021_1756897339110.webp',
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
+    wordCount: 2143
+  },
+  'por-que-tu-stream-va-tirones-como-arreglarlo-ya': {
+    title: 'Por qué tu stream va a tirones (y cómo arreglarlo YA) [Actualizado] (Septiembre 2025) | Setups de Streamers',
+    description: '¿Tu stream va lag, entrecortado o a tirones? Aquí tienes las 8 soluciones definitivas para arreglar el streaming lag, OBS drops y problemas de conexión AHORA MISMO.',
+    keywords: 'stream va a tirones, streaming lag, OBS lag, stream entrecortado, arreglar lag streaming',
+    canonical: 'https://yostreamer.com/setup/por-que-tu-stream-va-tirones-como-arreglarlo-ya',
+    ogImage: 'https://yostreamer.com/assets/IMG_0004_1756896329986.jpeg',
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
+    wordCount: 1789
+  },
+  'audio-desincronizado-obs-solucion-3-clicks': {
+    title: 'Audio desincronizado en OBS: Solución en 3 clicks [Actualizado] (Septiembre 2025) | Setups de Streamers',
+    description: '¿El audio no va sincronizado con el video en tu stream? Aquí tienes la solución inmediata para arreglar el audio desincronizado en OBS Studio en solo 3 clicks.',
+    keywords: 'audio desincronizado OBS, sincronizar audio OBS, audio desync streaming, arreglar audio OBS',
+    canonical: 'https://yostreamer.com/setup/audio-desincronizado-obs-solucion-3-clicks',
+    ogImage: 'https://yostreamer.com/assets/IMG_0020_1756896079127.png',
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
+    wordCount: 1547
+  },
+  'capturadora-o-sin-capturadora-la-verdad-que-nadie-te-cuenta': {
+    title: 'Capturadora o sin capturadora: La verdad que nadie te cuenta [Actualizado] (Septiembre 2025) | Setups de Streamers',
+    description: '¿Necesitas capturadora para streaming? Aquí la verdad completa sobre cuándo SÍ necesitas capturadora, cuándo NO, y qué opciones tienes. Guía definitiva 2025.',
+    keywords: 'capturadora streaming, necesito capturadora, streaming sin capturadora, Elgato capture card',
+    canonical: 'https://yostreamer.com/setup/capturadora-o-sin-capturadora-la-verdad-que-nadie-te-cuenta',
+    ogImage: 'https://yostreamer.com/assets/IMG_0009_1756895475055.jpeg',
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
+    wordCount: 1623
+  },
+  'mi-pc-no-puede-con-obs-10-trucos-bajar-cpu-instante': {
+    title: 'Mi PC no puede con OBS: 10 trucos para bajar CPU al instante [Actualizado] (Septiembre 2025) | Setups de Streamers',
+    description: '¿Tu PC se queda sin recursos con OBS? Aquí tienes 10 trucos inmediatos para reducir el uso de CPU en OBS Studio y hacer streaming fluido incluso con PC básico.',
+    keywords: 'OBS consume mucha CPU, reducir CPU OBS, optimizar OBS, PC lento OBS',
+    canonical: 'https://yostreamer.com/setup/mi-pc-no-puede-con-obs-10-trucos-bajar-cpu-instante',
+    ogImage: 'https://yostreamer.com/assets/IMG_0010_1756894994782.webp',
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
+    wordCount: 1534
+  },
+  'guia-streaming-kick-2025-actualizado-septiembre': {
+    title: 'Guía Completa de Iniciación al Streaming en Kick 2025 [Actualizado] (Septiembre 2025) | Setups de Streamers',
+    description: 'Descubre todo sobre Kick.com, la nueva plataforma de streaming. Cómo empezar, monetización, diferencias con Twitch y por qué streamers migran a Kick.',
+    keywords: 'Kick streaming, Kick.com, streaming Kick vs Twitch, monetización Kick',
+    canonical: 'https://yostreamer.com/setup/guia-streaming-kick-2025-actualizado-septiembre',
+    ogImage: 'https://yostreamer.com/assets/kick_1755267725752.jpg',
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
+    wordCount: 1789
+  },
+  'mejor-webcam-streaming-2025-actualizado-septiembre': {
+    title: 'Mejor webcam para streaming 2025: Guía completa de compra [Actualizado] (Septiembre 2025) | Setups de Streamers',
+    description: 'Descubre las mejores webcams para streaming en 2025. Comparativa completa: Logitech C920, C922, Brio 4K, Sony ZV-1 y alternativas económicas.',
+    keywords: 'mejor webcam streaming, webcam para streaming, Logitech C920, cámara streaming',
+    canonical: 'https://yostreamer.com/setup/mejor-webcam-streaming-2025-actualizado-septiembre',
+    ogImage: 'https://yostreamer.com/assets/webcam_1755267809270.jpg',
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
+    wordCount: 2147
+  },
+  'configurar-obs-studio-2025-guia-completa-actualizado-septiembre': {
+    title: 'Cómo configurar OBS Studio 2025: Guía Completa en 10 minutos [Actualizado] (Septiembre 2025) | Setups de Streamers',
     description: 'Aprende a configurar OBS Studio desde cero en 2025. Guía paso a paso con configuraciones óptimas para streaming, grabación, escenas, filtros y troubleshooting. Incluye PDF descargable.',
     keywords: 'OBS Studio 2025, configurar OBS, streaming software, OBS configuración, streaming setup, OBS guía, broadcast software',
-    canonical: 'https://yostreamer.com/setup/configurar-obs-studio-2025-guia-completa',
+    canonical: 'https://yostreamer.com/setup/configurar-obs-studio-2025-guia-completa-actualizado-septiembre',
     ogImage: 'https://yostreamer.com/assets/obs_1756060400861.png',
-    type: 'article'
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
+    wordCount: 5847
   },
-  'obs-pantalla-negra-soluciones': {
-    title: 'OBS pantalla negra: 7 soluciones INMEDIATAS que funcionan | Setups de Streamers',
+  'obs-pantalla-negra-soluciones-actualizado-septiembre-2025': {
+    title: 'OBS pantalla negra: 7 soluciones INMEDIATAS que funcionan [Actualizado] (Septiembre 2025) | Setups de Streamers',
     description: '¿Tu OBS muestra pantalla negra? Aquí tienes 7 soluciones inmediatas y efectivas para arreglar el problema de pantalla negra en OBS Studio. Guía completa paso a paso.',
     keywords: 'OBS pantalla negra, arreglar OBS, soluciones OBS, OBS no funciona, pantalla negra streaming, problemas OBS Studio',
-    canonical: 'https://yostreamer.com/setup/obs-pantalla-negra-soluciones',
+    canonical: 'https://yostreamer.com/setup/obs-pantalla-negra-soluciones-actualizado-septiembre-2025',
     ogImage: 'https://yostreamer.com/assets/obsblack_1756103395864.jpg',
-    type: 'article'
-  }
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-14',
+    dateModified: '2025-01-14',
+    wordCount: 2847
+  },
 };
 
 const homeSEOData: SEOData = {
@@ -186,6 +362,119 @@ export function injectSEOToHTML(html: string, seoData: SEOData): string {
     `<meta name="twitter:image" content="${seoData.ogImage}">`
   );
   
+  // Add JSON-LD structured data for articles
+  if (seoData.type === 'article') {
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": seoData.title.replace(' | Setups de Streamers', ''),
+      "description": seoData.description,
+      "image": seoData.ogImage,
+      "author": {
+        "@type": "Organization",
+        "name": seoData.author || "Equipo Setups de Streamers",
+        "url": "https://yostreamer.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Setups de Streamers",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://yostreamer.com/logo.png"
+        }
+      },
+      "datePublished": seoData.datePublished || "2025-01-14",
+      "dateModified": seoData.dateModified || "2025-01-14",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": seoData.canonical
+      },
+      "keywords": seoData.keywords,
+      "articleSection": "Streaming Guides",
+      "articleBody": seoData.description,
+      "wordCount": seoData.wordCount || 1500,
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Streaming Equipment",
+          "description": "Professional streaming hardware and software guides"
+        },
+        {
+          "@type": "Thing", 
+          "name": "Gaming Setup",
+          "description": "Gaming and streaming setup configurations"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "OBS Studio",
+          "operatingSystem": "Windows, macOS, Linux"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Streamlabs",
+          "operatingSystem": "Windows, macOS"
+        }
+      ],
+      "inLanguage": "es-ES",
+      "copyrightHolder": {
+        "@type": "Organization",
+        "name": "Setups de Streamers"
+      }
+    };
+
+    // Add JSON-LD script tag
+    html = html.replace(
+      '</head>',
+      `    <script type="application/ld+json">${JSON.stringify(jsonLd, null, 2)}</script>\n  </head>`
+    );
+  } else {
+    // Website schema for homepage
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Setups de Streamers",
+      "url": "https://yostreamer.com",
+      "description": seoData.description,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Setups de Streamers",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://yostreamer.com/logo.png"
+        }
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://yostreamer.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "sameAs": [
+        "https://twitter.com/setupsstreamers",
+        "https://youtube.com/@setupsstreamers"
+      ],
+      "inLanguage": "es-ES",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Streaming Equipment Reviews",
+          "description": "Professional streaming hardware reviews and guides in Spanish"
+        },
+        {
+          "@type": "Thing",
+          "name": "Spanish Streamers",
+          "description": "Equipment analysis of top Spanish-speaking streamers"
+        }
+      ]
+    };
+
+    html = html.replace(
+      '</head>',
+      `    <script type="application/ld+json">${JSON.stringify(jsonLd, null, 2)}</script>\n  </head>`
+    );
+  }
+
   // Add server-side H1 heading for SEO crawlers
   const h1Content = seoData.title.includes('Setup de streaming') 
     ? seoData.title 
