@@ -1,6 +1,5 @@
 import { Link } from "wouter";
 import SEO from "@/components/SEO";
-import { generateOrganizationSchema } from "@/lib/schema";
 import { posts } from "@/data/posts";
 import { seoArticles } from "@/data/seo-articles";
 import { Button } from "@/components/ui/button";
@@ -156,95 +155,33 @@ const Index: React.FC = () => {
   const endIndex = startIndex + postsPerPage;
   const currentPosts = allPosts.slice(startIndex, endIndex);
 
-  // Comprehensive JSON-LD schema for homepage
-  const origin = typeof window !== "undefined" ? window.location.origin : "https://yostreamer.com";
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "WebSite",
-        "@id": `${origin}#website`,
-        name: "Setups de Streamers", 
-        url: origin,
-        description: "La guía definitiva de equipamiento para streamers en español. Setups de Ibai, ElXokas, IlloJuan y más. Guías técnicas, reviews y configuraciones profesionales.",
-        inLanguage: "es-ES",
-        publisher: {
-          "@id": `${origin}#organization`
-        },
+        name: "Setups de Streamers",
+        url: typeof window !== "undefined" ? window.location.origin : "",
         potentialAction: {
           "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate: `${origin}/search?q={search_term_string}`
-          },
-          "query-input": "required name=search_term_string"
-        }
-      },
-      {
-        "@type": "Organization",
-        "@id": `${origin}#organization`,
-        name: "Setups de Streamers",
-        url: origin,
-        logo: `${origin}/og-default.jpg`,
-        description: "La guía definitiva de equipamiento para streamers en español",
-        foundingDate: "2025",
-        contactPoint: {
-          "@type": "ContactPoint", 
-          contactType: "customer service",
-          email: "hola@yostreamer.com"
+          target: "{url}/?q={search_term_string}",
+          "query-input": "required name=search_term_string",
         },
-        sameAs: [origin],
-        hasOfferCatalog: {
-          "@type": "OfferCatalog",
-          name: "Streaming Equipment Guides",
-          itemListElement: [
-            {
-              "@type": "Offer",
-              itemOffered: {
-                "@type": "Service",
-                name: "Streaming Setup Guides",
-                description: "Comprehensive guides for streaming equipment and configuration"
-              }
-            }
-          ]
-        }
       },
       {
         "@type": "ItemList",
-        "@id": `${origin}#mainContent`,
-        name: "Guías de Streamers",
-        description: "Lista completa de setups y guías de streaming",
-        numberOfItems: allPosts.length,
         itemListElement: allPosts.map((p, index) => ({
           "@type": "ListItem",
           position: index + 1,
-          url: origin + (p.type === 'streamer' || p.type === 'generated' ? `/setup/${p.slug}` : `/article/${p.slug}`),
+          url:
+            (typeof window !== "undefined" ? window.location.origin : "") +
+            (p.type === 'streamer' ? `/setup/${p.slug}` :
+             p.type === 'generated' ? `/setup/${p.slug}` :
+             `/article/${p.slug}`),
           name: p.title,
-          description: p.excerpt
-        }))
+        })),
       },
-      {
-        "@type": "CollectionPage",
-        "@id": `${origin}#collectionPage`,
-        name: "Setups de Streamers - Página Principal",
-        description: "Descubre los setups completos de los streamers más famosos de España",
-        url: origin,
-        mainEntity: {
-          "@id": `${origin}#mainContent`
-        },
-        breadcrumb: {
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Inicio",
-              item: origin
-            }
-          ]
-        }
-      }
-    ]
+    ],
   };
 
   return (

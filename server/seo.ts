@@ -52,11 +52,11 @@ const postSEOData: Record<string, SEOData> = {
     ogImage: 'https://yostreamer.com/assets/coscu-hero.jpg',
     type: 'article'
   },
-  'como-configurar-obs-studio-2025-guia-completa-paso-a-paso': {
-    title: 'Cómo Configurar OBS Studio 2025: Guía Completa PASO A PASO [+Videos] | Setups de Streamers',
+  'configurar-obs-studio-2025-guia-completa': {
+    title: 'Cómo configurar OBS Studio 2025: Guía Completa en 10 minutos | Setups de Streamers',
     description: 'Aprende a configurar OBS Studio desde cero en 2025. Guía paso a paso con configuraciones óptimas para streaming, grabación, escenas, filtros y troubleshooting. Incluye PDF descargable.',
     keywords: 'OBS Studio 2025, configurar OBS, streaming software, OBS configuración, streaming setup, OBS guía, broadcast software',
-    canonical: 'https://yostreamer.com/setup/como-configurar-obs-studio-2025-guia-completa-paso-a-paso',
+    canonical: 'https://yostreamer.com/setup/configurar-obs-studio-2025-guia-completa',
     ogImage: 'https://yostreamer.com/assets/obs_1756060400861.png',
     type: 'article'
   },
@@ -66,62 +66,6 @@ const postSEOData: Record<string, SEOData> = {
     keywords: 'OBS pantalla negra, arreglar OBS, soluciones OBS, OBS no funciona, pantalla negra streaming, problemas OBS Studio',
     canonical: 'https://yostreamer.com/setup/obs-pantalla-negra-soluciones',
     ogImage: 'https://yostreamer.com/assets/obsblack_1756103395864.jpg',
-    type: 'article'
-  },
-  'mi-pc-no-puede-con-obs-10-trucos-bajar-cpu-instante': {
-    title: 'Mi PC no puede con OBS: 10 trucos para bajar CPU al instante | Setups de Streamers',
-    description: '¿Tu OBS consume 80-90% de CPU y no puedes hacer stream? Aquí tienes 10 trucos INMEDIATOS para bajar el CPU de OBS al 30-40%. Funciona en cualquier PC, incluye PDF con todos los trucos.',
-    keywords: 'OBS CPU alto, reducir CPU OBS, optimizar OBS, CPU usage OBS, OBS lento, streaming CPU, bajar CPU OBS',
-    canonical: 'https://yostreamer.com/setup/mi-pc-no-puede-con-obs-10-trucos-bajar-cpu-instante',
-    ogImage: 'https://yostreamer.com/assets/obsfresh_1756366109460.jpg',
-    type: 'article'
-  },
-  'mejor-webcam-para-streaming-2025-guia-completa': {
-    title: 'Mejor Webcam para Streaming 2025: Guía Completa de Compra | Setups de Streamers',
-    description: 'Descubre las mejores webcams para streaming en 2025: comparativas detalladas, análisis de calidad 4K, presupuestos desde €50 hasta €500, y recomendaciones específicas para cada tipo de content creator.',
-    keywords: 'mejor webcam streaming 2025, cámara web streaming, webcam 4K, Logitech C920, streaming camera, cámara Twitch',
-    canonical: 'https://yostreamer.com/setup/mejor-webcam-para-streaming-2025-guia-completa',
-    ogImage: 'https://yostreamer.com/assets/webcam_1755267809270.jpg',
-    type: 'article'
-  },
-  'mejor-microfono-streaming-2025': {
-    title: 'Mejor Micrófono para Streaming 2025: Guía Completa de Compra | Setups de Streamers',
-    description: 'Descubre los mejores micrófonos para streaming en 2025. Desde el legendario Shure SM7B hasta opciones económicas que usan Ibai, ElXokas y TheGrefg.',
-    keywords: 'mejor micrófono para streaming 2025, micrófono streaming, Shure SM7B, micrófono Twitch, audio streaming profesional',
-    canonical: 'https://yostreamer.com/setup/mejor-microfono-streaming-2025',
-    ogImage: 'https://yostreamer.com/og-default.jpg',
-    type: 'article'
-  },
-  'mejores-eventos-de-twitch-2025-guia-completa': {
-    title: 'Mejores eventos de Twitch 2025: Guía completa | Setups de Streamers',
-    description: 'Descubre los mejores eventos de Twitch en 2025: TwitchCon, LaVelada del Año, Ibai Llanos events, y todos los eventos que no te puedes perder este año.',
-    keywords: 'eventos Twitch 2025, TwitchCon, LaVelada del Año, eventos streaming, Ibai eventos, Twitch Spain',
-    canonical: 'https://yostreamer.com/setup/mejores-eventos-de-twitch-2025-guia-completa',
-    ogImage: 'https://yostreamer.com/assets/twitch_1755267691248.jpg',
-    type: 'article'
-  },
-  'guia-completa-de-iniciacion-al-streaming-en-kick-2025': {
-    title: 'Guía completa de iniciación al streaming en Kick 2025 | Setups de Streamers',
-    description: 'Aprende a hacer streaming en Kick desde cero en 2025. Guía paso a paso con consejos, configuración de OBS, monetización y cómo crecer en la plataforma.',
-    keywords: 'streaming Kick 2025, cómo hacer stream en Kick, Kick vs Twitch, monetización Kick, OBS Kick setup',
-    canonical: 'https://yostreamer.com/setup/guia-completa-de-iniciacion-al-streaming-en-kick-2025',
-    ogImage: 'https://yostreamer.com/assets/kick_1755267725752.jpg',
-    type: 'article'
-  },
-  'setup-de-streaming-de-lolitofdez-2025-guia-completa': {
-    title: 'Setup de streaming de LolitoFdez 2025: Guía completa | Setups de Streamers',
-    description: 'Descubre el setup completo de LolitoFdez: micrófono profesional, cámara de alta calidad, PC gaming optimizado e iluminación perfecta para sus directos de FIFA y variedad.',
-    keywords: 'LolitoFdez setup, setup Lolito, micrófono Lolito, PC gaming Lolito, streaming FIFA',
-    canonical: 'https://yostreamer.com/setup/setup-de-streaming-de-lolitofdez-2025-guia-completa',
-    ogImage: 'https://yostreamer.com/assets/lolitosetup_1755267496338.jpg',
-    type: 'article'
-  },
-  'streaming-con-2mb-internet-guia-completa': {
-    title: 'Streaming con 2MB de internet: La guía imposible que SÍ funciona | Setups de Streamers',
-    description: '¿Hacer streaming con solo 2MB de internet? Te mostramos exactamente cómo conseguir calidad profesional con conexiones lentas. Configuraciones extremas de OBS, optimizaciones de red y todos los trucos que usan los streamers rurales.',
-    keywords: 'streaming con internet lento, 2MB internet streaming, OBS configuración baja velocidad, streaming rural, conexión lenta Twitch, bitrate bajo streaming',
-    canonical: 'https://yostreamer.com/setup/streaming-con-2mb-internet-guia-completa',
-    ogImage: 'https://yostreamer.com/assets/guia_1756190738646.jpg',
     type: 'article'
   }
 };
