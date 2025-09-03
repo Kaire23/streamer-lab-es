@@ -11,7 +11,7 @@
   
   <!-- Setup pages - Top streamers -->
   <url>
-    <loc>https://yostreamer.com/setup/ibai-llanos</loc>
+    <loc>https://yostreamer.com/setup/ibai-llanos-setup-actualizado-septiembre-2025</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -22,7 +22,7 @@
   </url>
   
   <url>
-    <loc>https://yostreamer.com/setup/elxokas</loc>
+    <loc>https://yostreamer.com/setup/elxokas-setup-actualizado-septiembre-2025</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -66,13 +66,13 @@
   </url>
   
   <url>
-    <loc>https://yostreamer.com/setup/auronplay</loc>
+    <loc>https://yostreamer.com/setup/auronplay-setup-actualizado-septiembre-2025</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://yostreamer.com/setup/elrubius</loc>
+    <loc>https://yostreamer.com/setup/elrubius-setup-actualizado-septiembre-2025</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -152,25 +152,25 @@
   
   <!-- Guide pages -->
   <url>
-    <loc>https://yostreamer.com/setup/mejores-eventos-de-twitch-2025-guia-completa</loc>
+    <loc>https://yostreamer.com/setup/mejores-eventos-twitch-2025-actualizado-septiembre</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://yostreamer.com/setup/guia-completa-de-iniciacion-al-streaming-en-kick-2025</loc>
+    <loc>https://yostreamer.com/setup/guia-streaming-kick-2025-actualizado-septiembre</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://yostreamer.com/setup/mejor-webcam-para-streaming-2025-gua-completa-de-compra-1754761396286</loc>
+    <loc>https://yostreamer.com/setup/mejor-webcam-streaming-2025-actualizado-septiembre</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://yostreamer.com/setup/configurar-obs-studio-2025-guia-completa</loc>
+    <loc>https://yostreamer.com/setup/configurar-obs-studio-2025-guia-completa-actualizado-septiembre</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -181,7 +181,7 @@
   </url>
   
   <url>
-    <loc>https://yostreamer.com/setup/setup-streaming-menos-100-euros-probado-funcionando</loc>
+    <loc>https://yostreamer.com/setup/setup-streaming-menos-100-euros-actualizado-septiembre-2025</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -247,7 +247,7 @@
   </url>
   
   <url>
-    <loc>https://yostreamer.com/setup/obs-pantalla-negra-soluciones</loc>
+    <loc>https://yostreamer.com/setup/obs-pantalla-negra-soluciones-actualizado-septiembre-2025</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>

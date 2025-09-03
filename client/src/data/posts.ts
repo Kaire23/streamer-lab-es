@@ -53,8 +53,8 @@ const today = new Date().toISOString().slice(0, 10);
 
 export const posts: Post[] = [
   {
-    slug: "setup-streaming-menos-100-euros-probado-funcionando",
-    title: "Setup streaming por menos de 100€ (Probado y funcionando) - [Septiembre 2025]",
+    slug: "setup-streaming-menos-100-euros-actualizado-septiembre-2025",
+    title: "Setup streaming por menos de 100€ (Probado y funcionando) [Actualizado] (Septiembre 2025)",
     excerpt:
       "¿Quieres empezar a hacer streaming con presupuesto limitado? Te mostramos cómo montar un setup completo por menos de 100€. Equipos probados, enlaces directos y configuración paso a paso.",
     date: today,
@@ -2781,8 +2781,8 @@ Con estos 10 trucos aplicados correctamente, cualquier PC gaming moderno puede m
 ¿Problemas específicos? Los comentarios están abiertos para troubleshooting personalizado con nuestro equipo técnico.`,
   },
   {
-    slug: "obs-pantalla-negra-soluciones",
-    title: "OBS pantalla negra: 7 soluciones INMEDIATAS que funcionan",
+    slug: "obs-pantalla-negra-soluciones-actualizado-septiembre-2025",
+    title: "OBS pantalla negra: 7 soluciones INMEDIATAS que funcionan [Actualizado] (Septiembre 2025)",
     excerpt:
       "¿Tu OBS muestra pantalla negra? Aquí tienes 7 soluciones inmediatas y efectivas para arreglar el problema de pantalla negra en OBS Studio. Guía completa paso a paso.",
     date: today,
@@ -3010,8 +3010,8 @@ La combinación de estas 7 soluciones resuelve prácticamente todos los casos de
     ],
   },
   {
-    slug: "ibai-llanos",
-    title: "Setup de streaming de Ibai Llanos (2025): Guía completa",
+    slug: "ibai-llanos-setup-actualizado-septiembre-2025",
+    title: "Setup de streaming de Ibai Llanos (2025): Guía completa [Actualizado] (Septiembre 2025)",
     excerpt:
       "Descubre el setup completo de Ibai Llanos: micrófono Shure SM7B, cámara Sony, PC gaming de alta gama e iluminación profesional para streaming de máxima calidad.",
     date: today,
@@ -3282,8 +3282,8 @@ Para streamers aspiracionales, el setup de Ibai representa tanto inspiración co
     ],
   },
   {
-    slug: "auronplay",
-    title: "Setup de streaming de AuronPlay (2025): Guía completa",
+    slug: "auronplay-setup-actualizado-septiembre-2025",
+    title: "Setup de streaming de AuronPlay (2025): Guía completa [Actualizado] (Septiembre 2025)",
     excerpt:
       "Descubre el setup completo de AuronPlay: micrófono profesional, iluminación RGB única, PC gaming de alta gama y configuración optimizada para streaming diario de máxima calidad.",
     date: today,
@@ -3665,8 +3665,8 @@ El **setup de AuronPlay** no es solo inspiración, sino un blueprint comprobado 
     ],
   },
   {
-    slug: "elrubius",
-    title: "Setup de streaming de ElRubius (2025): Guía completa",
+    slug: "elrubius-setup-actualizado-septiembre-2025",
+    title: "Setup de streaming de ElRubius (2025): Guía completa [Actualizado] (Septiembre 2025)",
     excerpt:
       "Descubre el setup icónico de ElRubius: equipamiento profesional, iluminación RGB azul-rosa característica, PC gaming de élite y configuración optimizada para variedad y gaming de máxima calidad.",
     date: today,
@@ -6093,8 +6093,8 @@ El **setup de LolitoFdez** no es simplemente inspirational para aspiring gaming 
     ],
   },
   {
-    slug: "mejores-eventos-de-twitch-2025-guia-completa",
-    title: "Los Mejores Eventos de Twitch 2025: Guía Completa",
+    slug: "mejores-eventos-twitch-2025-actualizado-septiembre",
+    title: "Los Mejores Eventos de Twitch 2025: Guía Completa [Actualizado] (Septiembre 2025)",
     excerpt:
       "Descubre los eventos más esperados de Twitch en 2025: competiciones esports, shows de streamers, La Velada del Año 4, festivales gaming y eventos interactivos que definirán el streaming mundial.",
     date: today,
@@ -6533,8 +6533,8 @@ Los **eventos de Twitch en 2025** no son simplemente entertainment, sino cultura
     ],
   },
   {
-    slug: "guia-completa-de-iniciacion-al-streaming-en-kick-2025",
-    title: "Guía Completa de Iniciación al Streaming en Kick 2025",
+    slug: "guia-streaming-kick-2025-actualizado-septiembre",
+    title: "Guía Completa de Iniciación al Streaming en Kick 2025 [Actualizado] (Septiembre 2025)",
     excerpt:
       "Descubre cómo empezar a hacer streaming en Kick: configuración inicial, equipamiento recomendado, monetización, diferencias con Twitch y estrategias para crecer en la plataforma de streaming más innovadora.",
     date: today,
@@ -7091,8 +7091,8 @@ El **streaming en Kick** no es just about playing games or talking to camera; es
     ],
   },
   {
-    slug: "mejor-webcam-para-streaming-2025-gua-completa-de-compra-1754761396286",
-    title: "Mejor Webcam para Streaming 2025: Guía Completa de Compra",
+    slug: "mejor-webcam-streaming-2025-actualizado-septiembre",
+    title: "Mejor Webcam para Streaming 2025: Guía Completa de Compra [Actualizado] (Septiembre 2025)",
     excerpt:
       "Descubre las mejores webcams para streaming en 2025: comparativas detalladas, análisis de calidad 4K, presupuestos desde €50 hasta €500, y recomendaciones específicas para cada tipo de content creator.",
     date: today,
@@ -10665,8 +10665,8 @@ El **kawaii setup de Staryuuki** ultimately proves que authentic kawaii streamin
     ],
   },
   {
-    slug: "elxokas",
-    title: "Setup de streaming de ElXokas (2025): Potencia y estilo",
+    slug: "elxokas-setup-actualizado-septiembre-2025",
+    title: "Setup de streaming de ElXokas (2025): Potencia y estilo [Actualizado] (Septiembre 2025)",
     excerpt:
       "Analizamos el setup de ElXokas: audio potente, cámaras nítidas y una iluminación dramática ideal para directos intensos.",
     date: today,
@@ -12323,8 +12323,8 @@ Su purple RGB theme no es solo decoration; es una strategic choice que builds re
     ],
   },
   {
-    slug: "configurar-obs-studio-2025-guia-completa",
-    title: "Cómo configurar OBS Studio 2025: Guía Completa en 10 minutos",
+    slug: "configurar-obs-studio-2025-guia-completa-actualizado-septiembre",
+    title: "Cómo configurar OBS Studio 2025: Guía Completa en 10 minutos [Actualizado] (Septiembre 2025)",
     excerpt:
       "Aprende a configurar OBS Studio desde cero en 2025. Guía paso a paso con configuraciones óptimas para streaming, grabación, escenas, filtros y troubleshooting. Incluye PDF descargable.",
     date: today,
@@ -12342,7 +12342,7 @@ Su purple RGB theme no es solo decoration; es una strategic choice que builds re
     bio: "OBS Studio es el software de streaming y grabación gratuito más popular del mundo. Esta guía completa te enseña cómo configurarlo perfectamente para obtener la máxima calidad en tus streams y grabaciones.",
     content: `## Cómo Configurar OBS Studio 2025: La Guía Definitiva para Streaming Profesional
 
-OBS Studio se ha consolidado como el software de streaming y grabación más importante del ecosistema digital, utilizado por millones de content creators desde principiantes hasta streamers profesionales como Ibai Llanos, ElXokas y los más grandes influencers del mundo.
+OBS Studio se ha consolidado como el software de streaming y grabación más importante del ecosistema digital, utilizado por millones de content creators desde principiantes hasta streamers profesionales. Grandes figuras como [Ibai Llanos](/setup/ibai-llanos-setup-actualizado-septiembre-2025), [ElXokas](/setup/elxokas-setup-actualizado-septiembre-2025) y [AuronPlay](/setup/auronplay-setup-actualizado-septiembre-2025) confían en OBS Studio para sus streams diarios que alcanzan cientos de miles de viewers.
 
 ### 📥 Descarga GRATIS: PDF Checklist Completo
 
@@ -12350,77 +12350,570 @@ OBS Studio se ha consolidado como el software de streaming y grabación más imp
 
 Descarga nuestro checklist paso a paso para imprimir con todas las configuraciones, atajos de teclado y troubleshooting incluidos. ¡Perfecto para tenerlo a mano mientras configuras OBS!
 
-### Instalación y Primeros Pasos
+## PARTE 1: Instalación y Primeros Pasos
 
-El primer paso para dominar OBS Studio es una instalación correcta que evite problemas futuros. En 2025, OBS Studio 30.0 incluye mejoras significativas en estabilidad y rendimiento.
+### Descarga e Instalación Correcta
+
+El primer paso para dominar OBS Studio es una instalación correcta que evite problemas futuros. En 2025, OBS Studio 30.0 incluye mejoras significativas en estabilidad y rendimiento, con un engine completamente reescrito que reduce el uso de CPU hasta un 40%.
 
 #### Proceso de instalación recomendado:
 
-1. Descarga oficial desde obsproject.com
-2. Instalación como administrador
-3. Carpeta personalizada para evitar conflictos
-4. Plugins esenciales: Browser Source y Virtual Camera
+1. **Descarga oficial**: Siempre desde obsproject.com (nunca sites terceros)
+2. **Instalación como administrador**: Click derecho "Ejecutar como administrador"
+3. **Carpeta personalizada**: Evita Program Files para prevenir conflictos
+4. **Plugins esenciales**: Browser Source, Virtual Camera y Win Capture Audio
+5. **Drivers actualizados**: GPU drivers latest antes de primera ejecución
 
-#### Auto-Configuration Wizard
+#### Auto-Configuration Wizard: Tu Mejor Amigo
 
-OBS Studio 2025 incluye un Auto-Configuration Wizard mejorado que analiza tu hardware y conexión para sugerir configuraciones óptimas.
+OBS Studio 2025 incluye un Auto-Configuration Wizard mejorado que analiza tu hardware específico y conexión para sugerir configuraciones óptimas. Esto es especialmente útil si estás empezando y no sabes qué settings usar.
 
-### Configuraciones de Video: Calidad Visual Profesional
+**Información que analiza:**
+- Especificaciones GPU (NVENC/AMF support)
+- CPU cores y threading capability
+- RAM disponible y velocidad
+- Velocidad de upload real vs teórica
+- Latencia de red y jitter
+- Resolución de pantalla y refresh rate
 
-La configuración de video es fundamental para determinar la calidad visual de tus streams. En 2025, las plataformas soportan resoluciones y bitrates más altos.
+## PARTE 2: Configuraciones de Video - Calidad Visual Profesional
 
-#### Resoluciones recomendadas:
-- Gaming competitivo: 1920x1080 (1080p 60fps)
-- Just chatting: 1280x720 (720p 30fps)
-- IRL/Outdoor: 1600x900 (900p 30fps)
+### Resoluciones y Frame Rates por Tipo de Content
 
-### Configuraciones de Audio: Sonido Broadcast-Quality
+La configuración de video es fundamental para determinar la calidad visual de tus streams. En 2025, las plataformas soportan resoluciones y bitrates más altos, pero la elección correcta depende de tu content type y audience.
 
-El audio de calidad profesional comienza con la configuración correcta de devices y sample rates.
+#### Configuraciones recomendadas por categoría:
 
-#### Filtros de Audio Esenciales:
+**Gaming Competitivo:**
+- **Resolución**: 1920x1080 (1080p)
+- **FPS**: 60fps (fundamental para gaming)
+- **Bitrate**: 6000-8000 kbps
+- **Encoder**: NVENC (libera CPU para gaming)
 
-1. Noise Suppression: Elimina ruido de fondo
-2. Noise Gate: Controla cuando se activa el micrófono
-3. Compressor: Nivela el volumen de voz
-4. Limiter: Previene clipping y protege oídos
+**Just Chatting/IRL:**
+- **Resolución**: 1280x720 (720p)
+- **FPS**: 30fps (suficiente para conversación)
+- **Bitrate**: 3500-4500 kbps
+- **Encoder**: x264 Medium (mejor calidad facial)
 
-### Configuración de Encoding
+**Creative Content (Art/Music):**
+- **Resolución**: 1600x900 (900p)
+- **FPS**: 30fps
+- **Bitrate**: 4500-5500 kbps
+- **Encoder**: x264 Slow (maximum quality)
 
-La elección entre hardware y software encoding determina la calidad final y el performance del sistema.
+### Configuración de Canvas y Output
 
-#### Software vs Hardware Encoding:
+**Base Canvas Resolution:**
+- Siempre tu resolución nativa de monitor
+- 1920x1080 para monitores 1080p
+- 2560x1440 para monitores 1440p
+- 3840x2160 para monitores 4K
 
-- Software (x264): Máxima calidad pero alto uso de CPU
-- Hardware NVIDIA (NVENC): Minimal CPU usage, ideal para gaming
-- Hardware AMD (AMF): Excelente integración con GPUs AMD
+**Output Scaled Resolution:**
+- Reduce según tu bitrate disponible
+- Downscale Filter: Lanczos (mejor calidad)
+- Aspect Ratio: Mantener 16:9 siempre
 
-### Creación de Escenas
+### Filtros de Video Avanzados
 
-Una estructura de escenas bien organizada es la diferencia entre streams amateur y profesionales.
+#### Color Correction:
+- **Brightness**: +2 a +5 (faces más visible)
+- **Contrast**: +10 a +15 (definition mejor)
+- **Saturation**: +5 a +10 (colors más vibrant)
 
-#### Escenas esenciales:
+#### Sharpening:
+- **Unsharp Mask**: 0.5 strength (texto más clear)
+- **Render Delay**: 0 (no latency added)
 
-1. "Starting Soon" - Logo y countdown
-2. "Just Chatting" - Cámara principal
-3. "Gaming Full Screen" - Juego completo
-4. "Gaming + Camera" - Balance entre juego y reacción
-5. "BRB/Away" - Pausa temporal
-6. "Ending/Thanks" - Despedida
+Si experimentas problemas de lag durante streaming, consulta nuestra guía sobre [por qué tu stream va a tirones](/setup/por-que-tu-stream-va-tirones-como-arreglarlo-ya) para optimizations específicas.
 
-### Troubleshooting: Problemas Comunes
+## PARTE 3: Configuraciones de Audio - Sonido Broadcast-Quality
 
-#### Tipos de Dropped Frames:
+### Sample Rates y Bit Depth
 
-- Skipped Frames: Problema de GPU
-- Lagged Frames: Sobrecarga de CPU
-- Dropped Frames: Problemas de conexión
+El audio de calidad profesional comienza con la configuración correcta de sample rates. En 2025, el standard es 44.1 kHz para streaming, aunque 48 kHz es acceptable para content musical.
 
-### Conclusión
+**Configuración recomendada:**
+- **Sample Rate**: 44.1 kHz
+- **Channels**: Stereo (incluso para mono mics)
+- **Bitrate**: 160 kbps (Twitch) / 128 kbps (budget)
 
-Dominar OBS Studio en 2025 requiere understanding profundo de cómo cada setting interactúa con tu hardware y conexión. Esta guía te proporciona las herramientas necesarias para streaming profesional.
+### Audio Sources Setup
 
-Con esta configuración correcta, tu streams rivalizarán con cualquier broadcaster profesional en términos de calidad técnica.`,
+#### Micrófono Principal:
+1. **Device Selection**: Tu interface/mic específico
+2. **Monitoring**: Monitor and Output
+3. **Sync Offset**: Ajustar si hay delay (típicamente -100ms)
+4. **Volume**: -12dB peak máximo
+
+Si tienes problemas de [audio desincronizado](/setup/audio-desincronizado-obs-solucion-3-clicks), nuestra guía específica te mostrará cómo solucionarlo en 3 clicks.
+
+#### Filtros de Audio Esenciales (Orden Importante):
+
+1. **Noise Suppression** (Primero):
+   - Método: Speex (CPU efficient)
+   - Suppression Level: -30dB
+   - Aplicar: Always on
+
+2. **Noise Gate** (Segundo):
+   - Close Threshold: -50dB
+   - Open Threshold: -45dB
+   - Attack Time: 25ms
+   - Hold Time: 200ms
+   - Release Time: 150ms
+
+3. **Compressor** (Tercero):
+   - Ratio: 3:1
+   - Threshold: -18dB
+   - Attack: 6ms
+   - Release: 60ms
+   - Output Gain: +2dB
+
+4. **Limiter** (Último):
+   - Threshold: -6dB
+   - Release Time: 60ms
+
+### Audio Routing Avanzado
+
+Para setups más complejos, especialmente si usas múltiples sources como Discord, música y game audio, necesitas un routing system proper.
+
+**VoiceMeeter Banana Setup:**
+1. Instalar VoiceMeeter Banana (gratis)
+2. Configurar como default audio device
+3. Route diferentes sources a diferentes channels
+4. Control independiente de volumes
+
+## PARTE 4: Configuración de Encoding - Performance vs Quality
+
+### Hardware vs Software Encoding Comparison
+
+La elección entre hardware y software encoding determina tanto la calidad final como el performance del sistema durante streaming.
+
+#### Software Encoding (x264):
+
+**Ventajas:**
+- Máxima calidad possible
+- Excellent motion handling
+- Consistent bitrate efficiency
+- Advanced configuration options
+
+**Desventajas:**
+- Alto uso de CPU (40-70%)
+- Può impact gaming performance
+- Requires powerful processor
+
+**Settings recomendados x264:**
+- **CPU Usage Preset**: Medium (balance quality/performance)
+- **Profile**: High
+- **Tune**: None (general purpose)
+- **Keyframe Interval**: 2 seconds
+
+#### Hardware Encoding NVIDIA (NVENC):
+
+**Ventajas:**
+- Minimal CPU usage (5-15%)
+- No impact en gaming performance
+- Consistent performance
+- Built-in GPU acceleration
+
+**Desventajas:**
+- Slightly lower quality que x264
+- Requires RTX 20-series o newer
+- Limited fine-tuning options
+
+**Settings recomendados NVENC:**
+- **Preset**: Quality (best quality/performance balance)
+- **Profile**: High
+- **Look-ahead**: OFF (lower latency)
+- **Psycho Visual Tuning**: ON
+- **B-frames**: 2
+
+#### Hardware Encoding AMD (AMF):
+
+**Ventajas:**
+- Excellent integration con AMD GPUs
+- Low CPU usage
+- Good quality en RX 6000+ series
+- Free con any AMD GPU
+
+**Settings recomendados AMF:**
+- **Quality Preset**: Quality
+- **Profile**: High
+- **B-Picture Pattern**: 2
+- **Enforce HRD**: ON
+
+### Rate Control Methods
+
+#### CBR (Constant Bitrate):
+- **Cuando usar**: Streaming platforms (Twitch/YouTube)
+- **Ventaja**: Predictable bandwidth usage
+- **Configuración**: Bitrate = Max Bitrate
+
+#### VBR (Variable Bitrate):
+- **Cuando usar**: Local recording
+- **Ventaja**: Better quality in complex scenes
+- **Configuración**: Target bitrate + Max bitrate
+
+## PARTE 5: Creación de Escenas Profesionales
+
+### Estructura de Escenas Recomendada
+
+Una estructura de escenas bien organizada es la diferencia entre streams amateur y profesionales. Toma inspiration de cómo streamers como [ElRubius](/setup/elrubius-setup-actualizado-septiembre-2025) organizan sus setups.
+
+#### Escenas Esenciales para Todo Streamer:
+
+1. **"🔴 STARTING SOON"**:
+   - Logo central animated
+   - Countdown timer
+   - Background music
+   - Social media info
+   - "Stream starts in..." text
+
+2. **"💬 JUST CHATTING"**:
+   - Webcam 70% screen
+   - Chat overlay
+   - Recent followers/donations
+   - Background subtle
+   - Alert areas designated
+
+3. **"🎮 GAMING FULL SCREEN"**:
+   - Game capture 100%
+   - Minimal overlays
+   - Small webcam (optional)
+   - Performance priority
+
+4. **"🎮 GAMING + CAMERA"**:
+   - Game capture 75%
+   - Webcam 25% (corner)
+   - Chat visible
+   - Alert integration
+
+5. **"⏸️ BRB/AWAY"**:
+   - Static image o GIF
+   - "Be Right Back" text
+   - Timer (optional)
+   - Chill music
+
+6. **"🙏 ENDING/THANKS"**:
+   - Thank you message
+   - Statistics del stream
+   - Next stream info
+   - Social media reminders
+
+### Sources Configuration
+
+#### Webcam Setup:
+
+**Device Properties:**
+- **Resolution**: Native camera resolution
+- **FPS**: Match stream FPS
+- **Format**: MJPEG (lower CPU) o YUY2 (better quality)
+
+**Webcam Filters:**
+- **Color Correction**: Brightness +5, Contrast +10
+- **Chromakey**: Si usas green screen
+- **Scaling**: Lanczos filtering
+- **Crop**: Remove unwanted edges
+
+#### Game Capture vs Display Capture:
+
+**Game Capture (Recommended):**
+- Lower CPU usage
+- Better performance
+- Automatic fullscreen detection
+- Anti-cheat compatibility
+
+**Display Capture (Backup):**
+- Captures everything
+- Higher CPU usage
+- Includes desktop accidents
+- Use only si Game Capture fails
+
+#### Browser Sources:
+
+Browser sources son powerful pero CPU-intensive. Úsalos wisely:
+
+**Optimizations:**
+- Refresh rate: Only when visible
+- Hardware acceleration: Enable
+- Width/Height: Exact pixel dimensions
+- FPS: 30 maximum
+
+### Scene Transitions
+
+#### Transition Types:
+
+**Cut**: Instant change (0ms)
+- **Uso**: Quick scene switches
+- **Ventaja**: No delay
+
+**Fade**: Gradual opacity change (300ms)
+- **Uso**: Smooth transitions
+- **Ventaja**: Professional look
+
+**Slide**: Motion-based transition (500ms)
+- **Uso**: Dynamic content
+- **Ventaja**: Visual interest
+
+#### Advanced Transitions:
+
+Para transitions más sophisticated, considera plugins como:
+- **StreamFX**: Advanced filters y transitions
+- **Move Transition**: Object movement animations
+- **OBS Shaderfilter**: Custom visual effects
+
+## PARTE 6: Platform-Specific Optimizations
+
+### Twitch Optimization
+
+**Recommended Settings:**
+- **Bitrate**: 6000 kbps maximum (non-partners)
+- **Keyframe Interval**: Exactly 2 seconds
+- **Audio**: 160 kbps maximum
+- **Ingest Server**: Auto (closest location)
+
+**Advanced Twitch Features:**
+- **Low Latency Mode**: Reduce stream delay
+- **Categories**: Proper game/category selection
+- **Tags**: Maximize discoverability
+
+### YouTube Live Optimization
+
+**Recommended Settings:**
+- **Bitrate**: Up to 9000 kbps (higher than Twitch)
+- **Resolution**: 1080p60 preferred
+- **Audio**: 128 kbps (YouTube compresses aggressively)
+- **Encoder**: NVENC o x264 Medium
+
+**YouTube-Specific Features:**
+- **Stream Key**: Reusable (no regeneration needed)
+- **DVR**: Automatic VOD creation
+- **Monetization**: AdSense integration
+
+### Kick.com Optimization
+
+Para streamers que exploran [Kick como alternative platform](/setup/guia-streaming-kick-2025-actualizado-septiembre), los settings son similares a Twitch pero con más flexibility en bitrate.
+
+## PARTE 7: Advanced Troubleshooting
+
+### Performance Optimization
+
+#### CPU Optimization:
+
+**Process Priority:**
+1. Task Manager → Details → obs64.exe
+2. Right-click → Set Priority → High
+3. NEVER use Realtime (puede freeze system)
+
+**CPU Affinity:**
+1. Task Manager → Details → obs64.exe
+2. Right-click → Set Affinity
+3. Uncheck 1-2 cores (reserve para OS)
+
+#### Memory Management:
+
+**RAM Usage Optimization:**
+- Close unnecessary programs
+- Browser tabs consume massive RAM
+- Discord overlay disable
+- Background Windows updates pause
+
+#### GPU Optimization:
+
+**NVIDIA Control Panel:**
+- Prefer Maximum Performance
+- Threaded Optimization: ON
+- Power Management: Prefer Maximum Performance
+
+### Network Troubleshooting
+
+#### Connection Issues:
+
+Si experimentas dropped frames constantemente, el problema likely está en tu network setup, no en OBS. Consulta nuestro troubleshooting específico para problemas de [streaming lag](/setup/por-que-tu-stream-va-tirones-como-arreglarlo-ya).
+
+**Network Optimization:**
+- Ethernet connection (never WiFi para streaming)
+- Quality of Service (QoS) router settings
+- Port forwarding: 1935 (RTMP)
+- DNS: Cloudflare (1.1.1.1) o Google (8.8.8.8)
+
+#### Bandwidth Testing:
+
+**Tools recomendados:**
+- TwitchBandwidthTest: Specific para Twitch servers
+- Speedtest.net: General bandwidth
+- OBS Bandwidth Test: Built-in tool
+
+### Audio Troubleshooting
+
+#### Common Audio Issues:
+
+**Audio Desync:**
+- Solution: Audio Monitoring → Adjust Sync Offset
+- Typical value: -100ms to -200ms
+- Platform-specific delays vary
+
+**Audio Crackling/Popping:**
+- Increase Audio Buffer Size
+- Lower Sample Rate (48kHz → 44.1kHz)
+- Update audio drivers
+- Check USB power management
+
+**Microphone Not Working:**
+- Windows Privacy Settings → Microphone Access
+- Default Device selection en Windows
+- OBS Audio Sources → Properties → Device
+
+## PARTE 8: Advanced Features y Plugins
+
+### Essential Plugins
+
+#### StreamFX:
+- Advanced filters y effects
+- Better encoding options
+- Professional-grade tools
+
+**Installation:**
+1. Download desde StreamFX GitHub
+2. Extract a OBS plugins folder
+3. Restart OBS
+4. Available en Filters menu
+
+#### Advanced Scene Switcher:
+- Automatic scene switching
+- Conditional logic
+- Timer-based transitions
+
+#### OBS WebSocket:
+- Remote control capability
+- Third-party app integration
+- Mobile app control
+
+### Stream Deck Integration
+
+Para streamers serios, [Stream Deck es essential](${amazonSearchUrl("Elgato Stream Deck")}). Automation y control professional:
+
+**Essential Buttons:**
+- Scene switching
+- Mute/Unmute
+- Audio levels
+- Stream start/stop
+- Social media posting
+
+### Capture Cards para Multi-PC Setup
+
+Si quieres un setup professional como los streamers top, considera [capturadoras](/setup/capturadora-o-sin-capturadora-la-verdad-que-nadie-te-cuenta) para separar gaming y streaming PCs.
+
+## PARTE 9: Monitoring y Analytics
+
+### OBS Stats Dock
+
+Enable Stats Dock para real-time monitoring:
+
+**Metrics importantes:**
+- **CPU Usage**: Should stay below 70%
+- **Memory Usage**: Monitor RAM consumption
+- **Skipped Frames**: GPU overload indicator
+- **Dropped Frames**: Network issues indicator
+- **Rendering Lag**: System performance issue
+
+### Stream Health Monitoring
+
+**Third-party Tools:**
+- **Streamlabs Dashboard**: Real-time analytics
+- **TwitchTracker**: Historical performance
+- **StreamElements**: Engagement metrics
+
+## PARTE 10: Security y Backup
+
+### Stream Key Security
+
+**Best Practices:**
+- Never share stream keys
+- Regenerate regularly
+- Use different keys por platform
+- Enable 2FA en streaming accounts
+
+### Scene Collection Backup
+
+**Export Settings:**
+1. File → Settings → Export
+2. Save configuration file
+3. Include Scene Collections
+4. Store en cloud storage
+
+### Disaster Recovery
+
+**Preparation:**
+- Backup OBS settings regular
+- Document custom configurations
+- Keep spare hardware ready
+- Test backup internet connection
+
+## PARTE 11: Monetization Setup
+
+### Donations y Alerts
+
+**StreamLabs Setup:**
+- Connect bank account
+- Configure donation minimums
+- Custom alert sounds
+- Thank you messages automation
+
+**StreamElements Alternative:**
+- Better customization options
+- Advanced chatbot
+- Merchandise integration
+
+### Subscriber Benefits
+
+**Tier 1 Subscriber Perks:**
+- Sub-only chat mode
+- Custom emotes
+- Discord access
+- Gaming sessions priority
+
+## PARTE 12: Growth Strategies
+
+### Content Optimization
+
+**Consistent Schedule:**
+- Same days each week
+- Same time daily
+- Notify audience via social media
+- Create anticipation
+
+**Engagement Techniques:**
+- Interactive games
+- Q&A sessions
+- Viewer challenges
+- Community polls
+
+### Cross-Platform Promotion
+
+**Social Media Integration:**
+- Twitter announcements
+- Instagram stories
+- TikTok highlights
+- YouTube clips
+
+Para streamers con budget limitado, consulta nuestra guía sobre [streaming setup por menos de 100€](/setup/setup-streaming-menos-100-euros-actualizado-septiembre-2025).
+
+## Conclusión: Dominando OBS Studio en 2025
+
+Dominar OBS Studio en 2025 requiere understanding profundo de cómo cada setting interactúa con tu hardware específico y conexión. Esta guía comprehensive te proporciona las herramientas y knowledge necesarios para streaming a nivel profesional.
+
+**Key Takeaways:**
+1. **Audio quality > Video quality**: Viewers tolerate lower video mas not bad audio
+2. **Consistent performance > Perfect settings**: Stable stream beats perfect occasional stream
+3. **Practice makes perfect**: Spend time experimenting con different configurations
+4. **Hardware investment matters**: Good equipment makes configuration easier
+5. **Community support**: Join OBS Discord para advanced troubleshooting
+
+Con esta configuración correcta y comprehensive understanding, tus streams rivalizarán con cualquier broadcaster profesional en términos de calidad técnica. La diferencia entre amateur y professional streaming no está en expensive equipment, sino en proper configuration y understanding del software.
+
+Remember: Los streamers más exitosos no necessarily tienen el equipment más expensive, pero SÍ tienen la configuration más optimized para su specific setup y content type.`,
     funFacts: [
       "OBS Studio 30.0 incluye mejoras de hasta 40% en rendimiento vs versiones anteriores",
       "Los filtros de audio correctos pueden mejorar la calidad vocal más que un micrófono 10 veces más caro",
