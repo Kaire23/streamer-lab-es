@@ -181,6 +181,17 @@
   </url>
   
   <url>
+    <loc>https://yostreamer.com/setup/audio-desincronizado-obs-solucion-3-clicks</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://yostreamer.com/assets/IMG_0020_1756896079127.png</image:loc>
+      <image:title>Audio desincronizado en OBS: Solución en 3 clicks</image:title>
+      <image:caption>Soluciones inmediatas para problemas de sincronización de audio en streaming</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
     <loc>https://yostreamer.com/setup/capturadora-o-sin-capturadora-la-verdad-que-nadie-te-cuenta</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
