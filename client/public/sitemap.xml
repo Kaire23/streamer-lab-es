@@ -181,6 +181,17 @@
   </url>
   
   <url>
+    <loc>https://yostreamer.com/setup/setup-streaming-menos-100-euros-probado-funcionando</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://yostreamer.com/assets/IMG_0022_1756897666663.jpeg</image:loc>
+      <image:title>Setup streaming por menos de 100€ (Probado y funcionando)</image:title>
+      <image:caption>Guía completa para montar setup streaming económico con equipos Amazon</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
     <loc>https://yostreamer.com/setup/obs-vs-streamlabs-2025-ganador-definitivo-100-horas-pruebas</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
