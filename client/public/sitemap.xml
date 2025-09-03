@@ -181,6 +181,17 @@
   </url>
   
   <url>
+    <loc>https://yostreamer.com/setup/mi-pc-no-puede-con-obs-10-trucos-bajar-cpu-instante</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://yostreamer.com/assets/IMG_0010_1756894994782.webp</image:loc>
+      <image:title>Mi PC no puede con OBS: 10 trucos para bajar CPU al instante</image:title>
+      <image:caption>Trucos inmediatos para reducir el uso de CPU en OBS Studio</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
     <loc>https://yostreamer.com/setup/obs-pantalla-negra-soluciones</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
