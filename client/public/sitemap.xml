@@ -181,6 +181,17 @@
   </url>
   
   <url>
+    <loc>https://yostreamer.com/setup/por-que-tu-stream-va-tirones-como-arreglarlo-ya</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://yostreamer.com/assets/IMG_0004_1756896329986.jpeg</image:loc>
+      <image:title>Por qué tu stream va a tirones (y cómo arreglarlo YA)</image:title>
+      <image:caption>Soluciones definitivas para stream lag, OBS lag y streaming entrecortado</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
     <loc>https://yostreamer.com/setup/audio-desincronizado-obs-solucion-3-clicks</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
