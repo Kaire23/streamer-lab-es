@@ -11,7 +11,6 @@ import { initializePdfForms } from "@/lib/pdfSubscription";
 // Lazy load pages for code splitting and better performance
 const Index = lazy(() => import("./pages/Index"));
 const PostPage = lazy(() => import("./pages/PostPage"));
-const LagPredictor = lazy(() => import("./pages/LagPredictor"));
 
 const Article = lazy(() => import("./pages/Article"));
 const Unsubscribed = lazy(() => import("./pages/Unsubscribed"));
@@ -62,7 +61,6 @@ const App = () => (
               }>
                 <Route path="/" component={Index} />
                 <Route path="/setup/:slug" component={PostPage} />
-                <Route path="/herramientas/predictor-lag-ia" component={LagPredictor} />
 
                 <Route path="/article/:slug" component={Article} />
                 <Route path="/unsubscribed" component={Unsubscribed} />

@@ -12,7 +12,6 @@ const SiteHeader = () => {
         </Link>
         <nav aria-label="Main" className="flex items-center gap-4">
           <Link to="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Inicio</Link>
-          <Link to="/herramientas/predictor-lag-ia" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Predictor IA</Link>
           <Button asChild variant="hero" size="sm">
             <a href="#newsletter" aria-label="Suscríbete a novedades">Suscríbete</a>
           </Button>
