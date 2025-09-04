@@ -220,6 +220,18 @@ const postSEOData: Record<string, SEOData> = {
     dateModified: '2025-01-14',
     wordCount: 2147
   },
+  'como-configurar-stream-perfecto-con-0-euros-inversion-actualizado-septiembre-2025': {
+    title: 'Cómo Configurar el Stream Perfecto con 0€ de Inversión [Actualizado] (Septiembre 2025) | Setups de Streamers',
+    description: '¿Stream profesional sin gastar un euro? Te mostramos cómo configurar un setup de streaming perfecto utilizando solo software gratuito, optimización de hardware existente, overlays gratis y música sin copyright.',
+    keywords: 'software gratuito streaming, optimización hardware existente, overlays gratis, música sin copyright, streaming gratis, setup streaming 0 euros',
+    canonical: 'https://yostreamer.com/setup/como-configurar-stream-perfecto-con-0-euros-inversion-actualizado-septiembre-2025',
+    ogImage: 'https://yostreamer.com/assets/IMG_0027_1756973079331.png',
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-15',
+    dateModified: '2025-01-15',
+    wordCount: 4987
+  },
   'configurar-obs-studio-2025-guia-completa-actualizado-septiembre': {
     title: 'Cómo configurar OBS Studio 2025: Guía Completa en 10 minutos [Actualizado] (Septiembre 2025) | Setups de Streamers',
     description: 'Aprende a configurar OBS Studio desde cero en 2025. Guía paso a paso con configuraciones óptimas para streaming, grabación, escenas, filtros y troubleshooting. Incluye PDF descargable.',

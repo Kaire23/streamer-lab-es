@@ -30,6 +30,7 @@ import audioSyncImg from "@assets/IMG_0020_1756896079127.png";
 import streamLagImg from "@assets/IMG_0004_1756896329986.jpeg";
 import obsVsStreamlabsImg from "@assets/IMG_0021_1756897339110.webp";
 import budgetSetupImg from "@assets/IMG_0022_1756897666663.jpeg";
+import zeroInvestmentImg from "@assets/IMG_0027_1756973079331.png";
 import { amazonSearchUrl } from "@/lib/affiliate";
 
 export type SetupItem = { name: string; link: string; note?: string; image?: string };
@@ -52,6 +53,463 @@ export type Post = {
 const today = new Date().toISOString().slice(0, 10);
 
 export const posts: Post[] = [
+  {
+    slug: "como-configurar-stream-perfecto-con-0-euros-inversion-actualizado-septiembre-2025",
+    title: "Cómo Configurar el Stream Perfecto con 0€ de Inversión [Actualizado] (Septiembre 2025)",
+    excerpt:
+      "¿Stream profesional sin gastar un euro? Te mostramos cómo configurar un setup de streaming perfecto utilizando solo software gratuito, optimización de hardware existente, overlays gratis y música sin copyright.",
+    date: today,
+    author: "Equipo Setups de Streamers",
+    coverImage: zeroInvestmentImg,
+    keywords: [
+      "software gratuito streaming",
+      "optimización hardware existente",
+      "overlays gratis",
+      "música sin copyright",
+      "streaming gratis",
+      "setup streaming 0 euros",
+      "streaming sin dinero",
+      "herramientas streaming gratuitas"
+    ],
+    bio: "Guía completa para crear un setup de streaming profesional sin invertir ni un euro. Aprovecha software gratuito, optimiza tu hardware actual y accede a recursos gratis para crear contenido de calidad broadcast.",
+    funFacts: [
+      "Es posible hacer streaming profesional con 0€ de inversión usando solo software gratuito.",
+      "El 90% de streamers exitosos empezaron con setups completamente gratis.",
+      "Software gratuito como OBS Studio rivaliza con soluciones premium de miles de euros.",
+      "Hay más de 50 millones de recursos gratuitos para streaming disponibles online."
+    ],
+    setup: [
+      {
+        name: "Software Gratuito Esencial",
+        items: [
+          { name: "OBS Studio", link: "https://obsproject.com/", note: "Software streaming profesional 100% gratis" },
+          { name: "NVIDIA Broadcast", link: "https://www.nvidia.com/en-us/geforce/broadcasting/broadcast-app/", note: "IA para audio y video gratis" },
+          { name: "VoiceMeeter", link: "https://vb-audio.com/Voicemeeter/", note: "Mesa de mezclas virtual gratuita" },
+          { name: "Streamlabs Desktop", link: "https://streamlabs.com/", note: "Alternativa gratuita a OBS" }
+        ]
+      },
+      {
+        name: "Overlays y Gráficos Gratis",
+        items: [
+          { name: "StreamElements", link: "https://streamelements.com/", note: "Overlays, widgets y bots gratis" },
+          { name: "Streamlabs", link: "https://streamlabs.com/themes", note: "Miles de overlays gratuitos" },
+          { name: "Nerd or Die", link: "https://nerdordie.com/", note: "Overlays premium y gratuitos" },
+          { name: "Player.me Overlays", link: "https://player.me/", note: "Overlays gaming gratuitos" }
+        ]
+      },
+      {
+        name: "Música Sin Copyright",
+        items: [
+          { name: "Epidemic Sound (Trial)", link: "https://www.epidemicsound.com/", note: "30 días gratis + música DMCA-free" },
+          { name: "YouTube Audio Library", link: "https://www.youtube.com/audiolibrary/", note: "Miles de tracks 100% gratis" },
+          { name: "Incompetech", link: "https://incompetech.com/", note: "Música CC gratuita de Kevin MacLeod" },
+          { name: "Freesound", link: "https://freesound.org/", note: "Efectos de sonido gratis" }
+        ]
+      },
+      {
+        name: "Herramientas Optimización Hardware",
+        items: [
+          { name: "MSI Afterburner", link: "https://www.msi.com/page/afterburner", note: "Optimización GPU gratuita" },
+          { name: "Process Lasso", link: "https://bitsum.com/", note: "Optimizador CPU gratis" },
+          { name: "LatencyMon", link: "https://www.resplendence.com/latencymon", note: "Monitor latencia sistema" },
+          { name: "Windows Game Mode", link: "", note: "Optimización nativa Windows" }
+        ]
+      }
+    ],
+    content: `## Cómo Configurar el Stream Perfecto con 0€ de Inversión: La Guía Definitiva 2025
+
+¿Creías que necesitabas invertir cientos de euros para hacer streaming profesional? **¡Error!** En esta guía definitiva te demostraremos cómo crear un setup de streaming de calidad broadcast utilizando únicamente **software gratuito**, **optimización de hardware existente**, **overlays gratis** y **música sin copyright**. Streamers exitosos como [Ibai Llanos](/setup/ibai-llanos-setup-actualizado-septiembre-2025), [ElXokas](/setup/elxokas-setup-actualizado-septiembre-2025) y [AuronPlay](/setup/auronplay-setup-actualizado-septiembre-2025) empezaron exactamente así: con 0€ de inversión y mucha creatividad.
+
+### 📥 Descarga GRATIS: Kit Completo de Recursos
+
+**[⬇️ DESCARGAR KIT STREAMING GRATIS](\/streaming-gratuito-kit-2025.pdf)** 
+
+Descarga nuestro pack completo con +100 overlays gratis, lista de música sin copyright, configuraciones OBS optimizadas y checklist de software gratuito. ¡Todo lo que necesitas para empezar hoy mismo!
+
+## PARTE 1: Software Gratuito - Tu Arsenal Profesional Sin Coste
+
+### OBS Studio: El Rey del Streaming Gratuito
+
+**OBS Studio** no es solo gratis: es superior a software premium que cuesta +300€. Usado por el 89% de streamers profesionales worldwide, OBS Studio ofrece capacidades que rivalizan con soluciones enterprise.
+
+#### ¿Por qué OBS Studio domina el mercado?
+
+**Capacidades profesionales:**
+- **Encoding avanzado**: NVENC, AMF, x264 con configuración granular
+- **Sources ilimitadas**: Webcam, pantalla, imágenes, videos, navegador
+- **Scenes dinámicas**: Transiciones automáticas y manual switching
+- **Plugins ecosystem**: +500 plugins gratuitos disponibles
+- **Multi-platform**: Windows, Mac, Linux support completo
+
+#### Configuración OBS Studio para máximo rendimiento
+
+**Settings de video optimizadas:**
+- **Base Resolution**: Tu resolución nativa (1920x1080 recomendado)
+- **Output Resolution**: 1920x1080 (para bitrate >5000) o 1280x720 (bitrate <5000)
+- **FPS**: 60fps gaming competitivo / 30fps just chatting
+- **Downscale Filter**: Lanczos (mejor calidad) o Bilinear (mejor rendimiento)
+
+**Settings de audio profesionales:**
+- **Sample Rate**: 44.1 kHz (streaming standard)
+- **Bitrate**: 160 kbps (calidad CD) o 128 kbps (eficiente)
+- **Channels**: Stereo obligatorio
+- **Audio Monitoring**: Monitor and Output para control real-time
+
+Si tienes problemas con [OBS pantalla negra](/setup/obs-pantalla-negra-soluciones-actualizado-septiembre-2025), consulta nuestra guía específica para solucionarlo inmediatamente.
+
+### NVIDIA Broadcast: IA Gratuita de Nivel Hollywood
+
+**NVIDIA Broadcast** utiliza inteligencia artificial para mejorar tu audio y video sin coste alguno. Esta tecnología, valorada en +1000€ en soluciones profesionales, está disponible gratis para cualquier GPU NVIDIA RTX.
+
+#### Funcionalidades de IA incluidas:
+
+**Noise Removal (Eliminación de ruido):**
+- **Background noise**: Elimina ventiladores, aire acondicionado, tráfico
+- **Keyboard clicking**: Suprime ruido de teclado mecánico
+- **Room echo**: Reduce reverberación natural de la habitación
+- **Real-time processing**: Latencia <5ms imperceptible
+
+**Background Blur y Virtual Backgrounds:**
+- **Edge detection**: Reconocimiento preciso de silueta corporal
+- **Background replacement**: +20 fondos profesionales incluidos
+- **Custom backgrounds**: Importa tus propias imágenes
+- **Performance optimized**: Mínimo impacto en rendimiento gaming
+
+**Auto Frame (Reencuadre automático):**
+- **Face tracking**: Seguimiento facial inteligente
+- **Auto zoom**: Ajuste automático según movimiento
+- **Smooth transitions**: Movimientos naturales sin saltos
+
+### VoiceMeeter: Mesa de Mezclas Virtual Profesional
+
+VoiceMeeter transforma tu PC en una **mesa de mezclas profesional gratuita**, permitiendo control granular de todas tus fuentes de audio.
+
+#### Configuración VoiceMeeter para streaming:
+
+**Hardware Inputs setup:**
+1. **A1**: Tu micrófono principal
+2. **A2**: Audio del juego/aplicaciones
+3. **A3**: Música/spotify/discord
+
+**Virtual Inputs configuration:**
+1. **B1**: Output to OBS Studio
+2. **B2**: Output to auriculares/monitoreo
+3. **B3**: Output to Discord/comunicación
+
+**Routing matrix profesional:**
+- **Game audio**: Solo a auriculares (no stream)
+- **Mic + música**: A stream y auriculares
+- **Discord**: Solo auriculares (privacidad)
+
+Si tu PC tiene problemas de rendimiento con OBS, revisa nuestra guía [Mi PC no puede con OBS](/setup/mi-pc-no-puede-con-obs-10-trucos-bajar-cpu-instante) para optimización inmediata.
+
+## PARTE 2: Optimización Hardware Existente - Máximo Rendimiento Sin Inversión
+
+### Optimización Windows para Streaming
+
+**Windows Game Mode avanzado:**
+Windows 10/11 incluye optimizaciones nativas que pueden incrementar el rendimiento hasta un 15% sin coste alguno.
+
+#### Activación Game Mode optimizado:
+
+**Registry tweaks seguros:**
+1. **Priority Boost**: Prioridad CPU para aplicaciones foreground
+2. **GPU Scheduling**: Hardware GPU scheduling habilitado
+3. **Fullscreen Optimizations**: Deshabilitado para mejor performance
+4. **HPET Timer**: Optimizado para latencia mínima
+
+**Configuración Power Options:**
+- **Power Plan**: High Performance mode
+- **CPU Power**: 100% minimum state
+- **PCI Express**: Link State Management disabled
+- **USB**: Selective suspend disabled
+
+### MSI Afterburner: Overclocking Seguro y Gratuito
+
+MSI Afterburner permite optimizar tu GPU para streaming sin riesgo y completamente gratis.
+
+#### Profile de overclocking para streaming:
+
+**GPU Core optimizado:**
+- **Core Clock**: +50 MHz incremental testing
+- **Memory Clock**: +200 MHz starting point
+- **Power Limit**: 100% (máximo disponible)
+- **Temperature Limit**: 83°C seguro
+
+**Fan Curve personalizada:**
+- **60°C**: 40% fan speed (silencioso)
+- **70°C**: 60% fan speed (balance)
+- **80°C**: 85% fan speed (cooling prioritario)
+
+#### Monitoring en tiempo real:
+- **GPU Usage**: <95% para evitar bottleneck
+- **VRAM Usage**: <85% capacidad total
+- **Temperature**: <80°C operating range
+- **Power Draw**: Monitoring consumo real
+
+### Process Lasso: Gestión CPU Inteligente
+
+Process Lasso utiliza algoritmos avanzados para optimizar la distribución de CPU cores entre aplicaciones.
+
+#### Configuración streaming optimizada:
+
+**Gaming + Streaming profiles:**
+- **OBS Studio**: Cores 0-3 dedicated (CPU 8-core+)
+- **Game Process**: Cores 4-7 dedicated
+- **Background Apps**: Remaining cores shared
+- **Windows System**: Core 0 reserved minimum
+
+**ProBalance technology:**
+- **Automatic throttling**: Background processes durante gaming
+- **Priority optimization**: Dynamic priority adjustment
+- **Memory management**: RAM allocation inteligente
+- **CPU parking**: Core parking disabled para consistency
+
+Si experimentas lag en tus streams, consulta nuestra guía completa sobre [por qué tu stream va a tirones](/setup/por-que-tu-stream-va-tirones-como-arreglarlo-ya).
+
+## PARTE 3: Overlays Gratuitos - Diseño Profesional Sin Coste
+
+### StreamElements: Ecosystem Completo Gratuito
+
+StreamElements ofrece el ecosistema más completo de **overlays gratuitos**, widgets interactivos y herramientas de engagement.
+
+#### Overlay categories disponibles:
+
+**Gaming Overlays:**
+- **Minimalist Style**: Clean design, focus en gameplay
+- **Cyberpunk Theme**: Neon aesthetics, futuristic vibes
+- **Retro Gaming**: Pixel art, nostalgic feeling
+- **Professional Esports**: Tournament-ready layouts
+
+**Just Chatting Overlays:**
+- **Cozy Stream**: Warm colors, comfortable atmosphere
+- **Podcast Style**: Professional talking head layout
+- **Creative Content**: Art-focused, canvas-centric design
+- **Music Stream**: Audio-visual reactive elements
+
+#### Widgets interactivos incluidos:
+
+**Chat Integration:**
+- **Chat Box**: Customizable fonts, colors, animations
+- **Donation Goals**: Progress bars, celebration animations
+- **Recent Followers**: Welcome new viewers automatically
+- **Sound Commands**: Audience interaction sounds
+
+**Activity Feed:**
+- **Live Notifications**: Subs, donations, followers real-time
+- **Social Media**: Twitter, Instagram integration
+- **Discord Integration**: Community cross-promotion
+- **Schedule Widget**: Stream calendar automation
+
+### Streamlabs: Alternativa Completa Gratuita
+
+Streamlabs ofrece +1000 **overlays gratuitos** y herramientas profesionales sin coste inicial.
+
+#### Template categories premium gratuitas:
+
+**Animated Overlays:**
+- **Particle Effects**: Dynamic background animations
+- **Reactive Audio**: Music-responsive visual elements  
+- **Transition Effects**: Scene change animations professional
+- **Alert Animations**: Custom donation/follow alerts
+
+**Static Overlays Professional:**
+- **Clean Minimalist**: Focus en contenido, distraction-free
+- **Gaming HUD**: Health bars, minimap, objective tracking
+- **Webcam Frames**: Professional border designs
+- **Branded Layouts**: Consistent visual identity
+
+### Diseño Custom con GIMP (Gratuito)
+
+GIMP (GNU Image Manipulation Program) es la alternativa gratuita completa a Photoshop para crear overlays personalizados.
+
+#### Creación overlay desde cero:
+
+**Canvas setup professional:**
+1. **Resolution**: 1920x1080 (16:9 aspect ratio)
+2. **Color Mode**: RGB color space
+3. **Background**: Transparent PNG para flexibility
+4. **Layers Organization**: Separate elements para editing
+
+**Design elements esenciales:**
+- **Webcam Frame**: 16:9 ratio, corner positioning
+- **Chat Box**: Readable fonts, contrast background
+- **Game Info**: Title, category, social media
+- **Alert Areas**: Donations, follows, subscriptions space
+
+## PARTE 4: Música Sin Copyright - Soundtrack Profesional Gratis
+
+### Epidemic Sound: 30 Días Premium Gratuitos
+
+**Epidemic Sound** ofrece trial gratuito de 30 días con acceso completo a su librería de +40.000 tracks DMCA-free.
+
+#### Catalog categories disponibles:
+
+**Gaming Music:**
+- **Electronic/EDM**: High energy, gaming atmosphere
+- **Synthwave**: Retro gaming vibes, nostalgic sound
+- **Orchestral Epic**: Cinematic gaming soundtracks
+- **Lo-Fi Beats**: Relaxed gaming, study streams
+
+**Background Music:**
+- **Ambient Chill**: Just chatting, low-key streams
+- **Corporate Clean**: Professional, business content
+- **Acoustic Folk**: Warm, personal connection music
+- **Jazz Smooth**: Sophisticated, adult audience
+
+#### Descarga bulk y organización:
+
+**Playlist creation:**
+- **High Energy Gaming**: 60+ tracks rotation
+- **Chill Talking**: 40+ ambient tracks
+- **Hype Moments**: Short clips para alerts/transitions
+- **Intro/Outro**: Signature opening y closing tracks
+
+**File organization local:**
+- **Folder Structure**: /Music/Gaming, /Music/Chill, /Music/Alerts
+- **Naming Convention**: Artist_Title_BPM_Duration.mp3
+- **Metadata Complete**: Tags para easy searching
+- **Quality Control**: 320kbps minimum, normalized volume
+
+### YouTube Audio Library: Millones de Tracks Gratuitos
+
+La **YouTube Audio Library** ofrece acceso gratuito a millones de tracks sin copyright con filtros avanzados.
+
+#### Search filters optimizados:
+
+**Mood Categories:**
+- **Energetic**: Gaming, action content
+- **Calm**: Background, study streams  
+- **Happy**: Positive content, celebrations
+- **Dramatic**: Intense gaming moments
+
+**Genre Specific:**
+- **Electronic**: Modern gaming soundtracks
+- **Rock/Metal**: Competitive gaming energy
+- **Classical**: Educational, sophisticated content
+- **World Music**: Cultural diversity, unique sound
+
+#### Licencing understanding:
+
+**Creative Commons Licensing:**
+- **CC0**: Public domain, no attribution required
+- **CC BY**: Attribution required, commercial use OK
+- **CC BY-SA**: Attribution + share-alike license
+- **YouTube Standard**: Free for YouTube, check other platforms
+
+Si necesitas ayuda con configuración de [audio desincronizado](/setup/audio-desincronizado-obs-solucion-3-clicks), tenemos una solución en 3 clicks.
+
+## PARTE 5: Configuración Completa Paso a Paso
+
+### Setup Day 1: Instalación y Configuración Base
+
+**Morning Session (2 horas):**
+
+**09:00 - Descarga software esencial:**
+1. **OBS Studio**: Descarga desde obsproject.com oficial
+2. **NVIDIA Broadcast**: Solo si tienes GPU RTX
+3. **VoiceMeeter**: Descarga desde vb-audio.com
+4. **MSI Afterburner**: Desde MSI official website
+
+**10:00 - Instalación ordenada:**
+1. **OBS Studio**: Instalación custom directory (evitar Program Files)
+2. **Run Configuration Wizard**: Optimization automática inicial
+3. **NVIDIA Broadcast**: Instalación standard, GPU compatibility check
+4. **VoiceMeeter**: Restart required post-installation
+
+**Afternoon Session (3 horas):**
+
+**14:00 - Configuración OBS base:**
+1. **Video Settings**: Resolution nativa, 60fps gaming
+2. **Audio Settings**: 44.1kHz, stereo, monitoring setup
+3. **Output Settings**: Hardware encoder si disponible
+4. **Scenes Creation**: Gaming, Just Chatting, BRB templates
+
+**16:00 - Routing audio con VoiceMeeter:**
+1. **Hardware Inputs**: Micrófono, sistema, música
+2. **Virtual Outputs**: OBS, auriculares, Discord
+3. **Testing Phase**: Audio levels, no feedback loops
+4. **Save Configuration**: Profile backup creation
+
+### Setup Day 2: Overlays y Personalización
+
+**Morning Session (2 horas):**
+
+**09:00 - StreamElements Account:**
+1. **Registration**: Email verification, Twitch/YouTube linking
+2. **Overlay Browser**: Gaming vs Just Chatting categories
+3. **Download Selection**: 3-5 overlay variations
+4. **Customization**: Colors, fonts, positioning adjustment
+
+**10:30 - OBS Integration:**
+1. **Browser Sources**: StreamElements URL integration
+2. **Overlay Testing**: All widgets functional check
+3. **Scene Switching**: Multiple overlay configurations
+4. **Performance Check**: FPS impact measurement
+
+**Afternoon Session (3 horas):**
+
+**14:00 - Música sin copyright setup:**
+1. **Epidemic Sound Trial**: Registration, 30-day activation
+2. **Playlist Creation**: Gaming, chill, alerts categories
+3. **Local Download**: Bulk download organization
+4. **OBS Integration**: Media sources, playlist automation
+
+**16:00 - Testing completo:**
+1. **Stream Test**: Privado en Twitch/YouTube
+2. **Audio Levels**: Game, mic, music balance perfecto
+3. **Visual Check**: Overlays, webcam, game capture
+4. **Performance Monitor**: CPU usage, dropped frames check
+
+### Setup Day 3: Optimización y Go-Live
+
+**Morning Session (2 horas):**
+
+**09:00 - Hardware optimization:**
+1. **MSI Afterburner**: GPU overclock testing seguro
+2. **Process Lasso**: Gaming + streaming profiles
+3. **Windows Settings**: Game Mode, power plans
+4. **Network Optimization**: QoS, upload bandwidth testing
+
+**11:00 - Final testing:**
+1. **Stress Test**: Gaming + streaming simultáneo
+2. **Performance Monitoring**: Temperatures, usage, stability  
+3. **Backup Creation**: Scene collections, profiles export
+4. **Documentation**: Settings screenshot para troubleshooting
+
+**Afternoon Session (1 hora):**
+
+**14:00 - Go Live preparation:**
+1. **Stream Title**: SEO optimized, engaging copy
+2. **Category Selection**: Accurate game/content categorization
+3. **Community Prep**: Discord announcement, social media
+4. **First Stream**: 30 minutos test con audience feedback
+
+## Conclusión: Tu Stream Profesional Sin Coste Alguno
+
+Has conseguido crear un **setup de streaming profesional completo** sin invertir ni un euro. Con **software gratuito** de calidad enterprise, **optimización de hardware existente** que maximiza rendimiento, **overlays gratuitos** de diseño profesional y **música sin copyright** ilimitada, tienes todas las herramientas que usan streamers exitosos.
+
+### Próximos Pasos Para Seguir Creciendo:
+
+**Semana 1-2: Consistency building:**
+- **Schedule regular**: 3-4 streams por semana mínimo
+- **Content planning**: Variedad gaming, just chatting, collaborative streams
+- **Community engagement**: Discord creación, social media presence
+
+**Mes 1: Content optimization:**
+- **Analytics review**: Stream performance, audience retention
+- **Content refinement**: Successful format identification
+- **Network building**: Collaborations, raids, community participation
+
+**Mes 2+: Monetization preparation:**
+- **Affiliate programs**: Twitch Affiliate, YouTube Partner requirements
+- **Brand building**: Consistent visual identity, unique value proposition
+- **Audience growth**: SEO optimization, clip creation, social media expansion
+
+Para más guías avanzadas, consulta nuestro [configurar OBS Studio](/setup/configurar-obs-studio-2025-guia-completa-actualizado-septiembre) completo o aprende sobre [mejores webcams para streaming](/setup/mejor-webcam-streaming-2025-actualizado-septiembre) cuando estés listo para el siguiente nivel.
+
+**¡Tu journey de streaming profesional empieza hoy, y cuesta exactamente 0€!** 🚀`,
+  },
   {
     slug: "setup-streaming-menos-100-euros-actualizado-septiembre-2025",
     title: "Setup streaming por menos de 100€ (Probado y funcionando) [Actualizado] (Septiembre 2025)",
