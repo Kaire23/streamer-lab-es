@@ -232,6 +232,18 @@ const postSEOData: Record<string, SEOData> = {
     dateModified: '2025-01-15',
     wordCount: 4987
   },
+  'la-biblia-del-audio-para-streamers-microfonos-configuracion-procesamiento-septiembre-2025': {
+    title: 'La Biblia del Audio para Streamers: Micrófonos, Configuración y Procesamiento [Actualizado] (Septiembre 2025) | Setups de Streamers',
+    description: 'Guía definitiva de audio para streaming: comparativa completa de micrófonos por precio, configuración avanzada de filtros OBS, VoiceMeeter, RTX Voice/Krisp y procesamiento profesional de audio.',
+    keywords: 'comparativa micrófonos precio, configuración filtros audio, OBS Audio, VoiceMeeter, RTX Voice, Krisp, audio streaming profesional',
+    canonical: 'https://yostreamer.com/setup/la-biblia-del-audio-para-streamers-microfonos-configuracion-procesamiento-septiembre-2025',
+    ogImage: 'https://yostreamer.com/assets/IMG_0029_1757063482117.jpeg',
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-15',
+    dateModified: '2025-01-15',
+    wordCount: 5248
+  },
   'configurar-obs-studio-2025-guia-completa-actualizado-septiembre': {
     title: 'Cómo configurar OBS Studio 2025: Guía Completa en 10 minutos [Actualizado] (Septiembre 2025) | Setups de Streamers',
     description: 'Aprende a configurar OBS Studio desde cero en 2025. Guía paso a paso con configuraciones óptimas para streaming, grabación, escenas, filtros y troubleshooting. Incluye PDF descargable.',

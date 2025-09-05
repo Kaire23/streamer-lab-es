@@ -202,6 +202,17 @@
   </url>
   
   <url>
+    <loc>https://yostreamer.com/setup/la-biblia-del-audio-para-streamers-microfonos-configuracion-procesamiento-septiembre-2025</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://yostreamer.com/assets/IMG_0029_1757063482117.jpeg</image:loc>
+      <image:title>La Biblia del Audio para Streamers: Micrófonos, Configuración y Procesamiento</image:title>
+      <image:caption>Guía definitiva de audio streaming con comparativa de micrófonos, OBS Audio, VoiceMeeter y RTX Voice</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
     <loc>https://yostreamer.com/setup/setup-streaming-menos-100-euros-actualizado-septiembre-2025</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
