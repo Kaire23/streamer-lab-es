@@ -244,6 +244,18 @@ const postSEOData: Record<string, SEOData> = {
     dateModified: '2025-01-15',
     wordCount: 5248
   },
+  'streaming-desde-consola-ps5-xbox-series-switch-guia-maestra-septiembre-2025': {
+    title: 'Streaming desde Consola: PS5/Xbox Series/Switch - Guía Maestra [Actualizado] (Septiembre 2025) | Setups de Streamers',
+    description: 'Guía completa para streaming desde PS5, Xbox Series X/S y Nintendo Switch. Configuración paso a paso, capturadoras recomendadas, setup completo y optimizaciones específicas por consola.',
+    keywords: 'streaming PS5, streaming Xbox Series, streaming Nintendo Switch, capturadora gaming, streaming consola, setup streaming PS5',
+    canonical: 'https://yostreamer.com/setup/streaming-desde-consola-ps5-xbox-series-switch-guia-maestra-septiembre-2025',
+    ogImage: 'https://yostreamer.com/assets/IMG_0031_1757144351728.jpeg',
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-16',
+    dateModified: '2025-01-16',
+    wordCount: 5647
+  },
   'configurar-obs-studio-2025-guia-completa-actualizado-septiembre': {
     title: 'Cómo configurar OBS Studio 2025: Guía Completa en 10 minutos [Actualizado] (Septiembre 2025) | Setups de Streamers',
     description: 'Aprende a configurar OBS Studio desde cero en 2025. Guía paso a paso con configuraciones óptimas para streaming, grabación, escenas, filtros y troubleshooting. Incluye PDF descargable.',

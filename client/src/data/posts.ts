@@ -32,6 +32,7 @@ import obsVsStreamlabsImg from "@assets/IMG_0021_1756897339110.webp";
 import budgetSetupImg from "@assets/IMG_0022_1756897666663.jpeg";
 import zeroInvestmentImg from "@assets/IMG_0027_1756973079331.png";
 import audioBibleImg from "@assets/IMG_0029_1757063482117.jpeg";
+import consoleStreamingImg from "@assets/IMG_0031_1757144351728.jpeg";
 import { amazonSearchUrl } from "@/lib/affiliate";
 
 export type SetupItem = { name: string; link: string; note?: string; image?: string };
@@ -54,6 +55,520 @@ export type Post = {
 const today = new Date().toISOString().slice(0, 10);
 
 export const posts: Post[] = [
+  {
+    slug: "streaming-desde-consola-ps5-xbox-series-switch-guia-maestra-septiembre-2025",
+    title: "Streaming desde Consola: PS5/Xbox Series/Switch - Guía Maestra [Actualizado] (Septiembre 2025)",
+    excerpt:
+      "Guía completa para streaming desde PS5, Xbox Series X/S y Nintendo Switch. Configuración paso a paso, capturadoras recomendadas, setup completo y optimizaciones específicas por consola.",
+    date: today,
+    author: "Equipo Setups de Streamers",
+    coverImage: consoleStreamingImg,
+    keywords: [
+      "streaming PS5",
+      "streaming Xbox Series",
+      "streaming Nintendo Switch",
+      "capturadora gaming",
+      "streaming consola",
+      "setup streaming PS5",
+      "streaming console guide",
+      "capturadora 4K gaming"
+    ],
+    bio: "La guía definitiva para streaming desde consolas next-gen. Configuraciones específicas para PS5, Xbox Series X/S y Nintendo Switch, incluyendo capturadoras, optimizaciones y setup completo para cada plataforma.",
+    funFacts: [
+      "PS5 puede hacer streaming nativo a 1080p60 sin capturadora externa.",
+      "Xbox Series X soporta streaming interno hasta 4K30 con Quick Resume activo.",
+      "Nintendo Switch requiere capturadora externa para streaming de calidad.",
+      "El 60% de streamers de consola usan Elgato HD60 S+ como primera opción."
+    ],
+    setup: [
+      {
+        name: "Capturadoras Esenciales",
+        items: [
+          { name: "Elgato HD60 S+", link: amazonSearchUrl("Elgato HD60 S+"), note: "149€ - Estándar profesional 1080p60" },
+          { name: "Elgato 4K60 Pro MK.2", link: amazonSearchUrl("Elgato 4K60 Pro MK.2"), note: "399€ - 4K60 HDR interno" },
+          { name: "AverMedia Live Gamer Bolt", link: amazonSearchUrl("AverMedia Live Gamer Bolt"), note: "199€ - 4K60 PassThrough" },
+          { name: "Elgato HD60 X", link: amazonSearchUrl("Elgato HD60 X"), note: "179€ - USB 3.0 VRR support" }
+        ]
+      },
+      {
+        name: "Audio para Console Streaming",
+        items: [
+          { name: "Elgato Wave:3", link: amazonSearchUrl("Elgato Wave:3"), note: "149€ - USB mic gaming optimizado" },
+          { name: "Audio-Technica ATR2100x-USB", link: amazonSearchUrl("Audio-Technica ATR2100x-USB"), note: "79€ - Versátil USB/XLR" },
+          { name: "SteelSeries Arctis Pro", link: amazonSearchUrl("SteelSeries Arctis Pro"), note: "179€ - Headset streaming premium" },
+          { name: "Yamaha AG03", link: amazonSearchUrl("Yamaha AG03"), note: "129€ - Mixer console gaming" }
+        ]
+      },
+      {
+        name: "Accesorios Console Streaming",
+        items: [
+          { name: "HDMI Splitter 4K", link: amazonSearchUrl("HDMI splitter 4K 60hz"), note: "25€ - Duplicar señal consola" },
+          { name: "Cables HDMI 2.1", link: amazonSearchUrl("Cable HDMI 2.1 4K 120hz"), note: "15€ - Ultra alta velocidad" },
+          { name: "Stream Deck Mini", link: amazonSearchUrl("Elgato Stream Deck Mini"), note: "89€ - Control scenes OBS" },
+          { name: "Ring Light Gaming", link: amazonSearchUrl("ring light gaming streaming"), note: "35€ - Iluminación facial" }
+        ]
+      },
+      {
+        name: "Software y Servicios",
+        items: [
+          { name: "OBS Studio", link: "https://obsproject.com/", note: "Gratis - Software streaming universal" },
+          { name: "Elgato Game Capture", link: "https://www.elgato.com/", note: "Gratis - Software capturadoras Elgato" },
+          { name: "Epidemic Sound", link: "https://www.epidemicsound.com/", note: "Música sin copyright streaming" },
+          { name: "StreamLabs", link: "https://streamlabs.com/", note: "Gratis - Overlays y alerts gaming" }
+        ]
+      }
+    ],
+    content: `## Streaming desde Consola: PS5/Xbox Series/Switch - La Guía Maestra 2025
+
+El **streaming desde consolas** ha experimentado una revolución completa con la llegada de PS5, Xbox Series X/S y las mejoras en Nintendo Switch. Mientras streamers como [Ibai Llanos](/setup/ibai-llanos-setup-actualizado-septiembre-2025), [ElXokas](/setup/elxokas-setup-actualizado-septiembre-2025) y [AuronPlay](/setup/auronplay-setup-actualizado-septiembre-2025) comenzaron con PC gaming, muchos content creators exitosos han migrado o complementado con **streaming de consola** por su simplicidad y calidad consistente.
+
+### 📥 Descarga GRATIS: Guía Completa Console Streaming
+
+**[⬇️ DESCARGAR GUÍA CONSOLE STREAMING](\/console-streaming-guia-2025.pdf)** 
+
+Descarga nuestra guía completa con configuraciones específicas por consola, comparativa de capturadoras, settings OBS optimizados y troubleshooting para streaming console perfecto. ¡Todo lo que necesitas para cada plataforma!
+
+## PARTE 1: PlayStation 5 - Streaming Nativo y Capturadora Externa
+
+### Streaming Nativo PS5: Configuración Interna
+
+La **PlayStation 5** incluye capacidades de streaming nativas que permiten transmitir directamente a Twitch y YouTube sin hardware adicional. Perfect para empezar, aunque con limitaciones profesionales.
+
+#### Configuración Streaming Nativo PS5:
+
+**Acceso settings streaming:**
+1. **Settings > Captures and Broadcasts**
+2. **Broadcasts > Link with Other Services**
+3. **Select Platform**: Twitch, YouTube, o Niconico
+4. **Account Authorization**: Link tu cuenta streaming
+
+**Quality settings óptimas:**
+- **Resolution**: 1080p (máximo nativo)
+- **Frame Rate**: 60fps (games compatibles)
+- **Bitrate**: Automático (optimizado por plataforma)
+- **Audio**: Game + microphone mix
+
+**Limitaciones streaming nativo:**
+- **No overlays custom**: Sin personalización visual
+- **Audio mixing básico**: Control limitado de niveles
+- **No webcam integration**: Solo gameplay puro
+- **Platform restrictions**: Solo Twitch/YouTube official
+
+#### Games PS5 Perfectos para Streaming:
+
+**Exclusivos PlayStation:**
+- **Spider-Man 2**: Acción fluida, visual impactante
+- **Demon's Souls**: Gameplay intenso, reacciones audience
+- **Returnal**: Roguelike addictivo, high replayability
+- **Ghost of Tsushima Director's Cut**: Cinematographic visuals
+
+**Multiplayer populares:**
+- **FIFA 24**: Sports competitive, audience engagement
+- **Call of Duty: Modern Warfare III**: FPS trending
+- **Fortnite**: Cross-platform appeal máximo
+- **Apex Legends**: Battle royale optimizado PS5
+
+### Setup Capturadora Externa PS5: Calidad Profesional
+
+Para **streaming profesional** desde PS5, una capturadora externa ofrece control total sobre overlays, audio mixing y integración webcam.
+
+#### Elgato HD60 S+ con PS5 - Setup Paso a Paso:
+
+**Physical connection:**
+1. **PS5 HDMI Out** → **HD60 S+ HDMI Input**
+2. **HD60 S+ HDMI Output** → **Monitor/TV**
+3. **HD60 S+ USB 3.0** → **PC streaming**
+4. **Power**: USB powered (no external adapter)
+
+**PS5 settings para capturadora:**
+- **Video Output Settings**: 1080p (capturadora compatibility)
+- **HDR**: Off (compatibility issues con capture cards)
+- **VRR**: Disabled (consistent capture framerate)
+- **120Hz**: Off (capturadora limitation)
+
+**OBS Studio configuration:**
+- **Source**: Video Capture Device
+- **Device**: Elgato Game Capture HD60 S+
+- **Resolution**: 1920x1080
+- **FPS**: 60 (match PS5 output)
+- **Format**: NV12 (optimal encoding)
+
+Si experimentas problemas con capturadoras, consulta nuestra guía [Capturadora o sin capturadora](/setup/capturadora-o-sin-capturadora-la-verdad-que-nadie-te-cuenta) para decisiones informadas.
+
+### Audio Setup Avanzado PS5:
+
+**Método 1 - Audio through capture card:**
+- **Pros**: Simple setup, single cable solution
+- **Cons**: Latency monitoring, limited mixing
+- **Best for**: Streamers principiantes
+
+**Método 2 - Audio extraction separado:**
+1. **HDMI Audio Extractor**: PS5 → Extractor → Monitor
+2. **Audio Out**: 3.5mm to line input PC
+3. **Benefits**: Zero latency monitoring, independent mixing
+4. **Cost**: +25€ audio extractor
+
+**Método 3 - Dual PC setup:**
+- **Gaming PC**: Solo PS5 connection y gaming
+- **Streaming PC**: Capturadora, overlays, encoding
+- **Professional**: Ultimate quality y performance
+- **Investment**: Segundo PC requerido
+
+## PARTE 2: Xbox Series X/S - Streaming Optimizado Microsoft
+
+### Xbox Series Streaming Nativo: Ecosystem Microsoft
+
+**Xbox Series X/S** ofrece la mejor integración nativa para streaming, especialmente dentro del ecosystem Microsoft con Mixer legacy optimizations.
+
+#### Quick Resume + Streaming: Multitasking Gaming
+
+**Quick Resume benefits streaming:**
+- **Instant game switching**: Cambio content inmediato
+- **Multiple games active**: Variety content mismo stream
+- **Zero loading times**: Professional broadcast experience
+- **Audience retention**: No dead time esperando
+
+**Configuración Quick Resume para streaming:**
+1. **Settings > General > Power Options**
+2. **Sleep Mode**: Instant-on (maintain Quick Resume)
+3. **Storage Management**: SSD priority para games frecuentes
+4. **Background Downloads**: Off during streaming
+
+#### Xbox Game Bar: Streaming Integrado Windows
+
+**Xbox Game Bar** en Windows ofrece streaming directo desde Xbox app con integración nativa.
+
+**Setup Xbox Game Bar streaming:**
+1. **Windows + G**: Activate Game Bar
+2. **Broadcast**: Select streaming platform
+3. **Quality**: 1080p60 máximo
+4. **Audio**: System + microphone automatic
+
+**Advanced Xbox streaming con OBS:**
+- **Xbox Companion App**: Better integration
+- **NDI Plugin**: Network streaming from Xbox
+- **Remote Play**: Xbox to PC to OBS chain
+- **Quality**: 4K30 o 1080p60 options
+
+#### Games Xbox Series Trending para Streaming:
+
+**Game Pass exclusivos:**
+- **Starfield**: Space exploration, massive content
+- **Forza Horizon 5**: Racing espectacular, social features
+- **Halo Infinite**: FPS iconic, competitive scene
+- **Microsoft Flight Simulator**: Relaxing content, stunning visuals
+
+**Competitive multiplayer:**
+- **Gears 5**: Cover shooter único Xbox
+- **Sea of Thieves**: Cooperative adventure trending
+- **Age of Empires IV**: Strategy con audience participation
+- **Grounded**: Survival cooperative viral
+
+### Xbox Series X/S con Elgato 4K60 Pro MK.2:
+
+**Internal capture card benefits:**
+- **4K60 HDR PassThrough**: Gaming quality sin compromise
+- **Zero latency**: Direct connection advantages
+- **PCIe bandwidth**: Unlimited data transfer
+- **Multi-monitor**: Gaming display + streaming display
+
+**Installation step-by-step:**
+1. **PC Shutdown**: Completely power off
+2. **PCIe Slot**: Install 4K60 Pro MK.2 secure
+3. **Xbox HDMI**: Series X/S → 4K60 Pro input
+4. **Monitor HDMI**: 4K60 Pro output → gaming display
+5. **Drivers**: Elgato Game Capture software
+
+**4K HDR gaming + 1080p streaming:**
+- **PassThrough**: 4K120 HDR gaming sin degradation
+- **Capture**: 1080p60 para streaming platforms
+- **Best of both**: Ultimate gaming + professional streaming
+- **Investment**: 399€ pero future-proof
+
+Si tu PC tiene problemas de rendimiento, revisa [Mi PC no puede con OBS](/setup/mi-pc-no-puede-con-obs-10-trucos-bajar-cpu-instante) para optimización específica.
+
+## PARTE 3: Nintendo Switch - Streaming Externo Obligatorio
+
+### Nintendo Switch: Solo Modo Dock Compatible
+
+**Nintendo Switch** no incluye streaming nativo, requiriendo capturadora externa obligatoriamente. Solo funciona en **Dock Mode**, no portable.
+
+#### Configuración Dock Mode para Streaming:
+
+**Settings Nintendo Switch:**
+1. **System Settings > TV Output**
+2. **TV Resolution**: 1080p (maximum)
+3. **TV Sound**: Stereo (compatibility)
+4. **Match TV Power State**: Off (prevent interruptions)
+
+**Dock connection setup:**
+1. **Switch → Dock**: Secure connection check
+2. **Dock HDMI → Capturadora**: Input connection
+3. **Capturadora → Monitor**: Output para gaming
+4. **USB Capturadora → PC**: Streaming connection
+
+#### Games Nintendo Switch Perfectos Streaming:
+
+**First-party exclusivos:**
+- **The Legend of Zelda: Tears of the Kingdom**: Adventure épica, puzzles creativos
+- **Super Mario Odyssey**: Platformer family-friendly
+- **Mario Kart 8 Deluxe**: Multiplayer local streams
+- **Animal Crossing**: Relaxing content, community building
+
+**Indie darlings:**
+- **Hollow Knight**: Metroidvania challenging, skill showcase
+- **Stardew Valley**: Farming simulation trending
+- **Among Us**: Social deduction viral
+- **Fall Guys**: Party game trending moments
+
+### Audio Challenges Nintendo Switch:
+
+**Audio extraction methods:**
+
+**Método 1 - HDMI audio (Recommended):**
+- **Capturadora with audio**: HD60 S+ extracts game audio
+- **Pros**: Simple, single connection
+- **Cons**: No chat audio mixing separate
+
+**Método 2 - 3.5mm audio output:**
+- **Switch headphone jack**: Audio out to PC line in
+- **Dock limitation**: No audio jack available
+- **Handheld only**: Breaks streaming dock mode
+
+**Método 3 - Bluetooth audio complications:**
+- **Switch Bluetooth**: Limited codec support
+- **Latency issues**: 150ms+ delay streaming
+- **Not recommended**: Professional streaming applications
+
+### Elgato HD60 X + Nintendo Switch: Setup Completo
+
+**HD60 X advantages para Switch:**
+- **VRR Support**: Variable Refresh Rate optimization
+- **USB 3.0**: Plug and play compatibility
+- **Instant Gameview**: Zero delay monitoring
+- **Multi-app**: OBS + Elgato software simultaneous
+
+**Complete setup process:**
+
+**Step 1 - Physical connections:**
+1. **Nintendo Switch Dock**: Power on, Switch inserted
+2. **HDMI Cable**: Dock → HD60 X input
+3. **PassThrough HDMI**: HD60 X → gaming monitor
+4. **USB 3.0**: HD60 X → PC blue USB port
+
+**Step 2 - Switch settings:**
+- **TV Output Resolution**: 1080p
+- **RGB Range**: Full (mejor color accuracy)
+- **TV Sound**: Stereo o Surround according capturadora
+
+**Step 3 - OBS configuration:**
+- **Source**: Video Capture Device
+- **Device**: Elgato Game Capture HD60 X
+- **Custom Resolution**: 1920x1080
+- **FPS**: Common values 60
+- **Buffering**: Enabled (prevent frame drops)
+
+## PARTE 4: Configuraciones OBS Específicas por Consola
+
+### Encoding Settings por Console:
+
+**PlayStation 5 capture:**
+- **Encoder**: NVENC (Hardware) o x264 (Software)
+- **Rate Control**: CBR (Constant Bitrate)
+- **Bitrate**: 6000 kbps (Twitch Partner) / 3500 kbps (standard)
+- **Keyframe**: 2 seconds
+- **Profile**: High
+- **Level**: 4.2
+
+**Xbox Series X/S capture:**
+- **Encoder**: Hardware preferred (VRR games)
+- **Rate Control**: CBR
+- **Bitrate**: 6000-8000 kbps (4K content)
+- **Keyframe**: 2 seconds
+- **Look-ahead**: On (NVENC only)
+- **Psycho Visual**: On (quality improvement)
+
+**Nintendo Switch capture:**
+- **Encoder**: x264 Medium (stable framerate)
+- **Rate Control**: CBR
+- **Bitrate**: 4500 kbps (1080p sufficient)
+- **CPU Preset**: Medium o Fast
+- **Profile**: Main (compatibility)
+
+### Audio Sync Solutions por Platform:
+
+**PlayStation 5 audio sync:**
+- **Base delay**: -150ms typical
+- **Bluetooth headset**: Additional -50ms
+- **Wired headset**: Minimal delay <10ms
+- **Capture card**: +40ms processing delay
+
+**Xbox Series audio sync:**
+- **System audio**: Usually perfect sync
+- **Controller audio**: -100ms offset needed
+- **USB headset**: Variable delay check
+- **HDMI extraction**: Most reliable method
+
+**Nintendo Switch audio sync:**
+- **Dock HDMI**: Perfect sync generally
+- **Bluetooth issues**: 200ms+ delay streaming
+- **Wired only**: Recommended professional streams
+- **Audio monitoring**: Essential para sync verification
+
+Para problemas específicos de audio, consulta [Audio desincronizado en OBS](/setup/audio-desincronizado-obs-solucion-3-clicks) para soluciones inmediatas.
+
+## PARTE 5: Setup Día Completo - Console Streaming Perfecto
+
+### Mañana (09:00-12:00): Hardware Setup
+
+**09:00 - Capturadora installation:**
+
+**PC interno (Elgato 4K60 Pro MK.2):**
+1. **PC shutdown**: Complete power off
+2. **Anti-static**: Wrist strap grounding
+3. **PCIe installation**: Secure bracket placement
+4. **Power connections**: PCIe power si required
+5. **First boot**: BIOS recognition check
+
+**External USB (HD60 S+/HD60 X):**
+1. **USB 3.0 port**: Blue colored preferred
+2. **Driver installation**: Elgato software download
+3. **Device recognition**: Windows Device Manager
+4. **Test capture**: Basic functionality verify
+
+**10:30 - Console configuration:**
+
+**PlayStation 5 setup:**
+- **Video Output**: 1080p para capture compatibility
+- **HDR**: Off (capture card limitation)
+- **Audio Output**: HDMI (through capture card)
+- **Streaming permissions**: Account linking if native
+
+**Xbox Series setup:**
+- **Display settings**: Match capturadora capabilities
+- **Audio output**: HDMI full range
+- **Power settings**: Instant-on para Quick Resume
+- **Network**: Wired connection preferred
+
+**Nintendo Switch setup:**
+- **Dock mode**: Verify Switch detection
+- **TV output**: 1080p maximum setting
+- **Audio**: Stereo output recommended
+- **Controllers**: Sync verification docked mode
+
+### Mediodía (12:00-15:00): Software Configuration
+
+**12:00 - OBS Studio setup específico:**
+
+**Console source configuration:**
+1. **Add Source**: Video Capture Device
+2. **Device Selection**: Your specific capture card
+3. **Custom Resolution**: Match console output
+4. **Deinterlacing**: None (progressive sources)
+5. **Color Format**: NV12 recommended
+
+**Audio routing setup:**
+- **Desktop Audio**: Disabled (conflict prevention)
+- **Mic/Auxiliary**: External microphone
+- **Capture Card Audio**: Game sound source
+- **Monitoring**: Headphones direct connection
+
+**14:00 - Overlays y scenes gaming:**
+
+**Scene 1 - Full Gameplay:**
+- **Game Capture**: Fullscreen capture card
+- **Minimal overlay**: Game title, social media
+- **Chat integration**: Transparent overlay
+- **Audio meters**: Visual feedback levels
+
+**Scene 2 - Webcam + Gameplay:**
+- **Game**: 70% screen real estate
+- **Webcam**: 25% corner placement professional
+- **Overlay space**: Donations, followers, chat
+- **Aspect ratio**: Maintain game proportions
+
+**Scene 3 - BRB Screen:**
+- **Static image**: Professional background
+- **Music**: Background copyright-free loop
+- **Text overlay**: Return time estimation
+- **Social media**: Prominent display handles
+
+### Tarde (15:00-18:00): Testing y Optimization
+
+**15:00 - Performance testing por console:**
+
+**PlayStation 5 stress test:**
+- **Game launch**: Resource-intensive title (Spider-Man 2)
+- **Streaming simultaneous**: Monitor CPU usage
+- **Quality check**: Frame drops detection
+- **Audio sync**: Verify no drift over time
+
+**Xbox Series stress test:**
+- **Quick Resume**: Multiple games switching
+- **4K passthrough**: Gaming quality verification
+- **Streaming quality**: 1080p60 consistency
+- **System resources**: Temperature monitoring
+
+**Nintendo Switch testing:**
+- **Dock connection**: Secure physical verification
+- **1080p output**: Maximum quality confirmation
+- **Audio extraction**: Clear game sound
+- **Control responsiveness**: Lag testing
+
+**17:00 - Go-live preparation:**
+
+**Stream title optimization:**
+- **Game specific**: "[GAME] - [CONSOLE] - [DESCRIPTOR]"
+- **SEO friendly**: Include console name y game
+- **Audience hook**: Community engagement prompt
+- **Thumbnail**: High-quality game screenshot
+
+**Platform specific settings:**
+- **Twitch**: Category accuracy, mature content flags
+- **YouTube**: Proper categorization, visibility settings
+- **Discord**: Community notification scheduling
+- **Social media**: Multi-platform announcement
+
+## Conclusión: Console Streaming Dominado
+
+Has conseguido el knowledge completo para **streaming profesional desde cualquier consola**. Desde PS5 native streaming hasta complex Nintendo Switch setups, tienes todas las tools y configurations necesarias para quality broadcasts.
+
+### Investment Summary por Level:
+
+**Starter Console Streaming (100€):**
+- **Capturadora**: Elgato HD60 S+ (149€)
+- **Audio**: Existing headset + microphone
+- **Software**: OBS Studio (gratis)
+- **Result**: Professional quality desde cualquier console
+
+**Intermediate Setup (300€):**
+- **Capturadora**: Elgato HD60 X (179€)
+- **Microphone**: Audio-Technica ATR2100x-USB (79€)
+- **Accessories**: HDMI splitter, cables (50€)
+- **Result**: Multi-platform streaming capability
+
+**Professional Console Streaming (600€+):**
+- **Capturadora**: Elgato 4K60 Pro MK.2 (399€)
+- **Audio**: Elgato Wave:3 + audio interface (200€)
+- **Lighting**: Professional ring light setup (100€)
+- **Result**: Broadcast quality indistinguishable de PC streaming
+
+### Next Steps Gaming Content:
+
+**Week 1: Consistency building**
+- **Schedule regular**: Same games, same times
+- **Community**: Discord para console-specific discussions
+- **Content variety**: Single-player y multiplayer balance
+
+**Month 1: Advanced techniques**
+- **Multi-console streams**: Platform comparison content
+- **Speedrun attempts**: Skill showcase opportunities
+- **Community events**: Tournaments y challenges
+
+Para hardware específico, consulta nuestra [configuración completa OBS](/setup/configurar-obs-studio-2025-guia-completa-actualizado-septiembre) o aprende sobre [audio profesional para streaming](/setup/la-biblia-del-audio-para-streamers-microfonos-configuracion-procesamiento-septiembre-2025).
+
+**¡Tu console streaming empire empieza ahora!** 🎮🚀`,
+  },
   {
     slug: "la-biblia-del-audio-para-streamers-microfonos-configuracion-procesamiento-septiembre-2025",
     title: "La Biblia del Audio para Streamers: Micrófonos, Configuración y Procesamiento [Actualizado] (Septiembre 2025)",
