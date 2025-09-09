@@ -268,6 +268,18 @@ const postSEOData: Record<string, SEOData> = {
     dateModified: '2025-01-18',
     wordCount: 6845
   },
+  'iniciate-en-el-stream-gratis-como-empezar-en-twitch-septiembre-2025': {
+    title: 'Iníciate en el Stream gratis: Cómo empezar en Twitch [Actualizado] (Septiembre 2025) | Setups de Streamers',
+    description: 'Guía completa para empezar a hacer streaming en Twitch desde cero y GRATIS. Configuración paso a paso, software gratuito, primeros pasos y todo lo que necesitas para tu primer stream exitoso.',
+    keywords: 'como empezar en twitch, streaming gratis, primer stream twitch, configurar twitch streaming, streaming para principiantes, twitch tutorial español',
+    canonical: 'https://yostreamer.com/setup/iniciate-en-el-stream-gratis-como-empezar-en-twitch-septiembre-2025',
+    ogImage: 'https://yostreamer.com/assets/IMG_0039_1757444106030.webp',
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-19',
+    dateModified: '2025-01-19',
+    wordCount: 5892
+  },
   'configurar-obs-studio-2025-guia-completa-actualizado-septiembre': {
     title: 'Cómo configurar OBS Studio 2025: Guía Completa en 10 minutos [Actualizado] (Septiembre 2025) | Setups de Streamers',
     description: 'Aprende a configurar OBS Studio desde cero en 2025. Guía paso a paso con configuraciones óptimas para streaming, grabación, escenas, filtros y troubleshooting. Incluye PDF descargable.',
