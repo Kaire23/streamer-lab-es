@@ -28,11 +28,18 @@ function setupPdfSubscriptionForms() {
     const originalHref = link.getAttribute('href');
     if (!originalHref) return;
 
-    // Convert direct PDF links to subscription forms
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      showPdfSubscriptionModal(originalHref, link as HTMLElement);
-    });
+    // Check if this link should allow direct download
+    const allowDirectDownload = link.hasAttribute('data-direct-download') || 
+                               originalHref.includes('guia-monetizacion-streaming-definitiva.pdf');
+
+    if (!allowDirectDownload) {
+      // Convert to subscription form for other PDFs
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        showPdfSubscriptionModal(originalHref, link as HTMLElement);
+      });
+    }
+    // If allowDirectDownload is true, let the link work normally for direct download
   });
 }
 
