@@ -159,18 +159,18 @@ Descarga nuestro eBook completo con el sistema exacto para monetizar tu streamin
 
 ### Configuración Sin Inversión - Setup Mínimo Viable (0€)
 
-Contrario a lo que venden los influencers, **NO necesitas equipamiento caro** para empezar a monetizar. El 60% de streamers exitosos empezaron con setup básico.
+Contrario a lo que venden los influencers, **NO necesitas equipamiento caro** para empezar a monetizar. El 60% de streamers exitosos empezaron con [setup básico](${amazonSearchUrl("kit streaming básico")}).
 
 #### Hardware Gratuito que Monetiza:
 
-**PC/Laptop Actual:**
-- **Cualquier PC de los últimos 5 años** sirve para streaming 720p30
+**[PC](${amazonSearchUrl("PC gaming")})/[Laptop](${amazonSearchUrl("laptop gaming")}) Actual:**
+- **Cualquier [PC](${amazonSearchUrl("ordenador")}) de los últimos 5 años** sirve para streaming 720p30
 - **Optimización OBS**: Configuración específica para tu hardware
 - **Settings que convierten**: 2500 kbps bitrate, encoder x264 fast
-- **Monitoring**: Task Manager abierto, CPU <70% durante stream
+- **Monitoring**: Task Manager abierto, [CPU](${amazonSearchUrl("procesador")}) <70% durante stream
 
 **Audio con 0€ Inversión:**
-- **Auriculares móvil**: Better que built-in mic
+- **[Auriculares móvil](${amazonSearchUrl("auriculares con micrófono")})**: Better que built-in mic
 - **Posicionamiento**: 2-3cm de la boca, angle 45°
 - **OBS filters**: Noise suppression ON, gain -10dB
 - **Test obligatorio**: Grabar 30 segundos antes cada stream
@@ -196,7 +196,7 @@ Para configuración técnica detallada, consulta nuestra [guía completa OBS Stu
 - **Bizum**: Para audiencia española, donaciones instantáneas
 
 **Configuración que convierte:**
-- **Metas donación**: "Nueva cámara: 67€/150€"
+- **Metas donación**: "Nueva [cámara](${amazonSearchUrl("cámara web streaming")}): 67€/150€"
 - **Cantidad mínima**: 1€ (reduce fricción)
 - **Mensaje personal**: Siempre leer nombre y agradecer genuinamente
 - **Barras progreso**: Progreso visual aumenta donaciones
@@ -210,10 +210,10 @@ Para configuración técnica detallada, consulta nuestra [guía completa OBS Stu
 4. **Disclosure obligatorio**: "Enlaces de afiliado, no cuesta más"
 
 **Productos que más convierten:**
-- **Periféricos gaming**: Ratón, teclado, auriculares (4-8% comisión)
-- **Equipamiento streaming**: Micrófonos, cámaras, luces (3-6% comisión)
-- **Componentes PC**: CPU, GPU, RAM para viewers que upgraden (2-4% comisión)
-- **Accesorios gaming**: Sillas, desks, monitors (3-7% comisión)
+- **Periféricos gaming**: [Ratón](${amazonSearchUrl("ratón gaming")}) ([teclado](${amazonSearchUrl("teclado mecánico gaming")}), [auriculares](${amazonSearchUrl("auriculares gaming")}) (4-8% comisión)
+- **Equipamiento streaming**: [Micrófonos](${amazonSearchUrl("micrófono streaming")}), [cámaras](${amazonSearchUrl("cámara streaming")}), [luces](${amazonSearchUrl("luces streaming")}) (3-6% comisión)
+- **Componentes PC**: [CPU](${amazonSearchUrl("procesador AMD Ryzen")}), [GPU](${amazonSearchUrl("tarjeta gráfica RTX")}), [RAM](${amazonSearchUrl("memoria RAM DDR4")}) para viewers que upgraden (2-4% comisión)
+- **Accesorios gaming**: [Sillas](${amazonSearchUrl("silla gaming")}), [desks](${amazonSearchUrl("escritorio gaming")}), [monitors](${amazonSearchUrl("monitor gaming")}) (3-7% comisión)
 
 Si planeas expandir a streaming desde consola, revisa nuestra [guía streaming consolas](/setup/streaming-desde-consola-ps5-xbox-series-switch-guia-maestra-septiembre-2025) para productos específicos que monetizan bien.
 
@@ -246,7 +246,7 @@ Si planeas expandir a streaming desde consola, revisa nuestra [guía streaming c
 
 **Contenido que la gente PAGA por ver:**
 - **Streams educativos**: Cómo mejorar en X game
-- **Detrás de escenas**: Tours de setup, contenido día a día
+- **Detrás de escenas**: Tours de [setup](${amazonSearchUrl("setup gaming")}), contenido día a día
 - **Contenido reacciones**: Trailers nuevos juegos, noticias industria
 - **Desafíos comunidad**: Juegos participación viewers
 
@@ -314,13 +314,13 @@ Para entender mejor qué diferencia a streamers exitosos, estudia nuestro [anál
 #### El Truco LEGAL de los 3 Viewers:
 
 **Método Familiar (100% Aprobado por Twitch):**
-1. **Tu smartphone**: Abrir stream, silenciado, cuenta como viewer
-2. **Laptop/tablet**: Segundo dispositivo, IP diferente si es posible
+1. **Tu [smartphone](${amazonSearchUrl("smartphone")})**: Abrir stream, silenciado, cuenta como viewer
+2. **[Laptop](${amazonSearchUrl("laptop")})/[tablet](${amazonSearchUrl("tablet")})**: Segundo dispositivo, IP diferente si es posible
 3. **Familia/amigos**: Personas reales viendo genuinamente
 4. **Construcción de comunidad**: Notificaciones Discord para ir en vivo
 
 **Estrategias Avanzadas:**
-- **Streaming multi-dispositivo**: iPad + teléfono + laptop
+- **Streaming multi-dispositivo**: [iPad](${amazonSearchUrl("iPad")}) + [teléfono](${amazonSearchUrl("smartphone")}) + [laptop](${amazonSearchUrl("laptop gaming")})
 - **Apoyo de comunidad**: Otros streamers viendo mutuamente
 - **Redes sociales**: Dirigir tráfico desde Instagram, TikTok
 - **Horario consistente**: Los viewers saben cuándo sintonizar
@@ -349,10 +349,10 @@ Para entender mejor qué diferencia a streamers exitosos, estudia nuestro [anál
 #### Sistema de Metas que Convierte:
 
 **Metas de Equipamiento (Más Efectivas):**
-- **"Nueva cámara: 89€/200€"**: Progreso visual, mejora tangible
-- **"Micrófono profesional: 145€/350€"**: Calidad de audio beneficia a todos
-- **"Luces streaming: 34€/150€"**: Mejores visuales = mejor experiencia
-- **"PC upgrade: 456€/1200€"**: Mejor rendimiento = streams más fluidos
+- **"Nueva [cámara](${amazonSearchUrl("cámara streaming")}): 89€/200€"**: Progreso visual, mejora tangible
+- **"[Micrófono profesional](${amazonSearchUrl("micrófono profesional streaming")}): 145€/350€"**: Calidad de audio beneficia a todos
+- **"[Luces streaming](${amazonSearchUrl("luces LED streaming")}): 34€/150€"**: Mejores visuales = mejor experiencia
+- **"[PC upgrade](${amazonSearchUrl("componentes PC gaming")}): 456€/1200€"**: Mejor rendimiento = streams más fluidos
 
 **Metas de Experiencia (Construcción de Comunidad):**
 - **"Stream 24h si llegamos a 100€"**: Desafío que genera expectación
@@ -389,9 +389,9 @@ Para entender mejor qué diferencia a streamers exitosos, estudia nuestro [anál
 
 **Periféricos Gaming:**
 - **Tiendas gaming locales**: 50-150€ por mención mensual
-- **Marcas teclado/ratón**: Productos + 100-300€ efectivo
-- **Fabricantes de sillas**: Silla gratis + pagos continuos
-- **Fabricantes de accesorios**: Gestión de cables, setups de escritorio
+- **Marcas [teclado](${amazonSearchUrl("teclado gaming")})/[ratón](${amazonSearchUrl("ratón gaming")})**: Productos + 100-300€ efectivo
+- **Fabricantes de [sillas](${amazonSearchUrl("silla gaming")})**: Silla gratis + pagos continuos
+- **Fabricantes de accesorios**: [Gestión de cables](${amazonSearchUrl("organizador cables gaming")}), [setups de escritorio](${amazonSearchUrl("accesorios escritorio gaming")})
 
 **Empresas de Software:**
 - **Servicios VPN**: 100-200€/mes por integración
@@ -565,7 +565,7 @@ Para mejorar tu setup técnico como apoyo a la monetización, revisa nuestro [se
 - **Alfombrillas Gaming**: Diseños personalizados 15-25€
 - **Pegatinas/Calcomanías**: Bajo coste, alto volumen 2-5€
 - **Ropa**: Hoodies, camisetas 25-45€
-- **Accesorios**: Fundas móvil, llaveros 8-20€
+- **Accesorios**: [Fundas móvil](${amazonSearchUrl("funda móvil gaming")}), [llaveros](${amazonSearchUrl("llaveros gaming")}) 8-20€
 
 #### Estrategia Lanzamiento Merch:
 
