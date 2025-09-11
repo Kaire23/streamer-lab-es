@@ -950,78 +950,80 @@ Si planeas streaming de consola más adelante, consulta nuestra [guía completa 
 **¿Por qué OBS Studio es la opción definitiva?**
 - **100% gratuito** y open source
 - **Usado por 94% streamers profesionales** mundialmente
-- **Unlimited scenes y sources**
-- **Plugin ecosystem** masivo y gratuito
-- **Updates constantes** y community support
+- **Escenas y fuentes ilimitadas**
+- **Ecosistema de plugins** masivo y gratuito
+- **Actualizaciones constantes** y soporte de la comunidad
+
+Necesitarás hardware básico compatible: [Webcam Logitech C270](${amazonSearchUrl("Logitech C270 webcam")}) (29€), [Micrófono USB básico](${amazonSearchUrl("micrófono USB streaming")}) (25€), y [Auriculares gaming](${amazonSearchUrl("auriculares gaming")}) (20€) para monitoring.
 
 #### Instalación y Configuración Inicial OBS:
 
-**Step 1 - Descarga e instalación:**
-1. **Download**: obsproject.com oficial (evitar versions modificadas)
-2. **Installation**: Run as administrator
-3. **First launch**: Auto-Configuration Wizard
-4. **Optimization**: Priorizar streaming over recording
+**Paso 1 - Descarga e instalación:**
+1. **Descarga**: obsproject.com oficial (evitar versiones modificadas)
+2. **Instalación**: Ejecutar como administrador
+3. **Primer lanzamiento**: Asistente de configuración automática
+4. **Optimización**: Priorizar streaming sobre grabación
 
-**Step 2 - Settings básicos optimizados:**
+**Paso 2 - Configuraciones básicas optimizadas:**
 
-**Video settings:**
-- **Base Resolution**: 1920x1080 (si tu monitor lo soporta)
-- **Output Resolution**: 1280x720 (óptimo para principiantes)
-- **Downscale Filter**: Lanczos (mejor calidad)
-- **FPS**: 30fps (menos demanding CPU/internet)
+**Configuraciones de video:**
+- **Resolución base**: 1920x1080 (si tu monitor lo soporta)
+- **Resolución de salida**: 1280x720 (óptimo para principiantes)
+- **Filtro de escalado**: Lanczos (mejor calidad)
+- **FPS**: 30fps (menos exigente para CPU/internet)
 
-**Output settings:**
-- **Output Mode**: Simple (para principiantes)
-- **Video Bitrate**: 2500 kbps (funciona con 5 Mbps upload)
-- **Encoder**: Hardware si tienes GPU dedicada
-- **Audio Bitrate**: 160 kbps (calidad broadcast)
+**Configuraciones de salida:**
+- **Modo de salida**: Simple (para principiantes)
+- **Bitrate de video**: 2500 kbps (funciona con 5 Mbps subida)
+- **Codificador**: Hardware si tienes GPU dedicada como [NVIDIA GTX 1660](${amazonSearchUrl("NVIDIA GTX 1660")}) o superior
+- **Bitrate de audio**: 160 kbps (calidad broadcast)
 
-**Audio settings:**
-- **Sample Rate**: 44.1 kHz
-- **Channels**: Stereo
-- **Desktop Audio**: Default speakers/headphones
-- **Mic/Auxiliary**: Tu micrófono principal
+**Configuraciones de audio:**
+- **Frecuencia de muestreo**: 44.1 kHz
+- **Canales**: Estéreo
+- **Audio de escritorio**: Altavoces/auriculares predeterminados
+- **Micrófono auxiliar**: Tu micrófono principal como [Audio-Technica AT2020USB+](${amazonSearchUrl("Audio-Technica AT2020USB+")})
 
 ### Configuración Scenes Básicas Profesionales
 
-#### Scene 1: "Starting Soon" (Pre-Stream)
-**Elements incluidos:**
-- **Background image**: Imagen llamativa con tu username
-- **Text overlay**: "Stream empezando en X minutos"
-- **Music**: Background music suave (copyright-free)
-- **Social media**: Links Instagram, Twitter prominentes
+#### Escena 1: "Comenzando Pronto" (Pre-Stream)
+**Elementos incluidos:**
+- **Imagen de fondo**: Imagen llamativa con tu username
+- **Superposición de texto**: "Stream empezando en X minutos"
+- **Música**: Música de fondo suave (sin copyright)
+- **Redes sociales**: Enlaces Instagram, Twitter prominentes
 
-**Timing recomendado:**
-- **5-10 minutos** antes start oficial
-- **Build anticipation**: Viewers van llegando gradualmente
-- **Technical check**: Último testing audio/video
-- **Chat interaction**: Saludar early viewers
+**Tiempo recomendado:**
+- **5-10 minutos** antes del inicio oficial
+- **Crear expectación**: Los viewers van llegando gradualmente
+- **Verificación técnica**: Última prueba de audio/video con [Auriculares monitoring profesional](${amazonSearchUrl("auriculares monitoring profesional")})
+- **Interacción con chat**: Saludar a los primeros viewers
 
-#### Scene 2: "Main Stream" (Contenido Principal)
-**Layout optimizado principiantes:**
-- **Game/Content**: 75% pantalla (1024x576 en 720p)
-- **Webcam**: 20% pantalla (256x144) esquina inferior derecha
-- **Chat overlay**: 5% pantalla (opcional, mejor external monitor)
-- **Alerts area**: Zona específica notifications
+#### Escena 2: "Stream Principal" (Contenido Principal)
+**Diseño optimizado para principiantes:**
+- **Juego/Contenido**: 75% de pantalla (1024x576 en 720p)
+- **Webcam**: 20% de pantalla (256x144) esquina inferior derecha usando [Webcam Logitech C920s](${amazonSearchUrl("Logitech C920s")})
+- **Superposición de chat**: 5% de pantalla (opcional, mejor con monitor externo)
+- **Área de alertas**: Zona específica para notificaciones
 
-**Elementos overlay incluir:**
-- **Recent follower**: Display último seguidor
-- **Goal progress**: Meta followers/subscribers
-- **Social media**: Enlaces visibles pero no invasivos
-- **Stream title**: Readable pero no overwhelm content
+**Elementos de overlay a incluir:**
+- **Último seguidor**: Mostrar último seguidor
+- **Progreso de metas**: Meta de seguidores/suscriptores
+- **Redes sociales**: Enlaces visibles pero no invasivos
+- **Título del stream**: Legible pero que no sature el contenido
 
-#### Scene 3: "Be Right Back" (Breaks)
-**Content BRB scenes:**
-- **Static image**: Professional background design
-- **Timer**: "Vuelvo en X minutos" countdown
-- **Background music**: Looped copyright-free music
-- **Chat reminder**: "¡Sigue chateando mientras vuelvo!"
+#### Escena 3: "Ya Vuelvo" (Descansos)
+**Contenido de escenas de descanso:**
+- **Imagen estática**: Diseño de fondo profesional
+- **Temporizador**: Cuenta regresiva "Vuelvo en X minutos"
+- **Música de fondo**: Música sin copyright en bucle
+- **Recordatorio de chat**: "¡Sigue chateando mientras vuelvo!"
 
-**Break management profesional:**
-- **Announce beforehand**: "Break en 5 minutos"
-- **Set timer**: Clear return time expectation
-- **Music volume**: Background level, not overwhelming
-- **Chat engagement**: Encourage continued conversation
+**Gestión profesional de descansos:**
+- **Anunciar con antelación**: "Descanso en 5 minutos"
+- **Establecer temporizador**: Expectativa clara de tiempo de regreso
+- **Volumen de música**: Nivel de fondo con [Monitores de estudio](${amazonSearchUrl("monitores estudio streaming")}), sin saturar
+- **Participación del chat**: Fomentar conversación continua
 
 Para configuración avanzada de OBS, consulta nuestra [guía completa OBS Studio](/setup/configurar-obs-studio-2025-guia-completa-actualizado-septiembre).
 
@@ -1051,182 +1053,188 @@ Para configuración avanzada de OBS, consulta nuestra [guía completa OBS Studio
 
 ### Usando tu Smartphone como Cámara
 
-**Apps móvil streaming profesional:**
+**Apps móviles para streaming profesional:**
 
-#### DroidCam (Android/iOS) - Setup Webcam:
-1. **Install app**: DroidCam mobile + PC client
-2. **Connection**: WiFi o USB connection
-3. **Quality**: 720p suficiente para empezar
-4. **Position**: Eye level, stable mount essential
+#### DroidCam (Android/iOS) - Configuración Webcam:
+1. **Instalar app**: DroidCam móvil + cliente PC
+2. **Conexión**: WiFi o conexión USB
+3. **Calidad**: 720p suficiente para empezar
+4. **Posición**: A nivel de ojos, soporte estable esencial como [Soporte smartphone ajustable](${amazonSearchUrl("soporte smartphone streaming")})
 
-**Smartphone positioning optimal:**
-- **Distance**: 60-80cm de tu cara
-- **Angle**: Slightly above eye level (más favorecedor)
-- **Lighting**: Face window o light source
-- **Stability**: Phone mount o improvised stable support
+**Posicionamiento óptimo del smartphone:**
+- **Distancia**: 60-80cm de tu cara
+- **Ángulo**: Ligeramente por encima del nivel de ojos (más favorecedor)
+- **Iluminación**: Frente a ventana o fuente de luz, complementar con [Ring light LED](${amazonSearchUrl("ring light LED smartphone")})
+- **Estabilidad**: Soporte de teléfono o apoyo estable improvisado
 
-#### Twitch Mobile App Streaming Directo:
-- **IRL streaming**: Perfect para outdoor content
-- **Quality**: Auto-adjusts to connection
-- **Chat interaction**: Built-in reading y responding
-- **Limitations**: No overlays, basic functionality
+#### App móvil Twitch Streaming Directo:
+- **Streaming IRL**: Perfecto para contenido al aire libre
+- **Calidad**: Se ajusta automáticamente a la conexión
+- **Interacción con chat**: Lectura y respuesta integrada
+- **Limitaciones**: Sin overlays, funcionalidad básica
 
 ### Audio con Hardware Básico
 
 **Mejorando audio sin invertir:**
 
 #### Auriculares Gaming como Micrófono:
-- **Test quality**: Record 30 seconds, evaluate clarity
-- **Position**: 2-3cm de tu boca, angle off-axis
-- **Settings OBS**: Noise suppression, gain adjustment
-- **Environment**: Record en room menos reverb
+- **Prueba de calidad**: Grabar 30 segundos, evaluar claridad
+- **Posición**: 2-3cm de tu boca, ángulo fuera del eje
+- **Configuraciones OBS**: Supresión de ruido, ajuste de ganancia
+- **Entorno**: Grabar en habitación con menos reverberación
 
-#### Micrófono PC/Laptop Built-in:
-- **Last resort option**: Solo si no hay alternatives
-- **Optimize positioning**: Laptop angle hacia tu cara
-- **Noise reduction**: Essential con built-in mics
-- **Speaking technique**: Close to mic, consistent volume
+#### Micrófono integrado PC/Laptop:
+- **Opción de último recurso**: Solo si no hay alternativas, considera upgrade a [Micrófono USB básico](${amazonSearchUrl("micrófono USB básico streaming")})
+- **Optimizar posicionamiento**: Ángulo del laptop hacia tu cara
+- **Reducción de ruido**: Esencial con micrófonos integrados
+- **Técnica de habla**: Cerca del micrófono, volumen consistente
 
-**Audio improvement gratuito:**
-- **Noise Suppression**: OBS built-in filter
-- **Gain**: Adjust input levels optimal
-- **Compressor**: Even out volume fluctuations
-- **EQ**: Boost presence frequencies (2-4kHz)
+**Mejora de audio gratuita:**
+- **Supresión de ruido**: Filtro integrado de OBS
+- **Ganancia**: Ajustar niveles de entrada óptimos
+- **Compresor**: Igualar fluctuaciones de volumen
+- **Ecualizador**: Potenciar frecuencias de presencia (2-4kHz), mejor con [Interfaz de audio USB](${amazonSearchUrl("interfaz audio USB streaming")})
 
-### Iluminación Natural y DIY
+### Iluminación Natural y Casera
 
-**Maximizar lighting sin equipment:**
+**Maximizar iluminación sin equipamiento:**
 
-#### Natural Light Optimization:
-- **Window positioning**: Face hacia window, indirect sunlight
-- **Time of day**: Avoid harsh afternoon direct sun
-- **Weather**: Overcast days = softer, more even lighting
-- **Reflectors DIY**: White poster board reflect light upward
+#### Optimización de Luz Natural:
+- **Posicionamiento de ventana**: Cara hacia ventana, luz solar indirecta
+- **Hora del día**: Evitar sol directo y fuerte de la tarde
+- **Clima**: Días nublados = iluminación más suave y uniforme
+- **Reflectores caseros**: Cartón blanco para reflejar luz hacia arriba
 
-#### Artificial Light DIY:
-- **Desk lamps**: 2-3 lamps diferentes angles
-- **Light temperature**: Warm white (3000K) más flattering
-- **Diffusion**: White sheet o tissue paper soften harsh light
-- **Background**: Separate subject from background con lighting
+#### Luz Artificial Casera:
+- **Lámparas de escritorio**: 2-3 lámparas en diferentes ángulos, upgrade a [Kit iluminación LED profesional](${amazonSearchUrl("kit iluminación LED streaming")})
+- **Temperatura de luz**: Blanco cálido (3000K) más favorecedor
+- **Difusión**: Sábana blanca o papel de seda para suavizar luz fuerte
+- **Fondo**: Separar sujeto del fondo con iluminación, mejora con [Luz de fondo RGB](${amazonSearchUrl("luz fondo RGB streaming")})
 
 Si quieres optimizar tu audio más adelante, revisa nuestra [biblia del audio para streamers](/setup/la-biblia-del-audio-para-streamers-microfonos-configuracion-procesamiento-septiembre-2025) para configuraciones profesionales.
 
 ## PARTE 4: Tu Primer Stream - Paso a Paso
 
-### Pre-Stream Checklist (30 minutos antes)
+### Lista Pre-Stream (30 minutos antes)
 
-**Technical setup verification:**
-- [ ] **OBS scenes**: Test all transitions funcionan
-- [ ] **Audio levels**: Voice clear, game audio balanced
-- [ ] **Internet speed**: Test upload speed >3 Mbps
-- [ ] **Stream key**: Verificar connection OBS-Twitch
+**Verificación de configuración técnica:**
+- [ ] **Escenas OBS**: Probar que todas las transiciones funcionan
+- [ ] **Niveles de audio**: Voz clara, audio del juego balanceado con [Mezclador audio digital](${amazonSearchUrl("mezclador audio digital streaming")})
+- [ ] **Velocidad de internet**: Probar velocidad de subida >3 Mbps
+- [ ] **Clave de stream**: Verificar conexión OBS-Twitch
 
-**Content preparation:**
-- [ ] **Stream title**: Engaging, descriptive, SEO-friendly
-- [ ] **Game/category**: Correctly selected en Twitch
-- [ ] **Talking points**: 3-5 topics si hay dead air
-- [ ] **Music playlist**: Background music copyright-free ready
+**Preparación de contenido:**
+- [ ] **Título del stream**: Atractivo, descriptivo, amigable para SEO
+- [ ] **Juego/categoría**: Correctamente seleccionado en Twitch
+- [ ] **Puntos de conversación**: 3-5 temas por si hay silencio
+- [ ] **Lista de música**: Música de fondo sin copyright lista
 
-#### Configuración Stream Key Twitch:
+#### Configuración de Clave de Stream Twitch:
 
-**Step 1 - Twitch Creator Dashboard:**
-1. **Login**: Twitch.tv → Creator Dashboard
-2. **Settings → Stream**: Copy Stream Key
-3. **Never share**: Keep stream key private
+**Paso 1 - Panel de Control Creador Twitch:**
+1. **Iniciar sesión**: Twitch.tv → Panel de Control del Creador
+2. **Configuración → Stream**: Copiar Clave de Stream
+3. **Nunca compartir**: Mantener clave de stream privada
 
-**Step 2 - OBS Stream Settings:**
-1. **Settings → Stream**: Service = Twitch
-2. **Server**: Auto (closest to your location)
-3. **Stream Key**: Paste from Twitch
-4. **Test connection**: "Start Streaming" test 30 seconds
+**Paso 2 - Configuraciones de Stream OBS:**
+1. **Configuración → Stream**: Servicio = Twitch
+2. **Servidor**: Automático (más cercano a tu ubicación)
+3. **Clave de Stream**: Pegar desde Twitch
+4. **Probar conexión**: Test "Iniciar Streaming" 30 segundos
 
 ### Durante tu Primer Stream
 
-#### Primeros 15 Minutos (Critical Period):
+#### Primeros 15 Minutos (Período Crítico):
 
-**Opening routine profesional:**
-1. **Greeting energetic**: "¡Hola a todos! ¿Cómo están?"
-2. **Stream introduction**: Qué vais a hacer hoy
-3. **New viewer welcome**: Explicar quién eres briefly
-4. **Chat engagement**: Ask simple questions encourage participation
+**Rutina de apertura profesional:**
+1. **Saludo enérgico**: "¡Hola a todos! ¿Cómo están?"
+2. **Introducción del stream**: Qué vais a hacer hoy
+3. **Bienvenida a nuevos viewers**: Explicar quién eres brevemente
+4. **Participación del chat**: Hacer preguntas simples para fomentar participación
 
-**Conversation starters efectivos:**
-- **"¿De dónde sois?"** - Geographic connection
-- **"¿Primera vez aquí?"** - Welcome new viewers
-- **"¿Jugáis a [GAME]?"** - Common ground gaming
-- **"¿Qué tal vuestro día?"** - Personal connection
+**Iniciadores de conversación efectivos:**
+- **"¿De dónde sois?"** - Conexión geográfica
+- **"¿Primera vez aquí?"** - Dar la bienvenida a nuevos viewers
+- **"¿Jugáis a [JUEGO]?"** - Terreno común gaming
+- **"¿Qué tal vuestro día?"** - Conexión personal
 
-#### Maintaining Energy y Engagement:
+**Tip profesional**: Usa [Auriculares con micrófono gaming](${amazonSearchUrl("auriculares micrófono gaming")}) para escuchar claramente el audio del juego y chat simultáneamente.
 
-**Combat dead air:**
-- **Narrate gameplay**: Explain decisions, strategy
-- **Share thoughts**: React genuine to game events
-- **Ask chat questions**: Every 3-5 minutes minimum
-- **Tell stories**: Personal anecdotes relevant content
+#### Mantener Energía y Participación:
 
-**Chat interaction best practices:**
-- **Read names**: Always say username when responding
-- **Thank followers**: Immediate acknowledgment new follows
-- **Answer questions**: Even if interrupts gameplay
-- **Encourage participation**: Ask opinions, preferences
+**Combatir el silencio:**
+- **Narrar gameplay**: Explicar decisiones, estrategia
+- **Compartir pensamientos**: Reaccionar genuinamente a eventos del juego
+- **Hacer preguntas al chat**: Cada 3-5 minutos mínimo
+- **Contar historias**: Anécdotas personales relevantes al contenido
 
-### Post-Stream Routine
+**Mejores prácticas de interacción con chat:**
+- **Leer nombres**: Siempre decir el nombre de usuario al responder
+- **Agradecer seguidores**: Reconocimiento inmediato de nuevos follows
+- **Responder preguntas**: Incluso si interrumpe el gameplay
+- **Fomentar participación**: Pedir opiniones, preferencias
 
-**Immediate post-stream (5 minutos):**
-- [ ] **Thank viewers**: Gratitude specific chatters participated
-- [ ] **Next stream**: Announce when streaming next
-- [ ] **Social media**: Quick recap highlight moments
-- [ ] **Save VOD**: Ensure VOD saved for clip creation
+**Equipamiento recomendado**: [Stream Deck Mini](${amazonSearchUrl("Elgato Stream Deck Mini")}) para gestionar alertas y respuestas rápidas al chat.
 
-**Analytics review (24 horas después):**
-- **Peak viewers**: Qué content generó más audience
-- **Chat engagement**: Messages per minute analysis
-- **Follower conversion**: New follows vs unique viewers
-- **Stream duration**: Optimal length para tu audience
+### Rutina Post-Stream
+
+**Inmediatamente después del stream (5 minutos):**
+- [ ] **Agradecer a viewers**: Gratitud específica a los que participaron en el chat
+- [ ] **Próximo stream**: Anunciar cuándo será el próximo streaming
+- [ ] **Redes sociales**: Resumen rápido de momentos destacados
+- [ ] **Guardar VOD**: Asegurar que el VOD se guarde para crear clips
+
+**Revisión de analytics (24 horas después):**
+- **Pico de viewers**: Qué contenido generó más audiencia
+- **Participación del chat**: Análisis de mensajes por minuto
+- **Conversión de seguidores**: Nuevos follows vs viewers únicos
+- **Duración del stream**: Duración óptima para tu audiencia
+
+**Herramientas de análisis**: [Software de analytics streaming](${amazonSearchUrl("software analytics streaming")}) para tracking detallado del rendimiento.
 
 ## PARTE 5: Crecimiento Inicial - Primeras 4 Semanas
 
-### Semana 1: Establishing Presence
+### Semana 1: Estableciendo Presencia
 
-**Goals semana 1:**
-- **5+ streams**: Consistency building
-- **10+ followers**: Initial community seed
-- **Stream routine**: Find optimal schedule
-- **Technical comfort**: Confident OBS management
+**Objetivos semana 1:**
+- **5+ streams**: Construir consistencia
+- **10+ followers**: Semilla inicial de comunidad
+- **Rutina de stream**: Encontrar horario óptimo
+- **Comodidad técnica**: Gestión confiada de OBS
 
-**Daily tasks:**
-- **Stream 2-3 horas**: Build stamina y comfort
-- **Social media**: Post highlights, behind-scenes
-- **Networking**: Watch otros streamers, participate chats
-- **Content planning**: Plan next day stream content
+**Tareas diarias:**
+- **Stream 2-3 horas**: Construir resistencia y comodidad
+- **Redes sociales**: Publicar highlights, detrás de escenas
+- **Networking**: Mirar otros streamers, participar en chats
+- **Planificación de contenido**: Planificar contenido del próximo día con [Tableta para notas](${amazonSearchUrl("tableta notas streaming")}) para organización
 
-### Semana 2-3: Community Building
+### Semana 2-3: Construcción de Comunidad
 
-**Focus areas:**
-- **Chat regulars**: Recognize returning viewers
-- **Content variety**: Test different games/content types
-- **Schedule consistency**: Same days, similar times
-- **Quality improvements**: Audio, video, overlay refinements
+**Áreas de enfoque:**
+- **Habituales del chat**: Reconocer viewers que regresan
+- **Variedad de contenido**: Probar diferentes juegos/tipos de contenido
+- **Consistencia de horario**: Mismos días, horarios similares
+- **Mejoras de calidad**: Refinamientos de audio, video, overlays con [Kit mejora streaming](${amazonSearchUrl("kit mejora streaming completo")})
 
-**Engagement strategies:**
-- **Viewer games**: Among Us, Fall Guys, party games
-- **Community polls**: Let audience choose content
-- **Discord server**: Create community hub (opcional)
-- **Social media**: Regular updates, behind-scenes content
+**Estrategias de participación:**
+- **Juegos con viewers**: Among Us, Fall Guys, party games
+- **Encuestas de comunidad**: Dejar que la audiencia elija contenido
+- **Servidor Discord**: Crear hub de comunidad (opcional)
+- **Redes sociales**: Actualizaciones regulares, contenido detrás de escenas
 
-### Semana 4: Twitch Affiliate Application
+### Semana 4: Solicitud Twitch Affiliate
 
-**Twitch Affiliate requirements:**
-- **50+ followers**: Total follower count
-- **500+ minutes**: Total streaming time
-- **7 unique days**: Streaming días diferentes
-- **3+ viewers**: Average concurrent viewers
+**Requisitos Twitch Affiliate:**
+- **50+ followers**: Recuento total de seguidores
+- **500+ minutos**: Tiempo total de streaming
+- **7 días únicos**: Streaming en días diferentes
+- **3+ viewers**: Viewers concurrentes promedio
 
-**Strategies hit 3 average viewers:**
-- **Consistent schedule**: Audience knows when find you
-- **Engaging content**: Interactive vs passive content
-- **Network building**: Raid otros streamers, get raided back
-- **Social media promotion**: Drive external traffic
+**Estrategias para alcanzar 3 viewers promedio:**
+- **Horario consistente**: La audiencia sabe cuándo encontrarte
+- **Contenido atractivo**: Contenido interactivo vs pasivo
+- **Construcción de red**: Raid a otros streamers, recibir raids de vuelta
+- **Promoción en redes sociales**: Dirigir tráfico externo con [Cámara para contenido móvil](${amazonSearchUrl("cámara contenido móvil")}) para stories dinámicas
 
 Para maximizar tus posibilidades de éxito, estudia nuestro [análisis de streamers exitosos](/setup/analisis-500-streamers-que-separa-a-los-que-triunfan-septiembre-2025) para entender qué los diferencia.
 
@@ -1234,33 +1242,33 @@ Para maximizar tus posibilidades de éxito, estudia nuestro [análisis de stream
 
 ### Error #1: Streaming Sin Horario Fijo
 
-**Problem**: Viewers no saben cuándo encontrarte
-**Solution**: Fixed schedule mínimo 3 días semana, same times
-**Impact**: +340% viewer retention vs random scheduling
+**Problema**: Los viewers no saben cuándo encontrarte
+**Solución**: Horario fijo mínimo 3 días por semana, mismas horas
+**Impacto**: +340% retención de viewers vs horario aleatorio
 
 ### Error #2: Audio Malo y No Optimizado
 
-**Problem**: 70% viewers leave immediately con bad audio
-**Solution**: Test audio cada stream, use OBS filters
-**Quick fix**: Noise suppression ON, gain optimization
+**Problema**: 70% de viewers se van inmediatamente con mal audio
+**Solución**: Probar audio cada stream, usar filtros OBS con [Monitor de audio profesional](${amazonSearchUrl("monitor audio profesional streaming")})
+**Solución rápida**: Supresión de ruido ON, optimización de ganancia
 
 ### Error #3: No Hablar Cuando No Hay Chat
 
-**Problem**: New viewers arrive to silence, leave immediately
-**Solution**: Narrate everything, talk to yourself como if chat listening
-**Practice**: Stream 10 minutes solo antes go live
+**Problema**: Nuevos viewers llegan al silencio, se van inmediatamente
+**Solución**: Narrar todo, hablar contigo mismo como si el chat estuviera escuchando
+**Práctica**: Stream 10 minutos solo antes de salir en vivo
 
 ### Error #4: Overlays Muy Complicados
 
-**Problem**: Información overwhelm, distract from content
-**Solution**: Minimalist approach, focus content not fancy graphics
-**Rule**: Si no adds value, remove it
+**Problema**: Sobrecarga de información, distrae del contenido
+**Solución**: Enfoque minimalista, enfócate en contenido no gráficos llamativos
+**Regla**: Si no añade valor, quitarlo
 
 ### Error #5: Compararse con Streamers Grandes
 
-**Problem**: Unrealistic expectations, discouragement
-**Solution**: Focus your growth, celebrate small wins
-**Mindset**: Every big streamer started exactly donde tú estás
+**Problema**: Expectativas irreales, desánimo
+**Solución**: Enfócate en tu crecimiento, celebra pequeños logros
+**Mentalidad**: Cada streamer grande empezó exactamente donde tú estás
 
 ## PARTE 7: Monetización Temprana (Mes 2-3)
 

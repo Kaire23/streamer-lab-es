@@ -23,6 +23,16 @@ function getPdfInfo(pdfType: string) {
       name: 'Guía Completa de Equipos de Streaming',
       description: 'Todo lo que necesitas saber sobre micrófonos, cámaras, capturadoras y más para crear un setup profesional.',
       fileExists: false
+    },
+    'de-0-a-1000-euros-streaming-guia-completa': {
+      name: 'De 0 a 1000€/mes STREAMING - La Guía Definitiva',
+      description: 'Sistema completo de 50+ páginas para monetizar tu streaming: estrategias día a día, plantillas de emails para sponsors, configuraciones que convierten y plan de acción de 90 días.',
+      fileExists: true
+    },
+    'checklist-primer-stream-twitch-2025': {
+      name: 'Checklist Primer Stream Twitch 2025',
+      description: 'Checklist profesional paso a paso con todo lo que necesitas para tu primer stream exitoso: configuración OBS, settings Twitch, overlays gratuitos y troubleshooting.',
+      fileExists: true
     }
   };
 
