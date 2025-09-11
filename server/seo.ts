@@ -280,6 +280,18 @@ const postSEOData: Record<string, SEOData> = {
     dateModified: '2025-01-19',
     wordCount: 5892
   },
+  'de-0-a-1000-euros-mes-streaming-guia-definitiva-monetizar-pasion-septiembre-2025': {
+    title: 'De 0 a 1000€/mes STREAMING: La Guía Definitiva para Monetizar tu Pasión [Actualizado] (Septiembre 2025) | Setups de Streamers',
+    description: 'Sistema probado para generar 1000€/mes con streaming. Desde tu primer euro hasta escalar tu canal como negocio rentable. Sin inversión inicial, resultados en 90 días con estrategias de monetización reales.',
+    keywords: 'monetizar streaming, ganar dinero streaming, twitch afiliado, ingresos streaming, sponsors streaming, streaming como negocio',
+    canonical: 'https://yostreamer.com/setup/de-0-a-1000-euros-mes-streaming-guia-definitiva-monetizar-pasion-septiembre-2025',
+    ogImage: 'https://yostreamer.com/assets/m_1757572774674.webp',
+    type: 'article',
+    author: 'Equipo Setups de Streamers',
+    datePublished: '2025-01-20',
+    dateModified: '2025-01-20',
+    wordCount: 7234
+  },
   'configurar-obs-studio-2025-guia-completa-actualizado-septiembre': {
     title: 'Cómo configurar OBS Studio 2025: Guía Completa en 10 minutos [Actualizado] (Septiembre 2025) | Setups de Streamers',
     description: 'Aprende a configurar OBS Studio desde cero en 2025. Guía paso a paso con configuraciones óptimas para streaming, grabación, escenas, filtros y troubleshooting. Incluye PDF descargable.',
