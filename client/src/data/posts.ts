@@ -129,7 +129,7 @@ export const posts: Post[] = [
 
 **[⬇️ DESCARGAR EBOOK MONETIZACIÓN STREAMING](\/guia-monetizacion-streaming-definitiva.pdf)** 
 
-Descarga nuestro eBook completo de 50+ páginas con el sistema exacto para monetizar tu streaming: estrategias día a día, plantillas de emails para sponsors, configuraciones que convierten y plan de acción de 90 días. ¡Todo lo que necesitas para vivir del streaming!
+Descarga nuestro eBook completo con el sistema exacto para monetizar tu streaming: estrategias día a día, plantillas de emails para sponsors, configuraciones que convierten y plan de acción de 90 días. ¡Todo lo que necesitas para vivir del streaming!
 
 ## PARTE 1: Los Fundamentos de la Monetización (Días 1-30)
 
