@@ -332,7 +332,7 @@ PD: Si no encuentras el email, revisa tu carpeta de spam.`,
         `,
         attachments: pdfInfo.fileExists ? [{
           filename: `${pdfInfo.name}.pdf`,
-          content: await getPdfContent(pdfType),
+          content: (await getPdfContent(pdfType)).toString('base64'),
           type: 'application/pdf',
           disposition: 'attachment'
         }] : []
