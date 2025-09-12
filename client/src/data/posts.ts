@@ -36,6 +36,7 @@ import consoleStreamingImg from "@assets/IMG_0031_1757144351728.jpeg";
 import streamerAnalysisImg from "@assets/IMG_0032_1757402189424.jpeg";
 import twitchBeginnerImg from "@assets/IMG_0039_1757444106030.webp";
 import streamingMonetizationImg from "@assets/m_1757572774674.webp";
+import obsTutorialImg from "@/assets/obs-tutorial-completo-2025.jpg";
 import { amazonSearchUrl } from "@/lib/affiliate";
 
 export type SetupItem = { name: string; link: string; note?: string; image?: string };
@@ -58,6 +59,927 @@ export type Post = {
 const today = new Date().toISOString().slice(0, 10);
 
 export const posts: Post[] = [
+  {
+    slug: "tutorial-obs-studio-espanol-completo-actualizado-septiembre-2025",
+    title: "Tutorial OBS Studio español completo (Actualizado) [Septiembre 2025]",
+    excerpt: "Guía completa paso a paso para dominar OBS Studio en español. Configuración profesional, filtros de audio, escenas optimizadas y troubleshooting completo. Todo lo que necesitas para streams perfectos.",
+    date: today,
+    author: "Equipo Setups de Streamers",
+    coverImage: obsTutorialImg,
+    keywords: [
+      "OBS Studio tutorial español",
+      "configurar OBS streaming",
+      "OBS filtros audio",
+      "escenas OBS profesional",
+      "troubleshooting OBS",
+      "configuración OBS 2025",
+      "streaming software español",
+      "OBS setup completo"
+    ],
+    bio: "Tutorial completo de OBS Studio en español con configuraciones profesionales, filtros de audio avanzados y soluciones a problemas comunes. Desde instalación básica hasta streaming profesional en 2025.",
+    funFacts: [
+      "OBS Studio es usado por el 94% de streamers profesionales del mundo por ser completamente gratis y open source.",
+      "Una configuración correcta de OBS puede reducir el uso de CPU hasta en un 40% sin perder calidad.",
+      "Los filtros de audio en OBS pueden transformar un micrófono de 25€ en sonido broadcast profesional.",
+      "El 78% de problemas de streaming se solucionan con configuración correcta de escenas y fuentes en OBS."
+    ],
+    setup: [
+      {
+        name: "Hardware Esencial para OBS",
+        items: [
+          { name: "Micrófono USB Audio-Technica AT2020USB+", link: amazonSearchUrl("Audio-Technica AT2020USB+"), note: "Calidad profesional plug & play" },
+          { name: "Webcam Logitech C920", link: amazonSearchUrl("Logitech C920 webcam"), note: "Estándar industria streaming" },
+          { name: "Interfaz Audio Focusrite Scarlett Solo", link: amazonSearchUrl("Focusrite Scarlett Solo"), note: "Para micrófonos XLR profesionales" },
+          { name: "Luces LED Ring Light", link: amazonSearchUrl("ring light streaming"), note: "Iluminación uniforme y profesional" }
+        ]
+      },
+      {
+        name: "Plugins y Software Complementario",
+        items: [
+          { name: "OBS Studio", link: "https://obsproject.com/", note: "Gratis - Software streaming profesional" },
+          { name: "VoiceMeeter Banana", link: "https://vb-audio.com/Voicemeeter/banana.htm", note: "Gratis - Mesa mezclas virtual" },
+          { name: "StreamFX Plugin", link: "https://github.com/Xaymar/obs-StreamFX", note: "Gratis - Efectos avanzados OBS" },
+          { name: "Epidemic Sound", link: "https://www.epidemicsound.com/", note: "Música sin copyright para streams" }
+        ]
+      },
+      {
+        name: "Equipamiento PC Recomendado",
+        items: [
+          { name: "AMD Ryzen 7 5800X", link: amazonSearchUrl("AMD Ryzen 7 5800X"), note: "Procesador streaming + gaming simultáneo" },
+          { name: "NVIDIA RTX 4070", link: amazonSearchUrl("NVIDIA RTX 4070"), note: "NVENC encoding hardware dedicado" },
+          { name: "32GB RAM DDR4", link: amazonSearchUrl("32GB RAM DDR4"), note: "Multitasking sin límites OBS + juegos" },
+          { name: "SSD NVMe 1TB", link: amazonSearchUrl("SSD NVMe 1TB"), note: "Velocidad grabación y carga escenas" }
+        ]
+      }
+    ],
+    content: `
+# Tutorial OBS Studio Español Completo [Septiembre 2025]
+
+¡Bienvenido al tutorial definitivo de **OBS Studio en español**! Si quieres dominar completamente el software de streaming más usado del mundo (94% de streamers profesionales), estás en el lugar correcto.
+
+**OBS Studio** no es solo una aplicación: es tu portal hacia el streaming profesional. Desde [Ibai Llanos](/setup/ibai-llanos-setup-actualizado-septiembre-2025) hasta [ElXokas](/setup/elxokas-setup-actualizado-septiembre-2025), todos los grandes streamers españoles confían en OBS para crear contenido de máxima calidad.
+
+### 📥 Descarga GRATIS: Checklist Completo OBS Studio 2025
+
+**[⬇️ DESCARGAR CHECKLIST OBS PROFESIONAL](/obs-studio-2025-checklist.pdf)**
+
+Descarga nuestro checklist paso a paso imprimible con todas las configuraciones, atajos de teclado y troubleshooting de OBS Studio. ¡Todo lo que necesitas en una guía de bolsillo!
+
+## PARTE 1: Instalación y Configuración Inicial
+
+### Descarga e Instalación OBS Studio
+
+**OBS Studio** es completamente **gratuito** y **open source**. No existe versión de pago ni trucos: la misma aplicación que usan streamers millonarios está disponible gratis para ti.
+
+#### Descarga Segura OBS Studio:
+
+1. **Sitio oficial únicamente**: [obsproject.com](https://obsproject.com/)
+2. **Evitar sitios falsos**: Muchas webs maliciosas ofrecen "OBS Pro" o versiones modificadas
+3. **Verificación descarga**: El archivo debe llamarse OBS-Studio-X.X.X-Full-Installer-x64.exe
+4. **Tamaño aproximado**: 120-150MB el instalador oficial
+
+**⚠️ ADVERTENCIA IMPORTANTE**: Nunca descargues OBS de sitios como "obs-studio.es", "obsdownload.com" u otros. Solo el sitio oficial es seguro.
+
+#### Proceso de Instalación Paso a Paso:
+
+**Requisitos de sistema mínimos:**
+- **Windows**: 10 20H2 (64-bit) o superior
+- **RAM**: 4GB mínimo (8GB recomendado para streaming)
+- **CPU**: Intel i5-2500K / AMD FX-8120 o superior
+- **GPU**: Compatible DirectX 11 (NVIDIA GTX 750 / AMD R7 260X mínimo)
+
+**Instalación óptima:**
+1. **Ejecutar como administrador**: Click derecho → "Ejecutar como administrador"
+2. **Directorio recomendado**: Dejar ruta por defecto C:\\Program Files\\obs-studio
+3. **Plugins automáticos**: Marcar "Crear icono escritorio" y "Ejecutar OBS al finalizar"
+4. **Primera ejecución**: Permitir permisos Windows Firewall si aparece
+
+### Asistente de Auto-Configuración: Tu Mejor Amigo
+
+En tu primera apertura de OBS, aparecerá el **Asistente de Auto-Configuración**. **NUNCA lo saltes**: este wizard analiza tu PC y optimiza settings automáticamente.
+
+#### Configuración Optimizada Streaming:
+
+**Información básica:**
+- **Uso**: "Optimizar para streaming" (no grabación)
+- **Video resolución**: Tu resolución nativa monitor (generalmente 1920x1080)
+- **FPS**: 60fps para gaming competitivo, 30fps para just chatting
+
+**Test velocidad automático:**
+- **Bandwidth test**: OBS medirá tu conexión automáticamente
+- **Duración**: 60 segundos aproximadamente
+- **No usar internet**: Durante el test para resultados precisos
+
+**Resultados configuración automática:**
+- **Bitrate streaming**: Basado en tu upload speed
+- **Encoder**: x264 (CPU) o NVENC (GPU NVIDIA) automáticamente
+- **Preset**: Balanceado entre calidad y performance
+
+### Configuración Manual Avanzada
+
+Si quieres **control total** sobre tu setup (recomendado para streamers serios), saltea el auto-configurador y vamos con configuración manual profesional.
+
+#### Settings de Video Profesionales:
+
+\`\`\`
+Base (Canvas) Resolution: 1920x1080
+Output (Scaled) Resolution: 1920x1080 (o 1280x720 para PC limitados)
+Downscale Filter: Lanczos (máxima calidad) 
+Common FPS Values: 60 (gaming competitivo) / 30 (just chatting)
+\`\`\`
+
+**¿Por qué estas configuraciones?**
+- **1920x1080**: Estándar industria, compatible con todas las plataformas
+- **Lanczos filter**: Mejor algoritmo de escalado, evita pixelado
+- **60fps**: Gaming fluido, 30fps suficiente para contenido conversacional
+
+#### Configuración de Encoding Profesional:
+
+**Para PCs con NVIDIA RTX (Recomendado):**
+\`\`\`
+Encoder: NVIDIA NVENC H.264 (new)
+Rate Control: CBR (Constant Bitrate)
+Bitrate: 6000 kbps (Twitch Partner) / 3500 kbps (Affiliate) / 2500 kbps (No affiliate)
+Keyframe Interval: 2 seconds
+Preset: Quality (máxima calidad)
+Profile: High
+Look-ahead: Habilitado
+Psycho Visual Tuning: Habilitado
+GPU: 0 (tu GPU principal)
+Max B-frames: 2
+\`\`\`
+
+**Para PCs sin GPU NVIDIA (CPU encoding):**
+\`\`\`
+Encoder: x264
+Rate Control: CBR
+Bitrate: 3500 kbps máximo (CPU no aguanta más)
+CPU Usage Preset: veryfast (performance) o fast (calidad)
+Profile: high
+Tune: zerolatency (streaming en vivo)
+\`\`\`
+
+Para optimización adicional de performance, consulta nuestra [guía completa de optimización PC](/setup/mi-pc-no-puede-con-obs-10-trucos-bajar-cpu-instante) si experimentas lag o drops de frames.
+
+## PARTE 2: Configuración de Audio Profesional
+
+### Audio Settings Fundamentales
+
+**Audio de calidad broadcast** es lo que separa streamers amateur de profesionales. Un viewer perdonará video pixelado, pero **nunca audio malo**.
+
+#### Configuración Base Audio:
+
+\`\`\`
+Sample Rate: 48 kHz (estándar broadcast)
+Channels: Stereo
+Desktop Audio: Default (tu dispositivo principal)
+Mic/Auxiliary Audio: Tu micrófono seleccionado
+\`\`\`
+
+**Configuración avanzada por dispositivo:**
+
+**[Micrófono USB](${amazonSearchUrl("micrófono USB streaming")}) (Audio-Technica AT2020USB+, Blue Yeti):**
+- **Sample Rate**: 48 kHz
+- **Bit Depth**: 16-bit (suficiente para streaming)
+- **Monitoring**: "Monitor Off" (evita feedback)
+- **Device**: Seleccionar específicamente tu mic, no "Default"
+
+**[Interfaz de audio XLR](${amazonSearchUrl("interfaz audio XLR")}) (Focusrite Scarlett, Behringer):**
+- **Sample Rate**: 48 kHz (match con la interfaz)
+- **Bit Depth**: 24-bit (calidad profesional)
+- **Monitoring**: "Monitor and Output" si quieres escucharte
+- **Gain control**: En la interfaz física, no en OBS
+
+### Filtros de Audio: Transformación Profesional
+
+Los **filtros de audio en OBS** pueden convertir un [micrófono básico de 25€](${amazonSearchUrl("micrófono barato streaming")}) en sonido broadcast profesional. Aquí están los filtros esenciales en **orden correcto**:
+
+#### 1. Noise Gate - Primera Línea de Defensa
+
+**¿Qué hace?** Elimina ruido de fondo cuando no hablas (ventiladores, teclado, respiración).
+
+**Configuración por tipo de micrófono:**
+
+**[Micrófono dinámico](${amazonSearchUrl("micrófono dinámico streaming")}) (SM7B, Procaster):**
+\`\`\`
+Close Threshold: -35dB
+Open Threshold: -32dB
+Attack Time: 25ms
+Hold Time: 200ms
+Release Time: 150ms
+\`\`\`
+
+**[Micrófono condensador](${amazonSearchUrl("micrófono condensador USB")}) (AT2020, Blue Yeti):**
+\`\`\`
+Close Threshold: -45dB (más sensible)
+Open Threshold: -42dB
+Attack Time: 15ms (respuesta rápida)
+Hold Time: 300ms (hold más largo)
+Release Time: 200ms
+\`\`\`
+
+#### 2. Noise Suppression - AI Powered
+
+**RNNoise vs Speex vs NVIDIA Broadcast:**
+
+**RNNoise (Recomendado para mayoría):**
+- **AI-powered**: Elimina ruido inteligentemente
+- **Performance**: Bajo impacto CPU
+- **Efectividad**: Excelente con voces humanas
+- **Configuración**: Dejar en "RNNoise" por defecto
+
+**NVIDIA Broadcast (RTX GPUs únicamente):**
+- **AI superior**: La mejor eliminación de ruido disponible
+- **Requisitos**: GPU RTX 2060 o superior
+- **Instalación**: Separada desde NVIDIA
+- **Configuración**: Instalar NVIDIA Broadcast, seleccionar como fuente
+
+#### 3. Compressor - Control Dinámico
+
+**¿Por qué comprimir?** Balancea volúmenes: whispers audibles, gritos no saturan.
+
+**Configuración por tipo de contenido:**
+
+**Gaming Competitivo (comunicación clara):**
+\`\`\`
+Ratio: 3:1
+Attack Time: 3ms (respuesta rápida para callouts)
+Release Time: 50ms
+Threshold: -15dB
+Output Gain: +2dB
+\`\`\`
+
+**Just Chatting (conversacional):**
+\`\`\`
+Ratio: 2:1 (compresión suave)
+Attack Time: 10ms
+Release Time: 100ms
+Threshold: -20dB
+Output Gain: +3dB
+\`\`\`
+
+#### 4. EQ (Equalización) - Esculpe Tu Voz
+
+**Template universal streaming:**
+
+\`\`\`
+High-Pass Filter: 80Hz (elimina rumble)
+Low-Mid Cut: 300Hz, -2dB, Q: 1.5 (clarity)
+Presence Boost: 3kHz, +3dB, Q: 0.8 (inteligibilidad)
+De-Ess: 7kHz, -2dB, Q: 2.0 (solo si necesario)
+\`\`\`
+
+#### 5. Limiter - Protección Final
+
+**Configuración de seguridad:**
+\`\`\`
+Threshold: -6dB (nunca superar)
+Release Time: 60ms
+\`\`\`
+
+**¿Por qué limiter?** Previene saturación digital que destroza audio y daña oídos de viewers.
+
+### Audio Monitoring y Problemas Comunes
+
+#### Setup de Monitoring Profesional:
+
+1. **[Auriculares cerrados](${amazonSearchUrl("auriculares cerrados estudio")})**: Sony MDR-7506, Audio-Technica ATH-M50x
+2. **Monitoring**: "Monitor and Output" en tu micrófono
+3. **Volumen monitoring**: 70-80% máximo (protege tu audición)
+
+**Troubleshooting audio común:**
+
+**Problema**: "Mi voz se corta con Noise Gate"
+- **Solución**: Bajar Close Threshold 3-5dB
+- **Causa**: Threshold muy agresivo para dinámicas de voz
+
+**Problema**: "Echo o feedback en stream"
+- **Solución**: Cambiar monitoring a "Monitor Off"
+- **Causa**: Audio de speakers captado por micrófono
+
+**Problema**: "Audio muy bajo en stream"
+- **Solución**: Aumentar Output Gain en Compressor
+- **Causa**: Niveles de grabación demasiado conservadores
+
+## PARTE 3: Configuración de Escenas y Fuentes
+
+### Entendiendo el Sistema de Escenas
+
+**Escenas en OBS** son como "sets de TV": cada una contiene diferentes elementos (fuentes) organizados específicamente para diferentes tipos de contenido.
+
+#### Estructura de Escenas Profesional:
+
+**1. Gaming Scene (Escena principal):**
+- **Game Capture**: Tu juego principal
+- **Webcam**: [Cámara](${amazonSearchUrl("webcam streaming 1080p")}) en esquina (normalmente inferior derecha)
+- **Mic**: Tu audio configurado
+- **Alerts**: Overlay notificaciones (StreamLabs/StreamElements)
+- **Chat**: Para interacción visible (opcional)
+
+**2. Just Chatting Scene:**
+- **Webcam**: Centro-izquierda, tamaño grande
+- **Background**: Imagen estática o [luces RGB](${amazonSearchUrl("luces RGB streaming")}) como fondo
+- **Mic**: Audio principal
+- **Alerts**: Notifications overlay
+- **Social Media**: Links/información contacto
+
+**3. BRB/Away Scene:**
+- **Static Image**: "Volveremos en X minutos"
+- **Music**: Playlist de fondo (Epidemic Sound)
+- **Chat**: Mantenido visible
+- **Countdown**: Timer opcional si vas a estar tiempo específico
+
+**4. Starting Soon Scene:**
+- **Countdown Timer**: Plugin o manual
+- **Teaser**: Qué van a ver hoy
+- **Music**: Ambient/intro music
+- **Social**: "Sígueme en Discord/Twitter"
+
+### Configuración de Fuentes Paso a Paso
+
+#### Game Capture - La Fuente Más Importante
+
+**Configuración Game Capture óptima:**
+
+1. **Crear nueva fuente**: Fuentes → Agregar → Game Capture
+2. **Nombre descriptivo**: "Valorant_Capture" (específico por juego)
+3. **Configuración**:
+   \`\`\`
+   Mode: Capture specific window
+   Window: [Valorant.exe]: Valorant
+   Window Match Priority: Match title, otherwise find window
+   Capture Cursor: Solo si necesitas cursor visible
+   Use anti-cheat compatibility hook: Activar para juegos con anti-cheat
+   Capture third-party overlays: Activar para Discord overlay
+   \`\`\`
+
+**Troubleshooting Game Capture:**
+
+**Pantalla negra en Game Capture:**
+1. **Cambiar a Window Capture** temporalmente
+2. **Ejecutar OBS como administrador**
+3. **Verificar anti-cheat compatibility** está activado
+4. **Probar diferentes juegos** para descartar problema específico
+
+**Performance drops con Game Capture:**
+1. **Cambiar a Display Capture** si tienes monitor único
+2. **Verificar GPU encoding** está habilitado
+3. **Reducir resolución output** de 1080p a 720p
+
+#### Webcam Source - Tu Conexión con Viewers
+
+**Configuración [webcam profesional](${amazonSearchUrl("webcam 1080p streaming")}):**
+
+1. **Video Capture Device**: Tu webcam seleccionada
+2. **Resolution/FPS Type**: Custom
+3. **Resolution**: 1920x1080 o máxima soportada
+4. **FPS**: 30fps (60fps innecesario para webcam)
+5. **Video Format**: YUV420P (mejor compatibilidad)
+
+**Configuración avanzada webcam:**
+
+\`\`\`
+Brightness: 0 (ajustar físicamente con luces)
+Contrast: 0 (natural lighting mejor)
+Gamma: 100 (neutral)
+Saturation: 100 (colores naturales)
+White Balance: Auto (a menos que tengas lighting setup fijo)
+Focus: Auto (manual solo para setups avanzados)
+\`\`\`
+
+**Posicionamiento webcam profesional:**
+- **Gaming**: Esquina inferior derecha, 320x240 píxeles
+- **Just Chatting**: Centro-izquierda, 50% del canvas
+- **Altura cámara**: A nivel de ojos, nunca desde abajo
+- **Distancia**: 60-90cm para frame natural de torso
+
+#### Browser Source - Overlays y Widgets
+
+**Browser Source** es tu conexión con **StreamLabs**, **StreamElements** y widgets externos.
+
+**Configuración StreamLabs Alerts:**
+
+1. **StreamLabs Dashboard**: Copiar URL widget
+2. **OBS**: Fuentes → Browser Source
+3. **URL**: Pegar URL de StreamLabs
+4. **Width**: 1920, Height: 1080 (fullscreen overlay)
+5. **Custom CSS**: Solo si necesitas modificaciones específicas
+
+**Configuración típica:**
+\`\`\`
+Width: 1920
+Height: 1080
+FPS: 30 (overlays no necesitan 60fps)
+Refresh browser when scene becomes active: Activado
+Shutdown source when not visible: Activado (ahorra recursos)
+\`\`\`
+
+### Transiciones Entre Escenas
+
+**Transiciones profesionales** mantienen viewers engaged durante cambios de contenido.
+
+#### Configuración de Transiciones:
+
+**Stinger Transition (Recomendado):**
+- **Archivo**: Video MP4 con transparencia
+- **Duración**: 500-1000ms (no muy largo)
+- **Audio**: Opcional, pero mantener bajo volumen
+
+**Cut Transition:**
+- **Uso**: Cambios rápidos gaming
+- **Ventaja**: Zero delay, no distrae
+
+**Fade Transition:**
+- **Duración**: 300ms máximo
+- **Uso**: Cambios suaves just chatting
+
+Para obtener **transitions profesionales gratuitas**, visita nuestro [pack completo overlays y transitions](/recursos-gratis) con elements listos para OBS.
+
+## PARTE 4: Plugins Esenciales y Configuración Avanzada
+
+### Plugins Obligatorios para Streaming Profesional
+
+#### 1. StreamFX - Efectos Visuales Avanzados
+
+**¿Qué incluye StreamFX?**
+- **3D Transform**: Rotaciones, perspectiva, depth
+- **Blur & Glow**: Efectos cinematográficos
+- **Color Correction**: Grading profesional en tiempo real
+- **Upscaling**: AI-powered scaling de fuentes
+- **3D Models**: Importar modelos 3D directamente
+
+**Instalación StreamFX:**
+1. **Descargar**: [GitHub StreamFX](https://github.com/Xaymar/obs-StreamFX)
+2. **Cerrar OBS**: Completamente antes de instalar
+3. **Instalar**: Ejecutar como administrador
+4. **Verificar**: Fuentes → Debería aparecer "3D Transform" y otros
+
+**Configuración recomendada StreamFX:**
+- **3D Transform**: Para efectos perspectiva en webcam
+- **Blur**: Background blur cuando no tienes green screen
+- **Upscaling**: Para webcams de baja resolución
+
+#### 2. VoiceMeeter - Mesa de Mezclas Virtual
+
+**¿Por qué VoiceMeeter es esencial?**
+- **Separation de audio**: Game audio solo en auriculares, no en stream
+- **Multiple inputs**: Varios micrófonos simultáneos
+- **Real-time mixing**: Control individual de cada fuente
+- **Virtual cables**: Routing avanzado entre aplicaciones
+
+**Instalación y configuración básica:**
+
+1. **Descargar**: [VB-Audio VoiceMeeter](https://vb-audio.com/Voicemeeter/)
+2. **Instalar**: Versión "Banana" recomendada
+3. **Restart PC**: Obligatorio después de instalación
+4. **Configurar Windows**:
+   - Reproducción: "VoiceMeeter Input" como default
+   - Grabación: "VoiceMeeter Output" como default
+
+**Setup básico VoiceMeeter para streaming:**
+
+\`\`\`
+Hardware Input 1: Tu micrófono físico
+Hardware Input 2: Desktop audio (juegos, música)
+Virtual Input: Discord, comunicaciones
+
+Hardware Output A1: Tus auriculares/speakers
+Virtual Output B1: OBS (lo que va al stream)
+\`\`\`
+
+**Routing profesional:**
+- **Micrófono**: A1 (auriculares) + B1 (stream)
+- **Game audio**: Solo A1 (auriculares) - NO stream
+- **Discord**: Solo A1 (auriculares) - privacidad
+- **Música**: A1 + B1 (auriculares y stream)
+
+#### 3. OBS Websocket - Control Remoto
+
+**OBS Websocket** permite control de OBS desde dispositivos externos: [Stream Deck](${amazonSearchUrl("Elgato Stream Deck")}), móvil, tablet, otros PCs.
+
+**Configuración Websocket:**
+1. **OBS**: Tools → WebSocket Server Settings
+2. **Enable WebSocket Server**: Activar
+3. **Server Port**: 4444 (default)
+4. **Password**: Crear password seguro
+5. **Connection Info**: Guardar para apps externas
+
+**Apps compatibles recomendadas:**
+- **OBS Remote** (móvil): Control básico
+- **[Stream Deck](${amazonSearchUrl("Elgato Stream Deck")})**: Control profesional físico
+- **Touch Portal** (tablet): Panel control personalizable
+
+### Configuración Multi-PC Streaming (Avanzado)
+
+**Setup dual PC** es el estándar para streamers profesionales: PC gaming + PC streaming separados.
+
+#### Configuración Dual PC:
+
+**PC Gaming (Principal):**
+- **Función**: Solo gaming a máximo performance
+- **Output**: [Tarjeta captura](${amazonSearchUrl("capturadora 4K")}) hacia PC streaming
+- **Software**: Solo el juego + comunicaciones
+
+**PC Streaming (Secundario):**
+- **Función**: OBS, overlays, chat management
+- **Input**: Captura desde PC gaming
+- **Output**: Stream a Twitch/YouTube
+- **Ventaja**: Zero impact en gaming performance
+
+**Hardware necesario dual PC:**
+- **[Capturadora 4K](${amazonSearchUrl("Elgato 4K60 Pro")})**: Elgato 4K60 Pro MK.2
+- **[Audio interface](${amazonSearchUrl("interfaz audio streaming")})**: Para sync audio entre PCs
+- **Network switch**: Conexiones ethernet estables
+- **[KVM switch](${amazonSearchUrl("KVM switch dual PC")})**: Control seamless entre PCs
+
+## PARTE 5: Troubleshooting y Optimización
+
+### Problemas Comunes y Soluciones Definitivas
+
+#### Dropped Frames / Lag de Stream
+
+**Síntomas**: Viewers reportan lag, dropped frames counter aumenta
+
+**Diagnóstico paso a paso:**
+1. **Stats**: View → Stats para metrics en tiempo real
+2. **Dropped Frames**: Si >2%, hay problema
+3. **CPU Usage**: Si >80%, problema de encoding
+4. **Memory Usage**: Si >8GB, leak de memoria
+
+**Soluciones por causa:**
+
+**CPU Overload:**
+\`\`\`
+Encoder: Cambiar a NVENC si tienes NVIDIA
+Preset: x264 "ultrafast" temporalmente
+Resolution: Bajar a 720p
+FPS: Cambiar a 30fps
+\`\`\`
+
+**Network Issues:**
+\`\`\`
+Bitrate: Reducir 20-30%
+Server: Cambiar ingest server Twitch
+Connection: Verificar ethernet vs WiFi
+\`\`\`
+
+**GPU Overload:**
+\`\`\`
+Game Settings: Bajar calidad juego
+Resolution: Streaming a 720p
+Sources: Reducir overlays complejos
+\`\`\`
+
+#### Audio Out of Sync
+
+**Síntomas**: Audio retrasado o adelantado respecto a video
+
+**Soluciones audio sync:**
+
+**Global Audio Delay:**
+- **Audio Monitoring**: Advanced Audio Properties
+- **Sync Offset**: +/- milliseconds necesarios
+- **Test**: Palmada test - audio debe coincidir con imagen
+
+**Per-source sync:**
+- **Webcam delay**: Normalmente +150-300ms
+- **Game capture**: Generalmente 0ms
+- **USB microphones**: Típicamente -50 a -150ms
+
+#### OBS Crashing / No Response
+
+**Causas comunes crashes:**
+
+**Plugin conflicts:**
+1. **Disable plugins**: Uno por uno hasta encontrar culpable
+2. **Update plugins**: Versiones obsoletas causan crashes
+3. **Remove unused**: Plugins no utilizados pueden conflictear
+
+**Memory leaks:**
+\`\`\`
+Sources: Browser sources que no se cierran correctamente
+Overlays: Widgets complejos con memory leaks
+Duration: Streams >6 horas sin restart OBS
+\`\`\`
+
+**Recovery automático:**
+- **Auto-restart**: TaskManager batch file
+- **Scene switching**: Previene algunos crashes
+- **Regular restarts**: Cada 4-6 horas en streams largos
+
+### Optimización de Performance Extrema
+
+#### CPU Optimization Settings
+
+**Windows Power Plan:**
+\`\`\`
+Control Panel → Power Options → High Performance
+Processor power management:
+- Minimum: 100%
+- Maximum: 100%
+- Cooling: Active
+\`\`\`
+
+**OBS Priority Settings:**
+\`\`\`
+Task Manager → OBS → Set Priority → Above Normal
+Process Affinity: Usar cores específicos si tienes 8+ cores
+\`\`\`
+
+**Advanced OBS Settings:**
+\`\`\`
+Process Priority: Above Normal
+Renderer: Direct3D 11 (mejor performance Windows)
+Color Format: NV12 (mejor para NVENC)
+Color Space: 709 (standard streaming)
+Color Range: Partial (compatibility)
+\`\`\`
+
+#### GPU Optimization (NVIDIA)
+
+**NVIDIA Control Panel settings streaming:**
+\`\`\`
+Power Management: Prefer Maximum Performance
+Texture Filtering: Performance
+Threaded Optimization: On
+Vertical Sync: Off (en OBS, no en juegos)
+\`\`\`
+
+**NVENC settings optimizados:**
+\`\`\`
+Preset: Quality (mejor balance)
+Profile: High
+Look-ahead: Enabled (mejor quality)
+Psycho Visual Tuning: Enabled
+GPU: 0 (tu GPU principal)
+Max B-frames: 2
+\`\`\`
+
+Si necesitas optimización adicional de tu PC para streaming, consulta nuestra [guía completa optimización Windows para streaming](/setup/optimizar-pc-windows-streaming-2025) con configuraciones específicas por hardware.
+
+### Monitoring y Analytics de Stream
+
+#### Metrics Esenciales para Monitorear
+
+**Durante el stream (OBS Stats):**
+- **CPU Usage**: <70% ideal
+- **Memory Usage**: <6GB OBS
+- **Dropped Frames**: <1%
+- **Missed Frames**: <0.1%
+- **Bitrate**: Estable sin variaciones grandes
+
+**Post-stream analysis:**
+- **Average viewers**: Consistency indicators
+- **Peak concurrent**: Moment highlights
+- **Chat activity**: Engagement metrics
+- **Clip creation**: Content viral moments
+
+#### Setup Monitoring Automático
+
+**[Hardware monitoring](${amazonSearchUrl("monitor hardware PC")}) durante streams:**
+- **MSI Afterburner**: GPU temps y usage
+- **Core Temp**: CPU temperature monitoring
+- **Process Lasso**: CPU priority automation
+- **NetWorx**: Network bandwidth monitoring
+
+**Alerts automáticas:**
+- **Temperature**: >85°C CPU warning
+- **Memory**: >80% RAM usage alert
+- **Network**: Upload speed drops
+- **Frames**: Dropped frame threshold alerts
+
+## PARTE 6: Configuraciones Específicas por Plataforma
+
+### Configuración Optimizada Twitch
+
+**Twitch specifications oficiales:**
+\`\`\`
+Resolution: 1920x1080 (1080p60) para Partners
+           1280x720 (720p60) para Affiliates
+Bitrate: 6000 kbps máximo (8500 para Partners)
+Encoder: H.264 obligatorio
+Audio: AAC, 48kHz, hasta 320 kbps
+\`\`\`
+
+**Settings recomendados por status Twitch:**
+
+**No Affiliate:**
+\`\`\`
+Resolution: 1280x720
+FPS: 30 (ahorro bitrate)
+Bitrate: 2500 kbps
+Encoder: x264 fast preset
+Audio: 128 kbps
+\`\`\`
+
+**Affiliate:**
+\`\`\`
+Resolution: 1920x1080
+FPS: 60 (gaming) / 30 (chatting)
+Bitrate: 3500 kbps
+Encoder: NVENC Quality
+Audio: 160 kbps
+\`\`\`
+
+**Partner:**
+\`\`\`
+Resolution: 1920x1080
+FPS: 60
+Bitrate: 6000 kbps
+Encoder: NVENC Quality o x264 slow
+Audio: 320 kbps (máxima calidad)
+\`\`\`
+
+### Configuración YouTube Live
+
+**YouTube Live settings:**
+\`\`\`
+Resolution: Hasta 4K soportado
+FPS: Hasta 60fps
+Bitrate: 9000 kbps 1080p60, 6000 kbps 1080p30
+Encoder: H.264 High Profile
+Audio: AAC 128 kbps stereo mínimo
+\`\`\`
+
+**Ventajas YouTube vs Twitch:**
+- **Higher bitrate**: Mejor calidad visual
+- **No subscriber limit**: Todos tienen quality options
+- **Better discoverability**: SEO advantages
+- **Monetization**: AdSense desde inicio
+
+### Multi-Platform Streaming
+
+**Restream.io configuration:**
+\`\`\`
+Output Resolution: 1080p (escalará automáticamente)
+Bitrate: 6000 kbps (distribuirá eficientemente)
+Encoder: NVENC recomendado (single encode, multiple outputs)
+\`\`\`
+
+**Platform-specific optimizations:**
+- **Twitch**: Priorizar chat interaction
+- **YouTube**: Focus en SEO-friendly titles
+- **Facebook**: Mobile-optimized overlays
+- **TikTok Live**: Vertical content consideration
+
+Para obtener las **claves de stream** para cada plataforma, consulta nuestras guías específicas de configuración por plataforma en [guías streaming multi-plataforma](/recursos-streaming).
+
+## PARTE 7: Comandos y Atajos de Teclado Profesionales
+
+### Atajos de Teclado Esenciales
+
+**Control de escenas:**
+\`\`\`
+Ctrl + 1-9: Cambiar a escena específica
+Ctrl + T: Transición manual entre escenas
+Space: Activar/desactivar Studio Mode
+\`\`\`
+
+**Control de fuentes:**
+\`\`\`
+Ctrl + D: Duplicar fuente seleccionada
+Delete: Eliminar fuente seleccionada
+Ctrl + Z: Undo última acción
+Ctrl + Y: Redo acción
+\`\`\`
+
+**Recording y streaming:**
+\`\`\`
+Ctrl + Shift + S: Start/Stop Streaming
+Ctrl + Shift + R: Start/Stop Recording
+Ctrl + Shift + P: Pause Recording
+\`\`\`
+
+### Scripts y Automatización
+
+**Python scripts útiles para OBS:**
+
+**Auto scene switcher:**
+- **Function**: Cambia escenas basado en aplicación activa
+- **Use case**: Gaming automático vs desktop
+- **Download**: OBS Script library official
+
+**Auto replay buffer:**
+- **Function**: Guarda últimos X minutos automáticamente
+- **Trigger**: Hotkey para save highlight moments
+- **Configuration**: Tools → Scripts → Add
+
+Para configuraciones automáticas avanzadas y **scripts personalizados de OBS**, visita nuestro [repositorio completo scripts OBS](/recursos-scripts) con automatizaciones probadas.
+
+## PARTE 8: Recursos y Próximos Pasos
+
+### Recursos Adicionales Recomendados
+
+#### Hardware Upgrades por Presupuesto:
+
+**Budget Básico (200-500€):**
+- **[Micrófono Audio-Technica AT2020USB+](${amazonSearchUrl("Audio-Technica AT2020USB+")})**: 129€
+- **[Webcam Logitech C920](${amazonSearchUrl("Logitech C920")})**: 89€
+- **[Luces LED básicas](${amazonSearchUrl("luces LED streaming baratas")})**: 35€
+- **[Brazo micrófono](${amazonSearchUrl("brazo micrófono streaming")})**: 25€
+
+**Setup Intermedio (500-1500€):**
+- **[Shure SM7B](${amazonSearchUrl("Shure SM7B")})**: 359€
+- **[Interfaz Focusrite Scarlett 2i2](${amazonSearchUrl("Focusrite Scarlett 2i2")})**: 159€
+- **[Elgato Stream Deck](${amazonSearchUrl("Elgato Stream Deck")})**: 149€
+- **[Luces Elgato Key Light](${amazonSearchUrl("Elgato Key Light")})**: 199€
+
+**Professional Setup (1500€+):**
+- **[Sony A7S III](${amazonSearchUrl("Sony A7S III")})**: 3200€
+- **[GoXLR](${amazonSearchUrl("GoXLR")})**: 449€
+- **[Elgato 4K60 Pro](${amazonSearchUrl("Elgato 4K60 Pro")})**: 229€
+- **[Acoustic treatment](${amazonSearchUrl("paneles acústicos streaming")})**: 200-500€
+
+#### Software y Servicios Premium:
+
+**Audio profesional:**
+- **[Epidemic Sound](https://www.epidemicsound.com/)**: Música sin copyright
+- **Audacity**: Editing audio gratuito
+- **Adobe Audition**: Professional audio editing
+- **iZotope RX**: Audio restoration avanzado
+
+**Visual y overlays:**
+- **OWN3D**: Overlays y alerts premium
+- **Streamlabs Prime**: Templates profesionales
+- **Adobe After Effects**: Animations custom
+- **Canva Pro**: Thumbnails y graphics
+
+### Troubleshooting Avanzado y Soporte
+
+#### Cuando Nada Más Funciona:
+
+**OBS Log Analysis:**
+1. **Help → Log Files → Upload Current Log**
+2. **Analyzer**: obs.ninja/analyzer para diagnosis automático
+3. **Community**: OBS Discord oficial para soporte
+
+**Hardware Diagnosis:**
+\`\`\`
+Windows Event Viewer: System crashes
+Device Manager: Driver conflicts
+Performance Monitor: Resource bottlenecks
+Network Troubleshooter: Connection issues
+\`\`\`
+
+#### Actualizaciones y Mantenimiento:
+
+**Weekly maintenance:**
+- **OBS updates**: Check monthly
+- **GPU drivers**: NVIDIA/AMD latest
+- **Windows updates**: Security y performance
+- **Plugin updates**: Compatibilidad verification
+
+**Performance testing:**
+- **Stream test**: 1 hour stress test weekly
+- **Recording test**: Full quality local recording
+- **Multi-app test**: Gaming + OBS + Discord simultáneo
+
+Para **soporte técnico avanzado** y configuraciones personalizadas, únete a nuestra [comunidad Discord de YoStreamer](/discord) donde ayudamos con problemas específicos de OBS y streaming.
+
+## Conclusión: Tu Camino hacia el Streaming Profesional
+
+**¡Felicidades!** Has completado el tutorial más completo de **OBS Studio en español** disponible en internet. Con esta guía, tienes todo lo necesario para:
+
+✅ **Configurar OBS como un profesional** desde cero
+✅ **Optimizar audio y video** para calidad broadcast
+✅ **Troubleshoot problemas** comunes eficientemente
+✅ **Escalar a setups avanzados** cuando estés listo
+
+### Tu Checklist de Acción Inmediata:
+
+**Hoy mismo (30 minutos):**
+- [ ] **Descargar OBS Studio** desde sitio oficial
+- [ ] **Ejecutar Auto-Configuration Wizard**
+- [ ] **Test stream** de 10 minutos a Twitch
+- [ ] **Configurar filtros básicos** audio
+
+**Esta semana (2-3 horas total):**
+- [ ] **Crear 4 escenas básicas** (Gaming, Chatting, BRB, Starting)
+- [ ] **Configurar alerts** con StreamLabs/StreamElements
+- [ ] **Test completo** streaming 1 hora
+- [ ] **Optimizar settings** basado en performance
+
+**Próximo mes (upgrade gradual):**
+- [ ] **[Micrófono profesional](${amazonSearchUrl("micrófono profesional streaming")})** si budget permite
+- [ ] **[Iluminación básica](${amazonSearchUrl("luces streaming")})** para mejor imagen
+- [ ] **Plugins avanzados** (StreamFX, VoiceMeeter)
+- [ ] **Multi-platform** streaming configuration
+
+### Recursos Adicionales para Profundizar:
+
+Para continuar tu evolución como streamer, explora nuestras guías complementarias:
+
+- **[Setup streaming completo por menos de 100€](/setup/setup-streaming-menos-100-euros-actualizado-septiembre-2025)**: Budget setup optimization
+- **[Biblia del audio para streamers](/setup/la-biblia-del-audio-para-streamers-microfonos-configuracion-procesamiento-septiembre-2025)**: Audio mastery completo
+- **[Monetización streaming 0 a 1000€/mes](/setup/de-0-a-1000-euros-mes-streaming-guia-definitiva-monetizar-pasion-septiembre-2025)**: Business side del streaming
+
+**¡Tu aventura de streaming profesional comienza ahora!** Recuerda: el 94% de streamers exitosos empezaron exactamente donde estás tú ahora. La diferencia está en la **consistencia**, **calidad técnica** y **pasión genuina** por crear contenido.
+
+¡Nos vemos en el stream! 🎮🎬
+
+*¿Te ha sido útil esta guía? Compártela con otros aspirantes a streamers y ayúdanos a crecer la comunidad de streamers españoles profesionales.*
+    `
+  },
   {
     slug: "de-0-a-1000-euros-mes-streaming-guia-definitiva-monetizar-pasion-septiembre-2025",
     title: "De 0 a 1000€/mes STREAMING: La Guía Definitiva para Monetizar tu Pasión [Actualizado] (Septiembre 2025)",
