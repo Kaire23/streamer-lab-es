@@ -63,7 +63,7 @@ const today = new Date().toISOString().slice(0, 10);
 export const posts: Post[] = [
   {
     slug: "tutorial-obs-studio-espanol-completo-actualizado-septiembre-2025",
-    title: "Tutorial OBS Studio español completo (Actualizado) [Septiembre 2025]",
+    title: "Tutorial OBS Studio español completo (Actualizado) [Noviembre 2025]",
     excerpt: "Guía completa paso a paso para dominar OBS Studio en español. Configuración profesional, filtros de audio, escenas optimizadas y troubleshooting completo. Todo lo que necesitas para streams perfectos.",
     date: today,
     author: "Equipo Setups de Streamers",
@@ -115,7 +115,7 @@ export const posts: Post[] = [
       }
     ],
     content: `
-# Tutorial OBS Studio Español Completo [Septiembre 2025]
+# Tutorial OBS Studio Español Completo [Noviembre 2025]
 
 ¡Bienvenido al tutorial definitivo de **OBS Studio en español**! Si quieres dominar completamente el software de streaming más usado del mundo (94% de streamers profesionales), estás en el lugar correcto.
 
@@ -984,7 +984,7 @@ Para continuar tu evolución como streamer, explora nuestras guías complementar
   },
   {
     slug: "como-configurar-droidcam-webcam-obs-studio-stream-gratis-actualizado-septiembre-2025",
-    title: "Como configurar Droidcam Webcam & OBS Studio para Stream Gratis [Actualizado Septiembre 2025]",
+    title: "Como configurar Droidcam Webcam & OBS Studio para Stream Gratis [Actualizado Noviembre 2025]",
     excerpt: "Guía completa paso a paso para convertir tu Android en webcam profesional con DroidCam y OBS Studio. Setup gratuito, calidad 1080p, sin lag y configuración optimizada para streaming perfecto.",
     date: today,
     author: "Equipo Setups de Streamers",
@@ -1036,7 +1036,7 @@ Para continuar tu evolución como streamer, explora nuestras guías complementar
       }
     ],
     content: `
-# Como configurar Droidcam Webcam & OBS Studio para Stream Gratis [Septiembre 2025]
+# Como configurar Droidcam Webcam & OBS Studio para Stream Gratis [Noviembre 2025]
 
 ¡Bienvenido a la **guía definitiva de DroidCam y OBS Studio**! Si quieres convertir tu smartphone Android en una webcam profesional de calidad broadcast **completamente gratis**, estás en el lugar perfecto.
 
@@ -1695,7 +1695,7 @@ Para **soporte técnico** y configuraciones personalizadas, únete a nuestra [co
   },
   {
     slug: "mejores-eventos-youtubers-2025-guia-definitiva-no-perderte-nada-actualizado-septiembre",
-    title: "Los mejores eventos de Youtubers 2025: Guía definitiva para no perderte nada [Actualizado Septiembre 2025]",
+    title: "Los mejores eventos de Youtubers 2025: Guía definitiva para no perderte nada [Actualizado Noviembre 2025]",
     excerpt: "Calendario completo de eventos YouTubers y streamers 2025: La Velada del Año V, Gamergy Madrid, eventos latinos y calendario definitivo hasta diciembre. No te pierdas ningún evento épico.",
     date: today,
     author: "Equipo Setups de Streamers",
@@ -2494,7 +2494,7 @@ Para **updates immediate** y **opportunities exclusive**, únete a nuestra [comu
   },
   {
     slug: "de-0-a-1000-euros-mes-streaming-guia-definitiva-monetizar-pasion-septiembre-2025",
-    title: "De 0 a 1000€/mes STREAMING: La Guía Definitiva para Monetizar tu Pasión [Actualizado] (Septiembre 2025)",
+    title: "De 0 a 1000€/mes STREAMING: La Guía Definitiva para Monetizar tu Pasión [Actualizado] (Noviembre 2025)",
     excerpt:
       "Sistema probado para generar 1000€/mes con streaming. Desde tu primer euro hasta escalar tu canal como negocio rentable. Sin inversión inicial, resultados en 90 días con estrategias de monetización reales.",
     date: today,
@@ -3260,7 +3260,7 @@ Tu futuro como streamer profesional empieza con tu próximo stream. Que cuente. 
   },
   {
     slug: "iniciate-en-el-stream-gratis-como-empezar-en-twitch-septiembre-2025",
-    title: "Iníciate en el Stream gratis: Cómo empezar en Twitch [Actualizado] (Septiembre 2025)",
+    title: "Iníciate en el Stream gratis: Cómo empezar en Twitch [Actualizado] (Noviembre 2025)",
     excerpt:
       "Guía completa para empezar a hacer streaming en Twitch desde cero y GRATIS. Configuración paso a paso, software gratuito, primeros pasos y todo lo que necesitas para tu primer stream exitoso.",
     date: today,
@@ -3788,7 +3788,7 @@ Para empezar con equipo más avanzado cuando tengas presupuesto, consulta nuestr
   },
   {
     slug: "analisis-500-streamers-que-separa-a-los-que-triunfan-septiembre-2025",
-    title: "Análisis de 500 Streamers: Qué Separa a los que Triunfan [Actualizado] (Septiembre 2025)",
+    title: "Análisis de 500 Streamers: Qué Separa a los que Triunfan [Actualizado] (Noviembre 2025)",
     excerpt:
       "Estudio completo de 500 streamers exitosos vs no exitosos. Descubre los patrones exactos de equipamiento, estrategias de contenido, métricas y diferencias técnicas que determinan el éxito en streaming.",
     date: today,
@@ -4350,7 +4350,7 @@ Para empezar con inversión mínima, revisa nuestro [streaming con presupuesto b
   },
   {
     slug: "streaming-desde-consola-ps5-xbox-series-switch-guia-maestra-septiembre-2025",
-    title: "Streaming desde Consola: PS5/Xbox Series/Switch - Guía Maestra [Actualizado] (Septiembre 2025)",
+    title: "Streaming desde Consola: PS5/Xbox Series/Switch - Guía Maestra [Actualizado] (Noviembre 2025)",
     excerpt:
       "Guía completa para streaming desde PS5, Xbox Series X/S y Nintendo Switch. Configuración paso a paso, capturadoras recomendadas, setup completo y optimizaciones específicas por consola.",
     date: today,
@@ -4864,7 +4864,7 @@ Para hardware específico, consulta nuestra [configuración completa OBS](/setup
   },
   {
     slug: "la-biblia-del-audio-para-streamers-microfonos-configuracion-procesamiento-septiembre-2025",
-    title: "La Biblia del Audio para Streamers: Micrófonos, Configuración y Procesamiento [Actualizado] (Septiembre 2025)",
+    title: "La Biblia del Audio para Streamers: Micrófonos, Configuración y Procesamiento [Actualizado] (Noviembre 2025)",
     excerpt:
       "Guía definitiva de audio para streaming: comparativa completa de micrófonos por precio, configuración avanzada de filtros OBS, VoiceMeeter, RTX Voice/Krisp y procesamiento profesional de audio.",
     date: today,
@@ -5424,7 +5424,7 @@ Para más guías técnicas, consulta nuestro [setup streaming por menos de 100�
   },
   {
     slug: "como-configurar-stream-perfecto-con-0-euros-inversion-actualizado-septiembre-2025",
-    title: "Cómo Configurar el Stream Perfecto con 0€ de Inversión [Actualizado] (Septiembre 2025)",
+    title: "Cómo Configurar el Stream Perfecto con 0€ de Inversión [Actualizado] (Noviembre 2025)",
     excerpt:
       "¿Stream profesional sin gastar un euro? Te mostramos cómo configurar un setup de streaming perfecto utilizando solo software gratuito, optimización de hardware existente, overlays gratis y música sin copyright.",
     date: today,
@@ -5881,7 +5881,7 @@ Para más guías avanzadas, consulta nuestro [configurar OBS Studio](/setup/conf
   },
   {
     slug: "setup-streaming-menos-100-euros-actualizado-septiembre-2025",
-    title: "Setup streaming por menos de 100€ (Probado y funcionando) [Actualizado] (Septiembre 2025)",
+    title: "Setup streaming por menos de 100€ (Probado y funcionando) [Actualizado] (Noviembre 2025)",
     excerpt:
       "¿Quieres empezar a hacer streaming con presupuesto limitado? Te mostramos cómo montar un setup completo por menos de 100€. Equipos probados, enlaces directos y configuración paso a paso.",
     date: today,
@@ -6472,7 +6472,7 @@ Start con este setup, dedica 2-3 horas daily, y en 6 meses estarás surprised de
   },
   {
     slug: "obs-vs-streamlabs-2025-ganador-definitivo-100-horas-pruebas",
-    title: "OBS vs Streamlabs 2025: Ganador definitivo tras 100 horas de pruebas [Actualizado] (Septiembre 2025)",
+    title: "OBS vs Streamlabs 2025: Ganador definitivo tras 100 horas de pruebas [Actualizado] (Noviembre 2025)",
     excerpt:
       "¿OBS Studio o Streamlabs OBS? Después de 100 horas de testing exhaustivo, tenemos el veredicto definitivo. Comparativa completa 2025 con tabla de rendimiento, uso de recursos y facilidad de uso.",
     date: today,
@@ -7109,7 +7109,7 @@ La battle entre OBS vs Streamlabs no tiene un ganador absoluto porque serve diff
   },
   {
     slug: "por-que-tu-stream-va-tirones-como-arreglarlo-ya",
-    title: "Por qué tu stream va a tirones (y cómo arreglarlo YA) [Actualizado] (Septiembre 2025)",
+    title: "Por qué tu stream va a tirones (y cómo arreglarlo YA) [Actualizado] (Noviembre 2025)",
     excerpt:
       "¿Tu stream va entrecortado y con lag? Descubre las 12 causas más comunes de stream lag y OBS lag. Soluciones inmediatas para streaming entrecortado que funcionan en 2025.",
     date: today,
@@ -7630,7 +7630,7 @@ Un stream sin lag no es suerte, es configuración correcta y hardware adequate w
   },
   {
     slug: "audio-desincronizado-obs-solucion-3-clicks",
-    title: "Audio desincronizado en OBS: Solución en 3 clicks [Actualizado] (Septiembre 2025)",
+    title: "Audio desincronizado en OBS: Solución en 3 clicks [Actualizado] (Noviembre 2025)",
     excerpt:
       "¿Tu audio no coincide con el vídeo en OBS? Soluciona el audio desincronizado en 3 clicks. Guía completa 2025 con métodos inmediatos, configuraciones avanzadas y soluciones profesionales.",
     date: today,
@@ -8069,7 +8069,7 @@ Un audio perfectamente sincronizado es la diferencia entre un stream amateur y u
   },
   {
     slug: "capturadora-o-sin-capturadora-la-verdad-que-nadie-te-cuenta",
-    title: "Capturadora o sin capturadora: La verdad que nadie te cuenta [Actualizado] (Septiembre 2025)",
+    title: "Capturadora o sin capturadora: La verdad que nadie te cuenta [Actualizado] (Noviembre 2025)",
     excerpt:
       "¿Realmente necesitas una capturadora para streaming? Descubre la verdad completa sobre capturadoras vs streaming directo. Guía definitiva 2025 con comparativas, precios y recomendaciones profesionales.",
     date: today,
@@ -8361,7 +8361,7 @@ Tienes dudas específicas sobre tu setup? Drop tu configuration en comments para
   },
   {
     slug: "mi-pc-no-puede-con-obs-10-trucos-bajar-cpu-instante",
-    title: "Mi PC no puede con OBS: 10 trucos para bajar CPU al instante [Actualizado] (Septiembre 2025)",
+    title: "Mi PC no puede con OBS: 10 trucos para bajar CPU al instante [Actualizado] (Noviembre 2025)",
     excerpt:
       "¿Tu PC sufre con OBS Studio? Descubre 10 trucos inmediatos para reducir el uso de CPU en OBS Studio. Guía completa 2025 con configuraciones optimizadas y hardware recomendado.",
     date: today,
@@ -8609,7 +8609,7 @@ Con estos 10 trucos aplicados correctamente, cualquier PC gaming moderno puede m
   },
   {
     slug: "obs-pantalla-negra-soluciones-actualizado-septiembre-2025",
-    title: "OBS pantalla negra: 7 soluciones INMEDIATAS que funcionan [Actualizado] (Septiembre 2025)",
+    title: "OBS pantalla negra: 7 soluciones INMEDIATAS que funcionan [Actualizado] (Noviembre 2025)",
     excerpt:
       "¿Tu OBS muestra pantalla negra? Aquí tienes 7 soluciones inmediatas y efectivas para arreglar el problema de pantalla negra en OBS Studio. Guía completa paso a paso.",
     date: today,
@@ -8838,7 +8838,7 @@ La combinación de estas 7 soluciones resuelve prácticamente todos los casos de
   },
   {
     slug: "ibai-llanos-setup-actualizado-septiembre-2025",
-    title: "Setup de streaming de Ibai Llanos (2025): Guía completa [Actualizado] (Septiembre 2025)",
+    title: "Setup de streaming de Ibai Llanos (2025): Guía completa [Actualizado] (Noviembre 2025)",
     excerpt:
       "Descubre el setup completo de Ibai Llanos: micrófono Shure SM7B, cámara Sony, PC gaming de alta gama e iluminación profesional para streaming de máxima calidad.",
     date: today,
@@ -9110,7 +9110,7 @@ Para streamers aspiracionales, el setup de Ibai representa tanto inspiración co
   },
   {
     slug: "auronplay-setup-actualizado-septiembre-2025",
-    title: "Setup de streaming de AuronPlay (2025): Guía completa [Actualizado] (Septiembre 2025)",
+    title: "Setup de streaming de AuronPlay (2025): Guía completa [Actualizado] (Noviembre 2025)",
     excerpt:
       "Descubre el setup completo de AuronPlay: micrófono profesional, iluminación RGB única, PC gaming de alta gama y configuración optimizada para streaming diario de máxima calidad.",
     date: today,
@@ -9493,7 +9493,7 @@ El **setup de AuronPlay** no es solo inspiración, sino un blueprint comprobado 
   },
   {
     slug: "elrubius-setup-actualizado-septiembre-2025",
-    title: "Setup de streaming de ElRubius (2025): Guía completa [Actualizado] (Septiembre 2025)",
+    title: "Setup de streaming de ElRubius (2025): Guía completa [Actualizado] (Noviembre 2025)",
     excerpt:
       "Descubre el setup icónico de ElRubius: equipamiento profesional, iluminación RGB azul-rosa característica, PC gaming de élite y configuración optimizada para variedad y gaming de máxima calidad.",
     date: today,
@@ -11921,7 +11921,7 @@ El **setup de LolitoFdez** no es simplemente inspirational para aspiring gaming 
   },
   {
     slug: "mejores-eventos-twitch-2025-actualizado-septiembre",
-    title: "Los Mejores Eventos de Twitch 2025: Guía Completa [Actualizado] (Septiembre 2025)",
+    title: "Los Mejores Eventos de Twitch 2025: Guía Completa [Actualizado] (Noviembre 2025)",
     excerpt:
       "Descubre los eventos más esperados de Twitch en 2025: competiciones esports, shows de streamers, La Velada del Año 4, festivales gaming y eventos interactivos que definirán el streaming mundial.",
     date: today,
@@ -12361,7 +12361,7 @@ Los **eventos de Twitch en 2025** no son simplemente entertainment, sino cultura
   },
   {
     slug: "guia-streaming-kick-2025-actualizado-septiembre",
-    title: "Guía Completa de Iniciación al Streaming en Kick 2025 [Actualizado] (Septiembre 2025)",
+    title: "Guía Completa de Iniciación al Streaming en Kick 2025 [Actualizado] (Noviembre 2025)",
     excerpt:
       "Descubre cómo empezar a hacer streaming en Kick: configuración inicial, equipamiento recomendado, monetización, diferencias con Twitch y estrategias para crecer en la plataforma de streaming más innovadora.",
     date: today,
@@ -12919,7 +12919,7 @@ El **streaming en Kick** no es just about playing games or talking to camera; es
   },
   {
     slug: "mejor-webcam-streaming-2025-actualizado-septiembre",
-    title: "Mejor Webcam para Streaming 2025: Guía Completa de Compra [Actualizado] (Septiembre 2025)",
+    title: "Mejor Webcam para Streaming 2025: Guía Completa de Compra [Actualizado] (Noviembre 2025)",
     excerpt:
       "Descubre las mejores webcams para streaming en 2025: comparativas detalladas, análisis de calidad 4K, presupuestos desde €50 hasta €500, y recomendaciones específicas para cada tipo de content creator.",
     date: today,
@@ -16493,7 +16493,7 @@ El **kawaii setup de Staryuuki** ultimately proves que authentic kawaii streamin
   },
   {
     slug: "elxokas-setup-actualizado-septiembre-2025",
-    title: "Setup de streaming de ElXokas (2025): Potencia y estilo [Actualizado] (Septiembre 2025)",
+    title: "Setup de streaming de ElXokas (2025): Potencia y estilo [Actualizado] (Noviembre 2025)",
     excerpt:
       "Analizamos el setup de ElXokas: audio potente, cámaras nítidas y una iluminación dramática ideal para directos intensos.",
     date: today,
@@ -18151,7 +18151,7 @@ Su purple RGB theme no es solo decoration; es una strategic choice que builds re
   },
   {
     slug: "configurar-obs-studio-2025-guia-completa-actualizado-septiembre",
-    title: "Cómo configurar OBS Studio 2025: Guía Completa en 10 minutos [Actualizado] (Septiembre 2025)",
+    title: "Cómo configurar OBS Studio 2025: Guía Completa en 10 minutos [Actualizado] (Noviembre 2025)",
     excerpt:
       "Aprende a configurar OBS Studio desde cero en 2025. Guía paso a paso con configuraciones óptimas para streaming, grabación, escenas, filtros y troubleshooting. Incluye PDF descargable.",
     date: today,
