@@ -38,6 +38,19 @@ Allow: /setup/capturadora-o-sin-capturadora-la-verdad-que-nadie-te-cuenta
 Allow: /setup/mi-pc-no-puede-con-obs-10-trucos-bajar-cpu-instante
 Allow: /setup/obs-pantalla-negra-soluciones-actualizado-septiembre-2025
 
+# New tutorial pages - November 2025
+Allow: /setup/tutorial-obs-studio-espanol-completo-actualizado-septiembre-2025
+Allow: /setup/como-configurar-droidcam-webcam-obs-studio-stream-gratis-actualizado-septiembre-2025
+Allow: /setup/mejores-eventos-youtubers-2025-guia-definitiva-no-perderte-nada-actualizado-septiembre
+Allow: /setup/como-configurar-obs-stream-league-legends-actualizado-noviembre-2025
+Allow: /setup/mejores-stream-decks-streaming-black-friday-elgato-wumpus-actualizado-noviembre-2025
+Allow: /setup/de-0-a-1000-euros-mes-streaming-guia-definitiva-monetizar-pasion-septiembre-2025
+Allow: /setup/iniciate-en-el-stream-gratis-como-empezar-en-twitch-septiembre-2025
+Allow: /setup/analisis-500-streamers-que-separa-a-los-que-triunfan-septiembre-2025
+Allow: /setup/streaming-desde-consola-ps5-xbox-series-switch-guia-maestra-septiembre-2025
+Allow: /setup/la-biblia-del-audio-para-streamers-microfonos-configuracion-procesamiento-septiembre-2025
+Allow: /setup/como-configurar-stream-perfecto-con-0-euros-inversion-actualizado-septiembre-2025
+
 # Main pages
 Allow: /
 Allow: /unsubscribed

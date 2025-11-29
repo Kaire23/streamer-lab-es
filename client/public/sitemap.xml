@@ -333,6 +333,67 @@
     </image:image>
   </url>
   
+  <!-- New tutorial and guide pages - November 2025 -->
+  <url>
+    <loc>https://yostreamer.com/setup/tutorial-obs-studio-espanol-completo-actualizado-septiembre-2025</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://yostreamer.com/assets/obs-tutorial-completo-2025.jpg</image:loc>
+      <image:title>Guía de OBS Studio completa en español 2025</image:title>
+      <image:caption>Tutorial definitivo de OBS Studio para streamers españoles - configuración profesional paso a paso</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://yostreamer.com/setup/como-configurar-droidcam-webcam-obs-studio-stream-gratis-actualizado-septiembre-2025</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://yostreamer.com/assets/droidcam-obs-tutorial-2025.jpg</image:loc>
+      <image:title>Configurar DroidCam con OBS Studio tutorial español</image:title>
+      <image:caption>Guía completa para usar Android como webcam profesional gratis - streaming en español</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://yostreamer.com/setup/mejores-eventos-youtubers-2025-guia-definitiva-no-perderte-nada-actualizado-septiembre</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://yostreamer.com/assets/eventos-youtubers-2025.png</image:loc>
+      <image:title>Eventos de YouTubers y streamers españoles 2025</image:title>
+      <image:caption>La Velada del Año, Gamergy Madrid y todos los eventos de streamers españoles - calendario completo</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://yostreamer.com/setup/como-configurar-obs-stream-league-legends-actualizado-noviembre-2025</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://yostreamer.com/assets/league-legends-obs-stream-2025.jpg</image:loc>
+      <image:title>Configurar OBS para streaming League of Legends</image:title>
+      <image:caption>Guía OBS para LoL - streaming en español profesional Worlds 2026 Superliga España</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://yostreamer.com/setup/mejores-stream-decks-streaming-black-friday-elgato-wumpus-actualizado-noviembre-2025</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://yostreamer.com/assets/stream-deck-black-friday-2025.jpg</image:loc>
+      <image:title>Mejores Stream Decks Black Friday 2025 streamers españoles</image:title>
+      <image:caption>Stream Deck Ibai Llanos TheGrefg - ofertas Black Friday Elgato Loupedeck España</image:caption>
+    </image:image>
+  </url>
+  
   <!-- Utility pages -->
   <url>
     <loc>https://yostreamer.com/unsubscribed</loc>

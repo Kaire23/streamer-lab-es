@@ -71,14 +71,18 @@ export const posts: Post[] = [
     author: "Equipo Setups de Streamers",
     coverImage: obsTutorialImg,
     keywords: [
+      "guía de OBS",
       "OBS Studio tutorial español",
-      "configurar OBS streaming",
-      "OBS filtros audio",
-      "escenas OBS profesional",
-      "troubleshooting OBS",
-      "configuración OBS 2025",
-      "streaming software español",
-      "OBS setup completo"
+      "streaming en español",
+      "configurar OBS Twitch",
+      "OBS filtros audio profesional",
+      "streamers españoles OBS",
+      "como usar OBS Studio",
+      "OBS configuración 2025",
+      "tutorial OBS paso a paso",
+      "streaming profesional España",
+      "OBS escenas streaming",
+      "mejor configuración OBS"
     ],
     bio: "Tutorial completo de OBS Studio en español con configuraciones profesionales, filtros de audio avanzados y soluciones a problemas comunes. Desde instalación básica hasta streaming profesional en 2025.",
     funFacts: [
@@ -992,14 +996,16 @@ Para continuar tu evolución como streamer, explora nuestras guías complementar
     author: "Equipo Setups de Streamers",
     coverImage: droidcamOBSImg,
     keywords: [
-      "DroidCam configuración",
-      "Android webcam streaming",
-      "OBS Studio DroidCam",
-      "webcam gratis smartphone",
-      "setup streaming móvil",
-      "DroidCam tutorial español",
-      "streaming sin webcam",
-      "cámara Android OBS"
+      "DroidCam OBS tutorial español",
+      "webcam gratis streaming",
+      "streaming en español",
+      "guía de OBS DroidCam",
+      "Android webcam profesional",
+      "setup streaming gratis",
+      "streamers españoles webcam",
+      "como streamear sin webcam",
+      "DroidCam configuración 2025",
+      "streaming profesional móvil"
     ],
     bio: "Tutorial definitivo para usar tu smartphone Android como webcam profesional con DroidCam y OBS Studio. Setup completamente gratuito con calidad broadcast y sin inversión en hardware adicional.",
     funFacts: [
@@ -1703,14 +1709,16 @@ Para **soporte técnico** y configuraciones personalizadas, únete a nuestra [co
     author: "Equipo Setups de Streamers",
     coverImage: eventosYoutubersImg,
     keywords: [
-      "eventos YouTubers 2025",
-      "La Velada del Año",
+      "streamers españoles eventos",
+      "La Velada del Año 2025",
+      "eventos YouTubers España",
       "Gamergy Madrid 2025",
-      "eventos streamers españoles",
-      "calendario YouTubers",
-      "eventos Ibai Llanos",
-      "TheGrefg eventos",
-      "streaming events 2025"
+      "streaming en español eventos",
+      "Ibai Llanos eventos",
+      "TheGrefg eventos 2025",
+      "AuronPlay eventos",
+      "calendario streamers españoles",
+      "eventos Twitch España"
     ],
     bio: "Guía definitiva de todos los eventos de YouTubers y streamers en 2025. Desde La Velada del Año hasta eventos latinos, calendario completo con fechas, ubicaciones y cómo asistir a cada evento.",
     funFacts: [
@@ -2502,14 +2510,16 @@ Para **updates immediate** y **opportunities exclusive**, únete a nuestra [comu
     author: "Equipo Setups de Streamers",
     coverImage: lolOBSStreamImg,
     keywords: [
-      "OBS League of Legends",
-      "configurar OBS LoL",
-      "streaming League of Legends",
-      "OBS settings LoL",
-      "stream LoL profesional",
-      "Superliga España 2026",
-      "Worlds 2026 LoL",
-      "League streaming setup"
+      "guía de OBS League of Legends",
+      "streaming en español LoL",
+      "configurar OBS para LoL",
+      "streamers españoles League",
+      "Superliga España streaming",
+      "Worlds 2026 streaming",
+      "OBS tutorial LoL español",
+      "como streamear LoL",
+      "League of Legends Twitch España",
+      "setup streaming LoL profesional"
     ],
     bio: "Tutorial definitivo para configurar OBS y streamear League of Legends con calidad profesional. Configuración optimizada para 2026, escenas específicas LoL, overlays, y preparación para eventos Worlds y Superliga.",
     funFacts: [
@@ -3360,14 +3370,16 @@ Para **dudas técnicas específicas**, configuraciones personalizadas, y **troub
     author: "Equipo Setups de Streamers",
     coverImage: streamDeckBlackFridayImg,
     keywords: [
-      "Stream Deck Black Friday",
-      "Elgato Stream Deck ofertas",
-      "Stream Deck España",
+      "Stream Deck streamers españoles",
+      "Elgato Stream Deck Black Friday",
+      "equipamiento streaming España",
+      "Stream Deck Ibai Llanos",
+      "streaming en español equipamiento",
       "mejor Stream Deck 2025",
-      "alternativas Stream Deck",
-      "Loupedeck vs Stream Deck",
-      "Stream Deck Ibai",
-      "Black Friday streaming"
+      "Loupedeck vs Elgato",
+      "Black Friday streaming España",
+      "Stream Deck TheGrefg",
+      "setup streaming profesional"
     ],
     bio: "Análisis completo de los mejores Stream Decks para Black Friday 2025. Comparativa Elgato vs Loupedeck vs Razer, precios ofertas, y qué modelos usan streamers españoles como Ibai y TheGrefg.",
     funFacts: [
@@ -4206,14 +4218,16 @@ Para **dudas específicas modelos**, **comparaciones personalizadas**, y **suppo
     author: "Equipo Setups de Streamers",
     coverImage: streamingMonetizationImg,
     keywords: [
-      "monetizar streaming",
-      "ganar dinero streaming",
-      "twitch afiliado",
-      "ingresos streaming",
-      "sponsors streaming",
-      "streaming como negocio",
-      "donaciones twitch",
-      "youtube monetización"
+      "monetizar streaming España",
+      "ganar dinero Twitch español",
+      "streaming en español monetización",
+      "streamers españoles ingresos",
+      "Twitch afiliado España",
+      "sponsors streaming español",
+      "como vivir del streaming",
+      "donaciones Twitch España",
+      "YouTube monetización streaming",
+      "negocio streaming profesional"
     ],
     bio: "La guía definitiva para convertir tu pasión por el streaming en un negocio rentable. Sistema paso a paso probado para generar 1000€/mes desde cero, sin inversión inicial y con resultados reales en 90 días.",
     funFacts: [
@@ -4972,14 +4986,16 @@ Tu futuro como streamer profesional empieza con tu próximo stream. Que cuente. 
     author: "Equipo Setups de Streamers",
     coverImage: twitchBeginnerImg,
     keywords: [
-      "como empezar en twitch",
-      "streaming gratis",
-      "primer stream twitch",
-      "configurar twitch streaming",
-      "streaming para principiantes",
-      "twitch tutorial español",
-      "empezar streaming sin dinero",
-      "guía twitch 2025"
+      "como empezar streaming español",
+      "streaming en español principiantes",
+      "Twitch tutorial español",
+      "guía de OBS principiantes",
+      "streamers españoles consejos",
+      "empezar Twitch gratis",
+      "primer stream tutorial",
+      "configurar Twitch 2025",
+      "streaming para principiantes España",
+      "guía Twitch español completa"
     ],
     bio: "La guía definitiva para principiantes que quieren empezar en Twitch sin gastar dinero. Desde crear la cuenta hasta tu primer stream exitoso, incluyendo software gratuito y configuraciones optimizadas.",
     funFacts: [
@@ -10550,11 +10566,16 @@ La combinación de estas 7 soluciones resuelve prácticamente todos los casos de
     author: "Equipo Setups de Streamers",
     coverImage: ibaiImg,
     keywords: [
-      "setup de streaming",
-      "Ibai Llanos",
-      "equipo streamer",
-      "micrófono Shure SM7B",
-      "cámara Sony",
+      "setup Ibai Llanos",
+      "streamers españoles",
+      "streaming en español",
+      "equipamiento streaming profesional",
+      "micrófono Shure SM7B streaming",
+      "cámara Sony streaming",
+      "mejor setup streamer España",
+      "setup profesional Twitch",
+      "Ibai equipamiento completo",
+      "Stream Deck XL Ibai"
     ],
     bio: "Ibai Llanos es uno de los creadores de contenido más influyentes de habla hispana. Con eventos masivos y directos diarios, su setup está optimizado para fiabilidad y calidad audiovisual.",
     content: `
@@ -10822,12 +10843,16 @@ Para streamers aspiracionales, el setup de Ibai representa tanto inspiración co
     author: "Equipo Setups de Streamers",
     coverImage: auronImg,
     keywords: [
-      "setup de streaming",
-      "AuronPlay",
-      "equipo streamer",
-      "micrófono streaming",
-      "iluminación RGB",
-      "PC gaming profesional",
+      "setup AuronPlay",
+      "streamers españoles",
+      "streaming en español",
+      "AuronPlay equipamiento",
+      "mejor setup streaming España",
+      "PC gaming AuronPlay",
+      "setup profesional Twitch",
+      "iluminación streaming RGB",
+      "configuración AuronPlay completa",
+      "equipamiento streamer español"
     ],
     bio: "AuronPlay es el streamer español más seguido del mundo con más de 16 millones de seguidores. Su setup está optimizado para contenido variado, gaming intenso y streams diarios de larga duración.",
     content: `
@@ -18204,7 +18229,18 @@ El **kawaii setup de Staryuuki** ultimately proves que authentic kawaii streamin
     date: today,
     author: "Equipo Setups de Streamers",
     coverImage: elxocasImg,
-    keywords: ["ElXokas", "setup streamer", "audio profesional", "stream deck"],
+    keywords: [
+      "setup ElXokas",
+      "streamers españoles",
+      "streaming en español",
+      "ElXokas equipamiento",
+      "audio profesional streaming",
+      "Stream Deck ElXokas",
+      "setup Twitch España",
+      "micrófono ElXokas",
+      "configuración streaming profesional",
+      "equipamiento streamer español"
+    ],
     bio: "ElXokas destaca por su energía y presencia ante cámara. Su equipo está pensado para capturar cada momento con contundencia.",
     content: `
 ## El Setup Auténtico de ElXokas: Análisis Completo del Gaming Sin Artificios 2025
@@ -18529,7 +18565,18 @@ La inversión en comodidad y rendimiento no es un lujo - es una necesidad estrat
     date: today,
     author: "Equipo Setups de Streamers",
     coverImage: illojImg,
-    keywords: ["illoJuan", "setup de streaming", "Elgato", "Sony"],
+    keywords: [
+      "setup illoJuan",
+      "streamers españoles",
+      "streaming en español",
+      "illoJuan equipamiento",
+      "setup acogedor streaming",
+      "Shure SM7B streaming",
+      "Sony A6400 streaming",
+      "Elgato Key Light",
+      "setup profesional Twitch España",
+      "equipamiento streamer español"
+    ],
     bio: "illoJuan ha crecido con una comunidad fiel gracias a su estilo cercano. Su setup busca naturalidad y confort sin sacrificar calidad.",
     content: `
 ## El Setup Acogedor de IlloJuan: Naturalidad y Calidad
@@ -18742,7 +18789,18 @@ Para streamers que buscan crear contenido basado en conexión humana más que es
     date: today,
     author: "Equipo Setups de Streamers",
     coverImage: grefgImg,
-    keywords: ["TheGrefg", "setup gamer", "RTX", "cámara 4K", "gaming competitivo", "esports"],
+    keywords: [
+      "setup TheGrefg",
+      "streamers españoles",
+      "streaming en español",
+      "TheGrefg equipamiento",
+      "setup gaming competitivo",
+      "PC gaming RTX streaming",
+      "cámara 4K streaming",
+      "Nanoleaf RGB streaming",
+      "esports España setup",
+      "equipamiento streamer profesional"
+    ],
     bio: "TheGrefg es pionero del gaming competitivo en España. Su setup refleja una estética futurista y potencia extrema optimizada para esports y eventos masivos.",
     content: `
 ## El Setup Gaming Competitivo de TheGrefg: Análisis Completo de la Excelencia Esports 2025
@@ -19118,7 +19176,18 @@ La inversión masiva en hardware gaming de gama alta no es vanidad - es la found
     date: today,
     author: "Equipo Setups de Streamers",
     coverImage: coscuImg,
-    keywords: ["Coscu", "setup streaming", "micrófono", "iluminación RGB", "streaming musical", "carisma"],
+    keywords: [
+      "setup Coscu",
+      "streamers españoles",
+      "streamers argentinos",
+      "streaming en español",
+      "Coscu equipamiento",
+      "setup Twitch Argentina",
+      "iluminación RGB streaming",
+      "micrófono profesional streaming",
+      "configuración Coscu completa",
+      "equipamiento streamer latinoamérica"
+    ],
     bio: "Coscu es referente absoluto en la escena hispanohablante. Su setup transmite energía carismática y cercanía auténtica, optimizado para variety content y conexión emocional con la audiencia.",
     content: `
 ## El Setup Carismático de Coscu: Análisis Completo de la Energía que Conecta 2025

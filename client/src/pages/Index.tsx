@@ -155,51 +155,147 @@ const Index: React.FC = () => {
   const endIndex = startIndex + postsPerPage;
   const currentPosts = allPosts.slice(startIndex, endIndex);
 
+  const siteUrl = typeof window !== "undefined" ? window.location.origin : "https://yostreamer.com";
+  
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "WebSite",
-        name: "Setups de Streamers",
-        url: typeof window !== "undefined" ? window.location.origin : "",
+        "@id": `${siteUrl}/#website`,
+        name: "YoStreamer",
+        alternateName: "YoStreamer - Guías de Streaming en Español",
+        url: siteUrl,
+        description: "Portal líder en español sobre streaming, guías de OBS, setups de streamers españoles como Ibai, TheGrefg, AuronPlay y tutoriales profesionales para Twitch y YouTube.",
+        inLanguage: "es",
         potentialAction: {
           "@type": "SearchAction",
-          target: "{url}/?q={search_term_string}",
+          target: {
+            "@type": "EntryPoint",
+            urlTemplate: `${siteUrl}/?q={search_term_string}`
+          },
           "query-input": "required name=search_term_string",
         },
       },
       {
+        "@type": "Organization",
+        "@id": `${siteUrl}/#organization`,
+        name: "YoStreamer",
+        url: siteUrl,
+        logo: {
+          "@type": "ImageObject",
+          url: `${siteUrl}/og-default.jpg`,
+          width: 1200,
+          height: 630
+        },
+        sameAs: [
+          "https://twitter.com/yostreamer",
+          "https://www.youtube.com/@yostreamer"
+        ],
+        contactPoint: {
+          "@type": "ContactPoint",
+          contactType: "customer support",
+          availableLanguage: ["Spanish", "es"]
+        }
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": `${siteUrl}/#webpage`,
+        url: siteUrl,
+        name: "YoStreamer - Guías de Streaming en Español | Streamers Españoles, OBS, Twitch",
+        headline: "Guías de Streaming en Español - Setups de Streamers Españoles",
+        description: "El portal definitivo sobre streaming en español. Guías completas de OBS Studio, setups de streamers españoles famosos (Ibai, TheGrefg, ElXokas, AuronPlay), tutoriales profesionales para Twitch y YouTube, y recomendaciones de equipamiento.",
+        datePublished: "2024-01-01",
+        dateModified: new Date().toISOString().split('T')[0],
+        isPartOf: { "@id": `${siteUrl}/#website` },
+        about: {
+          "@type": "Thing",
+          name: "Streaming en español"
+        },
+        inLanguage: "es",
+        primaryImageOfPage: {
+          "@type": "ImageObject",
+          url: `${siteUrl}/og-default.jpg`,
+          width: 1200,
+          height: 630
+        }
+      },
+      {
         "@type": "ItemList",
-        itemListElement: allPosts.map((p, index) => ({
+        numberOfItems: allPosts.length,
+        itemListElement: allPosts.slice(0, 20).map((p, index) => ({
           "@type": "ListItem",
           position: index + 1,
-          url:
-            (typeof window !== "undefined" ? window.location.origin : "") +
-            (p.type === 'streamer' ? `/setup/${p.slug}` :
+          url: siteUrl + (p.type === 'streamer' ? `/setup/${p.slug}` :
              p.type === 'generated' ? `/setup/${p.slug}` :
              `/article/${p.slug}`),
           name: p.title,
         })),
       },
+      {
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "¿Cuál es el mejor setup para streaming en español?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "El mejor setup para streaming depende de tu presupuesto. Para principiantes recomendamos empezar con OBS Studio (gratuito), un micrófono USB básico y tu webcam. Streamers españoles profesionales como Ibai usan equipos Elgato, micrófonos Shure SM7B y Stream Deck XL. Consulta nuestras guías detalladas para cada nivel."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "¿Cómo configurar OBS Studio para streaming en Twitch?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Para configurar OBS para Twitch: 1) Descarga OBS Studio gratis, 2) Conecta tu cuenta Twitch en Configuración > Stream, 3) Configura resolución 1080p/720p según tu internet, 4) Usa encoder x264 o NVENC, 5) Bitrate recomendado 4500-6000 kbps. Tenemos guías completas paso a paso en español."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "¿Qué equipamiento usan los streamers españoles famosos?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Los streamers españoles más famosos usan: Ibai (Stream Deck XL, Shure SM7B, Sony A7III), TheGrefg (Elgato Key Light, capturadora 4K60 Pro), AuronPlay (setup minimalista profesional), ElXokas (audio profesional Rode). Analizamos cada setup en detalle con enlaces de compra."
+            }
+          }
+        ]
+      }
     ],
   };
 
   return (
     <div>
       <SEO
-        title="Setups de Streamers: Guías Futuristas en Español"
-        description="Cada semana analizamos el setup de un streamer famoso: historia, curiosidades y enlaces a todo su equipo."
+        title="YoStreamer - Guías de Streaming en Español | Streamers Españoles, OBS, Twitch 2025"
+        description="El portal #1 de streaming en español. Guías completas de OBS Studio, setups de Ibai, TheGrefg, AuronPlay y ElXokas. Tutoriales profesionales para Twitch y YouTube. Equipamiento, configuración y todo lo que necesitas para empezar a streamear."
         canonicalPath="/"
         jsonLd={jsonLd}
-        keywords={["setup de streaming", "streamers famosos", "equipo streaming", "guías en español"]}
+        keywords={[
+          "streaming en español",
+          "streamers españoles",
+          "guía de OBS",
+          "guía OBS Studio español",
+          "setup streaming",
+          "setup Ibai",
+          "setup TheGrefg",
+          "setup AuronPlay",
+          "equipamiento streaming",
+          "Twitch España",
+          "tutorial streaming español",
+          "como empezar a streamear",
+          "configurar OBS para Twitch",
+          "mejores streamers españoles",
+          "streaming profesional España"
+        ]}
       />
 
       <section className="mb-8 text-center hero-section">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight hero-title">
-          Setups de Streamers
+          Guías de Streaming en Español
         </h1>
-        <p className="mt-3 text-lg text-muted-foreground hero-subtitle">
-          Guías futuristas en español para replicar el equipo de tus creadores favoritos.
+        <p className="mt-3 text-lg text-muted-foreground hero-subtitle max-w-3xl mx-auto">
+          El portal definitivo sobre <strong>streaming en español</strong>. Setups completos de <strong>streamers españoles</strong> como Ibai, TheGrefg y AuronPlay. <strong>Guías de OBS</strong>, tutoriales profesionales para Twitch y todo el equipamiento que necesitas.
         </p>
       </section>
 
